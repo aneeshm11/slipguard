@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08 18:16 UTC",
+ "generated": "2026-11-08 18:29 UTC",
  "python": "3.10.12",
  "installed": [
   "pip==22.0.2",
@@ -34,7 +34,7 @@
     "  \"failures\": [],",
     "  \"linear_time_seconds\": {",
     "   \"2000_args\": 0.013,",
-    "   \"8000_args\": 0.0553",
+    "   \"8000_args\": 0.0557",
     "  }",
     " },",
     " \"ok\": true",
@@ -122,12 +122,12 @@
   {
    "command": "python notebooks/reproduce_numbers.py .  (tree + dataset parts)",
    "rc": 0,
-   "seconds": 7.2,
+   "seconds": 6.9,
    "pass": true,
    "detail": "12 checks run, 12 exact, 0 check groups skipped; exit 0",
    "note": "dataset root = the workspace (tree + release package + PNC parts)",
    "tail": [
-    "headline results re-derived from raw released records: 12 check(s) run, 12 exact; 0 check group(s) skipped (7.1 s)",
+    "headline results re-derived from raw released records: 12 check(s) run, 12 exact; 0 check group(s) skipped (6.8 s)",
     "  31B copying: P0 rate                               0.0133  released     0.0133  EXACT (count-exact)",
     "  31B copying: P1 rate                               0.1967  released     0.1967  EXACT (count-exact)",
     "  31B copying: RD P1 - P0                            0.1833  released     0.1833  EXACT (count-exact)",
@@ -146,7 +146,7 @@
   {
    "command": "python notebooks/reproduce_numbers.py .  (public tree ALONE: partial-run report)",
    "rc": 3,
-   "seconds": 0.1,
+   "seconds": 0.2,
    "pass": true,
    "detail": "8 checks run, 8 exact, 2 check groups skipped (pnc_corpus, discovery_released); exit 3 (expected 3 = incomplete); INCOMPLETE line printed",
    "note": "no dataset parts attached: must report checks run vs skipped and exit 3, not 0",
@@ -171,12 +171,12 @@
    "rc": 0,
    "seconds": 0.6,
    "pass": true,
-   "detail": "Ran 21 tests in 0.481s OK (skipped=5)",
+   "detail": "Ran 21 tests in 0.450s OK (skipped=5)",
    "note": "run from a copy of transcriptlab/; tests needing numpy / vLLM / tokenizers / PNC skip",
    "tail": [
     "ss......ss..s........",
     "----------------------------------------------------------------------",
-    "Ran 21 tests in 0.481s",
+    "Ran 21 tests in 0.450s",
     "",
     "OK (skipped=5)"
    ]
@@ -184,9 +184,9 @@
   {
    "command": "python notebooks/quickstart.py",
    "rc": 0,
-   "seconds": 2.4,
+   "seconds": 2.2,
    "pass": true,
-   "detail": " quickstart finished in 2.3 s",
+   "detail": " quickstart finished in 2.1 s",
    "note": "PNC dataset attached as data/pnc",
    "tail": [
     "$ slipguard audit transcript_django__django-12225__S1.json --thinking --json",
@@ -202,7 +202,7 @@
     "audit pick (QAT -> AWQ -> + quarantine)          19.7%       10.3% -> 0.0%  RD -9.3 pp",
     "thinking-off ignored after a tool result         98.7%                0.3%  296/300 -> 1/300",
     "",
-    "quickstart finished in 2.3 s"
+    "quickstart finished in 2.1 s"
    ]
   },
   {

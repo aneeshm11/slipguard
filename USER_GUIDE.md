@@ -147,7 +147,8 @@ TranscriptLab needs the repository and the PNC corpus. The GitHub repository shi
 `data/pnc/` (manifest, licence, task list, grades, chat template). The episodes and contexts (≈ 3 GB) are in the
 Kaggle dataset (https://www.kaggle.com/datasets/cassinicraft/slipguard-pnc), which is this repository with `data/pnc/` complete: download it and use it as
 your checkout, or copy its `data/pnc/episodes/`, `contexts/` and `episode_meta/` next to `data/pnc/MANIFEST.json` in
-a clone, or point `PNC_ROOT` at its `data/pnc/`. Run TranscriptLab inside the repository, or
+a clone, or point `PNC_ROOT` at its `data/pnc/`. (Kaggle decompresses `.gz` files: in the Kaggle copy the weight audit's
+four `*.jsonl.gz` packs are stored uncompressed, so install slipguard itself from the wheel or from GitHub.) Run TranscriptLab inside the repository, or
 set `TRANSCRIPTLAB_ROOT=<repository root>`.
 
 ```bash

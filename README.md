@@ -36,7 +36,9 @@ measures the history effect that slipguard's quarantine removes. slipguard does 
    records in about a minute. Locally: `python notebooks/reproduce_numbers.py` (`REPRODUCE.md`).
 3. **Get the corpus:** the Kaggle dataset (https://www.kaggle.com/datasets/cassinicraft/slipguard-pnc, ≈ 3.3 GB) is this repository with PNC's episodes and
    contexts already in `data/pnc/`, plus the wheels and the discovery snippets. Download it as a complete checkout, or
-   copy its `data/pnc/` into a clone (`USER_GUIDE.md` §4).
+   copy its `data/pnc/` into a clone (`USER_GUIDE.md` §4). One exception: Kaggle decompresses `.gz` files, so the
+   weight audit's four `*.jsonl.gz` packs are stored there uncompressed. Install slipguard from the wheel in
+   `release/package/wheels/` or from GitHub, not from that copy's `slipguard/` folder.
 4. **Protect a Gemma 4 agent:** the Quickstart below, then `USER_GUIDE.md` §1 (repair proxy, history guard or strict
    parser).
 5. **Choose a checkpoint:** audit it before serving (`USER_GUIDE.md` §3).
