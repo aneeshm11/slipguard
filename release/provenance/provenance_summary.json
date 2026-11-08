@@ -1,0 +1,68 @@
+{
+ "records": 8410,
+ "by_source_dataset": {
+  "kaggle_gemma4_dev": 1596,
+  "freshswe_py": 3530,
+  "swe_rebench": 3284
+ },
+ "repos_by_source": {
+  "kaggle_gemma4_dev": 4,
+  "freshswe_py": 33,
+  "swe_rebench": 430
+ },
+ "repos_total": 467,
+ "attempts_distinct_run_attempt": 2513,
+ "attempts_distinct_id_string": 2505,
+ "tasks_by_source": {
+  "kaggle_gemma4_dev": 115,
+  "freshswe_py": 398,
+  "swe_rebench": 503
+ },
+ "records_by_license": {
+  "MIT": 4893,
+  "Apache-2.0": 1874,
+  "BSD-3-Clause": 1466,
+  "MPL-2.0 AND MIT": 6,
+  "NOASSERTION": 47,
+  "ISC": 62,
+  "ZPL-2.1": 24,
+  "BSD-2-Clause": 23,
+  "Unlicense": 5,
+  "MIT-0": 10
+ },
+ "records_by_redistribution": {
+  "redistributable_code (permissive; keep notices)": 8357,
+  "weak_copyleft (ship with license text or pointer-only)": 6,
+  "no_license (pointer-only)": 47
+ },
+ "records_by_prompt_family": {
+  "team_prompt_p1_family": 7439,
+  "public_notebook_derived_prompt (b0_public024)": 94,
+  "team_multi_agent_prompts": 106,
+  "adk_compaction_summary (no system prompt)": 440,
+  "team_prompt_r1v": 81,
+  "teammate_private_prompt": 250
+ },
+ "contexts_by_prompt_family": {
+  "team_prompt_p1_family": 7371,
+  "public_notebook_derived_prompt (b0_public024)": 94,
+  "team_multi_agent_prompts": 105,
+  "adk_compaction_summary (no system prompt)": 440,
+  "team_prompt_r1v": 81,
+  "teammate_private_prompt": 250
+ },
+ "records_by_lineage": {
+  "team LoRA; SFT data includes Qwen3.8-Flash-Next teacher rows": 3318,
+  "gemma-4-31b-it-qat (base)": 4510,
+  "team LoRA (no teacher rows recorded)": 582
+ },
+ "no_license_repos": [
+  "kaggle_gemma4_dev:encode/httpx",
+  "swe_rebench:Agizin/Algorithm-Visualization",
+  "swe_rebench:kofferdahl/bme590hrm",
+  "swe_rebench:thgwon-yaho-qcw/Mahjong"
+ ],
+ "copyleft_repos": [
+  "freshswe_py:tqdm/tqdm (MPL-2.0 AND MIT)"
+ ]
+}

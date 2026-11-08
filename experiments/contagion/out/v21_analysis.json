@@ -1,0 +1,882 @@
+{
+ "battery": "v21",
+ "prereg": "PREREG_v2.1_thinkingOFF.md sha256 bb3696da3772d0c7ac67eae9f7f76162dbff11ca357161c34e3c5ca53fb44839",
+ "cond": [
+  "OFF"
+ ],
+ "B": 2000,
+ "file": "out/main/r31b_v21off.jsonl",
+ "servers": {
+  "http://127.0.0.1:8300/v1": 787,
+  "http://127.0.0.1:8302/v1": 713
+ },
+ "on_servers": {
+  "null": 24,
+  "http://127.0.0.1:8300/v1": 1476
+ },
+ "missing_jobs": {
+  "P0": 0,
+  "P1": 0,
+  "P5": 0,
+  "P6": 0,
+  "P8a": 0
+ },
+ "complete_case_contexts": 300,
+ "manipulation_check_M_v2.1": {
+  "P0": {
+   "opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "median_chars": 73.5,
+   "iqr_chars": [
+    36.5,
+    365.5
+   ],
+   "ON_opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "ON_median_chars": 80.0
+  },
+  "P1": {
+   "opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "median_chars": 76.0,
+   "iqr_chars": [
+    49.0,
+    321.0
+   ],
+   "ON_opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "ON_median_chars": 79.0
+  },
+  "P5": {
+   "opened": [
+    0.3733,
+    0.3205,
+    0.4293,
+    300
+   ],
+   "median_chars": 373.5,
+   "iqr_chars": [
+    196.75,
+    1059.25
+   ],
+   "ON_opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "ON_median_chars": 593.0
+  },
+  "P6": {
+   "opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "median_chars": 172.0,
+   "iqr_chars": [
+    49.25,
+    717.25
+   ],
+   "ON_opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "ON_median_chars": 228.0
+  },
+  "P8a": {
+   "opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "median_chars": 117.0,
+   "iqr_chars": [
+    64.0,
+    359.75
+   ],
+   "ON_opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "ON_median_chars": 187.5
+  },
+  "pooled": {
+   "opened": [
+    0.8747,
+    0.8569,
+    0.8905,
+    1500
+   ],
+   "median_chars": 117.5,
+   "ON_median_chars": 185.0
+  },
+  "P5_template_closed": {
+   "n": 188,
+   "opened": [
+    0.0,
+    0.0,
+    0.02,
+    188
+   ],
+   "malformed_uncond": [
+    0.0213,
+    0.0083,
+    0.0534,
+    188
+   ]
+  },
+  "P5_not_template_closed": {
+   "n": 112,
+   "opened": [
+    1.0,
+    0.9668,
+    1,
+    112
+   ],
+   "malformed_uncond": [
+    0.0536,
+    0.0248,
+    0.112,
+    112
+   ]
+  },
+  "prediction": "opened >= 0.95 (point 0.99); median 680 chars [450, 900]"
+ },
+ "claims_complete_case": {
+  "label": "complete-case",
+  "T1": {
+   "contrast": "RD(P1 - P0)",
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.3967,
+    "base": 0.0633,
+    "RD": 0.3333,
+    "RD_CI": [
+     0.2724,
+     0.3938
+    ],
+    "p_one_sided": 0.0005
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4704,
+    "base": 0.0725,
+    "RD": 0.3978,
+    "RD_CI": [
+     0.33,
+     0.4639
+    ],
+    "p_one_sided": 0.0005
+   },
+   "holm_p": 0.002,
+   "prediction_80PI": "+38 pp [+22, +52]",
+   "verdict": "REPLICATES",
+   "theta_D": 0.353
+  },
+  "T2": {
+   "contrast": "RD(P6 - P0)",
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2833,
+    "base": 0.0633,
+    "RD": 0.22,
+    "RD_CI": [
+     0.1717,
+     0.27
+    ],
+    "p_one_sided": 0.0005
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.3441,
+    "base": 0.0725,
+    "RD": 0.2716,
+    "RD_CI": [
+     0.2146,
+     0.3303
+    ],
+    "p_one_sided": 0.0005
+   },
+   "holm_p": 0.002,
+   "prediction_80PI": "+22 pp [+8, +38]",
+   "verdict": "REPLICATES",
+   "theta_D": 0.213
+  },
+  "T3": {
+   "contrast": "removal of the P1 excess by P8a; Holm test RD(P1 - P8a) > 0",
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.3967,
+    "base": 0.0067,
+    "RD": 0.39,
+    "RD_CI": [
+     0.3301,
+     0.4474
+    ],
+    "p_one_sided": 0.0005
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4704,
+    "base": 0.0079,
+    "RD": 0.4625,
+    "RD_CI": [
+     0.3974,
+     0.5267
+    ],
+    "p_one_sided": 0.0005
+   },
+   "removal_uncond": {
+    "P1": 0.3967,
+    "Q": 0.0067,
+    "P0": 0.0633,
+    "removal": 1.17,
+    "CI": [
+     1.0882,
+     1.2791
+    ],
+    "undefined_draw_frac": 0.0
+   },
+   "removal_cond": {
+    "P1": 0.4704,
+    "Q": 0.0079,
+    "P0": 0.0725,
+    "removal": 1.1624,
+    "CI": [
+     1.0851,
+     1.2648
+    ],
+    "undefined_draw_frac": 0.0
+   },
+   "holm_p": 0.002,
+   "prediction_80PI": "1.05 [0.85, 1.20]",
+   "verdict": "REPLICATES"
+  },
+  "T4": {
+   "contrast": "removal of the P1 excess by P5; Holm test RD(P1 - P5) > 0",
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.3967,
+    "base": 0.0333,
+    "RD": 0.3633,
+    "RD_CI": [
+     0.3051,
+     0.42
+    ],
+    "p_one_sided": 0.0005
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4704,
+    "base": 0.042,
+    "RD": 0.4283,
+    "RD_CI": [
+     0.3645,
+     0.4921
+    ],
+    "p_one_sided": 0.0005
+   },
+   "removal_uncond": {
+    "P1": 0.3967,
+    "Q": 0.0333,
+    "P0": 0.0633,
+    "removal": 1.09,
+    "CI": [
+     0.9919,
+     1.2001
+    ],
+    "undefined_draw_frac": 0.0
+   },
+   "removal_cond": {
+    "P1": 0.4704,
+    "Q": 0.042,
+    "P0": 0.0725,
+    "removal": 1.0767,
+    "CI": [
+     0.9834,
+     1.1813
+    ],
+    "undefined_draw_frac": 0.0
+   },
+   "holm_p": 0.002,
+   "prediction_80PI": "1.00 [0.80, 1.15]",
+   "verdict": "REPLICATES"
+  }
+ },
+ "condition_labels": {
+  "T1": null,
+  "T2": null,
+  "T3": null,
+  "T4": "mixed condition"
+ },
+ "claims_on_thought_subsets": {
+  "T4:thought_opened": {
+   "contrast": "removal of the P1 excess by P5; Holm test RD(P1 - P5) > 0",
+   "n_contexts": 112,
+   "n_attempts": 110,
+   "uncond": {
+    "n_contexts": 112,
+    "n_attempts": 110,
+    "arm": 0.2054,
+    "base": 0.0536,
+    "RD": 0.1518,
+    "RD_CI": [
+     0.0714,
+     0.2342
+    ],
+    "p_one_sided": 0.001
+   },
+   "cond": {
+    "n_contexts": 112,
+    "n_attempts": 110,
+    "arm": 0.3026,
+    "base": 0.0857,
+    "RD": 0.2169,
+    "RD_CI": [
+     0.1075,
+     0.3315
+    ],
+    "p_one_sided": 0.001
+   },
+   "removal_uncond": {
+    "P1": 0.2054,
+    "Q": 0.0536,
+    "P0": 0.0982,
+    "removal": 1.4167,
+    "CI": [
+     0.9048,
+     3.5
+    ],
+    "undefined_draw_frac": 0.007
+   },
+   "removal_cond": {
+    "P1": 0.3026,
+    "Q": 0.0857,
+    "P0": 0.1236,
+    "removal": 1.2116,
+    "CI": [
+     0.7717,
+     2.0937
+    ],
+    "undefined_draw_frac": 0.0005
+   },
+   "holm_p": 0.002,
+   "prediction_80PI": "1.00 [0.80, 1.15]",
+   "verdict": "REPLICATES",
+   "subset": "thought_opened: contexts where all of ['P0', 'P1', 'P5'] opened a thought",
+   "descriptive": true
+  },
+  "T4:thought_not_opened": {
+   "n_contexts": 0,
+   "note": "too few contexts",
+   "verdict": "NOT EVALUABLE",
+   "subset": "thought_not_opened: contexts where all of ['P0', 'P1', 'P5'] did not open a thought",
+   "descriptive": true
+  }
+ },
+ "levels": {
+  "P0": {
+   "uncond": [
+    0.0633,
+    0.0378,
+    0.0915
+   ],
+   "cond": [
+    0.0725,
+    0.044,
+    0.1041
+   ],
+   "P_edit": [
+    0.8733,
+    0.8309,
+    0.9063,
+    300
+   ],
+   "D_80PI": [
+    0.03,
+    0.12
+   ]
+  },
+  "P1": {
+   "uncond": [
+    0.3967,
+    0.3389,
+    0.4517
+   ],
+   "cond": [
+    0.4704,
+    0.4077,
+    0.5329
+   ],
+   "P_edit": [
+    0.8433,
+    0.7979,
+    0.8801,
+    300
+   ],
+   "D_80PI": [
+    0.28,
+    0.6
+   ]
+  },
+  "P5": {
+   "uncond": [
+    0.0333,
+    0.0164,
+    0.0563
+   ],
+   "cond": [
+    0.042,
+    0.0202,
+    0.0702
+   ],
+   "P_edit": [
+    0.7933,
+    0.7439,
+    0.8353,
+    300
+   ],
+   "D_80PI": null
+  },
+  "P6": {
+   "uncond": [
+    0.2833,
+    0.2318,
+    0.3333
+   ],
+   "cond": [
+    0.3441,
+    0.2857,
+    0.4017
+   ],
+   "P_edit": [
+    0.8233,
+    0.7762,
+    0.8623,
+    300
+   ],
+   "D_80PI": [
+    0.14,
+    0.45
+   ]
+  },
+  "P8a": {
+   "uncond": [
+    0.0067,
+    0.0,
+    0.0169
+   ],
+   "cond": [
+    0.0079,
+    0.0,
+    0.0202
+   ],
+   "P_edit": [
+    0.8433,
+    0.7979,
+    0.8801,
+    300
+   ],
+   "D_80PI": null
+  },
+  "P5_P8a_vs_P0_plus_1pp": {
+   "P5": -0.03,
+   "P8a": -0.0566
+  }
+ },
+ "paired_vs_thinking_ON": {
+  "P0": {
+   "RD_malformed_uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0633,
+    "base": 0.05,
+    "RD": 0.0133,
+    "RD_CI": [
+     -0.0068,
+     0.0347
+    ],
+    "p_one_sided": 0.13843
+   },
+   "RD_malformed_cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0725,
+    "base": 0.0568,
+    "RD": 0.0157,
+    "RD_CI": [
+     -0.0082,
+     0.0404
+    ],
+    "p_one_sided": 0.09695
+   },
+   "P_edit_cond_minus_ON": [
+    -0.0067,
+    -0.0426,
+    0.0274
+   ]
+  },
+  "P1": {
+   "RD_malformed_uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.3967,
+    "base": 0.4033,
+    "RD": -0.0067,
+    "RD_CI": [
+     -0.0392,
+     0.0243
+    ],
+    "p_one_sided": 0.69965
+   },
+   "RD_malformed_cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4704,
+    "base": 0.4618,
+    "RD": 0.0085,
+    "RD_CI": [
+     -0.0267,
+     0.0443
+    ],
+    "p_one_sided": 0.32284
+   },
+   "P_edit_cond_minus_ON": [
+    -0.03,
+    -0.0575,
+    -0.0064
+   ]
+  },
+  "P5": {
+   "RD_malformed_uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0333,
+    "base": 0.0233,
+    "RD": 0.01,
+    "RD_CI": [
+     -0.0132,
+     0.0339
+    ],
+    "p_one_sided": 0.26187
+   },
+   "RD_malformed_cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.042,
+    "base": 0.0338,
+    "RD": 0.0082,
+    "RD_CI": [
+     -0.0231,
+     0.0402
+    ],
+    "p_one_sided": 0.31934
+   },
+   "P_edit_cond_minus_ON": [
+    0.1033,
+    0.0557,
+    0.1551
+   ]
+  },
+  "P6": {
+   "RD_malformed_uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2833,
+    "base": 0.2633,
+    "RD": 0.02,
+    "RD_CI": [
+     -0.0135,
+     0.0546
+    ],
+    "p_one_sided": 0.13793
+   },
+   "RD_malformed_cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.3441,
+    "base": 0.3251,
+    "RD": 0.019,
+    "RD_CI": [
+     -0.0195,
+     0.0593
+    ],
+    "p_one_sided": 0.15492
+   },
+   "P_edit_cond_minus_ON": [
+    0.0133,
+    -0.0203,
+    0.0487
+   ]
+  },
+  "P8a": {
+   "RD_malformed_uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0067,
+    "base": 0.0033,
+    "RD": 0.0033,
+    "RD_CI": [
+     0.0,
+     0.0102
+    ],
+    "p_one_sided": 0.37381
+   },
+   "RD_malformed_cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0079,
+    "base": 0.0039,
+    "RD": 0.004,
+    "RD_CI": [
+     -0.0001,
+     0.0124
+    ],
+    "p_one_sided": 0.22539
+   },
+   "P_edit_cond_minus_ON": [
+    -0.01,
+    -0.051,
+    0.0304
+   ]
+  },
+  "predictions": "OFF - ON: P1 +5 pp [-5, +15]; P0 +1.5 pp [-2, +6]; P(edit) within +-10 pp in every arm"
+ },
+ "side_by_side_ON_vs_condition": {
+  "n_contexts": 300,
+  "T1": {
+   "ON": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4033,
+    "base": 0.05,
+    "RD": 0.3533,
+    "RD_CI": [
+     0.2963,
+     0.4097
+    ],
+    "p_one_sided": 0.0005
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.3967,
+    "base": 0.0633,
+    "RD": 0.3333,
+    "RD_CI": [
+     0.2724,
+     0.3938
+    ],
+    "p_one_sided": 0.0005
+   }
+  },
+  "T2": {
+   "ON": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2633,
+    "base": 0.05,
+    "RD": 0.2133,
+    "RD_CI": [
+     0.1634,
+     0.2625
+    ],
+    "p_one_sided": 0.0005
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2833,
+    "base": 0.0633,
+    "RD": 0.22,
+    "RD_CI": [
+     0.1717,
+     0.27
+    ],
+    "p_one_sided": 0.0005
+   }
+  },
+  "T3": {
+   "ON": {
+    "P1": 0.4033,
+    "Q": 0.0033,
+    "P0": 0.05,
+    "removal": 1.1321,
+    "CI": [
+     1.0673,
+     1.213
+    ],
+    "undefined_draw_frac": 0.0
+   },
+   "cond": {
+    "P1": 0.3967,
+    "Q": 0.0067,
+    "P0": 0.0633,
+    "removal": 1.17,
+    "CI": [
+     1.0882,
+     1.2791
+    ],
+    "undefined_draw_frac": 0.0
+   }
+  },
+  "T4": {
+   "ON": {
+    "P1": 0.4033,
+    "Q": 0.0233,
+    "P0": 0.05,
+    "removal": 1.0755,
+    "CI": [
+     1.0,
+     1.1565
+    ],
+    "undefined_draw_frac": 0.0
+   },
+   "cond": {
+    "P1": 0.3967,
+    "Q": 0.0333,
+    "P0": 0.0633,
+    "removal": 1.09,
+    "CI": [
+     0.9919,
+     1.2001
+    ],
+    "undefined_draw_frac": 0.0
+   }
+  }
+ },
+ "copy_classes": {
+  "P1": {
+   "condition": {
+    "edits": 253,
+    "classes": {
+     "copy_corrupted": 104,
+     "clean_retry": 74,
+     "same_content_other": 14,
+     "other_edit": 60,
+     "unparsed_or_no_key": 1
+    },
+    "byte_exact_copy_share_of_malformed": [
+     0.8739,
+     0.8024,
+     0.9221,
+     119
+    ],
+    "clean_rewrite_share_of_edits": [
+     0.2925,
+     0.2399,
+     0.3513,
+     253
+    ]
+   },
+   "ON_same_contexts": {
+    "edits": 262,
+    "classes": {
+     "copy_corrupted": 103,
+     "clean_retry": 78,
+     "same_content_other": 10,
+     "other_edit": 68,
+     "unparsed_or_no_key": 3
+    },
+    "byte_exact_copy_share_of_malformed": [
+     0.8512,
+     0.7771,
+     0.9038,
+     121
+    ],
+    "clean_rewrite_share_of_edits": [
+     0.2977,
+     0.2456,
+     0.3557,
+     262
+    ]
+   }
+  },
+  "P6": {
+   "condition": {
+    "edits": 247,
+    "classes": {
+     "copy_corrupted": 3,
+     "clean_retry": 4,
+     "same_content_other": 18,
+     "other_edit": 220,
+     "unparsed_or_no_key": 2
+    },
+    "byte_exact_copy_share_of_malformed": [
+     0.0353,
+     0.0121,
+     0.0987,
+     85
+    ],
+    "clean_rewrite_share_of_edits": [
+     0.0162,
+     0.0063,
+     0.0409,
+     247
+    ]
+   },
+   "ON_same_contexts": {
+    "edits": 243,
+    "classes": {
+     "copy_corrupted": 0,
+     "clean_retry": 5,
+     "same_content_other": 16,
+     "other_edit": 221,
+     "unparsed_or_no_key": 1
+    },
+    "byte_exact_copy_share_of_malformed": [
+     0.0,
+     0,
+     0.0464,
+     79
+    ],
+    "clean_rewrite_share_of_edits": [
+     0.0206,
+     0.0088,
+     0.0473,
+     243
+    ]
+   }
+  },
+  "predictions": "byte-exact copies >= 80% of malformed P1 edits (ON 85.4%)"
+ }
+}

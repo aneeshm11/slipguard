@@ -1,0 +1,520 @@
+{
+ "note": "EXPLORATORY (PI request 2026-11-04 ~15:50 UTC, after the 8B discovery result); not pre-registered",
+ "gen": [
+  "experiments/crossfamily/out/ext/gen_qwen3.8-27b.jsonl"
+ ],
+ "arms": {
+  "C0": {
+   "mal_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_any": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "PF_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "PF_any": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_edit_malformed": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ]
+  },
+  "P0": {
+   "mal_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_any": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "PF_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "PF_any": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_edit_malformed": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ]
+  },
+  "P1L": {
+   "mal_edit": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "dropped_any": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "PF_edit": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "PF_any": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "dropped_edit_malformed": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ]
+  },
+  "P1N": {
+   "mal_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_any": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "PF_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "PF_any": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_edit_malformed": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ]
+  },
+  "P5": {
+   "mal_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_any": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "PF_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "PF_any": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_edit_malformed": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ]
+  },
+  "P6": {
+   "mal_edit": [
+    0.0467,
+    0.028,
+    0.0768,
+    300
+   ],
+   "dropped_any": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "PF_edit": [
+    0.0467,
+    0.028,
+    0.0768,
+    300
+   ],
+   "PF_any": [
+    0.0467,
+    0.028,
+    0.0768,
+    300
+   ],
+   "dropped_edit_malformed": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ]
+  },
+  "P8a": {
+   "mal_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_any": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "PF_edit": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "PF_any": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "dropped_edit_malformed": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ]
+  }
+ },
+ "paired_vs_P0": {
+  "P1L": {
+   "PF_edit": {
+    "n": 300,
+    "arm": 0.01,
+    "base": 0.0,
+    "RD": 0.01,
+    "RD_CI": [
+     0.0,
+     0.023
+    ],
+    "p_one_sided_RD_gt_0": 0.0479,
+    "p_one_sided_RD_lt_0": 1.0
+   },
+   "PF_any": {
+    "n": 300,
+    "arm": 0.01,
+    "base": 0.0,
+    "RD": 0.01,
+    "RD_CI": [
+     0.0,
+     0.0231
+    ],
+    "p_one_sided_RD_gt_0": 0.049,
+    "p_one_sided_RD_lt_0": 1.0
+   },
+   "dropped_any": {
+    "n": 300,
+    "arm": 0.0,
+    "base": 0.0,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0
+   }
+  },
+  "P1N": {
+   "PF_edit": {
+    "n": 300,
+    "arm": 0.0,
+    "base": 0.0,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0
+   },
+   "PF_any": {
+    "n": 300,
+    "arm": 0.0,
+    "base": 0.0,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0
+   },
+   "dropped_any": {
+    "n": 300,
+    "arm": 0.0,
+    "base": 0.0,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0
+   }
+  },
+  "P5": {
+   "PF_edit": {
+    "n": 300,
+    "arm": 0.0,
+    "base": 0.0,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0
+   },
+   "PF_any": {
+    "n": 300,
+    "arm": 0.0,
+    "base": 0.0,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0
+   },
+   "dropped_any": {
+    "n": 300,
+    "arm": 0.0,
+    "base": 0.0,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0
+   }
+  },
+  "P6": {
+   "PF_edit": {
+    "n": 300,
+    "arm": 0.0467,
+    "base": 0.0,
+    "RD": 0.0467,
+    "RD_CI": [
+     0.0236,
+     0.0719
+    ],
+    "p_one_sided_RD_gt_0": 0.0001,
+    "p_one_sided_RD_lt_0": 1.0
+   },
+   "PF_any": {
+    "n": 300,
+    "arm": 0.0467,
+    "base": 0.0,
+    "RD": 0.0467,
+    "RD_CI": [
+     0.024,
+     0.0717
+    ],
+    "p_one_sided_RD_gt_0": 0.0001,
+    "p_one_sided_RD_lt_0": 1.0
+   },
+   "dropped_any": {
+    "n": 300,
+    "arm": 0.0,
+    "base": 0.0,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0
+   }
+  },
+  "P8a": {
+   "PF_edit": {
+    "n": 300,
+    "arm": 0.0,
+    "base": 0.0,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0
+   },
+   "PF_any": {
+    "n": 300,
+    "arm": 0.0,
+    "base": 0.0,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0
+   },
+   "dropped_any": {
+    "n": 300,
+    "arm": 0.0,
+    "base": 0.0,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0
+   }
+  }
+ },
+ "removal_PF_edit": {
+  "P5": {
+   "RD_P1L_minus_Q": {
+    "n": 300,
+    "arm": 0.01,
+    "base": 0.0,
+    "RD": 0.01,
+    "RD_CI": [
+     0.0,
+     0.0229
+    ],
+    "p_one_sided_RD_gt_0": 0.0468,
+    "p_one_sided_RD_lt_0": 1.0
+   },
+   "RD_Q_minus_P0": {
+    "n": 300,
+    "arm": 0.0,
+    "base": 0.0,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0
+   }
+  },
+  "P8a": {
+   "RD_P1L_minus_Q": {
+    "n": 300,
+    "arm": 0.01,
+    "base": 0.0,
+    "RD": 0.01,
+    "RD_CI": [
+     0.0,
+     0.0231
+    ],
+    "p_one_sided_RD_gt_0": 0.0497,
+    "p_one_sided_RD_lt_0": 1.0
+   },
+   "RD_Q_minus_P0": {
+    "n": 300,
+    "arm": 0.0,
+    "base": 0.0,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0
+   }
+  }
+ }
+}

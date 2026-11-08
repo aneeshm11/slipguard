@@ -1,0 +1,256 @@
+{
+ "vendor": "experiments/intent_decoding/proxy_vendor",
+ "code_sha256": {
+  "proxy/e2e_proxy.py": "0c2a52780ea433f36e9701229c290493f6e75db4c562990e7dc58fb399535dce",
+  "proxy/gemma_protocol.py": "fcff4beda91cd8c5c70abe718eb322798335fe81ffb02b1c8c2fbbb2c5c4f1bd",
+  "export/quarantine_renderer.py": "13e285673b70aa9a344cc2123fd26387877ee19a53e8ef9006f8f5580fa2466f"
+ },
+ "calls": 229414,
+ "natural_calls": 228214,
+ "adversarial_calls": 1200,
+ "changed_all": {
+  "k": 280,
+  "n": 229414,
+  "rate": 0.001220500928452492,
+  "wilson95": [
+   0.0010857396600502261,
+   0.0013719657007680204
+  ]
+ },
+ "changed_natural": {
+  "k": 2,
+  "n": 228214,
+  "rate": 8.763704242509224e-06,
+  "wilson95": [
+   2.4033270922866723e-06,
+   3.195620751101045e-05
+  ]
+ },
+ "changed_adversarial": {
+  "k": 278,
+  "n": 1200,
+  "rate": 0.23166666666666666,
+  "wilson95": [
+   0.20867501689786389,
+   0.2563708200922705
+  ]
+ },
+ "decode_time_changed": {
+  "natural": 2,
+  "adversarial": 184
+ },
+ "posthoc_changed": {
+  "natural": 0,
+  "adversarial": 94
+ },
+ "pass": false,
+ "examples": [
+  {
+   "grp": "natural",
+   "order": "new_first",
+   "decode": true,
+   "posthoc": false,
+   "events": []
+  },
+  {
+   "grp": "natural",
+   "order": "old_first",
+   "decode": true,
+   "posthoc": false,
+   "events": []
+  },
+  {
+   "grp": "adversarial",
+   "order": "new_first",
+   "decode": true,
+   "posthoc": false,
+   "events": [
+    {
+     "ev": "ipd_repair",
+     "kind": "closer",
+     "run": "'`",
+     "key": "allow_multiple",
+     "in": "new_string"
+    }
+   ]
+  },
+  {
+   "grp": "adversarial",
+   "order": "old_first",
+   "decode": true,
+   "posthoc": false,
+   "events": [
+    {
+     "ev": "ipd_repair",
+     "kind": "closer",
+     "run": "'`",
+     "key": "allow_multiple",
+     "in": "new_string"
+    }
+   ]
+  },
+  {
+   "grp": "adversarial",
+   "order": "new_first",
+   "decode": false,
+   "posthoc": true,
+   "events": [
+    {
+     "ev": "ipd_rejected",
+     "kind": null,
+     "run": "`",
+     "key": "old_string",
+     "in": null
+    }
+   ]
+  },
+  {
+   "grp": "adversarial",
+   "order": "old_first",
+   "decode": true,
+   "posthoc": false,
+   "events": [
+    {
+     "ev": "ipd_repair",
+     "kind": "closer",
+     "run": "'",
+     "key": "new_string",
+     "in": "old_string"
+    },
+    {
+     "ev": "ipd_repair",
+     "kind": "opener",
+     "run": null,
+     "key": "new_string",
+     "in": "new_string"
+    }
+   ]
+  },
+  {
+   "grp": "adversarial",
+   "order": "new_first",
+   "decode": false,
+   "posthoc": true,
+   "events": [
+    {
+     "ev": "ipd_rejected",
+     "kind": null,
+     "run": "``",
+     "key": "old_string",
+     "in": null
+    }
+   ]
+  },
+  {
+   "grp": "adversarial",
+   "order": "new_first",
+   "decode": true,
+   "posthoc": false,
+   "events": [
+    {
+     "ev": "ipd_repair",
+     "kind": "closer",
+     "run": "``",
+     "key": "old_string",
+     "in": "new_string"
+    },
+    {
+     "ev": "ipd_repair",
+     "kind": "opener",
+     "run": null,
+     "key": "old_string",
+     "in": "old_string"
+    }
+   ]
+  },
+  {
+   "grp": "adversarial",
+   "order": "new_first",
+   "decode": true,
+   "posthoc": false,
+   "events": [
+    {
+     "ev": "ipd_repair",
+     "kind": "closer",
+     "run": "``",
+     "key": "old_string",
+     "in": "new_string"
+    },
+    {
+     "ev": "ipd_repair",
+     "kind": "opener",
+     "run": null,
+     "key": "old_string",
+     "in": "old_string"
+    }
+   ]
+  },
+  {
+   "grp": "adversarial",
+   "order": "new_first",
+   "decode": false,
+   "posthoc": true,
+   "events": [
+    {
+     "ev": "ipd_rejected",
+     "kind": null,
+     "run": "\"`",
+     "key": "old_string",
+     "in": null
+    },
+    {
+     "ev": "ipd_no_repair",
+     "kind": null,
+     "run": null,
+     "key": null,
+     "in": null
+    }
+   ]
+  },
+  {
+   "grp": "adversarial",
+   "order": "new_first",
+   "decode": true,
+   "posthoc": false,
+   "events": [
+    {
+     "ev": "ipd_repair",
+     "kind": "closer",
+     "run": "\\\"",
+     "key": "old_string",
+     "in": "new_string"
+    },
+    {
+     "ev": "ipd_repair",
+     "kind": "opener",
+     "run": null,
+     "key": "old_string",
+     "in": "old_string"
+    }
+   ]
+  },
+  {
+   "grp": "adversarial",
+   "order": "new_first",
+   "decode": true,
+   "posthoc": false,
+   "events": [
+    {
+     "ev": "ipd_repair",
+     "kind": "closer",
+     "run": "``",
+     "key": "old_string",
+     "in": "new_string"
+    },
+    {
+     "ev": "ipd_repair",
+     "kind": "opener",
+     "run": null,
+     "key": "old_string",
+     "in": "old_string"
+    }
+   ]
+  }
+ ],
+ "criterion": "P1 byte identity: 0 of the 229,414 valid QuoteStorm calls (both key orders; 1,200 adversarial) changed by the proxy's generate() (decode-time IPD, opener rule) or by its post-hoc intent_parse_args repair"
+}

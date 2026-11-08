@@ -1,0 +1,94 @@
+{
+ "transcriptlab": "0.1.3",
+ "created_utc": "2026-11-08T06:32:44Z",
+ "format": "gemma4",
+ "model": "gemma-4-31b",
+ "base": "http://127.0.0.1:8384/v1",
+ "pool": "A1",
+ "n_states": 300,
+ "arms": [
+  "P0",
+  "P1",
+  "P6",
+  "P8a"
+ ],
+ "corpus_manifest": "release/package/pnc_v1.1_masked/contexts/P-swebench-31b-S1-v1/manifest.json",
+ "corpus_manifest_sha256": "6d5031f79aac22bf2536a18de0f84c3234b104b7c9875b74a795e9a3692dc076",
+ "pool_file_sha256": "b2c1bc2bdd561e72a9ebc88659639e3ae36dfc4c42c5e9a803039d43731c10d2",
+ "frozen_files": [
+  {
+   "file": "experiments/contagion/scripts/run_injection.py",
+   "expected": "1aadb39d5fe9013620e296b8ac213b19804f2cf3e4fb3457d99bcf42a707dde0",
+   "actual": "1aadb39d5fe9013620e296b8ac213b19804f2cf3e4fb3457d99bcf42a707dde0",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/contagion/scripts/variants.py",
+   "expected": "b0044a723ac086e0194e2dc45dce74d0cd712327c3eb5798f23d2caf20079850",
+   "actual": "b0044a723ac086e0194e2dc45dce74d0cd712327c3eb5798f23d2caf20079850",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/contagion/scripts/gemma_protocol.py",
+   "expected": "7cb2871b208be148087db21aff878e6f130851efece276257855e810e96f15cf",
+   "actual": "7cb2871b208be148087db21aff878e6f130851efece276257855e810e96f15cf",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/contagion/scripts/analyze_bf16_core.py",
+   "expected": "7d3bf05bfe7a3956c9a4aa25229873a3280318b6405eb0ccd7970b21c9898b7b",
+   "actual": "7d3bf05bfe7a3956c9a4aa25229873a3280318b6405eb0ccd7970b21c9898b7b",
+   "status": "frozen",
+   "ok": true
+  }
+ ],
+ "estimate": {
+  "states": 300,
+  "arms": 4,
+  "generations": 1200,
+  "max_new_tokens_per_generation": 7168,
+  "upper_bound_new_tokens": 8601600,
+  "note": "one generation per (state, arm); a thought longer than 4096 tokens is cut and continued with one extra request (as the registered runs did)",
+  "reference_usage": {
+   "jobs": 1200,
+   "mean_prompt_tokens": 16174,
+   "mean_generated_tokens": 358,
+   "source": "experiments/contagion/out/main/rC31b_v2.jsonl"
+  }
+ },
+ "root": ".",
+ "tokenizer": "models/gemma-4-31b-it-qat-w4a16-ct",
+ "meta": "tmp/wp_pnc/meta_S1_masked.jsonl",
+ "meta_localized": false,
+ "meta_source_sha256": "5f72a4805f857dd55423518eae67b3b0abbb09e903b4d670b61d85bed9989293",
+ "commands": [
+  [
+   "/opt/envs/env_gemma/bin/python",
+   "experiments/contagion/scripts/run_injection.py",
+   "--manifest",
+   "release/package/pnc_v1.1_masked/contexts/P-swebench-31b-S1-v1/manifest.json",
+   "--meta",
+   "tmp/wp_pnc/meta_S1_masked.jsonl",
+   "--plan",
+   "experiments/transcriptlab_cli/run_v211b_masked/plan.jsonl",
+   "--out",
+   "experiments/transcriptlab_cli/run_v211b_masked/gen.jsonl",
+   "--template",
+   "release/package/pnc_v1.1_masked/contexts/P-swebench-31b-S1-v1/chat_template.jinja",
+   "--blind",
+   "--conc",
+   "20",
+   "--base",
+   "http://127.0.0.1:8384/v1",
+   "--model",
+   "gemma-4-31b",
+   "--tok",
+   "models/gemma-4-31b-it-qat-w4a16-ct",
+   "--max_model_len",
+   "32768"
+  ]
+ ]
+}

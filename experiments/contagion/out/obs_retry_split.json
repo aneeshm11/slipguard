@@ -1,0 +1,26 @@
+{
+ "clean_history/same_content_retry": [
+  0.0083,
+  0.0023,
+  0.0299,
+  240
+ ],
+ "clean_history/other_edit": [
+  0.0473,
+  0.0401,
+  0.0557,
+  2857
+ ],
+ "after_exactly_one_malformed_prev/same_content_retry": [
+  0.8322,
+  0.7951,
+  0.8638,
+  453
+ ],
+ "after_exactly_one_malformed_prev/other_edit": [
+  0.4839,
+  0.3977,
+  0.571,
+  124
+ ]
+}

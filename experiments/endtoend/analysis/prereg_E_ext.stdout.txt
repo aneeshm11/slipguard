@@ -1,0 +1,60 @@
+{
+ "analysis_set": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "primary_verdict": "RESOLVE NON-INFERIOR",
+ "primary_resolve": {
+  "n": 113,
+  "mean_diff": 0.0011,
+  "ci95": [
+   -0.0221,
+   0.0243
+  ],
+  "p_boot": 0.96,
+  "non_inferior_at_-3pp": true,
+  "resolved_base_fullp_of": [
+   393,
+   394,
+   904
+  ]
+ },
+ "Y1": {
+  "base_mean": 1.7644,
+  "fullp_mean": 0.3739,
+  "ratio_fullp_over_base": {
+   "ratio": 0.2119,
+   "ci95": [
+    0.1258,
+    0.3464
+   ]
+  },
+  "diff_fullp_minus_base": {
+   "n": 113,
+   "mean_diff": -1.3905,
+   "ci95": [
+    -1.9347,
+    -0.9004
+   ],
+   "p_boot": 0.0
+  },
+  "verdict": "REPLICATES"
+ },
+ "stuck": {
+  "base": [
+   49,
+   904
+  ],
+  "fullp": [
+   3,
+   904
+  ],
+  "mcnemar_p": 0.0
+ }
+}

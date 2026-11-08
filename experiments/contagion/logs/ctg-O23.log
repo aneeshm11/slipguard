@@ -1,0 +1,30 @@
+== O23 start 08:48:44 | renderer 5ca5c62c889a7377 | run_onset f04b320092e60193
+profile S1 | edit tool edit_file | keys file_path old_string new_string
+plan 1200 done 0 todo 1200
+[08:54:17] done 50/1200 rate 0.15/s eta 2.07h
+[08:58:41] done 100/1200 rate 0.17/s eta 1.80h
+== relaunch 08:58:56 with --ctx_conc 10 (operational: prefill-bound, 2 arms per context)
+profile S1 | edit tool edit_file | keys file_path old_string new_string
+plan 1200 done 103 todo 1097
+[09:03:36] done 50/1097 rate 0.19/s eta 1.57h
+[09:08:01] done 100/1097 rate 0.19/s eta 1.48h
+[09:11:46] done 150/1097 rate 0.20/s eta 1.33h
+[09:16:03] done 200/1097 rate 0.20/s eta 1.27h
+[09:20:34] done 250/1097 rate 0.19/s eta 1.21h
+[09:25:05] done 300/1097 rate 0.19/s eta 1.15h
+[09:29:15] done 350/1097 rate 0.19/s eta 1.07h
+[09:33:21] done 400/1097 rate 0.19/s eta 0.99h
+[09:38:01] done 450/1097 rate 0.19/s eta 0.93h
+[09:42:30] done 500/1097 rate 0.19/s eta 0.86h
+[09:47:07] done 550/1097 rate 0.19/s eta 0.80h
+[09:50:57] done 600/1097 rate 0.19/s eta 0.72h
+[09:55:34] done 650/1097 rate 0.19/s eta 0.65h
+[09:59:56] done 700/1097 rate 0.19/s eta 0.58h
+[10:03:57] done 750/1097 rate 0.19/s eta 0.50h
+[10:08:26] done 800/1097 rate 0.19/s eta 0.43h
+[10:12:47] done 850/1097 rate 0.19/s eta 0.36h
+[10:17:17] done 900/1097 rate 0.19/s eta 0.29h
+[10:21:39] done 950/1097 rate 0.19/s eta 0.21h
+[10:25:35] done 1000/1097 rate 0.19/s eta 0.14h
+[10:29:37] done 1050/1097 rate 0.19/s eta 0.07h
+finished 1097 in 94.9 min

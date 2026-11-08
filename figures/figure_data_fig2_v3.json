@@ -1,0 +1,647 @@
+{
+ "figures": {
+  "FIG2_v3": {
+   "script": "paper/protocol/draft/figures/fig2_transcriptlab_v3.py",
+   "written_utc": "2026-11-08T10:22:32Z",
+   "outputs_sha256": {
+    "fig2_transcriptlab_v3.png": "6b3a69db103a5b1b22e31f7e84b89e9fd793475239263d096c0d6bdc324a4249",
+    "fig2_transcriptlab_v3.svg": "f1c136d506d0180111adbbf56936e9bf3012bb6296e520c4df114976e4cbb339",
+    "fig2_transcriptlab_v3.py": "e31102809d9e036ebd8a081ed76a4a75e8ad745e7b6445cfc799c32f04ee2849"
+   },
+   "n_values": 44,
+   "values": [
+    {
+     "label": "31B QAT original history (A1) [rate, lo, hi, n]",
+     "value": [
+      0.0133,
+      0.0032,
+      0.0271,
+      300
+     ],
+     "source": "experiments/contagion/out/confirmatory/v26_audit_analysis.json#rates/QAT/P0",
+     "file_sha256": "a1d635819fe956fec5fee1f740c65275855afad948a625724c179247b4a57870"
+    },
+    {
+     "label": "31B QAT one laundered call + error (A1)",
+     "value": [
+      0.1967,
+      0.1506,
+      0.2441,
+      300
+     ],
+     "source": "experiments/contagion/out/confirmatory/v26_audit_analysis.json#rates/QAT/P1",
+     "file_sha256": "a1d635819fe956fec5fee1f740c65275855afad948a625724c179247b4a57870"
+    },
+    {
+     "label": "31B QAT one laundered call + success (A1)",
+     "value": [
+      0.09,
+      0.0576,
+      0.1254,
+      300
+     ],
+     "source": "experiments/contagion/out/confirmatory/v26_audit_analysis.json#rates/QAT/P6",
+     "file_sha256": "a1d635819fe956fec5fee1f740c65275855afad948a625724c179247b4a57870"
+    },
+    {
+     "label": "C1 base (cross-check)",
+     "value": 0.0133,
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/full/C1/uncond/base",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "C1 arm (cross-check)",
+     "value": 0.1967,
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/full/C1/uncond/arm",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "C2 arm (cross-check)",
+     "value": 0.09,
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/full/C2/uncond/arm",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "31B QAT dose set (A2) + success, k=1",
+     "value": 0.0741,
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/C3/uncond/rates/k=1",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "31B QAT dose set (A2) + success, k=2",
+     "value": 0.1528,
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/C3/uncond/rates/k=2",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "31B QAT dose set (A2) + success, k=4",
+     "value": 0.3935,
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/C3/uncond/rates/k=4",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "dose set states (A2)",
+     "value": 216,
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/C3/uncond/n_contexts",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "dose: delta log-odds k=2 vs k=1 [point, CI]",
+     "value": [
+      0.8128,
+      [
+       0.3502,
+       1.3616
+      ]
+     ],
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/C3/uncond/Delta_2",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "dose: delta log-odds k=4 vs k=1 [point, CI]",
+     "value": [
+      2.0932,
+      [
+       1.6461,
+       2.7275
+      ]
+     ],
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/C3/uncond/Delta_4",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "copy 31B QAT",
+     "value": {
+      "n_contexts": 300,
+      "n_episodes": 231,
+      "arm": 0.1967,
+      "base": 0.0133,
+      "RD": 0.1833,
+      "RD_CI": [
+       0.1361,
+       0.2316
+      ],
+      "p_one_sided_RD_le_0": 0.0
+     },
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/full/C1/uncond",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "imitation 31B QAT",
+     "value": {
+      "n_contexts": 300,
+      "n_episodes": 231,
+      "arm": 0.09,
+      "base": 0.0133,
+      "RD": 0.0767,
+      "RD_CI": [
+       0.0409,
+       0.1149
+      ],
+      "p_one_sided_RD_le_0": 0.0
+     },
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/full/C2/uncond",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "copy 31B bf16 (PREREG_v2.14)",
+     "value": {
+      "RD_P1_minus_P0": 0.0867,
+      "CI": [
+       0.0565,
+       0.1199
+      ],
+      "p": 1.49e-08,
+      "n_states": 300,
+      "discordant": [
+       26,
+       0
+      ]
+     },
+     "source": "experiments/contagion/out/confirmatory/v214_bf16_analysis.json#copying/CLI",
+     "file_sha256": "4361638b8a17e5817f9e54b603650b60e58c45aff4726415ebbc571ce4077109"
+    },
+    {
+     "label": "imitation 31B bf16 (PREREG_v2.14)",
+     "value": {
+      "RD_P6_minus_P0": 0.05,
+      "CI": [
+       0.0273,
+       0.0746
+      ]
+     },
+     "source": "experiments/contagion/out/confirmatory/v214_bf16_analysis.json#induction/CLI",
+     "file_sha256": "4361638b8a17e5817f9e54b603650b60e58c45aff4726415ebbc571ce4077109"
+    },
+    {
+     "label": "copy E4B",
+     "value": {
+      "n_contexts": 300,
+      "n_episodes": 231,
+      "arm": 0.07,
+      "base": 0.0233,
+      "RD": 0.0467,
+      "RD_CI": [
+       0.0137,
+       0.0797
+      ],
+      "p_one_sided_RD_le_0": 0.002
+     },
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_31b_e4b_full.json#E4B/C9/uncond",
+     "file_sha256": "34344a6a6a70169ed2b2c2e724d940aeb544028044b29ad19a86421df8df2e1e"
+    },
+    {
+     "label": "imitation E4B",
+     "value": {
+      "n_contexts": 300,
+      "n_episodes": 231,
+      "arm": 0.0633,
+      "base": 0.0233,
+      "RD": 0.04,
+      "RD_CI": [
+       0.0131,
+       0.0678
+      ],
+      "p_one_sided_RD_le_0": 0.003
+     },
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_31b_e4b_full.json#E4B/C10/RD_P6_P0",
+     "file_sha256": "34344a6a6a70169ed2b2c2e724d940aeb544028044b29ad19a86421df8df2e1e"
+    },
+    {
+     "label": "copy E4B bf16",
+     "value": [
+      0.03,
+      0.0131,
+      0.0509
+     ],
+     "source": "experiments/transcriptlab_cli/run_e4b16/analysis.json#uncond/RD_P1_P0",
+     "file_sha256": "7ed21200a981f6f795ac71c9cbed7625f4aa6bef1e8ebb87a0c892f4aaac4e30"
+    },
+    {
+     "label": "imitation E4B bf16",
+     "value": [
+      0.0467,
+      0.0261,
+      0.0717
+     ],
+     "source": "experiments/transcriptlab_cli/run_e4b16/analysis.json#uncond/RD_P6_P0",
+     "file_sha256": "7ed21200a981f6f795ac71c9cbed7625f4aa6bef1e8ebb87a0c892f4aaac4e30"
+    },
+    {
+     "label": "copy E2B",
+     "value": [
+      0.0467,
+      0.0172,
+      0.0772
+     ],
+     "source": "experiments/transcriptlab_cli/run_e2b/analysis.json#uncond/RD_P1_P0",
+     "file_sha256": "b5bddc3e0f9941a22f30d8afbd7f4aaf8dd29fe353db7176588c6d2dece0b2a3"
+    },
+    {
+     "label": "imitation E2B",
+     "value": [
+      0.1033,
+      0.0662,
+      0.1443
+     ],
+     "source": "experiments/transcriptlab_cli/run_e2b/analysis.json#uncond/RD_P6_P0",
+     "file_sha256": "b5bddc3e0f9941a22f30d8afbd7f4aaf8dd29fe353db7176588c6d2dece0b2a3"
+    },
+    {
+     "label": "copy 12B",
+     "value": {
+      "n_contexts": 300,
+      "n_episodes": 231,
+      "arm": 0.0167,
+      "base": 0.0133,
+      "RD": 0.0033,
+      "RD_CI": [
+       -0.0168,
+       0.0232
+      ],
+      "p_one_sided_RD_le_0": 0.4395
+     },
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#12B/C8/uncond",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "imitation 12B",
+     "value": {
+      "n_contexts": 300,
+      "n_episodes": 231,
+      "arm": 0.0333,
+      "base": 0.0133,
+      "RD": 0.02,
+      "RD_CI": [
+       0.0,
+       0.0438
+      ],
+      "p_one_sided_RD_le_0": 0.0445
+     },
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#12B/C10/RD_P6_P0",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "copy qwen3-8b",
+     "value": {
+      "label": "FAILS",
+      "RD_pp": 1.67,
+      "CI_pp": [
+       0.0,
+       3.72
+      ],
+      "theta_D_pp": 10.0,
+      "arm": 0.0233,
+      "base": 0.0067,
+      "p_one_sided": 0.05719,
+      "holm_adjusted_p": 0.34314
+     },
+     "source": "experiments/crossfamily/out/v2/results_v2.json#models/qwen3-8b/X1",
+     "file_sha256": "b24662eca9327c68ccf5a7c20f31deff79a872ba0a1e852088d6419e544bbc6e"
+    },
+    {
+     "label": "imitation qwen3-8b",
+     "value": {
+      "label": "GENERALIZES",
+      "RD_pp": 4.67,
+      "CI_pp": [
+       1.99,
+       7.67
+      ],
+      "theta_D_pp": 5.0,
+      "arm": 0.0533,
+      "base": 0.0067,
+      "p_one_sided": 0.0002
+     },
+     "source": "experiments/crossfamily/out/v2/results_v2.json#models/qwen3-8b/X4",
+     "file_sha256": "b24662eca9327c68ccf5a7c20f31deff79a872ba0a1e852088d6419e544bbc6e"
+    },
+    {
+     "label": "copy qwen3-32b",
+     "value": {
+      "label": "FAILS",
+      "RD_pp": -1.67,
+      "CI_pp": [
+       -4.52,
+       0.98
+      ],
+      "theta_D_pp": 12.0,
+      "arm": 0.0167,
+      "base": 0.0333,
+      "p_one_sided": 0.91291,
+      "holm_adjusted_p": 1.0
+     },
+     "source": "experiments/crossfamily/out/v2/results_v2.json#models/qwen3-32b/X1",
+     "file_sha256": "b24662eca9327c68ccf5a7c20f31deff79a872ba0a1e852088d6419e544bbc6e"
+    },
+    {
+     "label": "imitation qwen3-32b",
+     "value": {
+      "label": "FAILS",
+      "RD_pp": 1.0,
+      "CI_pp": [
+       -1.68,
+       3.67
+      ],
+      "theta_D_pp": 5.0,
+      "arm": 0.0433,
+      "base": 0.0333,
+      "p_one_sided": 0.27017
+     },
+     "source": "experiments/crossfamily/out/v2/results_v2.json#models/qwen3-32b/X4",
+     "file_sha256": "b24662eca9327c68ccf5a7c20f31deff79a872ba0a1e852088d6419e544bbc6e"
+    },
+    {
+     "label": "copy qwen3.5-9b",
+     "value": {
+      "label": "FAILS",
+      "RD_pp": 0.0,
+      "CI_pp": [
+       0.0,
+       0.0
+      ],
+      "theta_D_pp": 10.0,
+      "arm": 0.0,
+      "base": 0.0,
+      "p_one_sided": 1.0,
+      "holm_adjusted_p": 1.0
+     },
+     "source": "experiments/crossfamily/out/v2/results_v2.json#models/qwen3.5-9b/X1",
+     "file_sha256": "b24662eca9327c68ccf5a7c20f31deff79a872ba0a1e852088d6419e544bbc6e"
+    },
+    {
+     "label": "imitation qwen3.5-9b",
+     "value": {
+      "label": "FAILS",
+      "RD_pp": 0.67,
+      "CI_pp": [
+       0.0,
+       1.68
+      ],
+      "theta_D_pp": 5.0,
+      "arm": 0.0067,
+      "base": 0.0,
+      "p_one_sided": 0.13569
+     },
+     "source": "experiments/crossfamily/out/v2/results_v2.json#models/qwen3.5-9b/X4",
+     "file_sha256": "b24662eca9327c68ccf5a7c20f31deff79a872ba0a1e852088d6419e544bbc6e"
+    },
+    {
+     "label": "states gpt-oss-20b",
+     "value": 300,
+     "source": "experiments/crossfamily/out/ext/results_ext.json#models/gpt-oss-20b/n_contexts",
+     "file_sha256": "badbfaf73c80ca25426391d10a78c497eab9c8c3ff70dcc6eca90645d28ff051"
+    },
+    {
+     "label": "copy gpt-oss-20b",
+     "value": {
+      "arm": 0.03,
+      "base": 0.0333,
+      "RD": -0.0033,
+      "RD_CI": [
+       -0.0303,
+       0.0238
+      ],
+      "p_one_sided_RD_gt_0": 0.64514,
+      "p_one_sided_RD_lt_0": 0.45015,
+      "ratio": 0.9,
+      "ratio_CI": [
+       0.3333,
+       2.4
+      ],
+      "ratio_haldane": 0.905,
+      "mcnemar_exact_p_one_sided": 0.685471
+     },
+     "source": "experiments/crossfamily/out/ext/results_ext.json#models/gpt-oss-20b/P1L_vs_P0",
+     "file_sha256": "badbfaf73c80ca25426391d10a78c497eab9c8c3ff70dcc6eca90645d28ff051"
+    },
+    {
+     "label": "imitation gpt-oss-20b",
+     "value": {
+      "arm": 0.0367,
+      "base": 0.0333,
+      "RD": 0.0033,
+      "RD_CI": [
+       -0.0258,
+       0.0318
+      ],
+      "p_one_sided_RD_gt_0": 0.45505,
+      "p_one_sided_RD_lt_0": 0.62994,
+      "ratio": 1.1,
+      "ratio_CI": [
+       0.4545,
+       2.8
+      ],
+      "ratio_haldane": 1.095,
+      "mcnemar_exact_p_one_sided": 0.5
+     },
+     "source": "experiments/crossfamily/out/ext/results_ext.json#models/gpt-oss-20b/secondary/P6",
+     "file_sha256": "badbfaf73c80ca25426391d10a78c497eab9c8c3ff70dcc6eca90645d28ff051"
+    },
+    {
+     "label": "states qwen3-coder-30b",
+     "value": 300,
+     "source": "experiments/crossfamily/out/ext/results_ext.json#models/qwen3-coder-30b/n_contexts",
+     "file_sha256": "badbfaf73c80ca25426391d10a78c497eab9c8c3ff70dcc6eca90645d28ff051"
+    },
+    {
+     "label": "copy qwen3-coder-30b",
+     "value": {
+      "arm": 0.0067,
+      "base": 0.0033,
+      "RD": 0.0033,
+      "RD_CI": [
+       -0.0068,
+       0.0163
+      ],
+      "p_one_sided_RD_gt_0": 0.39486,
+      "p_one_sided_RD_lt_0": 0.81812,
+      "ratio": 2.0,
+      "ratio_CI": [
+       0.0,
+       "inf"
+      ],
+      "ratio_haldane": 1.667,
+      "mcnemar_exact_p_one_sided": 0.5
+     },
+     "source": "experiments/crossfamily/out/ext/results_ext.json#models/qwen3-coder-30b/P1L_vs_P0",
+     "file_sha256": "badbfaf73c80ca25426391d10a78c497eab9c8c3ff70dcc6eca90645d28ff051"
+    },
+    {
+     "label": "imitation qwen3-coder-30b",
+     "value": {
+      "arm": 0.0067,
+      "base": 0.0033,
+      "RD": 0.0033,
+      "RD_CI": [
+       -0.0068,
+       0.0142
+      ],
+      "p_one_sided_RD_gt_0": 0.38616,
+      "p_one_sided_RD_lt_0": 0.81982,
+      "ratio": 2.0,
+      "ratio_CI": [
+       0.0,
+       "inf"
+      ],
+      "ratio_haldane": 1.667,
+      "mcnemar_exact_p_one_sided": 0.5
+     },
+     "source": "experiments/crossfamily/out/ext/results_ext.json#models/qwen3-coder-30b/secondary/P6",
+     "file_sha256": "badbfaf73c80ca25426391d10a78c497eab9c8c3ff70dcc6eca90645d28ff051"
+    },
+    {
+     "label": "states devstral-24b",
+     "value": 298,
+     "source": "experiments/crossfamily/out/ext/results_ext.json#models/devstral-24b/n_contexts",
+     "file_sha256": "badbfaf73c80ca25426391d10a78c497eab9c8c3ff70dcc6eca90645d28ff051"
+    },
+    {
+     "label": "copy devstral-24b",
+     "value": {
+      "arm": 0.0034,
+      "base": 0.0034,
+      "RD": 0.0,
+      "RD_CI": [
+       -0.0101,
+       0.0101
+      ],
+      "p_one_sided_RD_gt_0": 0.64844,
+      "p_one_sided_RD_lt_0": 0.65143,
+      "ratio": 1.0,
+      "ratio_CI": [
+       0.0,
+       "inf"
+      ],
+      "ratio_haldane": 1.0,
+      "mcnemar_exact_p_one_sided": 0.75
+     },
+     "source": "experiments/crossfamily/out/ext/results_ext.json#models/devstral-24b/P1L_vs_P0",
+     "file_sha256": "badbfaf73c80ca25426391d10a78c497eab9c8c3ff70dcc6eca90645d28ff051"
+    },
+    {
+     "label": "imitation devstral-24b",
+     "value": {
+      "arm": 0.0738,
+      "base": 0.0034,
+      "RD": 0.0705,
+      "RD_CI": [
+       0.0417,
+       0.1022
+      ],
+      "p_one_sided_RD_gt_0": 0.0001,
+      "p_one_sided_RD_lt_0": 1.0,
+      "ratio": 22.0,
+      "ratio_CI": [
+       5.75,
+       "inf"
+      ],
+      "ratio_haldane": 15.0,
+      "mcnemar_exact_p_one_sided": 3e-06
+     },
+     "source": "experiments/crossfamily/out/ext/results_ext.json#models/devstral-24b/secondary/P6",
+     "file_sha256": "badbfaf73c80ca25426391d10a78c497eab9c8c3ff70dcc6eca90645d28ff051"
+    },
+    {
+     "label": "states qwen3.8-27b",
+     "value": 300,
+     "source": "experiments/crossfamily/out/ext/results_ext.json#models/qwen3.8-27b/n_contexts",
+     "file_sha256": "badbfaf73c80ca25426391d10a78c497eab9c8c3ff70dcc6eca90645d28ff051"
+    },
+    {
+     "label": "copy qwen3.8-27b",
+     "value": {
+      "arm": 0.01,
+      "base": 0.0,
+      "RD": 0.01,
+      "RD_CI": [
+       0.0,
+       0.023
+      ],
+      "p_one_sided_RD_gt_0": 0.0479,
+      "p_one_sided_RD_lt_0": 1.0,
+      "ratio": "inf",
+      "ratio_CI": [
+       "inf",
+       "inf"
+      ],
+      "ratio_haldane": 7.0,
+      "mcnemar_exact_p_one_sided": 0.125
+     },
+     "source": "experiments/crossfamily/out/ext/results_ext.json#models/qwen3.8-27b/P1L_vs_P0",
+     "file_sha256": "badbfaf73c80ca25426391d10a78c497eab9c8c3ff70dcc6eca90645d28ff051"
+    },
+    {
+     "label": "imitation qwen3.8-27b",
+     "value": {
+      "arm": 0.0467,
+      "base": 0.0,
+      "RD": 0.0467,
+      "RD_CI": [
+       0.0241,
+       0.0717
+      ],
+      "p_one_sided_RD_gt_0": 0.0001,
+      "p_one_sided_RD_lt_0": 1.0,
+      "ratio": "inf",
+      "ratio_CI": [
+       "inf",
+       "inf"
+      ],
+      "ratio_haldane": 29.0,
+      "mcnemar_exact_p_one_sided": 6.1e-05
+     },
+     "source": "experiments/crossfamily/out/ext/results_ext.json#models/qwen3.8-27b/secondary/P6",
+     "file_sha256": "badbfaf73c80ca25426391d10a78c497eab9c8c3ff70dcc6eca90645d28ff051"
+    },
+    {
+     "label": "copy hermes3-8b",
+     "value": {
+      "arm": 0.0933,
+      "base": 0.0333,
+      "RD": 0.06,
+      "RD_CI": [
+       0.0259,
+       0.096
+      ],
+      "p_one_sided_RD_gt_0": 0.0005,
+      "p_one_sided_RD_lt_0": 0.9997,
+      "ratio": 2.8,
+      "ratio_CI": [
+       1.5556,
+       6.25
+      ],
+      "ratio_haldane": 2.714,
+      "mcnemar_exact_p_one_sided": 0.001051
+     },
+     "source": "experiments/transcriptlab_cli/run_v212_hermes3/analysis.json#paired_vs_P0/P1L/uncond",
+     "file_sha256": "96c440f7f19db53e4fc7cd6cca2d06b5b9f5ab9328eb4452fca4559d93f75e59"
+    },
+    {
+     "label": "imitation hermes3-8b",
+     "value": {
+      "arm": 0.0867,
+      "base": 0.0333,
+      "RD": 0.0533,
+      "RD_CI": [
+       0.0227,
+       0.087
+      ],
+      "p_one_sided_RD_gt_0": 0.0003,
+      "p_one_sided_RD_lt_0": 1.0,
+      "ratio": 2.6,
+      "ratio_CI": [
+       1.5,
+       5.75
+      ],
+      "ratio_haldane": 2.524,
+      "mcnemar_exact_p_one_sided": 0.000772
+     },
+     "source": "experiments/transcriptlab_cli/run_v212_hermes3/analysis.json#paired_vs_P0/P6/uncond",
+     "file_sha256": "96c440f7f19db53e4fc7cd6cca2d06b5b9f5ab9328eb4452fca4559d93f75e59"
+    }
+   ]
+  }
+ },
+ "note": "Every plotted number with its source (`path#key`, relative to the project root, plus the file's sha256 at drawing time). Entries with `derived` are arithmetic on the listed inputs."
+}

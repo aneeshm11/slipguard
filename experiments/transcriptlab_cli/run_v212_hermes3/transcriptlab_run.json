@@ -1,0 +1,209 @@
+{
+ "transcriptlab": "0.1.3",
+ "created_utc": "2026-11-08T05:34:06Z",
+ "format": "hermes",
+ "model": "hermes3-8b",
+ "base": "http://127.0.0.1:8384/v1",
+ "pool": "A1",
+ "n_states": 300,
+ "arms": [
+  "P0",
+  "P1",
+  "P6",
+  "P8a"
+ ],
+ "corpus_manifest": "data/pnc/contexts/P-swebench-31b-S1-v1/manifest.json",
+ "corpus_manifest_sha256": "4cbee85d209c0d2488d2764852637d70d014a07f1de786cf3c6dd8864fd34a75",
+ "pool_file_sha256": "b2c1bc2bdd561e72a9ebc88659639e3ae36dfc4c42c5e9a803039d43731c10d2",
+ "frozen_files": [
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/analyze.py",
+   "expected": "41a50c1d848fed37281edff9ab4d820724fac7b5ef170ea791bf8e4afe85f8e8",
+   "actual": "41a50c1d848fed37281edff9ab4d820724fac7b5ef170ea791bf8e4afe85f8e8",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/arms.py",
+   "expected": "0ba18acc06d1b1e907159bb9df54fd2112f41084459c94e56b95f3f978ff3f7c",
+   "actual": "0ba18acc06d1b1e907159bb9df54fd2112f41084459c94e56b95f3f978ff3f7c",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/arms_v2.py",
+   "expected": "af3bb93a3aa808ac9d113acd9988efbcf1b3ec5848598a24b1d497ab80175f51",
+   "actual": "af3bb93a3aa808ac9d113acd9988efbcf1b3ec5848598a24b1d497ab80175f51",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/combine_ext.py",
+   "expected": "2bcd40904709a3436b27b9df2f79c0c0607f0ebd016f74a5aed39db2613eeab9",
+   "actual": "2bcd40904709a3436b27b9df2f79c0c0607f0ebd016f74a5aed39db2613eeab9",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/ext_prepare.py",
+   "expected": "2365a17a52d0f149bb11a821c4a6d198b492cc5203b4c3f19cfa0c76e1a28f84",
+   "actual": "2365a17a52d0f149bb11a821c4a6d198b492cc5203b4c3f19cfa0c76e1a28f84",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/fmt_ext.py",
+   "expected": "0bef7eecbb1f097c4000db4f2e819079816f0ddec95fa30b2c43f63bd067a0b5",
+   "actual": "0bef7eecbb1f097c4000db4f2e819079816f0ddec95fa30b2c43f63bd067a0b5",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/format_cpu.py",
+   "expected": "976dd5781f74c5e7fe4bf848e471b3efa5ed6c7b8e6b4d11543e0558cd5b3fb3",
+   "actual": "976dd5781f74c5e7fe4bf848e471b3efa5ed6c7b8e6b4d11543e0558cd5b3fb3",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/format_ext_cpu.py",
+   "expected": "178611abc3c9eeec5ec5e5536f56167f5befcdca3eabbd9fe19de49b2aa96e1b",
+   "actual": "178611abc3c9eeec5ec5e5536f56167f5befcdca3eabbd9fe19de49b2aa96e1b",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/prep_prompts_ext.py",
+   "expected": "77d071ff402538e5eab60f3f6bae87bdd9a246ab07527bba90d4eaf999745fbf",
+   "actual": "77d071ff402538e5eab60f3f6bae87bdd9a246ab07527bba90d4eaf999745fbf",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/protocol_failure.py",
+   "expected": "682e555270022b50dba612eb7113acd133446b2f9aef2f809e2ee937c5646c56",
+   "actual": "682e555270022b50dba612eb7113acd133446b2f9aef2f809e2ee937c5646c56",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/qwenproto.py",
+   "expected": "2f9ea1bba75c92bb5adc61c166fe78477cd41b58d5d156db860205c8af08c6a8",
+   "actual": "2f9ea1bba75c92bb5adc61c166fe78477cd41b58d5d156db860205c8af08c6a8",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/run_ext.py",
+   "expected": "8aa676ff0be4312f1bdc9b9a3bdac238f899f6675e1877d77975f2b187a18d27",
+   "actual": "8aa676ff0be4312f1bdc9b9a3bdac238f899f6675e1877d77975f2b187a18d27",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/smoke_ext.py",
+   "expected": "578f81031fd73e8e17b79417d7cf8cb95abfb3edb8d984e1201ffe061bd9862e",
+   "actual": "578f81031fd73e8e17b79417d7cf8cb95abfb3edb8d984e1201ffe061bd9862e",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/frozen/a_variants.py",
+   "expected": "ec174797e9ab5592d3eae50b3a622a4533fd2473db70effb4d7cd881043e4474",
+   "actual": "ec174797e9ab5592d3eae50b3a622a4533fd2473db70effb4d7cd881043e4474",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/frozen/e_quarantine_renderer.py",
+   "expected": "13e285673b70aa9a344cc2123fd26387877ee19a53e8ef9006f8f5580fa2466f",
+   "actual": "13e285673b70aa9a344cc2123fd26387877ee19a53e8ef9006f8f5580fa2466f",
+   "status": "frozen",
+   "ok": true
+  },
+  {
+   "file": "experiments/crossfamily/scripts/ext_frozen/frozen/gemma_protocol.py",
+   "expected": "e10becb233b3c384c920f7eb5adf660219bbee928d09dfd3f87e68655039314e",
+   "actual": "e10becb233b3c384c920f7eb5adf660219bbee928d09dfd3f87e68655039314e",
+   "status": "frozen",
+   "ok": true
+  }
+ ],
+ "estimate": {
+  "states": 300,
+  "arms": 4,
+  "generations": 1200,
+  "max_new_tokens_per_generation": 7168,
+  "upper_bound_new_tokens": 8601600,
+  "note": "one generation per (state, arm); a thought longer than 4096 tokens is cut and continued with one extra request (as the registered runs did)",
+  "reference_usage": {
+   "jobs": 1200,
+   "mean_prompt_tokens": 16174,
+   "mean_generated_tokens": 358,
+   "source": "experiments/contagion/out/main/rC31b_v2.jsonl"
+  }
+ },
+ "root": ".",
+ "mk": "hermes3-8b",
+ "registration": {
+  "mk": "hermes3-8b",
+  "entry": {
+   "dir": "models/community/NousResearch_Hermes-3-Llama-3.1-8B",
+   "fmt": "hermes",
+   "model_type": "qwen3",
+   "thinking": false
+  }
+ },
+ "x_arms": [
+  "P0",
+  "P1L",
+  "P6",
+  "P8a"
+ ],
+ "commands": [
+  [
+   "/opt/envs/env_gemma/bin/python",
+   "-c",
+   "<transcriptlab bootstrap: registers the model key, then runs the frozen script unchanged>",
+   "experiments/crossfamily/scripts/ext_frozen",
+   "experiments/crossfamily/scripts/ext_frozen/prep_prompts_ext.py",
+   "{\"mk\": \"hermes3-8b\", \"entry\": {\"dir\": \"models/community/NousResearch_Hermes-3-Llama-3.1-8B\", \"fmt\": \"hermes\", \"model_type\": \"qwen3\", \"thinking\": false}}",
+   "--manifest",
+   "data/pnc/contexts/P-swebench-31b-S1-v1/manifest.json",
+   "--mk",
+   "hermes3-8b",
+   "--out",
+   "experiments/transcriptlab_cli/run_v212_hermes3/prompts.jsonl",
+   "--ids",
+   "experiments/transcriptlab_cli/run_v212_hermes3/ids.txt",
+   "--arms",
+   "P0,P1L,P6,P8a",
+   "--set",
+   "battery",
+   "--workers",
+   "8"
+  ],
+  [
+   "/opt/envs/env_gemma/bin/python",
+   "-c",
+   "<transcriptlab bootstrap: registers the model key, then runs the frozen script unchanged>",
+   "experiments/crossfamily/scripts/ext_frozen",
+   "experiments/crossfamily/scripts/ext_frozen/run_ext.py",
+   "{\"mk\": \"hermes3-8b\", \"entry\": {\"dir\": \"models/community/NousResearch_Hermes-3-Llama-3.1-8B\", \"fmt\": \"hermes\", \"model_type\": \"qwen3\", \"thinking\": false}}",
+   "--prompts",
+   "experiments/transcriptlab_cli/run_v212_hermes3/prompts.jsonl",
+   "--out",
+   "experiments/transcriptlab_cli/run_v212_hermes3/gen.jsonl",
+   "--mk",
+   "hermes3-8b",
+   "--base",
+   "http://127.0.0.1:8384/v1",
+   "--served",
+   "hermes3-8b",
+   "--sets",
+   "battery",
+   "--conc",
+   "20"
+  ]
+ ]
+}

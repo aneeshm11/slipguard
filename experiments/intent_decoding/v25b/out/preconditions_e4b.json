@@ -1,0 +1,52 @@
+{
+ "counts": {
+  "P0|budget_forced": 0,
+  "P0|error": 0,
+  "P0|finish_stop": 300,
+  "P0|len_eq_n_prompt": 300,
+  "P0|n": 300,
+  "P0|stop49": 300,
+  "P1|budget_forced": 1,
+  "P1|error": 0,
+  "P1|finish_stop": 300,
+  "P1|len_eq_n_prompt": 300,
+  "P1|n": 300,
+  "P1|stop49": 300,
+  "P8a|budget_forced": 0,
+  "P8a|error": 0,
+  "P8a|finish_stop": 300,
+  "P8a|len_eq_n_prompt": 300,
+  "P8a|n": 300,
+  "P8a|stop49": 300
+ },
+ "mismatches": [],
+ "run_metadata": [
+  [
+   "P0",
+   "http://127.0.0.1:8311/v1",
+   "gemma-4-e4b",
+   1.0,
+   0.95,
+   "data/pnc/contexts/P-swebench-31b-S1-v1/chat_template.jinja",
+   300
+  ],
+  [
+   "P1",
+   "http://127.0.0.1:8311/v1",
+   "gemma-4-e4b",
+   1.0,
+   0.95,
+   "data/pnc/contexts/P-swebench-31b-S1-v1/chat_template.jinja",
+   300
+  ],
+  [
+   "P8a",
+   "http://127.0.0.1:8311/v1",
+   "gemma-4-e4b",
+   1.0,
+   0.95,
+   "data/pnc/contexts/P-swebench-31b-S1-v1/chat_template.jinja",
+   300
+  ]
+ ]
+}

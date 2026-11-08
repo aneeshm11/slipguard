@@ -1,0 +1,158 @@
+{
+ "_status": "PREREG_v2.7 \u00a75 (frozen soak analysis)",
+ "K1": {
+  "n_requests": 952,
+  "submitted": 952,
+  "minutes": 60.0,
+  "conc": 48,
+  "proxy_records_matched": 485,
+  "direct": {
+   "route": "direct stock",
+   "n": 467,
+   "ok": 462,
+   "ctx400": 0,
+   "errors": 0,
+   "transport": 0,
+   "hangs_timeout": 5,
+   "error_rate_excl_ctx400": 0.01071,
+   "ttlb_median_s": 149.99581384658813,
+   "ttlb_p99_s": 689.9166334533688,
+   "n_calls": 451,
+   "calls_protocol_corrupt": 1,
+   "calls_leak_or_nonjson": 1,
+   "call_categories": {
+    "missing": 1,
+    "leak": 1
+   },
+   "error_examples": []
+  },
+  "proxy": {
+   "route": "proxy fullp",
+   "n": 485,
+   "ok": 477,
+   "ctx400": 0,
+   "errors": 0,
+   "transport": 0,
+   "hangs_timeout": 8,
+   "error_rate_excl_ctx400": 0.01649,
+   "ttlb_median_s": 144.31374406814575,
+   "ttlb_p99_s": 529.7553694152833,
+   "n_calls": 473,
+   "calls_protocol_corrupt": 0,
+   "calls_leak_or_nonjson": 0,
+   "call_categories": {
+    "missing": 3,
+    "unknown_key": 2
+   },
+   "error_examples": []
+  },
+  "proxy_repaired_n": 1,
+  "proxy_not_repaired": {
+   "route": "proxy fullp, not repaired",
+   "n": 484,
+   "ok": 476,
+   "ctx400": 0,
+   "errors": 0,
+   "transport": 0,
+   "hangs_timeout": 8,
+   "error_rate_excl_ctx400": 0.01653,
+   "ttlb_median_s": 144.27949261665344,
+   "ttlb_p99_s": 529.8794567584991,
+   "n_calls": 472,
+   "calls_protocol_corrupt": 0,
+   "calls_leak_or_nonjson": 0,
+   "call_categories": {
+    "missing": 3,
+    "unknown_key": 2
+   },
+   "error_examples": []
+  },
+  "proxy_repaired": {
+   "route": "proxy fullp, repaired",
+   "n": 1,
+   "ok": 1,
+   "ctx400": 0,
+   "errors": 0,
+   "transport": 0,
+   "hangs_timeout": 0,
+   "error_rate_excl_ctx400": 0.0,
+   "ttlb_median_s": 231.6386125087738,
+   "ttlb_p99_s": 231.6386125087738,
+   "n_calls": 1,
+   "calls_protocol_corrupt": 0,
+   "calls_leak_or_nonjson": 0,
+   "call_categories": {},
+   "error_examples": []
+  },
+  "latency_ratio_median": 0.9619,
+  "latency_ratio_p99": 0.768,
+  "rss_growth_mb": {
+   "proxy": 21.8,
+   "stock_server": 5.7
+  },
+  "availability": {
+   "samples": 377,
+   "bad_samples": 0,
+   "first_bad": null
+  }
+ },
+ "K2": {
+  "n_requests": 962,
+  "submitted": 962,
+  "minutes": 60.0,
+  "conc": 48,
+  "plugin": {
+   "route": "plugin server",
+   "n": 962,
+   "ok": 944,
+   "ctx400": 1,
+   "errors": 0,
+   "transport": 1,
+   "hangs_timeout": 16,
+   "error_rate_excl_ctx400": 0.01769,
+   "ttlb_median_s": 146.30636954307556,
+   "ttlb_p99_s": 555.989708850383,
+   "n_calls": 918,
+   "calls_protocol_corrupt": 0,
+   "calls_leak_or_nonjson": 0,
+   "call_categories": {
+    "missing": 3,
+    "unknown_key": 2
+   },
+   "error_examples": [
+    "ReadError: "
+   ]
+  },
+  "rss_growth_mb": {
+   "plugin_server": 2.4
+  },
+  "availability": {
+   "samples": 375,
+   "bad_samples": 0,
+   "first_bad": null
+  }
+ },
+ "criteria": {
+  "K-a": false,
+  "K-b": false,
+  "K-c": true,
+  "K-d": "True",
+  "K-e": true
+ },
+ "verdict": "FAIL: K-a, K-b",
+ "reported_not_gated": {
+  "direct_stock_hangs": 5,
+  "direct_stock_protocol_corrupt_calls": [
+   1,
+   451
+  ],
+  "proxy_key_slip_passthrough": [
+   0,
+   473
+  ],
+  "plugin_vs_K1_direct_median_ttlb": [
+   146.30636954307556,
+   149.99581384658813
+  ]
+ }
+}

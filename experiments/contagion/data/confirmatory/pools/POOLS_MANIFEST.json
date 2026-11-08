@@ -1,0 +1,248 @@
+{
+ "rule": "PREREG_v2 \u00a72",
+ "script_version": "v1.1 (status from history_tool_status; masked injection targets excluded)",
+ "prereg_v2_sha256": "5da75e6170243f838fe0fe1dcb4250a21b8132fc97161e22d149f46fae0d73ac",
+ "script_sha256": "60025bef6c822f8a46fee75d6f912acdf4f2625960e5a5a5771215c2949de3ac",
+ "applied_utc": "2026-11-05 07:02:24",
+ "turn_index_mapping": "turn_index := request_index (CONTEXT_SCHEMA.md) unless the context carries turn_index",
+ "S1": {
+  "stratum": "S1",
+  "corpus_manifest": "data/pnc/contexts/P-swebench-31b-S1-v1/manifest.json",
+  "corpus_manifest_sha256": "4cbee85d209c0d2488d2764852637d70d014a07f1de786cf3c6dd8864fd34a75",
+  "contexts_file_sha256": "f5e437bf5891a8168d78dd7fb86dace8accba086823c132ae7bf219270cd15ca",
+  "masked_tool_output": "[This earlier tool output was removed to keep the conversation within the context limit.]",
+  "counts": {
+   "contexts": 3941,
+   "prior_edits_status_missing": 0,
+   "prior_edits_masked": 1747,
+   "history_not_clean": 827,
+   "excluded_prompt_length_or_missing": 4
+  },
+  "eligible_before_rule2": {
+   "A1": 1850,
+   "A1k2": 1141,
+   "A2": 417
+  },
+  "rule2_excluded_masked_target": {
+   "A1k2": 71,
+   "A2": 66,
+   "A1": 42
+  },
+  "eligible": {
+   "A1": 1808,
+   "A2": 351,
+   "B1": 896,
+   "A1k2": 1070
+  },
+  "pools": {
+   "A1": {
+    "accepted": 300,
+    "target": 300,
+    "eligible": 1808,
+    "skipped": {
+     "episode_cap": 38,
+     "repo_cap": 39
+    },
+    "repos": {
+     "django/django": 120,
+     "sympy/sympy": 50,
+     "scikit-learn/scikit-learn": 46,
+     "sphinx-doc/sphinx": 29,
+     "pydata/xarray": 21,
+     "pytest-dev/pytest": 18,
+     "astropy/astropy": 8,
+     "mwaskom/seaborn": 4,
+     "psf/requests": 4
+    },
+    "episodes": 231,
+    "shortfall": false,
+    "splits": {
+     "swebench_test_ext": 201,
+     "verified": 99
+    }
+   },
+   "A2": {
+    "accepted": 216,
+    "target": 300,
+    "eligible": 351,
+    "skipped": {
+     "episode_cap": 135
+    },
+    "repos": {
+     "django/django": 98,
+     "sympy/sympy": 31,
+     "scikit-learn/scikit-learn": 28,
+     "sphinx-doc/sphinx": 20,
+     "pytest-dev/pytest": 13,
+     "pydata/xarray": 13,
+     "astropy/astropy": 8,
+     "mwaskom/seaborn": 3,
+     "psf/requests": 2
+    },
+    "episodes": 143,
+    "shortfall": true,
+    "splits": {
+     "swebench_test_ext": 158,
+     "verified": 58
+    }
+   },
+   "B1": {
+    "accepted": 600,
+    "target": 600,
+    "eligible": 896,
+    "skipped": {
+     "repo_cap": 31
+    },
+    "repos": {
+     "django/django": 240,
+     "sympy/sympy": 103,
+     "scikit-learn/scikit-learn": 72,
+     "sphinx-doc/sphinx": 53,
+     "pytest-dev/pytest": 44,
+     "pydata/xarray": 39,
+     "astropy/astropy": 26,
+     "psf/requests": 14,
+     "mwaskom/seaborn": 6,
+     "pallets/flask": 3
+    },
+    "episodes": 600,
+    "shortfall": false,
+    "splits": {
+     "verified": 236,
+     "swebench_test_ext": 364
+    }
+   }
+  },
+  "verified_only": {
+   "A1": 99,
+   "A2": 58,
+   "B1": 236
+  }
+ },
+ "S2": {
+  "stratum": "S2",
+  "corpus_manifest": "data/pnc/contexts/P-swebench-31b-S2-v1/manifest.json",
+  "corpus_manifest_sha256": "2dd209b5a388aa5d0c7afcf3e71e63446e94bc82766b7fd1d2aa5ed35521ceba",
+  "contexts_file_sha256": "cb9d18745bf65189589b1a0577a7a30f85e542aed545a4c167e340802c916514",
+  "masked_tool_output": "[This earlier tool output was removed to keep the conversation within the context limit.]",
+  "counts": {
+   "contexts": 289,
+   "prior_edits_status_missing": 0,
+   "prior_edits_masked": 94,
+   "history_not_clean": 47
+  },
+  "eligible_before_rule2": {
+   "A1": 140,
+   "A1k2": 92,
+   "A2": 44
+  },
+  "rule2_excluded_masked_target": {
+   "A1": 2,
+   "A1k2": 8,
+   "A2": 8
+  },
+  "eligible": {
+   "A1": 138,
+   "A2": 36,
+   "B1": 82,
+   "A1k2": 84
+  },
+  "pools": {
+   "A1": {
+    "accepted": 69,
+    "target": 300,
+    "eligible": 138,
+    "skipped": {
+     "episode_cap": 69
+    },
+    "repos": {
+     "django/django": 33,
+     "sympy/sympy": 10,
+     "sphinx-doc/sphinx": 10,
+     "scikit-learn/scikit-learn": 7,
+     "pydata/xarray": 2,
+     "astropy/astropy": 2,
+     "psf/requests": 2,
+     "pytest-dev/pytest": 2,
+     "pallets/flask": 1
+    },
+    "episodes": 41,
+    "shortfall": true,
+    "splits": {
+     "verified": 69
+    }
+   },
+   "A2": {
+    "accepted": 15,
+    "target": 300,
+    "eligible": 36,
+    "skipped": {
+     "episode_cap": 21
+    },
+    "repos": {
+     "django/django": 9,
+     "astropy/astropy": 2,
+     "sympy/sympy": 2,
+     "pydata/xarray": 1,
+     "sphinx-doc/sphinx": 1
+    },
+    "episodes": 9,
+    "shortfall": true,
+    "splits": {
+     "verified": 15
+    }
+   },
+   "B1": {
+    "accepted": 82,
+    "target": 600,
+    "eligible": 82,
+    "skipped": {},
+    "repos": {
+     "django/django": 34,
+     "sympy/sympy": 16,
+     "sphinx-doc/sphinx": 10,
+     "scikit-learn/scikit-learn": 7,
+     "astropy/astropy": 5,
+     "pytest-dev/pytest": 4,
+     "pydata/xarray": 3,
+     "psf/requests": 2,
+     "pallets/flask": 1
+    },
+    "episodes": 82,
+    "shortfall": true,
+    "splits": {
+     "verified": 82
+    }
+   },
+   "A1k2": {
+    "accepted": 44,
+    "target": 300,
+    "eligible": 84,
+    "skipped": {
+     "episode_cap": 40
+    },
+    "repos": {
+     "django/django": 20,
+     "sphinx-doc/sphinx": 7,
+     "sympy/sympy": 6,
+     "scikit-learn/scikit-learn": 3,
+     "pydata/xarray": 2,
+     "astropy/astropy": 2,
+     "pytest-dev/pytest": 2,
+     "psf/requests": 2
+    },
+    "episodes": 26,
+    "shortfall": true,
+    "splits": {
+     "verified": 44
+    }
+   }
+  },
+  "verified_only": {
+   "A1": 69,
+   "A2": 15,
+   "B1": 82,
+   "A1k2": 44
+  }
+ }
+}

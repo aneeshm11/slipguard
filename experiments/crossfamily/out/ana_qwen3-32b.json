@@ -1,0 +1,1328 @@
+{
+ "model": "qwen3-32b",
+ "n_records": 2100,
+ "errors": {},
+ "arms": {
+  "C0": {
+   "n": 300,
+   "P_call": [
+    0.75,
+    0.698,
+    0.7956,
+    300
+   ],
+   "P_edit": [
+    0.5933,
+    0.5369,
+    0.6474,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0133,
+    0.0052,
+    0.0338,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0225,
+    0.0088,
+    0.0563,
+    178
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0222,
+    0.0095,
+    0.051,
+    225
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0133,
+    0.0052,
+    0.0338,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0133,
+    0.0052,
+    0.0338,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0225,
+    0.0088,
+    0.0563,
+    178
+   ],
+   "first_call_names": {
+    "edit_file": 178,
+    "<no call>": 75,
+    "run_command": 17,
+    "read_file": 16,
+    "submit_patch": 13,
+    "write_file": 1
+   },
+   "malformed_edit_why": {
+    "unparsed": 4
+   },
+   "malformed_edit_flags": {
+    "unparsed": 4
+   },
+   "budget_forced": 20,
+   "thought_tokens_median": 314.0,
+   "edit_order": {
+    "old_first": 162,
+    "null": 4,
+    "new_first": 12
+   }
+  },
+  "P0": {
+   "n": 300,
+   "P_call": [
+    0.9433,
+    0.9111,
+    0.9643,
+    300
+   ],
+   "P_edit": [
+    0.74,
+    0.6876,
+    0.7864,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.009,
+    0.0025,
+    0.0322,
+    222
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0071,
+    0.0019,
+    0.0254,
+    283
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.009,
+    0.0025,
+    0.0322,
+    222
+   ],
+   "first_call_names": {
+    "edit_file": 222,
+    "read_file": 25,
+    "run_command": 24,
+    "<no call>": 17,
+    "submit_patch": 11,
+    "write_file": 1
+   },
+   "malformed_edit_why": {
+    "unparsed": 2
+   },
+   "malformed_edit_flags": {
+    "unparsed": 2
+   },
+   "budget_forced": 7,
+   "thought_tokens_median": 100.0,
+   "edit_order": {
+    "new_first": 179,
+    "old_first": 41,
+    "null": 2
+   }
+  },
+  "P1L": {
+   "n": 300,
+   "P_call": [
+    0.9467,
+    0.9151,
+    0.9669,
+    300
+   ],
+   "P_edit": [
+    0.7933,
+    0.7439,
+    0.8353,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0084,
+    0.0023,
+    0.0301,
+    238
+   ],
+   "P_malformed_any_call_given_call": [
+    0.007,
+    0.0019,
+    0.0253,
+    284
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0084,
+    0.0023,
+    0.0301,
+    238
+   ],
+   "first_call_names": {
+    "edit_file": 238,
+    "read_file": 22,
+    "<no call>": 16,
+    "run_command": 12,
+    "submit_patch": 10,
+    "write_file": 2
+   },
+   "malformed_edit_why": {
+    "unparsed": 2
+   },
+   "malformed_edit_flags": {
+    "unparsed": 2
+   },
+   "budget_forced": 9,
+   "thought_tokens_median": 241.5,
+   "edit_order": {
+    "old_first": 199,
+    "new_first": 37,
+    "null": 2
+   }
+  },
+  "P1N": {
+   "n": 300,
+   "P_call": [
+    0.9667,
+    0.9397,
+    0.9818,
+    300
+   ],
+   "P_edit": [
+    0.7333,
+    0.6806,
+    0.7802,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0133,
+    0.0052,
+    0.0338,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0182,
+    0.0071,
+    0.0458,
+    220
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0138,
+    0.0054,
+    0.0349,
+    290
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0133,
+    0.0052,
+    0.0338,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0133,
+    0.0052,
+    0.0338,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0182,
+    0.0071,
+    0.0458,
+    220
+   ],
+   "first_call_names": {
+    "edit_file": 220,
+    "submit_patch": 44,
+    "run_command": 15,
+    "<no call>": 10,
+    "read_file": 5,
+    "run_skill_script": 5,
+    "git": 1
+   },
+   "malformed_edit_why": {
+    "unparsed": 4
+   },
+   "malformed_edit_flags": {
+    "unparsed": 4
+   },
+   "budget_forced": 11,
+   "thought_tokens_median": 536.0,
+   "edit_order": {
+    "old_first": 111,
+    "new_first": 105,
+    "null": 4
+   }
+  },
+  "P5": {
+   "n": 300,
+   "P_call": [
+    0.9333,
+    0.8993,
+    0.9564,
+    300
+   ],
+   "P_edit": [
+    0.7967,
+    0.7475,
+    0.8383,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0133,
+    0.0052,
+    0.0338,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0167,
+    0.0065,
+    0.0422,
+    239
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0143,
+    0.0056,
+    0.0361,
+    280
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0133,
+    0.0052,
+    0.0338,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0167,
+    0.0065,
+    0.0422,
+    239
+   ],
+   "first_call_names": {
+    "edit_file": 239,
+    "<no call>": 20,
+    "read_file": 14,
+    "run_command": 13,
+    "submit_patch": 12,
+    "write_file": 2
+   },
+   "malformed_edit_why": {
+    "unparsed": 3,
+    "missing:filepath": 1
+   },
+   "malformed_edit_flags": {
+    "unparsed": 3,
+    "missing:filepath": 1
+   },
+   "budget_forced": 8,
+   "thought_tokens_median": 336.5,
+   "edit_order": {
+    "new_first": 81,
+    "old_first": 155,
+    "null": 3
+   }
+  },
+  "P6": {
+   "n": 300,
+   "P_call": [
+    0.92,
+    0.8837,
+    0.9457,
+    300
+   ],
+   "P_edit": [
+    0.7333,
+    0.6806,
+    0.7802,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0133,
+    0.0052,
+    0.0338,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0182,
+    0.0071,
+    0.0458,
+    220
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0145,
+    0.0057,
+    0.0367,
+    276
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0133,
+    0.0052,
+    0.0338,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0133,
+    0.0052,
+    0.0338,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0182,
+    0.0071,
+    0.0458,
+    220
+   ],
+   "first_call_names": {
+    "edit_file": 220,
+    "<no call>": 24,
+    "read_file": 24,
+    "run_command": 21,
+    "submit_patch": 9,
+    "write_file": 2
+   },
+   "malformed_edit_why": {
+    "unparsed": 4
+   },
+   "malformed_edit_flags": {
+    "unparsed": 4
+   },
+   "budget_forced": 8,
+   "thought_tokens_median": 118.0,
+   "edit_order": {
+    "new_first": 129,
+    "old_first": 87,
+    "null": 4
+   }
+  },
+  "P8a": {
+   "n": 300,
+   "P_call": [
+    0.9567,
+    0.9273,
+    0.9745,
+    300
+   ],
+   "P_edit": [
+    0.8233,
+    0.7762,
+    0.8623,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0121,
+    0.0041,
+    0.0351,
+    247
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0105,
+    0.0036,
+    0.0303,
+    287
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0121,
+    0.0041,
+    0.0351,
+    247
+   ],
+   "first_call_names": {
+    "edit_file": 247,
+    "read_file": 20,
+    "<no call>": 13,
+    "submit_patch": 10,
+    "run_command": 9,
+    "write_file": 1
+   },
+   "malformed_edit_why": {
+    "unparsed": 3
+   },
+   "malformed_edit_flags": {
+    "unparsed": 3
+   },
+   "budget_forced": 8,
+   "thought_tokens_median": 272.0,
+   "edit_order": {
+    "new_first": 57,
+    "old_first": 187,
+    "null": 3
+   }
+  }
+ },
+ "logged_gemma31b_next_call_malformed": {
+  "C0": [
+   0.1933,
+   0.1526,
+   0.2418,
+   300
+  ],
+  "P0": [
+   0.0467,
+   0.028,
+   0.0768,
+   300
+  ]
+ },
+ "paired_vs_P0": {
+  "P1L": {
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "events_arm": 2,
+   "events_base": 2,
+   "discordant_arm_only": 2,
+   "discordant_base_only": 2,
+   "uncond": {
+    "arm": 0.0067,
+    "base": 0.0067,
+    "RD": 0.0,
+    "RD_CI": [
+     -0.0135,
+     0.0133
+    ],
+    "p_one_sided_RD_gt_0": 0.61474,
+    "p_one_sided_RD_lt_0": 0.59864,
+    "ratio": 1.0,
+    "ratio_CI": [
+     0.0,
+     "inf"
+    ],
+    "ratio_haldane": 1.0,
+    "mcnemar_exact_p_one_sided": 0.6875
+   },
+   "cond": {
+    "arm": 0.0084,
+    "base": 0.009,
+    "RD": -0.0006,
+    "RD_CI": [
+     -0.0183,
+     0.0166
+    ],
+    "ratio": 0.933,
+    "ratio_CI": [
+     0.0,
+     "inf"
+    ],
+    "n_edits_arm": 238,
+    "n_edits_base": 222
+   },
+   "P_edit": {
+    "arm": 0.7933,
+    "base": 0.74,
+    "RD": 0.0533,
+    "RD_CI": [
+     0.0,
+     0.1073
+    ]
+   }
+  },
+  "P1N": {
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "events_arm": 4,
+   "events_base": 2,
+   "discordant_arm_only": 3,
+   "discordant_base_only": 1,
+   "uncond": {
+    "arm": 0.0133,
+    "base": 0.0067,
+    "RD": 0.0067,
+    "RD_CI": [
+     -0.0068,
+     0.0237
+    ],
+    "p_one_sided_RD_gt_0": 0.28227,
+    "p_one_sided_RD_lt_0": 0.86531,
+    "ratio": 2.0,
+    "ratio_CI": [
+     0.0,
+     "inf"
+    ],
+    "ratio_haldane": 1.8,
+    "mcnemar_exact_p_one_sided": 0.3125
+   },
+   "cond": {
+    "arm": 0.0182,
+    "base": 0.009,
+    "RD": 0.0092,
+    "RD_CI": [
+     -0.0093,
+     0.033
+    ],
+    "ratio": 2.018,
+    "ratio_CI": [
+     0.0,
+     "inf"
+    ],
+    "n_edits_arm": 220,
+    "n_edits_base": 222
+   },
+   "P_edit": {
+    "arm": 0.7333,
+    "base": 0.74,
+    "RD": -0.0067,
+    "RD_CI": [
+     -0.0662,
+     0.0505
+    ]
+   }
+  },
+  "P5": {
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "events_arm": 4,
+   "events_base": 2,
+   "discordant_arm_only": 3,
+   "discordant_base_only": 1,
+   "uncond": {
+    "arm": 0.0133,
+    "base": 0.0067,
+    "RD": 0.0067,
+    "RD_CI": [
+     -0.0066,
+     0.0203
+    ],
+    "p_one_sided_RD_gt_0": 0.22678,
+    "p_one_sided_RD_lt_0": 0.90831,
+    "ratio": 2.0,
+    "ratio_CI": [
+     0.5,
+     "inf"
+    ],
+    "ratio_haldane": 1.8,
+    "mcnemar_exact_p_one_sided": 0.3125
+   },
+   "cond": {
+    "arm": 0.0167,
+    "base": 0.009,
+    "RD": 0.0077,
+    "RD_CI": [
+     -0.0091,
+     0.0251
+    ],
+    "ratio": 1.858,
+    "ratio_CI": [
+     0.4481,
+     "inf"
+    ],
+    "n_edits_arm": 239,
+    "n_edits_base": 222
+   },
+   "P_edit": {
+    "arm": 0.7967,
+    "base": 0.74,
+    "RD": 0.0567,
+    "RD_CI": [
+     0.0034,
+     0.1096
+    ]
+   }
+  },
+  "P6": {
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "events_arm": 4,
+   "events_base": 2,
+   "discordant_arm_only": 4,
+   "discordant_base_only": 2,
+   "uncond": {
+    "arm": 0.0133,
+    "base": 0.0067,
+    "RD": 0.0067,
+    "RD_CI": [
+     -0.0098,
+     0.0233
+    ],
+    "p_one_sided_RD_gt_0": 0.26657,
+    "p_one_sided_RD_lt_0": 0.85261,
+    "ratio": 2.0,
+    "ratio_CI": [
+     0.25,
+     "inf"
+    ],
+    "ratio_haldane": 1.8,
+    "mcnemar_exact_p_one_sided": 0.34375
+   },
+   "cond": {
+    "arm": 0.0182,
+    "base": 0.009,
+    "RD": 0.0092,
+    "RD_CI": [
+     -0.0129,
+     0.0318
+    ],
+    "ratio": 2.018,
+    "ratio_CI": [
+     0.2616,
+     "inf"
+    ],
+    "n_edits_arm": 220,
+    "n_edits_base": 222
+   },
+   "P_edit": {
+    "arm": 0.7333,
+    "base": 0.74,
+    "RD": -0.0067,
+    "RD_CI": [
+     -0.057,
+     0.0441
+    ]
+   }
+  },
+  "P8a": {
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "events_arm": 3,
+   "events_base": 2,
+   "discordant_arm_only": 3,
+   "discordant_base_only": 2,
+   "uncond": {
+    "arm": 0.01,
+    "base": 0.0067,
+    "RD": 0.0033,
+    "RD_CI": [
+     -0.0103,
+     0.0177
+    ],
+    "p_one_sided_RD_gt_0": 0.41346,
+    "p_one_sided_RD_lt_0": 0.75162,
+    "ratio": 1.5,
+    "ratio_CI": [
+     0.0,
+     "inf"
+    ],
+    "ratio_haldane": 1.4,
+    "mcnemar_exact_p_one_sided": 0.5
+   },
+   "cond": {
+    "arm": 0.0121,
+    "base": 0.009,
+    "RD": 0.0031,
+    "RD_CI": [
+     -0.015,
+     0.022
+    ],
+    "ratio": 1.348,
+    "ratio_CI": [
+     0.0,
+     "inf"
+    ],
+    "n_edits_arm": 247,
+    "n_edits_base": 222
+   },
+   "P_edit": {
+    "arm": 0.8233,
+    "base": 0.74,
+    "RD": 0.0833,
+    "RD_CI": [
+     0.0299,
+     0.1382
+    ]
+   }
+  }
+ },
+ "removal": {
+  "P5": {
+   "n_contexts": 300,
+   "uncond": {
+    "P1L": 0.0067,
+    "P5": 0.0133,
+    "P0": 0.0067,
+    "fraction_removed": null,
+    "CI": [
+     -4.0,
+     5.0
+    ],
+    "RD_P1L_minus_P5": -0.0067,
+    "RD_CI": [
+     -0.0236,
+     0.0097
+    ],
+    "p_one_sided_removal_gt_0": 0.85721
+   },
+   "cond": {
+    "P1L": 0.0084,
+    "P5": 0.0167,
+    "P0": 0.009,
+    "fraction_removed": 13.759,
+    "CI": [
+     -4.8296,
+     57.3885
+    ],
+    "RD_P1L_minus_P5": -0.0083,
+    "RD_CI": [
+     -0.0297,
+     0.0118
+    ],
+    "p_one_sided_removal_gt_0": 0.79892
+   }
+  },
+  "P8a": {
+   "n_contexts": 300,
+   "uncond": {
+    "P1L": 0.0067,
+    "P8a": 0.01,
+    "P0": 0.0067,
+    "fraction_removed": null,
+    "CI": [
+     -3.0,
+     3.0
+    ],
+    "RD_P1L_minus_P8a": -0.0033,
+    "RD_CI": [
+     -0.0162,
+     0.0068
+    ],
+    "p_one_sided_removal_gt_0": 0.81642
+   },
+   "cond": {
+    "P1L": 0.0084,
+    "P8a": 0.0121,
+    "P0": 0.009,
+    "fraction_removed": 6.179,
+    "CI": [
+     -5.7192,
+     34.6058
+    ],
+    "RD_P1L_minus_P8a": -0.0037,
+    "RD_CI": [
+     -0.0189,
+     0.009
+    ],
+    "p_one_sided_removal_gt_0": 0.65413
+   }
+  },
+  "P1N": {
+   "n_contexts": 300,
+   "uncond": {
+    "P1L": 0.0067,
+    "P1N": 0.0133,
+    "P0": 0.0067,
+    "fraction_removed": null,
+    "CI": [
+     -4.0,
+     6.0
+    ],
+    "RD_P1L_minus_P1N": -0.0067,
+    "RD_CI": [
+     -0.0264,
+     0.0101
+    ],
+    "p_one_sided_removal_gt_0": 0.82172
+   },
+   "cond": {
+    "P1L": 0.0084,
+    "P1N": 0.0182,
+    "P0": 0.009,
+    "fraction_removed": 16.145,
+    "CI": [
+     -7.2553,
+     63.7993
+    ],
+    "RD_P1L_minus_P1N": -0.0098,
+    "RD_CI": [
+     -0.0362,
+     0.0123
+    ],
+    "p_one_sided_removal_gt_0": 0.81922
+   }
+  },
+  "P6": {
+   "n_contexts": 300,
+   "uncond": {
+    "P1L": 0.0067,
+    "P6": 0.0133,
+    "P0": 0.0067,
+    "fraction_removed": null,
+    "CI": [
+     -4.0,
+     6.0
+    ],
+    "RD_P1L_minus_P6": -0.0067,
+    "RD_CI": [
+     -0.0234,
+     0.0099
+    ],
+    "p_one_sided_removal_gt_0": 0.84972
+   },
+   "cond": {
+    "P1L": 0.0084,
+    "P6": 0.0182,
+    "P0": 0.009,
+    "fraction_removed": 16.145,
+    "CI": [
+     -6.4356,
+     69.0853
+    ],
+    "RD_P1L_minus_P6": -0.0098,
+    "RD_CI": [
+     -0.0324,
+     0.0118
+    ],
+    "p_one_sided_removal_gt_0": 0.84902
+   }
+  }
+ },
+ "copy_check": {
+  "P0": {
+   "clean_retry": {
+    "n": 3,
+    "malformed": [
+     0.0,
+     0.0,
+     0.5615,
+     3
+    ]
+   },
+   "same_content_variant": {
+    "n": 12,
+    "malformed": [
+     0.0,
+     0.0,
+     0.2425,
+     12
+    ]
+   },
+   "new_content": {
+    "n": 205,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0184,
+     205
+    ]
+   },
+   "unparsed_other": {
+    "n": 2,
+    "malformed": [
+     1.0,
+     0.3424,
+     1.0,
+     2
+    ]
+   },
+   "all_edits": {
+    "n": 222,
+    "malformed": [
+     0.009,
+     0.0025,
+     0.0322,
+     222
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.6576,
+    2
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.0184,
+    205
+   ],
+   "non_copy_edits_malformed": [
+    0.009,
+    0.0025,
+    0.0322,
+    222
+   ]
+  },
+  "P1L": {
+   "clean_retry": {
+    "n": 89,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0414,
+     89
+    ]
+   },
+   "same_content_variant": {
+    "n": 40,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0876,
+     40
+    ]
+   },
+   "new_content": {
+    "n": 107,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0347,
+     107
+    ]
+   },
+   "unparsed_other": {
+    "n": 2,
+    "malformed": [
+     1.0,
+     0.3424,
+     1.0,
+     2
+    ]
+   },
+   "all_edits": {
+    "n": 238,
+    "malformed": [
+     0.0084,
+     0.0023,
+     0.0301,
+     238
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.6576,
+    2
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.0347,
+    107
+   ],
+   "non_copy_edits_malformed": [
+    0.0084,
+    0.0023,
+    0.0301,
+    238
+   ]
+  },
+  "P6": {
+   "clean_retry": {
+    "n": 1,
+    "malformed": [
+     0.0,
+     0.0,
+     0.7935,
+     1
+    ]
+   },
+   "same_content_variant": {
+    "n": 14,
+    "malformed": [
+     0.0,
+     0.0,
+     0.2153,
+     14
+    ]
+   },
+   "new_content": {
+    "n": 201,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0188,
+     201
+    ]
+   },
+   "unparsed_other": {
+    "n": 4,
+    "malformed": [
+     1.0,
+     0.5101,
+     1.0,
+     4
+    ]
+   },
+   "all_edits": {
+    "n": 220,
+    "malformed": [
+     0.0182,
+     0.0071,
+     0.0458,
+     220
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.4899,
+    4
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.0188,
+    201
+   ],
+   "non_copy_edits_malformed": [
+    0.0182,
+    0.0071,
+    0.0458,
+    220
+   ]
+  },
+  "P8a": {
+   "clean_retry": {
+    "n": 111,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0335,
+     111
+    ]
+   },
+   "same_content_variant": {
+    "n": 35,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0989,
+     35
+    ]
+   },
+   "new_content": {
+    "n": 98,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0377,
+     98
+    ]
+   },
+   "unparsed_other": {
+    "n": 3,
+    "malformed": [
+     1.0,
+     0.4385,
+     1.0,
+     3
+    ]
+   },
+   "all_edits": {
+    "n": 247,
+    "malformed": [
+     0.0121,
+     0.0041,
+     0.0351,
+     247
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.5615,
+    3
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.0377,
+    98
+   ],
+   "non_copy_edits_malformed": [
+    0.0121,
+    0.0041,
+    0.0351,
+    247
+   ]
+  },
+  "P1N": {
+   "copy_corrupted_raw": {
+    "n": 1,
+    "malformed": [
+     1.0,
+     0.2065,
+     1.0,
+     1
+    ]
+   },
+   "clean_retry": {
+    "n": 9,
+    "malformed": [
+     0.0,
+     0.0,
+     0.2991,
+     9
+    ]
+   },
+   "same_content_variant": {
+    "n": 20,
+    "malformed": [
+     0.0,
+     0.0,
+     0.1611,
+     20
+    ]
+   },
+   "new_content": {
+    "n": 187,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0201,
+     187
+    ]
+   },
+   "unparsed_other": {
+    "n": 3,
+    "malformed": [
+     1.0,
+     0.4385,
+     1.0,
+     3
+    ]
+   },
+   "all_edits": {
+    "n": 220,
+    "malformed": [
+     0.0182,
+     0.0071,
+     0.0458,
+     220
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.25,
+    0.0456,
+    0.6994,
+    4
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.0201,
+    187
+   ],
+   "non_copy_edits_malformed": [
+    0.0137,
+    0.0047,
+    0.0395,
+    219
+   ]
+  }
+ },
+ "natural_calls": {
+  "C0|edit|loud_unparsed": 4,
+  "C0|edit|ok_strict_ok": 174,
+  "C0|other|loud_unparsed": 1,
+  "C0|other|ok_strict_ok": 46,
+  "P0|edit|loud_unparsed": 2,
+  "P0|edit|ok_strict_ok": 220,
+  "P0|other|ok_strict_ok": 61
+ },
+ "natural_examples": {
+  "C0:edit:loud_unparsed": [
+   {
+    "id": "ctx-350643205f",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"filepath\": \"src/click/core.py`,old_string\": \"            elif default_value == \\\"\\\":\", \"new_string\": \"            elif isinstance(default_value, str) and default_value == \\\"\\\":\", \"allow_multiple\": false}}\n</tool_call>",
+    "new_head": ""
+   },
+   {
+    "id": "ctx-93c234e46a",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"filepath\": \"fastapi/_compat/v2.py`,old_string\": \"    origin_type = get_origin(field.field_info.annotation) or field.field_info.annotation\\n    assert issubclass(origin_type, shared.sequence_types)  # type: ignore[arg-type]\\n\", \"new_string\": \"    annotation = field.field_info.annotation\\n    origin_type = get_origin(annotation) or annotation\\n    if origin_type is Union:\\n        args = get_args(annotation)\\n        non_none_args = [arg for arg in args if arg is not type(None)]\\n        if non_none_args:\\n            inner_type = non_none_args[0]\\n            origin_type = get_origin(inner_type) or inner_type\\n    assert issubclass(origin_type, shared.sequence_types)  # type: ignore[arg-type]\\n\"}}\n</tool_call>",
+    "new_head": ""
+   },
+   {
+    "id": "ctx-191a89c64b",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"filepath\": \"pyproject.toml\", \"old_string\": '    \"Programming Language :: Python :: 3.15\",', \"new_string\": \"\", \"allow_multiple\": false}}\n</tool_call>",
+    "new_head": ""
+   }
+  ],
+  "P0:edit:loud_unparsed": [
+   {
+    "id": "ctx-2e8886fd9a",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"filepath\": \"tests/test_utils.py\", \"new_string\": \"\\n\\nimport sys\\nfrom functools import partial\\nfrom itertools import islice\\nfrom types import GeneratorType\\n\\nfrom parsel.utils import iflatten\\n\\nclass ConsumingGenerator:\\n    def __init__(self, values):\\n        self.values = values\\n        self.consumed = []\\n\\n    def __iter__(self):\\n        for value in self.values:\\n            self.consumed.append(value)\\n            yield value\\n\\n    def __len__(self):\\n        return len(self.values)\\n\\n\\ndef test_iflatten_lazy():\\n    # Create a nested generator that records consumed values\\n    gen1 = ConsumingGenerator([1, 2, 3])\\n    gen2 = ConsumingGenerator([4, 5, 6])\\n    nested_gen = ConsumingGenerator([gen1, gen2])\\n\\n    # Test partial",
+    "new_head": ""
+   },
+   {
+    "id": "ctx-c665fae36f",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"filepath\": \"w3lib/html.py\", \"old_string\": \"    | <(?P<t>script|noscript)\\\\b{_TAG_BODY}>[^<]*(?:<(?!/(?P=t)>)[^<]*)*(?:</(?P=t)>|$)\\n    | <base\\\\s(?P<attrs>{_TAG_BODY})\\n    \\\"\\\"\\\",\\n    re.IGNORECASE | re.DOTALL | re.VERBOSE | re.ASCII,\\n)\", \"new_string\": \"    | {_ignore_tags_source(\\\"script|noscript\\\")}\\n    | <base\\\\s(?P<attrs>{_TAG_BODY})\\n    \\\"\\\"\\\",\\n    re.IGNORECASE | re.DOTALL | re.VERBOSE | re.ASCII,\\n)\"}\n</tool_call>",
+    "new_head": ""
+   }
+  ],
+  "C0:other:loud_unparsed": [
+   {
+    "id": "ctx-62d17f0b9b",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"run_command\", \"arguments\": {\"command\": \"cp src/packaging/markers.py src/packaging/markers.py.bak\\nsed -i '/def _format_marker(/a\\\\    print(f\\\"marker: {marker} first: {first}\\\")' src/packaging/markers.py\\nsed -i '/return \\\"(\\\" + \\\" \\\".join(inner) + \\\")\\\"/a\\\\    print(f\\\"returning: ({\\\" \\\".join(inner)})\\\")' src/packaging/markers.py\\npython3 -m pytest -q -x --capture=no tests/test_markers.py\\ndiff -u src/packaging/markers.py.bak src/packaging/markers.py'}}\n</tool_call>",
+    "new_head": ""
+   }
+  ]
+ }
+}

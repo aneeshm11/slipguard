@@ -1,0 +1,456 @@
+{
+ "prereg": "PREREG_v2.5b_stackGainE4B.md sha256 c78e7512485a6f3e98e2fd71f319638aa72ff10f2eb5f6deedc89415a94ffb7d (copies v2.5 F1)",
+ "F1_primary_source": "R1",
+ "cpu_checks": {
+  "N1": {
+   "n": 300,
+   "msgs_identical": 300,
+   "render_identical": 300,
+   "exceptions": []
+  },
+  "R1_render_identity": {
+   "n": 300,
+   "identical": 300,
+   "exceptions": []
+  },
+  "I2": {
+   "n": 600,
+   "identical": 600,
+   "exceptions": []
+  },
+  "Tcheck": {
+   "n": 300,
+   "last_is_tool": 300,
+   "on_identical": 300,
+   "off_plus_closed_thought": 300,
+   "appended_ids_seen": [
+    "[100, 45518, 107, 101]"
+   ],
+   "exceptions": []
+  }
+ },
+ "replay_status": {},
+ "parser_disagreements": {
+  "replay": 0,
+  "live_l1": 0,
+  "cases": []
+ },
+ "F1_skipped": {
+  "r1_missing_or_mismatch": 300
+ },
+ "F1_R1": {
+  "n_states": 0,
+  "STOCK": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "SLIPGUARD": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "discordant_STOCK_only": 0,
+  "discordant_SLIPGUARD_only": 0,
+  "mcnemar_one_sided_p": 1.0,
+  "RD_SLIPGUARD_minus_STOCK": null,
+  "RD_ci95": [
+   null,
+   null
+  ],
+  "relative_reduction": null,
+  "relative_reduction_ci95": [
+   null,
+   null
+  ]
+ },
+ "F1_L1_secondary": {
+  "n_states": 0,
+  "note": "not run / no records"
+ },
+ "F1_R1_sensitivity_excl_budget_forced": {
+  "excluded_states": [
+   "sympy__sympy-14038__S1:15"
+  ],
+  "n_states": 0,
+  "STOCK": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "SLIPGUARD": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "discordant_STOCK_only": 0,
+  "discordant_SLIPGUARD_only": 0,
+  "mcnemar_one_sided_p": 1.0,
+  "RD_SLIPGUARD_minus_STOCK": null,
+  "RD_ci95": [
+   null,
+   null
+  ],
+  "relative_reduction": null,
+  "relative_reduction_ci95": [
+   null,
+   null
+  ]
+ },
+ "no_harm": {
+  "N1": {
+   "holds": true,
+   "n": 300,
+   "msgs_identical": 300,
+   "render_identical": 300,
+   "exceptions": []
+  },
+  "N2": {
+   "samples_checked": 0,
+   "violations": 0,
+   "cases": [],
+   "holds": true
+  },
+  "N3": {
+   "holds": false,
+   "n_states": 0,
+   "STOCK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "discordant_STOCK_only": 0,
+   "discordant_SLIPGUARD_only": 0,
+   "mcnemar_one_sided_p": 1.0,
+   "RD_SLIPGUARD_minus_STOCK": null,
+   "RD_ci95": [
+    null,
+    null
+   ],
+   "relative_reduction": null,
+   "relative_reduction_ci95": [
+    null,
+    null
+   ]
+  },
+  "N4_P0_loud": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ],
+   "gain_sentence_must_state_it": false
+  }
+ },
+ "F2": {
+  "skipped": {
+   "missing": 600
+  },
+  "I2_identity": {
+   "n": 600,
+   "identical": 600,
+   "exceptions": []
+  },
+  "drift_unconditional": {
+   "n_states": 0,
+   "STOCK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "discordant_STOCK_only": 0,
+   "discordant_SLIPGUARD_only": 0,
+   "mcnemar_one_sided_p": 1.0,
+   "RD_SLIPGUARD_minus_STOCK": null,
+   "RD_ci95": [
+    null,
+    null
+   ],
+   "relative_reduction": null,
+   "relative_reduction_ci95": [
+    null,
+    null
+   ]
+  },
+  "closer_slip_harmful": {
+   "n_states": 0,
+   "STOCK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "discordant_STOCK_only": 0,
+   "discordant_SLIPGUARD_only": 0,
+   "mcnemar_one_sided_p": 1.0,
+   "RD_SLIPGUARD_minus_STOCK": null,
+   "RD_ci95": [
+    null,
+    null
+   ],
+   "relative_reduction": null,
+   "relative_reduction_ci95": [
+    null,
+    null
+   ]
+  },
+  "total_harmful": {
+   "n_states": 0,
+   "STOCK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "discordant_STOCK_only": 0,
+   "discordant_SLIPGUARD_only": 0,
+   "mcnemar_one_sided_p": 1.0,
+   "RD_SLIPGUARD_minus_STOCK": null,
+   "RD_ci95": [
+    null,
+    null
+   ],
+   "relative_reduction": null,
+   "relative_reduction_ci95": [
+    null,
+    null
+   ]
+  },
+  "drift_among_edits": {
+   "STOCK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   }
+  },
+  "SLIPGUARD_loud": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "live_first100_secondary": {
+   "n": 0,
+   "drift_edits": 0,
+   "edits": 0,
+   "closer_slips": 0,
+   "harmful": 0,
+   "loud": 0
+  },
+  "sensitivity_excl_budget_forced": {
+   "excluded_states": [],
+   "drift_unconditional": {
+    "n_states": 0,
+    "STOCK": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "wilson95": [
+      null,
+      null
+     ]
+    },
+    "SLIPGUARD": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "wilson95": [
+      null,
+      null
+     ]
+    },
+    "discordant_STOCK_only": 0,
+    "discordant_SLIPGUARD_only": 0,
+    "mcnemar_one_sided_p": 1.0,
+    "RD_SLIPGUARD_minus_STOCK": null,
+    "RD_ci95": [
+     null,
+     null
+    ],
+    "relative_reduction": null,
+    "relative_reduction_ci95": [
+     null,
+     null
+    ]
+   },
+   "closer_slip_harmful": {
+    "n_states": 0,
+    "STOCK": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "wilson95": [
+      null,
+      null
+     ]
+    },
+    "SLIPGUARD": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "wilson95": [
+      null,
+      null
+     ]
+    },
+    "discordant_STOCK_only": 0,
+    "discordant_SLIPGUARD_only": 0,
+    "mcnemar_one_sided_p": 1.0,
+    "RD_SLIPGUARD_minus_STOCK": null,
+    "RD_ci95": [
+     null,
+     null
+    ],
+    "relative_reduction": null,
+    "relative_reduction_ci95": [
+     null,
+     null
+    ]
+   }
+  }
+ },
+ "F3": {
+  "skipped": {
+   "missing": 300
+  },
+  "Tcheck": {
+   "n": 300,
+   "last_is_tool": 300,
+   "on_identical": 300,
+   "off_plus_closed_thought": 300,
+   "appended_ids_seen": [
+    "[100, 45518, 107, 101]"
+   ],
+   "exceptions": []
+  },
+  "n_states": 0,
+  "STOCK": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "GUARDED": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "discordant_STOCK_only": 0,
+  "discordant_GUARDED_only": 0,
+  "mcnemar_one_sided_p": 1.0,
+  "RD_GUARDED_minus_STOCK": null,
+  "RD_ci95": [
+   null,
+   null
+  ],
+  "relative_reduction": null,
+  "relative_reduction_ci95": [
+   null,
+   null
+  ]
+ },
+ "holm": {
+  "H1": {
+   "p": 1.0,
+   "holm_p": 1.0
+  }
+ },
+ "verdicts": {
+  "F1_E4B": "FAILS",
+  "F1_no_harm_holds": false,
+  "L1_consistent_with_R1": null,
+  "L1_partial": null
+ },
+ "paper_sentence": null
+}

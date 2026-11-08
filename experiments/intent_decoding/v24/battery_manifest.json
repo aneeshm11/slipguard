@@ -1,0 +1,102 @@
+{
+ "prereg": {
+  "file": "paper/protocol_theory/prereg/PREREG_v2.4_injectedSlipRepair.md",
+  "sha256": "e7af894ba355a03a5fb7b023c3c7ad860a5e8c3d666a4ab80e6ff6c7ea102090"
+ },
+ "built_utc": "2026-11-05T11:20:19Z",
+ "script": {
+  "path": "v24/build_battery.py",
+  "sha256": "ba09d2c4c546c6588ea4e629a6472e714f760936c0d8554d26b89b05de33920a"
+ },
+ "frozen_library": {
+  "gemma_protocol.py": "b8dac8301eef4cc6d5d5fa49d1e825df1041fc0add386d0e4f2ddce9bccee035",
+  "intent_decode.py": "bda60a0898497e74349392056f69e0dd47f222ad7f6696b5573ed8adfc652f49",
+  "arms.py": "5a521ae849e3b19b2578f121cbebdf406da0fdb14904262f569b76716644c660",
+  "prior_ft_edit.json": "47f2853ad138aebc01489358e7b59139f0cb2212a13b4564af77ca84c2800961"
+ },
+ "sources": {
+  "manifest": "data/pnc/contexts/P-swebench-31b-S1-v1/manifest.json",
+  "manifest_sha256": "4cbee85d209c0d2488d2764852637d70d014a07f1de786cf3c6dd8864fd34a75",
+  "contexts_sha256": "f5e437bf5891a8168d78dd7fb86dace8accba086823c132ae7bf219270cd15ca",
+  "outcomes_sha256": "ee8cc4b1d1f0cf48a230586c55a0392bbbe9624b5851fd5df7cd9978ca9dcdfa",
+  "chat_template_md5": "f016bd4bc2846e094d596e4ab02644af"
+ },
+ "rules": {
+  "rank": "sha256(\"PREREG_v2.4|20261105|\" + episode_id + \"|\" + str(turn_index)) ascending",
+  "episode_cap": 2,
+  "repo_cap": 240,
+  "max_prompt_tokens": 24000,
+  "target": 600,
+  "stratum": "['BT','DQ','EQ','TB'][(accepted_rank-1) % 4]",
+  "closers": {
+   "BT": "`",
+   "DQ": "\"",
+   "EQ": "\\\"",
+   "TB": "```"
+  },
+  "seed": "int(sha256(\"PREREG_v2.4|20261105|seed|\" + context_id)[:8], 16) % 1,000,000"
+ },
+ "counts": {
+  "outcome_rows": 3941,
+  "exclusions": {
+   "eligible": 3292,
+   "tool_result_not_ok": 514,
+   "not_strictly_valid": 131,
+   "delivered_args_differ_from_strict_parse": 2,
+   "prompt_over_24000": 2
+  },
+  "eligible": 3292,
+  "skipped_during_acceptance": {
+   "episode_cap": 89,
+   "repo_cap": 75
+  },
+  "accepted": 600,
+  "per_stratum": {
+   "BT": 150,
+   "DQ": 150,
+   "EQ": 150,
+   "TB": 150
+  },
+  "episodes": 458,
+  "repos": {
+   "django/django": 240,
+   "sympy/sympy": 102,
+   "scikit-learn/scikit-learn": 76,
+   "sphinx-doc/sphinx": 60,
+   "pytest-dev/pytest": 40,
+   "pydata/xarray": 35,
+   "astropy/astropy": 30,
+   "psf/requests": 9,
+   "mwaskom/seaborn": 5,
+   "pallets/flask": 3
+  },
+  "split": {
+   "verified": 190,
+   "swebench_test_ext": 410
+  },
+  "new_string_is_last_argument": 1,
+  "new_string_ends_in_lookalike_by_stratum": {
+   "BT": 4,
+   "DQ": 5,
+   "EQ": 2,
+   "TB": 6
+  }
+ },
+ "gold_call_tokens": {
+  "median": 132,
+  "p90": 377,
+  "p99": 856,
+  "max": 1065
+ },
+ "logged_remainder_tokens": {
+  "median": 48,
+  "p90": 149,
+  "p99": 394,
+  "max": 508
+ },
+ "inputs": {
+  "path": "v24/battery_inputs.jsonl",
+  "sha256": "f5c7839eb68279dff072013a467e80e51449d79a436f57d558cff041410a1348",
+  "n": 600
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "model_key": "devstral-24b",
+ "recorded_utc": "2026-11-05T20:14:09Z",
+ "endpoint": "http://127.0.0.1:8342/v1",
+ "gpu": "0",
+ "v1_models": {
+  "object": "list",
+  "data": [
+   {
+    "id": "devstral-24b",
+    "object": "model",
+    "created": 1793909649,
+    "owned_by": "vllm",
+    "root": "models/Devstral-Small-2-24B-Instruct-2512",
+    "parent": null,
+    "max_model_len": 40960,
+    "permission": [
+     {
+      "id": "modelperm-a0e2eba6fa4adb73",
+      "object": "model_permission",
+      "created": 1793909649,
+      "allow_create_engine": false,
+      "allow_sampling": true,
+      "allow_logprobs": true,
+      "allow_search_indices": false,
+      "allow_view": true,
+      "allow_fine_tuning": false,
+      "organization": "*",
+      "group": null,
+      "is_blocking": false
+     }
+    ]
+   }
+  ]
+ },
+ "server_log": "logs/vllm/g0_8342.log",
+ "server_non_default_args": "{'enable_auto_tool_choice': True, 'tool_call_parser': 'mistral', 'host': '127.0.0.1', 'port': 8342, 'model': 'models/Devstral-Small-2-24B-Instruct-2512', 'tokenizer_mode': 'mistral', 'max_model_len': 40960, 'served_model_name': ['devstral-24b'], 'config_format': 'mistral', 'load_format': 'mistral', 'enable_prefix_caching': True, 'limit_mm_per_prompt': {'image': 0}, 'max_num_seqs': 64}",
+ "vllm_version": "v0.19.1",
+ "kv_cache": {
+  "available_gib": "45.75",
+  "tokens": "299,792",
+  "max_concurrency": "7.32"
+ },
+ "prompts": "experiments/crossfamily/out/ext/prompts_devstral-24b.jsonl",
+ "prompts_sha256": "9b7a9fff9add273804f4c8b24d9d9d6e45dd17a4550200adad203b2369bad8ce",
+ "runner": "experiments/crossfamily/scripts/ext_frozen/run_ext.py",
+ "runner_sha256": "8aa676ff0be4312f1bdc9b9a3bdac238f899f6675e1877d77975f2b187a18d27",
+ "serving_note": "Launched with the X launch line plus --limit-mm-per-prompt '{\"image\": 0}' (coordinator, 20:13:54Z): the first launch failed during vLLM's multimodal profiling (the Pixtral image processor in env_gemma lacks fetch_images; log logs/vllm/g0_8342.fail1_mm.log). Disabling images makes the server text-only; text prompts are unaffected.",
+ "kv_cache_check": {
+  "available_gib": "45.75",
+  "tokens": "299,792",
+  "max_concurrency": "7.32"
+ }
+}

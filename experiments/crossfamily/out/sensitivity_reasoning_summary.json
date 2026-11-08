@@ -1,0 +1,434 @@
+{
+ "out/gen_qwen3-8b.jsonl": {
+  "C0": {
+   "n": 600,
+   "call_in_unclosed_reasoning": [
+    0.1117,
+    0.0889,
+    0.1394,
+    600
+   ],
+   "first_call_outcome_changed": 67
+  },
+  "P0": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.1533,
+    0.117,
+    0.1985,
+    300
+   ],
+   "first_call_outcome_changed": 46
+  },
+  "P1L": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.19,
+    0.1496,
+    0.2382,
+    300
+   ],
+   "first_call_outcome_changed": 57
+  },
+  "P1N": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0567,
+    0.0357,
+    0.0889,
+    300
+   ],
+   "first_call_outcome_changed": 17
+  },
+  "P5": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.48,
+    0.4241,
+    0.5364,
+    300
+   ],
+   "first_call_outcome_changed": 144
+  },
+  "P6": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.1533,
+    0.117,
+    0.1985,
+    300
+   ],
+   "first_call_outcome_changed": 46
+  },
+  "P8a": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.2967,
+    0.2478,
+    0.3507,
+    300
+   ],
+   "first_call_outcome_changed": 89
+  }
+ },
+ "out/gen_qwen3.5-9b.jsonl": {
+  "C0": {
+   "n": 600,
+   "call_in_unclosed_reasoning": [
+    0.0017,
+    0.0003,
+    0.0094,
+    600
+   ],
+   "first_call_outcome_changed": 1
+  },
+  "P0": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "first_call_outcome_changed": 0
+  },
+  "P1L": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "first_call_outcome_changed": 0
+  },
+  "P1N": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "first_call_outcome_changed": 0
+  },
+  "P5": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "first_call_outcome_changed": 0
+  },
+  "P6": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "first_call_outcome_changed": 0
+  },
+  "P8a": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "first_call_outcome_changed": 0
+  }
+ },
+ "out/gen_qwen3-32b.jsonl": {
+  "C0": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.1033,
+    0.0738,
+    0.1429,
+    300
+   ],
+   "first_call_outcome_changed": 31
+  },
+  "P0": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0267,
+    0.0136,
+    0.0517,
+    300
+   ],
+   "first_call_outcome_changed": 8
+  },
+  "P1L": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "first_call_outcome_changed": 2
+  },
+  "P1N": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "first_call_outcome_changed": 3
+  },
+  "P5": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0267,
+    0.0136,
+    0.0517,
+    300
+   ],
+   "first_call_outcome_changed": 8
+  },
+  "P6": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0433,
+    0.0255,
+    0.0727,
+    300
+   ],
+   "first_call_outcome_changed": 13
+  },
+  "P8a": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0133,
+    0.0052,
+    0.0338,
+    300
+   ],
+   "first_call_outcome_changed": 4
+  }
+ },
+ "experiments/crossfamily/out/v2/gen_qwen3-8b.jsonl": {
+  "C0": {
+   "n": 600,
+   "call_in_unclosed_reasoning": [
+    0.1367,
+    0.1115,
+    0.1665,
+    600
+   ],
+   "first_call_outcome_changed": 82
+  },
+  "P0": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.1567,
+    0.1199,
+    0.2021,
+    300
+   ],
+   "first_call_outcome_changed": 47
+  },
+  "P1L": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.2533,
+    0.2074,
+    0.3055,
+    300
+   ],
+   "first_call_outcome_changed": 76
+  },
+  "P1N": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.1067,
+    0.0766,
+    0.1467,
+    300
+   ],
+   "first_call_outcome_changed": 32
+  },
+  "P5": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.43,
+    0.3752,
+    0.4866,
+    300
+   ],
+   "first_call_outcome_changed": 129
+  },
+  "P6": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.1733,
+    0.1347,
+    0.2202,
+    300
+   ],
+   "first_call_outcome_changed": 52
+  },
+  "P8a": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.3467,
+    0.2951,
+    0.4022,
+    300
+   ],
+   "first_call_outcome_changed": 104
+  }
+ },
+ "experiments/crossfamily/out/v2/gen_qwen3.5-9b.jsonl": {
+  "C0": {
+   "n": 600,
+   "call_in_unclosed_reasoning": [
+    0.0,
+    0.0,
+    0.0064,
+    600
+   ],
+   "first_call_outcome_changed": 0
+  },
+  "P0": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "first_call_outcome_changed": 0
+  },
+  "P1L": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "first_call_outcome_changed": 0
+  },
+  "P1N": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "first_call_outcome_changed": 0
+  },
+  "P5": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "first_call_outcome_changed": 0
+  },
+  "P6": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "first_call_outcome_changed": 0
+  },
+  "P8a": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0,
+    0.0,
+    0.0126,
+    300
+   ],
+   "first_call_outcome_changed": 0
+  }
+ },
+ "experiments/crossfamily/out/v2/gen_qwen3-32b.jsonl": {
+  "C0": {
+   "n": 600,
+   "call_in_unclosed_reasoning": [
+    0.09,
+    0.0696,
+    0.1156,
+    600
+   ],
+   "first_call_outcome_changed": 54
+  },
+  "P0": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.03,
+    0.0159,
+    0.056,
+    300
+   ],
+   "first_call_outcome_changed": 9
+  },
+  "P1L": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.05,
+    0.0305,
+    0.0808,
+    300
+   ],
+   "first_call_outcome_changed": 15
+  },
+  "P1N": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "first_call_outcome_changed": 3
+  },
+  "P5": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.03,
+    0.0159,
+    0.056,
+    300
+   ],
+   "first_call_outcome_changed": 9
+  },
+  "P6": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.04,
+    0.023,
+    0.0686,
+    300
+   ],
+   "first_call_outcome_changed": 12
+  },
+  "P8a": {
+   "n": 300,
+   "call_in_unclosed_reasoning": [
+    0.0167,
+    0.0071,
+    0.0384,
+    300
+   ],
+   "first_call_outcome_changed": 5
+  }
+ }
+}

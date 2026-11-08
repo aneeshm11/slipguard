@@ -1,0 +1,2024 @@
+{
+ "models": {
+  "qwen3-8b": {
+   "P1L_vs_P0": {
+    "arm": 0.0067,
+    "base": 0.0033,
+    "RD": 0.0033,
+    "RD_CI": [
+     0.0,
+     0.0103
+    ],
+    "p_one_sided_RD_gt_0": 0.36416,
+    "p_one_sided_RD_lt_0": 1.0,
+    "ratio": 2.0,
+    "ratio_CI": [
+     1.0,
+     "inf"
+    ],
+    "ratio_haldane": 1.667,
+    "mcnemar_exact_p_one_sided": 0.5
+   },
+   "P5_removal": {
+    "P1L": 0.0067,
+    "P5": 0.0033,
+    "P0": 0.0033,
+    "fraction_removed": 1.0,
+    "CI": [
+     1.0,
+     1.0
+    ],
+    "RD_P1L_minus_P5": 0.0033,
+    "RD_CI": [
+     0.0,
+     0.0103
+    ],
+    "p_one_sided_removal_gt_0": 0.37016
+   },
+   "n_contexts": 300,
+   "events_P0": 1,
+   "arms": {
+    "C0": [
+     0.0267,
+     0.0165,
+     0.0429,
+     600
+    ],
+    "P0": [
+     0.0033,
+     0.0006,
+     0.0186,
+     300
+    ],
+    "P1L": [
+     0.0067,
+     0.0018,
+     0.024,
+     300
+    ],
+    "P1N": [
+     0.0067,
+     0.0018,
+     0.024,
+     300
+    ],
+    "P5": [
+     0.0033,
+     0.0006,
+     0.0186,
+     300
+    ],
+    "P6": [
+     0.05,
+     0.0305,
+     0.0808,
+     300
+    ],
+    "P8a": [
+     0.01,
+     0.0034,
+     0.029,
+     300
+    ]
+   },
+   "arms_cond": {
+    "C0": [
+     0.0374,
+     0.0231,
+     0.0599,
+     428
+    ],
+    "P0": [
+     0.0049,
+     0.0009,
+     0.0274,
+     203
+    ],
+    "P1L": [
+     0.0111,
+     0.0031,
+     0.0396,
+     180
+    ],
+    "P1N": [
+     0.0101,
+     0.0028,
+     0.0361,
+     198
+    ],
+    "P5": [
+     0.0076,
+     0.0013,
+     0.042,
+     131
+    ],
+    "P6": [
+     0.075,
+     0.046,
+     0.12,
+     200
+    ],
+    "P8a": [
+     0.0171,
+     0.0058,
+     0.0492,
+     175
+    ]
+   },
+   "P_edit": {
+    "C0": [
+     0.7133,
+     0.6759,
+     0.7481,
+     600
+    ],
+    "P0": [
+     0.6767,
+     0.6218,
+     0.7271,
+     300
+    ],
+    "P1L": [
+     0.6,
+     0.5436,
+     0.6538,
+     300
+    ],
+    "P1N": [
+     0.66,
+     0.6047,
+     0.7113,
+     300
+    ],
+    "P5": [
+     0.4367,
+     0.3817,
+     0.4932,
+     300
+    ],
+    "P6": [
+     0.6667,
+     0.6115,
+     0.7176,
+     300
+    ],
+    "P8a": [
+     0.5833,
+     0.5268,
+     0.6377,
+     300
+    ]
+   },
+   "rule": {
+    "S1": false,
+    "S2": false,
+    "S2_mode": "haldane+exact_mcnemar (P0 events < 5)",
+    "S3": false,
+    "PASS": false
+   },
+   "secondary": {
+    "P6_induction_RD_ge_5pp_CI_lo_gt_0": false,
+    "P6": {
+     "arm": 0.05,
+     "base": 0.0033,
+     "RD": 0.0467,
+     "RD_CI": [
+      0.0206,
+      0.0747
+     ],
+     "p_one_sided_RD_gt_0": 0.0002,
+     "p_one_sided_RD_lt_0": 1.0,
+     "ratio": 15.0,
+     "ratio_CI": [
+      3.6667,
+      "inf"
+     ],
+     "ratio_haldane": 10.333,
+     "mcnemar_exact_p_one_sided": 0.000259
+    },
+    "P8a_removes_ge_70pct_CI_lo_ge_50pct": false,
+    "P8a": {
+     "P1L": 0.0067,
+     "P8a": 0.01,
+     "P0": 0.0033,
+     "fraction_removed": -1.0,
+     "CI": [
+      -4.0,
+      1.0
+     ],
+     "RD_P1L_minus_P8a": -0.0033,
+     "RD_CI": [
+      -0.0158,
+      0.0068
+     ],
+     "p_one_sided_removal_gt_0": 0.81542
+    },
+    "P1N_vs_P0": {
+     "arm": 0.0067,
+     "base": 0.0033,
+     "RD": 0.0033,
+     "RD_CI": [
+      -0.0068,
+      0.0161
+     ],
+     "p_one_sided_RD_gt_0": 0.39236,
+     "p_one_sided_RD_lt_0": 0.82032,
+     "ratio": 2.0,
+     "ratio_CI": [
+      0.0,
+      "inf"
+     ],
+     "ratio_haldane": 1.667,
+     "mcnemar_exact_p_one_sided": 0.5
+    },
+    "heldout_P1L_vs_P0": {
+     "arm": 0.0133,
+     "base": 0.0133,
+     "RD": 0.0,
+     "RD_CI": [
+      -0.0134,
+      0.0133
+     ],
+     "p_one_sided_RD_gt_0": 0.60364,
+     "p_one_sided_RD_lt_0": 0.60154,
+     "ratio": 1.0,
+     "ratio_CI": [
+      0.25,
+      4.0
+     ],
+     "ratio_haldane": 1.0,
+     "mcnemar_exact_p_one_sided": 0.6875
+    },
+    "heldout_replicates_CI_lo_gt_0": false,
+    "heldout_P6_vs_P0": {
+     "arm": 0.06,
+     "base": 0.0133,
+     "RD": 0.0467,
+     "RD_CI": [
+      0.0232,
+      0.0731
+     ],
+     "p_one_sided_RD_gt_0": 0.0001,
+     "p_one_sided_RD_lt_0": 1.0,
+     "ratio": 4.5,
+     "ratio_CI": [
+      2.1667,
+      22.0
+     ],
+     "ratio_haldane": 4.111,
+     "mcnemar_exact_p_one_sided": 0.000259
+    },
+    "copy_check": {
+     "P0": {
+      "clean_retry": {
+       "n": 4,
+       "malformed": [
+        0.0,
+        0.0,
+        0.4899,
+        4
+       ]
+      },
+      "same_content_variant": {
+       "n": 14,
+       "malformed": [
+        0.0,
+        0.0,
+        0.2153,
+        14
+       ]
+      },
+      "new_content": {
+       "n": 184,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0205,
+        184
+       ]
+      },
+      "unparsed_other": {
+       "n": 1,
+       "malformed": [
+        1.0,
+        0.2065,
+        1.0,
+        1
+       ]
+      },
+      "all_edits": {
+       "n": 203,
+       "malformed": [
+        0.0049,
+        0.0009,
+        0.0274,
+        203
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": [
+       0.0,
+       0.0,
+       0.7935,
+       1
+      ],
+      "new_content_edits_malformed": [
+       0.0,
+       0.0,
+       0.0205,
+       184
+      ],
+      "non_copy_edits_malformed": [
+       0.0049,
+       0.0009,
+       0.0274,
+       203
+      ]
+     },
+     "P1L": {
+      "clean_retry": {
+       "n": 60,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0602,
+        60
+       ]
+      },
+      "same_content_variant": {
+       "n": 34,
+       "malformed": [
+        0.0,
+        0.0,
+        0.1015,
+        34
+       ]
+      },
+      "new_content": {
+       "n": 84,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0437,
+        84
+       ]
+      },
+      "unparsed_other": {
+       "n": 2,
+       "malformed": [
+        1.0,
+        0.3424,
+        1.0,
+        2
+       ]
+      },
+      "all_edits": {
+       "n": 180,
+       "malformed": [
+        0.0111,
+        0.0031,
+        0.0396,
+        180
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": [
+       0.0,
+       0.0,
+       0.6576,
+       2
+      ],
+      "new_content_edits_malformed": [
+       0.0,
+       0.0,
+       0.0437,
+       84
+      ],
+      "non_copy_edits_malformed": [
+       0.0111,
+       0.0031,
+       0.0396,
+       180
+      ]
+     },
+     "P6": {
+      "copy_corrupted": {
+       "n": 2,
+       "malformed": [
+        1.0,
+        0.3424,
+        1.0,
+        2
+       ]
+      },
+      "clean_retry": {
+       "n": 2,
+       "malformed": [
+        0.0,
+        0.0,
+        0.6576,
+        2
+       ]
+      },
+      "same_content_variant": {
+       "n": 14,
+       "malformed": [
+        0.1429,
+        0.0401,
+        0.3994,
+        14
+       ]
+      },
+      "new_content": {
+       "n": 174,
+       "malformed": [
+        0.0172,
+        0.0059,
+        0.0495,
+        174
+       ]
+      },
+      "unparsed_other": {
+       "n": 8,
+       "malformed": [
+        1.0,
+        0.6756,
+        1.0,
+        8
+       ]
+      },
+      "all_edits": {
+       "n": 200,
+       "malformed": [
+        0.075,
+        0.046,
+        0.12,
+        200
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": [
+       0.1333,
+       0.0374,
+       0.3788,
+       15
+      ],
+      "new_content_edits_malformed": [
+       0.0172,
+       0.0059,
+       0.0495,
+       174
+      ],
+      "non_copy_edits_malformed": [
+       0.0657,
+       0.0388,
+       0.1091,
+       198
+      ]
+     },
+     "P8a": {
+      "clean_retry": {
+       "n": 77,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0475,
+        77
+       ]
+      },
+      "same_content_variant": {
+       "n": 19,
+       "malformed": [
+        0.0,
+        0.0,
+        0.1682,
+        19
+       ]
+      },
+      "new_content": {
+       "n": 76,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0481,
+        76
+       ]
+      },
+      "unparsed_other": {
+       "n": 3,
+       "malformed": [
+        1.0,
+        0.4385,
+        1.0,
+        3
+       ]
+      },
+      "all_edits": {
+       "n": 175,
+       "malformed": [
+        0.0171,
+        0.0058,
+        0.0492,
+        175
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": [
+       0.0,
+       0.0,
+       0.5615,
+       3
+      ],
+      "new_content_edits_malformed": [
+       0.0,
+       0.0,
+       0.0481,
+       76
+      ],
+      "non_copy_edits_malformed": [
+       0.0171,
+       0.0058,
+       0.0492,
+       175
+      ]
+     },
+     "P1N": {
+      "copy_corrupted_raw": {
+       "n": 1,
+       "malformed": [
+        1.0,
+        0.2065,
+        1.0,
+        1
+       ]
+      },
+      "clean_retry": {
+       "n": 16,
+       "malformed": [
+        0.0,
+        0.0,
+        0.1936,
+        16
+       ]
+      },
+      "same_content_variant": {
+       "n": 18,
+       "malformed": [
+        0.0,
+        0.0,
+        0.1759,
+        18
+       ]
+      },
+      "new_content": {
+       "n": 162,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0232,
+        162
+       ]
+      },
+      "unparsed_other": {
+       "n": 1,
+       "malformed": [
+        1.0,
+        0.2065,
+        1.0,
+        1
+       ]
+      },
+      "all_edits": {
+       "n": 198,
+       "malformed": [
+        0.0101,
+        0.0028,
+        0.0361,
+        198
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": [
+       0.5,
+       0.0945,
+       0.9055,
+       2
+      ],
+      "new_content_edits_malformed": [
+       0.0,
+       0.0,
+       0.0232,
+       162
+      ],
+      "non_copy_edits_malformed": [
+       0.0051,
+       0.0009,
+       0.0282,
+       197
+      ]
+     }
+    },
+    "census": {
+     "n": 600,
+     "P_call": [
+      0.88,
+      0.8516,
+      0.9036,
+      600
+     ],
+     "P_edit": [
+      0.7133,
+      0.6759,
+      0.7481,
+      600
+     ],
+     "P_malformed_edit_uncond": [
+      0.0267,
+      0.0165,
+      0.0429,
+      600
+     ],
+     "P_malformed_given_edit": [
+      0.0374,
+      0.0231,
+      0.0599,
+      428
+     ],
+     "P_malformed_any_call_given_call": [
+      0.0303,
+      0.0187,
+      0.0487,
+      528
+     ],
+     "P_malformed_edit_uncond_gemma_definition": [
+      0.0267,
+      0.0165,
+      0.0429,
+      600
+     ],
+     "P_loud_edit_uncond": [
+      0.0217,
+      0.0127,
+      0.0367,
+      600
+     ],
+     "P_strict_reject_given_edit": [
+      0.0421,
+      0.0268,
+      0.0655,
+      428
+     ],
+     "first_call_names": {
+      "edit_file": 428,
+      "<no call>": 72,
+      "read_file": 53,
+      "run_command": 34,
+      "submit_patch": 11,
+      "write_file": 2
+     },
+     "malformed_edit_why": {
+      "unparsed": 13,
+      "extra_key": 3
+     },
+     "malformed_edit_flags": {
+      "unparsed": 13,
+      "extra_key": 3
+     },
+     "budget_forced": 30,
+     "thought_tokens_median": 129.0,
+     "edit_order": {
+      "old_first": 415,
+      "null": 13
+     }
+    }
+   }
+  },
+  "qwen3-32b": {
+   "P1L_vs_P0": {
+    "arm": 0.0067,
+    "base": 0.0067,
+    "RD": 0.0,
+    "RD_CI": [
+     -0.0135,
+     0.0133
+    ],
+    "p_one_sided_RD_gt_0": 0.61474,
+    "p_one_sided_RD_lt_0": 0.59864,
+    "ratio": 1.0,
+    "ratio_CI": [
+     0.0,
+     "inf"
+    ],
+    "ratio_haldane": 1.0,
+    "mcnemar_exact_p_one_sided": 0.6875
+   },
+   "P5_removal": {
+    "P1L": 0.0067,
+    "P5": 0.0133,
+    "P0": 0.0067,
+    "fraction_removed": null,
+    "CI": [
+     -4.0,
+     5.0
+    ],
+    "RD_P1L_minus_P5": -0.0067,
+    "RD_CI": [
+     -0.0236,
+     0.0097
+    ],
+    "p_one_sided_removal_gt_0": 0.85721
+   },
+   "n_contexts": 300,
+   "events_P0": 2,
+   "arms": {
+    "C0": [
+     0.0133,
+     0.0052,
+     0.0338,
+     300
+    ],
+    "P0": [
+     0.0067,
+     0.0018,
+     0.024,
+     300
+    ],
+    "P1L": [
+     0.0067,
+     0.0018,
+     0.024,
+     300
+    ],
+    "P1N": [
+     0.0133,
+     0.0052,
+     0.0338,
+     300
+    ],
+    "P5": [
+     0.0133,
+     0.0052,
+     0.0338,
+     300
+    ],
+    "P6": [
+     0.0133,
+     0.0052,
+     0.0338,
+     300
+    ],
+    "P8a": [
+     0.01,
+     0.0034,
+     0.029,
+     300
+    ]
+   },
+   "arms_cond": {
+    "C0": [
+     0.0225,
+     0.0088,
+     0.0563,
+     178
+    ],
+    "P0": [
+     0.009,
+     0.0025,
+     0.0322,
+     222
+    ],
+    "P1L": [
+     0.0084,
+     0.0023,
+     0.0301,
+     238
+    ],
+    "P1N": [
+     0.0182,
+     0.0071,
+     0.0458,
+     220
+    ],
+    "P5": [
+     0.0167,
+     0.0065,
+     0.0422,
+     239
+    ],
+    "P6": [
+     0.0182,
+     0.0071,
+     0.0458,
+     220
+    ],
+    "P8a": [
+     0.0121,
+     0.0041,
+     0.0351,
+     247
+    ]
+   },
+   "P_edit": {
+    "C0": [
+     0.5933,
+     0.5369,
+     0.6474,
+     300
+    ],
+    "P0": [
+     0.74,
+     0.6876,
+     0.7864,
+     300
+    ],
+    "P1L": [
+     0.7933,
+     0.7439,
+     0.8353,
+     300
+    ],
+    "P1N": [
+     0.7333,
+     0.6806,
+     0.7802,
+     300
+    ],
+    "P5": [
+     0.7967,
+     0.7475,
+     0.8383,
+     300
+    ],
+    "P6": [
+     0.7333,
+     0.6806,
+     0.7802,
+     300
+    ],
+    "P8a": [
+     0.8233,
+     0.7762,
+     0.8623,
+     300
+    ]
+   },
+   "rule": {
+    "S1": false,
+    "S2": false,
+    "S2_mode": "haldane+exact_mcnemar (P0 events < 5)",
+    "S3": false,
+    "PASS": false
+   },
+   "secondary": {
+    "P6_induction_RD_ge_5pp_CI_lo_gt_0": false,
+    "P6": {
+     "arm": 0.0133,
+     "base": 0.0067,
+     "RD": 0.0067,
+     "RD_CI": [
+      -0.0098,
+      0.0233
+     ],
+     "p_one_sided_RD_gt_0": 0.26657,
+     "p_one_sided_RD_lt_0": 0.85261,
+     "ratio": 2.0,
+     "ratio_CI": [
+      0.25,
+      "inf"
+     ],
+     "ratio_haldane": 1.8,
+     "mcnemar_exact_p_one_sided": 0.34375
+    },
+    "P8a_removes_ge_70pct_CI_lo_ge_50pct": false,
+    "P8a": {
+     "P1L": 0.0067,
+     "P8a": 0.01,
+     "P0": 0.0067,
+     "fraction_removed": null,
+     "CI": [
+      -3.0,
+      3.0
+     ],
+     "RD_P1L_minus_P8a": -0.0033,
+     "RD_CI": [
+      -0.0162,
+      0.0068
+     ],
+     "p_one_sided_removal_gt_0": 0.81642
+    },
+    "P1N_vs_P0": {
+     "arm": 0.0133,
+     "base": 0.0067,
+     "RD": 0.0067,
+     "RD_CI": [
+      -0.0068,
+      0.0237
+     ],
+     "p_one_sided_RD_gt_0": 0.28227,
+     "p_one_sided_RD_lt_0": 0.86531,
+     "ratio": 2.0,
+     "ratio_CI": [
+      0.0,
+      "inf"
+     ],
+     "ratio_haldane": 1.8,
+     "mcnemar_exact_p_one_sided": 0.3125
+    },
+    "heldout_P1L_vs_P0": {
+     "arm": 0.0033,
+     "base": 0.0033,
+     "RD": 0.0,
+     "RD_CI": [
+      -0.01,
+      0.01
+     ],
+     "p_one_sided_RD_gt_0": 0.65063,
+     "p_one_sided_RD_lt_0": 0.65123,
+     "ratio": 1.0,
+     "ratio_CI": [
+      0.0,
+      "inf"
+     ],
+     "ratio_haldane": 1.0,
+     "mcnemar_exact_p_one_sided": 0.75
+    },
+    "heldout_replicates_CI_lo_gt_0": false,
+    "heldout_P6_vs_P0": {
+     "arm": 0.02,
+     "base": 0.0033,
+     "RD": 0.0167,
+     "RD_CI": [
+      0.0,
+      0.0347
+     ],
+     "p_one_sided_RD_gt_0": 0.0294,
+     "p_one_sided_RD_lt_0": 0.9907,
+     "ratio": 6.0,
+     "ratio_CI": [
+      1.0,
+      "inf"
+     ],
+     "ratio_haldane": 4.333,
+     "mcnemar_exact_p_one_sided": 0.0625
+    },
+    "copy_check": {
+     "P0": {
+      "clean_retry": {
+       "n": 3,
+       "malformed": [
+        0.0,
+        0.0,
+        0.5615,
+        3
+       ]
+      },
+      "same_content_variant": {
+       "n": 12,
+       "malformed": [
+        0.0,
+        0.0,
+        0.2425,
+        12
+       ]
+      },
+      "new_content": {
+       "n": 205,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0184,
+        205
+       ]
+      },
+      "unparsed_other": {
+       "n": 2,
+       "malformed": [
+        1.0,
+        0.3424,
+        1.0,
+        2
+       ]
+      },
+      "all_edits": {
+       "n": 222,
+       "malformed": [
+        0.009,
+        0.0025,
+        0.0322,
+        222
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": [
+       0.0,
+       0.0,
+       0.6576,
+       2
+      ],
+      "new_content_edits_malformed": [
+       0.0,
+       0.0,
+       0.0184,
+       205
+      ],
+      "non_copy_edits_malformed": [
+       0.009,
+       0.0025,
+       0.0322,
+       222
+      ]
+     },
+     "P1L": {
+      "clean_retry": {
+       "n": 89,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0414,
+        89
+       ]
+      },
+      "same_content_variant": {
+       "n": 40,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0876,
+        40
+       ]
+      },
+      "new_content": {
+       "n": 107,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0347,
+        107
+       ]
+      },
+      "unparsed_other": {
+       "n": 2,
+       "malformed": [
+        1.0,
+        0.3424,
+        1.0,
+        2
+       ]
+      },
+      "all_edits": {
+       "n": 238,
+       "malformed": [
+        0.0084,
+        0.0023,
+        0.0301,
+        238
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": [
+       0.0,
+       0.0,
+       0.6576,
+       2
+      ],
+      "new_content_edits_malformed": [
+       0.0,
+       0.0,
+       0.0347,
+       107
+      ],
+      "non_copy_edits_malformed": [
+       0.0084,
+       0.0023,
+       0.0301,
+       238
+      ]
+     },
+     "P6": {
+      "clean_retry": {
+       "n": 1,
+       "malformed": [
+        0.0,
+        0.0,
+        0.7935,
+        1
+       ]
+      },
+      "same_content_variant": {
+       "n": 14,
+       "malformed": [
+        0.0,
+        0.0,
+        0.2153,
+        14
+       ]
+      },
+      "new_content": {
+       "n": 201,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0188,
+        201
+       ]
+      },
+      "unparsed_other": {
+       "n": 4,
+       "malformed": [
+        1.0,
+        0.5101,
+        1.0,
+        4
+       ]
+      },
+      "all_edits": {
+       "n": 220,
+       "malformed": [
+        0.0182,
+        0.0071,
+        0.0458,
+        220
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": [
+       0.0,
+       0.0,
+       0.4899,
+       4
+      ],
+      "new_content_edits_malformed": [
+       0.0,
+       0.0,
+       0.0188,
+       201
+      ],
+      "non_copy_edits_malformed": [
+       0.0182,
+       0.0071,
+       0.0458,
+       220
+      ]
+     },
+     "P8a": {
+      "clean_retry": {
+       "n": 111,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0335,
+        111
+       ]
+      },
+      "same_content_variant": {
+       "n": 35,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0989,
+        35
+       ]
+      },
+      "new_content": {
+       "n": 98,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0377,
+        98
+       ]
+      },
+      "unparsed_other": {
+       "n": 3,
+       "malformed": [
+        1.0,
+        0.4385,
+        1.0,
+        3
+       ]
+      },
+      "all_edits": {
+       "n": 247,
+       "malformed": [
+        0.0121,
+        0.0041,
+        0.0351,
+        247
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": [
+       0.0,
+       0.0,
+       0.5615,
+       3
+      ],
+      "new_content_edits_malformed": [
+       0.0,
+       0.0,
+       0.0377,
+       98
+      ],
+      "non_copy_edits_malformed": [
+       0.0121,
+       0.0041,
+       0.0351,
+       247
+      ]
+     },
+     "P1N": {
+      "copy_corrupted_raw": {
+       "n": 1,
+       "malformed": [
+        1.0,
+        0.2065,
+        1.0,
+        1
+       ]
+      },
+      "clean_retry": {
+       "n": 9,
+       "malformed": [
+        0.0,
+        0.0,
+        0.2991,
+        9
+       ]
+      },
+      "same_content_variant": {
+       "n": 20,
+       "malformed": [
+        0.0,
+        0.0,
+        0.1611,
+        20
+       ]
+      },
+      "new_content": {
+       "n": 187,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0201,
+        187
+       ]
+      },
+      "unparsed_other": {
+       "n": 3,
+       "malformed": [
+        1.0,
+        0.4385,
+        1.0,
+        3
+       ]
+      },
+      "all_edits": {
+       "n": 220,
+       "malformed": [
+        0.0182,
+        0.0071,
+        0.0458,
+        220
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": [
+       0.25,
+       0.0456,
+       0.6994,
+       4
+      ],
+      "new_content_edits_malformed": [
+       0.0,
+       0.0,
+       0.0201,
+       187
+      ],
+      "non_copy_edits_malformed": [
+       0.0137,
+       0.0047,
+       0.0395,
+       219
+      ]
+     }
+    },
+    "census": {
+     "n": 300,
+     "P_call": [
+      0.75,
+      0.698,
+      0.7956,
+      300
+     ],
+     "P_edit": [
+      0.5933,
+      0.5369,
+      0.6474,
+      300
+     ],
+     "P_malformed_edit_uncond": [
+      0.0133,
+      0.0052,
+      0.0338,
+      300
+     ],
+     "P_malformed_given_edit": [
+      0.0225,
+      0.0088,
+      0.0563,
+      178
+     ],
+     "P_malformed_any_call_given_call": [
+      0.0222,
+      0.0095,
+      0.051,
+      225
+     ],
+     "P_malformed_edit_uncond_gemma_definition": [
+      0.0133,
+      0.0052,
+      0.0338,
+      300
+     ],
+     "P_loud_edit_uncond": [
+      0.0133,
+      0.0052,
+      0.0338,
+      300
+     ],
+     "P_strict_reject_given_edit": [
+      0.0225,
+      0.0088,
+      0.0563,
+      178
+     ],
+     "first_call_names": {
+      "edit_file": 178,
+      "<no call>": 75,
+      "run_command": 17,
+      "read_file": 16,
+      "submit_patch": 13,
+      "write_file": 1
+     },
+     "malformed_edit_why": {
+      "unparsed": 4
+     },
+     "malformed_edit_flags": {
+      "unparsed": 4
+     },
+     "budget_forced": 20,
+     "thought_tokens_median": 314.0,
+     "edit_order": {
+      "old_first": 162,
+      "null": 4,
+      "new_first": 12
+     }
+    }
+   }
+  },
+  "qwen3.5-9b": {
+   "P1L_vs_P0": {
+    "arm": 0.0,
+    "base": 0.0,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0,
+    "ratio": null,
+    "ratio_CI": [
+     null,
+     null
+    ],
+    "ratio_haldane": 1.0,
+    "mcnemar_exact_p_one_sided": 1.0
+   },
+   "P5_removal": {
+    "P1L": 0.0,
+    "P5": 0.0033,
+    "P0": 0.0,
+    "fraction_removed": null,
+    "CI": [
+     null,
+     null
+    ],
+    "RD_P1L_minus_P5": -0.0033,
+    "RD_CI": [
+     -0.0102,
+     0.0
+    ],
+    "p_one_sided_removal_gt_0": 1.0
+   },
+   "n_contexts": 300,
+   "events_P0": 0,
+   "arms": {
+    "C0": [
+     0.0,
+     0.0,
+     0.0064,
+     600
+    ],
+    "P0": [
+     0.0,
+     0.0,
+     0.0126,
+     300
+    ],
+    "P1L": [
+     0.0,
+     0.0,
+     0.0126,
+     300
+    ],
+    "P1N": [
+     0.0,
+     0.0,
+     0.0126,
+     300
+    ],
+    "P5": [
+     0.0033,
+     0.0006,
+     0.0186,
+     300
+    ],
+    "P6": [
+     0.01,
+     0.0034,
+     0.029,
+     300
+    ],
+    "P8a": [
+     0.0,
+     0.0,
+     0.0126,
+     300
+    ]
+   },
+   "arms_cond": {
+    "C0": [
+     0.0,
+     0.0,
+     0.0183,
+     206
+    ],
+    "P0": [
+     0.0,
+     0.0,
+     0.0191,
+     197
+    ],
+    "P1L": [
+     0.0,
+     0.0,
+     0.026,
+     144
+    ],
+    "P1N": [
+     0.0,
+     0.0,
+     0.0224,
+     168
+    ],
+    "P5": [
+     0.0053,
+     0.0009,
+     0.0295,
+     188
+    ],
+    "P6": [
+     0.016,
+     0.0054,
+     0.0459,
+     188
+    ],
+    "P8a": [
+     0.0,
+     0.0,
+     0.0246,
+     152
+    ]
+   },
+   "P_edit": {
+    "C0": [
+     0.3433,
+     0.3064,
+     0.3822,
+     600
+    ],
+    "P0": [
+     0.6567,
+     0.6013,
+     0.7081,
+     300
+    ],
+    "P1L": [
+     0.48,
+     0.4241,
+     0.5364,
+     300
+    ],
+    "P1N": [
+     0.56,
+     0.5034,
+     0.6151,
+     300
+    ],
+    "P5": [
+     0.6267,
+     0.5707,
+     0.6795,
+     300
+    ],
+    "P6": [
+     0.6267,
+     0.5707,
+     0.6795,
+     300
+    ],
+    "P8a": [
+     0.5067,
+     0.4504,
+     0.5628,
+     300
+    ]
+   },
+   "rule": {
+    "S1": false,
+    "S2": false,
+    "S2_mode": "haldane+exact_mcnemar (P0 events < 5)",
+    "S3": false,
+    "PASS": false
+   },
+   "secondary": {
+    "P6_induction_RD_ge_5pp_CI_lo_gt_0": false,
+    "P6": {
+     "arm": 0.01,
+     "base": 0.0,
+     "RD": 0.01,
+     "RD_CI": [
+      0.0,
+      0.023
+     ],
+     "p_one_sided_RD_gt_0": 0.0488,
+     "p_one_sided_RD_lt_0": 1.0,
+     "ratio": "inf",
+     "ratio_CI": [
+      "inf",
+      "inf"
+     ],
+     "ratio_haldane": 7.0,
+     "mcnemar_exact_p_one_sided": 0.125
+    },
+    "P8a_removes_ge_70pct_CI_lo_ge_50pct": false,
+    "P8a": {
+     "P1L": 0.0,
+     "P8a": 0.0,
+     "P0": 0.0,
+     "fraction_removed": null,
+     "CI": [
+      null,
+      null
+     ],
+     "RD_P1L_minus_P8a": 0.0,
+     "RD_CI": [
+      0.0,
+      0.0
+     ],
+     "p_one_sided_removal_gt_0": 1.0
+    },
+    "P1N_vs_P0": {
+     "arm": 0.0,
+     "base": 0.0,
+     "RD": 0.0,
+     "RD_CI": [
+      0.0,
+      0.0
+     ],
+     "p_one_sided_RD_gt_0": 1.0,
+     "p_one_sided_RD_lt_0": 1.0,
+     "ratio": null,
+     "ratio_CI": [
+      null,
+      null
+     ],
+     "ratio_haldane": 1.0,
+     "mcnemar_exact_p_one_sided": 1.0
+    },
+    "heldout_P1L_vs_P0": {
+     "arm": 0.0,
+     "base": 0.0,
+     "RD": 0.0,
+     "RD_CI": [
+      0.0,
+      0.0
+     ],
+     "p_one_sided_RD_gt_0": 1.0,
+     "p_one_sided_RD_lt_0": 1.0,
+     "ratio": null,
+     "ratio_CI": [
+      null,
+      null
+     ],
+     "ratio_haldane": 1.0,
+     "mcnemar_exact_p_one_sided": 1.0
+    },
+    "heldout_replicates_CI_lo_gt_0": false,
+    "heldout_P6_vs_P0": {
+     "arm": 0.03,
+     "base": 0.0,
+     "RD": 0.03,
+     "RD_CI": [
+      0.0103,
+      0.0528
+     ],
+     "p_one_sided_RD_gt_0": 0.0006,
+     "p_one_sided_RD_lt_0": 1.0,
+     "ratio": "inf",
+     "ratio_CI": [
+      "inf",
+      "inf"
+     ],
+     "ratio_haldane": 19.0,
+     "mcnemar_exact_p_one_sided": 0.001953
+    },
+    "copy_check": {
+     "P0": {
+      "same_content_variant": {
+       "n": 13,
+       "malformed": [
+        0.0,
+        0.0,
+        0.2281,
+        13
+       ]
+      },
+      "new_content": {
+       "n": 184,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0205,
+        184
+       ]
+      },
+      "all_edits": {
+       "n": 197,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0191,
+        197
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": null,
+      "new_content_edits_malformed": [
+       0.0,
+       0.0,
+       0.0205,
+       184
+      ],
+      "non_copy_edits_malformed": [
+       0.0,
+       0.0,
+       0.0191,
+       197
+      ]
+     },
+     "P1L": {
+      "clean_retry": {
+       "n": 38,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0918,
+        38
+       ]
+      },
+      "same_content_variant": {
+       "n": 45,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0787,
+        45
+       ]
+      },
+      "new_content": {
+       "n": 61,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0592,
+        61
+       ]
+      },
+      "all_edits": {
+       "n": 144,
+       "malformed": [
+        0.0,
+        0.0,
+        0.026,
+        144
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": null,
+      "new_content_edits_malformed": [
+       0.0,
+       0.0,
+       0.0592,
+       61
+      ],
+      "non_copy_edits_malformed": [
+       0.0,
+       0.0,
+       0.026,
+       144
+      ]
+     },
+     "P6": {
+      "clean_retry": {
+       "n": 1,
+       "malformed": [
+        0.0,
+        0.0,
+        0.7935,
+        1
+       ]
+      },
+      "same_content_variant": {
+       "n": 16,
+       "malformed": [
+        0.0625,
+        0.0111,
+        0.2833,
+        16
+       ]
+      },
+      "new_content": {
+       "n": 171,
+       "malformed": [
+        0.0117,
+        0.0032,
+        0.0416,
+        171
+       ]
+      },
+      "all_edits": {
+       "n": 188,
+       "malformed": [
+        0.016,
+        0.0054,
+        0.0459,
+        188
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": [
+       0.0,
+       0.0,
+       0.5615,
+       3
+      ],
+      "new_content_edits_malformed": [
+       0.0117,
+       0.0032,
+       0.0416,
+       171
+      ],
+      "non_copy_edits_malformed": [
+       0.016,
+       0.0054,
+       0.0459,
+       188
+      ]
+     },
+     "P8a": {
+      "clean_retry": {
+       "n": 40,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0876,
+        40
+       ]
+      },
+      "same_content_variant": {
+       "n": 39,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0897,
+        39
+       ]
+      },
+      "new_content": {
+       "n": 73,
+       "malformed": [
+        0.0,
+        0.0,
+        0.05,
+        73
+       ]
+      },
+      "all_edits": {
+       "n": 152,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0246,
+        152
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": null,
+      "new_content_edits_malformed": [
+       0.0,
+       0.0,
+       0.05,
+       73
+      ],
+      "non_copy_edits_malformed": [
+       0.0,
+       0.0,
+       0.0246,
+       152
+      ]
+     },
+     "P1N": {
+      "clean_retry": {
+       "n": 20,
+       "malformed": [
+        0.0,
+        0.0,
+        0.1611,
+        20
+       ]
+      },
+      "same_content_variant": {
+       "n": 27,
+       "malformed": [
+        0.0,
+        0.0,
+        0.1246,
+        27
+       ]
+      },
+      "new_content": {
+       "n": 121,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0308,
+        121
+       ]
+      },
+      "all_edits": {
+       "n": 168,
+       "malformed": [
+        0.0,
+        0.0,
+        0.0224,
+        168
+       ]
+      },
+      "share_of_malformed_that_are_verbatim_copies": null,
+      "new_content_edits_malformed": [
+       0.0,
+       0.0,
+       0.0308,
+       121
+      ],
+      "non_copy_edits_malformed": [
+       0.0,
+       0.0,
+       0.0224,
+       168
+      ]
+     }
+    },
+    "census": {
+     "n": 600,
+     "P_call": [
+      0.9983,
+      0.9906,
+      0.9997,
+      600
+     ],
+     "P_edit": [
+      0.3433,
+      0.3064,
+      0.3822,
+      600
+     ],
+     "P_malformed_edit_uncond": [
+      0.0,
+      0.0,
+      0.0064,
+      600
+     ],
+     "P_malformed_given_edit": [
+      0.0,
+      0.0,
+      0.0183,
+      206
+     ],
+     "P_malformed_any_call_given_call": [
+      0.0,
+      0.0,
+      0.0064,
+      599
+     ],
+     "P_malformed_edit_uncond_gemma_definition": [
+      0.0,
+      0.0,
+      0.0064,
+      600
+     ],
+     "P_loud_edit_uncond": [
+      0.0,
+      0.0,
+      0.0064,
+      600
+     ],
+     "P_strict_reject_given_edit": [
+      0.0,
+      0.0,
+      0.0183,
+      206
+     ],
+     "first_call_names": {
+      "run_command": 207,
+      "edit_file": 206,
+      "read_file": 171,
+      "submit_patch": 7,
+      "write_file": 5,
+      "get_status": 3,
+      "<no call>": 1
+     },
+     "malformed_edit_why": {},
+     "malformed_edit_flags": {},
+     "budget_forced": 11,
+     "thought_tokens_median": 90.0,
+     "edit_order": {
+      "old_first": 204,
+      "new_first": 2
+     }
+    }
+   }
+  }
+ },
+ "F2_holm": {
+  "raw": {
+   "qwen3-8b:H1": 0.36416,
+   "qwen3-8b:H2": 0.37016,
+   "qwen3-32b:H1": 0.61474,
+   "qwen3-32b:H2": 0.85721,
+   "qwen3.5-9b:H1": 1.0,
+   "qwen3.5-9b:H2": 1.0
+  },
+  "adjusted": {
+   "qwen3-8b:H1": 1.0,
+   "qwen3-8b:H2": 1.0,
+   "qwen3-32b:H1": 1.0,
+   "qwen3-32b:H2": 1.0,
+   "qwen3.5-9b:H1": 1.0,
+   "qwen3.5-9b:H2": 1.0
+  },
+  "n_tests": 6
+ },
+ "format": {
+  "predictions": {
+   "FP1_J_bt_hermes_nonstream_loud": {
+    "k": 1598,
+    "n": 1598,
+    "share": 1.0,
+    "pass(>=0.95)": true
+   },
+   "FP1_J_real_hermes_nonstream_loud": {
+    "k": 1461,
+    "n": 1462,
+    "share": 0.9993,
+    "pass(>=0.95)": true
+   },
+   "FP2_X_bt_qwen3coder_resync_or_loud": {
+    "k": 1598,
+    "n": 1598,
+    "share": 1.0,
+    "absorbed": 0,
+    "pass(>=0.5)": true
+   },
+   "FP2_X_real_qwen3coder_resync_or_loud": {
+    "k": 1598,
+    "n": 1598,
+    "share": 1.0,
+    "absorbed": 0,
+    "pass(>=0.5)": true
+   },
+   "FP3_gemma_silent": {
+    "k": 1598,
+    "n": 1598,
+    "share": 1.0
+   }
+  },
+  "summary_file": "format/format_summary.json"
+ },
+ "cross_family_loop": {
+  "PASS_in_at_least_one_Qwen_model": false,
+  "models_evaluated": [
+   "qwen3-8b",
+   "qwen3-32b",
+   "qwen3.5-9b"
+  ]
+ }
+}

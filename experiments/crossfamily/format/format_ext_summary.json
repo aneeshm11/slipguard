@@ -1,0 +1,113 @@
+{
+ "n_cases": 1610,
+ "n_located": 1598,
+ "variants": {
+  "harmony:J_bt": {
+   "n": 1598,
+   "delivered_invalid": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  },
+  "harmony:J_real": {
+   "n": 1598,
+   "delivered_invalid": [
+    0.9055,
+    0.8902,
+    0.9189,
+    1598
+   ],
+   "benign_in_json": [
+    0.0945,
+    0.0811,
+    0.1098,
+    1598
+   ]
+  },
+  "harmony:J_omit": {
+   "n": 1598,
+   "delivered_invalid": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  },
+  "harmony:J_unesc": {
+   "n": 1598,
+   "delivered_invalid": [
+    0.4287,
+    0.4046,
+    0.4531,
+    1598
+   ],
+   "na": [
+    0.5713,
+    0.5469,
+    0.5954,
+    1598
+   ]
+  },
+  "mistral:J_bt": {
+   "n": 1598,
+   "delivered_invalid": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  },
+  "mistral:J_real": {
+   "n": 1598,
+   "delivered_invalid": [
+    0.9055,
+    0.8902,
+    0.9189,
+    1598
+   ],
+   "benign_in_json": [
+    0.0945,
+    0.0811,
+    0.1098,
+    1598
+   ]
+  },
+  "mistral:J_omit": {
+   "n": 1598,
+   "delivered_invalid": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  },
+  "mistral:J_unesc": {
+   "n": 1598,
+   "delivered_invalid": [
+    0.4287,
+    0.4046,
+    0.4531,
+    1598
+   ],
+   "na": [
+    0.5713,
+    0.5469,
+    0.5954,
+    1598
+   ]
+  }
+ },
+ "valid_intended": {
+  "harmony:exact": 1598,
+  "mistral:exact": 1598
+ },
+ "history_rerender_of_delivered_invalid_J_bt": {
+  "harmony:raw_args_verbatim_in_history": 1598,
+  "harmony:rendered": 1598,
+  "mistral:raw_args_verbatim_in_history": 0,
+  "mistral:double_encoded_json_string_in_history": 1598,
+  "mistral:rendered": 1598
+ }
+}

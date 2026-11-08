@@ -1,0 +1,527 @@
+{
+ "prereg": "PREREG_v2.5b_stackGainE4B.md sha256 c78e7512485a6f3e98e2fd71f319638aa72ff10f2eb5f6deedc89415a94ffb7d (copies v2.5 F1)",
+ "F1_primary_source": "R1",
+ "cpu_checks": {
+  "N1": {
+   "n": 300,
+   "msgs_identical": 300,
+   "render_identical": 300,
+   "exceptions": []
+  },
+  "R1_render_identity": {
+   "n": 300,
+   "identical": 300,
+   "exceptions": []
+  },
+  "I2": {
+   "n": 600,
+   "identical": 600,
+   "exceptions": []
+  },
+  "Tcheck": {
+   "n": 300,
+   "last_is_tool": 300,
+   "on_identical": 300,
+   "off_plus_closed_thought": 300,
+   "appended_ids_seen": [
+    "[100, 45518, 107, 101]"
+   ],
+   "exceptions": []
+  }
+ },
+ "replay_status": {
+  "P0|ok": 300,
+  "P8a|ok": 300
+ },
+ "parser_disagreements": {
+  "replay": 0,
+  "live_l1": 0,
+  "cases": []
+ },
+ "F1_skipped": {},
+ "F1_R1": {
+  "n_states": 300,
+  "STOCK": {
+   "k": 21,
+   "n": 300,
+   "rate": 0.07,
+   "wilson95": [
+    0.046236944827176336,
+    0.10463601042593323
+   ]
+  },
+  "SLIPGUARD": {
+   "k": 0,
+   "n": 300,
+   "rate": 0.0,
+   "wilson95": [
+    8.673617379884035e-19,
+    0.012642971224546034
+   ]
+  },
+  "discordant_STOCK_only": 21,
+  "discordant_SLIPGUARD_only": 0,
+  "mcnemar_one_sided_p": 4.76837158203125e-07,
+  "RD_SLIPGUARD_minus_STOCK": -0.07,
+  "RD_ci95": [
+   -0.1,
+   -0.04262295081967213
+  ],
+  "relative_reduction": 1.0,
+  "relative_reduction_ci95": [
+   1.0,
+   1.0
+  ],
+  "SLIPGUARD_loud": {
+   "k": 2,
+   "n": 300,
+   "rate": 0.006666666666666667,
+   "wilson95": [
+    0.0018301483579117855,
+    0.023977583250306973
+   ]
+  },
+  "SLIPGUARD_harmful_plus_loud": {
+   "k": 2,
+   "n": 300,
+   "rate": 0.006666666666666667,
+   "wilson95": [
+    0.0018301483579117855,
+    0.023977583250306973
+   ]
+  },
+  "conditional_given_edit": {
+   "STOCK": {
+    "k": 21,
+    "n": 205,
+    "rate": 0.1024390243902439,
+    "wilson95": [
+     0.0679818388226113,
+     0.15152179364364343
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 214,
+    "rate": 0.0,
+    "wilson95": [
+     0.0,
+     0.017634195260581874
+    ]
+   }
+  },
+  "STOCK_harmful_by_closer": {
+   "`": 18,
+   "None": 3
+  },
+  "class_counts": {
+   "STOCK": {
+    "clean": 184,
+    "no_edit": 95,
+    "harmful": 21
+   },
+   "SLIPGUARD": {
+    "clean": 212,
+    "no_edit": 86,
+    "loud": 2
+   }
+  }
+ },
+ "F1_L1_secondary": {
+  "n_states": 0,
+  "note": "not run / no records"
+ },
+ "F1_R1_sensitivity_excl_budget_forced": {
+  "excluded_states": [
+   "sympy__sympy-14038__S1:15"
+  ],
+  "n_states": 299,
+  "STOCK": {
+   "k": 21,
+   "n": 299,
+   "rate": 0.07023411371237458,
+   "wilson95": [
+    0.046393136687279395,
+    0.10497800978390393
+   ]
+  },
+  "SLIPGUARD": {
+   "k": 0,
+   "n": 299,
+   "rate": 0.0,
+   "wilson95": [
+    0.0,
+    0.012684719046240528
+   ]
+  },
+  "discordant_STOCK_only": 21,
+  "discordant_SLIPGUARD_only": 0,
+  "mcnemar_one_sided_p": 4.76837158203125e-07,
+  "RD_SLIPGUARD_minus_STOCK": -0.07023411371237458,
+  "RD_ci95": [
+   -0.10067114093959731,
+   -0.0429042904290429
+  ],
+  "relative_reduction": 1.0,
+  "relative_reduction_ci95": [
+   1.0,
+   1.0
+  ]
+ },
+ "no_harm": {
+  "N1": {
+   "holds": true,
+   "n": 300,
+   "msgs_identical": 300,
+   "render_identical": 300,
+   "exceptions": []
+  },
+  "N2": {
+   "samples_checked": 600,
+   "violations": 3,
+   "cases": [
+    [
+     "pydata__xarray-3976__S1:37",
+     "P0",
+     "intervention_on_unflagged_call"
+    ],
+    [
+     "sympy__sympy-13840__S1:28",
+     "P8a",
+     "intervention_on_unflagged_call"
+    ],
+    [
+     "pytest-dev__pytest-7186__S1:8",
+     "P8a",
+     "intervention_on_unflagged_call"
+    ]
+   ],
+   "holds": false
+  },
+  "N3": {
+   "holds": true,
+   "n_states": 300,
+   "STOCK": {
+    "k": 7,
+    "n": 300,
+    "rate": 0.023333333333333334,
+    "wilson95": [
+     0.011347660299125234,
+     0.04737197226827532
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 300,
+    "rate": 0.0,
+    "wilson95": [
+     8.673617379884035e-19,
+     0.012642971224546034
+    ]
+   },
+   "discordant_STOCK_only": 7,
+   "discordant_SLIPGUARD_only": 0,
+   "mcnemar_one_sided_p": 0.0078125,
+   "RD_SLIPGUARD_minus_STOCK": -0.023333333333333334,
+   "RD_ci95": [
+    -0.04081632653061224,
+    -0.006711409395973154
+   ],
+   "relative_reduction": 1.0,
+   "relative_reduction_ci95": [
+    1.0,
+    1.0
+   ]
+  },
+  "N4_P0_loud": {
+   "k": 3,
+   "n": 300,
+   "rate": 0.01,
+   "wilson95": [
+    0.003406618437715286,
+    0.02898349336233983
+   ],
+   "gain_sentence_must_state_it": false
+  }
+ },
+ "F2": {
+  "skipped": {
+   "missing": 600
+  },
+  "I2_identity": {
+   "n": 600,
+   "identical": 600,
+   "exceptions": []
+  },
+  "drift_unconditional": {
+   "n_states": 0,
+   "STOCK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "discordant_STOCK_only": 0,
+   "discordant_SLIPGUARD_only": 0,
+   "mcnemar_one_sided_p": 1.0,
+   "RD_SLIPGUARD_minus_STOCK": null,
+   "RD_ci95": [
+    null,
+    null
+   ],
+   "relative_reduction": null,
+   "relative_reduction_ci95": [
+    null,
+    null
+   ]
+  },
+  "closer_slip_harmful": {
+   "n_states": 0,
+   "STOCK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "discordant_STOCK_only": 0,
+   "discordant_SLIPGUARD_only": 0,
+   "mcnemar_one_sided_p": 1.0,
+   "RD_SLIPGUARD_minus_STOCK": null,
+   "RD_ci95": [
+    null,
+    null
+   ],
+   "relative_reduction": null,
+   "relative_reduction_ci95": [
+    null,
+    null
+   ]
+  },
+  "total_harmful": {
+   "n_states": 0,
+   "STOCK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "discordant_STOCK_only": 0,
+   "discordant_SLIPGUARD_only": 0,
+   "mcnemar_one_sided_p": 1.0,
+   "RD_SLIPGUARD_minus_STOCK": null,
+   "RD_ci95": [
+    null,
+    null
+   ],
+   "relative_reduction": null,
+   "relative_reduction_ci95": [
+    null,
+    null
+   ]
+  },
+  "drift_among_edits": {
+   "STOCK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   }
+  },
+  "SLIPGUARD_loud": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "live_first100_secondary": {
+   "n": 0,
+   "drift_edits": 0,
+   "edits": 0,
+   "closer_slips": 0,
+   "harmful": 0,
+   "loud": 0
+  },
+  "sensitivity_excl_budget_forced": {
+   "excluded_states": [],
+   "drift_unconditional": {
+    "n_states": 0,
+    "STOCK": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "wilson95": [
+      null,
+      null
+     ]
+    },
+    "SLIPGUARD": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "wilson95": [
+      null,
+      null
+     ]
+    },
+    "discordant_STOCK_only": 0,
+    "discordant_SLIPGUARD_only": 0,
+    "mcnemar_one_sided_p": 1.0,
+    "RD_SLIPGUARD_minus_STOCK": null,
+    "RD_ci95": [
+     null,
+     null
+    ],
+    "relative_reduction": null,
+    "relative_reduction_ci95": [
+     null,
+     null
+    ]
+   },
+   "closer_slip_harmful": {
+    "n_states": 0,
+    "STOCK": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "wilson95": [
+      null,
+      null
+     ]
+    },
+    "SLIPGUARD": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "wilson95": [
+      null,
+      null
+     ]
+    },
+    "discordant_STOCK_only": 0,
+    "discordant_SLIPGUARD_only": 0,
+    "mcnemar_one_sided_p": 1.0,
+    "RD_SLIPGUARD_minus_STOCK": null,
+    "RD_ci95": [
+     null,
+     null
+    ],
+    "relative_reduction": null,
+    "relative_reduction_ci95": [
+     null,
+     null
+    ]
+   }
+  }
+ },
+ "F3": {
+  "skipped": {
+   "missing": 300
+  },
+  "Tcheck": {
+   "n": 300,
+   "last_is_tool": 300,
+   "on_identical": 300,
+   "off_plus_closed_thought": 300,
+   "appended_ids_seen": [
+    "[100, 45518, 107, 101]"
+   ],
+   "exceptions": []
+  },
+  "n_states": 0,
+  "STOCK": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "GUARDED": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "discordant_STOCK_only": 0,
+  "discordant_GUARDED_only": 0,
+  "mcnemar_one_sided_p": 1.0,
+  "RD_GUARDED_minus_STOCK": null,
+  "RD_ci95": [
+   null,
+   null
+  ],
+  "relative_reduction": null,
+  "relative_reduction_ci95": [
+   null,
+   null
+  ]
+ },
+ "holm": {
+  "H1": {
+   "p": 4.76837158203125e-07,
+   "holm_p": 4.76837158203125e-07
+  }
+ },
+ "verdicts": {
+  "F1_E4B": "GAIN WITH HARM",
+  "F1_no_harm_holds": false,
+  "L1_consistent_with_R1": null,
+  "L1_partial": null
+ },
+ "paper_sentence": "no cross-size claim; the result goes to the limitations"
+}

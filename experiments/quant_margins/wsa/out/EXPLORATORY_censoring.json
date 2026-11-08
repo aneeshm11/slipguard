@@ -1,0 +1,286 @@
+{
+ "_status": "EXPLORATORY (review B13); frozen records read-only",
+ "censoring_types": {
+  "12b_qatct": {
+   "n": 454,
+   "LA_lower_bound": 202,
+   "DQ_upper_bound": 0,
+   "uncensored": 252
+  },
+  "31b_autoround_intel": {
+   "n": 454,
+   "LA_lower_bound": 207,
+   "DQ_upper_bound": 0,
+   "uncensored": 247
+  },
+  "31b_awq_cyankiwi": {
+   "n": 454,
+   "LA_lower_bound": 214,
+   "DQ_upper_bound": 0,
+   "uncensored": 240
+  },
+  "31b_awq_quanttrio": {
+   "n": 454,
+   "LA_lower_bound": 54,
+   "DQ_upper_bound": 0,
+   "uncensored": 400
+  },
+  "31b_bf16": {
+   "n": 454,
+   "LA_lower_bound": 191,
+   "DQ_upper_bound": 0,
+   "uncensored": 263
+  },
+  "31b_fp8_redhat": {
+   "n": 454,
+   "LA_lower_bound": 194,
+   "DQ_upper_bound": 0,
+   "uncensored": 260
+  },
+  "31b_nvfp4_redhat": {
+   "n": 454,
+   "LA_lower_bound": 167,
+   "DQ_upper_bound": 0,
+   "uncensored": 287
+  },
+  "31b_ptq_q40": {
+   "n": 454,
+   "LA_lower_bound": 111,
+   "DQ_upper_bound": 0,
+   "uncensored": 343
+  },
+  "31b_qatct": {
+   "n": 454,
+   "LA_lower_bound": 251,
+   "DQ_upper_bound": 0,
+   "uncensored": 203
+  },
+  "31b_qatunq": {
+   "n": 454,
+   "LA_lower_bound": 187,
+   "DQ_upper_bound": 0,
+   "uncensored": 267
+  },
+  "e4b_bf16": {
+   "n": 454,
+   "LA_lower_bound": 76,
+   "DQ_upper_bound": 0,
+   "uncensored": 378
+  },
+  "e4b_qatct": {
+   "n": 454,
+   "LA_lower_bound": 9,
+   "DQ_upper_bound": 0,
+   "uncensored": 445
+  }
+ },
+ "vs_reference": {
+  "31b_autoround_intel": {
+   "reference": "31b_bf16",
+   "n_pairs": 454,
+   "registered_median_deficit_lb": 0.633,
+   "n_both_uncensored": 203,
+   "median_deficit_uncensored": [
+    0.75,
+    0.344,
+    1.453
+   ],
+   "mean_paired_deficit_uncensored": [
+    1.187,
+    0.857,
+    1.515
+   ],
+   "gehan_score": [
+    0.167,
+    0.09,
+    0.242
+   ],
+   "certain_lower_than_ref": 177,
+   "certain_higher_than_ref": 101
+  },
+  "31b_awq_cyankiwi": {
+   "reference": "31b_bf16",
+   "n_pairs": 454,
+   "registered_median_deficit_lb": 0.016,
+   "n_both_uncensored": 219,
+   "median_deficit_uncensored": [
+    -0.471,
+    -0.808,
+    -0.176
+   ],
+   "mean_paired_deficit_uncensored": [
+    -0.457,
+    -0.622,
+    -0.308
+   ],
+   "gehan_score": [
+    -0.163,
+    -0.238,
+    -0.088
+   ],
+   "certain_lower_than_ref": 93,
+   "certain_higher_than_ref": 167
+  },
+  "31b_awq_quanttrio": {
+   "reference": "31b_bf16",
+   "n_pairs": 454,
+   "registered_median_deficit_lb": 1.911,
+   "n_both_uncensored": 261,
+   "median_deficit_uncensored": [
+    1.875,
+    1.582,
+    2.337
+   ],
+   "mean_paired_deficit_uncensored": [
+    1.952,
+    1.703,
+    2.201
+   ],
+   "gehan_score": [
+    0.672,
+    0.615,
+    0.725
+   ],
+   "certain_lower_than_ref": 348,
+   "certain_higher_than_ref": 43
+  },
+  "31b_fp8_redhat": {
+   "reference": "31b_bf16",
+   "n_pairs": 454,
+   "registered_median_deficit_lb": 0.027,
+   "n_both_uncensored": 245,
+   "median_deficit_uncensored": [
+    -0.359,
+    -0.539,
+    0.012
+   ],
+   "mean_paired_deficit_uncensored": [
+    -0.12,
+    -0.214,
+    -0.02
+   ],
+   "gehan_score": [
+    -0.088,
+    -0.157,
+    -0.016
+   ],
+   "certain_lower_than_ref": 117,
+   "certain_higher_than_ref": 157
+  },
+  "31b_nvfp4_redhat": {
+   "reference": "31b_bf16",
+   "n_pairs": 454,
+   "registered_median_deficit_lb": 0.785,
+   "n_both_uncensored": 234,
+   "median_deficit_uncensored": [
+    0.742,
+    0.383,
+    1.121
+   ],
+   "mean_paired_deficit_uncensored": [
+    0.843,
+    0.602,
+    1.083
+   ],
+   "gehan_score": [
+    0.242,
+    0.167,
+    0.323
+   ],
+   "certain_lower_than_ref": 207,
+   "certain_higher_than_ref": 97
+  },
+  "31b_ptq_q40": {
+   "reference": "31b_bf16",
+   "n_pairs": 454,
+   "registered_median_deficit_lb": 2.602,
+   "n_both_uncensored": 253,
+   "median_deficit_uncensored": [
+    2.703,
+    2.328,
+    3.164
+   ],
+   "mean_paired_deficit_uncensored": [
+    2.702,
+    2.415,
+    2.991
+   ],
+   "gehan_score": [
+    0.698,
+    0.646,
+    0.748
+   ],
+   "certain_lower_than_ref": 330,
+   "certain_higher_than_ref": 13
+  },
+  "31b_qatct": {
+   "reference": "31b_bf16",
+   "n_pairs": 454,
+   "registered_median_deficit_lb": 5.133,
+   "n_both_uncensored": 159,
+   "median_deficit_uncensored": [
+    5.672,
+    4.938,
+    6.071
+   ],
+   "mean_paired_deficit_uncensored": [
+    5.407,
+    4.986,
+    5.81
+   ],
+   "gehan_score": [
+    0.43,
+    0.385,
+    0.477
+   ],
+   "certain_lower_than_ref": 199,
+   "certain_higher_than_ref": 4
+  },
+  "31b_qatunq": {
+   "reference": "31b_bf16",
+   "n_pairs": 454,
+   "registered_median_deficit_lb": 5.508,
+   "n_both_uncensored": 208,
+   "median_deficit_uncensored": [
+    6.0,
+    5.586,
+    6.437
+   ],
+   "mean_paired_deficit_uncensored": [
+    5.736,
+    5.395,
+    6.1
+   ],
+   "gehan_score": [
+    0.579,
+    0.525,
+    0.633
+   ],
+   "certain_lower_than_ref": 265,
+   "certain_higher_than_ref": 2
+  },
+  "e4b_qatct": {
+   "reference": "e4b_bf16",
+   "n_pairs": 454,
+   "registered_median_deficit_lb": 3.125,
+   "n_both_uncensored": 377,
+   "median_deficit_uncensored": [
+    3.125,
+    2.812,
+    3.375
+   ],
+   "mean_paired_deficit_uncensored": [
+    3.158,
+    2.97,
+    3.349
+   ],
+   "gehan_score": [
+    0.934,
+    0.905,
+    0.962
+   ],
+   "certain_lower_than_ref": 434,
+   "certain_higher_than_ref": 10
+  }
+ }
+}

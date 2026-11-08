@@ -1,0 +1,55 @@
+{
+ "prereg": "PREREG_v2.12_llama_family.md (sha256 in PROGRESS.md at freeze)",
+ "copying_RD": [
+  0.06,
+  [
+   0.0259,
+   0.096
+  ]
+ ],
+ "imitation_RD": [
+  0.0533,
+  [
+   0.0227,
+   0.087
+  ]
+ ],
+ "removal_P8a": {
+  "n_contexts": 300,
+  "uncond": {
+   "P1L": 0.0933,
+   "P8a": 0.0567,
+   "P0": 0.0333,
+   "fraction_removed": 0.611,
+   "CI": [
+    -0.1333,
+    1.1538
+   ],
+   "RD_P1L_minus_P8a": 0.0367,
+   "RD_CI": [
+    -0.0064,
+    0.0777
+   ],
+   "p_one_sided_removal_gt_0": 0.0498
+  },
+  "cond": {
+   "P1L": 0.1687,
+   "P8a": 0.0919,
+   "P0": 0.1282,
+   "fraction_removed": 1.897,
+   "CI": [
+    -10.5955,
+    14.1394
+   ],
+   "RD_P1L_minus_P8a": 0.0768,
+   "RD_CI": [
+    0.0046,
+    0.1477
+   ],
+   "p_one_sided_removal_gt_0": 0.0194
+  }
+ },
+ "n_records": 1200,
+ "errors": {},
+ "verdict": "HISTORY-SENSITIVE"
+}

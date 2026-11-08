@@ -1,0 +1,579 @@
+{
+ "figures": {
+  "FIG1_v3": {
+   "script": "paper/protocol/draft/figures/fig1_gains_v3.py",
+   "written_utc": "2026-11-07T20:46:07Z",
+   "outputs_sha256": {
+    "fig1_gains_v3.png": "d8c9d4c8cd4cb10b093b133b6c293d87e71907e0875fc1d161b2f4e95b4a76a5",
+    "fig1_gains_v3.svg": "6b06e9a03106ce43cfaa9d6d06184108a27474dfb78d2699689db8c34dec0bbb",
+    "fig1_gains_v3.py": "e65af96024e6d72c074541d8b07bd91f26e0079280fc94e1b2dcc0a5c53c8108"
+   },
+   "n_values": 68,
+   "values": [
+    {
+     "label": "E2E malformed calls/episode, stock",
+     "value": 2.4735,
+     "source": "experiments/endtoend/analysis/prereg_pop31.json#co_primary/Y1/base_mean",
+     "file_sha256": "f112159236659939a141da3db29ce3f29969bb672d81b9376f5d819e34e64726"
+    },
+    {
+     "label": "E2E malformed calls/episode, slipguard proxy",
+     "value": 0.2743,
+     "source": "experiments/endtoend/analysis/prereg_pop31.json#co_primary/Y1/fullp_mean",
+     "file_sha256": "f112159236659939a141da3db29ce3f29969bb672d81b9376f5d819e34e64726"
+    },
+    {
+     "label": "E2E ratio slipguard/stock",
+     "value": 0.1109,
+     "source": "experiments/endtoend/analysis/prereg_pop31.json#co_primary/Y1/ratio_fullp_over_base/ratio",
+     "file_sha256": "f112159236659939a141da3db29ce3f29969bb672d81b9376f5d819e34e64726"
+    },
+    {
+     "label": "E2E tasks",
+     "value": 113,
+     "source": "experiments/endtoend/analysis/prereg_pop31.json#co_primary/Y1/diff_fullp_minus_base/n",
+     "file_sha256": "f112159236659939a141da3db29ce3f29969bb672d81b9376f5d819e34e64726"
+    },
+    {
+     "label": "E2E tasks per replicate count (base arm)",
+     "value": {
+      "2": 113
+     },
+     "source": "experiments/endtoend/analysis/prereg_pop31.json#replicates/base",
+     "file_sha256": "f112159236659939a141da3db29ce3f29969bb672d81b9376f5d819e34e64726"
+    },
+    {
+     "label": "stuck episodes replicate1 base [k, n, CI]",
+     "value": [
+      9,
+      113,
+      [
+       0.0425,
+       0.1445
+      ]
+     ],
+     "source": "experiments/endtoend/analysis/prereg_pop31.json#secondary/stuck/replicate1/base",
+     "file_sha256": "f112159236659939a141da3db29ce3f29969bb672d81b9376f5d819e34e64726"
+    },
+    {
+     "label": "stuck episodes replicate1 fullp [k, n, CI]",
+     "value": [
+      0,
+      113,
+      [
+       0.0,
+       0.0329
+      ]
+     ],
+     "source": "experiments/endtoend/analysis/prereg_pop31.json#secondary/stuck/replicate1/fullp",
+     "file_sha256": "f112159236659939a141da3db29ce3f29969bb672d81b9376f5d819e34e64726"
+    },
+    {
+     "label": "stuck episodes replicate2 base [k, n, CI]",
+     "value": [
+      5,
+      113,
+      [
+       0.019,
+       0.0994
+      ]
+     ],
+     "source": "experiments/endtoend/analysis/prereg_pop31.json#secondary/stuck/replicate2/base",
+     "file_sha256": "f112159236659939a141da3db29ce3f29969bb672d81b9376f5d819e34e64726"
+    },
+    {
+     "label": "stuck episodes replicate2 fullp [k, n, CI]",
+     "value": [
+      0,
+      113,
+      [
+       0.0,
+       0.0329
+      ]
+     ],
+     "source": "experiments/endtoend/analysis/prereg_pop31.json#secondary/stuck/replicate2/fullp",
+     "file_sha256": "f112159236659939a141da3db29ce3f29969bb672d81b9376f5d819e34e64726"
+    },
+    {
+     "label": "stuck episodes, stock, pooled k",
+     "value": 14,
+     "derived": "sum of replicate k",
+     "inputs": [
+      "stuck episodes replicate1 base [k, n, CI]",
+      "stuck episodes replicate2 base [k, n, CI]"
+     ]
+    },
+    {
+     "label": "stuck episodes, slipguard, pooled k",
+     "value": 0,
+     "derived": "sum of replicate k",
+     "inputs": [
+      "stuck episodes replicate1 fullp [k, n, CI]",
+      "stuck episodes replicate2 fullp [k, n, CI]"
+     ]
+    },
+    {
+     "label": "stuck episodes, pooled n",
+     "value": 226,
+     "derived": "sum of replicate n",
+     "inputs": [
+      "stuck episodes replicate1 base [k, n, CI]",
+      "stuck episodes replicate2 base [k, n, CI]"
+     ]
+    },
+    {
+     "label": "E_ext malformed calls/episode, stock",
+     "value": 1.7644,
+     "source": "experiments/endtoend/analysis/prereg_E_ext.json#secondary/Y1/base_mean",
+     "file_sha256": "cb04c8588879519c52cf630ae066591ed712b4da40c9fba4d183a3e0b077c92e"
+    },
+    {
+     "label": "E_ext malformed calls/episode, slipguard proxy",
+     "value": 0.3739,
+     "source": "experiments/endtoend/analysis/prereg_E_ext.json#secondary/Y1/fullp_mean",
+     "file_sha256": "cb04c8588879519c52cf630ae066591ed712b4da40c9fba4d183a3e0b077c92e"
+    },
+    {
+     "label": "E_ext ratio slipguard/stock",
+     "value": 0.2119,
+     "source": "experiments/endtoend/analysis/prereg_E_ext.json#secondary/Y1/ratio_fullp_over_base/ratio",
+     "file_sha256": "cb04c8588879519c52cf630ae066591ed712b4da40c9fba4d183a3e0b077c92e"
+    },
+    {
+     "label": "E_ext ratio CI",
+     "value": [
+      0.1258,
+      0.3464
+     ],
+     "source": "experiments/endtoend/analysis/prereg_E_ext.json#secondary/Y1/ratio_fullp_over_base/ci95",
+     "file_sha256": "cb04c8588879519c52cf630ae066591ed712b4da40c9fba4d183a3e0b077c92e"
+    },
+    {
+     "label": "E_ext stuck, stock [k, n]",
+     "value": [
+      49,
+      904
+     ],
+     "source": "experiments/endtoend/analysis/prereg_E_ext.json#secondary/stuck/base",
+     "file_sha256": "cb04c8588879519c52cf630ae066591ed712b4da40c9fba4d183a3e0b077c92e"
+    },
+    {
+     "label": "E_ext stuck, slipguard [k, n]",
+     "value": [
+      3,
+      904
+     ],
+     "source": "experiments/endtoend/analysis/prereg_E_ext.json#secondary/stuck/fullp",
+     "file_sha256": "cb04c8588879519c52cf630ae066591ed712b4da40c9fba4d183a3e0b077c92e"
+    },
+    {
+     "label": "E_ext resolved [base, fullp, n]",
+     "value": [
+      393,
+      394,
+      904
+     ],
+     "source": "experiments/endtoend/analysis/prereg_E_ext.json#primary_resolve/resolved_base_fullp_of",
+     "file_sha256": "cb04c8588879519c52cf630ae066591ed712b4da40c9fba4d183a3e0b077c92e"
+    },
+    {
+     "label": "E_ext resolve diff (fullp - base)",
+     "value": 0.0011,
+     "source": "experiments/endtoend/analysis/prereg_E_ext.json#primary_resolve/mean_diff",
+     "file_sha256": "cb04c8588879519c52cf630ae066591ed712b4da40c9fba4d183a3e0b077c92e"
+    },
+    {
+     "label": "E_ext resolve diff CI",
+     "value": [
+      -0.0221,
+      0.0243
+     ],
+     "source": "experiments/endtoend/analysis/prereg_E_ext.json#primary_resolve/ci95",
+     "file_sha256": "cb04c8588879519c52cf630ae066591ed712b4da40c9fba4d183a3e0b077c92e"
+    },
+    {
+     "label": "E_ext primary verdict",
+     "value": "RESOLVE NON-INFERIOR",
+     "source": "experiments/endtoend/analysis/prereg_E_ext.json#primary_verdict",
+     "file_sha256": "cb04c8588879519c52cf630ae066591ed712b4da40c9fba4d183a3e0b077c92e"
+    },
+    {
+     "label": "E_ext primary_resolve block",
+     "value": {
+      "n": 113,
+      "mean_diff": 0.0011,
+      "ci95": [
+       -0.0221,
+       0.0243
+      ],
+      "p_boot": 0.96,
+      "non_inferior_at_-3pp": true,
+      "resolved_base_fullp_of": [
+       393,
+       394,
+       904
+      ]
+     },
+     "source": "experiments/endtoend/analysis/prereg_E_ext.json#primary_resolve",
+     "file_sha256": "cb04c8588879519c52cf630ae066591ed712b4da40c9fba4d183a3e0b077c92e"
+    },
+    {
+     "label": "E_ext non-inferior at the registered margin",
+     "value": true,
+     "source": "experiments/endtoend/analysis/prereg_E_ext.json#primary_resolve/non_inferior_at_-3pp",
+     "file_sha256": "cb04c8588879519c52cf630ae066591ed712b4da40c9fba4d183a3e0b077c92e"
+    },
+    {
+     "label": "non-inferiority margin (pp), parsed from the result key",
+     "value": -3.0,
+     "derived": "number in the key name primary_resolve/non_inferior_at_<margin>pp",
+     "inputs": [
+      "E_ext non-inferior at the registered margin"
+     ]
+    },
+    {
+     "label": "exact intent lenient",
+     "value": 0.0,
+     "source": "experiments/intent_decoding/v24/battery_run_analysis.json#outcomes_detectable/lenient/exact/reweighted/rate",
+     "file_sha256": "8c97e05f79f9f7dfeed583c425df905d3f3d7ea762dc238011999f754393c9a3"
+    },
+    {
+     "label": "exact intent lenient CI (Kish-Wilson)",
+     "value": [
+      0.0,
+      0.02112777652262251
+     ],
+     "source": "experiments/intent_decoding/v24/battery_run_analysis.json#outcomes_detectable/lenient/exact/reweighted/wilson95_kish",
+     "file_sha256": "8c97e05f79f9f7dfeed583c425df905d3f3d7ea762dc238011999f754393c9a3"
+    },
+    {
+     "label": "exact intent greedy",
+     "value": 0.6895184498280089,
+     "source": "experiments/intent_decoding/v24/battery_run_analysis.json#outcomes_detectable/greedy/exact/reweighted/rate",
+     "file_sha256": "8c97e05f79f9f7dfeed583c425df905d3f3d7ea762dc238011999f754393c9a3"
+    },
+    {
+     "label": "exact intent greedy CI (Kish-Wilson)",
+     "value": [
+      0.6181413139683665,
+      0.7528873787778914
+     ],
+     "source": "experiments/intent_decoding/v24/battery_run_analysis.json#outcomes_detectable/greedy/exact/reweighted/wilson95_kish",
+     "file_sha256": "8c97e05f79f9f7dfeed583c425df905d3f3d7ea762dc238011999f754393c9a3"
+    },
+    {
+     "label": "exact intent IPD",
+     "value": 0.9061839660610156,
+     "source": "experiments/intent_decoding/v24/battery_run_analysis.json#outcomes_detectable/IPD/exact/reweighted/rate",
+     "file_sha256": "8c97e05f79f9f7dfeed583c425df905d3f3d7ea762dc238011999f754393c9a3"
+    },
+    {
+     "label": "exact intent IPD CI (Kish-Wilson)",
+     "value": [
+      0.8543608347384223,
+      0.9408435692595895
+     ],
+     "source": "experiments/intent_decoding/v24/battery_run_analysis.json#outcomes_detectable/IPD/exact/reweighted/wilson95_kish",
+     "file_sha256": "8c97e05f79f9f7dfeed583c425df905d3f3d7ea762dc238011999f754393c9a3"
+    },
+    {
+     "label": "silently wrong greedy",
+     "value": 0.04137597346052871,
+     "source": "experiments/intent_decoding/v24/battery_run_analysis.json#outcomes_detectable/greedy/silent/reweighted/rate",
+     "file_sha256": "8c97e05f79f9f7dfeed583c425df905d3f3d7ea762dc238011999f754393c9a3"
+    },
+    {
+     "label": "silently wrong IPD",
+     "value": 0.06901627351338237,
+     "source": "experiments/intent_decoding/v24/battery_run_analysis.json#outcomes_detectable/IPD/silent/reweighted/rate",
+     "file_sha256": "8c97e05f79f9f7dfeed583c425df905d3f3d7ea762dc238011999f754393c9a3"
+    },
+    {
+     "label": "injected-slip states (detectable)",
+     "value": 393,
+     "source": "experiments/intent_decoding/v24/battery_run_analysis.json#n_detectable",
+     "file_sha256": "8c97e05f79f9f7dfeed583c425df905d3f3d7ea762dc238011999f754393c9a3"
+    },
+    {
+     "label": "malformed next edit, clean history (QAT P0, run 1)",
+     "value": [
+      0.0133,
+      0.0032,
+      0.0271,
+      300
+     ],
+     "source": "experiments/contagion/out/confirmatory/v26_audit_analysis.json#rates/QAT/P0",
+     "file_sha256": "a1d635819fe956fec5fee1f740c65275855afad948a625724c179247b4a57870"
+    },
+    {
+     "label": "malformed next edit, laundered call + error (QAT P1, run 1)",
+     "value": [
+      0.1967,
+      0.1506,
+      0.2441,
+      300
+     ],
+     "source": "experiments/contagion/out/confirmatory/v26_audit_analysis.json#rates/QAT/P1",
+     "file_sha256": "a1d635819fe956fec5fee1f740c65275855afad948a625724c179247b4a57870"
+    },
+    {
+     "label": "C1 arm (cross-check)",
+     "value": 0.1967,
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/full/C1/uncond/arm",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "C1 base (cross-check)",
+     "value": 0.0133,
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/full/C1/uncond/base",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "pooled runs",
+     "value": [
+      "C1",
+      "RSA",
+      "RSB"
+     ],
+     "source": "experiments/contagion/out/confirmatory/v27_pooled_retest.json#runs",
+     "file_sha256": "a1424ff5584215adedadcb5b607c22bdee168174c6389d47c0ce4355de2d4c64"
+    },
+    {
+     "label": "pooled 3 runs: clean history P0",
+     "value": [
+      0.0089,
+      0.0032,
+      0.0165,
+      900
+     ],
+     "source": "experiments/contagion/out/confirmatory/v27_pooled_retest.json#pooled/P0",
+     "file_sha256": "a1424ff5584215adedadcb5b607c22bdee168174c6389d47c0ce4355de2d4c64"
+    },
+    {
+     "label": "pooled 3 runs: laundered call + error P1",
+     "value": [
+      0.2,
+      0.1612,
+      0.2423,
+      900
+     ],
+     "source": "experiments/contagion/out/confirmatory/v27_pooled_retest.json#pooled/P1",
+     "file_sha256": "a1424ff5584215adedadcb5b607c22bdee168174c6389d47c0ce4355de2d4c64"
+    },
+    {
+     "label": "pooled 3 runs: quarantined P8a",
+     "value": [
+      0.0233,
+      0.0144,
+      0.0335,
+      900
+     ],
+     "source": "experiments/contagion/out/confirmatory/v27_pooled_retest.json#pooled/P8a",
+     "file_sha256": "a1424ff5584215adedadcb5b607c22bdee168174c6389d47c0ce4355de2d4c64"
+    },
+    {
+     "label": "pooled quarantine removal (pre-specified descriptive pool)",
+     "value": 0.9244,
+     "source": "experiments/contagion/out/confirmatory/v27_pooled_retest.json#pooled_removal/point",
+     "file_sha256": "a1424ff5584215adedadcb5b607c22bdee168174c6389d47c0ce4355de2d4c64"
+    },
+    {
+     "label": "pooled quarantine removal CI",
+     "value": [
+      0.8629,
+      0.9832
+     ],
+     "source": "experiments/contagion/out/confirmatory/v27_pooled_retest.json#pooled_removal/CI",
+     "file_sha256": "a1424ff5584215adedadcb5b607c22bdee168174c6389d47c0ce4355de2d4c64"
+    },
+    {
+     "label": "quarantine removal, run 1 (QAT)",
+     "value": 0.9818,
+     "source": "experiments/contagion/out/confirmatory/v27_robustness_analysis.json#removal/QAT/point",
+     "file_sha256": "96f542238a1dd1631c5c905ee45ffe3ff7fcb20ecacb5bff7856ca9cf0b29ca9"
+    },
+    {
+     "label": "quarantine removal, run 2 (RSA)",
+     "value": 0.931,
+     "source": "experiments/contagion/out/confirmatory/v27_robustness_analysis.json#removal/RSA/point",
+     "file_sha256": "96f542238a1dd1631c5c905ee45ffe3ff7fcb20ecacb5bff7856ca9cf0b29ca9"
+    },
+    {
+     "label": "quarantine removal, run 3 (RSB)",
+     "value": 0.8644,
+     "source": "experiments/contagion/out/confirmatory/v27_robustness_analysis.json#removal/RSB/point",
+     "file_sha256": "96f542238a1dd1631c5c905ee45ffe3ff7fcb20ecacb5bff7856ca9cf0b29ca9"
+    },
+    {
+     "label": "C1 removal (cross-check of run 1)",
+     "value": 0.982,
+     "source": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/full/C5/uncond/removal",
+     "file_sha256": "29ba3aa45b30bc0a81276ae1c490b6501320a7607b8736664e8b59b06b4c7fe3"
+    },
+    {
+     "label": "matched dtype: QAT P1",
+     "value": [
+      0.1967,
+      0.153,
+      0.2433,
+      300
+     ],
+     "source": "experiments/contagion/out/confirmatory/v27_robustness_analysis.json#rates/QAT/P1",
+     "file_sha256": "96f542238a1dd1631c5c905ee45ffe3ff7fcb20ecacb5bff7856ca9cf0b29ca9"
+    },
+    {
+     "label": "matched dtype: AWQ (audit pick, bf16) P1",
+     "value": [
+      0.12,
+      0.0867,
+      0.1572,
+      300
+     ],
+     "source": "experiments/contagion/out/confirmatory/v27_robustness_analysis.json#rates/RD16/P1",
+     "file_sha256": "96f542238a1dd1631c5c905ee45ffe3ff7fcb20ecacb5bff7856ca9cf0b29ca9"
+    },
+    {
+     "label": "matched dtype: AWQ + quarantine P8a",
+     "value": [
+      0.0,
+      0.0,
+      0.0,
+      300
+     ],
+     "source": "experiments/contagion/out/confirmatory/v27_robustness_analysis.json#rates/RD16/P8a",
+     "file_sha256": "96f542238a1dd1631c5c905ee45ffe3ff7fcb20ecacb5bff7856ca9cf0b29ca9"
+    },
+    {
+     "label": "audit pick RD at matched dtype (AWQ - QAT, P1)",
+     "value": -0.0767,
+     "source": "experiments/contagion/out/confirmatory/v27_robustness_analysis.json#contrasts/D1/RD",
+     "file_sha256": "96f542238a1dd1631c5c905ee45ffe3ff7fcb20ecacb5bff7856ca9cf0b29ca9"
+    },
+    {
+     "label": "audit pick RD CI at matched dtype",
+     "value": [
+      -0.1137,
+      -0.0396
+     ],
+     "source": "experiments/contagion/out/confirmatory/v27_robustness_analysis.json#contrasts/D1/RD_CI",
+     "file_sha256": "96f542238a1dd1631c5c905ee45ffe3ff7fcb20ecacb5bff7856ca9cf0b29ca9"
+    },
+    {
+     "label": "D1 verdict",
+     "value": "AUDIT PICK REPLICATES AT MATCHED DTYPE",
+     "source": "experiments/contagion/out/confirmatory/v27_robustness_analysis.json#verdicts/D1",
+     "file_sha256": "96f542238a1dd1631c5c905ee45ffe3ff7fcb20ecacb5bff7856ca9cf0b29ca9"
+    },
+    {
+     "label": "quarantine on the pick (pp): P8a - P1, matched dtype",
+     "value": -12.0,
+     "derived": "difference of the two plotted rates",
+     "inputs": [
+      "matched dtype: AWQ + quarantine P8a",
+      "matched dtype: AWQ (audit pick, bf16) P1"
+     ]
+    },
+    {
+     "label": "E_awq2 QAT base Y1 (r1..r10)",
+     "value": 1.9062,
+     "source": "experiments/endtoend/analysis/prereg_E_awq2.json#secondary/S4_awq_base_vs_qat_base_fresh/B_mean",
+     "file_sha256": "7b5518e67509a8db2b8558338ce249fee60ddb43c14e736f7e6de23ffd0d1971"
+    },
+    {
+     "label": "E_awq2 AWQ base Y1 (fresh)",
+     "value": 0.4956,
+     "source": "experiments/endtoend/analysis/prereg_E_awq2.json#secondary/S4_awq_base_vs_qat_base_fresh/A_mean",
+     "file_sha256": "7b5518e67509a8db2b8558338ce249fee60ddb43c14e736f7e6de23ffd0d1971"
+    },
+    {
+     "label": "E_awq2 S4 ratio AWQ/QAT (fresh)",
+     "value": 0.26,
+     "source": "experiments/endtoend/analysis/prereg_E_awq2.json#secondary/S4_awq_base_vs_qat_base_fresh/ratio_A_over_B/ratio",
+     "file_sha256": "7b5518e67509a8db2b8558338ce249fee60ddb43c14e736f7e6de23ffd0d1971"
+    },
+    {
+     "label": "E_awq2 S4 verdict",
+     "value": "REPLICATES",
+     "source": "experiments/endtoend/analysis/prereg_E_awq2.json#secondary/S4_awq_base_vs_qat_base_fresh/verdict",
+     "file_sha256": "7b5518e67509a8db2b8558338ce249fee60ddb43c14e736f7e6de23ffd0d1971"
+    },
+    {
+     "label": "E_awq2 P2 AWQ base (cross-check)",
+     "value": 0.4956,
+     "source": "experiments/endtoend/analysis/prereg_E_awq2.json#primary_P2_awq_fullp_vs_awq_base/B_mean",
+     "file_sha256": "7b5518e67509a8db2b8558338ce249fee60ddb43c14e736f7e6de23ffd0d1971"
+    },
+    {
+     "label": "E_awq2 AWQ + proxy Y1 (fresh)",
+     "value": 0.2935,
+     "source": "experiments/endtoend/analysis/prereg_E_awq2.json#primary_P2_awq_fullp_vs_awq_base/A_mean",
+     "file_sha256": "7b5518e67509a8db2b8558338ce249fee60ddb43c14e736f7e6de23ffd0d1971"
+    },
+    {
+     "label": "E_awq2 P2 ratio proxy/stock on AWQ",
+     "value": 0.5923,
+     "source": "experiments/endtoend/analysis/prereg_E_awq2.json#primary_P2_awq_fullp_vs_awq_base/ratio_A_over_B/ratio",
+     "file_sha256": "7b5518e67509a8db2b8558338ce249fee60ddb43c14e736f7e6de23ffd0d1971"
+    },
+    {
+     "label": "E_awq2 P2 ratio CI",
+     "value": [
+      0.3579,
+      0.9947
+     ],
+     "source": "experiments/endtoend/analysis/prereg_E_awq2.json#primary_P2_awq_fullp_vs_awq_base/ratio_A_over_B/ci95",
+     "file_sha256": "7b5518e67509a8db2b8558338ce249fee60ddb43c14e736f7e6de23ffd0d1971"
+    },
+    {
+     "label": "E_awq2 P2 verdict",
+     "value": "SLIPGUARD STILL REDUCES MALFORMED CALLS ON THE AUDIT'S PICK",
+     "source": "experiments/endtoend/analysis/prereg_E_awq2.json#primary_P2_awq_fullp_vs_awq_base/verdict",
+     "file_sha256": "7b5518e67509a8db2b8558338ce249fee60ddb43c14e736f7e6de23ffd0d1971"
+    },
+    {
+     "label": "E_awq2 analysis set (replicates)",
+     "value": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "source": "experiments/endtoend/analysis/prereg_E_awq2.json#analysis_set",
+     "file_sha256": "7b5518e67509a8db2b8558338ce249fee60ddb43c14e736f7e6de23ffd0d1971"
+    },
+    {
+     "label": "E_awq AWQ base Y1, first 2 replicates",
+     "value": 0.4115,
+     "source": "experiments/endtoend/analysis/prereg_E_awq.json#primary_awq_base_vs_qat_base/A_mean",
+     "file_sha256": "fbc9d77431d0c713b23dbc2f6e814e9235a7ba8dd497f7413dd4309c17f422a5"
+    },
+    {
+     "label": "E_awq ratio AWQ/QAT, first 2 replicates",
+     "value": 0.2159,
+     "source": "experiments/endtoend/analysis/prereg_E_awq.json#primary_awq_base_vs_qat_base/ratio_A_over_B/ratio",
+     "file_sha256": "fbc9d77431d0c713b23dbc2f6e814e9235a7ba8dd497f7413dd4309c17f422a5"
+    },
+    {
+     "label": "E_awq QAT comparator replicates",
+     "value": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "source": "experiments/endtoend/analysis/prereg_E_awq.json#qat_replicates",
+     "file_sha256": "fbc9d77431d0c713b23dbc2f6e814e9235a7ba8dd497f7413dd4309c17f422a5"
+    }
+   ]
+  }
+ },
+ "note": "Every plotted number with its source (`path#key`, relative to the project root, plus the file's sha256 at drawing time). Entries with `derived` are arithmetic on the listed inputs."
+}

@@ -1,0 +1,103 @@
+{
+ "analysis_sets": {
+  "bf16": [
+   3,
+   4
+  ],
+  "nvnvfp4": [
+   3,
+   4,
+   5
+  ],
+  "qatawq": [
+   3,
+   4,
+   5
+  ],
+  "qatnvfp4": [
+   3,
+   4,
+   5
+  ]
+ },
+ "primary": {
+  "tests": {
+   "T1_bf16_below_qat": {
+    "diff": -1.5796,
+    "ci95": [
+     -2.7522,
+     -0.6681
+    ],
+    "p_boot": 0.0,
+    "p_holm": 0.0,
+    "pass": true
+   },
+   "T2_nvnvfp4_below_qat": {
+    "diff": -1.3097,
+    "ci95": [
+     -2.1209,
+     -0.6549
+    ],
+    "p_boot": 0.0,
+    "p_holm": 0.0,
+    "pass": true
+   },
+   "T3_qatawq_above_awq": {
+    "diff": 3.3308,
+    "ci95": [
+     1.9428,
+     4.9819
+    ],
+    "p_boot": 0.0,
+    "p_holm": 0.0,
+    "pass": true
+   },
+   "T4_qatnvfp4_above_awq": {
+    "diff": 4.3721,
+    "ci95": [
+     2.8912,
+     6.066
+    ],
+    "p_boot": 0.0,
+    "p_holm": 0.0,
+    "pass": true
+   }
+  },
+  "verdict": "AUDIT PREDICTS END-TO-END MALFORMED CALLS"
+ },
+ "rank": {
+  "rows_checkpoint_deficit_baseY1": [
+   [
+    "bf16",
+    0.0,
+    0.4204
+   ],
+   [
+    "nvnvfp4",
+    1.3555,
+    0.3422
+   ],
+   [
+    "qatawq",
+    5.9961,
+    3.8053
+   ],
+   [
+    "qatnvfp4",
+    7.4141,
+    4.8466
+   ],
+   [
+    "qat",
+    5.1328,
+    1.9062
+   ],
+   [
+    "awq",
+    0.0161,
+    0.4746
+   ]
+  ],
+  "spearman": 0.8286
+ }
+}

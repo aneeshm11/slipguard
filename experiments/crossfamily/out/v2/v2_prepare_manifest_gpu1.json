@@ -1,0 +1,25 @@
+{
+ "pools_dir": "experiments/contagion/data/confirmatory/pools",
+ "pools_manifest_sha256": "b8787abaff3b8ecc000a7ff82b567a84660ff3727da563979d404d9a03a300d0",
+ "S1_A1_sha256": "b2c1bc2bdd561e72a9ebc88659639e3ae36dfc4c42c5e9a803039d43731c10d2",
+ "corpus_manifest": "data/pnc/contexts/P-swebench-31b-S1-v1/manifest.json",
+ "corpus_manifest_sha256": "4cbee85d209c0d2488d2764852637d70d014a07f1de786cf3c6dd8864fd34a75",
+ "n": {
+  "A1": 300,
+  "A1_H1": 150,
+  "A1_H2": 150,
+  "B1": 600
+ },
+ "models": {
+  "qwen3-8b": {
+   "jobs": 2400,
+   "render_errors": 0,
+   "prompts_sha256": "e04b931ffc6413aa18b48d74825a2ecae9bfcec7086741cfa6d4b9d072f4378b"
+  },
+  "qwen3.5-9b": {
+   "jobs": 2400,
+   "render_errors": 0,
+   "prompts_sha256": "d86dce01466b1686f7f2dddcec51f11438ae90e604b918d9361e50ea49cd2753"
+  }
+ }
+}

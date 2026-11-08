@@ -1,0 +1,682 @@
+{
+ "n_slip_cases": 1610,
+ "n_located": 1598,
+ "closer_classes": {
+  "backtick": 1345,
+  "dquote": 137,
+  "escaped_dquote": 91,
+  "none": 10,
+  "triple_backtick": 1,
+  "triple_dquote": 14
+ },
+ "variants": {
+  "G": {
+   "gemma4.nonstream": {
+    "n": 1598,
+    "silent_absorbed": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_laundered_share": [
+     0.8849,
+     0.8683,
+     0.8996,
+     1598
+    ],
+    "silent_flagged_by_judge_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   }
+  },
+  "J_real": {
+   "hermes.nonstream": {
+    "n": 1462,
+    "loud": [
+     0.9993,
+     0.9961,
+     0.9999,
+     1462
+    ],
+    "exact": [
+     0.0007,
+     0.0001,
+     0.0039,
+     1462
+    ]
+   },
+   "hermes.stream": {
+    "n": 1462,
+    "delivered_invalid": [
+     0.9993,
+     0.9961,
+     0.9999,
+     1462
+    ],
+    "exact": [
+     0.0007,
+     0.0001,
+     0.0039,
+     1462
+    ]
+   },
+   "strict_hermes": {
+    "n": 1462,
+    "loud": [
+     0.9993,
+     0.9961,
+     0.9999,
+     1462
+    ],
+    "exact": [
+     0.0007,
+     0.0001,
+     0.0039,
+     1462
+    ]
+   },
+   "_": {
+    "n": 136,
+    "benign_or_na": [
+     1.0,
+     0.9725,
+     1.0,
+     136
+    ]
+   }
+  },
+  "J_bt": {
+   "hermes.nonstream": {
+    "n": 1598,
+    "loud": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "hermes.stream": {
+    "n": 1598,
+    "delivered_invalid": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "strict_hermes": {
+    "n": 1598,
+    "loud": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   }
+  },
+  "J_omit": {
+   "hermes.nonstream": {
+    "n": 1598,
+    "loud": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "hermes.stream": {
+    "n": 1598,
+    "delivered_invalid": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "strict_hermes": {
+    "n": 1598,
+    "loud": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   }
+  },
+  "J_unesc": {
+   "hermes.nonstream": {
+    "n": 685,
+    "loud": [
+     1.0,
+     0.9944,
+     1.0,
+     685
+    ]
+   },
+   "hermes.stream": {
+    "n": 685,
+    "delivered_invalid": [
+     1.0,
+     0.9944,
+     1.0,
+     685
+    ]
+   },
+   "strict_hermes": {
+    "n": 685,
+    "loud": [
+     1.0,
+     0.9944,
+     1.0,
+     685
+    ]
+   },
+   "_": {
+    "n": 913,
+    "benign_or_na": [
+     1.0,
+     0.9958,
+     1.0,
+     913
+    ]
+   }
+  },
+  "X_real": {
+   "qwen3_coder.nonstream": {
+    "n": 1598,
+    "silent_local": [
+     0.9937,
+     0.9885,
+     0.9966,
+     1598
+    ],
+    "exact": [
+     0.0063,
+     0.0034,
+     0.0115,
+     1598
+    ],
+    "silent_laundered_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1588
+    ],
+    "silent_flagged_by_judge_share": [
+     0.0,
+     0.0,
+     0.0024,
+     1588
+    ]
+   },
+   "qwen3_coder.stream": {
+    "n": 1598,
+    "silent_local": [
+     0.9937,
+     0.9885,
+     0.9966,
+     1598
+    ],
+    "exact": [
+     0.0063,
+     0.0034,
+     0.0115,
+     1598
+    ],
+    "silent_laundered_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1588
+    ],
+    "silent_flagged_by_judge_share": [
+     0.0,
+     0.0,
+     0.0024,
+     1588
+    ]
+   },
+   "qwen3_xml.nonstream": {
+    "n": 1598,
+    "silent_local": [
+     0.9937,
+     0.9885,
+     0.9966,
+     1598
+    ],
+    "exact": [
+     0.0063,
+     0.0034,
+     0.0115,
+     1598
+    ],
+    "silent_laundered_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1588
+    ],
+    "silent_flagged_by_judge_share": [
+     0.0,
+     0.0,
+     0.0024,
+     1588
+    ]
+   },
+   "strict_xml": {
+    "n": 1598,
+    "loud": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   }
+  },
+  "X_bt": {
+   "qwen3_coder.nonstream": {
+    "n": 1598,
+    "silent_local": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_laundered_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_flagged_by_judge_share": [
+     0.0,
+     0.0,
+     0.0024,
+     1598
+    ]
+   },
+   "qwen3_coder.stream": {
+    "n": 1598,
+    "silent_local": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_laundered_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_flagged_by_judge_share": [
+     0.0,
+     0.0,
+     0.0024,
+     1598
+    ]
+   },
+   "qwen3_xml.nonstream": {
+    "n": 1598,
+    "silent_local": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_laundered_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_flagged_by_judge_share": [
+     0.0,
+     0.0,
+     0.0024,
+     1598
+    ]
+   },
+   "strict_xml": {
+    "n": 1598,
+    "loud": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   }
+  },
+  "X_omit": {
+   "qwen3_coder.nonstream": {
+    "n": 1598,
+    "exact": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "qwen3_coder.stream": {
+    "n": 1598,
+    "exact": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "qwen3_xml.nonstream": {
+    "n": 1598,
+    "exact": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "strict_xml": {
+    "n": 1598,
+    "loud": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   }
+  },
+  "X_tag": {
+   "qwen3_coder.nonstream": {
+    "n": 1598,
+    "silent_local": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_laundered_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_flagged_by_judge_share": [
+     0.0,
+     0.0,
+     0.0024,
+     1598
+    ]
+   },
+   "qwen3_coder.stream": {
+    "n": 1598,
+    "silent_local": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_laundered_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_flagged_by_judge_share": [
+     0.0,
+     0.0,
+     0.0024,
+     1598
+    ]
+   },
+   "qwen3_xml.nonstream": {
+    "n": 1598,
+    "silent_local": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_laundered_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_flagged_by_judge_share": [
+     0.0,
+     0.0,
+     0.0024,
+     1598
+    ]
+   },
+   "strict_xml": {
+    "n": 1598,
+    "loud": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   }
+  },
+  "X_open": {
+   "qwen3_coder.nonstream": {
+    "n": 1598,
+    "silent_absorbed": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_laundered_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_flagged_by_judge_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "qwen3_coder.stream": {
+    "n": 1598,
+    "silent_absorbed": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_laundered_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_flagged_by_judge_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "qwen3_xml.nonstream": {
+    "n": 1598,
+    "silent_absorbed": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_laundered_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ],
+    "silent_flagged_by_judge_share": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "strict_xml": {
+    "n": 1598,
+    "loud": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   }
+  }
+ },
+ "valid_intended": {
+  "hermes.nonstream": {
+   "exact": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  },
+  "hermes.stream": {
+   "exact": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  },
+  "strict_hermes": {
+   "exact": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  },
+  "qwen3_coder.nonstream": {
+   "exact": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  },
+  "qwen3_coder.stream": {
+   "exact": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  },
+  "qwen3_xml.nonstream": {
+   "exact": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  },
+  "strict_xml": {
+   "exact": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  }
+ },
+ "valid_real_clean_calls": {
+  "hermes.nonstream": {
+   "exact": [
+    1.0,
+    0.9974,
+    1.0,
+    1500
+   ]
+  },
+  "hermes.stream": {
+   "exact": [
+    1.0,
+    0.9974,
+    1.0,
+    1500
+   ]
+  },
+  "strict_hermes": {
+   "exact": [
+    0.9953,
+    0.9904,
+    0.9977,
+    1500
+   ],
+   "loud": [
+    0.0047,
+    0.0023,
+    0.0096,
+    1500
+   ]
+  },
+  "qwen3_coder.nonstream": {
+   "exact": [
+    1.0,
+    0.9974,
+    1.0,
+    1500
+   ]
+  },
+  "qwen3_coder.stream": {
+   "exact": [
+    1.0,
+    0.9974,
+    1.0,
+    1500
+   ]
+  },
+  "qwen3_xml.nonstream": {
+   "exact": [
+    1.0,
+    0.9974,
+    1.0,
+    1500
+   ]
+  },
+  "strict_xml": {
+   "exact": [
+    0.9953,
+    0.9904,
+    0.9977,
+    1500
+   ],
+   "loud": [
+    0.0047,
+    0.0023,
+    0.0096,
+    1500
+   ]
+  }
+ },
+ "xml_residues_top": {
+  "X_real": {
+   "`": 1345,
+   "\"": 136,
+   "\\\"": 91,
+   "\"\"\"": 14,
+   "\"\n": 1,
+   "```": 1
+  },
+  "X_bt": {
+   "`": 1598
+  }
+ }
+}

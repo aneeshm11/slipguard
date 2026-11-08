@@ -1,0 +1,547 @@
+{
+ "prereg": "PREREG_v2",
+ "pools": {
+  "A1": 99,
+  "A2": 58,
+  "A1k2": 58
+ },
+ "B": 2000,
+ "31B": {
+  "jobs_present": "693/693",
+  "full": {
+   "C1": {
+    "uncond": {
+     "n_contexts": 99,
+     "n_episodes": 75,
+     "arm": 0.202,
+     "base": 0.0101,
+     "RD": 0.1919,
+     "RD_CI": [
+      0.1158,
+      0.2778
+     ],
+     "p_one_sided_RD_le_0": 0.0
+    },
+    "cond": {
+     "n_contexts": 99,
+     "n_episodes": 75,
+     "arm": 0.2899,
+     "base": 0.0125,
+     "RD": 0.2774,
+     "RD_CI": [
+      0.1716,
+      0.4062
+     ],
+     "p_one_sided_RD_le_0": 0.0
+    },
+    "verdict": "REPLICATES"
+   },
+   "C2": {
+    "uncond": {
+     "n_contexts": 99,
+     "n_episodes": 75,
+     "arm": 0.1111,
+     "base": 0.0101,
+     "RD": 0.101,
+     "RD_CI": [
+      0.0388,
+      0.1739
+     ],
+     "p_one_sided_RD_le_0": 0.0005
+    },
+    "cond": {
+     "n_contexts": 99,
+     "n_episodes": 75,
+     "arm": 0.1642,
+     "base": 0.0125,
+     "RD": 0.1517,
+     "RD_CI": [
+      0.0638,
+      0.254
+     ],
+     "p_one_sided_RD_le_0": 0.0
+    },
+    "verdict": "ATTENUATED",
+    "plan_induction_threshold(>=+5pp, CI_lo>0)": true
+   },
+   "C4": {
+    "uncond": {
+     "n_contexts": 99,
+     "removal": 0.895,
+     "CI": [
+      0.625,
+      1.111
+     ],
+     "p_one_sided_removal_le_0.5": 0.005
+    },
+    "cond": {
+     "n_contexts": 99,
+     "removal": 0.873,
+     "CI": [
+      0.592,
+      1.076
+     ],
+     "p_one_sided_removal_le_0.5": 0.0045
+    },
+    "verdict": "REPLICATES"
+   },
+   "C5": {
+    "uncond": {
+     "n_contexts": 99,
+     "removal": 0.947,
+     "CI": [
+      0.773,
+      1.154
+     ],
+     "p_one_sided_removal_le_0.5": 0.0
+    },
+    "cond": {
+     "n_contexts": 99,
+     "removal": 0.937,
+     "CI": [
+      0.769,
+      1.128
+     ],
+     "p_one_sided_removal_le_0.5": 0.0
+    },
+    "verdict": "REPLICATES"
+   },
+   "C6": {
+    "uncond": {
+     "n_contexts": 99,
+     "removal": 1.0,
+     "CI": [
+      0.867,
+      1.188
+     ],
+     "p_one_sided_removal_le_0.5": 0.0
+    },
+    "cond": {
+     "n_contexts": 99,
+     "removal": 0.993,
+     "CI": [
+      0.853,
+      1.179
+     ],
+     "p_one_sided_removal_le_0.5": 0.0
+    },
+    "verdict": "REPLICATES"
+   },
+   "C7": {
+    "RD_P9_P0": {
+     "n_contexts": 99,
+     "n_episodes": 75,
+     "arm": 0.1717,
+     "base": 0.0101,
+     "RD": 0.1616,
+     "RD_CI": [
+      0.0882,
+      0.2371
+     ],
+     "p_one_sided_RD_le_0": 0.0
+    },
+    "retention_point": 0.842,
+    "verdict": "REPLICATES",
+    "note": "retention = RD(P9-P0)/RD(P1-P0); the CI_lo >= 0.25 part is checked from removal(P9) = 1 - retention",
+    "retention_CI_from_removal": [
+     0.542,
+     1.267
+    ]
+   }
+  },
+  "H1": {
+   "C1": {
+    "uncond": {
+     "n_contexts": 50,
+     "n_episodes": 44,
+     "arm": 0.14,
+     "base": 0.02,
+     "RD": 0.12,
+     "RD_CI": [
+      0.0196,
+      0.2245
+     ],
+     "p_one_sided_RD_le_0": 0.017
+    },
+    "cond": {
+     "n_contexts": 50,
+     "n_episodes": 44,
+     "arm": 0.2188,
+     "base": 0.0263,
+     "RD": 0.1924,
+     "RD_CI": [
+      0.05,
+      0.3548
+     ],
+     "p_one_sided_RD_le_0": 0.003
+    },
+    "verdict": "ATTENUATED"
+   },
+   "C2": {
+    "uncond": {
+     "n_contexts": 50,
+     "n_episodes": 44,
+     "arm": 0.12,
+     "base": 0.02,
+     "RD": 0.1,
+     "RD_CI": [
+      0.0,
+      0.2041
+     ],
+     "p_one_sided_RD_le_0": 0.0335
+    },
+    "cond": {
+     "n_contexts": 50,
+     "n_episodes": 44,
+     "arm": 0.1935,
+     "base": 0.0263,
+     "RD": 0.1672,
+     "RD_CI": [
+      0.0211,
+      0.3299
+     ],
+     "p_one_sided_RD_le_0": 0.0105
+    },
+    "verdict": "FAILS",
+    "plan_induction_threshold(>=+5pp, CI_lo>0)": false
+   },
+   "C4": {
+    "uncond": {
+     "n_contexts": 50,
+     "removal": 0.833,
+     "CI": [
+      -0.175,
+      1.75
+     ],
+     "p_one_sided_removal_le_0.5": 0.17841
+    },
+    "cond": {
+     "n_contexts": 50,
+     "removal": 0.84,
+     "CI": [
+      0.0,
+      1.554
+     ],
+     "p_one_sided_removal_le_0.5": 0.1265
+    },
+    "verdict": "FAILS (underpowered: CI width > 1)"
+   },
+   "C5": {
+    "uncond": {
+     "n_contexts": 50,
+     "removal": 1.167,
+     "CI": [
+      1.0,
+      3.0
+     ],
+     "p_one_sided_removal_le_0.5": 0.00655
+    },
+    "cond": {
+     "n_contexts": 50,
+     "removal": 1.137,
+     "CI": [
+      1.0,
+      2.174
+     ],
+     "p_one_sided_removal_le_0.5": 0.005
+    },
+    "verdict": "REPLICATES"
+   },
+   "C6": {
+    "uncond": {
+     "n_contexts": 50,
+     "removal": 1.0,
+     "CI": [
+      0.571,
+      2.0
+     ],
+     "p_one_sided_removal_le_0.5": 0.0222
+    },
+    "cond": {
+     "n_contexts": 50,
+     "removal": 0.979,
+     "CI": [
+      0.54,
+      2.016
+     ],
+     "p_one_sided_removal_le_0.5": 0.0195
+    },
+    "verdict": "REPLICATES"
+   },
+   "C7": {
+    "RD_P9_P0": {
+     "n_contexts": 50,
+     "n_episodes": 44,
+     "arm": 0.1,
+     "base": 0.02,
+     "RD": 0.08,
+     "RD_CI": [
+      0.0,
+      0.1765
+     ],
+     "p_one_sided_RD_le_0": 0.065
+    },
+    "retention_point": 0.667,
+    "verdict": "FAILS",
+    "note": "retention = RD(P9-P0)/RD(P1-P0); the CI_lo >= 0.25 part is checked from removal(P9) = 1 - retention",
+    "retention_CI_from_removal": [
+     0.0,
+     2.0
+    ]
+   }
+  },
+  "H2": {
+   "C1": {
+    "uncond": {
+     "n_contexts": 49,
+     "n_episodes": 40,
+     "arm": 0.2653,
+     "base": 0.0,
+     "RD": 0.2653,
+     "RD_CI": [
+      0.1555,
+      0.3878
+     ],
+     "p_one_sided_RD_le_0": 0.0
+    },
+    "cond": {
+     "n_contexts": 49,
+     "n_episodes": 40,
+     "arm": 0.3514,
+     "base": 0.0,
+     "RD": 0.3514,
+     "RD_CI": [
+      0.2051,
+      0.5003
+     ],
+     "p_one_sided_RD_le_0": 0.0
+    },
+    "verdict": "REPLICATES"
+   },
+   "C2": {
+    "uncond": {
+     "n_contexts": 49,
+     "n_episodes": 40,
+     "arm": 0.102,
+     "base": 0.0,
+     "RD": 0.102,
+     "RD_CI": [
+      0.0213,
+      0.1924
+     ],
+     "p_one_sided_RD_le_0": 0.005
+    },
+    "cond": {
+     "n_contexts": 49,
+     "n_episodes": 40,
+     "arm": 0.1389,
+     "base": 0.0,
+     "RD": 0.1389,
+     "RD_CI": [
+      0.0323,
+      0.25
+     ],
+     "p_one_sided_RD_le_0": 0.0045
+    },
+    "verdict": "ATTENUATED",
+    "plan_induction_threshold(>=+5pp, CI_lo>0)": true
+   },
+   "C4": {
+    "uncond": {
+     "n_contexts": 49,
+     "removal": 0.923,
+     "CI": [
+      0.7,
+      1.0
+     ],
+     "p_one_sided_removal_le_0.5": 0.0025
+    },
+    "cond": {
+     "n_contexts": 49,
+     "removal": 0.898,
+     "CI": [
+      0.612,
+      1.0
+     ],
+     "p_one_sided_removal_le_0.5": 0.0055
+    },
+    "verdict": "REPLICATES"
+   },
+   "C5": {
+    "uncond": {
+     "n_contexts": 49,
+     "removal": 0.846,
+     "CI": [
+      0.625,
+      1.0
+     ],
+     "p_one_sided_removal_le_0.5": 0.003
+    },
+    "cond": {
+     "n_contexts": 49,
+     "removal": 0.842,
+     "CI": [
+      0.614,
+      1.0
+     ],
+     "p_one_sided_removal_le_0.5": 0.004
+    },
+    "verdict": "REPLICATES"
+   },
+   "C6": {
+    "uncond": {
+     "n_contexts": 49,
+     "removal": 1.0,
+     "CI": [
+      1.0,
+      1.0
+     ],
+     "p_one_sided_removal_le_0.5": 0.0
+    },
+    "cond": {
+     "n_contexts": 49,
+     "removal": 1.0,
+     "CI": [
+      1.0,
+      1.0
+     ],
+     "p_one_sided_removal_le_0.5": 0.0
+    },
+    "verdict": "REPLICATES"
+   },
+   "C7": {
+    "RD_P9_P0": {
+     "n_contexts": 49,
+     "n_episodes": 40,
+     "arm": 0.2449,
+     "base": 0.0,
+     "RD": 0.2449,
+     "RD_CI": [
+      0.1373,
+      0.3654
+     ],
+     "p_one_sided_RD_le_0": 0.0
+    },
+    "retention_point": 0.923,
+    "verdict": "REPLICATES",
+    "note": "retention = RD(P9-P0)/RD(P1-P0); the CI_lo >= 0.25 part is checked from removal(P9) = 1 - retention",
+    "retention_CI_from_removal": [
+     0.562,
+     1.444
+    ]
+   }
+  },
+  "holm_F1c_adjusted_p": {
+   "C1": 0,
+   "C5": 0,
+   "C2": 0.001,
+   "C4": 0.005
+  },
+  "C3": {
+   "shortfall": true,
+   "k12_on_A1k2": {
+    "uncond": {
+     "n_contexts": 58,
+     "kind": "uncond",
+     "rates": {
+      "k=1": 0.0862,
+      "k=2": 0.2069
+     },
+     "Delta_2": [
+      1.0171,
+      [
+       0.1378,
+       2.3445
+      ]
+     ]
+    },
+    "cond": {
+     "n_contexts": 58,
+     "kind": "cond",
+     "rates": {
+      "k=1": 0.1351,
+      "k=2": 0.3529
+     },
+     "Delta_2": [
+      1.2502,
+      [
+       0.3567,
+       2.5557
+      ]
+     ]
+    }
+   },
+   "k124_on_A2_underpowered": {
+    "uncond": {
+     "n_contexts": 58,
+     "kind": "uncond",
+     "rates": {
+      "k=1": 0.0862,
+      "k=2": 0.2069,
+      "k=4": 0.4483
+     },
+     "Delta_2": [
+      1.0171,
+      [
+       0.1388,
+       2.3071
+      ]
+     ],
+     "Delta_4": [
+      2.1532,
+      [
+       1.2883,
+       3.6348
+      ]
+     ],
+     "Delta4_minus_2Delta2": [
+      0.119,
+      [
+       -1.3642,
+       1.5017
+      ]
+     ]
+    },
+    "cond": {
+     "n_contexts": 58,
+     "kind": "cond",
+     "rates": {
+      "k=1": 0.1351,
+      "k=2": 0.3529,
+      "k=4": 0.7027
+     },
+     "Delta_2": [
+      1.2502,
+      [
+       0.3475,
+       2.4227
+      ]
+     ],
+     "Delta_4": [
+      2.7165,
+      [
+       1.7491,
+       4.1325
+      ]
+     ],
+     "Delta4_minus_2Delta2": [
+      0.2162,
+      [
+       -1.278,
+       1.8081
+      ]
+     ]
+    }
+   }
+  },
+  "C3_verdict": "see shortfall design"
+ },
+ "global": {
+  "laundering_loop": "replicates with attenuation",
+  "claims": {
+   "C1": "REPLICATES",
+   "C2": "ATTENUATED",
+   "C5": "REPLICATES"
+  }
+ }
+}

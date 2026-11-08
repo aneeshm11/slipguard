@@ -1,0 +1,2228 @@
+{
+ "generated_utc": "2026-11-04T22:03:02Z",
+ "job": "PI 2026-11-04 18:15: does the SHIPPED proxy (workstream E, e2e_proxy.py cfg ipd/fullp) give the same results as B's reference decoder (algorithm (i+), intent_decode.rollback_resume)?",
+ "code": {
+  "prefix": [
+   "# Vendored, read-only copy of workstream E's frozen-candidate proxy (copied 2026-11-04T18:22:20Z); originals in experiments/endtoend",
+   "0c2a52780ea433f36e9701229c290493f6e75db4c562990e7dc58fb399535dce  proxy/e2e_proxy.py  IDENTICAL_TO_E",
+   "fcff4beda91cd8c5c70abe718eb322798335fe81ffb02b1c8c2fbbb2c5c4f1bd  proxy/gemma_protocol.py  IDENTICAL_TO_E",
+   "329f0bcf76d08c9b32d29571a62868b0aafade092b840d8d54a488d59c4ef004  proxy/configs.json  IDENTICAL_TO_E",
+   "13e285673b70aa9a344cc2123fd26387877ee19a53e8ef9006f8f5580fa2466f  export/quarantine_renderer.py  IDENTICAL_TO_E",
+   "bb48bb9a544e383bf3cec06755840044a5fd87bc3db8b5ec4392eb80e602e5eb  configs/channel_prior.json  IDENTICAL_TO_E"
+  ],
+  "postfix": [
+   "# Vendored, read-only copy of workstream E's proxy (copied 2026-11-04T19:09:17Z); originals in experiments/endtoend",
+   "a7e62cc17d5b120c7660e9de002913990ffefa4d44917e1506f8bbc11fc5d597  proxy/e2e_proxy.py  IDENTICAL_TO_E",
+   "7ee133966149d4cb71d205980a7512b5c0c7c1487efdb764de9c5d2d73b9f45f  proxy/gemma_protocol.py  IDENTICAL_TO_E",
+   "b8dac8301eef4cc6d5d5fa49d1e825df1041fc0add386d0e4f2ddce9bccee035  proxy/vendor_b_gemma_protocol.py  IDENTICAL_TO_E",
+   "329f0bcf76d08c9b32d29571a62868b0aafade092b840d8d54a488d59c4ef004  proxy/configs.json  IDENTICAL_TO_E",
+   "5ca5c62c889a7377d4d07bdb696bc9cbc796b5dbe18b6875c3a3de80d662715f  export/quarantine_renderer.py  IDENTICAL_TO_E",
+   "bb48bb9a544e383bf3cec06755840044a5fd87bc3db8b5ec4392eb80e602e5eb  configs/channel_prior.json  IDENTICAL_TO_E"
+  ]
+ },
+ "offline_deterministic_prefix": {
+  "description": "E's decode-time IPD logic (stop strings, detect_slip, opener confirmation with the logged next token, cut candidates, closer prior, decision on B's logged likelihoods) and post-hoc paths, replayed on the 595 identical gate generations (CPU)",
+  "render": {
+   "proxy_render_equals_logged_prompt_length": "600/600",
+   "b_replay_render_equals_logged_prompt_length": "0/600",
+   "only_difference": "one space before the <|tool> declarations (system content as text parts vs plain string)",
+   "proxy_vs_b_render": {
+    "identical_text": 0,
+    "identical_ids": 0,
+    "n": 600
+   }
+  },
+  "paths_by_group": {
+   "invalid_other|decode_time_cut": 1,
+   "invalid_other|delivered": 6,
+   "invalid_other|no_call_parsed": 3,
+   "invalid_other|opener_rollback": 1,
+   "slip|decode_time_cut": 100,
+   "slip|delivered": 2,
+   "slip|posthoc_text_repair": 2,
+   "valid|delivered": 480
+  },
+  "valid_calls_changed": {
+   "k": 0,
+   "n": 480,
+   "rate": 0.0,
+   "wilson95": [
+    0.0,
+    0.007939499087277936
+   ]
+  },
+  "slips": {
+   "n": 104,
+   "decode_time_cut": 100,
+   "agree_site": {
+    "k": 100,
+    "n": 100,
+    "rate": 1.0,
+    "wilson95": [
+     0.9630065017930143,
+     1.0
+    ]
+   },
+   "agree_candidate_cuts": {
+    "k": 100,
+    "n": 100,
+    "rate": 1.0,
+    "wilson95": [
+     0.9630065017930143,
+     1.0
+    ]
+   },
+   "agree_prior_values": {
+    "k": 100,
+    "n": 100,
+    "rate": 1.0,
+    "wilson95": [
+     0.9630065017930143,
+     1.0
+    ]
+   },
+   "agree_chosen_cut_on_identical_lls": {
+    "k": 100,
+    "n": 100,
+    "rate": 1.0,
+    "wilson95": [
+     0.9630065017930143,
+     1.0
+    ]
+   },
+   "not_cut_at_decode_time": [
+    {
+     "id": "ctx-2c674f86e3",
+     "forced": false,
+     "ref_site": {
+      "key": "new_string",
+      "next_key": "old_string",
+      "kind": "key",
+      "run": "",
+      "gap": "",
+      "pos": 386
+     },
+     "proxy": "posthoc_text_repair",
+     "ok_delivered": true
+    },
+    {
+     "id": "ctx-62d17f0b9b",
+     "forced": true,
+     "ref_site": {
+      "key": "new_string",
+      "next_key": "old_string",
+      "kind": "key",
+      "run": "",
+      "gap": "",
+      "pos": 589
+     },
+     "proxy": "posthoc_text_repair",
+     "ok_delivered": true
+    },
+    {
+     "id": "ctx-311005d2c5",
+     "forced": true,
+     "ref_site": {
+      "key": "old_string",
+      "next_key": "new_string",
+      "kind": "key",
+      "run": "`",
+      "gap": "",
+      "pos": 81
+     },
+     "proxy": "delivered",
+     "ok_delivered": false
+    },
+    {
+     "id": "ctx-aab682aa86",
+     "forced": false,
+     "ref_site": {
+      "key": "old_string",
+      "next_key": null,
+      "kind": "end",
+      "run": "",
+      "gap": "",
+      "pos": 708
+     },
+     "proxy": "delivered",
+     "ok_delivered": true
+    }
+   ]
+  }
+ },
+ "offline_deterministic_postfix": {
+  "description": "E's fixed proxy (verify-then-repair): ipd_scan on the 595 identical gate generations vs B's logged reference site / candidate cuts / prior / chosen cut (E's pick_cut mirror on B's logged lls)",
+  "vendor": "experiments/intent_decoding/proxy_vendor_fix",
+  "counts": {
+   "n_valid": 480,
+   "valid|plan": 0,
+   "n_slip": 104,
+   "slip|plan": 104,
+   "slip|both_act": 104,
+   "slip|same_kind": 104,
+   "slip|same_cands": 104,
+   "slip|scored": 101,
+   "slip|same_k": 101,
+   "slip|prior_equal": 101,
+   "n_invalid_other": 11,
+   "invalid_other|plan": 1,
+   "invalid_other|both_act": 1,
+   "invalid_other|same_kind": 1
+  }
+ },
+ "findings": {
+  "F1_whitespace_variant": {
+   "what": "a closer slip written '<closer>, <key>:' (space after the comma) is never stopped by the pre-fix proxy (stop strings are '<closer>[\\n],<key>:' only) and its post-hoc text repair leaks the key into the value",
+   "gate": {
+    "k": 1,
+    "n": 104,
+    "id": "ctx-311005d2c5 (forced call)"
+   },
+   "corpus_C_base_edit_slips_with_closer_pattern": {
+    "k": 50,
+    "n": 3209,
+    "rate": 0.015581177937052042,
+    "wilson95": [
+     0.011838924251452979,
+     0.020481829869670135
+    ]
+   },
+   "b_reference": "repaired (relaxed grammar allows [ws] , [ws] KEY [ws] :)"
+  },
+  "F2_P1_byte_identity": {
+   "what": "valid calls altered by the proxy (decode-time cut before the call ends, and post-hoc intent_parse_args on values whose literal text looks like a leak)",
+   "p1e_prefix": {
+    "vendor": "experiments/intent_decoding/proxy_vendor",
+    "code_sha256": {
+     "proxy/e2e_proxy.py": "0c2a52780ea433f36e9701229c290493f6e75db4c562990e7dc58fb399535dce",
+     "proxy/gemma_protocol.py": "fcff4beda91cd8c5c70abe718eb322798335fe81ffb02b1c8c2fbbb2c5c4f1bd",
+     "export/quarantine_renderer.py": "13e285673b70aa9a344cc2123fd26387877ee19a53e8ef9006f8f5580fa2466f"
+    },
+    "path": "Proxy.engine_chat (E's real request path) with a teacher-forced stub backend replaying each valid call",
+    "criterion": "P1: 0 of 229,414 valid QuoteStorm calls (incl. 1,200 adversarial) changed (raw text or delivered args)",
+    "by_cfg": {
+     "ipd": {
+      "calls": 229412,
+      "natural_calls": 228212,
+      "adversarial_calls": 1200,
+      "changed_all": {
+       "k": 278,
+       "n": 229412,
+       "rate": 0.0012117936289296114,
+       "wilson95": [
+        0.0010775409949312258,
+        0.001362750204058115
+       ]
+      },
+      "changed_natural": {
+       "k": 0,
+       "n": 228212,
+       "rate": 0.0,
+       "wilson95": [
+        0.0,
+        1.683256866017024e-05
+       ]
+      },
+      "changed_adversarial": {
+       "k": 278,
+       "n": 1200,
+       "rate": 0.23166666666666666,
+       "wilson95": [
+        0.20867501689786389,
+        0.2563708200922705
+       ]
+      },
+      "raw_text_changed": {
+       "natural": 0,
+       "adversarial": 184
+      },
+      "delivered_args_changed": {
+       "natural": 0,
+       "adversarial": 278
+      },
+      "tokenizer_roundtrip_skipped": {
+       "natural": 2,
+       "adversarial": 0
+      },
+      "pass": false,
+      "examples": [
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "'`",
+          "key": "allow_multiple",
+          "in": "new_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "old_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "'`",
+          "key": "allow_multiple",
+          "in": "new_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": true,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_rejected",
+          "kind": null,
+          "run": "`",
+          "key": "old_string",
+          "in": null
+         },
+         {
+          "ev": "posthoc_repair",
+          "kind": null,
+          "run": null,
+          "key": null,
+          "in": null
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "old_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "'",
+          "key": "new_string",
+          "in": "old_string"
+         },
+         {
+          "ev": "ipd_repair",
+          "kind": "opener",
+          "run": null,
+          "key": "new_string",
+          "in": "new_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": true,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_rejected",
+          "kind": null,
+          "run": "``",
+          "key": "old_string",
+          "in": null
+         },
+         {
+          "ev": "posthoc_repair",
+          "kind": null,
+          "run": null,
+          "key": null,
+          "in": null
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "``",
+          "key": "old_string",
+          "in": "new_string"
+         },
+         {
+          "ev": "ipd_repair",
+          "kind": "opener",
+          "run": null,
+          "key": "old_string",
+          "in": "old_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "``",
+          "key": "old_string",
+          "in": "new_string"
+         },
+         {
+          "ev": "ipd_repair",
+          "kind": "opener",
+          "run": null,
+          "key": "old_string",
+          "in": "old_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": true,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_rejected",
+          "kind": null,
+          "run": "\"`",
+          "key": "old_string",
+          "in": null
+         },
+         {
+          "ev": "ipd_no_repair",
+          "kind": null,
+          "run": null,
+          "key": null,
+          "in": null
+         },
+         {
+          "ev": "posthoc_repair",
+          "kind": null,
+          "run": null,
+          "key": null,
+          "in": null
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "\\\"",
+          "key": "old_string",
+          "in": "new_string"
+         },
+         {
+          "ev": "ipd_repair",
+          "kind": "opener",
+          "run": null,
+          "key": "old_string",
+          "in": "old_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "``",
+          "key": "old_string",
+          "in": "new_string"
+         },
+         {
+          "ev": "ipd_repair",
+          "kind": "opener",
+          "run": null,
+          "key": "old_string",
+          "in": "old_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "`",
+          "key": "allow_multiple",
+          "in": "new_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "old_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "`",
+          "key": "allow_multiple",
+          "in": "new_string"
+         }
+        ]
+       }
+      ]
+     },
+     "fullp": {
+      "calls": 229412,
+      "natural_calls": 228212,
+      "adversarial_calls": 1200,
+      "changed_all": {
+       "k": 278,
+       "n": 229412,
+       "rate": 0.0012117936289296114,
+       "wilson95": [
+        0.0010775409949312258,
+        0.001362750204058115
+       ]
+      },
+      "changed_natural": {
+       "k": 0,
+       "n": 228212,
+       "rate": 0.0,
+       "wilson95": [
+        0.0,
+        1.683256866017024e-05
+       ]
+      },
+      "changed_adversarial": {
+       "k": 278,
+       "n": 1200,
+       "rate": 0.23166666666666666,
+       "wilson95": [
+        0.20867501689786389,
+        0.2563708200922705
+       ]
+      },
+      "raw_text_changed": {
+       "natural": 0,
+       "adversarial": 184
+      },
+      "delivered_args_changed": {
+       "natural": 0,
+       "adversarial": 278
+      },
+      "tokenizer_roundtrip_skipped": {
+       "natural": 2,
+       "adversarial": 0
+      },
+      "pass": false,
+      "examples": [
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "'`",
+          "key": "allow_multiple",
+          "in": "new_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "old_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "'`",
+          "key": "allow_multiple",
+          "in": "new_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": true,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_rejected",
+          "kind": null,
+          "run": "`",
+          "key": "old_string",
+          "in": null
+         },
+         {
+          "ev": "posthoc_repair",
+          "kind": null,
+          "run": null,
+          "key": null,
+          "in": null
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "old_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "'",
+          "key": "new_string",
+          "in": "old_string"
+         },
+         {
+          "ev": "ipd_repair",
+          "kind": "opener",
+          "run": null,
+          "key": "new_string",
+          "in": "new_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": true,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_rejected",
+          "kind": null,
+          "run": "``",
+          "key": "old_string",
+          "in": null
+         },
+         {
+          "ev": "posthoc_repair",
+          "kind": null,
+          "run": null,
+          "key": null,
+          "in": null
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "``",
+          "key": "old_string",
+          "in": "new_string"
+         },
+         {
+          "ev": "ipd_repair",
+          "kind": "opener",
+          "run": null,
+          "key": "old_string",
+          "in": "old_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "``",
+          "key": "old_string",
+          "in": "new_string"
+         },
+         {
+          "ev": "ipd_repair",
+          "kind": "opener",
+          "run": null,
+          "key": "old_string",
+          "in": "old_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": true,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_rejected",
+          "kind": null,
+          "run": "\"`",
+          "key": "old_string",
+          "in": null
+         },
+         {
+          "ev": "ipd_no_repair",
+          "kind": null,
+          "run": null,
+          "key": null,
+          "in": null
+         },
+         {
+          "ev": "posthoc_repair",
+          "kind": null,
+          "run": null,
+          "key": null,
+          "in": null
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "\\\"",
+          "key": "old_string",
+          "in": "new_string"
+         },
+         {
+          "ev": "ipd_repair",
+          "kind": "opener",
+          "run": null,
+          "key": "old_string",
+          "in": "old_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "``",
+          "key": "old_string",
+          "in": "new_string"
+         },
+         {
+          "ev": "ipd_repair",
+          "kind": "opener",
+          "run": null,
+          "key": "old_string",
+          "in": "old_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "new_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "`",
+          "key": "allow_multiple",
+          "in": "new_string"
+         }
+        ]
+       },
+       {
+        "grp": "adversarial",
+        "order": "old_first",
+        "raw_same": false,
+        "args_same": false,
+        "events": [
+         {
+          "ev": "ipd_repair",
+          "kind": "closer",
+          "run": "`",
+          "key": "allow_multiple",
+          "in": "new_string"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   },
+   "p1_prefix": {
+    "vendor": "experiments/intent_decoding/proxy_vendor",
+    "code_sha256": {
+     "proxy/e2e_proxy.py": "0c2a52780ea433f36e9701229c290493f6e75db4c562990e7dc58fb399535dce",
+     "proxy/gemma_protocol.py": "fcff4beda91cd8c5c70abe718eb322798335fe81ffb02b1c8c2fbbb2c5c4f1bd",
+     "export/quarantine_renderer.py": "13e285673b70aa9a344cc2123fd26387877ee19a53e8ef9006f8f5580fa2466f"
+    },
+    "calls": 229414,
+    "natural_calls": 228214,
+    "adversarial_calls": 1200,
+    "changed_all": {
+     "k": 280,
+     "n": 229414,
+     "rate": 0.001220500928452492,
+     "wilson95": [
+      0.0010857396600502261,
+      0.0013719657007680204
+     ]
+    },
+    "changed_natural": {
+     "k": 2,
+     "n": 228214,
+     "rate": 8.763704242509224e-06,
+     "wilson95": [
+      2.4033270922866723e-06,
+      3.195620751101045e-05
+     ]
+    },
+    "changed_adversarial": {
+     "k": 278,
+     "n": 1200,
+     "rate": 0.23166666666666666,
+     "wilson95": [
+      0.20867501689786389,
+      0.2563708200922705
+     ]
+    },
+    "decode_time_changed": {
+     "natural": 2,
+     "adversarial": 184
+    },
+    "posthoc_changed": {
+     "natural": 0,
+     "adversarial": 94
+    },
+    "pass": false,
+    "examples": [
+     {
+      "grp": "natural",
+      "order": "new_first",
+      "decode": true,
+      "posthoc": false,
+      "events": []
+     },
+     {
+      "grp": "natural",
+      "order": "old_first",
+      "decode": true,
+      "posthoc": false,
+      "events": []
+     },
+     {
+      "grp": "adversarial",
+      "order": "new_first",
+      "decode": true,
+      "posthoc": false,
+      "events": [
+       {
+        "ev": "ipd_repair",
+        "kind": "closer",
+        "run": "'`",
+        "key": "allow_multiple",
+        "in": "new_string"
+       }
+      ]
+     },
+     {
+      "grp": "adversarial",
+      "order": "old_first",
+      "decode": true,
+      "posthoc": false,
+      "events": [
+       {
+        "ev": "ipd_repair",
+        "kind": "closer",
+        "run": "'`",
+        "key": "allow_multiple",
+        "in": "new_string"
+       }
+      ]
+     },
+     {
+      "grp": "adversarial",
+      "order": "new_first",
+      "decode": false,
+      "posthoc": true,
+      "events": [
+       {
+        "ev": "ipd_rejected",
+        "kind": null,
+        "run": "`",
+        "key": "old_string",
+        "in": null
+       }
+      ]
+     },
+     {
+      "grp": "adversarial",
+      "order": "old_first",
+      "decode": true,
+      "posthoc": false,
+      "events": [
+       {
+        "ev": "ipd_repair",
+        "kind": "closer",
+        "run": "'",
+        "key": "new_string",
+        "in": "old_string"
+       },
+       {
+        "ev": "ipd_repair",
+        "kind": "opener",
+        "run": null,
+        "key": "new_string",
+        "in": "new_string"
+       }
+      ]
+     },
+     {
+      "grp": "adversarial",
+      "order": "new_first",
+      "decode": false,
+      "posthoc": true,
+      "events": [
+       {
+        "ev": "ipd_rejected",
+        "kind": null,
+        "run": "``",
+        "key": "old_string",
+        "in": null
+       }
+      ]
+     },
+     {
+      "grp": "adversarial",
+      "order": "new_first",
+      "decode": true,
+      "posthoc": false,
+      "events": [
+       {
+        "ev": "ipd_repair",
+        "kind": "closer",
+        "run": "``",
+        "key": "old_string",
+        "in": "new_string"
+       },
+       {
+        "ev": "ipd_repair",
+        "kind": "opener",
+        "run": null,
+        "key": "old_string",
+        "in": "old_string"
+       }
+      ]
+     },
+     {
+      "grp": "adversarial",
+      "order": "new_first",
+      "decode": true,
+      "posthoc": false,
+      "events": [
+       {
+        "ev": "ipd_repair",
+        "kind": "closer",
+        "run": "``",
+        "key": "old_string",
+        "in": "new_string"
+       },
+       {
+        "ev": "ipd_repair",
+        "kind": "opener",
+        "run": null,
+        "key": "old_string",
+        "in": "old_string"
+       }
+      ]
+     },
+     {
+      "grp": "adversarial",
+      "order": "new_first",
+      "decode": false,
+      "posthoc": true,
+      "events": [
+       {
+        "ev": "ipd_rejected",
+        "kind": null,
+        "run": "\"`",
+        "key": "old_string",
+        "in": null
+       },
+       {
+        "ev": "ipd_no_repair",
+        "kind": null,
+        "run": null,
+        "key": null,
+        "in": null
+       }
+      ]
+     },
+     {
+      "grp": "adversarial",
+      "order": "new_first",
+      "decode": true,
+      "posthoc": false,
+      "events": [
+       {
+        "ev": "ipd_repair",
+        "kind": "closer",
+        "run": "\\\"",
+        "key": "old_string",
+        "in": "new_string"
+       },
+       {
+        "ev": "ipd_repair",
+        "kind": "opener",
+        "run": null,
+        "key": "old_string",
+        "in": "old_string"
+       }
+      ]
+     },
+     {
+      "grp": "adversarial",
+      "order": "new_first",
+      "decode": true,
+      "posthoc": false,
+      "events": [
+       {
+        "ev": "ipd_repair",
+        "kind": "closer",
+        "run": "``",
+        "key": "old_string",
+        "in": "new_string"
+       },
+       {
+        "ev": "ipd_repair",
+        "kind": "opener",
+        "run": null,
+        "key": "old_string",
+        "in": "old_string"
+       }
+      ]
+     }
+    ],
+    "criterion": "P1 byte identity: 0 of the 229,414 valid QuoteStorm calls (both key orders; 1,200 adversarial) changed by the proxy's generate() (decode-time IPD, opener rule) or by its post-hoc intent_parse_args repair"
+   },
+   "p1e_efix": {
+    "vendor": "experiments/intent_decoding/proxy_vendor_fix",
+    "code_sha256": {
+     "proxy/e2e_proxy.py": "a7e62cc17d5b120c7660e9de002913990ffefa4d44917e1506f8bbc11fc5d597",
+     "proxy/gemma_protocol.py": "7ee133966149d4cb71d205980a7512b5c0c7c1487efdb764de9c5d2d73b9f45f",
+     "export/quarantine_renderer.py": "5ca5c62c889a7377d4d07bdb696bc9cbc796b5dbe18b6875c3a3de80d662715f"
+    },
+    "path": "Proxy.engine_chat (E's real request path) with a teacher-forced stub backend replaying each valid call",
+    "criterion": "P1: 0 of 229,414 valid QuoteStorm calls (incl. 1,200 adversarial) changed (raw text or delivered args)",
+    "by_cfg": {
+     "ipd": {
+      "calls": 229412,
+      "natural_calls": 228212,
+      "adversarial_calls": 1200,
+      "changed_all": {
+       "k": 0,
+       "n": 229412,
+       "rate": 0.0,
+       "wilson95": [
+        1.6940658945086007e-21,
+        1.6744522942560844e-05
+       ]
+      },
+      "changed_natural": {
+       "k": 0,
+       "n": 228212,
+       "rate": 0.0,
+       "wilson95": [
+        0.0,
+        1.683256866017024e-05
+       ]
+      },
+      "changed_adversarial": {
+       "k": 0,
+       "n": 1200,
+       "rate": 0.0,
+       "wilson95": [
+        2.168404344971009e-19,
+        0.003191000602734924
+       ]
+      },
+      "raw_text_changed": {
+       "natural": 0,
+       "adversarial": 0
+      },
+      "delivered_args_changed": {
+       "natural": 0,
+       "adversarial": 0
+      },
+      "tokenizer_roundtrip_skipped": {
+       "natural": 2,
+       "adversarial": 0
+      },
+      "pass": true,
+      "examples": []
+     },
+     "fullp": {
+      "calls": 229412,
+      "natural_calls": 228212,
+      "adversarial_calls": 1200,
+      "changed_all": {
+       "k": 0,
+       "n": 229412,
+       "rate": 0.0,
+       "wilson95": [
+        1.6940658945086007e-21,
+        1.6744522942560844e-05
+       ]
+      },
+      "changed_natural": {
+       "k": 0,
+       "n": 228212,
+       "rate": 0.0,
+       "wilson95": [
+        0.0,
+        1.683256866017024e-05
+       ]
+      },
+      "changed_adversarial": {
+       "k": 0,
+       "n": 1200,
+       "rate": 0.0,
+       "wilson95": [
+        2.168404344971009e-19,
+        0.003191000602734924
+       ]
+      },
+      "raw_text_changed": {
+       "natural": 0,
+       "adversarial": 0
+      },
+      "delivered_args_changed": {
+       "natural": 0,
+       "adversarial": 0
+      },
+      "tokenizer_roundtrip_skipped": {
+       "natural": 2,
+       "adversarial": 0
+      },
+      "pass": true,
+      "examples": []
+     }
+    }
+   },
+   "p1e_efix_renderer6b08": {
+    "vendor": "experiments/intent_decoding/proxy_vendor_fix",
+    "code_sha256": {
+     "proxy/e2e_proxy.py": "a7e62cc17d5b120c7660e9de002913990ffefa4d44917e1506f8bbc11fc5d597",
+     "proxy/gemma_protocol.py": "7ee133966149d4cb71d205980a7512b5c0c7c1487efdb764de9c5d2d73b9f45f",
+     "export/quarantine_renderer.py": "6b08b6e9700dba4e728f0fbcf837e2e2d85b7a21627cc6e11e6ea3291471ba82"
+    },
+    "path": "Proxy.engine_chat (E's real request path) with a teacher-forced stub backend replaying each valid call",
+    "criterion": "P1: 0 of 229,414 valid QuoteStorm calls (incl. 1,200 adversarial) changed (raw text or delivered args)",
+    "by_cfg": {
+     "ipd": {
+      "calls": 229412,
+      "natural_calls": 228212,
+      "adversarial_calls": 1200,
+      "changed_all": {
+       "k": 0,
+       "n": 229412,
+       "rate": 0.0,
+       "wilson95": [
+        1.6940658945086007e-21,
+        1.6744522942560844e-05
+       ]
+      },
+      "changed_natural": {
+       "k": 0,
+       "n": 228212,
+       "rate": 0.0,
+       "wilson95": [
+        0.0,
+        1.683256866017024e-05
+       ]
+      },
+      "changed_adversarial": {
+       "k": 0,
+       "n": 1200,
+       "rate": 0.0,
+       "wilson95": [
+        2.168404344971009e-19,
+        0.003191000602734924
+       ]
+      },
+      "raw_text_changed": {
+       "natural": 0,
+       "adversarial": 0
+      },
+      "delivered_args_changed": {
+       "natural": 0,
+       "adversarial": 0
+      },
+      "tokenizer_roundtrip_skipped": {
+       "natural": 2,
+       "adversarial": 0
+      },
+      "pass": true,
+      "examples": []
+     },
+     "fullp": {
+      "calls": 229412,
+      "natural_calls": 228212,
+      "adversarial_calls": 1200,
+      "changed_all": {
+       "k": 0,
+       "n": 229412,
+       "rate": 0.0,
+       "wilson95": [
+        1.6940658945086007e-21,
+        1.6744522942560844e-05
+       ]
+      },
+      "changed_natural": {
+       "k": 0,
+       "n": 228212,
+       "rate": 0.0,
+       "wilson95": [
+        0.0,
+        1.683256866017024e-05
+       ]
+      },
+      "changed_adversarial": {
+       "k": 0,
+       "n": 1200,
+       "rate": 0.0,
+       "wilson95": [
+        2.168404344971009e-19,
+        0.003191000602734924
+       ]
+      },
+      "raw_text_changed": {
+       "natural": 0,
+       "adversarial": 0
+      },
+      "delivered_args_changed": {
+       "natural": 0,
+       "adversarial": 0
+      },
+      "tokenizer_roundtrip_skipped": {
+       "natural": 2,
+       "adversarial": 0
+      },
+      "pass": true,
+      "examples": []
+     }
+    }
+   },
+   "decode_time_only_sim_prefix": {
+    "payloads": 114707,
+    "calls": 229414,
+    "natural_calls": 228214,
+    "adversarial_calls": 1200,
+    "stop_string_fires": 800,
+    "rejected_by_opener_confirmation": 115,
+    "proxy_changed_valid_calls": {
+     "k": 184,
+     "n": 229414,
+     "rate": 0.0008020434672687804,
+     "wilson95": [
+      0.0006942608647913962,
+      0.0009265435872783778
+     ]
+    },
+    "proxy_changed_natural": {
+     "k": 0,
+     "n": 228214,
+     "rate": 0.0,
+     "wilson95": [
+      1.6940658945086007e-21,
+      1.6832421146999907e-05
+     ]
+    },
+    "proxy_changed_adversarial": {
+     "k": 184,
+     "n": 1200,
+     "rate": 0.15333333333333332,
+     "wilson95": [
+      0.13405606096763953,
+      0.17482303278359
+     ]
+    },
+    "reference_changed_valid_calls": {
+     "k": 0,
+     "n": 229414,
+     "note": "B guard: is_valid first (out/quotestorm_free_big.json)"
+    }
+   }
+  }
+ },
+ "tf_gate": {
+  "prefix": {
+   "tag": "prefix",
+   "n_calls": 595,
+   "missing": 0,
+   "valid_calls": {
+    "n": 480,
+    "proxy_byte_identical": {
+     "k": 480,
+     "n": 480,
+     "rate": 1.0,
+     "wilson95": [
+      0.9920605009127221,
+      1.0
+     ]
+    },
+    "proxy_intervened": {
+     "k": 0,
+     "n": 480,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.007939499087277936
+     ]
+    }
+   },
+   "slips": {
+    "n": 104,
+    "proxy_intervened": {
+     "k": 102,
+     "n": 104,
+     "rate": 0.9807692307692307,
+     "wilson95": [
+      0.9325768708423217,
+      0.9947102884149359
+     ]
+    },
+    "proxy_clean": {
+     "k": 103,
+     "n": 104,
+     "rate": 0.9903846153846154,
+     "wilson95": [
+      0.9475322752920542,
+      0.9983006271503486
+     ]
+    },
+    "b_clean": {
+     "k": 102,
+     "n": 104,
+     "rate": 0.9807692307692307,
+     "wilson95": [
+      0.9325768708423217,
+      0.9947102884149359
+     ]
+    },
+    "proxy_delivered_malformed": {
+     "k": 1,
+     "n": 104,
+     "rate": 0.009615384615384616,
+     "wilson95": [
+      0.0016993728496512567,
+      0.05246772470794581
+     ]
+    },
+    "b_loud": {
+     "k": 2,
+     "n": 104,
+     "rate": 0.019230769230769232,
+     "wilson95": [
+      0.0052897115850640206,
+      0.0674231291576782
+     ]
+    },
+    "cut_by_rule": 100,
+    "cut_agrees_with_B": 100,
+    "both_clean_identical_args": {
+     "k": 99,
+     "n": 104,
+     "rate": 0.9519230769230769,
+     "wilson95": [
+      0.8923579720276744,
+      0.9792919576741477
+     ]
+    }
+   },
+   "all_calls": {
+    "proxy_delivered_malformed": {
+     "k": 5,
+     "n": 595,
+     "rate": 0.008403361344537815,
+     "wilson95": [
+      0.0035946019565766003,
+      0.01951912642146903
+     ]
+    },
+    "b_delivered_malformed": {
+     "k": 0,
+     "n": 595,
+     "rate": 0.0,
+     "wilson95": [
+      4.336808689942018e-19,
+      0.006414817752029322
+     ]
+    },
+    "proxy_no_call": {
+     "k": 3,
+     "n": 595,
+     "rate": 0.005042016806722689,
+     "wilson95": [
+      0.0017161912606722882,
+      0.014717972866966824
+     ]
+    },
+    "b_loud": {
+     "k": 12,
+     "n": 595,
+     "rate": 0.020168067226890758,
+     "wilson95": [
+      0.01157393223512476,
+      0.034918271019343715
+     ]
+    }
+   },
+   "invalid_other": {
+    "n": 11,
+    "proxy_clean": 4,
+    "proxy_delivered_malformed": 4,
+    "b_clean": 1,
+    "b_loud": 10
+   },
+   "slip_and_other_differences": [
+    {
+     "id": "ctx-93c234e46a",
+     "forced": true,
+     "run": "`",
+     "proxy": {
+      "intervened": true,
+      "events": [
+       "closer"
+      ],
+      "posthoc": false,
+      "clean": true,
+      "why": "ok"
+     },
+     "b": {
+      "clean": true,
+      "loud": false
+     },
+     "proxy_cut_k": 0,
+     "b_cut_k": 0
+    },
+    {
+     "id": "ctx-053b97722f",
+     "forced": false,
+     "run": "`",
+     "proxy": {
+      "intervened": true,
+      "events": [
+       "closer"
+      ],
+      "posthoc": false,
+      "clean": true,
+      "why": "ok"
+     },
+     "b": {
+      "clean": false,
+      "loud": true
+     },
+     "proxy_cut_k": 0,
+     "b_cut_k": 0
+    },
+    {
+     "id": "ctx-8aeeacb5b9",
+     "forced": true,
+     "run": "`",
+     "proxy": {
+      "intervened": true,
+      "events": [
+       "closer",
+       "closer"
+      ],
+      "posthoc": false,
+      "clean": true,
+      "why": "ok"
+     },
+     "b": {
+      "clean": true,
+      "loud": false
+     },
+     "proxy_cut_k": 0,
+     "b_cut_k": 0
+    },
+    {
+     "id": "ctx-1d4eee51bb",
+     "forced": true,
+     "run": "`",
+     "proxy": {
+      "intervened": true,
+      "events": [
+       "closer"
+      ],
+      "posthoc": false,
+      "clean": true,
+      "why": "ok"
+     },
+     "b": {
+      "clean": false,
+      "loud": true
+     },
+     "proxy_cut_k": 0,
+     "b_cut_k": 0
+    },
+    {
+     "id": "ctx-311005d2c5",
+     "forced": true,
+     "run": "`",
+     "proxy": {
+      "intervened": false,
+      "events": [],
+      "posthoc": false,
+      "clean": false,
+      "why": "missing:new_string"
+     },
+     "b": {
+      "clean": true,
+      "loud": false
+     },
+     "proxy_cut_k": null,
+     "b_cut_k": 0
+    }
+   ]
+  },
+  "efix": {
+   "tag": "efix",
+   "n_calls": 595,
+   "missing": 0,
+   "valid_calls": {
+    "n": 480,
+    "proxy_byte_identical": {
+     "k": 480,
+     "n": 480,
+     "rate": 1.0,
+     "wilson95": [
+      0.9920605009127221,
+      1.0
+     ]
+    },
+    "proxy_intervened": {
+     "k": 0,
+     "n": 480,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.007939499087277936
+     ]
+    }
+   },
+   "slips": {
+    "n": 104,
+    "proxy_intervened": {
+     "k": 104,
+     "n": 104,
+     "rate": 1.0,
+     "wilson95": [
+      0.9643786456275479,
+      0.9999999999999999
+     ]
+    },
+    "proxy_clean": {
+     "k": 101,
+     "n": 104,
+     "rate": 0.9711538461538461,
+     "wilson95": [
+      0.9185995989748896,
+      0.9901418170972229
+     ]
+    },
+    "b_clean": {
+     "k": 102,
+     "n": 104,
+     "rate": 0.9807692307692307,
+     "wilson95": [
+      0.9325768708423217,
+      0.9947102884149359
+     ]
+    },
+    "proxy_delivered_malformed": {
+     "k": 1,
+     "n": 104,
+     "rate": 0.009615384615384616,
+     "wilson95": [
+      0.0016993728496512567,
+      0.05246772470794581
+     ]
+    },
+    "b_loud": {
+     "k": 2,
+     "n": 104,
+     "rate": 0.019230769230769232,
+     "wilson95": [
+      0.0052897115850640206,
+      0.0674231291576782
+     ]
+    },
+    "cut_by_rule": 104,
+    "cut_agrees_with_B": 104,
+    "both_clean_identical_args": {
+     "k": 96,
+     "n": 104,
+     "rate": 0.9230769230769231,
+     "wilson95": [
+      0.8555044538374418,
+      0.960508246308945
+     ]
+    }
+   },
+   "all_calls": {
+    "proxy_delivered_malformed": {
+     "k": 5,
+     "n": 595,
+     "rate": 0.008403361344537815,
+     "wilson95": [
+      0.0035946019565766003,
+      0.01951912642146903
+     ]
+    },
+    "b_delivered_malformed": {
+     "k": 0,
+     "n": 595,
+     "rate": 0.0,
+     "wilson95": [
+      4.336808689942018e-19,
+      0.006414817752029322
+     ]
+    },
+    "proxy_no_call": {
+     "k": 5,
+     "n": 595,
+     "rate": 0.008403361344537815,
+     "wilson95": [
+      0.0035946019565766003,
+      0.01951912642146903
+     ]
+    },
+    "b_loud": {
+     "k": 12,
+     "n": 595,
+     "rate": 0.020168067226890758,
+     "wilson95": [
+      0.01157393223512476,
+      0.034918271019343715
+     ]
+    }
+   },
+   "invalid_other": {
+    "n": 11,
+    "proxy_clean": 4,
+    "proxy_delivered_malformed": 4,
+    "b_clean": 1,
+    "b_loud": 10
+   },
+   "slip_and_other_differences": [
+    {
+     "id": "ctx-db0e1016d4",
+     "forced": true,
+     "run": "`",
+     "proxy": {
+      "intervened": true,
+      "events": [
+       "key"
+      ],
+      "posthoc": false,
+      "clean": true,
+      "why": "ok"
+     },
+     "b": {
+      "clean": true,
+      "loud": false
+     },
+     "proxy_cut_k": 0,
+     "b_cut_k": 0
+    },
+    {
+     "id": "ctx-62d17f0b9b",
+     "forced": true,
+     "run": "",
+     "proxy": {
+      "intervened": true,
+      "events": [
+       "key"
+      ],
+      "posthoc": false,
+      "clean": false,
+      "why": "missing:old_string"
+     },
+     "b": {
+      "clean": true,
+      "loud": false
+     },
+     "proxy_cut_k": 0,
+     "b_cut_k": 0
+    },
+    {
+     "id": "ctx-053b97722f",
+     "forced": false,
+     "run": "`",
+     "proxy": {
+      "intervened": true,
+      "events": [
+       "key"
+      ],
+      "posthoc": false,
+      "clean": true,
+      "why": "ok"
+     },
+     "b": {
+      "clean": false,
+      "loud": true
+     },
+     "proxy_cut_k": 0,
+     "b_cut_k": 0
+    },
+    {
+     "id": "ctx-0fb36c29ff",
+     "forced": true,
+     "run": "`",
+     "proxy": {
+      "intervened": true,
+      "events": [
+       "key"
+      ],
+      "posthoc": false,
+      "clean": true,
+      "why": "ok"
+     },
+     "b": {
+      "clean": true,
+      "loud": false
+     },
+     "proxy_cut_k": 0,
+     "b_cut_k": 0
+    },
+    {
+     "id": "ctx-1d4eee51bb",
+     "forced": true,
+     "run": "`",
+     "proxy": {
+      "intervened": true,
+      "events": [
+       "key"
+      ],
+      "posthoc": false,
+      "clean": true,
+      "why": "ok"
+     },
+     "b": {
+      "clean": false,
+      "loud": true
+     },
+     "proxy_cut_k": 0,
+     "b_cut_k": 0
+    },
+    {
+     "id": "ctx-311005d2c5",
+     "forced": true,
+     "run": "`",
+     "proxy": {
+      "intervened": true,
+      "events": [
+       "key"
+      ],
+      "posthoc": false,
+      "clean": true,
+      "why": "ok"
+     },
+     "b": {
+      "clean": true,
+      "loud": false
+     },
+     "proxy_cut_k": 0,
+     "b_cut_k": 0
+    },
+    {
+     "id": "ctx-ccfa75d639",
+     "forced": false,
+     "run": "`",
+     "proxy": {
+      "intervened": true,
+      "events": [
+       "key"
+      ],
+      "posthoc": false,
+      "clean": false,
+      "why": "no_call"
+     },
+     "b": {
+      "clean": true,
+      "loud": false
+     },
+     "proxy_cut_k": 0,
+     "b_cut_k": 0
+    },
+    {
+     "id": "ctx-f5dd4bbccd",
+     "forced": false,
+     "run": "\"`",
+     "proxy": {
+      "intervened": true,
+      "events": [
+       "key"
+      ],
+      "posthoc": false,
+      "clean": false,
+      "why": "no_call"
+     },
+     "b": {
+      "clean": true,
+      "loud": false
+     },
+     "proxy_cut_k": 1,
+     "b_cut_k": 1
+    }
+   ]
+  }
+ },
+ "tf_g1": {
+  "prefix": {
+   "tag": "prefix",
+   "n": 229,
+   "proxy_exact_intent": {
+    "k": 227,
+    "n": 229,
+    "rate": 0.9912663755458515,
+    "wilson95": [
+     0.9687211065562046,
+     0.9976016485905382
+    ]
+   },
+   "b_ipd_exact_intent_same_states": {
+    "k": 227,
+    "n": 229,
+    "rate": 0.9912663755458515,
+    "wilson95": [
+     0.9687211065562046,
+     0.9976016485905382
+    ]
+   },
+   "proxy_only": 0,
+   "b_only": 0,
+   "proxy_new_exact": {
+    "k": 229,
+    "n": 229,
+    "rate": 1.0,
+    "wilson95": [
+     0.9835018263493515,
+     0.9999999999999999
+    ]
+   },
+   "proxy_old_exact": {
+    "k": 227,
+    "n": 229,
+    "rate": 0.9912663755458515,
+    "wilson95": [
+     0.9687211065562046,
+     0.9976016485905382
+    ]
+   },
+   "proxy_intervened": {
+    "k": 229,
+    "n": 229,
+    "rate": 1.0,
+    "wilson95": [
+     0.9835018263493515,
+     0.9999999999999999
+    ]
+   },
+   "note": "same states and gold as B's G1 (C's corpus, base 31B, retry-derived intent); the proxy runs its own generate() from the identical logged prefix (logged thought + raw call prefix up to the old_string opener), the model live after the logged prefix; seeds differ from B's (B's G1 used Python's salted hash, not reproducible), so the regenerated old_string is an independent sample"
+  },
+  "efix": {
+   "tag": "efix",
+   "n": 229,
+   "proxy_exact_intent": {
+    "k": 227,
+    "n": 229,
+    "rate": 0.9912663755458515,
+    "wilson95": [
+     0.9687211065562046,
+     0.9976016485905382
+    ]
+   },
+   "b_ipd_exact_intent_same_states": {
+    "k": 227,
+    "n": 229,
+    "rate": 0.9912663755458515,
+    "wilson95": [
+     0.9687211065562046,
+     0.9976016485905382
+    ]
+   },
+   "proxy_only": 0,
+   "b_only": 0,
+   "proxy_new_exact": {
+    "k": 229,
+    "n": 229,
+    "rate": 1.0,
+    "wilson95": [
+     0.9835018263493515,
+     0.9999999999999999
+    ]
+   },
+   "proxy_old_exact": {
+    "k": 227,
+    "n": 229,
+    "rate": 0.9912663755458515,
+    "wilson95": [
+     0.9687211065562046,
+     0.9976016485905382
+    ]
+   },
+   "proxy_intervened": {
+    "k": 229,
+    "n": 229,
+    "rate": 1.0,
+    "wilson95": [
+     0.9835018263493515,
+     0.9999999999999999
+    ]
+   },
+   "note": "same states and gold as B's G1 (C's corpus, base 31B, retry-derived intent); the proxy runs its own generate() from the identical logged prefix (logged thought + raw call prefix up to the old_string opener), the model live after the logged prefix; seeds differ from B's (B's G1 used Python's salted hash, not reproducible), so the regenerated old_string is an independent sample"
+  }
+ },
+ "live_http": {
+  "efix": {
+   "tag": "efix",
+   "logdir": "experiments/intent_decoding/out/proxy_eq/live_logs_efix",
+   "cfgs": {
+    "base": {
+     "contexts": 600,
+     "first_tool": [
+      [
+       "edit_file",
+       404
+      ],
+      [
+       "run_command",
+       106
+      ],
+      [
+       "read_file",
+       65
+      ],
+      [
+       "write_file",
+       9
+      ],
+      [
+       "<no_call>",
+       6
+      ],
+      [
+       "<unparsed>",
+       4
+      ]
+     ],
+     "edit_calls": 404,
+     "edit_closer_slips_raw": {
+      "k": 65,
+      "n": 404,
+      "rate": 0.1608910891089109,
+      "wilson95": [
+       0.12828270390790905,
+       0.19988760817293552
+      ]
+     },
+     "edit_slip_detector_timeouts_5s": 0,
+     "edit_census_timeouts_10s_counted_malformed": 0,
+     "edit_census_malformed_raw": {
+      "k": 67,
+      "n": 404,
+      "rate": 0.16584158415841585,
+      "wilson95": [
+       0.1327548744994041,
+       0.2052231702517931
+      ]
+     },
+     "edit_delivered_malformed_B_census": {
+      "k": 67,
+      "n": 404,
+      "rate": 0.16584158415841585,
+      "wilson95": [
+       0.1327548744994041,
+       0.2052231702517931
+      ]
+     },
+     "edit_delivered_malformed_E_classify": {
+      "k": 66,
+      "n": 404,
+      "rate": 0.16336633663366337,
+      "wilson95": [
+       0.13051734891531777,
+       0.2025568295007031
+      ]
+     },
+     "edit_posthoc_repaired": 0,
+     "contexts_with_intervention": 0,
+     "ipd_repair_events": 0
+    },
+    "ipd": {
+     "contexts": 600,
+     "first_tool": [
+      [
+       "edit_file",
+       410
+      ],
+      [
+       "run_command",
+       101
+      ],
+      [
+       "read_file",
+       64
+      ],
+      [
+       "write_file",
+       13
+      ],
+      [
+       "submit_patch",
+       5
+      ],
+      [
+       "<no_call>",
+       3
+      ]
+     ],
+     "edit_calls": 410,
+     "edit_closer_slips_raw": {
+      "k": 0,
+      "n": 410,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.009282440748302413
+      ]
+     },
+     "edit_slip_detector_timeouts_5s": 0,
+     "edit_census_timeouts_10s_counted_malformed": 0,
+     "edit_census_malformed_raw": {
+      "k": 1,
+      "n": 410,
+      "rate": 0.0024390243902439024,
+      "wilson95": [
+       0.00043067751994754246,
+       0.013684531810070469
+      ]
+     },
+     "edit_delivered_malformed_B_census": {
+      "k": 1,
+      "n": 410,
+      "rate": 0.0024390243902439024,
+      "wilson95": [
+       0.00043067751994754246,
+       0.013684531810070469
+      ]
+     },
+     "edit_delivered_malformed_E_classify": {
+      "k": 1,
+      "n": 410,
+      "rate": 0.0024390243902439024,
+      "wilson95": [
+       0.00043067751994754246,
+       0.013684531810070469
+      ]
+     },
+     "edit_posthoc_repaired": 0,
+     "contexts_with_intervention": 72,
+     "ipd_repair_events": 75
+    },
+    "fullp": {
+     "contexts": 600,
+     "first_tool": [
+      [
+       "edit_file",
+       403
+      ],
+      [
+       "run_command",
+       107
+      ],
+      [
+       "read_file",
+       69
+      ],
+      [
+       "write_file",
+       13
+      ],
+      [
+       "submit_patch",
+       2
+      ],
+      [
+       "get_status",
+       2
+      ]
+     ],
+     "edit_calls": 403,
+     "edit_closer_slips_raw": {
+      "k": 0,
+      "n": 403,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.009442151819603907
+      ]
+     },
+     "edit_slip_detector_timeouts_5s": 0,
+     "edit_census_timeouts_10s_counted_malformed": 0,
+     "edit_census_malformed_raw": {
+      "k": 1,
+      "n": 403,
+      "rate": 0.0024813895781637717,
+      "wilson95": [
+       0.00043816056653876116,
+       0.013919911095151477
+      ]
+     },
+     "edit_delivered_malformed_B_census": {
+      "k": 1,
+      "n": 403,
+      "rate": 0.0024813895781637717,
+      "wilson95": [
+       0.00043816056653876116,
+       0.013919911095151477
+      ]
+     },
+     "edit_delivered_malformed_E_classify": {
+      "k": 1,
+      "n": 403,
+      "rate": 0.0024813895781637717,
+      "wilson95": [
+       0.00043816056653876116,
+       0.013919911095151477
+      ]
+     },
+     "edit_posthoc_repaired": 0,
+     "contexts_with_intervention": 64,
+     "ipd_repair_events": 66
+    }
+   },
+   "paired_base_ipd": {
+    "contexts": 600,
+    "same_prompt": 600,
+    "ipd_no_stop_event": 528,
+    "raw_identical_when_no_stop_event": {
+     "k": 267,
+     "n": 528,
+     "rate": 0.5056818181818182,
+     "wilson95": [
+      0.4631495626416505,
+      0.5481319948610391
+     ]
+    },
+    "note": "same seed + same prompt; identity is expected unless vLLM batch nondeterminism changes a sample"
+   },
+   "paired_unconditional": {
+    "base_vs_ipd": {
+     "contexts": 600,
+     "base_malformed_edit_delivered": {
+      "k": 67,
+      "n": 600,
+      "rate": 0.11166666666666666,
+      "wilson95": [
+       0.08889497508919378,
+       0.13937927936478045
+      ]
+     },
+     "ipd_malformed_edit_delivered": {
+      "k": 1,
+      "n": 600,
+      "rate": 0.0016666666666666668,
+      "wilson95": [
+       0.0002942682008495647,
+       0.009379560476138811
+      ]
+     },
+     "relative_reduction": 0.9850746268656716,
+     "relative_reduction_context_boot95": [
+      0.95,
+      1.0
+     ]
+    },
+    "base_vs_fullp": {
+     "contexts": 600,
+     "base_malformed_edit_delivered": {
+      "k": 67,
+      "n": 600,
+      "rate": 0.11166666666666666,
+      "wilson95": [
+       0.08889497508919378,
+       0.13937927936478045
+      ]
+     },
+     "fullp_malformed_edit_delivered": {
+      "k": 1,
+      "n": 600,
+      "rate": 0.0016666666666666668,
+      "wilson95": [
+       0.0002942682008495647,
+       0.009379560476138811
+      ]
+     },
+     "relative_reduction": 0.9850746268656716,
+     "relative_reduction_context_boot95": [
+      0.95,
+      1.0
+     ]
+    }
+   },
+   "gate_reference_natural_calls": {
+    "base_census_malformed": {
+     "k": 67,
+     "n": 406
+    },
+    "base_closer_slips": {
+     "k": 63,
+     "n": 406
+    },
+    "after_B_IPD_census_malformed": {
+     "k": 4,
+     "n": 406
+    },
+    "note": "B's discovery gate, natural (unforced) first edits, June template (1 token shorter prompts, \u00a73.1)"
+   }
+  }
+ }
+}

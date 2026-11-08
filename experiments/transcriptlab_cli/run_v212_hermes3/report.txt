@@ -1,0 +1,14 @@
+TranscriptLab report: hermes3-8b (hermes), pool A1, 300 states
+outcome: P(next call is a malformed edit), unconditional; 95% CIs from the frozen analysis
+
+records: 1200; errors: {}
+  P0     3.3% [1.8, 6.0]   n = 300
+  P1L    9.3% [6.5, 13.2]   n = 300
+  P6     8.7% [6.0, 12.4]   n = 300
+  P8a    5.7% [3.6, 8.9]   n = 300
+
+  copying    RD(P1 - P0)   +6.0 pp [+2.6, +9.6]
+  induction  RD(P6 - P0)   +5.3 pp [+2.3, +8.7]
+  quarantine removal of the P1 excess: 0.61 [-0.1333, 1.1538] (unstable when the P1 excess is small)
+
+The registered verdict rules (thresholds, Holm) live in the preregistrations; this report prints estimates only.

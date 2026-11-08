@@ -1,0 +1,9 @@
+{
+  "pass":       {"mode": "passthrough"},
+  "base":       {"mode": "engine", "canonical_order": false, "quarantine": false, "ipd": false},
+  "order":      {"mode": "engine", "canonical_order": true,  "quarantine": false, "ipd": false},
+  "quar":       {"mode": "engine", "canonical_order": false, "quarantine": true,  "ipd": false},
+  "ipd":        {"mode": "engine", "canonical_order": false, "quarantine": false, "ipd": true},
+  "fullp":      {"mode": "engine", "canonical_order": false, "quarantine": true,  "ipd": true},
+  "full_order": {"mode": "engine", "canonical_order": true,  "quarantine": true,  "ipd": true}
+}

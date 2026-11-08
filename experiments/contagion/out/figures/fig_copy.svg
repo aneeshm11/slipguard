@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="584" viewBox="0 0 1040 584">
+<rect width="1040" height="584" fill="#fcfcfb"/>
+<text x="20.0" y="30.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">What the model writes after one corrupted call in its history</text>
+<text x="20.0" y="52.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">Share of next edit_file calls after ONE corrupted prior call, by what the model wrote (generated new_string vs the value the history shows)</text>
+<rect x="20" y="64" width="12" height="12" rx="2" fill="#2a78d6"/>
+<text x="38.0" y="74.0" font-size="11.5" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">verbatim copy of the corrupted value (malformed)</text>
+<rect x="360" y="64" width="12" height="12" rx="2" fill="#eb6834"/>
+<text x="378.0" y="74.0" font-size="11.5" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">other edit, malformed</text>
+<rect x="540" y="64" width="12" height="12" rx="2" fill="#e87ba4"/>
+<text x="558.0" y="74.0" font-size="11.5" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">rewrite of the same edit, malformed</text>
+<rect x="790" y="64" width="12" height="12" rx="2" fill="#1baf7a"/>
+<text x="808.0" y="74.0" font-size="11.5" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">clean rewrite of the same edit</text>
+<rect x="20" y="84" width="12" height="12" rx="2" fill="#eda100"/>
+<text x="38.0" y="94.0" font-size="11.5" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">other edit, clean</text>
+<text x="240.0" y="137.0" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">31B  P1 corrupted re-render</text>
+<g><title>31B  P1 corrupted re-render | verbatim copy of the corrupted value (malformed): 105/266 (39.5%)</title><rect x="250.0" y="120" width="290.1" height="24" rx="2" fill="#2a78d6"/></g>
+<text x="395.1" y="137.0" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">39%</text>
+<g><title>31B  P1 corrupted re-render | other edit, malformed: 18/266 (6.8%)</title><rect x="542.1" y="120" width="48.1" height="24" rx="2" fill="#eb6834"/></g>
+<text x="566.1" y="137.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">7%</text>
+<g><title>31B  P1 corrupted re-render | clean rewrite of the same edit: 80/266 (30.1%)</title><rect x="592.2" y="120" width="220.6" height="24" rx="2" fill="#1baf7a"/></g>
+<text x="702.5" y="137.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">30%</text>
+<g><title>31B  P1 corrupted re-render | other edit, clean: 63/266 (23.7%)</title><rect x="814.7" y="120" width="173.3" height="24" rx="2" fill="#eda100"/></g>
+<text x="901.4" y="137.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">24%</text>
+<text x="998.0" y="137.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">n = 266</text>
+<text x="240.0" y="171.0" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">31B  P7 quote closer</text>
+<g><title>31B  P7 quote closer | verbatim copy of the corrupted value (malformed): 36/260 (13.8%)</title><rect x="250.0" y="154" width="100.5" height="24" rx="2" fill="#2a78d6"/></g>
+<text x="300.2" y="171.0" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">14%</text>
+<g><title>31B  P7 quote closer | other edit, malformed: 34/260 (13.1%)</title><rect x="352.5" y="154" width="94.8" height="24" rx="2" fill="#eb6834"/></g>
+<text x="399.8" y="171.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">13%</text>
+<g><title>31B  P7 quote closer | clean rewrite of the same edit: 119/260 (45.8%)</title><rect x="449.2" y="154" width="336.7" height="24" rx="2" fill="#1baf7a"/></g>
+<text x="617.6" y="171.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">46%</text>
+<g><title>31B  P7 quote closer | other edit, clean: 71/260 (27.3%)</title><rect x="787.9" y="154" width="200.1" height="24" rx="2" fill="#eda100"/></g>
+<text x="888.0" y="171.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">27%</text>
+<text x="998.0" y="171.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">n = 260</text>
+<text x="240.0" y="205.0" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">31B  P3 raw slip text</text>
+<g><title>31B  P3 raw slip text | verbatim copy of the corrupted value (malformed): 66/245 (26.9%)</title><rect x="250.0" y="188" width="197.3" height="24" rx="2" fill="#2a78d6"/></g>
+<text x="348.7" y="205.0" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">27%</text>
+<g><title>31B  P3 raw slip text | other edit, malformed: 54/245 (22.0%)</title><rect x="449.3" y="188" width="161.1" height="24" rx="2" fill="#eb6834"/></g>
+<text x="529.9" y="205.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">22%</text>
+<g><title>31B  P3 raw slip text | clean rewrite of the same edit: 49/245 (20.0%)</title><rect x="612.4" y="188" width="146.0" height="24" rx="2" fill="#1baf7a"/></g>
+<text x="685.4" y="205.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">20%</text>
+<g><title>31B  P3 raw slip text | other edit, clean: 76/245 (31.0%)</title><rect x="760.4" y="188" width="227.6" height="24" rx="2" fill="#eda100"/></g>
+<text x="874.2" y="205.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">31%</text>
+<text x="998.0" y="205.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">n = 245</text>
+<text x="240.0" y="239.0" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">31B  P6 corrupted + success</text>
+<g><title>31B  P6 corrupted + success | other edit, malformed: 79/243 (32.5%)</title><rect x="250.0" y="222" width="238.6" height="24" rx="2" fill="#eb6834"/></g>
+<text x="369.3" y="239.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">33%</text>
+<g><title>31B  P6 corrupted + success | clean rewrite of the same edit: 5/243 (2.1%)</title><rect x="490.6" y="222" width="13.2" height="24" rx="2" fill="#1baf7a"/></g>
+<g><title>31B  P6 corrupted + success | other edit, clean: 159/243 (65.4%)</title><rect x="505.8" y="222" width="482.2" height="24" rx="2" fill="#eda100"/></g>
+<text x="746.9" y="239.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">65%</text>
+<text x="998.0" y="239.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">n = 243</text>
+<text x="240.0" y="273.0" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">12B  P1 corrupted re-render</text>
+<g><title>12B  P1 corrupted re-render | verbatim copy of the corrupted value (malformed): 21/338 (6.2%)</title><rect x="250.0" y="256" width="44.0" height="24" rx="2" fill="#2a78d6"/></g>
+<text x="272.0" y="273.0" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">6%</text>
+<g><title>12B  P1 corrupted re-render | other edit, malformed: 18/338 (5.3%)</title><rect x="296.0" y="256" width="37.4" height="24" rx="2" fill="#eb6834"/></g>
+<text x="314.7" y="273.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">5%</text>
+<g><title>12B  P1 corrupted re-render | clean rewrite of the same edit: 153/338 (45.3%)</title><rect x="335.4" y="256" width="333.0" height="24" rx="2" fill="#1baf7a"/></g>
+<text x="501.9" y="273.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">45%</text>
+<g><title>12B  P1 corrupted re-render | other edit, clean: 146/338 (43.2%)</title><rect x="670.4" y="256" width="317.6" height="24" rx="2" fill="#eda100"/></g>
+<text x="829.2" y="273.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">43%</text>
+<text x="998.0" y="273.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">n = 338</text>
+<text x="240.0" y="307.0" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">12B  P7 quote closer</text>
+<g><title>12B  P7 quote closer | verbatim copy of the corrupted value (malformed): 19/176 (10.8%)</title><rect x="250.0" y="290" width="77.9" height="24" rx="2" fill="#2a78d6"/></g>
+<text x="288.9" y="307.0" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">11%</text>
+<g><title>12B  P7 quote closer | other edit, malformed: 8/176 (4.5%)</title><rect x="329.9" y="290" width="31.6" height="24" rx="2" fill="#eb6834"/></g>
+<g><title>12B  P7 quote closer | clean rewrite of the same edit: 79/176 (44.9%)</title><rect x="363.5" y="290" width="330.2" height="24" rx="2" fill="#1baf7a"/></g>
+<text x="528.6" y="307.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">45%</text>
+<g><title>12B  P7 quote closer | other edit, clean: 70/176 (39.8%)</title><rect x="695.7" y="290" width="292.3" height="24" rx="2" fill="#eda100"/></g>
+<text x="841.8" y="307.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">40%</text>
+<text x="998.0" y="307.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">n = 176</text>
+<text x="240.0" y="341.0" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">12B  P3 raw slip text</text>
+<g><title>12B  P3 raw slip text | verbatim copy of the corrupted value (malformed): 3/431 (0.7%)</title><rect x="250.0" y="324" width="3.2" height="24" rx="2" fill="#2a78d6"/></g>
+<g><title>12B  P3 raw slip text | other edit, malformed: 13/431 (3.0%)</title><rect x="255.2" y="324" width="20.3" height="24" rx="2" fill="#eb6834"/></g>
+<g><title>12B  P3 raw slip text | clean rewrite of the same edit: 182/431 (42.2%)</title><rect x="277.5" y="324" width="310.5" height="24" rx="2" fill="#1baf7a"/></g>
+<text x="432.7" y="341.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">42%</text>
+<g><title>12B  P3 raw slip text | other edit, clean: 233/431 (54.1%)</title><rect x="590.0" y="324" width="398.0" height="24" rx="2" fill="#eda100"/></g>
+<text x="789.0" y="341.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">54%</text>
+<text x="998.0" y="341.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">n = 431</text>
+<text x="240.0" y="375.0" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">12B  P6 corrupted + success</text>
+<g><title>12B  P6 corrupted + success | other edit, malformed: 53/346 (15.3%)</title><rect x="250.0" y="358" width="111.4" height="24" rx="2" fill="#eb6834"/></g>
+<text x="305.7" y="375.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">15%</text>
+<g><title>12B  P6 corrupted + success | clean rewrite of the same edit: 3/346 (0.9%)</title><rect x="363.4" y="358" width="4.4" height="24" rx="2" fill="#1baf7a"/></g>
+<g><title>12B  P6 corrupted + success | other edit, clean: 290/346 (83.8%)</title><rect x="369.8" y="358" width="618.2" height="24" rx="2" fill="#eda100"/></g>
+<text x="678.9" y="375.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">84%</text>
+<text x="998.0" y="375.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">n = 346</text>
+<text x="240.0" y="409.0" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">E4B  P1 corrupted re-render</text>
+<g><title>E4B  P1 corrupted re-render | verbatim copy of the corrupted value (malformed): 15/451 (3.3%)</title><rect x="250.0" y="392" width="22.6" height="24" rx="2" fill="#2a78d6"/></g>
+<g><title>E4B  P1 corrupted re-render | other edit, malformed: 19/451 (4.2%)</title><rect x="274.6" y="392" width="29.2" height="24" rx="2" fill="#eb6834"/></g>
+<g><title>E4B  P1 corrupted re-render | clean rewrite of the same edit: 109/451 (24.2%)</title><rect x="305.8" y="392" width="176.8" height="24" rx="2" fill="#1baf7a"/></g>
+<text x="394.2" y="409.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">24%</text>
+<g><title>E4B  P1 corrupted re-render | other edit, clean: 308/451 (68.3%)</title><rect x="484.6" y="392" width="503.4" height="24" rx="2" fill="#eda100"/></g>
+<text x="736.3" y="409.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">68%</text>
+<text x="998.0" y="409.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">n = 451</text>
+<text x="240.0" y="443.0" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">E4B  P3 raw slip text</text>
+<g><title>E4B  P3 raw slip text | verbatim copy of the corrupted value (malformed): 6/383 (1.6%)</title><rect x="250.0" y="426" width="9.6" height="24" rx="2" fill="#2a78d6"/></g>
+<g><title>E4B  P3 raw slip text | other edit, malformed: 45/383 (11.7%)</title><rect x="261.6" y="426" width="84.9" height="24" rx="2" fill="#eb6834"/></g>
+<text x="304.1" y="443.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">12%</text>
+<g><title>E4B  P3 raw slip text | rewrite of the same edit, malformed: 2/383 (0.5%)</title><rect x="348.5" y="426" width="1.9" height="24" rx="2" fill="#e87ba4"/></g>
+<g><title>E4B  P3 raw slip text | clean rewrite of the same edit: 36/383 (9.4%)</title><rect x="352.4" y="426" width="67.6" height="24" rx="2" fill="#1baf7a"/></g>
+<text x="386.2" y="443.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">9%</text>
+<g><title>E4B  P3 raw slip text | other edit, clean: 294/383 (76.8%)</title><rect x="422.0" y="426" width="566.0" height="24" rx="2" fill="#eda100"/></g>
+<text x="705.0" y="443.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">77%</text>
+<text x="998.0" y="443.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">n = 383</text>
+<text x="240.0" y="477.0" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">E4B  P6 corrupted + success</text>
+<g><title>E4B  P6 corrupted + success | verbatim copy of the corrupted value (malformed): 2/488 (0.4%)</title><rect x="250.0" y="460" width="1.0" height="24" rx="2" fill="#2a78d6"/></g>
+<g><title>E4B  P6 corrupted + success | other edit, malformed: 64/488 (13.1%)</title><rect x="253.0" y="460" width="95.0" height="24" rx="2" fill="#eb6834"/></g>
+<text x="300.6" y="477.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">13%</text>
+<g><title>E4B  P6 corrupted + success | clean rewrite of the same edit: 12/488 (2.5%)</title><rect x="350.1" y="460" width="16.2" height="24" rx="2" fill="#1baf7a"/></g>
+<g><title>E4B  P6 corrupted + success | other edit, clean: 410/488 (84.0%)</title><rect x="368.3" y="460" width="619.7" height="24" rx="2" fill="#eda100"/></g>
+<text x="678.1" y="477.0" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">84%</text>
+<text x="998.0" y="477.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">n = 488</text>
+<text x="20.0" y="560.0" font-size="10.5" fill="#8a8984" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">Byte-exact = the generated new_string equals the corrupted value (original + closer + &quot;,old_string:&quot;); clean rewrite = equals the original value. Histories are 31B trajectories.</text>
+</svg>

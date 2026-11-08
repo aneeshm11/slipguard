@@ -1,0 +1,178 @@
+{
+ "31b_bf16": {
+  "dir": "models/gemma-4-31b-it",
+  "d_model": 5376,
+  "e_DQ_norm_rel": 1.044075846672058,
+  "r_DQ_norm_rel": 1.1317453384399414,
+  "g_norm_rms": 32.252376556396484,
+  "lookalike80": {
+   "cos_mean": 0.17315641045570374,
+   "cos_max": 0.38751137256622314,
+   "sep_mean": 1.5448806285858154,
+   "sep_min": 1.1627264022827148,
+   "rnorm_rel_mean": 1.2420498132705688
+  },
+  "frequent6": {
+   "cos_mean": 0.22164177894592285,
+   "cos_max": 0.2924766540527344,
+   "sep_mean": 1.7386503219604492,
+   "sep_min": 1.4122998714447021,
+   "rnorm_rel_mean": 1.5641614198684692
+  },
+  "note": null
+ },
+ "31b_qatct": {
+  "dir": "models/gemma-4-31b-it-qat-w4a16-ct",
+  "d_model": 5376,
+  "e_DQ_norm_rel": 0.9979591965675354,
+  "r_DQ_norm_rel": 1.0617707967758179,
+  "g_norm_rms": 32.29708480834961,
+  "lookalike80": {
+   "cos_mean": 0.17076851427555084,
+   "cos_max": 0.3987078070640564,
+   "sep_mean": 1.3951911926269531,
+   "sep_min": 1.1038057804107666,
+   "rnorm_rel_mean": 1.1013576984405518
+  },
+  "frequent6": {
+   "cos_mean": 0.2152395099401474,
+   "cos_max": 0.2999502718448639,
+   "sep_mean": 1.4709676504135132,
+   "sep_min": 1.3488761186599731,
+   "rnorm_rel_mean": 1.2725831270217896
+  },
+  "note": null
+ },
+ "31b_qatunq": {
+  "dir": "models/gemma-4-31b-it-qat-q4_0-unquantized",
+  "d_model": 5376,
+  "e_DQ_norm_rel": 0.9979591965675354,
+  "r_DQ_norm_rel": 1.0617707967758179,
+  "g_norm_rms": 32.29708480834961,
+  "lookalike80": {
+   "cos_mean": 0.17076851427555084,
+   "cos_max": 0.3987078070640564,
+   "sep_mean": 1.3951911926269531,
+   "sep_min": 1.1038057804107666,
+   "rnorm_rel_mean": 1.1013576984405518
+  },
+  "frequent6": {
+   "cos_mean": 0.2152395099401474,
+   "cos_max": 0.2999502718448639,
+   "sep_mean": 1.4709676504135132,
+   "sep_min": 1.3488761186599731,
+   "rnorm_rel_mean": 1.2725831270217896
+  },
+  "note": null
+ },
+ "31b_ptq_q40": {
+  "dir": "models/gemma-4-31b-it",
+  "d_model": 5376,
+  "e_DQ_norm_rel": 1.044075846672058,
+  "r_DQ_norm_rel": 1.1317453384399414,
+  "g_norm_rms": 32.252376556396484,
+  "lookalike80": {
+   "cos_mean": 0.17315641045570374,
+   "cos_max": 0.38751137256622314,
+   "sep_mean": 1.5448806285858154,
+   "sep_min": 1.1627264022827148,
+   "rnorm_rel_mean": 1.2420498132705688
+  },
+  "frequent6": {
+   "cos_mean": 0.22164177894592285,
+   "cos_max": 0.2924766540527344,
+   "sep_mean": 1.7386503219604492,
+   "sep_min": 1.4122998714447021,
+   "rnorm_rel_mean": 1.5641614198684692
+  },
+  "note": "PTQ keeps the bf16 embedding and final norm -> identical proxy to bf16"
+ },
+ "12b_qatct": {
+  "dir": "models/gemma-4-12b-it-qat-w4a16-ct",
+  "d_model": 3840,
+  "e_DQ_norm_rel": 1.0014816522598267,
+  "r_DQ_norm_rel": 1.0515527725219727,
+  "g_norm_rms": 63.43608856201172,
+  "lookalike80": {
+   "cos_mean": 0.10922496020793915,
+   "cos_max": 0.31510597467422485,
+   "sep_mean": 1.3970054388046265,
+   "sep_min": 1.177749514579773,
+   "rnorm_rel_mean": 1.0443322658538818
+  },
+  "frequent6": {
+   "cos_mean": 0.09356103092432022,
+   "cos_max": 0.20433127880096436,
+   "sep_mean": 1.4134067296981812,
+   "sep_min": 1.305317759513855,
+   "rnorm_rel_mean": 1.0483721494674683
+  },
+  "note": null
+ },
+ "e4b_bf16": {
+  "dir": "models/gemma-4-e4b-it",
+  "d_model": 2560,
+  "e_DQ_norm_rel": 0.8675990700721741,
+  "r_DQ_norm_rel": 0.8588133454322815,
+  "g_norm_rms": 7.960564136505127,
+  "lookalike80": {
+   "cos_mean": 0.15490251779556274,
+   "cos_max": 0.27021822333335876,
+   "sep_mean": 1.228752851486206,
+   "sep_min": 1.0834909677505493,
+   "rnorm_rel_mean": 1.0210729837417603
+  },
+  "frequent6": {
+   "cos_mean": 0.23215341567993164,
+   "cos_max": 0.24475601315498352,
+   "sep_mean": 1.1212702989578247,
+   "sep_min": 1.0934770107269287,
+   "rnorm_rel_mean": 0.9465534090995789
+  },
+  "note": null
+ },
+ "e4b_qatct": {
+  "dir": "models/gemma-4-e4b-it-qat-w4a16-ct",
+  "d_model": 2560,
+  "e_DQ_norm_rel": 0.9981159567832947,
+  "r_DQ_norm_rel": 0.9883008003234863,
+  "g_norm_rms": 8.00625991821289,
+  "lookalike80": {
+   "cos_mean": 0.15209421515464783,
+   "cos_max": 0.2617655098438263,
+   "sep_mean": 1.29208242893219,
+   "sep_min": 1.2101259231567383,
+   "rnorm_rel_mean": 0.9970231056213379
+  },
+  "frequent6": {
+   "cos_mean": 0.22640478610992432,
+   "cos_max": 0.23762992024421692,
+   "sep_mean": 1.2360780239105225,
+   "sep_min": 1.223159670829773,
+   "rnorm_rel_mean": 0.9992112517356873
+  },
+  "note": null
+ },
+ "e2b_qatct": {
+  "dir": "models/gemma-4-e2b-it-qat-w4a16-ct",
+  "d_model": 1536,
+  "e_DQ_norm_rel": 1.0019961595535278,
+  "r_DQ_norm_rel": 0.9679549336433411,
+  "g_norm_rms": 14.996403694152832,
+  "lookalike80": {
+   "cos_mean": 0.22979679703712463,
+   "cos_max": 0.329744428396225,
+   "sep_mean": 1.2086172103881836,
+   "sep_min": 1.1221818923950195,
+   "rnorm_rel_mean": 0.9802879095077515
+  },
+  "frequent6": {
+   "cos_mean": 0.2628631293773651,
+   "cos_max": 0.290821373462677,
+   "sep_mean": 1.2050708532333374,
+   "sep_min": 1.1481647491455078,
+   "rnorm_rel_mean": 1.0157084465026855
+  },
+  "note": null
+ }
+}

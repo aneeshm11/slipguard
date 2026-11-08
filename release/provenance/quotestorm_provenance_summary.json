@@ -1,0 +1,54 @@
+{
+ "payloads": 3052,
+ "by_source_and_class": {
+  "adversarial|custom": 15,
+  "adversarial|permissive": 553,
+  "adversarial|unlicensed_or_unknown": 32,
+  "live|permissive": 24,
+  "live|unlicensed_or_unknown": 91,
+  "rebench|permissive": 1659,
+  "rebench|unlicensed_or_unknown": 30,
+  "rebench_v2|agpl": 4,
+  "rebench_v2|custom": 105,
+  "rebench_v2|permissive": 518,
+  "rebench_v2|unlicensed_or_unknown": 12,
+  "verified|copyleft": 1,
+  "verified|permissive": 8
+ },
+ "shipped_content": 2762,
+ "pointer_only": 290,
+ "pointer_only_by_reason": {
+  "unlicensed_or_unknown": 165,
+  "custom": 120,
+  "copyleft": 1,
+  "agpl": 4
+ },
+ "by_license": {
+  "MIT": 1216,
+  "Apache-2.0": 738,
+  "BSD-3-Clause": 659,
+  "NOASSERTION": 165,
+  "LicenseRef-custom-check-github": 120,
+  "BSD-2-Clause": 78,
+  "Unlicense": 23,
+  "ZPL-2.1": 19,
+  "ISC": 13,
+  "CC0-1.0": 8,
+  "AGPL-3.0": 4,
+  "WTFPL": 3,
+  "PSF-2.0": 2,
+  "MIT OR Apache-2.0": 1,
+  "GPL-2.0-or-later": 1,
+  "AFL-3.0": 1,
+  "NCSA": 1
+ },
+ "line_span_found": 2214,
+ "line_span_missing": 838,
+ "redaction": {
+  "lines": 19,
+  "email": 39,
+  "secret_assignment": 1,
+  "home_dir_user": 1
+ },
+ "rule": "content ships only for known permissive SPDX licences; everything else is a pointer (dataset, instance, repo, commit, path, line span, sha256)"
+}

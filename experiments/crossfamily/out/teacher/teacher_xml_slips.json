@@ -1,0 +1,149 @@
+{
+ "counts": {
+  "responses": 35502,
+  "calls": 39241,
+  "calls:run_command": 30310,
+  "calls:read_file": 3433,
+  "calls:read_command": 56,
+  "calls:edit_file": 4133,
+  "calls:submit_patch": 1141,
+  "calls:write_file": 157,
+  "calls:function": 1,
+  "malformed_calls": 27,
+  "malformed:edit_file": 19,
+  "flag:extra_key": 12,
+  "flag:missing:edit_file": 15,
+  "flag:leak_json": 1,
+  "malformed:read_file": 7,
+  "flag:missing:read_file": 7,
+  "calls:run_file": 4,
+  "malformed:write_file": 1,
+  "flag:missing:write_file": 1,
+  "calls:run_process": 1,
+  "calls:read": 1,
+  "calls:run_string": 1,
+  "calls:get_status": 1,
+  "calls:runcommand": 1,
+  "calls:command": 1
+ },
+ "per_run_calls": {
+  "t1_qwen:run_command": 5168,
+  "t1_qwen:read_file": 476,
+  "t1_qwen:read_command": 14,
+  "t1_qwen:edit_file": 672,
+  "t1_qwen:submit_patch": 248,
+  "t1_qwen:write_file": 18,
+  "t1_qwen:function": 1,
+  "t2_qwen_rebench:run_command": 14997,
+  "t2_qwen_rebench:read_file": 1677,
+  "t2_qwen_rebench:edit_file": 1810,
+  "t2_qwen_rebench:write_file": 70,
+  "t2_qwen_rebench:submit_patch": 467,
+  "t2_qwen_rebench:read_command": 24,
+  "t2_qwen_rebench:run_file": 3,
+  "t2_qwen_rebench:run_process": 1,
+  "t3_qwen_rebench:run_command": 10145,
+  "t3_qwen_rebench:read_command": 18,
+  "t3_qwen_rebench:read_file": 1280,
+  "t3_qwen_rebench:edit_file": 1651,
+  "t3_qwen_rebench:submit_patch": 426,
+  "t3_qwen_rebench:write_file": 69,
+  "t3_qwen_rebench:read": 1,
+  "t3_qwen_rebench:run_string": 1,
+  "t3_qwen_rebench:run_file": 1,
+  "t3_qwen_rebench:get_status": 1,
+  "t3_qwen_rebench:runcommand": 1,
+  "t3_qwen_rebench:command": 1
+ },
+ "examples": {
+  "edit_file": [
+   {
+    "flags": [
+     "extra_key",
+     "missing:new_string"
+    ],
+    "args": "{\"content\": \"logger = logging.getLogger(__name__)\\n\\n# A compressed tag set is expanded into the Cartesian product of its\\n# components, which can generate an arbitrarily large number of tags. This\\n# limit prevents such tag strings from consuming an unbounded amount of\\n# memory. See the platform compatibility tags specification for more details.\\nMAX_TAGS: int = 128\\n\", \"old_string\": \"logger = logging.getLogger(__name__)\\n\", \"filepath\": \"src/packaging/tags.py\"}"
+   },
+   {
+    "flags": [
+     "extra_key",
+     "leak_json:arguments",
+     "missing:filepath",
+     "missing:new_string"
+    ],
+    "args": "{\"arguments\": \"{\\\"filepath\\\": \\\"pydantic_settings/sources/providers/gcp.py\\\", \\\"new_string\\\": \\\"    def _load_env_vars(self) -> Mapping[str, str | None]:\\\\n        return GoogleSecretManagerMapping(\\\\n            self._get_secret_client(), project_id=self._get_project_id(), case_sensitive=self.case_sensitive\\\\n        )\", \"old_string\": \"    def _load_env_vars(self) -> Mapping[str, str | None]:\\n        return GoogleSecretManagerMapping(\\n            self._secret_client, project_id=self._project_"
+   },
+   {
+    "flags": [
+     "missing:filepath"
+    ],
+    "args": "{\"new_string\": \"                    _walk.add_subcommand_arg(\\n                        parsed_models[\\n                            subcommand_key\\n                        ].model,  # type: ignore[union-attr]  # Checked by is_optional and above dictionary assignment\\n                        subcommand_arg.parser,\\n                        subcommand_arg.parser,\\n                        sub_models[subcommand_key],\\n                        subcommand_key,\\n                        subcommand_key,\\n  "
+   },
+   {
+    "flags": [
+     "extra_key",
+     "missing:new_string"
+    ],
+    "args": "{\"content\": \"    if result is None:\\n        try:\\n            # ...and fall back to using plain pyjnius, if python4android isn't available or doesn't deliver any useful\\n            # result... getFilesDir() is an instance method, so it needs a real Context: pyjnius raises JavaException\\n            # when it is called on the android.content.Context class. The running activity is such a Context, and this\\n            # is the lookup python-for-android's own android.storage does, asking the serv"
+   },
+   {
+    "flags": [
+     "missing:filepath"
+    ],
+    "args": "{\"new_string\": \"        :param name: name for this circuitbreaker. Defaults to a generated\\n            name of the form \\\"unnamed_CircuitBreaker_<n>\\\"\", \"old_string\": \"        :param name: name for this circuitbreaker\"}"
+   },
+   {
+    "flags": [
+     "extra_key"
+    ],
+    "args": "{\"edit_file\": \"true\", \"filepath\": \"wikipediaapi/__init__.py\", \"new_string\": \"        self.extract_format = extract_format\\n        self.variant = variant.strip().lower() if variant is not None else None\\n\\n        log.info(\\n            \\\"Wikipedia: language=%s, user_agent: %s, extract_format=%s\\\",\\n            self.language,\\n            default_headers[\\\"User-Agent\\\"],\\n            self.extract_format,\\n        )\", \"old_string\": \"        self.extract_format = extract_format\\n\\n        log.info"
+   }
+  ],
+  "read_file": [
+   {
+    "flags": [
+     "missing:filepath"
+    ],
+    "args": "{\"command\": \"cd /workspace && sed -n '1010,1045p' isort/main.py\"}"
+   },
+   {
+    "flags": [
+     "missing:filepath"
+    ],
+    "args": "{\"end_line\": 2240, \"file_path\": \"dlx/marc/__init__.py\", \"start_line\": 2180}"
+   },
+   {
+    "flags": [
+     "missing:filepath"
+    ],
+    "args": "{\"command\": \"cd /workspace && sed -n '220,290p' skfem/mapping/mapping_isoparametric.py\"}"
+   },
+   {
+    "flags": [
+     "missing:filepath"
+    ],
+    "args": "{\"end_line\": 290, \"file_path\": \"/workspace/bleach/linkifier.py\", \"start_line\": 255}"
+   },
+   {
+    "flags": [
+     "missing:filepath"
+    ],
+    "args": "{\"command\": \"cd /workspace\"}"
+   },
+   {
+    "flags": [
+     "missing:filepath"
+    ],
+    "args": "{\"command\": \"sed -n '355,400p' /workspace/starlette_exporter/middleware.py\"}"
+   }
+  ],
+  "write_file": [
+   {
+    "flags": [
+     "missing:filepath"
+    ],
+    "args": "{\"content\": \"import os\\nfrom typing import Any, Optional, cast\\n\\nfrom huggingface_hub import HfFileSystem\\n\\nfrom datachain.lib.file import File\\nfrom datachain.node import Entry\\n\\nfrom .fsspec import Client\\n\\n\\nclass HfClient(Client):\\n    FS_CLASS = HfFileSystem\\n    PREFIX = \\\"hf://\\\"\\n    protocol = \\\"hf\\\"\\n\\n    @classmethod\\n    def create_fs(cls, **kwargs) -> HfFileSystem:\\n        token = os.environ.get(\\\"HF_TOKEN\\\")\\n        if token:\\n            kwargs.setdefault(\\\"token\\\", token)\\"
+   }
+  ]
+ }
+}

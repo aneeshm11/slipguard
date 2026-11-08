@@ -1,0 +1,70 @@
+{
+ "note": "git-free provenance of the public-input conformance results: sha256 of every input, result and code file. Result/case files live in the library's dev scratch area (not shipped); regenerate them with the commands in docs/EVIDENCE.md and compare shas.",
+ "pnc_corpus": {
+  "n_episode_files": 1181,
+  "sha256_of_sorted_name_sha_list": "d3fb8afb200fa3c5e5fbe9ce294b58c4ee32c7a1725477ffc5f3741d8e2e596f",
+  "contexts_manifests": {
+   "S1": "4cbee85d209c0d2488d2764852637d70d014a07f1de786cf3c6dd8864fd34a75",
+   "S2": "2dd209b5a388aa5d0c7afcf3e71e63446e94bc82766b7fd1d2aa5ed35521ceba"
+  }
+ },
+ "cases": {
+  "scratch/pnc_conf/cases_pnc.jsonl": "eea8d3c681bd11f9104a243c4d7bc73a0721387fde211dd8e547296d92f776c8"
+ },
+ "results_pre_fix": {
+  "scratch/pnc_conf/full/builtin__env_gemma__0.jsonl": "bd7f52fbc4c65d2d49982e2579c354b94bbc4a20b4a22aacee452e799d2a0d40",
+  "scratch/pnc_conf/full/builtin__env_gemma__1.jsonl": "dc9ea9c8ee9a265e24b678a6d3b57316d0ab005a28e91e62bbaf2cdacffa8d99",
+  "scratch/pnc_conf/full/builtin__env_vllm31+vllm-0.24.0__0.jsonl": "89991ab9d52543dd2a29d55104080106ef16a6fd5422e74bf739f53d5a91e0f7",
+  "scratch/pnc_conf/full/builtin__env_vllm31+vllm-0.24.0__1.jsonl": "3efa8ce4a28f653bf5046e80795ae6476455077e1389decac21ecefab529d3fd",
+  "scratch/pnc_conf/full/builtin__env_vllm31+vllm-0.32.0__0.jsonl": "b2db5d063dea70ff30fb8fb057399d9c5a806290635042753547a38f79440ed9",
+  "scratch/pnc_conf/full/builtin__env_vllm31+vllm-0.32.0__1.jsonl": "03ee20d41b0d8b95a8606e7d27bc95f8a6f323335c4baa6ac1033bad1df70f6e",
+  "scratch/pnc_conf/full/builtin__env_vllm31+vllm-0.33.0__0.jsonl": "fb8c44197f27881e50d38bee95809fd86f2ae68d73df929bc8635d77ab6c64fa",
+  "scratch/pnc_conf/full/builtin__env_vllm31+vllm-0.33.0__1.jsonl": "6d2360a5f3bb16617e09adcd96634d9287ad04bf9604d18ee8ab2d2b3bb8315d",
+  "scratch/pnc_conf/full/builtin__env_vllm31__0.jsonl": "e9dfcb31bb0a02bdac0f92cd95547cc8cf74c52aa3a68f1685784c5b702f5589",
+  "scratch/pnc_conf/full/builtin__env_vllm31__1.jsonl": "e67c88d0ffceb2be2b593bad3f888b6ea0910ec277642f9f3e568893556584b5",
+  "scratch/pnc_conf/full/gg__env_gemma__0.jsonl": "a316663ed971ecd106e3a0315ca66534bdd851a677058151e3d05361a865ab8d",
+  "scratch/pnc_conf/full/gg__env_gemma__1.jsonl": "fb81b8a0c695af3d8c6a46aa2145dbeb589406db8c12e2d72795539f5bee911b",
+  "scratch/pnc_conf/full/gg__env_gemma__2.jsonl": "56e3d27302dca52f57ba1d234c512959e1313372c6f7e0d0283455f58dd64543",
+  "scratch/pnc_conf/full/gg__env_gemma__3.jsonl": "49ffbeda1d2c94845b3649614e1d944140093aad731a32a092f77c3ba5a3ac21",
+  "scratch/pnc_conf/full/gg__env_vllm31+vllm-0.24.0__0.jsonl": "9927bdaaaebb40d3ab1b5d7a762efb18a019104e54b9118855355a0d0461e0da",
+  "scratch/pnc_conf/full/gg__env_vllm31+vllm-0.24.0__1.jsonl": "f96ffd4b4caedb7053e90323e2ffc8614bed7f48921c69d0af2d28d714eea227",
+  "scratch/pnc_conf/full/gg__env_vllm31+vllm-0.32.0__0.jsonl": "8d4b931ef1b102bb6f7b88fdc8a8c1fd8c756f08ac5e0c68f71716ed207c2a22",
+  "scratch/pnc_conf/full/gg__env_vllm31+vllm-0.32.0__1.jsonl": "2d1b6443d345c204a7f58af90e47ff72410aec71daaf6ee683dda54ba0cedfe6",
+  "scratch/pnc_conf/full/gg__env_vllm31+vllm-0.33.0__0.jsonl": "6a7a1f8520852a3e7fd72b6abd02f21eb0afa572456f7729fa807393275a12a1",
+  "scratch/pnc_conf/full/gg__env_vllm31+vllm-0.33.0__1.jsonl": "fbb3c39c42e16fe969512f7cd9e3f6827c30d522c2b5d7ee0e9ff5d8aaa9a0b5",
+  "scratch/pnc_conf/full/gg__env_vllm31__0.jsonl": "7efabeef5061706230e3db83ac9fa8331af9ee29a99d96220b98d0f7eb15dd69",
+  "scratch/pnc_conf/full/gg__env_vllm31__1.jsonl": "e439c4e1c63f8f349b39e9b1fe8e2d477b946e563492329d2bf46a56daf9dc5a"
+ },
+ "results_post_fix_override": {
+  "scratch/repair5/pnc.jsonl (gg.repair re-run with the fixed rule; overrides gg.repair only)": "6a22acec43ab1ef57ca3b626c736afd3f556dfc0c4ba8bd6b51fb2e1533e6a33"
+ },
+ "code": {
+  "conformance/build_pnc_cases.py": "1a77a92ab66ae22507b807a2b85c67676175668f89881e93f39e63232453e126",
+  "conformance/run_pnc.sh": "590e73292a7c03f844e160127b6c39e9b830dd8a173de686f6839ccbc3342716",
+  "conformance/report_pnc.py": "d1fad6dda1dae63a1373fa0295c528b3151347a357a081a759019ae542ac9a16",
+  "conformance/gg_targets.py": "4b15b7c8654a865b990bcdd4debc5654d43f320e9e0f3d09d1b35a8cb4880c24",
+  "src/slipguard/parse/repair_text.py": "8328554b12c6f5f6c45e97fefa0ff64a07a4443132a0d7cc0e57d4e595b6b1f5",
+  "_note": "report_pnc.py sha is the version that appends POSTHOC_NOTE.md; the pre-fix report was produced by the same code before that 4-line addition (no POSTHOC_NOTE.md in prefix_fix/, so the output is unaffected)"
+ },
+ "code_pre_fix": {
+  "src/slipguard/parse/repair_text.py (reconstructed = post-fix minus repair_fix.diff)": "ae6db4f67558f5241b54abdb051139c3c708a875be2973b942a367549493461d",
+  "reconstruction_check": "the reconstructed pre-fix file reproduces the logged pre-fix gg.repair run on all 872 ill-formed PNC turns (same outcome and same call fingerprint)"
+ },
+ "judge_code_workstream_C": {
+  "diff/worker.py": "dd90a647160f80db164e3b39c34a118487031ba8e445979c2e123c2886dc54a1",
+  "diff/analyze_x.py": "20ee026f0730702e0c7afa5be47e8d588c20fd92f6b097727be35dd8fd67b0c7",
+  "diff/analyze.py": "57c4f692461033615f45996b3d6ccb3690a2fbc7203a8d98400ad9a9f93746a0",
+  "gemmaproto/conformance.py": "6b5bd2e1b74dbc75ae7bf1212591ccdcadf6fec94c4310ba7253701ed912a6d9",
+  "diff/fastdelta.py": "e214a0a21f12f401f4c589eb01df33225ab4e62ca49cbf70b22a63e49d01bda0"
+ },
+ "judged_outputs": {
+  "results/conformance_pnc/prefix_fix/RESULTS.json": "3f6af9593acaf5ffdd68386ddf7d0b06f9cf57f0dd4fe751c7e40f4475cc84f5",
+  "results/conformance_pnc/prefix_fix/RESULTS.md": "12660e072955b3ebfa9819bbcb70413b00f40f35c34346dd7fa2f861bfc606fb",
+  "results/conformance_pnc/RESULTS.json (post-fix)": "408147e6a86abe7255715d850a768b0ec8f5c90f85f2d07f58d43887b2d352bc",
+  "results/conformance_pnc/RESULTS.md (post-fix)": "27778498c4016e199663f8d634c92773158cfd8142348708899cb0bd0842bfb0",
+  "results/conformance_pnc/POSTHOC_NOTE.md": "ba939ef0e067407d06bff36005605fb6402e5a18dcc659e57b43bf1bd5854577"
+ },
+ "targets_differing_pre_vs_post": [
+  "gg.repair"
+ ]
+}

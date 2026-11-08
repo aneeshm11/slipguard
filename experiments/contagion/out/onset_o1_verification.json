@@ -1,0 +1,82 @@
+{
+ "states": 600,
+ "adk_serializer_equal": 9211,
+ "adk_serializer_total": 9211,
+ "native_dq_escape": 39,
+ "o1_dq_escape": 2959,
+ "pipeline_check": [
+  {
+   "id": "sphinx-doc__sphinx-8459__S1:27",
+   "tool_results": 27,
+   "wire_content_identical": true,
+   "rendered_segments_identical": true,
+   "n_segments": [
+    27,
+    27
+   ],
+   "first_diff": null
+  },
+  {
+   "id": "django__django-16902__S1:11",
+   "tool_results": 11,
+   "wire_content_identical": true,
+   "rendered_segments_identical": true,
+   "n_segments": [
+    11,
+    11
+   ],
+   "first_diff": null
+  },
+  {
+   "id": "astropy__astropy-8715__S1:9",
+   "tool_results": 9,
+   "wire_content_identical": true,
+   "rendered_segments_identical": true,
+   "n_segments": [
+    9,
+    9
+   ],
+   "first_diff": null
+  },
+  {
+   "id": "django__django-17065__S1:6",
+   "tool_results": 6,
+   "wire_content_identical": true,
+   "rendered_segments_identical": true,
+   "n_segments": [
+    6,
+    6
+   ],
+   "first_diff": null
+  },
+  {
+   "id": "sympy__sympy-23262__S1:16",
+   "tool_results": 16,
+   "wire_content_identical": true,
+   "rendered_segments_identical": true,
+   "n_segments": [
+    16,
+    16
+   ],
+   "first_diff": null
+  },
+  {
+   "id": "django__django-11053__S1:9",
+   "tool_results": 9,
+   "wire_content_identical": true,
+   "rendered_segments_identical": true,
+   "n_segments": [
+    9,
+    9
+   ],
+   "first_diff": null
+  }
+ ],
+ "tokens": {
+  "O0_matches_logged_prompt_tokens": 600,
+  "O0_mean": 13871.548333333334,
+  "O1_mean": 14826.571666666667,
+  "O1_max": 24072,
+  "O1_over_32160 (room < 600)": 0
+ }
+}

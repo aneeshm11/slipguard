@@ -1,0 +1,196 @@
+{
+ "n_contexts": 300,
+ "models": {
+  "qwen3-8b": {
+   "checks": {
+    "P1L:history_reparse_same": 300,
+    "P1L:judge_copy_malformed": 300,
+    "P1L:laundered_value_shown": 300,
+    "P1L:prefix_reaches_replaced_turn": 300,
+    "P1L:serializer_identity": 300,
+    "P1N:judge_native_slip_malformed": 300,
+    "P1N:outcome:loud": 300,
+    "P1N:prefix_reaches_replaced_turn": 2,
+    "P1N:raw_or_call_in_prompt": 300,
+    "P5:note_shown": 300,
+    "P5:prefix_reaches_replaced_turn": 300,
+    "P6:history_reparse_same": 300,
+    "P6:judge_copy_malformed": 300,
+    "P6:laundered_value_shown": 300,
+    "P6:prefix_reaches_replaced_turn": 300,
+    "P6:serializer_identity": 300,
+    "P8a:malformed_error_shown": 300,
+    "P8a:prefix_reaches_replaced_turn": 291,
+    "P8a:recovered_equals_original": 300,
+    "P8a:serializer_identity": 300,
+    "judge_original_ok": 300,
+    "serializer_identity_P0": 300
+   },
+   "examples": {},
+   "history_call_scan": {
+    "calls": 3013,
+    "flagged": 0,
+    "args_roundtrip": 3013,
+    "strict_ok": 3002,
+    "strict:UNKNOWN_KEY": 11
+   },
+   "prompt_tokens": {
+    "P0": {
+     "mean": 9739,
+     "max": 15480
+    },
+    "P1L": {
+     "mean": 9547,
+     "max": 15256
+    },
+    "P1N": {
+     "mean": 7515,
+     "max": 13416
+    },
+    "P5": {
+     "mean": 9332,
+     "max": 15077
+    },
+    "P6": {
+     "mean": 9723,
+     "max": 15471
+    },
+    "P8a": {
+     "mean": 9632,
+     "max": 15333
+    }
+   }
+  },
+  "qwen3-32b": {
+   "checks": {
+    "P1L:history_reparse_same": 300,
+    "P1L:judge_copy_malformed": 300,
+    "P1L:laundered_value_shown": 300,
+    "P1L:prefix_reaches_replaced_turn": 300,
+    "P1L:serializer_identity": 300,
+    "P1N:judge_native_slip_malformed": 300,
+    "P1N:outcome:loud": 300,
+    "P1N:prefix_reaches_replaced_turn": 2,
+    "P1N:raw_or_call_in_prompt": 300,
+    "P5:note_shown": 300,
+    "P5:prefix_reaches_replaced_turn": 300,
+    "P6:history_reparse_same": 300,
+    "P6:judge_copy_malformed": 300,
+    "P6:laundered_value_shown": 300,
+    "P6:prefix_reaches_replaced_turn": 300,
+    "P6:serializer_identity": 300,
+    "P8a:malformed_error_shown": 300,
+    "P8a:prefix_reaches_replaced_turn": 291,
+    "P8a:recovered_equals_original": 300,
+    "P8a:serializer_identity": 300,
+    "judge_original_ok": 300,
+    "serializer_identity_P0": 300
+   },
+   "examples": {},
+   "history_call_scan": {
+    "calls": 3013,
+    "flagged": 0,
+    "args_roundtrip": 3013,
+    "strict_ok": 3002,
+    "strict:UNKNOWN_KEY": 11
+   },
+   "prompt_tokens": {
+    "P0": {
+     "mean": 9739,
+     "max": 15480
+    },
+    "P1L": {
+     "mean": 9547,
+     "max": 15256
+    },
+    "P1N": {
+     "mean": 7515,
+     "max": 13416
+    },
+    "P5": {
+     "mean": 9332,
+     "max": 15077
+    },
+    "P6": {
+     "mean": 9723,
+     "max": 15471
+    },
+    "P8a": {
+     "mean": 9632,
+     "max": 15333
+    }
+   }
+  },
+  "qwen3.5-9b": {
+   "checks": {
+    "P1L:history_reparse_same": 237,
+    "P1L:judge_copy_malformed": 300,
+    "P1L:laundered_value_shown": 300,
+    "P1L:prefix_reaches_replaced_turn": 300,
+    "P1L:serializer_identity": 300,
+    "P1N:diff_patch:line_not_found": 11,
+    "P1N:diff_patch:nextline_not_found": 34,
+    "P1N:diff_patch:patched_context": 84,
+    "P1N:diff_patch:patched_nextline": 89,
+    "P1N:diff_patch:patched_plus": 79,
+    "P1N:judge_native_slip_malformed": 0,
+    "P1N:outcome:silent_applied": 297,
+    "P1N:outcome:silent_not_found": 3,
+    "P1N:prefix_reaches_replaced_turn": 300,
+    "P1N:raw_or_call_in_prompt": 300,
+    "P5:note_shown": 300,
+    "P5:prefix_reaches_replaced_turn": 300,
+    "P6:history_reparse_same": 237,
+    "P6:judge_copy_malformed": 300,
+    "P6:laundered_value_shown": 300,
+    "P6:prefix_reaches_replaced_turn": 300,
+    "P6:serializer_identity": 300,
+    "P8a:malformed_error_shown": 300,
+    "P8a:prefix_reaches_replaced_turn": 291,
+    "P8a:recovered_equals_original": 300,
+    "P8a:serializer_identity": 300,
+    "judge_original_ok": 300,
+    "serializer_identity_P0": 300
+   },
+   "examples": {},
+   "history_call_scan": {
+    "calls": 3013,
+    "flagged": 0,
+    "args_roundtrip": 3013,
+    "strict_ok": 3002,
+    "strict:UNKNOWN_KEY": 11
+   },
+   "prompt_tokens": {
+    "P0": {
+     "mean": 10114,
+     "max": 16048
+    },
+    "P1L": {
+     "mean": 9929,
+     "max": 15820
+    },
+    "P1N": {
+     "mean": 10119,
+     "max": 16061
+    },
+    "P5": {
+     "mean": 9698,
+     "max": 15643
+    },
+    "P6": {
+     "mean": 10104,
+     "max": 16035
+    },
+    "P8a": {
+     "mean": 10007,
+     "max": 15901
+    }
+   }
+  }
+ },
+ "frozen_sha": {
+  "a_variants.py": "ec174797e9ab5592",
+  "gemma_protocol.py": "e10becb233b3c384",
+  "e_quarantine_renderer.py": "13e285673b70aa9a"
+ }
+}

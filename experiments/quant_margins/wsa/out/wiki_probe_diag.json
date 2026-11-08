@@ -1,0 +1,23 @@
+{
+ "note": "TRANSCRIBED from the console output of diag_wiki_probe.py (run once per row, 19:28-19:31 UTC on the cross-check servers); not rerun. The detokenised-text control could not run (GPU3 taken by another user at 19:31:52).",
+ "window": 4,
+ "tokens": 1023,
+ "rows": [
+  {
+   "model": "31b_awq_cyankiwi",
+   "chat_wrap": false,
+   "mean_nll": 10.751,
+   "median_nll": 10.84,
+   "frac_tokens_logprob_lt_-10": 0.542
+  },
+  {
+   "model": "31b_autoround_intel",
+   "chat_wrap": true,
+   "mean_nll": 9.484,
+   "median_nll": 9.206,
+   "frac_tokens_logprob_lt_-10": 0.467
+  }
+ ],
+ "pattern": "top-1 predictions are a few confident filler/copy tokens (' own', ' same', '//', '<|channel>', recently seen words) at most positions, e.g. after 'One of the' the top-1 is ' same' (p~0.998) and ' earliest' gets logprob -13.6 to -14.6; identical behaviour in HF exact extraction (bf16 9.239 / QAT-ct 7.343 = mean -lp_next over the 1,536 sampled positions of out/hf_{bf16,qatct}_wiki.pt) and vLLM endpoint (9.30 / 7.37).",
+ "per_window_spread_bf16_chat": "per-window NLL 2.87-9.38 over the 48 windows (out/wiki_nll_chat_31b_bf16.json)"
+}

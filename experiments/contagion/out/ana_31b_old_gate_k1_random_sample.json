@@ -1,0 +1,2673 @@
+{
+ "label": "31b_old:gate_k1_random_sample",
+ "n_records": 3300,
+ "n_contexts": 300,
+ "arms": {
+  "P0k0": {
+   "n": 300,
+   "P_call": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "P_edit": [
+    0.88,
+    0.8383,
+    0.912,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0568,
+    0.0347,
+    0.0916,
+    264
+   ],
+   "P_malformed_edit_uncond": [
+    0.05,
+    0.0305,
+    0.0808,
+    300
+   ],
+   "P_malformed_any_call_given_call": [
+    0.05,
+    0.0305,
+    0.0808,
+    300
+   ],
+   "P_write_file": [
+    0.0033,
+    0.0006,
+    0.0186,
+    300
+   ],
+   "first_call_names": {
+    "edit_file": 264,
+    "run_command": 20,
+    "read_file": 14,
+    "submit_patch": 1,
+    "write_file": 1
+   },
+   "malformed_why": {
+    "extra_key": 10,
+    "leak_closer:new_string": 3,
+    "unparsed": 2
+   },
+   "edit_order": {
+    "new_first": 262,
+    "null": 2
+   },
+   "malformed_closers": {
+    "`": 10,
+    "null": 5
+   },
+   "budget_forced": 1,
+   "malformed_by_edit_class": {
+    "retry_most_recent": [
+     0.0,
+     0,
+     0.1936,
+     16
+    ],
+    "target": [
+     0.0514,
+     0.0289,
+     0.0897,
+     214
+    ],
+    "other": [
+     0.1176,
+     0.0467,
+     0.2662,
+     34
+    ]
+   },
+   "mean_stage1_tokens": 390.3
+  },
+  "P1k1": {
+   "n": 300,
+   "P_call": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "P_edit": [
+    0.8733,
+    0.8309,
+    0.9063,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.4618,
+    0.4025,
+    0.5223,
+    262
+   ],
+   "P_malformed_edit_uncond": [
+    0.4033,
+    0.3494,
+    0.4597,
+    300
+   ],
+   "P_malformed_any_call_given_call": [
+    0.4033,
+    0.3494,
+    0.4597,
+    300
+   ],
+   "P_write_file": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "first_call_names": {
+    "edit_file": 262,
+    "run_command": 19,
+    "read_file": 15,
+    "write_file": 3,
+    "get_status": 1
+   },
+   "malformed_why": {
+    "extra_key": 65,
+    "leak_closer:new_string": 54,
+    "unparsed": 1,
+    "leak_closer:old_string": 1
+   },
+   "edit_order": {
+    "new_first": 259,
+    "old_first": 2,
+    "null": 1
+   },
+   "malformed_closers": {
+    "`": 111,
+    "\"`": 3,
+    "\\\"`": 2,
+    "null": 2,
+    "\\\"\\\"\\\"`": 1,
+    "\"'`": 1
+   },
+   "budget_forced": 0,
+   "malformed_by_edit_class": {
+    "retry_most_recent": [
+     0.5357,
+     0.4659,
+     0.6042,
+     196
+    ],
+    "target": [
+     0.186,
+     0.0974,
+     0.3262,
+     43
+    ],
+    "other": [
+     0.3478,
+     0.1881,
+     0.5511,
+     23
+    ]
+   },
+   "mean_stage1_tokens": 302.1
+  },
+  "P2k1": {
+   "n": 300,
+   "P_call": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "P_edit": [
+    0.7833,
+    0.7333,
+    0.8262,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0128,
+    0.0044,
+    0.0369,
+    235
+   ],
+   "P_malformed_edit_uncond": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "P_malformed_any_call_given_call": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "P_write_file": [
+    0.0133,
+    0.0052,
+    0.0338,
+    300
+   ],
+   "first_call_names": {
+    "edit_file": 235,
+    "read_file": 34,
+    "run_command": 26,
+    "write_file": 4,
+    "submit_patch": 1
+   },
+   "malformed_why": {
+    "extra_key": 3
+   },
+   "edit_order": {
+    "new_first": 235
+   },
+   "malformed_closers": {
+    "`": 2,
+    "\"": 1
+   },
+   "budget_forced": 0,
+   "malformed_by_edit_class": {
+    "retry_most_recent": [
+     0.0,
+     0,
+     0.0251,
+     149
+    ],
+    "target": [
+     0.0357,
+     0.0098,
+     0.1212,
+     56
+    ],
+    "other": [
+     0.0333,
+     0.0059,
+     0.1667,
+     30
+    ]
+   },
+   "mean_stage1_tokens": 388.6
+  },
+  "P3k1": {
+   "n": 300,
+   "P_call": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "P_edit": [
+    0.8033,
+    0.7546,
+    0.8444,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.4855,
+    0.4231,
+    0.5483,
+    241
+   ],
+   "P_malformed_edit_uncond": [
+    0.39,
+    0.3365,
+    0.4463,
+    300
+   ],
+   "P_malformed_any_call_given_call": [
+    0.39,
+    0.3365,
+    0.4463,
+    300
+   ],
+   "P_write_file": [
+    0.0033,
+    0.0006,
+    0.0186,
+    300
+   ],
+   "first_call_names": {
+    "edit_file": 241,
+    "run_command": 32,
+    "read_file": 21,
+    "submit_patch": 5,
+    "write_file": 1
+   },
+   "malformed_why": {
+    "extra_key": 82,
+    "leak_closer:new_string": 34,
+    "leak_closer:old_string": 1
+   },
+   "edit_order": {
+    "new_first": 239,
+    "old_first": 2
+   },
+   "malformed_closers": {
+    "`": 105,
+    "\"`": 4,
+    "\\\"`": 3,
+    "\"": 2,
+    "\"'`": 1,
+    "'`": 1
+   },
+   "budget_forced": 0,
+   "malformed_by_edit_class": {
+    "retry_most_recent": [
+     0.5312,
+     0.4452,
+     0.6155,
+     128
+    ],
+    "target": [
+     0.4211,
+     0.3165,
+     0.5332,
+     76
+    ],
+    "other": [
+     0.4595,
+     0.3104,
+     0.6162,
+     37
+    ]
+   },
+   "mean_stage1_tokens": 320.8
+  },
+  "P4k1": {
+   "n": 300,
+   "P_call": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "P_edit": [
+    0.8867,
+    0.8458,
+    0.9178,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0338,
+    0.0179,
+    0.063,
+    266
+   ],
+   "P_malformed_edit_uncond": [
+    0.03,
+    0.0159,
+    0.056,
+    300
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0333,
+    0.0182,
+    0.0603,
+    300
+   ],
+   "P_write_file": [
+    0.0,
+    0,
+    0.0126,
+    300
+   ],
+   "first_call_names": {
+    "edit_file": 266,
+    "run_command": 18,
+    "read_file": 12,
+    "submit_patch": 2,
+    "<unparsed>": 1,
+    "get_status": 1
+   },
+   "malformed_why": {
+    "extra_key": 4,
+    "unparsed": 2,
+    "leak_closer:new_string": 1,
+    "unparsed_unclosed": 1,
+    "leak_closer:old_string": 1
+   },
+   "edit_order": {
+    "old_first": 148,
+    "new_first": 115,
+    "null": 3
+   },
+   "malformed_closers": {
+    "`": 4,
+    "null": 4,
+    "\"\"\"": 1
+   },
+   "budget_forced": 0,
+   "malformed_by_edit_class": {
+    "retry_most_recent": [
+     0.0,
+     0,
+     0.1843,
+     17
+    ],
+    "target": [
+     0.016,
+     0.0054,
+     0.0459,
+     188
+    ],
+    "other": [
+     0.0984,
+     0.0459,
+     0.1984,
+     61
+    ]
+   },
+   "mean_stage1_tokens": 357.8
+  },
+  "P5k1": {
+   "n": 300,
+   "P_call": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "P_edit": [
+    0.69,
+    0.6355,
+    0.7397,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0338,
+    0.0165,
+    0.0681,
+    207
+   ],
+   "P_malformed_edit_uncond": [
+    0.0233,
+    0.0113,
+    0.0474,
+    300
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0233,
+    0.0113,
+    0.0474,
+    300
+   ],
+   "P_write_file": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "first_call_names": {
+    "edit_file": 207,
+    "read_file": 45,
+    "run_command": 43,
+    "submit_patch": 2,
+    "write_file": 2,
+    "get_status": 1
+   },
+   "malformed_why": {
+    "extra_key": 7
+   },
+   "edit_order": {
+    "new_first": 206,
+    "old_first": 1
+   },
+   "malformed_closers": {
+    "`": 5,
+    "\"\"\"": 1,
+    "null": 1
+   },
+   "budget_forced": 2,
+   "malformed_by_edit_class": {
+    "retry_most_recent": [
+     0.0265,
+     0.0091,
+     0.0752,
+     113
+    ],
+    "target": [
+     0.0278,
+     0.0049,
+     0.1417,
+     36
+    ],
+    "other": [
+     0.0517,
+     0.0177,
+     0.1414,
+     58
+    ]
+   },
+   "mean_stage1_tokens": 530.0
+  },
+  "P6k1": {
+   "n": 300,
+   "P_call": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "P_edit": [
+    0.81,
+    0.7618,
+    0.8504,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.3251,
+    0.2693,
+    0.3863,
+    243
+   ],
+   "P_malformed_edit_uncond": [
+    0.2633,
+    0.2167,
+    0.3159,
+    300
+   ],
+   "P_malformed_any_call_given_call": [
+    0.2633,
+    0.2167,
+    0.3159,
+    300
+   ],
+   "P_write_file": [
+    0.0,
+    0,
+    0.0126,
+    300
+   ],
+   "first_call_names": {
+    "edit_file": 243,
+    "read_file": 31,
+    "run_command": 24,
+    "submit_patch": 1,
+    "get_status": 1
+   },
+   "malformed_why": {
+    "extra_key": 57,
+    "leak_closer:new_string": 20,
+    "unparsed": 1,
+    "leak_closer:old_string": 1
+   },
+   "edit_order": {
+    "new_first": 240,
+    "old_first": 2,
+    "null": 1
+   },
+   "malformed_closers": {
+    "`": 69,
+    "\\\"`": 3,
+    "\"`": 2,
+    "null": 2,
+    "\"": 1,
+    "'`": 1
+   },
+   "budget_forced": 0,
+   "malformed_by_edit_class": {
+    "retry_most_recent": [
+     0.3158,
+     0.1536,
+     0.5399,
+     19
+    ],
+    "target": [
+     0.3179,
+     0.2531,
+     0.3906,
+     173
+    ],
+    "other": [
+     0.3529,
+     0.2363,
+     0.4901,
+     51
+    ]
+   },
+   "mean_stage1_tokens": 392.9
+  },
+  "P7k1": {
+   "n": 300,
+   "P_call": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "P_edit": [
+    0.8667,
+    0.8235,
+    0.9005,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.2692,
+    0.219,
+    0.3262,
+    260
+   ],
+   "P_malformed_edit_uncond": [
+    0.2333,
+    0.189,
+    0.2844,
+    300
+   ],
+   "P_malformed_any_call_given_call": [
+    0.2333,
+    0.189,
+    0.2844,
+    300
+   ],
+   "P_write_file": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "first_call_names": {
+    "edit_file": 260,
+    "run_command": 20,
+    "read_file": 15,
+    "write_file": 3,
+    "submit_patch": 2
+   },
+   "malformed_why": {
+    "extra_key": 36,
+    "leak_closer:new_string": 34
+   },
+   "edit_order": {
+    "new_first": 259,
+    "old_first": 1
+   },
+   "malformed_closers": {
+    "\"": 39,
+    "`": 26,
+    "\"`": 2,
+    "\\\"`": 1,
+    "\"'`": 1,
+    "\\\"": 1
+   },
+   "budget_forced": 0,
+   "malformed_by_edit_class": {
+    "retry_most_recent": [
+     0.325,
+     0.2639,
+     0.3927,
+     200
+    ],
+    "target": [
+     0.093,
+     0.0368,
+     0.216,
+     43
+    ],
+    "other": [
+     0.0588,
+     0.0105,
+     0.2698,
+     17
+    ]
+   },
+   "mean_stage1_tokens": 322.9
+  },
+  "P8ak1": {
+   "n": 300,
+   "P_call": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "P_edit": [
+    0.8533,
+    0.8088,
+    0.8889,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0039,
+    0.0007,
+    0.0218,
+    256
+   ],
+   "P_malformed_edit_uncond": [
+    0.0033,
+    0.0006,
+    0.0186,
+    300
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_write_file": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "first_call_names": {
+    "edit_file": 256,
+    "run_command": 28,
+    "read_file": 13,
+    "write_file": 3
+   },
+   "malformed_why": {
+    "extra_key": 1
+   },
+   "edit_order": {
+    "new_first": 256
+   },
+   "malformed_closers": {
+    "`": 1
+   },
+   "budget_forced": 0,
+   "malformed_by_edit_class": {
+    "retry_most_recent": [
+     0.0,
+     0,
+     0.0216,
+     174
+    ],
+    "target": [
+     0.0179,
+     0.0032,
+     0.0945,
+     56
+    ],
+    "other": [
+     0.0,
+     0,
+     0.1287,
+     26
+    ]
+   },
+   "mean_stage1_tokens": 333.9
+  },
+  "P8bk1": {
+   "n": 300,
+   "P_call": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "P_edit": [
+    0.83,
+    0.7834,
+    0.8683,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.008,
+    0.0022,
+    0.0288,
+    249
+   ],
+   "P_malformed_edit_uncond": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_write_file": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "first_call_names": {
+    "edit_file": 249,
+    "run_command": 26,
+    "read_file": 19,
+    "write_file": 3,
+    "submit_patch": 2,
+    "get_status": 1
+   },
+   "malformed_why": {
+    "extra_key": 1,
+    "leak_closer:new_string": 1
+   },
+   "edit_order": {
+    "new_first": 249
+   },
+   "malformed_closers": {
+    "`": 2
+   },
+   "budget_forced": 0,
+   "malformed_by_edit_class": {
+    "retry_most_recent": [
+     0.0049,
+     0.0009,
+     0.027,
+     206
+    ],
+    "target": [
+     0.0286,
+     0.0051,
+     0.1453,
+     35
+    ],
+    "other": [
+     0.0,
+     0,
+     0.3244,
+     8
+    ]
+   },
+   "mean_stage1_tokens": 303.5
+  },
+  "P9k1": {
+   "n": 300,
+   "P_call": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "P_edit": [
+    0.83,
+    0.7834,
+    0.8683,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.4297,
+    0.3698,
+    0.4918,
+    249
+   ],
+   "P_malformed_edit_uncond": [
+    0.3567,
+    0.3046,
+    0.4124,
+    300
+   ],
+   "P_malformed_any_call_given_call": [
+    0.36,
+    0.3078,
+    0.4158,
+    300
+   ],
+   "P_write_file": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "first_call_names": {
+    "edit_file": 249,
+    "run_command": 31,
+    "read_file": 17,
+    "write_file": 3
+   },
+   "malformed_why": {
+    "extra_key": 66,
+    "leak_closer:new_string": 41
+   },
+   "edit_order": {
+    "new_first": 249
+   },
+   "malformed_closers": {
+    "`": 100,
+    "\"`": 3,
+    "\\\"`": 2,
+    "null": 1,
+    "'`": 1
+   },
+   "budget_forced": 0,
+   "malformed_by_edit_class": {
+    "retry_most_recent": [
+     0.5,
+     0.4296,
+     0.5704,
+     190
+    ],
+    "target": [
+     0.1628,
+     0.0812,
+     0.2997,
+     43
+    ],
+    "other": [
+     0.3125,
+     0.1416,
+     0.556,
+     16
+    ]
+   },
+   "mean_stage1_tokens": 330.2
+  }
+ },
+ "paired_vs_P0": {
+  "P1k1": {
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4618,
+    "base": 0.0568,
+    "diff": 0.405,
+    "diff_CI": [
+     0.3409,
+     0.4715
+    ],
+    "ratio": 8.128,
+    "ratio_CI": [
+     5.367,
+     14.933
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   },
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4033,
+    "base": 0.05,
+    "diff": 0.3533,
+    "diff_CI": [
+     0.2977,
+     0.4106
+    ],
+    "ratio": 8.067,
+    "ratio_CI": [
+     5.348,
+     14.111
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   }
+  },
+  "P2k1": {
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0128,
+    "base": 0.0568,
+    "diff": -0.0441,
+    "diff_CI": [
+     -0.073,
+     -0.0178
+    ],
+    "ratio": 0.225,
+    "ratio_CI": [
+     0.0,
+     0.535
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   },
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.01,
+    "base": 0.05,
+    "diff": -0.04,
+    "diff_CI": [
+     -0.0653,
+     -0.0169
+    ],
+    "ratio": 0.2,
+    "ratio_CI": [
+     0.0,
+     0.462
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   }
+  },
+  "P3k1": {
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4855,
+    "base": 0.0568,
+    "diff": 0.4287,
+    "diff_CI": [
+     0.3627,
+     0.4953
+    ],
+    "ratio": 8.544,
+    "ratio_CI": [
+     5.685,
+     16.456
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   },
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.39,
+    "base": 0.05,
+    "diff": 0.34,
+    "diff_CI": [
+     0.2833,
+     0.3987
+    ],
+    "ratio": 7.8,
+    "ratio_CI": [
+     5.048,
+     13.875
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   }
+  },
+  "P4k1": {
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0338,
+    "base": 0.0568,
+    "diff": -0.023,
+    "diff_CI": [
+     -0.0506,
+     0.0039
+    ],
+    "ratio": 0.595,
+    "ratio_CI": [
+     0.274,
+     1.107
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   },
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.03,
+    "base": 0.05,
+    "diff": -0.02,
+    "diff_CI": [
+     -0.0438,
+     0.0034
+    ],
+    "ratio": 0.6,
+    "ratio_CI": [
+     0.286,
+     1.111
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   }
+  },
+  "P5k1": {
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0338,
+    "base": 0.0568,
+    "diff": -0.023,
+    "diff_CI": [
+     -0.0564,
+     0.0107
+    ],
+    "ratio": 0.595,
+    "ratio_CI": [
+     0.205,
+     1.275
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   },
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0233,
+    "base": 0.05,
+    "diff": -0.0267,
+    "diff_CI": [
+     -0.0556,
+     0.0
+    ],
+    "ratio": 0.467,
+    "ratio_CI": [
+     0.158,
+     1.0
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   }
+  },
+  "P6k1": {
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.3251,
+    "base": 0.0568,
+    "diff": 0.2683,
+    "diff_CI": [
+     0.2082,
+     0.3268
+    ],
+    "ratio": 5.722,
+    "ratio_CI": [
+     3.715,
+     10.631
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   },
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2633,
+    "base": 0.05,
+    "diff": 0.2133,
+    "diff_CI": [
+     0.1644,
+     0.2638
+    ],
+    "ratio": 5.267,
+    "ratio_CI": [
+     3.45,
+     10.0
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   }
+  },
+  "P7k1": {
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2692,
+    "base": 0.0568,
+    "diff": 0.2124,
+    "diff_CI": [
+     0.1507,
+     0.273
+    ],
+    "ratio": 4.738,
+    "ratio_CI": [
+     2.891,
+     9.205
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   },
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2333,
+    "base": 0.05,
+    "diff": 0.1833,
+    "diff_CI": [
+     0.128,
+     0.2384
+    ],
+    "ratio": 4.667,
+    "ratio_CI": [
+     2.84,
+     9.0
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   }
+  },
+  "P8ak1": {
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0039,
+    "base": 0.0568,
+    "diff": -0.0529,
+    "diff_CI": [
+     -0.0822,
+     -0.0269
+    ],
+    "ratio": 0.069,
+    "ratio_CI": [
+     0.0,
+     0.23
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   },
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0033,
+    "base": 0.05,
+    "diff": -0.0467,
+    "diff_CI": [
+     -0.0722,
+     -0.0233
+    ],
+    "ratio": 0.067,
+    "ratio_CI": [
+     0.0,
+     0.25
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   }
+  },
+  "P8bk1": {
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.008,
+    "base": 0.0568,
+    "diff": -0.0488,
+    "diff_CI": [
+     -0.0787,
+     -0.0219
+    ],
+    "ratio": 0.141,
+    "ratio_CI": [
+     0.0,
+     0.422
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   },
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0067,
+    "base": 0.05,
+    "diff": -0.0433,
+    "diff_CI": [
+     -0.0691,
+     -0.0201
+    ],
+    "ratio": 0.133,
+    "ratio_CI": [
+     0.0,
+     0.385
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   }
+  },
+  "P9k1": {
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4297,
+    "base": 0.0568,
+    "diff": 0.3729,
+    "diff_CI": [
+     0.3116,
+     0.4378
+    ],
+    "ratio": 7.563,
+    "ratio_CI": [
+     4.975,
+     13.358
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   },
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.3567,
+    "base": 0.05,
+    "diff": 0.3067,
+    "diff_CI": [
+     0.2483,
+     0.3654
+    ],
+    "ratio": 7.133,
+    "ratio_CI": [
+     4.682,
+     13.125
+    ],
+    "ratio_boot_inf_frac": 0.0,
+    "ratio_boot_undefined_frac": 0.0
+   }
+  }
+ },
+ "quarantine_removal": {
+  "P2k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "P1": 0.4033,
+    "Q": 0.01,
+    "P0": 0.05,
+    "fraction_removed": 1.113,
+    "CI": [
+     1.049,
+     1.194
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "P1": 0.4618,
+    "Q": 0.0128,
+    "P0": 0.0568,
+    "fraction_removed": 1.109,
+    "CI": [
+     1.043,
+     1.192
+    ]
+   }
+  },
+  "P3k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "P1": 0.4033,
+    "Q": 0.39,
+    "P0": 0.05,
+    "fraction_removed": 0.038,
+    "CI": [
+     -0.162,
+     0.211
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "P1": 0.4618,
+    "Q": 0.4855,
+    "P0": 0.0568,
+    "fraction_removed": -0.058,
+    "CI": [
+     -0.249,
+     0.111
+    ]
+   }
+  },
+  "P4k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "P1": 0.4033,
+    "Q": 0.03,
+    "P0": 0.05,
+    "fraction_removed": 1.057,
+    "CI": [
+     0.99,
+     1.13
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "P1": 0.4618,
+    "Q": 0.0338,
+    "P0": 0.0568,
+    "fraction_removed": 1.057,
+    "CI": [
+     0.992,
+     1.132
+    ]
+   }
+  },
+  "P5k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "P1": 0.4033,
+    "Q": 0.0233,
+    "P0": 0.05,
+    "fraction_removed": 1.075,
+    "CI": [
+     1.0,
+     1.163
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "P1": 0.4618,
+    "Q": 0.0338,
+    "P0": 0.0568,
+    "fraction_removed": 1.057,
+    "CI": [
+     0.974,
+     1.149
+    ]
+   }
+  },
+  "P6k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "P1": 0.4033,
+    "Q": 0.2633,
+    "P0": 0.05,
+    "fraction_removed": 0.396,
+    "CI": [
+     0.269,
+     0.521
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "P1": 0.4618,
+    "Q": 0.3251,
+    "P0": 0.0568,
+    "fraction_removed": 0.338,
+    "CI": [
+     0.204,
+     0.467
+    ]
+   }
+  },
+  "P7k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "P1": 0.4033,
+    "Q": 0.2333,
+    "P0": 0.05,
+    "fraction_removed": 0.481,
+    "CI": [
+     0.368,
+     0.602
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "P1": 0.4618,
+    "Q": 0.2692,
+    "P0": 0.0568,
+    "fraction_removed": 0.476,
+    "CI": [
+     0.362,
+     0.594
+    ]
+   }
+  },
+  "P8ak1": {
+   "uncond": {
+    "n_contexts": 300,
+    "P1": 0.4033,
+    "Q": 0.0033,
+    "P0": 0.05,
+    "fraction_removed": 1.132,
+    "CI": [
+     1.064,
+     1.216
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "P1": 0.4618,
+    "Q": 0.0039,
+    "P0": 0.0568,
+    "fraction_removed": 1.131,
+    "CI": [
+     1.067,
+     1.213
+    ]
+   }
+  },
+  "P8bk1": {
+   "uncond": {
+    "n_contexts": 300,
+    "P1": 0.4033,
+    "Q": 0.0067,
+    "P0": 0.05,
+    "fraction_removed": 1.123,
+    "CI": [
+     1.048,
+     1.212
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "P1": 0.4618,
+    "Q": 0.008,
+    "P0": 0.0568,
+    "fraction_removed": 1.12,
+    "CI": [
+     1.051,
+     1.211
+    ]
+   }
+  },
+  "P9k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "P1": 0.4033,
+    "Q": 0.3567,
+    "P0": 0.05,
+    "fraction_removed": 0.132,
+    "CI": [
+     0.0,
+     0.248
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "P1": 0.4618,
+    "Q": 0.4297,
+    "P0": 0.0568,
+    "fraction_removed": 0.079,
+    "CI": [
+     -0.045,
+     0.197
+    ]
+   }
+  }
+ },
+ "dose_response": {
+  "P1_upto_k1": {
+   "n_contexts": 300,
+   "curve": {
+    "0": {
+     "P_malformed_given_edit": [
+      0.0568,
+      0.0347,
+      0.0916,
+      264
+     ],
+     "P_malformed_edit_uncond": [
+      0.05,
+      0.0305,
+      0.0808,
+      300
+     ],
+     "P_edit": [
+      0.88,
+      0.8383,
+      0.912,
+      300
+     ]
+    },
+    "1": {
+     "P_malformed_given_edit": [
+      0.4618,
+      0.4025,
+      0.5223,
+      262
+     ],
+     "P_malformed_edit_uncond": [
+      0.4033,
+      0.3494,
+      0.4597,
+      300
+     ],
+     "P_edit": [
+      0.8733,
+      0.8309,
+      0.9063,
+      300
+     ]
+    }
+   }
+  },
+  "P2_upto_k1": {
+   "n_contexts": 300,
+   "curve": {
+    "0": {
+     "P_malformed_given_edit": [
+      0.0568,
+      0.0347,
+      0.0916,
+      264
+     ],
+     "P_malformed_edit_uncond": [
+      0.05,
+      0.0305,
+      0.0808,
+      300
+     ],
+     "P_edit": [
+      0.88,
+      0.8383,
+      0.912,
+      300
+     ]
+    },
+    "1": {
+     "P_malformed_given_edit": [
+      0.0128,
+      0.0044,
+      0.0369,
+      235
+     ],
+     "P_malformed_edit_uncond": [
+      0.01,
+      0.0034,
+      0.029,
+      300
+     ],
+     "P_edit": [
+      0.7833,
+      0.7333,
+      0.8262,
+      300
+     ]
+    }
+   }
+  },
+  "P3_upto_k1": {
+   "n_contexts": 300,
+   "curve": {
+    "0": {
+     "P_malformed_given_edit": [
+      0.0568,
+      0.0347,
+      0.0916,
+      264
+     ],
+     "P_malformed_edit_uncond": [
+      0.05,
+      0.0305,
+      0.0808,
+      300
+     ],
+     "P_edit": [
+      0.88,
+      0.8383,
+      0.912,
+      300
+     ]
+    },
+    "1": {
+     "P_malformed_given_edit": [
+      0.4855,
+      0.4231,
+      0.5483,
+      241
+     ],
+     "P_malformed_edit_uncond": [
+      0.39,
+      0.3365,
+      0.4463,
+      300
+     ],
+     "P_edit": [
+      0.8033,
+      0.7546,
+      0.8444,
+      300
+     ]
+    }
+   }
+  },
+  "P4_upto_k1": {
+   "n_contexts": 300,
+   "curve": {
+    "0": {
+     "P_malformed_given_edit": [
+      0.0568,
+      0.0347,
+      0.0916,
+      264
+     ],
+     "P_malformed_edit_uncond": [
+      0.05,
+      0.0305,
+      0.0808,
+      300
+     ],
+     "P_edit": [
+      0.88,
+      0.8383,
+      0.912,
+      300
+     ]
+    },
+    "1": {
+     "P_malformed_given_edit": [
+      0.0338,
+      0.0179,
+      0.063,
+      266
+     ],
+     "P_malformed_edit_uncond": [
+      0.03,
+      0.0159,
+      0.056,
+      300
+     ],
+     "P_edit": [
+      0.8867,
+      0.8458,
+      0.9178,
+      300
+     ]
+    }
+   }
+  },
+  "P5_upto_k1": {
+   "n_contexts": 300,
+   "curve": {
+    "0": {
+     "P_malformed_given_edit": [
+      0.0568,
+      0.0347,
+      0.0916,
+      264
+     ],
+     "P_malformed_edit_uncond": [
+      0.05,
+      0.0305,
+      0.0808,
+      300
+     ],
+     "P_edit": [
+      0.88,
+      0.8383,
+      0.912,
+      300
+     ]
+    },
+    "1": {
+     "P_malformed_given_edit": [
+      0.0338,
+      0.0165,
+      0.0681,
+      207
+     ],
+     "P_malformed_edit_uncond": [
+      0.0233,
+      0.0113,
+      0.0474,
+      300
+     ],
+     "P_edit": [
+      0.69,
+      0.6355,
+      0.7397,
+      300
+     ]
+    }
+   }
+  },
+  "P6_upto_k1": {
+   "n_contexts": 300,
+   "curve": {
+    "0": {
+     "P_malformed_given_edit": [
+      0.0568,
+      0.0347,
+      0.0916,
+      264
+     ],
+     "P_malformed_edit_uncond": [
+      0.05,
+      0.0305,
+      0.0808,
+      300
+     ],
+     "P_edit": [
+      0.88,
+      0.8383,
+      0.912,
+      300
+     ]
+    },
+    "1": {
+     "P_malformed_given_edit": [
+      0.3251,
+      0.2693,
+      0.3863,
+      243
+     ],
+     "P_malformed_edit_uncond": [
+      0.2633,
+      0.2167,
+      0.3159,
+      300
+     ],
+     "P_edit": [
+      0.81,
+      0.7618,
+      0.8504,
+      300
+     ]
+    }
+   }
+  },
+  "P7_upto_k1": {
+   "n_contexts": 300,
+   "curve": {
+    "0": {
+     "P_malformed_given_edit": [
+      0.0568,
+      0.0347,
+      0.0916,
+      264
+     ],
+     "P_malformed_edit_uncond": [
+      0.05,
+      0.0305,
+      0.0808,
+      300
+     ],
+     "P_edit": [
+      0.88,
+      0.8383,
+      0.912,
+      300
+     ]
+    },
+    "1": {
+     "P_malformed_given_edit": [
+      0.2692,
+      0.219,
+      0.3262,
+      260
+     ],
+     "P_malformed_edit_uncond": [
+      0.2333,
+      0.189,
+      0.2844,
+      300
+     ],
+     "P_edit": [
+      0.8667,
+      0.8235,
+      0.9005,
+      300
+     ]
+    }
+   }
+  }
+ },
+ "replay_fidelity_P0": {
+  "n_contexts": 300,
+  "logged_next_call_malformed": [
+   0.0467,
+   0.028,
+   0.0768,
+   300
+  ],
+  "replay_P_edit": [
+   0.88,
+   0.8383,
+   0.912,
+   300
+  ],
+  "replay_P_malformed_given_edit": [
+   0.0568,
+   0.0347,
+   0.0916,
+   264
+  ],
+  "replay_malformed_when_logged_malformed": [
+   0.5,
+   0.268,
+   0.732,
+   14
+  ],
+  "replay_malformed_when_logged_clean": [
+   0.032,
+   0.0163,
+   0.0619,
+   250
+  ]
+ },
+ "strata": {
+  "gap0": {
+   "n_contexts": 188,
+   "arms": {
+    "P0k0": {
+     "P_malformed_given_edit": [
+      0.0398,
+      0.0194,
+      0.0798,
+      176
+     ],
+     "P_edit": [
+      0.9362,
+      0.8918,
+      0.9631,
+      188
+     ]
+    },
+    "P1k1": {
+     "P_malformed_given_edit": [
+      0.547,
+      0.4742,
+      0.6178,
+      181
+     ],
+     "P_edit": [
+      0.9628,
+      0.9251,
+      0.9818,
+      188
+     ]
+    },
+    "P2k1": {
+     "P_malformed_given_edit": [
+      0.0,
+      0,
+      0.0236,
+      159
+     ],
+     "P_edit": [
+      0.8457,
+      0.7872,
+      0.8904,
+      188
+     ]
+    },
+    "P3k1": {
+     "P_malformed_given_edit": [
+      0.5363,
+      0.4633,
+      0.6078,
+      179
+     ],
+     "P_edit": [
+      0.9521,
+      0.9115,
+      0.9746,
+      188
+     ]
+    },
+    "P4k1": {
+     "P_malformed_given_edit": [
+      0.0168,
+      0.0057,
+      0.0481,
+      179
+     ],
+     "P_edit": [
+      0.9521,
+      0.9115,
+      0.9746,
+      188
+     ]
+    },
+    "P5k1": {
+     "P_malformed_given_edit": [
+      0.0207,
+      0.0071,
+      0.0591,
+      145
+     ],
+     "P_edit": [
+      0.7713,
+      0.7062,
+      0.8255,
+      188
+     ]
+    },
+    "P6k1": {
+     "P_malformed_given_edit": [
+      0.3544,
+      0.2841,
+      0.4317,
+      158
+     ],
+     "P_edit": [
+      0.8404,
+      0.7813,
+      0.8859,
+      188
+     ]
+    },
+    "P7k1": {
+     "P_malformed_given_edit": [
+      0.3333,
+      0.2686,
+      0.405,
+      180
+     ],
+     "P_edit": [
+      0.9574,
+      0.9183,
+      0.9783,
+      188
+     ]
+    },
+    "P8ak1": {
+     "P_malformed_given_edit": [
+      0.0,
+      0,
+      0.022,
+      171
+     ],
+     "P_edit": [
+      0.9096,
+      0.86,
+      0.9428,
+      188
+     ]
+    },
+    "P8bk1": {
+     "P_malformed_given_edit": [
+      0.0055,
+      0.001,
+      0.0305,
+      182
+     ],
+     "P_edit": [
+      0.9681,
+      0.9321,
+      0.9853,
+      188
+     ]
+    },
+    "P9k1": {
+     "P_malformed_given_edit": [
+      0.4828,
+      0.4097,
+      0.5566,
+      174
+     ],
+     "P_edit": [
+      0.9255,
+      0.8789,
+      0.9551,
+      188
+     ]
+    }
+   }
+  },
+  "gap_gt0": {
+   "n_contexts": 112,
+   "arms": {
+    "P0k0": {
+     "P_malformed_given_edit": [
+      0.0909,
+      0.0468,
+      0.1693,
+      88
+     ],
+     "P_edit": [
+      0.7857,
+      0.7009,
+      0.8516,
+      112
+     ]
+    },
+    "P1k1": {
+     "P_malformed_given_edit": [
+      0.2716,
+      0.1867,
+      0.3772,
+      81
+     ],
+     "P_edit": [
+      0.7232,
+      0.634,
+      0.7976,
+      112
+     ]
+    },
+    "P2k1": {
+     "P_malformed_given_edit": [
+      0.0395,
+      0.0135,
+      0.1097,
+      76
+     ],
+     "P_edit": [
+      0.6786,
+      0.5874,
+      0.7579,
+      112
+     ]
+    },
+    "P3k1": {
+     "P_malformed_given_edit": [
+      0.3387,
+      0.2334,
+      0.4628,
+      62
+     ],
+     "P_edit": [
+      0.5536,
+      0.4612,
+      0.6423,
+      112
+     ]
+    },
+    "P4k1": {
+     "P_malformed_given_edit": [
+      0.069,
+      0.032,
+      0.1424,
+      87
+     ],
+     "P_edit": [
+      0.7768,
+      0.6912,
+      0.844,
+      112
+     ]
+    },
+    "P5k1": {
+     "P_malformed_given_edit": [
+      0.0645,
+      0.0254,
+      0.1545,
+      62
+     ],
+     "P_edit": [
+      0.5536,
+      0.4612,
+      0.6423,
+      112
+     ]
+    },
+    "P6k1": {
+     "P_malformed_given_edit": [
+      0.2706,
+      0.1876,
+      0.3734,
+      85
+     ],
+     "P_edit": [
+      0.7589,
+      0.672,
+      0.8287,
+      112
+     ]
+    },
+    "P7k1": {
+     "P_malformed_given_edit": [
+      0.125,
+      0.0693,
+      0.215,
+      80
+     ],
+     "P_edit": [
+      0.7143,
+      0.6246,
+      0.7898,
+      112
+     ]
+    },
+    "P8ak1": {
+     "P_malformed_given_edit": [
+      0.0118,
+      0.0021,
+      0.0637,
+      85
+     ],
+     "P_edit": [
+      0.7589,
+      0.672,
+      0.8287,
+      112
+     ]
+    },
+    "P8bk1": {
+     "P_malformed_given_edit": [
+      0.0149,
+      0.0026,
+      0.0798,
+      67
+     ],
+     "P_edit": [
+      0.5982,
+      0.5056,
+      0.6843,
+      112
+     ]
+    },
+    "P9k1": {
+     "P_malformed_given_edit": [
+      0.3067,
+      0.2139,
+      0.4183,
+      75
+     ],
+     "P_edit": [
+      0.6696,
+      0.5782,
+      0.7499,
+      112
+     ]
+    }
+   }
+  },
+  "temp0.2": {
+   "n_contexts": 181,
+   "arms": {
+    "P0k0": {
+     "P_malformed_given_edit": [
+      0.0683,
+      0.0386,
+      0.1182,
+      161
+     ],
+     "P_edit": [
+      0.8895,
+      0.8355,
+      0.9273,
+      181
+     ]
+    },
+    "P1k1": {
+     "P_malformed_given_edit": [
+      0.4474,
+      0.3706,
+      0.5267,
+      152
+     ],
+     "P_edit": [
+      0.8398,
+      0.7794,
+      0.8861,
+      181
+     ]
+    },
+    "P2k1": {
+     "P_malformed_given_edit": [
+      0.0071,
+      0.0013,
+      0.0393,
+      140
+     ],
+     "P_edit": [
+      0.7735,
+      0.7072,
+      0.8284,
+      181
+     ]
+    },
+    "P3k1": {
+     "P_malformed_given_edit": [
+      0.4532,
+      0.3728,
+      0.5361,
+      139
+     ],
+     "P_edit": [
+      0.768,
+      0.7013,
+      0.8235,
+      181
+     ]
+    },
+    "P4k1": {
+     "P_malformed_given_edit": [
+      0.0503,
+      0.0257,
+      0.0961,
+      159
+     ],
+     "P_edit": [
+      0.8785,
+      0.8228,
+      0.9183,
+      181
+     ]
+    },
+    "P5k1": {
+     "P_malformed_given_edit": [
+      0.0593,
+      0.029,
+      0.1174,
+      118
+     ],
+     "P_edit": [
+      0.6519,
+      0.58,
+      0.7175,
+      181
+     ]
+    },
+    "P6k1": {
+     "P_malformed_given_edit": [
+      0.3082,
+      0.239,
+      0.3872,
+      146
+     ],
+     "P_edit": [
+      0.8066,
+      0.743,
+      0.8575,
+      181
+     ]
+    },
+    "P7k1": {
+     "P_malformed_given_edit": [
+      0.2484,
+      0.1866,
+      0.3224,
+      153
+     ],
+     "P_edit": [
+      0.8453,
+      0.7855,
+      0.8908,
+      181
+     ]
+    },
+    "P8ak1": {
+     "P_malformed_given_edit": [
+      0.0065,
+      0.0011,
+      0.0356,
+      155
+     ],
+     "P_edit": [
+      0.8564,
+      0.7978,
+      0.9,
+      181
+     ]
+    },
+    "P8bk1": {
+     "P_malformed_given_edit": [
+      0.0067,
+      0.0012,
+      0.0368,
+      150
+     ],
+     "P_edit": [
+      0.8287,
+      0.7672,
+      0.8766,
+      181
+     ]
+    },
+    "P9k1": {
+     "P_malformed_given_edit": [
+      0.42,
+      0.344,
+      0.5,
+      150
+     ],
+     "P_edit": [
+      0.8287,
+      0.7672,
+      0.8766,
+      181
+     ]
+    }
+   }
+  },
+  "temp0.7": {
+   "n_contexts": 119,
+   "arms": {
+    "P0k0": {
+     "P_malformed_given_edit": [
+      0.0388,
+      0.0152,
+      0.0956,
+      103
+     ],
+     "P_edit": [
+      0.8655,
+      0.7927,
+      0.9155,
+      119
+     ]
+    },
+    "P1k1": {
+     "P_malformed_given_edit": [
+      0.4818,
+      0.3906,
+      0.5742,
+      110
+     ],
+     "P_edit": [
+      0.9244,
+      0.8625,
+      0.9597,
+      119
+     ]
+    },
+    "P2k1": {
+     "P_malformed_given_edit": [
+      0.0211,
+      0.0058,
+      0.0735,
+      95
+     ],
+     "P_edit": [
+      0.7983,
+      0.7174,
+      0.8606,
+      119
+     ]
+    },
+    "P3k1": {
+     "P_malformed_given_edit": [
+      0.5294,
+      0.4332,
+      0.6234,
+      102
+     ],
+     "P_edit": [
+      0.8571,
+      0.7831,
+      0.9089,
+      119
+     ]
+    },
+    "P4k1": {
+     "P_malformed_given_edit": [
+      0.0093,
+      0.0017,
+      0.0511,
+      107
+     ],
+     "P_edit": [
+      0.8992,
+      0.832,
+      0.9414,
+      119
+     ]
+    },
+    "P5k1": {
+     "P_malformed_given_edit": [
+      0.0,
+      0,
+      0.0414,
+      89
+     ],
+     "P_edit": [
+      0.7479,
+      0.663,
+      0.8173,
+      119
+     ]
+    },
+    "P6k1": {
+     "P_malformed_given_edit": [
+      0.3505,
+      0.2629,
+      0.4495,
+      97
+     ],
+     "P_edit": [
+      0.8151,
+      0.7359,
+      0.8746,
+      119
+     ]
+    },
+    "P7k1": {
+     "P_malformed_given_edit": [
+      0.2991,
+      0.2205,
+      0.3916,
+      107
+     ],
+     "P_edit": [
+      0.8992,
+      0.832,
+      0.9414,
+      119
+     ]
+    },
+    "P8ak1": {
+     "P_malformed_given_edit": [
+      0.0,
+      0,
+      0.0366,
+      101
+     ],
+     "P_edit": [
+      0.8487,
+      0.7735,
+      0.9021,
+      119
+     ]
+    },
+    "P8bk1": {
+     "P_malformed_given_edit": [
+      0.0101,
+      0.0018,
+      0.055,
+      99
+     ],
+     "P_edit": [
+      0.8319,
+      0.7546,
+      0.8885,
+      119
+     ]
+    },
+    "P9k1": {
+     "P_malformed_given_edit": [
+      0.4444,
+      0.3505,
+      0.5426,
+      99
+     ],
+     "P_edit": [
+      0.8319,
+      0.7546,
+      0.8885,
+      119
+     ]
+    }
+   }
+  }
+ },
+ "gate": {
+  "G1_uncond": {
+   "ratio": 8.067,
+   "CI": [
+    5.348,
+    14.111
+   ],
+   "P1k1": 0.4033,
+   "P0": 0.05,
+   "diff": 0.3533,
+   "diff_CI": [
+    0.2977,
+    0.4106
+   ],
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "pass(>=3, CI_lo>1)": true
+  },
+  "G2_uncond_removed_by_P4_k1": {
+   "n_contexts": 300,
+   "P1": 0.4033,
+   "Q": 0.03,
+   "P0": 0.05,
+   "fraction_removed": 1.057,
+   "CI": [
+    0.99,
+    1.13
+   ],
+   "pass(>=0.5)": true
+  },
+  "G2_uncond_removed_by_P5_k1": {
+   "n_contexts": 300,
+   "P1": 0.4033,
+   "Q": 0.0233,
+   "P0": 0.05,
+   "fraction_removed": 1.075,
+   "CI": [
+    1.0,
+    1.163
+   ],
+   "pass(>=0.5)": true
+  },
+  "G2_uncond_removed_by_P8a_k1": {
+   "n_contexts": 300,
+   "P1": 0.4033,
+   "Q": 0.0033,
+   "P0": 0.05,
+   "fraction_removed": 1.132,
+   "CI": [
+    1.064,
+    1.216
+   ],
+   "pass(>=0.5)": true
+  },
+  "G2_uncond_removed_by_P8b_k1": {
+   "n_contexts": 300,
+   "P1": 0.4033,
+   "Q": 0.0067,
+   "P0": 0.05,
+   "fraction_removed": 1.123,
+   "CI": [
+    1.048,
+    1.212
+   ],
+   "pass(>=0.5)": true
+  },
+  "G1_cond": {
+   "ratio": 8.128,
+   "CI": [
+    5.367,
+    14.933
+   ],
+   "P1k1": 0.4618,
+   "P0": 0.0568,
+   "diff": 0.405,
+   "diff_CI": [
+    0.3409,
+    0.4715
+   ],
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "pass(>=3, CI_lo>1)": true
+  },
+  "G2_cond_removed_by_P4_k1": {
+   "n_contexts": 300,
+   "P1": 0.4618,
+   "Q": 0.0338,
+   "P0": 0.0568,
+   "fraction_removed": 1.057,
+   "CI": [
+    0.992,
+    1.132
+   ],
+   "pass(>=0.5)": true
+  },
+  "G2_cond_removed_by_P5_k1": {
+   "n_contexts": 300,
+   "P1": 0.4618,
+   "Q": 0.0338,
+   "P0": 0.0568,
+   "fraction_removed": 1.057,
+   "CI": [
+    0.974,
+    1.149
+   ],
+   "pass(>=0.5)": true
+  },
+  "G2_cond_removed_by_P8a_k1": {
+   "n_contexts": 300,
+   "P1": 0.4618,
+   "Q": 0.0039,
+   "P0": 0.0568,
+   "fraction_removed": 1.131,
+   "CI": [
+    1.067,
+    1.213
+   ],
+   "pass(>=0.5)": true
+  },
+  "G2_cond_removed_by_P8b_k1": {
+   "n_contexts": 300,
+   "P1": 0.4618,
+   "Q": 0.008,
+   "P0": 0.0568,
+   "fraction_removed": 1.12,
+   "CI": [
+    1.051,
+    1.211
+   ],
+   "pass(>=0.5)": true
+  },
+  "G1_ratio_P1k1_over_P0": {
+   "ratio": 8.128,
+   "CI": [
+    5.367,
+    14.933
+   ],
+   "P1k1": 0.4618,
+   "P0": 0.0568,
+   "diff": 0.405,
+   "diff_CI": [
+    0.3409,
+    0.4715
+   ],
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "pass(>=3, CI_lo>1)": true
+  },
+  "G2_removed_by_P4_k1": {
+   "n_contexts": 300,
+   "P1": 0.4618,
+   "Q": 0.0338,
+   "P0": 0.0568,
+   "fraction_removed": 1.057,
+   "CI": [
+    0.992,
+    1.132
+   ],
+   "pass(>=0.5)": true
+  },
+  "G2_removed_by_P5_k1": {
+   "n_contexts": 300,
+   "P1": 0.4618,
+   "Q": 0.0338,
+   "P0": 0.0568,
+   "fraction_removed": 1.057,
+   "CI": [
+    0.974,
+    1.149
+   ],
+   "pass(>=0.5)": true
+  }
+ }
+}

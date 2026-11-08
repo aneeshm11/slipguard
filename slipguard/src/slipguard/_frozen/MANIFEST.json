@@ -1,0 +1,231 @@
+{
+ "comment": "Frozen components copied into slipguard by tools/vendor_frozen.py. Source paths are relative to the project/public repository root. shipped == source except the files with changed=true (see EXPORT_DIFFS.md); the transform is the public-repo export of workstream R.",
+ "e_freeze_digest": "c9c20591ecdeb33ca505a65da0256e07451de31a0380f8449358ac9f325a5259",
+ "files": [
+  {
+   "owner": "E",
+   "source": "experiments/endtoend/proxy/e2e_proxy.py",
+   "source_sha256": "a7e62cc17d5b120c7660e9de002913990ffefa4d44917e1506f8bbc11fc5d597",
+   "owner_sha256": "a7e62cc17d5b120c7660e9de002913990ffefa4d44917e1506f8bbc11fc5d597",
+   "differs_only_in": [
+    "main"
+   ],
+   "outside_sha256": "44b37bda0d533a74cb20e1f7f6bf01315d05562bc1cd3ee473a961713640d56b",
+   "owner_list": "experiments/endtoend/PREREG_E_manifest.txt (freeze 2026-11-05 07:14 UTC)",
+   "shipped": "_frozen/endtoend/proxy/e2e_proxy.py",
+   "shipped_sha256": "32df5235d938b7ba093176375f0b8163032c432ca8836f4cbcb210de51288930",
+   "changed": true,
+   "changes": [
+    "1 path literal(s) -> env/config lookups (R path rule)"
+   ]
+  },
+  {
+   "owner": "E",
+   "source": "experiments/endtoend/proxy/gemma_protocol.py",
+   "source_sha256": "7ee133966149d4cb71d205980a7512b5c0c7c1487efdb764de9c5d2d73b9f45f",
+   "owner_sha256": "7ee133966149d4cb71d205980a7512b5c0c7c1487efdb764de9c5d2d73b9f45f",
+   "owner_list": "experiments/endtoend/PREREG_E_manifest.txt (freeze 2026-11-05 07:14 UTC)",
+   "shipped": "_frozen/endtoend/proxy/gemma_protocol.py",
+   "shipped_sha256": "7ee133966149d4cb71d205980a7512b5c0c7c1487efdb764de9c5d2d73b9f45f",
+   "changed": false,
+   "changes": []
+  },
+  {
+   "owner": "E",
+   "source": "experiments/endtoend/proxy/vendor_b_gemma_protocol.py",
+   "source_sha256": "b8dac8301eef4cc6d5d5fa49d1e825df1041fc0add386d0e4f2ddce9bccee035",
+   "owner_sha256": "b8dac8301eef4cc6d5d5fa49d1e825df1041fc0add386d0e4f2ddce9bccee035",
+   "owner_list": "experiments/endtoend/PREREG_E_manifest.txt (freeze 2026-11-05 07:14 UTC)",
+   "shipped": "_frozen/endtoend/proxy/vendor_b_gemma_protocol.py",
+   "shipped_sha256": "b8dac8301eef4cc6d5d5fa49d1e825df1041fc0add386d0e4f2ddce9bccee035",
+   "changed": false,
+   "changes": []
+  },
+  {
+   "owner": "E",
+   "source": "experiments/endtoend/proxy/configs.json",
+   "source_sha256": "329f0bcf76d08c9b32d29571a62868b0aafade092b840d8d54a488d59c4ef004",
+   "owner_sha256": "329f0bcf76d08c9b32d29571a62868b0aafade092b840d8d54a488d59c4ef004",
+   "json_semantic_sha256": "c44867b4431dd05aae7313b0946f4ddc39ded85f08623c46b09cf7688ddf9a86",
+   "json_semantic_equal": true,
+   "owner_list": "experiments/endtoend/PREREG_E_manifest.txt (freeze 2026-11-05 07:14 UTC)",
+   "shipped": "_frozen/endtoend/proxy/configs.json",
+   "shipped_sha256": "329f0bcf76d08c9b32d29571a62868b0aafade092b840d8d54a488d59c4ef004",
+   "changed": false,
+   "changes": []
+  },
+  {
+   "owner": "E",
+   "source": "experiments/endtoend/proxy/VENDOR_B.txt",
+   "source_sha256": "013a703b13ea3ed6bf33205b346377e887f9e821a32885023fdfe8ce6830d292",
+   "owner_sha256": "013a703b13ea3ed6bf33205b346377e887f9e821a32885023fdfe8ce6830d292",
+   "owner_list": "experiments/endtoend/PREREG_E_manifest.txt (freeze 2026-11-05 07:14 UTC)",
+   "shipped": "_frozen/endtoend/proxy/VENDOR_B.txt",
+   "shipped_sha256": "d8e1fe0fd14729f610195f8504201bf2c02ba3d01a204e6c2539b61e634a36ea",
+   "changed": true,
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ]
+  },
+  {
+   "owner": "E",
+   "source": "experiments/endtoend/export/quarantine_renderer.py",
+   "source_sha256": "5ca5c62c889a7377d4d07bdb696bc9cbc796b5dbe18b6875c3a3de80d662715f",
+   "owner_sha256": "5ca5c62c889a7377d4d07bdb696bc9cbc796b5dbe18b6875c3a3de80d662715f",
+   "owner_list": "experiments/endtoend/PREREG_E_manifest.txt (freeze 2026-11-05 07:14 UTC)",
+   "shipped": "_frozen/endtoend/export/quarantine_renderer.py",
+   "shipped_sha256": "5ca5c62c889a7377d4d07bdb696bc9cbc796b5dbe18b6875c3a3de80d662715f",
+   "changed": false,
+   "changes": []
+  },
+  {
+   "owner": "E",
+   "source": "experiments/endtoend/configs/channel_prior.json",
+   "source_sha256": "bb48bb9a544e383bf3cec06755840044a5fd87bc3db8b5ec4392eb80e602e5eb",
+   "owner_sha256": "bb48bb9a544e383bf3cec06755840044a5fd87bc3db8b5ec4392eb80e602e5eb",
+   "json_semantic_sha256": "e860aa4a64826adf31649eeafc38f849c5110cf422bea2197a170cfc59ad2aab",
+   "json_semantic_equal": true,
+   "owner_list": "experiments/endtoend/PREREG_E_manifest.txt (freeze 2026-11-05 07:14 UTC)",
+   "shipped": "_frozen/endtoend/configs/channel_prior.json",
+   "shipped_sha256": "aa99ed7a4d14e8ce9a75b005efbbfb4d266c91050118ab7d93e4519721c26c4a",
+   "changed": true,
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ]
+  },
+  {
+   "owner": "C",
+   "source": "experiments/conformance/gemmaproto/__init__.py",
+   "source_sha256": "fb51b35439923b95fa917a00dc23d83f34beb65c86dd2da72ecb27e72826d112",
+   "owner_sha256": "fb51b35439923b95fa917a00dc23d83f34beb65c86dd2da72ecb27e72826d112",
+   "owner_list": "none published: pinned at vendoring (2026-11-05)",
+   "shipped": "_vendor/gemmaproto/__init__.py",
+   "shipped_sha256": "fb51b35439923b95fa917a00dc23d83f34beb65c86dd2da72ecb27e72826d112",
+   "changed": false,
+   "changes": []
+  },
+  {
+   "owner": "C",
+   "source": "experiments/conformance/gemmaproto/tokens.py",
+   "source_sha256": "d574dc847e439a7e7f0ff406f2a246710ea507546b66d4a0a6b22b4e3e22a613",
+   "owner_sha256": "d574dc847e439a7e7f0ff406f2a246710ea507546b66d4a0a6b22b4e3e22a613",
+   "owner_list": "none published: pinned at vendoring (2026-11-05)",
+   "shipped": "_vendor/gemmaproto/tokens.py",
+   "shipped_sha256": "d574dc847e439a7e7f0ff406f2a246710ea507546b66d4a0a6b22b4e3e22a613",
+   "changed": false,
+   "changes": []
+  },
+  {
+   "owner": "C",
+   "source": "experiments/conformance/gemmaproto/serializer.py",
+   "source_sha256": "78e097c98d8ff134f898f0f52b58a846c527f4c99f74a824af0a51cd6d043181",
+   "owner_sha256": "78e097c98d8ff134f898f0f52b58a846c527f4c99f74a824af0a51cd6d043181",
+   "owner_list": "none published: pinned at vendoring (2026-11-05)",
+   "shipped": "_vendor/gemmaproto/serializer.py",
+   "shipped_sha256": "78e097c98d8ff134f898f0f52b58a846c527f4c99f74a824af0a51cd6d043181",
+   "changed": false,
+   "changes": []
+  },
+  {
+   "owner": "C",
+   "source": "experiments/conformance/gemmaproto/parser.py",
+   "source_sha256": "dd041e554226121043ceeb9955205f44aef0ab2e88bc0d292f92112176bb189c",
+   "owner_sha256": "dd041e554226121043ceeb9955205f44aef0ab2e88bc0d292f92112176bb189c",
+   "owner_list": "none published: pinned at vendoring (2026-11-05)",
+   "shipped": "_vendor/gemmaproto/parser.py",
+   "shipped_sha256": "dd041e554226121043ceeb9955205f44aef0ab2e88bc0d292f92112176bb189c",
+   "changed": false,
+   "changes": []
+  },
+  {
+   "owner": "C",
+   "source": "experiments/conformance/gemmaproto/conformance.py",
+   "source_sha256": "6b5bd2e1b74dbc75ae7bf1212591ccdcadf6fec94c4310ba7253701ed912a6d9",
+   "owner_sha256": "6b5bd2e1b74dbc75ae7bf1212591ccdcadf6fec94c4310ba7253701ed912a6d9",
+   "owner_list": "none published: pinned at vendoring (2026-11-05)",
+   "shipped": "_vendor/gemmaproto/conformance.py",
+   "shipped_sha256": "6b5bd2e1b74dbc75ae7bf1212591ccdcadf6fec94c4310ba7253701ed912a6d9",
+   "changed": false,
+   "changes": []
+  },
+  {
+   "owner": "C",
+   "source": "experiments/conformance/gemmaproto/gen.py",
+   "source_sha256": "7113088fc8f2b194bd56cef42b3486431f63fb4cd9ff9ac1e5f519e77c447b0d",
+   "owner_sha256": "7113088fc8f2b194bd56cef42b3486431f63fb4cd9ff9ac1e5f519e77c447b0d",
+   "owner_list": "none published: pinned at vendoring (2026-11-05)",
+   "shipped": "_vendor/gemmaproto/gen.py",
+   "shipped_sha256": "9538a2f4dc2ec026651e8a3e7d9f48737b3e62a4a019d8d180381297f94a29fa",
+   "changed": true,
+   "changes": [
+    "injection fragments in TRICKY_FRAGMENTS neutralised by the public-repo export (release_hygiene M2; see EXPORT_DIFFS.md / FROZEN_EXPORT_PINS.json)"
+   ]
+  },
+  {
+   "owner": "F",
+   "source": "experiments/quant_margins/wsa/release_audit/wsaudit/__init__.py",
+   "source_sha256": "d73fb8a7968af1bc61364420fac8343834b5d0ac93441fbc211fbea7e3ea6fef",
+   "owner_sha256": "d73fb8a7968af1bc61364420fac8343834b5d0ac93441fbc211fbea7e3ea6fef",
+   "owner_list": "F's freeze list wsa-1.0 (2026-11-05, after the PI decision of 19:16 UTC: audit-weights only)",
+   "shipped": "_frozen/wsa/wsaudit/__init__.py",
+   "shipped_sha256": "d73fb8a7968af1bc61364420fac8343834b5d0ac93441fbc211fbea7e3ea6fef",
+   "changed": false,
+   "changes": []
+  },
+  {
+   "owner": "F",
+   "source": "experiments/quant_margins/wsa/release_audit/wsaudit/audit.py",
+   "source_sha256": "43df25b33ab9589055a067ee12f0cde2b2a41548e29bf396d1ba19b9a37389c5",
+   "owner_sha256": "43df25b33ab9589055a067ee12f0cde2b2a41548e29bf396d1ba19b9a37389c5",
+   "owner_list": "F's freeze list wsa-1.0 (2026-11-05, after the PI decision of 19:16 UTC: audit-weights only)",
+   "shipped": "_frozen/wsa/wsaudit/audit.py",
+   "shipped_sha256": "43df25b33ab9589055a067ee12f0cde2b2a41548e29bf396d1ba19b9a37389c5",
+   "changed": false,
+   "changes": []
+  },
+  {
+   "owner": "F",
+   "source": "experiments/quant_margins/wsa/release_audit/wsaudit/render.py",
+   "source_sha256": "85ce0172fc0e3bac543b79c8a673d66162d8296f3cbb939b377131d20ba8007d",
+   "owner_sha256": "85ce0172fc0e3bac543b79c8a673d66162d8296f3cbb939b377131d20ba8007d",
+   "owner_list": "F's freeze list wsa-1.0 (2026-11-05, after the PI decision of 19:16 UTC: audit-weights only)",
+   "shipped": "_frozen/wsa/wsaudit/render.py",
+   "shipped_sha256": "85ce0172fc0e3bac543b79c8a673d66162d8296f3cbb939b377131d20ba8007d",
+   "changed": false,
+   "changes": []
+  },
+  {
+   "owner": "F",
+   "source": "experiments/quant_margins/wsa/release_audit/wsaudit/report.py",
+   "source_sha256": "b852acbe7929ace74eb2277ea6506b8b8d778e116f7e3224f1c1f4fbcba689a6",
+   "owner_sha256": "b852acbe7929ace74eb2277ea6506b8b8d778e116f7e3224f1c1f4fbcba689a6",
+   "owner_list": "F's freeze list wsa-1.0 (2026-11-05, after the PI decision of 19:16 UTC: audit-weights only)",
+   "shipped": "_frozen/wsa/wsaudit/report.py",
+   "shipped_sha256": "b852acbe7929ace74eb2277ea6506b8b8d778e116f7e3224f1c1f4fbcba689a6",
+   "changed": false,
+   "changes": []
+  },
+  {
+   "owner": "F",
+   "source": "experiments/quant_margins/wsa/release_audit/pack/audit_items_16k.jsonl.gz",
+   "source_sha256": "fdf85e048f867077427dfe6cc69f80daed2a6e153acbd493f0f089cfad55ee5e",
+   "owner_sha256": "fdf85e048f867077427dfe6cc69f80daed2a6e153acbd493f0f089cfad55ee5e",
+   "owner_list": "F's freeze list wsa-1.0 (2026-11-05, after the PI decision of 19:16 UTC: audit-weights only)",
+   "shipped": "_frozen/wsa/pack/audit_items_16k.jsonl.gz",
+   "shipped_sha256": "fdf85e048f867077427dfe6cc69f80daed2a6e153acbd493f0f089cfad55ee5e",
+   "changed": false,
+   "changes": []
+  },
+  {
+   "owner": "F",
+   "source": "experiments/quant_margins/wsa/release_audit/pack/core_items.jsonl.gz",
+   "source_sha256": "d4fe1c0e448f4550e977a960ee6f55e164fb36d7d961082d06e8098112f4ea62",
+   "owner_sha256": "d4fe1c0e448f4550e977a960ee6f55e164fb36d7d961082d06e8098112f4ea62",
+   "owner_list": "F's freeze list wsa-1.0 (2026-11-05, after the PI decision of 19:16 UTC: audit-weights only)",
+   "shipped": "_frozen/wsa/pack/core_items.jsonl.gz",
+   "shipped_sha256": "d4fe1c0e448f4550e977a960ee6f55e164fb36d7d961082d06e8098112f4ea62",
+   "changed": false,
+   "changes": []
+  }
+ ]
+}

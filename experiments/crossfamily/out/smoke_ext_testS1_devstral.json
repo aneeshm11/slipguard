@@ -1,0 +1,56 @@
+{
+ "manifest": "experiments/contagion/data/test_S1/manifest.json",
+ "n_contexts": 20,
+ "models": {
+  "devstral-24b": {
+   "fmt": "mistral",
+   "checks": {
+    "P0:history_call_identity": 20,
+    "P0:rendered": 20,
+    "P1L:history_call_identity": 20,
+    "P1L:laundered_copy_judged_malformed": 20,
+    "P1L:rendered": 20,
+    "P1N:native_slip_judged_malformed": 20,
+    "P1N:outcome:delivered_invalid": 20,
+    "P1N:rendered": 20,
+    "P5:rendered": 20,
+    "P6:history_call_identity": 20,
+    "P6:laundered_copy_judged_malformed": 20,
+    "P6:rendered": 20,
+    "P8a:history_call_identity": 20,
+    "P8a:recovered_equals_original": 20,
+    "P8a:rendered": 20,
+    "hist_calls": 189,
+    "hist_flagged": 0,
+    "judge_original_ok": 20
+   },
+   "examples": {},
+   "prompt_tokens": {
+    "P0": {
+     "mean": 7877,
+     "max": 12815
+    },
+    "P1L": {
+     "mean": 7594,
+     "max": 12454
+    },
+    "P1N": {
+     "mean": 7640,
+     "max": 12510
+    },
+    "P5": {
+     "mean": 7345,
+     "max": 12197
+    },
+    "P6": {
+     "mean": 7865,
+     "max": 12796
+    },
+    "P8a": {
+     "mean": 7680,
+     "max": 12547
+    }
+   }
+  }
+ }
+}

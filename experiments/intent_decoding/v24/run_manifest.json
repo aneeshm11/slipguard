@@ -1,0 +1,46 @@
+{
+ "recorded_utc": "2026-11-05T12:42:02Z",
+ "slot": "PI 2026-11-05 12:42 UTC, 3 h (until ~15:45)",
+ "endpoint": "http://127.0.0.1:8300/v1",
+ "gpu": "GPU0",
+ "server_unit": "ap-vllm-g0-1248722.scope",
+ "server_unit_started": "Thu 2026-11-05 07:00:48 UTC",
+ "server_command_line": "/usr/bin/taskset -c 72-75 /opt/envs/env_gemma/bin/python -m vllm.entrypoints.openai.api_server --model models/gemma-4-31b-it-qat-w4a16-ct --served-model-name gemma-4-31b --host 127.0.0.1 --port 8300 --max-model-len 32768 --gpu-memory-utilization 0.90 --enable-prefix-caching --max-logprobs 20 --gpu-memory-utilization 0.90 --max-num-seqs 64 --enable-auto-tool-choice --tool-call-parser gemma4 --reasoning-parser gemma4",
+ "v1_models": {
+  "object": "list",
+  "data": [
+   {
+    "id": "gemma-4-31b",
+    "object": "model",
+    "created": 1793882522,
+    "owned_by": "vllm",
+    "root": "models/gemma-4-31b-it-qat-w4a16-ct",
+    "parent": null,
+    "max_model_len": 32768,
+    "permission": [
+     {
+      "id": "modelperm-88410e6e9ba1e4d7",
+      "object": "model_permission",
+      "created": 1793882522,
+      "allow_create_engine": false,
+      "allow_sampling": true,
+      "allow_logprobs": true,
+      "allow_search_indices": false,
+      "allow_view": true,
+      "allow_fine_tuning": false,
+      "organization": "*",
+      "group": null,
+      "is_blocking": false
+     }
+    ]
+   }
+  ]
+ },
+ "client": {
+  "script": "v24/run_battery.py",
+  "sha256": "08bf695d058891005ccf8205ed450ef0b8b28be174c224155cc23fe767dda62d",
+  "args": "--base http://127.0.0.1:8300/v1 --out v24/battery_run.jsonl --conc 22 --workers 10 (<=32 in flight incl. prefix pins)",
+  "launcher": "tools/limited.sh QN=VLLM:Worker_D0 NAME=id-v24run"
+ },
+ "freeze_manifest_sha256": "7c18f256393c1e7c149be601aeb5a4b7b04d4884333911711bebf296ac38b0d3"
+}

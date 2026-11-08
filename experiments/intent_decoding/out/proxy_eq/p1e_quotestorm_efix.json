@@ -1,0 +1,104 @@
+{
+ "vendor": "experiments/intent_decoding/proxy_vendor_fix",
+ "code_sha256": {
+  "proxy/e2e_proxy.py": "a7e62cc17d5b120c7660e9de002913990ffefa4d44917e1506f8bbc11fc5d597",
+  "proxy/gemma_protocol.py": "7ee133966149d4cb71d205980a7512b5c0c7c1487efdb764de9c5d2d73b9f45f",
+  "export/quarantine_renderer.py": "5ca5c62c889a7377d4d07bdb696bc9cbc796b5dbe18b6875c3a3de80d662715f"
+ },
+ "path": "Proxy.engine_chat (E's real request path) with a teacher-forced stub backend replaying each valid call",
+ "criterion": "P1: 0 of 229,414 valid QuoteStorm calls (incl. 1,200 adversarial) changed (raw text or delivered args)",
+ "by_cfg": {
+  "ipd": {
+   "calls": 229412,
+   "natural_calls": 228212,
+   "adversarial_calls": 1200,
+   "changed_all": {
+    "k": 0,
+    "n": 229412,
+    "rate": 0.0,
+    "wilson95": [
+     1.6940658945086007e-21,
+     1.6744522942560844e-05
+    ]
+   },
+   "changed_natural": {
+    "k": 0,
+    "n": 228212,
+    "rate": 0.0,
+    "wilson95": [
+     0.0,
+     1.683256866017024e-05
+    ]
+   },
+   "changed_adversarial": {
+    "k": 0,
+    "n": 1200,
+    "rate": 0.0,
+    "wilson95": [
+     2.168404344971009e-19,
+     0.003191000602734924
+    ]
+   },
+   "raw_text_changed": {
+    "natural": 0,
+    "adversarial": 0
+   },
+   "delivered_args_changed": {
+    "natural": 0,
+    "adversarial": 0
+   },
+   "tokenizer_roundtrip_skipped": {
+    "natural": 2,
+    "adversarial": 0
+   },
+   "pass": true,
+   "examples": []
+  },
+  "fullp": {
+   "calls": 229412,
+   "natural_calls": 228212,
+   "adversarial_calls": 1200,
+   "changed_all": {
+    "k": 0,
+    "n": 229412,
+    "rate": 0.0,
+    "wilson95": [
+     1.6940658945086007e-21,
+     1.6744522942560844e-05
+    ]
+   },
+   "changed_natural": {
+    "k": 0,
+    "n": 228212,
+    "rate": 0.0,
+    "wilson95": [
+     0.0,
+     1.683256866017024e-05
+    ]
+   },
+   "changed_adversarial": {
+    "k": 0,
+    "n": 1200,
+    "rate": 0.0,
+    "wilson95": [
+     2.168404344971009e-19,
+     0.003191000602734924
+    ]
+   },
+   "raw_text_changed": {
+    "natural": 0,
+    "adversarial": 0
+   },
+   "delivered_args_changed": {
+    "natural": 0,
+    "adversarial": 0
+   },
+   "tokenizer_roundtrip_skipped": {
+    "natural": 2,
+    "adversarial": 0
+   },
+   "pass": true,
+   "examples": []
+  }
+ }
+}

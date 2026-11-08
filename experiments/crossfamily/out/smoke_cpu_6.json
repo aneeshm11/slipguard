@@ -1,0 +1,190 @@
+{
+ "n_contexts": 6,
+ "models": {
+  "qwen3-8b": {
+   "checks": {
+    "P1L:history_reparse_same": 6,
+    "P1L:judge_copy_malformed": 6,
+    "P1L:laundered_value_shown": 6,
+    "P1L:prefix_reaches_replaced_turn": 6,
+    "P1L:serializer_identity": 6,
+    "P1N:judge_native_slip_malformed": 6,
+    "P1N:outcome:loud": 6,
+    "P1N:prefix_reaches_replaced_turn": 0,
+    "P1N:raw_or_call_in_prompt": 6,
+    "P5:note_shown": 6,
+    "P5:prefix_reaches_replaced_turn": 6,
+    "P6:history_reparse_same": 6,
+    "P6:judge_copy_malformed": 6,
+    "P6:laundered_value_shown": 6,
+    "P6:prefix_reaches_replaced_turn": 6,
+    "P6:serializer_identity": 6,
+    "P8a:malformed_error_shown": 6,
+    "P8a:prefix_reaches_replaced_turn": 6,
+    "P8a:recovered_equals_original": 6,
+    "P8a:serializer_identity": 6,
+    "judge_original_ok": 6,
+    "serializer_identity_P0": 6
+   },
+   "examples": {},
+   "history_call_scan": {
+    "calls": 51,
+    "flagged": 0,
+    "args_roundtrip": 51,
+    "strict_ok": 51
+   },
+   "prompt_tokens": {
+    "P0": {
+     "mean": 8079,
+     "max": 12333
+    },
+    "P1L": {
+     "mean": 7848,
+     "max": 12130
+    },
+    "P1N": {
+     "mean": 6393,
+     "max": 8811
+    },
+    "P5": {
+     "mean": 7542,
+     "max": 11972
+    },
+    "P6": {
+     "mean": 8072,
+     "max": 12315
+    },
+    "P8a": {
+     "mean": 7923,
+     "max": 12216
+    }
+   }
+  },
+  "qwen3-32b": {
+   "checks": {
+    "P1L:history_reparse_same": 6,
+    "P1L:judge_copy_malformed": 6,
+    "P1L:laundered_value_shown": 6,
+    "P1L:prefix_reaches_replaced_turn": 6,
+    "P1L:serializer_identity": 6,
+    "P1N:judge_native_slip_malformed": 6,
+    "P1N:outcome:loud": 6,
+    "P1N:prefix_reaches_replaced_turn": 0,
+    "P1N:raw_or_call_in_prompt": 6,
+    "P5:note_shown": 6,
+    "P5:prefix_reaches_replaced_turn": 6,
+    "P6:history_reparse_same": 6,
+    "P6:judge_copy_malformed": 6,
+    "P6:laundered_value_shown": 6,
+    "P6:prefix_reaches_replaced_turn": 6,
+    "P6:serializer_identity": 6,
+    "P8a:malformed_error_shown": 6,
+    "P8a:prefix_reaches_replaced_turn": 6,
+    "P8a:recovered_equals_original": 6,
+    "P8a:serializer_identity": 6,
+    "judge_original_ok": 6,
+    "serializer_identity_P0": 6
+   },
+   "examples": {},
+   "history_call_scan": {
+    "calls": 51,
+    "flagged": 0,
+    "args_roundtrip": 51,
+    "strict_ok": 51
+   },
+   "prompt_tokens": {
+    "P0": {
+     "mean": 8079,
+     "max": 12333
+    },
+    "P1L": {
+     "mean": 7848,
+     "max": 12130
+    },
+    "P1N": {
+     "mean": 6393,
+     "max": 8811
+    },
+    "P5": {
+     "mean": 7542,
+     "max": 11972
+    },
+    "P6": {
+     "mean": 8072,
+     "max": 12315
+    },
+    "P8a": {
+     "mean": 7923,
+     "max": 12216
+    }
+   }
+  },
+  "qwen3.5-9b": {
+   "checks": {
+    "P1L:history_reparse_same": 5,
+    "P1L:judge_copy_malformed": 6,
+    "P1L:laundered_value_shown": 6,
+    "P1L:prefix_reaches_replaced_turn": 6,
+    "P1L:serializer_identity": 6,
+    "P1N:diff_patch:line_not_found": 3,
+    "P1N:diff_patch:patched_context": 2,
+    "P1N:diff_patch:unpatchable_lastline": 1,
+    "P1N:judge_native_slip_malformed": 0,
+    "P1N:outcome:silent_applied": 6,
+    "P1N:prefix_reaches_replaced_turn": 6,
+    "P1N:raw_or_call_in_prompt": 6,
+    "P5:note_shown": 6,
+    "P5:prefix_reaches_replaced_turn": 6,
+    "P6:history_reparse_same": 5,
+    "P6:judge_copy_malformed": 6,
+    "P6:laundered_value_shown": 6,
+    "P6:prefix_reaches_replaced_turn": 6,
+    "P6:serializer_identity": 6,
+    "P8a:malformed_error_shown": 6,
+    "P8a:prefix_reaches_replaced_turn": 6,
+    "P8a:recovered_equals_original": 6,
+    "P8a:serializer_identity": 6,
+    "judge_original_ok": 6,
+    "serializer_identity_P0": 6
+   },
+   "examples": {},
+   "history_call_scan": {
+    "calls": 51,
+    "flagged": 0,
+    "args_roundtrip": 51,
+    "strict_ok": 51
+   },
+   "prompt_tokens": {
+    "P0": {
+     "mean": 8396,
+     "max": 12797
+    },
+    "P1L": {
+     "mean": 8171,
+     "max": 12603
+    },
+    "P1N": {
+     "mean": 8403,
+     "max": 12814
+    },
+    "P5": {
+     "mean": 7858,
+     "max": 12425
+    },
+    "P6": {
+     "mean": 8395,
+     "max": 12788
+    },
+    "P8a": {
+     "mean": 8240,
+     "max": 12680
+    }
+   }
+  }
+ },
+ "frozen_sha": {
+  "a_variants.py": "ec174797e9ab5592",
+  "gemma_protocol.py": "e10becb233b3c384",
+  "e_quarantine_renderer.py": "13e285673b70aa9a"
+ }
+}

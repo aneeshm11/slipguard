@@ -1,0 +1,139 @@
+[
+ {
+  "ctx": "ctx-535e54a7f0",
+  "tool": "read_file",
+  "why": [
+   "unknown_key"
+  ],
+  "leak": null,
+  "args_excerpt": {
+   "filepath": "src/platformdirs/android.py",
+   "start_line\"": 151
+  }
+ },
+ {
+  "ctx": "ctx-3fefe02a37",
+  "tool": "read_file",
+  "why": [
+   "unknown_key"
+  ],
+  "leak": null,
+  "args_excerpt": {
+   "end_line": 780,
+   "filepath": "src/packaging/metadata.py",
+   "start_line\"": 750
+  }
+ },
+ {
+  "ctx": "ctx-3f746b9c5f",
+  "tool": "read_file",
+  "why": [
+   "unknown_key"
+  ],
+  "leak": null,
+  "args_excerpt": {
+   "end_line": 200,
+   "filepath": "src/packaging/tags.py",
+   "start_line\"": 166
+  }
+ },
+ {
+  "ctx": "ctx-3f746b9c5f",
+  "tool": "read_file",
+  "why": [
+   "unknown_key"
+  ],
+  "leak": null,
+  "args_excerpt": {
+   "end_line": 200,
+   "filepath": "src/packaging/tags.py",
+   "start_line\"": 166
+  }
+ },
+ {
+  "ctx": "ctx-acb826cfaa",
+  "tool": "read_file",
+  "why": [
+   "unknown_key"
+  ],
+  "leak": null,
+  "args_excerpt": {
+   "filepath": "rich/prompt.py",
+   "start_line\"": 151
+  }
+ },
+ {
+  "ctx": "ctx-8be913bdb2",
+  "tool": "read_file",
+  "why": [
+   "unknown_key"
+  ],
+  "leak": null,
+  "args_excerpt": {
+   "filepath": "sqlite_utils/db.py",
+   "start_line\"": 748,
+   "\"end_line\"": 850
+  }
+ },
+ {
+  "ctx": "ctx-8be913bdb2",
+  "tool": "read_file",
+  "why": [
+   "unknown_key"
+  ],
+  "leak": null,
+  "args_excerpt": {
+   "\"end_line\"": 850,
+   "filepath": "sqlite_utils/db.py",
+   "start_line\"": 748
+  }
+ },
+ {
+  "ctx": "ctx-a2349f986f",
+  "tool": "read_file",
+  "why": [
+   "unknown_key"
+  ],
+  "leak": null,
+  "args_excerpt": {
+   "filepath": "src/platformdirs/android.py",
+   "start_line\"": 151
+  }
+ },
+ {
+  "ctx": "ctx-9aaf4908d3",
+  "tool": "read_file",
+  "why": [
+   "unknown_key"
+  ],
+  "leak": null,
+  "args_excerpt": {
+   "filepath": "src/platformdirs/windows.py",
+   "start_line\"": 151
+  }
+ },
+ {
+  "ctx": "ctx-b632347eb5",
+  "tool": "read_file",
+  "why": [
+   "unknown_key"
+  ],
+  "leak": null,
+  "args_excerpt": {
+   "filepath": "rich/prompt.py",
+   "start_line\"": 151
+  }
+ },
+ {
+  "ctx": "ctx-f68bbd1122",
+  "tool": "read_file",
+  "why": [
+   "unknown_key"
+  ],
+  "leak": null,
+  "args_excerpt": {
+   "filepath": "src/platformdirs/android.py",
+   "start_line\"": 151
+  }
+ }
+]

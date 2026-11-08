@@ -1,0 +1,41 @@
+{
+ "string_end_closers": {
+  "n_positions": 454,
+  "n_episodes": 176,
+  "E_slip_T1": [
+   0.0010325784727450301,
+   0.0,
+   0.003255490462682248
+  ],
+  "margin_quantiles_10_25_50_75_90": [
+   10.112499955711247,
+   13.265624887570539,
+   99.0,
+   99.0,
+   99.0
+  ],
+  "frac_margin_lt_2": 0.0022026431718061676,
+  "frac_margin_lt_4": 0.004405286343612335,
+  "frac_top1_not_delimiter": 0.019823788546255508,
+  "E_slip_T1_new": 0.0020651569454900602,
+  "E_slip_T1_old": 0.0
+ },
+ "per_call_slip_T1": {
+  "n_calls": 227,
+  "mean": 0.0020651569454900602
+ },
+ "logged_slip_states": {
+  "n": 8,
+  "mean_pLA_T1": 0.3281783047331373,
+  "frac_top1_lookalike": 0.25
+ },
+ "base_url": "http://127.0.0.1:8350/v1",
+ "model": "31b_qatct",
+ "split": "heldout",
+ "items_file": "data/audit_items_16k.jsonl",
+ "n_items": 235,
+ "n_records": 689,
+ "seconds": 738,
+ "sampler": "T=1.0, top-k 64, top-p 0.95 (from top-20)",
+ "items_sha256": "4d1b8deec2cb3390"
+}

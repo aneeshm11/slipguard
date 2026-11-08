@@ -1,0 +1,35 @@
+{
+ "pools_dir": "experiments/contagion/data/confirmatory/pools",
+ "pools_manifest_sha256": "b8787abaff3b8ecc000a7ff82b567a84660ff3727da563979d404d9a03a300d0",
+ "S1_A1_sha256": "b2c1bc2bdd561e72a9ebc88659639e3ae36dfc4c42c5e9a803039d43731c10d2",
+ "corpus_manifest": "data/pnc/contexts/P-swebench-31b-S1-v1/manifest.json",
+ "corpus_manifest_sha256": "4cbee85d209c0d2488d2764852637d70d014a07f1de786cf3c6dd8864fd34a75",
+ "n": {
+  "A1": 300,
+  "A1_H1": 150,
+  "A1_H2": 150,
+  "B1": 300
+ },
+ "models": {
+  "gpt-oss-20b": {
+   "jobs": 2100,
+   "render_errors": 0,
+   "prompts_sha256": "be5c4eb2eaf20b68e00f8689f3f9c118c03f190c137327b17ea763fe4d721f2e"
+  },
+  "qwen3-coder-30b": {
+   "jobs": 2100,
+   "render_errors": 0,
+   "prompts_sha256": "82ac571f49851569501fc1958bacc426ec71f87c6af1bf87620e8882d7f7a6f5"
+  },
+  "devstral-24b": {
+   "jobs": 2100,
+   "render_errors": 13,
+   "prompts_sha256": "9b7a9fff9add273804f4c8b24d9d9d6e45dd17a4550200adad203b2369bad8ce"
+  },
+  "qwen3.8-27b": {
+   "jobs": 2100,
+   "render_errors": 0,
+   "prompts_sha256": "5ac1857ff1c4bce0abd07a231c01c9003761a5baaa59ce01bbc9b9c122bfaeab"
+  }
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "schema": "slipguard.weights.audit/v1",
+ "tool": {
+  "slipguard": "0.1.0.dev0",
+  "wsaudit": "wsa-1.0"
+ },
+ "summary": {
+  "schema": "slipguard.weights.audit/v1",
+  "n_string_ends": 454,
+  "censored_frac": 0.3876651982378855,
+  "margin_median_lb": 14.011718929512426,
+  "margin_p10_lb": 7.529687483160524,
+  "P_m_lt_ln19": 0.00881057268722467,
+  "E_slip": 0.0017865495021021683,
+  "onset_per_call": 0.001104256123264534,
+  "n_onset_calls": 215,
+  "slip_states_pLA": 0.3742838257575063,
+  "n_slip_states": 8
+ },
+ "paired_vs_reference": {
+  "n": 454,
+  "median_deficit": [
+   5.996093455592984,
+   5.631762945304007,
+   6.351561424235342
+  ]
+ },
+ "FLAG": true,
+ "SEVERE": false,
+ "descriptive_only": false,
+ "flag_rule": "FLAG: P(m < ln 19) >= 0.5% or median deficit vs same-family bf16 >= 3 nats; SEVERE: P(m < ln 19) >= 2% or E_slip >= 1%",
+ "censoring": "margins are top-20 lower bounds where censored (summary.censored_frac)",
+ "pack": {
+  "name": "audit16k",
+  "sha256": "fdf85e048f867077427dfe6cc69f80daed2a6e153acbd493f0f089cfad55ee5e"
+ }
+}

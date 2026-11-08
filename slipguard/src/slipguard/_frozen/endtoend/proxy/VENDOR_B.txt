@@ -1,0 +1,7 @@
+Vendored copy of workstream B reference library (read-only source, byte-identical copy)
+source: experiments/intent_decoding/gemma_protocol.py
+source mtime: 2026-11-04 12:35:36.219152036 +0000
+sha256: b8dac8301eef4cc6d5d5fa49d1e825df1041fc0add386d0e4f2ddce9bccee035
+vendored: 2026-11-04 18:46 UTC
+used for: strict-validity guard (is_valid), site finder (first_violation: closer + opener rules), SlipSite/OpenerSite, schema_from_tools
+rule: never edit this file; re-vendor and re-run tests/test_protocol.py (sha check) to update

@@ -1,0 +1,48 @@
+{
+ "prereg": "PREREG_v2.10_audit_breadth.md (sha256 in PROGRESS.md at freeze)",
+ "checkpoints": {
+  "31b_qatawq_cyankiwi": {
+   "median_deficit_vs_bf16": [
+    5.996093455592984,
+    5.631762945304007,
+    6.351561424235342
+   ],
+   "P_m_lt_ln19": 0.00881057268722467,
+   "E_slip": 0.0017865495021021683,
+   "censored_frac": 0.3876651982378855,
+   "FLAG": true,
+   "SEVERE": false
+  },
+  "31b_nvfp4_nvidia": {
+   "median_deficit_vs_bf16": [
+    1.355468575500339,
+    1.0858393228308743,
+    1.527343346536996
+   ],
+   "P_m_lt_ln19": 0.004405286343612335,
+   "E_slip": 0.0002350013254553459,
+   "censored_frac": 0.34140969162995594,
+   "FLAG": false,
+   "SEVERE": false
+  },
+  "31b_bnb4_unsloth": {
+   "status": "NOT SERVABLE or not run (see experiments/v210/run_audits.log)"
+  },
+  "31b_nvfp4_unsloth": {
+   "status": "NOT SERVABLE or not run (see experiments/v210/run_audits.log)"
+  },
+  "31b_qatnvfp4_melcheikh": {
+   "median_deficit_vs_bf16": [
+    7.414062807001812,
+    6.898437001134238,
+    8.140624287983309
+   ],
+   "P_m_lt_ln19": 0.015418502202643172,
+   "E_slip": 0.002527262442902053,
+   "censored_frac": 0.16519823788546256,
+   "FLAG": true,
+   "SEVERE": false
+  }
+ },
+ "H_QAT": "SUPPORTED"
+}

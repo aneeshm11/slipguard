@@ -1,0 +1,3976 @@
+{
+ "comment": "Files whose public copy differs from the frozen source (path literals -> env lookups, privacy redaction, pseudonymization, host-root pseudonyms neutralized, developer e-mails masked as <email>, and the security / provenance redactions of WP-release: withheld injection inputs, neutralized fuzz fragments, competition-harness text; see EXPORT_DIFFS.md and WITHHELD.json#security_withheld). A file is authentic if its sha256 equals exported_sha256 and frozen_sha256 is the pin of the frozen source.",
+ "files": {
+  "REPRODUCE.md": {
+   "changes": [
+    "editorial override (1x): public tree ships the clean Writeup without source comments, so the shipped gate checks READMEs only (WP-release)",
+    "editorial override (1x): final public export: 83 manifest entries match through export edits (one more than the stand-in: the security / M9 redactions)"
+   ],
+   "exported_sha256": "27d76e88eec7ab7f9e6e59e230904568b8af83959a5333612942d6bf30e06fc4",
+   "frozen_md5": "c6fcd806cf9ee6d11006bb8402afdd73",
+   "frozen_sha256": "4fae22be8ef2951fb7a31f1cb092dfd9fe78788c1ee02dda3fba7d869d670b55",
+   "source": "release/docs_pack/REPRODUCE.md"
+  },
+  "RESOURCE_CARD.md": {
+   "changes": [
+    "editorial override (1x): m10: the public tree ships the Writeup's Figure 1 (v3) at figures/; paper/protocol/draft/ is not shipped"
+   ],
+   "exported_sha256": "12c6274bbde63a23bec7bfaf3c4a36fc32bc2f20504db4c3f9da9e6b47a28886",
+   "frozen_md5": "047182dcd052554aa35adf02fef6671c",
+   "frozen_sha256": "a4f14652837cce83ee4caa491e8943f94d06b5e6cf50b8a6b8fedeb203c365b0",
+   "source": "release/RESOURCE_CARD.md"
+  },
+  "RESULTS.md": {
+   "changes": [
+    "editorial override (10x): paths: the library lives at slipguard/ (files byte-identical, hashes unchanged)"
+   ],
+   "exported_sha256": "ec131848a5dd69785115fc9161bb87c51e87e357a42f5a3c9a4309a73622fe69",
+   "frozen_md5": "2228760ec5a08376749c9dcd361c2043",
+   "frozen_sha256": "3205847bf99b7f46c0de4afa324f09f014612bd3332ad15f655a337caa3d91e8",
+   "source": "release/docs_pack/RESULTS.md"
+  },
+  "croissant.json": {
+   "changes": [
+    "M8 croissant: path MANIFEST.json -> data/pnc/MANIFEST.json; path grading.jsonl -> data/pnc/grading.jsonl; path tasks.json -> data/pnc/tasks.json; path chat_template.jinja -> data/pnc/chat_template.jinja; FileSet episodes/*.jsonl -> data/pnc/episodes/*.jsonl (ships in the Kaggle PNC dataset); FileSet episode_meta/*.json -> data/pnc/episode_meta/*.json (ships in the Kaggle PNC dataset) (+4 more)"
+   ],
+   "exported_sha256": "164ee80993a56561e311daff238e277a59b6c9156476234594cb04bb9a7d2aff",
+   "frozen_md5": "1afc230173f6337a0ed2007f3132a2d3",
+   "frozen_sha256": "2270803e1f5bc98f8a52a6edaa81cd3e958e16dc3474a05521c6be2d4daf42a1",
+   "source": "release/hosting/croissant_DRAFT.json"
+  },
+  "experiments/conformance/history/results_history.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 3",
+    "pseudonymized: log_name 1, run_or_adapter_name 54",
+    "B2 F2 str_token_inside input redacted (verdict kept)",
+    "B2 F2 protocol_tokens_inside input redacted (verdict kept)",
+    "M9 F1 harness render windows masked (96)"
+   ],
+   "exported_sha256": "9cace861103407e330b47ab4d65a0fb509d1cd177272c5045b58ae850aa9db2a",
+   "frozen_md5": "d86b4ca3964ee2567f454dcbb09b9774",
+   "frozen_sha256": "05325d20d9d5f926817f0db7e5fb5cd58c8ed2f4b0c03928463c6eec92d77dad",
+   "source": "experiments/conformance/history/results_history.json"
+  },
+  "experiments/conformance/results.json": {
+   "changes": [
+    "privacy redaction: host_path_harness 1, host_path_repo 4",
+    "pseudonymized: log_name 1, run_or_adapter_name 54",
+    "B1 T6 payloads -> counts (july)",
+    "B1 T6 payloads -> counts (june)",
+    "B3 vllm019_infinite_loop_probe -> {hang: true}",
+    "B2 F2 str_token_inside input redacted (verdict kept)",
+    "B2 F2 protocol_tokens_inside input redacted (verdict kept)",
+    "M9 F1 harness render windows masked (96)"
+   ],
+   "exported_sha256": "2d66934ddebbead1c7ac3a1264dc7fdc486aaa4e0f32812ba953b3439842013c",
+   "frozen_md5": "c388c66c3e6b8dd335f0c4b819ce3d18",
+   "frozen_sha256": "c24813b597cbf39d7c903dcb7d4e1ee5b84a6fedc1474544d021b5367295d2fc",
+   "source": "experiments/conformance/results.json"
+  },
+  "experiments/conformance/slips/release/corpus_stats.json": {
+   "changes": [
+    "privacy redaction: host_path_harness 1"
+   ],
+   "exported_sha256": "de0f9a5699325c48725805c0911d4348bec10fd4893a418472323cff221d85ea",
+   "frozen_md5": "57eb580701b2e0d440592bb7c62f90c5",
+   "frozen_sha256": "8fb9b5453282eec5ccad0f15d7b1f726826a572f6a6d2add92e809b0d27d9ed3",
+   "source": "experiments/conformance/slips/release/corpus_stats.json"
+  },
+  "experiments/contagion/README.md": {
+   "changes": [
+    "privacy redaction: host_path_harness 2, host_path_other 1, host_path_repo 2",
+    "pseudonymized: moved_tree_path 1"
+   ],
+   "exported_sha256": "75824788f85053408d7b20a6b7d27c338dc14b32ba4875b059fa5ba606cadf80",
+   "frozen_md5": "1ac7d96c5b0365cc6c505f430af53f53",
+   "frozen_sha256": "dfe81c3db1d7ab72f4c4e0cb0054e8e88cd19072833253141b773f3ff46dee5e",
+   "source": "experiments/contagion/README.md"
+  },
+  "experiments/contagion/data/confirmatory/meta_S1.jsonl": {
+   "changes": [
+    "privacy redaction: host_path_repo 7882"
+   ],
+   "exported_sha256": "d130ea127b4f948c588ae2bd9d0d8bf7d1010f93e68df96f1cc0deb7cfd9d0ec",
+   "frozen_md5": "022b78a61adc5f56a3aa720ff33abaa2",
+   "frozen_sha256": "1e00325adf5822e351923f335058e4c8ef6752e2c596e5b1bc6867c7ca19fc2a",
+   "source": "experiments/contagion/data/confirmatory/meta_S1.jsonl"
+  },
+  "experiments/contagion/data/confirmatory/pools/POOLS_MANIFEST.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 2"
+   ],
+   "exported_sha256": "8394fb191149e35002f9efff6e804ea017600f2155251157308922a14ea4b6b4",
+   "frozen_md5": "4decfa70677cab836ed02b9e90d07da0",
+   "frozen_sha256": "b8787abaff3b8ecc000a7ff82b567a84660ff3727da563979d404d9a03a300d0",
+   "source": "experiments/contagion/data/confirmatory/pools/POOLS_MANIFEST.json"
+  },
+  "experiments/contagion/logs/ctg-Cbf16.log": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "9c87c5b280745b870bb8a2f472e6b4ccbf8bc860abf525f442bd6ac7cbed9d79",
+   "frozen_md5": "f593d7635a2695907ecf58bef51ccf01",
+   "frozen_sha256": "8267939df433059c502a7c02fe0885077a275c7b6eb6d0bb1d09f0e9938cde83",
+   "source": "experiments/contagion/logs/ctg-Cbf16.log"
+  },
+  "experiments/contagion/out/F_pairing_coverage.json": {
+   "changes": [
+    "pseudonymized: context_id 396"
+   ],
+   "exported_sha256": "214d5b1ec270266f9c7d09639be55b48490501922ac8acc52320b43a691821ae",
+   "frozen_md5": "cdaa9b65f1f766cc79b69290e3cd6f8d",
+   "frozen_sha256": "2fd319aefa7c1e536155b1e59b1fd6cdda21ace48d615868f2e16f8f07d787f9",
+   "source": "experiments/contagion/out/F_pairing_coverage.json"
+  },
+  "experiments/contagion/out/confirmatory/bf16_server_v1_models.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "2c0838cea05fae96dd40d3b9bff88698c028c9fd74016553bf38ae64c4862e01",
+   "frozen_md5": "0a9fde427ba2e539802c6eef549f09e9",
+   "frozen_sha256": "eb54f7d6dbba88ef3c01d5302324194304ecfbdba04910e520846ac30d118bf5",
+   "source": "experiments/contagion/out/confirmatory/bf16_server_v1_models.json"
+  },
+  "experiments/contagion/out/confirmatory/natural_descriptives_v2.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 4"
+   ],
+   "exported_sha256": "5a86cfcb380c5340e741cf1021c08164ffd1ca786c45d94edb3ff2f8f7f9941d",
+   "frozen_md5": "136810580153ff34f3f0ed3192e7204d",
+   "frozen_sha256": "674db8dda0dcb608221618535c675672b0f780ea9f105ac8a307f32c01d841de",
+   "source": "experiments/contagion/out/confirmatory/natural_descriptives_v2.json"
+  },
+  "experiments/contagion/out/confirmatory/v215_audit_panel.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 7"
+   ],
+   "exported_sha256": "ab9f0a0ea46c2eabfad1a02030edf64ed1c705894edb1b73f0827214ad134842",
+   "frozen_md5": "c7c8c1a64848a105c0b6d9622312ee52",
+   "frozen_sha256": "701934bdcff4b4e48dcfb973069f614010e3659f27ae003d7684237f841a853a",
+   "source": "experiments/contagion/out/confirmatory/v215_audit_panel.json"
+  },
+  "experiments/contagion/out/confirmatory/v216_qat_weights.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 11"
+   ],
+   "exported_sha256": "2a977b8c18fdcfed279011896ab4dfb12080365b8a3ce5f9b79d8474d024a6ca",
+   "frozen_md5": "a2ed9b1f9c4900685cf2141157231576",
+   "frozen_sha256": "cb6dbf6ce09f63bf8b6410df4659fda7dbf4e11bb32e7364cce24739b498c56a",
+   "source": "experiments/contagion/out/confirmatory/v216_qat_weights.json"
+  },
+  "experiments/contagion/out/confirmatory/v25_replay_preconditions.md": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "0e757f614b42ae2c4a9e029ca6205fb0b8bb62d2d6e083082793ff2e1f781057",
+   "frozen_md5": "1fd0a48b2e87889c802bd259ee3976f3",
+   "frozen_sha256": "7f901a736874dfd288780f7ed12e6894940f22a8d44376ab0edfdc19ca09cb53",
+   "source": "experiments/contagion/out/confirmatory/v25_replay_preconditions.md"
+  },
+  "experiments/contagion/out/enrich_gate31b_T1.json": {
+   "changes": [
+    "pseudonymized: context_id 300"
+   ],
+   "exported_sha256": "0c4870f53fd9a3a9089dfc5b9cd99e91a606c4107a62de4903c9fd9f8bd5167a",
+   "frozen_md5": "d90e66ea0b53cf7601f1e30545ad6d36",
+   "frozen_sha256": "7ca58b64e299d81906f6f1ae223efedefd1d7612f9878181763a8809d4e14898",
+   "source": "experiments/contagion/out/enrich_gate31b_T1.json"
+  },
+  "experiments/contagion/out/enrich_gate31b_final.json": {
+   "changes": [
+    "pseudonymized: context_id 300"
+   ],
+   "exported_sha256": "0c4870f53fd9a3a9089dfc5b9cd99e91a606c4107a62de4903c9fd9f8bd5167a",
+   "frozen_md5": "d90e66ea0b53cf7601f1e30545ad6d36",
+   "frozen_sha256": "7ca58b64e299d81906f6f1ae223efedefd1d7612f9878181763a8809d4e14898",
+   "source": "experiments/contagion/out/enrich_gate31b_final.json"
+  },
+  "experiments/contagion/out/enrich_gate31b_interim.json": {
+   "changes": [
+    "pseudonymized: context_id 300"
+   ],
+   "exported_sha256": "0c4870f53fd9a3a9089dfc5b9cd99e91a606c4107a62de4903c9fd9f8bd5167a",
+   "frozen_md5": "d90e66ea0b53cf7601f1e30545ad6d36",
+   "frozen_sha256": "7ca58b64e299d81906f6f1ae223efedefd1d7612f9878181763a8809d4e14898",
+   "source": "experiments/contagion/out/enrich_gate31b_interim.json"
+  },
+  "experiments/contagion/out/examples_31b.json": {
+   "changes": [
+    "pseudonymized: context_id 15"
+   ],
+   "exported_sha256": "36dde1cb6be8444cad1ef9eb567e070ff5cf6e1d70305cc539c10909157f43bd",
+   "frozen_md5": "26f2e221fc3469069b2cc578ababfa35",
+   "frozen_sha256": "93710c40819a69ed823468bfa361ad5c9fc0c25934f5537e291481bf76f0abc7",
+   "source": "experiments/contagion/out/examples_31b.json"
+  },
+  "experiments/contagion/out/interim_enrich_A2.json": {
+   "changes": [
+    "pseudonymized: context_id 115"
+   ],
+   "exported_sha256": "9bfff774da802e39023ad0ea011df9da86fc5324f39e4ea8ca712d3ab5174a9c",
+   "frozen_md5": "5534e10b881f1f883f24016deb692961",
+   "frozen_sha256": "7b14b4e1bb91edfc1ac5682d46eea8332650453432d8018e899533a04683d2e9",
+   "source": "experiments/contagion/out/interim_enrich_A2.json"
+  },
+  "experiments/contagion/out/main/rAWQbf16_v27.jsonl": {
+   "changes": [
+    "3 developer e-mail address(es) masked as <email>",
+    "privacy redaction: host_path_repo 1200"
+   ],
+   "exported_sha256": "5de63178904dd7600b33a562de6695972ba4ed5d79655760c2936bba2e78e38f",
+   "frozen_md5": "4caa76505bbdd4f4d50a0047eecc3699",
+   "frozen_sha256": "67ed98a67bdcecc6f085d028ddebac10f89d6e042eaaba3ae9aed86a4c0193c3",
+   "source": "experiments/contagion/out/main/rAWQbf16_v27.jsonl"
+  },
+  "experiments/contagion/out/main/rC12b_v2.jsonl": {
+   "changes": [
+    "2 developer e-mail address(es) masked as <email>",
+    "privacy redaction: host_path_repo 1500, secret_assignment 4"
+   ],
+   "exported_sha256": "fb9162ed782ed7e46525306c8aae48454c572f20813972331da235801c8232f2",
+   "frozen_md5": "984dc75596379ebd5c5abbc44c02bb65",
+   "frozen_sha256": "17cf89a36b06063f0a7f971bc8f84dd7b8969e9cf233390ff0047b442a45f63f",
+   "source": "experiments/contagion/out/main/rC12b_v2.jsonl"
+  },
+  "experiments/contagion/out/main/rC31b_v2.jsonl": {
+   "changes": [
+    "7 developer e-mail address(es) masked as <email>",
+    "privacy redaction: host_path_repo 2690"
+   ],
+   "exported_sha256": "2375bb85cd919d31add39beb13b694486b4961ba506a4e5d14fbeacf2129d1c3",
+   "frozen_md5": "19f7dd54593c4be603aa06b8c595c791",
+   "frozen_sha256": "6eac134b2a603db02079e2a45f2d22aa4248c0660127e782a3b9b760e51a134b",
+   "source": "experiments/contagion/out/main/rC31b_v2.jsonl"
+  },
+  "experiments/contagion/out/main/rCautoround_v26.jsonl": {
+   "changes": [
+    "3 developer e-mail address(es) masked as <email>",
+    "privacy redaction: host_path_repo 1200"
+   ],
+   "exported_sha256": "029a58b71ab35d4d31a717ff497b9e2b69d35a696ee59a83e397290793fd60e6",
+   "frozen_md5": "40047cd52580b10ce2e16713a6b8bd75",
+   "frozen_sha256": "d2e77997e4765b0a6fc0b6587dbae876d507814b71b5866ef5f398b6ed1cbd03",
+   "source": "experiments/contagion/out/main/rCautoround_v26.jsonl"
+  },
+  "experiments/contagion/out/main/rCawq_v26.jsonl": {
+   "changes": [
+    "4 developer e-mail address(es) masked as <email>",
+    "privacy redaction: host_path_repo 1200"
+   ],
+   "exported_sha256": "f2ecf8ee76cea16c6ce964c38cd569732aeefc2cfee95d15296ce870aa0ff10a",
+   "frozen_md5": "6edc875d33d68209b2b483d218518d60",
+   "frozen_sha256": "b91119145c7e834dd65ee2685b0a7cf51a342e2eb54caeff6634be3ee750f511",
+   "source": "experiments/contagion/out/main/rCawq_v26.jsonl"
+  },
+  "experiments/contagion/out/main/rCbf16_v2.jsonl": {
+   "changes": [
+    "1 developer e-mail address(es) masked as <email>",
+    "privacy redaction: host_path_repo 1200"
+   ],
+   "exported_sha256": "cb846a6fb2b08cd8be4362b5dc338eadfc0f5c50cd0698f510173b6790d80570",
+   "frozen_md5": "d6484c1d30923d4b12f80cd2cd8e27f9",
+   "frozen_sha256": "066026af4311f5ecb644c36457896cfa064d1276b33574cef3ad55866dba685b",
+   "source": "experiments/contagion/out/main/rCbf16_v2.jsonl"
+  },
+  "experiments/contagion/out/main/rCe4b_v2.jsonl": {
+   "changes": [
+    "privacy redaction: host_path_repo 1500"
+   ],
+   "exported_sha256": "3d251fb3b0483ba9a13b031a6b7a5eed5971b21fd5849171194d70202d2ce2f9",
+   "frozen_md5": "498c689cdde64701459a40d44dbe56be",
+   "frozen_sha256": "b100171511da4b01418b596b138ce9b4ea69dad75c6b9d863922e590045ef140",
+   "source": "experiments/contagion/out/main/rCe4b_v2.jsonl"
+  },
+  "experiments/contagion/out/main/rO_v23.jsonl": {
+   "changes": [
+    "privacy redaction: host_path_repo 1200, secret_assignment 3"
+   ],
+   "exported_sha256": "7a60dbae5023cc305fed7f5c31997a3019794c610f17d38e45d04e76b9c18eb6",
+   "frozen_md5": "292fd26d6809215c75bc8d0082ff6b66",
+   "frozen_sha256": "2e26f403201ac0ebc1c2af64ba2eded87d8b6af00f168929f370e32c8e936b11",
+   "source": "experiments/contagion/out/main/rO_v23.jsonl"
+  },
+  "experiments/contagion/out/main/rSA_v27.jsonl": {
+   "changes": [
+    "1 developer e-mail address(es) masked as <email>",
+    "privacy redaction: host_path_repo 1200, secret_assignment 1"
+   ],
+   "exported_sha256": "ba01d0680884e90aa2bb73da2f0206be3f8bd8a0d8d89a5bf480d3d315aa91a8",
+   "frozen_md5": "9af2ad234604193c6d31d0aef17da50a",
+   "frozen_sha256": "84904bedcce8294d1b86c6ee38313590ab00d5e69d964d68eb97873dc85d2d32",
+   "source": "experiments/contagion/out/main/rSA_v27.jsonl"
+  },
+  "experiments/contagion/out/main/rSB_v27.jsonl": {
+   "changes": [
+    "4 developer e-mail address(es) masked as <email>",
+    "privacy redaction: host_path_repo 1200"
+   ],
+   "exported_sha256": "c58084eb04bfbe0266ffce04a24b95d08ddd0c52541c6659336ddb3c9e2f2bff",
+   "frozen_md5": "8ac4a0d041a5f8c69bc0d37e309462df",
+   "frozen_sha256": "398f920d21b01edfce93e8d4a4f8e8a6fbdf78ce96d1e070d56f3d9968cd3142",
+   "source": "experiments/contagion/out/main/rSB_v27.jsonl"
+  },
+  "experiments/contagion/out/main/rT00_v27.jsonl": {
+   "changes": [
+    "3 developer e-mail address(es) masked as <email>",
+    "privacy redaction: host_path_repo 1200"
+   ],
+   "exported_sha256": "6acbd2482a097b659af001c70a6a21647416b248132d3491cebd8cf14c79314d",
+   "frozen_md5": "17946da925740994967eed1696ac5d9d",
+   "frozen_sha256": "6a87bd42f479cfe6ea112493091ac0063a2ad412507e86797e72dd4beb785f35",
+   "source": "experiments/contagion/out/main/rT00_v27.jsonl"
+  },
+  "experiments/contagion/out/main/rT06_v27.jsonl": {
+   "changes": [
+    "2 developer e-mail address(es) masked as <email>",
+    "privacy redaction: home_dir_user 1, host_path_repo 1200",
+    "1 host-root pseudonym(s) neutralized (data / home root pseudonyms -> <host-path>, <home>)"
+   ],
+   "exported_sha256": "eea3f04aebae1cddd6f161be899f62079fe5329377568582f2865875993531e1",
+   "frozen_md5": "9cf37cd678218ef0712f060639e62177",
+   "frozen_sha256": "ecc5ef9de971a724930249d2f9624270de974a2224779bfcfe2de353a897a019",
+   "source": "experiments/contagion/out/main/rT06_v27.jsonl"
+  },
+  "experiments/contagion/out/moved_data_check.json": {
+   "changes": [
+    "privacy redaction: host_path_other 1",
+    "pseudonymized: moved_tree_path 1"
+   ],
+   "exported_sha256": "33676a58caabc3eba7036dc2b7e538c593f329a4495caef1aa79d8265e534078",
+   "frozen_md5": "2f8d722094dce9f8cb078069ba2a425f",
+   "frozen_sha256": "64c781b76d4781605254c8567115406a9aad999218673cceea4e4697560dcabd",
+   "source": "experiments/contagion/out/moved_data_check.json"
+  },
+  "experiments/contagion/out/observational.json": {
+   "changes": [
+    "pseudonymized: run_or_adapter_name 13"
+   ],
+   "exported_sha256": "44a0cca985c8fe37bfcfe1e056173291367dc23bfedcfb39e1f36d024a309859",
+   "frozen_md5": "72ffa52a10d4402be0383b969640ab99",
+   "frozen_sha256": "f35e2bb36bd84b22af597b227ec7403f7d387f241992a2bb9fb6987b809ee6f7",
+   "source": "experiments/contagion/out/observational.json"
+  },
+  "experiments/contagion/out/p4prime_identity.json": {
+   "changes": [
+    "pseudonymized: context_id 3"
+   ],
+   "exported_sha256": "facb6371dccfd9795df59e6d711f99bf1eb3019c87376c1d629af1298538e296",
+   "frozen_md5": "89b49d65e32a27f70a962720364ec073",
+   "frozen_sha256": "39380bed816e85ce1af9afccc2f2a54a9ae0313e2ad7f6b5cda96ac18c87a742",
+   "source": "experiments/contagion/out/p4prime_identity.json"
+  },
+  "experiments/contagion/out/p8_extra_quarantined_calls.json": {
+   "changes": [
+    "pseudonymized: context_id 11"
+   ],
+   "exported_sha256": "4ee3f684f27f6e3c8e9eeb1d53da4bbdfb534182de2358933f15b0241602ab79",
+   "frozen_md5": "e7d7bf541e4d221df1202dc0b2d56aff",
+   "frozen_sha256": "55d89eac0396074f67a55ca796b99a5ba83547514971f8027b9654d3cc822005",
+   "source": "experiments/contagion/out/p8_extra_quarantined_calls.json"
+  },
+  "experiments/contagion/out/prereg_deviations_A.json": {
+   "changes": [
+    "privacy redaction: host_path_harness 1, host_path_other 2",
+    "pseudonymized: moved_tree_path 2"
+   ],
+   "exported_sha256": "a15cc8b17f0c95f36002e6e00d6e3ad970bf90d0153dcb59a00b8777f77b0687",
+   "frozen_md5": "503e6571947dc28b864b09ecd4e8a92d",
+   "frozen_sha256": "cf4f66d59d9c338bb38819351a3f5eaa70e1b637a07852915f5daf4effaa6c91",
+   "source": "experiments/contagion/out/prereg_deviations_A.json"
+  },
+  "experiments/contagion/out/renderer_v1_v2_check.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 2"
+   ],
+   "exported_sha256": "da2a69edbe1d43e94c64dc329121c02069a34b8e652a0e0f4fe09c1a83f5c77f",
+   "frozen_md5": "6f90e00812731aff4e6cd8b22cd4dd28",
+   "frozen_sha256": "28838472096c625987ddba34e4477b31c23ad58660f6c924cb2452188e98e486",
+   "source": "experiments/contagion/out/renderer_v1_v2_check.json"
+  },
+  "experiments/contagion/out/v21_v22_script_hashes.txt": {
+   "changes": [
+    "privacy redaction: host_path_harness 1, host_path_other 1",
+    "pseudonymized: moved_tree_path 1"
+   ],
+   "exported_sha256": "608fe17f38257b7ab3fda800816a5e6f6b46afa7f19618e05bb56694cd5cb983",
+   "frozen_md5": "4edd51443f73332a8887a792ee7ea061",
+   "frozen_sha256": "a93d31119a42d29d8fb3096899ef4748c20ef5c5812f6ac50c113217272d5950",
+   "source": "experiments/contagion/out/v21_v22_script_hashes.txt"
+  },
+  "experiments/contagion/out/xcheck_decision_judge_A2.json": {
+   "changes": [
+    "pseudonymized: context_id 4"
+   ],
+   "exported_sha256": "090a6970aedd5ed173e768975585dcbcb02a63bce7dac47cb0b8f64ae7f92718",
+   "frozen_md5": "91affbec5eab26c888090a94029c2b07",
+   "frozen_sha256": "cf2088e5c6bb24d78c01a9b912297e5a3288c6a9680e3daf69b806ab76f7419f",
+   "source": "experiments/contagion/out/xcheck_decision_judge_A2.json"
+  },
+  "experiments/contagion/results.json": {
+   "changes": [
+    "privacy redaction: host_path_harness 2, host_path_other 5, host_path_repo 6",
+    "pseudonymized: context_id 399, moved_tree_path 5, run_or_adapter_name 14"
+   ],
+   "exported_sha256": "c48df56d75baa04b98281e49bc55647cb4cbe11fe4e684408f8f6c5a41bf09a5",
+   "frozen_md5": "70933fe989cfb1254ec36d2a6c3860d4",
+   "frozen_sha256": "51e554fc68d26ef5039a729a166330409151ca23285b96f8adb916a5584cf246",
+   "source": "experiments/contagion/results.json"
+  },
+  "experiments/contagion/scripts/a2_map_analysis.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "56d7ec2e4f8b8ecb9c3af924a1a646f7b8cf3dcc36b7630e82a1368e78e2048b",
+   "frozen_md5": "3340ac708f94924c9cb6d3066a1329fb",
+   "frozen_sha256": "b6b188de82173e4dfcb5d3d831ea2a1dd5bda467ab90394df255380fa4eb63e4",
+   "source": "experiments/contagion/scripts/a2_map_analysis.py"
+  },
+  "experiments/contagion/scripts/a2_split.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "5b6ae499101b819667474df97a32a315c4dc24286cf3d308bd4c65139674e14c",
+   "frozen_md5": "f3c6f2fb7c12ff24ea59d59af9121d76",
+   "frozen_sha256": "827985f6fcaf3dedf6065a40816ee8438d934c1d16a2194ff5c3285388e927d7",
+   "source": "experiments/contagion/scripts/a2_split.py"
+  },
+  "experiments/contagion/scripts/analyze_bf16_core.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "6cc3a2197288b39eae0d8fc8dc81c7ce8d2826dba6daa7bcfca236f944d1d6cb",
+   "frozen_md5": "1576fe414a59393987a61adce6de798c",
+   "frozen_sha256": "7d3bf05bfe7a3956c9a4aa25229873a3280318b6405eb0ccd7970b21c9898b7b",
+   "source": "experiments/contagion/scripts/analyze_bf16_core.py"
+  },
+  "experiments/contagion/scripts/analyze_injection.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "ba284feb172577d2db4a93d12506298b2ffbe7e29ecb56e2d9606cddfeff92c2",
+   "frozen_md5": "3a88664f03b4716e8c0e665838999463",
+   "frozen_sha256": "75dbc098a78cc05b0b859c9b82be558bb0d36db33930452c628db17d04fcc75d",
+   "source": "experiments/contagion/scripts/analyze_injection.py"
+  },
+  "experiments/contagion/scripts/analyze_obs.py": {
+   "changes": [
+    "pseudonymized: run_or_adapter_name 3"
+   ],
+   "exported_sha256": "228ff76b10d6f09bf844e9b03c026b1f88e2a812eaf81e945bb3ed852e3fd066",
+   "frozen_md5": "1d657e9ebb12b1faa96f38c1ea6b311b",
+   "frozen_sha256": "2b7a9b919f167bddec22231b3a0d87b6e42927da56ea396515bf136606863ebe",
+   "source": "experiments/contagion/scripts/analyze_obs.py"
+  },
+  "experiments/contagion/scripts/analyze_onset_v23.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "cb8a96a40169da857bba0d50f769ce6704f52214256324f1845213742afc4936",
+   "frozen_md5": "cd38fb3917f90c91b40cfd0438eee757",
+   "frozen_sha256": "9843f1de9537c7c0aa57b074af7f185a0cb3bd02a9a9c48378a6956f1cd2ff79",
+   "source": "experiments/contagion/scripts/analyze_onset_v23.py"
+  },
+  "experiments/contagion/scripts/analyze_v211_masked.py": {
+   "changes": [
+    "3 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "99eb294ead0e8a69a8d8afbf1693c4f3643d7cfe9cfd2e2a4a1e4df18f214fab",
+   "frozen_md5": "9759b5aefd2ccb7a7b90116eb2d1841b",
+   "frozen_sha256": "f00e063082f2478f85fdb5c5cd165b2ae53ab42f5bef9c555ff3c32a08a1334f",
+   "source": "experiments/contagion/scripts/analyze_v211_masked.py"
+  },
+  "experiments/contagion/scripts/analyze_v21_v22.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "1066ef7fa21707f00b1c353a610ca1e487fe30503b5cdbb18c16c825c6d4fb99",
+   "frozen_md5": "4da3ceb945b105e6c69209f347c8ba64",
+   "frozen_sha256": "93edbc5de05c3a17f0e8a387898db2b58f10e8a98d74b1599080b42ded53e156",
+   "source": "experiments/contagion/scripts/analyze_v21_v22.py"
+  },
+  "experiments/contagion/scripts/analyze_v26_audit.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "718bfb268ce9bc76fc070b821ac37e237cc045f2f373187a3a66555aaa02bde7",
+   "frozen_md5": "2c08ce1696de4d0ae5c2d04eb1f40adb",
+   "frozen_sha256": "a847199986a630d56ade3eff433e4f0d86a5558d990db5c9e329a8e65dd42136",
+   "source": "experiments/contagion/scripts/analyze_v26_audit.py"
+  },
+  "experiments/contagion/scripts/analyze_v27_robustness.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "4f15258970f307712592f2f5c517274cff1d64823706c8b422afdb6e23433ec0",
+   "frozen_md5": "689af3dcfefb75e03b06a257d82c3d49",
+   "frozen_sha256": "f68bc12dd6aaab1bba12eb94c6b6a664debe403b08b0d3cf5d836983c288fdb1",
+   "source": "experiments/contagion/scripts/analyze_v27_robustness.py"
+  },
+  "experiments/contagion/scripts/analyze_v28_cli.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "5e12f4385b0023cacca16198674f4e0dac32d9dec6d485403c510aa8ed3f39b9",
+   "frozen_md5": "719c7307eb4168b763988a8196d24e1c",
+   "frozen_sha256": "c6c01aec47ec14ddbe521942934fcce03d304c739eeebae14c57a3a5d8f86045",
+   "source": "experiments/contagion/scripts/analyze_v28_cli.py"
+  },
+  "experiments/contagion/scripts/archive/sample_pools_v2.v1.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "a03ce514d482bb55a60657732178115bb895b28cb0a346c41149fcdd19fdb325",
+   "frozen_md5": "2d3df1b112fc6bbdcc9fb5dafe3e0447",
+   "frozen_sha256": "4cfc8e0fd5e256ae4c6c53932aea224aacbae40491238d80e93798b965a5e2af",
+   "source": "experiments/contagion/scripts/archive/sample_pools_v2.v1.py"
+  },
+  "experiments/contagion/scripts/attach_map_repairs.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "570490a9804b6902524ff8a5e4f7d8ce7b88035d8e62de4bae66096930eb1381",
+   "frozen_md5": "31acd6c33b54fc5d00f87502c2c14373",
+   "frozen_sha256": "05cfeb489863597bc0f81a061c7621d29647a2a6273331a58db2a2ea65b344b3",
+   "source": "experiments/contagion/scripts/attach_map_repairs.py"
+  },
+  "experiments/contagion/scripts/build_a2_states.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "db0c6db5f9bb2c4c20a2a3a5f323d1dd82203fa7e2dbd31962a876357107703a",
+   "frozen_md5": "c740a20640c4a79a88a94c2bc8dff612",
+   "frozen_sha256": "ea36666137af3be9467420c4574409d279acc5cff0868c5a35b9cc3e2880b77c",
+   "source": "experiments/contagion/scripts/build_a2_states.py"
+  },
+  "experiments/contagion/scripts/build_contexts.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "1b3c51b1e0b1c2f674f05f882f2f19c950eeb929b24fb64fc79b0eaa9ef2e4b3",
+   "frozen_md5": "3c449d06fbfbed715c6ecd93b3e0646d",
+   "frozen_sha256": "94f1c179db20bdd2e3e7a2606d2204ed7178caa0471a6320c52363801126b5c9",
+   "source": "experiments/contagion/scripts/build_contexts.py"
+  },
+  "experiments/contagion/scripts/chain_C31b_then_O23.sh": {
+   "changes": [
+    "5 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "41dcad87d6122916a0017f8f5da8817a05d8059e7cd414379a51f42037397e8d",
+   "frozen_md5": "e04b41dcae6698ebb251743442306f6f",
+   "frozen_sha256": "377b5c0ac2b301372011561405cecfb6a61c3e7a80af60febc32c513d7ce3aa2",
+   "source": "experiments/contagion/scripts/chain_C31b_then_O23.sh"
+  },
+  "experiments/contagion/scripts/check_bos.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "e24236e5a86447f3f1d459521121de2fdb7e32a1a015480237417e9ea011a36b",
+   "frozen_md5": "999c891369e298375946c240ff66c3d8",
+   "frozen_sha256": "0d01eda42cac48c7bb58fcac66f16ee96e94ca32ea38abae0e273072f91fb5a0",
+   "source": "experiments/contagion/scripts/check_bos.py"
+  },
+  "experiments/contagion/scripts/check_bos2.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "2fb9a5eddef23491a92beda0a7af0d02bac0615fc27d614f90620187bc539ad7",
+   "frozen_md5": "da3e0ff8d9481036ffda8da60782e046",
+   "frozen_sha256": "6057c3920a0c77961ce72f032926e0890304b8a46e8a8f3da9425c6d38210c37",
+   "source": "experiments/contagion/scripts/check_bos2.py"
+  },
+  "experiments/contagion/scripts/check_renderer_v1_v2.py": {
+   "changes": [
+    "6 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "fbc81a93b6ca69e90c874db17f73774dfa9b7d39c3d2d8339ccf4a9713f7a69c",
+   "frozen_md5": "81cd67b4b0e225a0097889cbdb378ae2",
+   "frozen_sha256": "b7d4437038dcd73b16b6778605dccd2d4d6f20ee1c99de640ea0c1af1f7d5f0b",
+   "source": "experiments/contagion/scripts/check_renderer_v1_v2.py"
+  },
+  "experiments/contagion/scripts/check_template.py": {
+   "changes": [
+    "4 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "d0632ba247cf7de19551d39e02836ae32631fc2feff73e04b45c8f2dbf525767",
+   "frozen_md5": "cea6c5eeaac3f574fddbfcd3cf53ed42",
+   "frozen_sha256": "7c4b9d5012a365ea097ef8995501c31f7f64109b48498ece9c93154202b5fe71",
+   "source": "experiments/contagion/scripts/check_template.py"
+  },
+  "experiments/contagion/scripts/check_template_thinking_off.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "f454370857047add0d30a0dab2dd9ffcb42e57cbf9c170a4f47d99997cf4f9b7",
+   "frozen_md5": "dbc8967e0f40e9fabddbe45728252801",
+   "frozen_sha256": "d2e802f676765ce9a96c8e7619b74af0a18e46fdcabb2949ca9fbd5af243187b",
+   "source": "experiments/contagion/scripts/check_template_thinking_off.py"
+  },
+  "experiments/contagion/scripts/check_thought_forms.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "fc1609841d67553acfa6f645acfc284efbccc1385c59971cd7b817594b2cff3c",
+   "frozen_md5": "bb34e3e36054843f9eb68d3684a583bf",
+   "frozen_sha256": "d95286454d0b94ffa4be6761dab1076126bd6577db0125c4b993c077809c0502",
+   "source": "experiments/contagion/scripts/check_thought_forms.py"
+  },
+  "experiments/contagion/scripts/copy_check.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "2547ab10ed08906d2aaa99a41f202455544dccea3386fc08370a665065fcd5a7",
+   "frozen_md5": "204f968ab263e27947c9b86d41fcf864",
+   "frozen_sha256": "7442252b83b3da2228072ec37d0bc871cef747f054f02dd11c8b105d1a05e3f4",
+   "source": "experiments/contagion/scripts/copy_check.py"
+  },
+  "experiments/contagion/scripts/decision_rules.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "1bf7a11acafa1e9af3b76f638173f9f31f8867de4a86330aa1b51159c5c77e53",
+   "frozen_md5": "4e1cd58c0f8de472fed02c86fac80558",
+   "frozen_sha256": "3afadb7c856c6d4f2cfaf48934e3bdef7950058655589169f057e11c76ae09da",
+   "source": "experiments/contagion/scripts/decision_rules.py"
+  },
+  "experiments/contagion/scripts/enrich_contexts.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "d908259c8bbc017f1244b7e703a78df71b4c18b017859f2ec1d61695725e564f",
+   "frozen_md5": "0a699d81e1c8d0bb4090de366bc2e465",
+   "frozen_sha256": "36ee1e558d880190d992d7a015adf9fbbf3caf19bead5fbdb3ffc7238954cc01",
+   "source": "experiments/contagion/scripts/enrich_contexts.py"
+  },
+  "experiments/contagion/scripts/figures.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "9fadd45bfd4f55755782c5e6f9ffd8f8442d7e8a2ef3c43fd07d52b790c8c370",
+   "frozen_md5": "a80f9e076cb10faebb868916787e9b51",
+   "frozen_sha256": "4299091a99382a3eb6441fc18989091497d459854ab30b8b0172edd81e222ddf",
+   "source": "experiments/contagion/scripts/figures.py"
+  },
+  "experiments/contagion/scripts/figures_v1_interim.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "20dd751d9bfd87894ed9d1c2d1c079e7cbccc5eaad60460a3f7b29609e3dee8f",
+   "frozen_md5": "631a80f7ab47bed88238d395dd639b52",
+   "frozen_sha256": "6ad217ab5128ee86d0f55e9c8d1bcb658c91e5a33bd8521a2f754d27e6c29771",
+   "source": "experiments/contagion/scripts/figures_v1_interim.py"
+  },
+  "experiments/contagion/scripts/fold_results.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "2464ccad1c948ae00d01f14823f70888cfc11e49658a0abdac23ab94882e6950",
+   "frozen_md5": "bf8d726539c5c78b8482429684f88ffc",
+   "frozen_sha256": "92a3b4f10c8783d7e30f0bccf621fd85820367d738478ccdb227a683255dd7ed",
+   "source": "experiments/contagion/scripts/fold_results.py"
+  },
+  "experiments/contagion/scripts/framing_summary.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "3712ec1b7ae48b70ccf33eecc7bed7939a8629b721822735e05673f0f7ca0547",
+   "frozen_md5": "f37c1c7b4e05864c222e4dafad864e66",
+   "frozen_sha256": "525d1cd4d3efe2a80ad3975f8fb9cb6f6ad13f9583722a1216ffec4f74271514",
+   "source": "experiments/contagion/scripts/framing_summary.py"
+  },
+  "experiments/contagion/scripts/gate_report.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "3936706b48f6c7d438b2aa766ac000830f1859a9e82243bcfe479295f187bb2b",
+   "frozen_md5": "8e63d58e0a37d39c3c5badc1a836d4e9",
+   "frozen_sha256": "f397be19e3b30b9ce0500837acc1e1dbdcf6fafa2e35d309ec6f563a57927867",
+   "source": "experiments/contagion/scripts/gate_report.py"
+  },
+  "experiments/contagion/scripts/gemma_protocol.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups",
+    "privacy redaction: host_path_harness 1",
+    "M9 competition-harness retry nudge withheld"
+   ],
+   "exported_sha256": "6e8ff2120b71f002d9e56c2657d7cdeb21c33b18f983ffa7316ceea8d12f1d2a",
+   "frozen_md5": "887c46d0d2ea5fdbc3010a3c3afbdd41",
+   "frozen_sha256": "7cb2871b208be148087db21aff878e6f130851efece276257855e810e96f15cf",
+   "source": "experiments/contagion/scripts/gemma_protocol.py"
+  },
+  "experiments/contagion/scripts/gemma_protocol_v1_backup.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups",
+    "privacy redaction: host_path_harness 1"
+   ],
+   "exported_sha256": "67826bd793de90c7e2873e93881791c7701c126b3108019b65789215f3c5bc22",
+   "frozen_md5": "8b8ea07886384755900ac3205eedb5d3",
+   "frozen_sha256": "e10becb233b3c384c920f7eb5adf660219bbee928d09dfd3f87e68655039314e",
+   "source": "experiments/contagion/scripts/gemma_protocol_v1_backup.py"
+  },
+  "experiments/contagion/scripts/launch_31b_chain.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "01f043334b9754a6a435d5c6b55f0aaee0dd31e765909c727aabdc982a4c596a",
+   "frozen_md5": "758ecac110e7f9b0c0920d9d3752a2d3",
+   "frozen_sha256": "66492e4167c5e5345c9b4c03d284b8f332f415513863f79c5c8dfaaf60529d0f",
+   "source": "experiments/contagion/scripts/launch_31b_chain.sh"
+  },
+  "experiments/contagion/scripts/launch_8302_all.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "feaf1ddabb5c4a273ae8f6a538712a20d4c0e4b8728f9d9c6f89a29650dbc588",
+   "frozen_md5": "38526602ae4b261afbf7ad2d7c403369",
+   "frozen_sha256": "00908b5e4e328e435a89f586e80078d81c5600c62796aca25d66d531b8b05dae",
+   "source": "experiments/contagion/scripts/launch_8302_all.sh"
+  },
+  "experiments/contagion/scripts/launch_v22.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "b224e7483fc2930480536e60ba846c3ca8c70badc08cbc6264fc458b4ae86ff9",
+   "frozen_md5": "6ffbaa6fbcb191f66f6274ab9e60f050",
+   "frozen_sha256": "bd7242d1d2232d4561027239847de2a9ff4e7d1be4b5204f880fbfa0d45f708a",
+   "source": "experiments/contagion/scripts/launch_v22.sh"
+  },
+  "experiments/contagion/scripts/natural_descriptives_v2.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "39b4fb87a1dd333dccc8822e5db7f6229d0245d185963c68b9cff8ec69edc684",
+   "frozen_md5": "7072eebd79c7828cce05fd3e0e08a549",
+   "frozen_sha256": "4937c499bb3ca0d5dc72110d11d4237163157a913b1af4accf47ce754c8a4095",
+   "source": "experiments/contagion/scripts/natural_descriptives_v2.py"
+  },
+  "experiments/contagion/scripts/prereg_analysis.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "8ffbb8870195190d71d0e55a80f96c58c9aeb8584ab7237f5d72d37b87a85d9a",
+   "frozen_md5": "6637871264074f8dd8dbd8fc3722c292",
+   "frozen_sha256": "8aeb0c1df76127caa131b0766abb209d2fce3072b27ece165387a36f0a0b6ad8",
+   "source": "experiments/contagion/scripts/prereg_analysis.py"
+  },
+  "experiments/contagion/scripts/regress_profiles.py": {
+   "changes": [
+    "3 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "29751d60b3a8d5af894995611a4fd8300859654d1de2711dcd52f341b4a7d79f",
+   "frozen_md5": "6d5779079638208bf0d9429cb5af462c",
+   "frozen_sha256": "bcc6cd03e7be3c87a2fdef3c47d184f23b0c531a0f450fc70dd1b0adc20c59e4",
+   "source": "experiments/contagion/scripts/regress_profiles.py"
+  },
+  "experiments/contagion/scripts/rep_12b.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "60d27e04ec857c80fc9c840e0a04e23a9d50043d0739be9c5ff89e61c19043b2",
+   "frozen_md5": "a96dc2ebcabbdeed57072d2f621f3235",
+   "frozen_sha256": "6d324dc285b119f1189d0e669daf901820d6d6d34d04f8220a3ce02819373d37",
+   "source": "experiments/contagion/scripts/rep_12b.py"
+  },
+  "experiments/contagion/scripts/report_tables.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "2d3a88e8f0c60e1d8328c24b9114a98c246ea41f84f2aba8548c0dee805d7227",
+   "frozen_md5": "957fd5ecaf9dce232aa28fd21ed4a844",
+   "frozen_sha256": "7eeb34bdd71e4adc7851e22e5506d8b55d0b70b3b30da6307d22863621be2d26",
+   "source": "experiments/contagion/scripts/report_tables.py"
+  },
+  "experiments/contagion/scripts/report_tables_v2.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "7d705a3608db0e94c3488e593ec9ef8868667184a53c9f2a5157d70c8fc02693",
+   "frozen_md5": "76c005764fc3cc9842910025c78bf7ee",
+   "frozen_sha256": "982484f19cb77bb0b56d5d98b3fa9feae81f2f2709b0a0f272ee17d39e55ebea",
+   "source": "experiments/contagion/scripts/report_tables_v2.py"
+  },
+  "experiments/contagion/scripts/run_injection.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "09af33158f044180df636d5380f5801163d62cfd2593ce4f5d7fc8e36c6f58c1",
+   "frozen_md5": "3a32999ba51f974e33663a9534c608de",
+   "frozen_sha256": "1aadb39d5fe9013620e296b8ac213b19804f2cf3e4fb3457d99bcf42a707dde0",
+   "source": "experiments/contagion/scripts/run_injection.py"
+  },
+  "experiments/contagion/scripts/run_injection_v1_backup.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "0cf11b83933009a44b7c7cd6e7371a6fe09358126950c430cacfa96245414fb0",
+   "frozen_md5": "20a72ec990701ea26ee86576c938ba0e",
+   "frozen_sha256": "9e709f9e5a4d1bcd3ebb43588eb9e9d235a1b942e9dd795a0724cb8c22ac2906",
+   "source": "experiments/contagion/scripts/run_injection_v1_backup.py"
+  },
+  "experiments/contagion/scripts/sample_pools_v2.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "3cc327d37f3cc3bf701ae6c1d72cfcc6205641273cbac50fa633b2987a228e4c",
+   "frozen_md5": "e1de54a891ca73c82c43d4e5d71d2920",
+   "frozen_sha256": "60025bef6c822f8a46fee75d6f912acdf4f2625960e5a5a5771215c2949de3ac",
+   "source": "experiments/contagion/scripts/sample_pools_v2.py"
+  },
+  "experiments/contagion/scripts/smoke_build_discovery_requests.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups",
+    "pseudonymized: run_or_adapter_name 2"
+   ],
+   "exported_sha256": "a3dfa52e8e208b4066e231c583c743586f04b0ddd9b5bdc7a74ea2099786e52a",
+   "frozen_md5": "1b943c75968a2adccb04d214938af479",
+   "frozen_sha256": "fa676fceef65883a1aad3dc4b70282d47d72a9e6f33e78b900732162531510c7",
+   "source": "experiments/contagion/scripts/smoke_build_discovery_requests.py"
+  },
+  "experiments/contagion/scripts/summarize.py": {
+   "changes": [
+    "3 path literal(s) -> env/config lookups",
+    "pseudonymized: run_or_adapter_name 3"
+   ],
+   "exported_sha256": "a429dee2a1f653619a8e32a124d0b96700fa5cb79e570be279abb8c70b0bcafe",
+   "frozen_md5": "8cd38b4c4323227da3d476475a5f93ae",
+   "frozen_sha256": "1a7361bfde8442f2365c612d3c14eeee90e0da400d54763d7fee64b4bdf46067",
+   "source": "experiments/contagion/scripts/summarize.py"
+  },
+  "experiments/contagion/scripts/test_P_smoke.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "1be562dea67bf5135ffee8e68923562c4f27df319f8d2e43658e486de34d8058",
+   "frozen_md5": "15ea6bb6579cf07a8b0a5cc5f6358381",
+   "frozen_sha256": "b3f4e814b03e0cc67dbc88964bac3460e9c0d10d09db31f1375e359ebeb5ee3b",
+   "source": "experiments/contagion/scripts/test_P_smoke.py"
+  },
+  "experiments/contagion/scripts/test_P_v11.py": {
+   "changes": [
+    "4 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "a5014ea64ba6a11e16cc8dd4288de3fc2a24136a154a1e4c7ad86af6519554b7",
+   "frozen_md5": "8bfbc9bbd026ec651beb6746dda86deb",
+   "frozen_sha256": "363286c940fa6ffbcc4e12a2e5e99a0e409c7439b956ad5f79c0116f11ffa341",
+   "source": "experiments/contagion/scripts/test_P_v11.py"
+  },
+  "experiments/contagion/scripts/test_S1_synthetic.py": {
+   "changes": [
+    "4 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "4988f2f091536b9a0eb10affdd731461e4abcffde6b8f73aa0e8c43849579beb",
+   "frozen_md5": "b6be9246c24db2ee5e17b0f590655391",
+   "frozen_sha256": "88b09e95f2cbd56a4cc6ed01c606014207d017af94b8c7e10e5a618f859e059f",
+   "source": "experiments/contagion/scripts/test_S1_synthetic.py"
+  },
+  "experiments/contagion/scripts/test_retest.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "5d979c36ae66a2ec136cdd66dec3fc34b0c1ce3397ba5140fd82a582f5c6e149",
+   "frozen_md5": "b95187b995716d9dd414b191169cc9ad",
+   "frozen_sha256": "c3831e0270ae6d9e3cfa591a7b6d540bed1fa1aa35ceb73ee8acc4473867d39f",
+   "source": "experiments/contagion/scripts/test_retest.py"
+  },
+  "experiments/contagion/scripts/test_run_cond.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "28eb93d83022b432a3aead3adc3841cfd5c91419d5e809e2dac87ac774ddc125",
+   "frozen_md5": "3285b01715f76143ceb92b33858cbab7",
+   "frozen_sha256": "a7a997ee2529e95095486088cdaba5c25e9befc845e5342d7b0b7ebd947cd114",
+   "source": "experiments/contagion/scripts/test_run_cond.py"
+  },
+  "experiments/contagion/scripts/test_variants.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "30f426fdc77674a6b506fd5c7eb56c1e55a8b132b7894149100ca77bd91b0f63",
+   "frozen_md5": "41f1f3e09e0c20a712dc9b510a18e7c4",
+   "frozen_sha256": "c4e3c4926d5a5dad00e700ec6cbbec3dd49b84f04cd5362b982ba9813d8a308b",
+   "source": "experiments/contagion/scripts/test_variants.py"
+  },
+  "experiments/contagion/scripts/update_readme.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "bbc30e8619d404a149729f91191079eb130d49b097704cc1d1ff83e060908545",
+   "frozen_md5": "b54a460c150717d149ed7f5d122357f2",
+   "frozen_sha256": "d7fa0b98d6ecbc731ae3297c499067614f0e970cc378391e2b2f8562aab2dea6",
+   "source": "experiments/contagion/scripts/update_readme.py"
+  },
+  "experiments/contagion/scripts/v25_replay_preconditions.py": {
+   "changes": [
+    "3 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "d0814b07bd7b075532d93cd0d9451ca9bd2d705883a58c0e353daeeaba296403",
+   "frozen_md5": "2f15717d7333962a6cdb801d064a683e",
+   "frozen_sha256": "b9a3dc4abae07bbd5d14736828f683909cba2a27d393158618db5ca874ac1d96",
+   "source": "experiments/contagion/scripts/v25_replay_preconditions.py"
+  },
+  "experiments/contagion/scripts/v27_pooled_retest.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "d5e1e27cb462823a328a92fe39b9dab8739fda8046ac833a0f3ef693690bf1ec",
+   "frozen_md5": "5bee23efd0f01d823ad5c8be48ad8688",
+   "frozen_sha256": "4ce4fde68c947fe6eccb3008be5fa97878dcebe6d2b9f11fb190924148c8f431",
+   "source": "experiments/contagion/scripts/v27_pooled_retest.py"
+  },
+  "experiments/contagion/scripts/validate_contexts.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "e6f46d9c76c310faa6a33086b2b782ae281c348291af1a063a723ae57f8ce393",
+   "frozen_md5": "d02f3cd2390cae8ba829cda0b8e09b8d",
+   "frozen_sha256": "a4dfb9d8251842280e01706a6c294bea2913e79e6df2d05ebc215445fed0b754",
+   "source": "experiments/contagion/scripts/validate_contexts.py"
+  },
+  "experiments/contagion/scripts/variants.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups",
+    "editorial override (1x): public tree: the released state metadata gives contexts_file repo-relative; resolve it against TRANSCRIPTLAB_ROOT (an absolute path is unchanged by os.path.join)"
+   ],
+   "exported_sha256": "008b9a1af9e9409f3a05c792c3477249371568d8c7e3fa55838fd3e694413cda",
+   "frozen_md5": "5643628657ea4b951cf4de01034d86d2",
+   "frozen_sha256": "b0044a723ac086e0194e2dc45dce74d0cd712327c3eb5798f23d2caf20079850",
+   "source": "experiments/contagion/scripts/variants.py"
+  },
+  "experiments/contagion/scripts/variants_v1_backup.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "1f9c4b70dead443e0b8d75efd9d3653fa9ab9e25865c7a38c50fe5b9b3a91817",
+   "frozen_md5": "f64ea094317f7ed20825a5b7725a12f5",
+   "frozen_sha256": "5a3e0b26dad4fc57e603185d8f2df027fff9c03b021047eafac5de2af00cf8d4",
+   "source": "experiments/contagion/scripts/variants_v1_backup.py"
+  },
+  "experiments/contagion/scripts/variants_v2_backup.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "31b4b8c0f38f94afe5095cf14bf59a48a264e76deea9a3902c5278b0254c3554",
+   "frozen_md5": "f820cc986e7dca7985ccca7d7c54a1c8",
+   "frozen_sha256": "ca1befea3914b35072ea7b01de358a3b521acaa927eb2b9d9d2086bf5be56952",
+   "source": "experiments/contagion/scripts/variants_v2_backup.py"
+  },
+  "experiments/contagion/scripts/verify_moved_data.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "01112217b8a6bf61f6a6f5ba277224881077d983004f567a4ad9f204498664de",
+   "frozen_md5": "d26a65e3ca33f8380cbe7a2140253cb6",
+   "frozen_sha256": "deaf64368b2e0152b2893b71142b8d5ce6669677be978a1ad634637269d91f46",
+   "source": "experiments/contagion/scripts/verify_moved_data.py"
+  },
+  "experiments/contagion/scripts/verify_onset_o1.py": {
+   "changes": [
+    "4 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "4848d4e4fcf2bf29913363d53eeca1e02e047027c64b19d1f032b757af4ac565",
+   "frozen_md5": "84216ffb202ccaa38a59152fb9d40825",
+   "frozen_sha256": "1203e7478eb2a8905282f235846588a094b7813aa130a6d63e46eb77172711ec",
+   "source": "experiments/contagion/scripts/verify_onset_o1.py"
+  },
+  "experiments/contagion/scripts/with_paths.py": {
+   "changes": [
+    "privacy redaction: host_path_harness 2, host_path_other 2",
+    "pseudonymized: moved_tree_path 2"
+   ],
+   "exported_sha256": "5350f2f974bd6870067c5e413457112d54ba964752880e24637c85351e2ad778",
+   "frozen_md5": "dbb97a0de6bc3529ded3a681dd552ec2",
+   "frozen_sha256": "016f920c48945a98338fce7fcd3daa11e06a0fa365a0d2eeda32742d70a6d4c0",
+   "source": "experiments/contagion/scripts/with_paths.py"
+  },
+  "experiments/crossfamily/README.md": {
+   "changes": [
+    "privacy redaction: host_path_envs 2, host_path_repo 2"
+   ],
+   "exported_sha256": "815734b38b7608c6e19ca952fe0b7ebb32781e403c2f8636b323abe190764ff6",
+   "frozen_md5": "dddf2ca9fe328d5e6cb8d36d02c99907",
+   "frozen_sha256": "ad25ecfd8146f135f77e66cc928a02322552334101981331fe49afae7218d4f8",
+   "source": "experiments/crossfamily/README.md"
+  },
+  "experiments/crossfamily/out/ana_qwen3-32b.json": {
+   "changes": [
+    "pseudonymized: context_id 6"
+   ],
+   "exported_sha256": "7fbda3365be228a406bb1ecb2976bd20e1ecc5b5d76870c267e3d2100fe568ed",
+   "frozen_md5": "a055c8ff5623b781d64d130627068cea",
+   "frozen_sha256": "c809b18d7815d62379f1314870c1478566d85f4a93b292be6132cb90faf66e25",
+   "source": "experiments/crossfamily/out/ana_qwen3-32b.json"
+  },
+  "experiments/crossfamily/out/ana_qwen3-32b_heldout.json": {
+   "changes": [
+    "pseudonymized: context_id 2"
+   ],
+   "exported_sha256": "4d4ac2bf2a9ca517a86a24ecd27298ae0e89bb94679f8c26b2fece7185de627a",
+   "frozen_md5": "7356916c9ec499c516e6df2c01687727",
+   "frozen_sha256": "6f1e630e7004438707accfbd3f089ee52c28898605efba2ee976cf2a6e7a4623",
+   "source": "experiments/crossfamily/out/ana_qwen3-32b_heldout.json"
+  },
+  "experiments/crossfamily/out/ana_qwen3-32b_lenient.json": {
+   "changes": [
+    "pseudonymized: context_id 6"
+   ],
+   "exported_sha256": "e555dd9ddf4d44f43532ac3f0086c5c80bb27ce6a9601d065bae186745c081fa",
+   "frozen_md5": "d9ecdb9d951c60085dbd1bdf3e2c430a",
+   "frozen_sha256": "3fb289ce1b61e9d43c98815265485e2dd4a987a7f5ecd47719731a148c294fd0",
+   "source": "experiments/crossfamily/out/ana_qwen3-32b_lenient.json"
+  },
+  "experiments/crossfamily/out/ana_qwen3-8b.json": {
+   "changes": [
+    "pseudonymized: context_id 8"
+   ],
+   "exported_sha256": "4f22455d8351bd5928df89e2e073c18d1eee7eb37738cb4cc572db2698b4b10c",
+   "frozen_md5": "a3913dfa2aa60e0ff45d9832ac07edb4",
+   "frozen_sha256": "031ddb9ed87e25e8c5ccb412af8a8f134344674be7ac08896990a505755d53a7",
+   "source": "experiments/crossfamily/out/ana_qwen3-8b.json"
+  },
+  "experiments/crossfamily/out/ana_qwen3-8b_heldout.json": {
+   "changes": [
+    "pseudonymized: context_id 3"
+   ],
+   "exported_sha256": "9da6bff97b2d92860cdf14316c260940907f3af437a9a1a05a648839c2f04134",
+   "frozen_md5": "c20669cb8abe5b99c24d1cb88e633eb3",
+   "frozen_sha256": "13557bea7a08ce04640f3b7466d05e0692822489c5833878e10fb62dddf37a1d",
+   "source": "experiments/crossfamily/out/ana_qwen3-8b_heldout.json"
+  },
+  "experiments/crossfamily/out/ana_qwen3-8b_lenient.json": {
+   "changes": [
+    "pseudonymized: context_id 11"
+   ],
+   "exported_sha256": "19112501da784ac6341e7ab3da473adb3ee2037f5d3fe97c7ce6cc5f5a4f11e3",
+   "frozen_md5": "0fa3eaf5e38064d75e89ef8d94eaa900",
+   "frozen_sha256": "ab44b452cf9fbd24cb9ea90be329776b59d959518d971c376b08b8e6c9b5a44a",
+   "source": "experiments/crossfamily/out/ana_qwen3-8b_lenient.json"
+  },
+  "experiments/crossfamily/out/ext/ext_prepare_manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 2"
+   ],
+   "exported_sha256": "7b6d6c59b5d57b5a48b1d77608f21631d437fc62287cf9c0852e001e5afa83d0",
+   "frozen_md5": "a4e07b6f054b3eb8c3b411224da80093",
+   "frozen_sha256": "4c8febdb9cd496cc763b8cc79758bfa4b44eb48f79dcf01344e4a72fe56ccfbe",
+   "source": "experiments/crossfamily/out/ext/ext_prepare_manifest.json"
+  },
+  "experiments/crossfamily/out/ext/gen_devstral-24b.jsonl": {
+   "changes": [
+    "5 developer e-mail address(es) masked as <email>"
+   ],
+   "exported_sha256": "7ccb320a1c5497dd7292a1b171fbfebda71991d9204ab91b229e160affdeb9c3",
+   "frozen_md5": "50849840c5d93da8da92e10c49e06f14",
+   "frozen_sha256": "35c42c66a74afce3f966099e2a5264f04530cd322bc9ce918d30211d8426e2d7",
+   "source": "experiments/crossfamily/out/ext/gen_devstral-24b.jsonl"
+  },
+  "experiments/crossfamily/out/ext/gen_gpt-oss-20b.jsonl": {
+   "changes": [
+    "3 developer e-mail address(es) masked as <email>"
+   ],
+   "exported_sha256": "542b48caae3115451a0c905706491ee77ce54f235b56155d071e834c4dea0c3e",
+   "frozen_md5": "ccf60b453324641efda122e0f87cb857",
+   "frozen_sha256": "677ea5ebd64fa4ccbd460cdbebbea9cdeeb8b2b978ffbce2b4a86019fbbc957f",
+   "source": "experiments/crossfamily/out/ext/gen_gpt-oss-20b.jsonl"
+  },
+  "experiments/crossfamily/out/ext/gen_qwen3-coder-30b.jsonl": {
+   "changes": [
+    "2 developer e-mail address(es) masked as <email>"
+   ],
+   "exported_sha256": "1363c7298d84c97c12fc719f89b5f9f05d9f227b5e7a02e60b5e63a469098279",
+   "frozen_md5": "ae209734429b0d38d97d6f141a0337cc",
+   "frozen_sha256": "5d0dc60b144b2fc312bd7a40fdefdaee0e3968cc18d8f0b714119c6bf20caade",
+   "source": "experiments/crossfamily/out/ext/gen_qwen3-coder-30b.jsonl"
+  },
+  "experiments/crossfamily/out/ext/gen_qwen3.8-27b.jsonl": {
+   "changes": [
+    "7 developer e-mail address(es) masked as <email>"
+   ],
+   "exported_sha256": "82735c67008a9da411f3d2dd40a2a47ad0debab5133c7e7ebf14c954a035d7ae",
+   "frozen_md5": "85238a83b11a2e81a2fc18b18042e1e9",
+   "frozen_sha256": "4e46c4cfa0e9a3bad27f62d107aab5bc6132382f24b738961e633d929212661a",
+   "source": "experiments/crossfamily/out/ext/gen_qwen3.8-27b.jsonl"
+  },
+  "experiments/crossfamily/out/ext/pf_qwen3.8-27b.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "3729d7fc5184296f5ccf994f0d3c48f7cb84d91c94b0d65858f05a60ec21856e",
+   "frozen_md5": "79ff4611ba8ab166a52f43f5ae114255",
+   "frozen_sha256": "97ae2db2a5be7066bb80fd39de9269f182945e45cd281447e32f19772db8a86d",
+   "source": "experiments/crossfamily/out/ext/pf_qwen3.8-27b.json"
+  },
+  "experiments/crossfamily/out/ext/prompts_devstral-24b_extA1.manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "6a92218fe6c46da13ba7c2689e94a3fdb096cdfb1d8c9a5d9975f302124302a1",
+   "frozen_md5": "77cf470240778ec933bc8d35b07e641c",
+   "frozen_sha256": "908b1143be2e90e0c033c6c82eca8ba2e803a777060b7224c7ee9c45e2d79028",
+   "source": "experiments/crossfamily/out/ext/prompts_devstral-24b_extA1.manifest.json"
+  },
+  "experiments/crossfamily/out/ext/prompts_devstral-24b_extB1.manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "9c8211384347b353cd4e70ae87cc951454689ccd9c521a88d9e29f65599c736b",
+   "frozen_md5": "05e9d83ea797185130f3d4ab9222c20f",
+   "frozen_sha256": "9f170b85eeea87b2ff7f1dafe271eece9728da4345f27e8d48ea8faa7dc9dd69",
+   "source": "experiments/crossfamily/out/ext/prompts_devstral-24b_extB1.manifest.json"
+  },
+  "experiments/crossfamily/out/ext/prompts_gpt-oss-20b_extA1.manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "636881ef8bf800d68aebdfabe37e7c586beef8a4a29b6410f373e8104576bdb6",
+   "frozen_md5": "e65afead9343bd416b4d5767b1e3267a",
+   "frozen_sha256": "a8302c802a3a1a04a1bdbd33bdf66369983e7262a2d48a716d6f7ff4a94b69d6",
+   "source": "experiments/crossfamily/out/ext/prompts_gpt-oss-20b_extA1.manifest.json"
+  },
+  "experiments/crossfamily/out/ext/prompts_gpt-oss-20b_extB1.manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "a6cee8eb2eae7d77eee852fa4a09fb1bb54dc916356a93b73837cd3ccfce272e",
+   "frozen_md5": "28320440587f2b78eb34c1bd78acc379",
+   "frozen_sha256": "55df1315babe6cab19246cee9bf65a8e858203de5afc35f5790b75336a7883d2",
+   "source": "experiments/crossfamily/out/ext/prompts_gpt-oss-20b_extB1.manifest.json"
+  },
+  "experiments/crossfamily/out/ext/prompts_qwen3-coder-30b_extA1.manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "997a3cbf7c648a1de454d6c7126f63048bc56b82bae2f75fbdaa8d2567290b49",
+   "frozen_md5": "b84759c345add023d8cf0a34bf8e38ec",
+   "frozen_sha256": "e7c9dd8bb36765bec3003ac907b2f5a6195cc00307fa202901581ab3b5d272ad",
+   "source": "experiments/crossfamily/out/ext/prompts_qwen3-coder-30b_extA1.manifest.json"
+  },
+  "experiments/crossfamily/out/ext/prompts_qwen3-coder-30b_extB1.manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "3e646a6649f51c6ce685500a3c28edd68cf5ea52424abc909722b0fdf2bbd0a2",
+   "frozen_md5": "55dfea432b61310eb469d1c869ded705",
+   "frozen_sha256": "0ecad1a1b1eac24cfecd48be6b61220335636d266e1f757502cbb21ca58e22ef",
+   "source": "experiments/crossfamily/out/ext/prompts_qwen3-coder-30b_extB1.manifest.json"
+  },
+  "experiments/crossfamily/out/ext/prompts_qwen3.8-27b_extA1.manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "cd04a461f961931f601c0a675db651e4a5c54c4422ee3fb3b2e3345be6919cd8",
+   "frozen_md5": "f69e35cc13fd81a6e695b2e8f607018d",
+   "frozen_sha256": "c28ba9c93d9b25dce5f5feb3a9fd7ae0ae84e80533a763a9369cd27dd35e3204",
+   "source": "experiments/crossfamily/out/ext/prompts_qwen3.8-27b_extA1.manifest.json"
+  },
+  "experiments/crossfamily/out/ext/prompts_qwen3.8-27b_extB1.manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "8b9e908292dc2601b2adc9b5aae3575318d80ef30df2745d56ad963d9cd90c48",
+   "frozen_md5": "3db24333e6cb698aba16b8730bb44f6f",
+   "frozen_sha256": "2284c50113fd4d89c1d4cf4352583da5f2dfbad09a93ed37730996276e4c64a3",
+   "source": "experiments/crossfamily/out/ext/prompts_qwen3.8-27b_extB1.manifest.json"
+  },
+  "experiments/crossfamily/out/ext/run_manifest_devstral-24b.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 6"
+   ],
+   "exported_sha256": "aec2eb77721e0d043e4f73e9d7d14e92aa43cd686fb2a75f5f76ec9f4ee6287a",
+   "frozen_md5": "9547a35ef2ba30c8629da7d0034f608d",
+   "frozen_sha256": "076d0320b117127c55809020b32a204b28ed0a7d271607ebfa16b28908bf7bb4",
+   "source": "experiments/crossfamily/out/ext/run_manifest_devstral-24b.json"
+  },
+  "experiments/crossfamily/out/ext/run_manifest_gpt-oss-20b.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 5"
+   ],
+   "exported_sha256": "3056293454badb8a62d5a1dc279c2336d46f202e2362d265956ceabf4f2ebb71",
+   "frozen_md5": "5e7174a62aafaea5f82ede856f3b7ede",
+   "frozen_sha256": "e2c0cf9221a60d63abed57fda03bbc4c612d1c39005d6e3cd3d639cb40780e76",
+   "source": "experiments/crossfamily/out/ext/run_manifest_gpt-oss-20b.json"
+  },
+  "experiments/crossfamily/out/ext/run_manifest_qwen3-coder-30b.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 5"
+   ],
+   "exported_sha256": "c5cf2abc216d31ee1d88b904086ce37d189aa7cdf762bc495762bca2c96440e7",
+   "frozen_md5": "f33fe75857bfca0234af91601b08234f",
+   "frozen_sha256": "c5440e3a1e6d36e28278691f0ac6fe849efd0aafc3d5fa9430705b14c6257e05",
+   "source": "experiments/crossfamily/out/ext/run_manifest_qwen3-coder-30b.json"
+  },
+  "experiments/crossfamily/out/ext/run_manifest_qwen3.8-27b.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 5"
+   ],
+   "exported_sha256": "a9ad2bb743617cddfbe35ef0490fdded2d6df287e667912738e483d34205edab",
+   "frozen_md5": "f34230dd42814634c397c36ddd9ca91b",
+   "frozen_sha256": "a85734e4d10fbc2f7257a179722adb4fa5b27342518f2c71f5ff4d28c1754806",
+   "source": "experiments/crossfamily/out/ext/run_manifest_qwen3.8-27b.json"
+  },
+  "experiments/crossfamily/out/sensitivity_reasoning_summary.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 3"
+   ],
+   "exported_sha256": "7360c1c87be581585a57cb1cc724abedc937683d4d719812ec3dab38f3218c76",
+   "frozen_md5": "dc4310d91c4cbf3c5c0729f30343ad53",
+   "frozen_sha256": "400b28de09121ebaab53ebb3b096b425bbe33ee61ea9eb7783cd800e16a00234",
+   "source": "experiments/crossfamily/out/sensitivity_reasoning_summary.json"
+  },
+  "experiments/crossfamily/out/smoke_ext_testS1.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "3b9ec49113f5200a43307df96f0953ac5cb79e2f1365a2fcf16485bdacd23795",
+   "frozen_md5": "a9608c5c28e474400a73af9de589440f",
+   "frozen_sha256": "d0a2491a069d4ccd2e369e69481ad6fba3019c163c862468e3b53e9f6be391f5",
+   "source": "experiments/crossfamily/out/smoke_ext_testS1.json"
+  },
+  "experiments/crossfamily/out/smoke_ext_testS1_devstral.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "ca5acbf9bc6880eac00580dab3e2fc8a6917ebaacbfda974dc55e166999869c0",
+   "frozen_md5": "4c4555e4b6a60238774fb5c2f6d5bdc2",
+   "frozen_sha256": "3096a496cf64ceeaf247fcef9a10bc74e02eb19de6e13e84b509ed750da37d0a",
+   "source": "experiments/crossfamily/out/smoke_ext_testS1_devstral.json"
+  },
+  "experiments/crossfamily/out/v2/gen_qwen3-32b.jsonl": {
+   "changes": [
+    "privacy redaction: email 3, home_dir_user 2, secret_assignment 3",
+    "2 host-root pseudonym(s) neutralized (data / home root pseudonyms -> <host-path>, <home>)"
+   ],
+   "exported_sha256": "c60db5caa7be6786f2029cd0a3a069c259209b99846d7274807f9ef55c97c254",
+   "frozen_md5": "0ae4629f10708e907ba134e21e898450",
+   "frozen_sha256": "d2025ba8cf8c51d589aede6ec783b3526ef165a0e57f8b340303544ac0a2555b",
+   "source": "experiments/crossfamily/out/v2/gen_qwen3-32b.jsonl"
+  },
+  "experiments/crossfamily/out/v2/gen_qwen3-32b_lenient.jsonl": {
+   "changes": [
+    "privacy redaction: email 4, home_dir_user 2, secret_assignment 4",
+    "2 host-root pseudonym(s) neutralized (data / home root pseudonyms -> <host-path>, <home>)"
+   ],
+   "exported_sha256": "03f9e007d28a33afde6b60fdda3d5778c2a1ce3fcf74093f346f6031b54a9f42",
+   "frozen_md5": "04057e05d4febe4b05cd6d8e31751560",
+   "frozen_sha256": "a4751594eda6cebfaa9ac0549e829d2be0f63b8a7f1cf046da00e146e4735e13",
+   "source": "experiments/crossfamily/out/v2/gen_qwen3-32b_lenient.jsonl"
+  },
+  "experiments/crossfamily/out/v2/gen_qwen3-8b.jsonl": {
+   "changes": [
+    "privacy redaction: secret_assignment 2"
+   ],
+   "exported_sha256": "6ceef451d5022b9be8fdd9e1dc2a46c83cb34685ef7ba49fffb47631c96399c5",
+   "frozen_md5": "d59c76915e70d3b224cfb71a0cb2ee62",
+   "frozen_sha256": "504c0469e1313c8c18155e15cbdce71a5cbac2dd29b4334a6c9242a9b0d02504",
+   "source": "experiments/crossfamily/out/v2/gen_qwen3-8b.jsonl"
+  },
+  "experiments/crossfamily/out/v2/gen_qwen3-8b_lenient.jsonl": {
+   "changes": [
+    "privacy redaction: secret_assignment 2"
+   ],
+   "exported_sha256": "10433ff3c235ee5234ae776afb01291b2191efbadcf45350e2c3555ec32cedc5",
+   "frozen_md5": "7d30de6a311e640341efa75052fc6303",
+   "frozen_sha256": "9014e5f7a9ee5c5f01260aaf672135bb5d59978ad97f22700972a52eae59c9de",
+   "source": "experiments/crossfamily/out/v2/gen_qwen3-8b_lenient.jsonl"
+  },
+  "experiments/crossfamily/out/v2/gen_qwen3.5-9b.jsonl": {
+   "changes": [
+    "privacy redaction: email 6, git_author_name 4, secret_assignment 6",
+    "1 host-root pseudonym(s) neutralized (data / home root pseudonyms -> <host-path>, <home>)"
+   ],
+   "exported_sha256": "84d1d8c4050cc8ed1ce814efc0c934cc6c1f5b4d7530e98f927b5ea94fd82b5f",
+   "frozen_md5": "7d0fc550d7278a9d3dcffbd822baf405",
+   "frozen_sha256": "305b6f774c74307ad801ab04d79074f110ff672d72e1b95a87dd665267668b76",
+   "source": "experiments/crossfamily/out/v2/gen_qwen3.5-9b.jsonl"
+  },
+  "experiments/crossfamily/out/v2/gen_qwen3.5-9b_lenient.jsonl": {
+   "changes": [
+    "privacy redaction: email 8, git_author_name 6, secret_assignment 6",
+    "1 host-root pseudonym(s) neutralized (data / home root pseudonyms -> <host-path>, <home>)"
+   ],
+   "exported_sha256": "9d0706c99c6d094399a81a75bd1eda15ec7873089abaa219495b85a904261a42",
+   "frozen_md5": "216a4b1d96c7f6f41e8d47d715f1da2c",
+   "frozen_sha256": "760b256243f3b9c95180227a5ad978f7fb5c661cff20204670226ab0787de3d2",
+   "source": "experiments/crossfamily/out/v2/gen_qwen3.5-9b_lenient.jsonl"
+  },
+  "experiments/crossfamily/out/v2/pf_qwen3-32b.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "e0642db3a32971463a324f6824a91726a03fe55f0d00d61c2b395110259db970",
+   "frozen_md5": "8dd851cae8e8af96255854051e70b113",
+   "frozen_sha256": "24671d86fd3575546e453d9ac49f69afb0a9f9c9bdbde34261e9ed59c94f499a",
+   "source": "experiments/crossfamily/out/v2/pf_qwen3-32b.json"
+  },
+  "experiments/crossfamily/out/v2/pf_qwen3-8b.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "cfc197e25dd772a3ff7e85d33a49943913ea55d0d184ecdd32b95a7af06b011c",
+   "frozen_md5": "f2de46d0a938feaccf33686bb514751c",
+   "frozen_sha256": "3e3b634fc757acd18f07600e241d6894a66186e8b553460e1280e8becabbb8f5",
+   "source": "experiments/crossfamily/out/v2/pf_qwen3-8b.json"
+  },
+  "experiments/crossfamily/out/v2/pf_qwen3.5-9b.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "2a0b316fba0eca5f16c8bfac665d4dd69dbe95edfd45c631a63d64b07c608494",
+   "frozen_md5": "4dae751eb318372df587768ba0fcd40c",
+   "frozen_sha256": "e26eae2dc839f5f29471300925e845d13d8a7103da53d1cab00e5489e811b1a6",
+   "source": "experiments/crossfamily/out/v2/pf_qwen3.5-9b.json"
+  },
+  "experiments/crossfamily/out/v2/prompts_qwen3-32b_v2A1.manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "020148259d7dfa19f60987d72675df8fa7801483ab52182ec971745b58f7518a",
+   "frozen_md5": "8d1c4de39ab4ddb885aa6e404db631da",
+   "frozen_sha256": "126d86ccb3d2cffbe0be3fbf619543d933749c63b685abcc1188adfda292cbb9",
+   "source": "experiments/crossfamily/out/v2/prompts_qwen3-32b_v2A1.manifest.json"
+  },
+  "experiments/crossfamily/out/v2/prompts_qwen3-32b_v2B1.manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "6855f85ddfb10b09044e53192a7d545dce7c2a4042567c9fc70fcc32299b5f43",
+   "frozen_md5": "e614893c5660e34503497bc06a1d6a5d",
+   "frozen_sha256": "f4fffd62d1a650c1f2b9f201fe57fb27dcebcb72731e4c517e4bbd31b5bc2f3c",
+   "source": "experiments/crossfamily/out/v2/prompts_qwen3-32b_v2B1.manifest.json"
+  },
+  "experiments/crossfamily/out/v2/prompts_qwen3-8b_v2A1.manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "0d34727658ca78c03382a2a607d832f78485539a76b35d26d953b85536d2a25f",
+   "frozen_md5": "b005e0a9edaf86759f905ee1edcf40cf",
+   "frozen_sha256": "4c4769466003cc1499ba2f834cf255efb88426f2d048178553442f31fc987657",
+   "source": "experiments/crossfamily/out/v2/prompts_qwen3-8b_v2A1.manifest.json"
+  },
+  "experiments/crossfamily/out/v2/prompts_qwen3-8b_v2B1.manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "fc2009fcfa5d6835b5415f0b7c9176d7a88d6af8acba18224df616561d648329",
+   "frozen_md5": "70885b1a3e3bf464e1df49bf0838bec0",
+   "frozen_sha256": "4e6fd2fa8883cfcf9fc5b9004971ca56d2ef26c9f109fe546a84334fd7e2ede7",
+   "source": "experiments/crossfamily/out/v2/prompts_qwen3-8b_v2B1.manifest.json"
+  },
+  "experiments/crossfamily/out/v2/prompts_qwen3.5-9b_v2A1.manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "e65cc1c8c0dfae1fbceb5c0f5cacc956eebd10406d11e6d6418dc502c8f17242",
+   "frozen_md5": "d5232fd8eb1cdffaed2bfe354abf15c9",
+   "frozen_sha256": "66745e5e9d3f7316e3402171e0e7ebbdf84a76f4f2f767302550435957d1bace",
+   "source": "experiments/crossfamily/out/v2/prompts_qwen3.5-9b_v2A1.manifest.json"
+  },
+  "experiments/crossfamily/out/v2/prompts_qwen3.5-9b_v2B1.manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "6f1f7e4901d36797afa0d8bfe427b3efb3b96fe3f0b2acb21de9e52cd9fdae6d",
+   "frozen_md5": "ad2341757f2160929e8eb2ead50eafed",
+   "frozen_sha256": "a7e1ee4494c0bc85de4bbc7d22ac45c6417471f86841701c06088ba44d044a69",
+   "source": "experiments/crossfamily/out/v2/prompts_qwen3.5-9b_v2B1.manifest.json"
+  },
+  "experiments/crossfamily/out/v2/results_v2.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "6248d29af1f2ac44598038edeadb04a9aec9c82815bf2e2d290fc5e4f71a80d1",
+   "frozen_md5": "9697a2f70867dd972ab4af689961820d",
+   "frozen_sha256": "b24662eca9327c68ccf5a7c20f31deff79a872ba0a1e852088d6419e544bbc6e",
+   "source": "experiments/crossfamily/out/v2/results_v2.json"
+  },
+  "experiments/crossfamily/out/v2/run_manifest_qwen3-32b.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 5"
+   ],
+   "exported_sha256": "6caef8c754824723f82bdff6bc6ba94aa8f638e033b6072a1809a4da892f9978",
+   "frozen_md5": "2d0159ab106bb3472cb35c7aa38669c3",
+   "frozen_sha256": "cc5323f747e355d3a14b3d803d12d087f11b8a2c859f69e62447b29309251adb",
+   "source": "experiments/crossfamily/out/v2/run_manifest_qwen3-32b.json"
+  },
+  "experiments/crossfamily/out/v2/v2_prepare_manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 2"
+   ],
+   "exported_sha256": "1da93c20b048bc3698af6a5a0729665bea9a91af22dc56488ca7c35c356e0d6e",
+   "frozen_md5": "9ddac948ea1af4dc4e5b82815a8a655e",
+   "frozen_sha256": "19364a78641380af2fa71f9577834d09c3a95ce365cf32268dea5715e43b6c85",
+   "source": "experiments/crossfamily/out/v2/v2_prepare_manifest.json"
+  },
+  "experiments/crossfamily/out/v2/v2_prepare_manifest_32b.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 2"
+   ],
+   "exported_sha256": "1da93c20b048bc3698af6a5a0729665bea9a91af22dc56488ca7c35c356e0d6e",
+   "frozen_md5": "9ddac948ea1af4dc4e5b82815a8a655e",
+   "frozen_sha256": "19364a78641380af2fa71f9577834d09c3a95ce365cf32268dea5715e43b6c85",
+   "source": "experiments/crossfamily/out/v2/v2_prepare_manifest_32b.json"
+  },
+  "experiments/crossfamily/out/v2/v2_prepare_manifest_gpu1.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 2"
+   ],
+   "exported_sha256": "7719bcc859dedc237e2a8464b568e0bd9b4dbd3965ded9169f0b7f1d5e47ec3e",
+   "frozen_md5": "c8320ffb18b58fcd3175198d26358ee3",
+   "frozen_sha256": "f1e43d0704f64302defde802cad4e033105d5b66fd85b0cf0eb4a8a279f23bcc",
+   "source": "experiments/crossfamily/out/v2/v2_prepare_manifest_gpu1.json"
+  },
+  "experiments/crossfamily/results.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 12"
+   ],
+   "exported_sha256": "b6891ce4ffe56471b47d1a6f5b5e3a568b30bda06689ecc75e84ed44e3c924a0",
+   "frozen_md5": "7f3c83eb662be35b6e2cf6a4a9df48e8",
+   "frozen_sha256": "7a990a294c27f4fd245dda83c8f9d4b8cd32c0b7b48a739c2eaf95f954b64068",
+   "source": "experiments/crossfamily/results.json"
+  },
+  "experiments/crossfamily/scripts/arms.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "6c78ab40fd2f7a022e1e60d80cb050029898656838a66312da9666d250b3a840",
+   "frozen_md5": "93a89222bce615bdb81b4110c3c13cba",
+   "frozen_sha256": "0ba18acc06d1b1e907159bb9df54fd2112f41084459c94e56b95f3f978ff3f7c",
+   "source": "experiments/crossfamily/scripts/arms.py"
+  },
+  "experiments/crossfamily/scripts/discovery/arms.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "6c78ab40fd2f7a022e1e60d80cb050029898656838a66312da9666d250b3a840",
+   "frozen_md5": "93a89222bce615bdb81b4110c3c13cba",
+   "frozen_sha256": "0ba18acc06d1b1e907159bb9df54fd2112f41084459c94e56b95f3f978ff3f7c",
+   "source": "experiments/crossfamily/scripts/discovery/arms.py"
+  },
+  "experiments/crossfamily/scripts/discovery/frozen/a_variants.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "2f2845240f8214d9a6f50f57c9696559dbaa1a7c8874e95b777d85fce94ebb53",
+   "frozen_md5": "6717e4e3044e6d2347caaad2da150059",
+   "frozen_sha256": "ec174797e9ab5592d3eae50b3a622a4533fd2473db70effb4d7cd881043e4474",
+   "source": "experiments/crossfamily/scripts/discovery/frozen/a_variants.py"
+  },
+  "experiments/crossfamily/scripts/discovery/frozen/gemma_protocol.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups",
+    "privacy redaction: host_path_harness 1",
+    "M9 competition-harness retry nudge withheld"
+   ],
+   "exported_sha256": "68da8b63211315921dc762e290578d2d0e2664ca68a064c5af7702fa84c3ba7b",
+   "frozen_md5": "8b8ea07886384755900ac3205eedb5d3",
+   "frozen_sha256": "e10becb233b3c384c920f7eb5adf660219bbee928d09dfd3f87e68655039314e",
+   "source": "experiments/crossfamily/scripts/discovery/frozen/gemma_protocol.py"
+  },
+  "experiments/crossfamily/scripts/discovery/prep_prompts.py": {
+   "changes": [
+    "3 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "9a94c2ce98136259868ae3fd80ac669eb5e49a363d12cb5dc95fdcc2a9fb5f56",
+   "frozen_md5": "7b1783f35bc3eea3585386a92fdd84b6",
+   "frozen_sha256": "3bb06320b94ebc3259a28952d055921875bea26ec61921cba95d5e648657daff",
+   "source": "experiments/crossfamily/scripts/discovery/prep_prompts.py"
+  },
+  "experiments/crossfamily/scripts/discovery/qwenproto.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "0900354c34b03b87818f9a2c60e1901a257ceae2ec957e58356edec2a3d2ad93",
+   "frozen_md5": "90c2f5a0361cc5f3f6ce9f675d8bdf6b",
+   "frozen_sha256": "d8dcb92b1dde41ef8bae8f14105b75f4c24e8474ec90e4740b03861671775080",
+   "source": "experiments/crossfamily/scripts/discovery/qwenproto.py"
+  },
+  "experiments/crossfamily/scripts/discovery/run_chain.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "275bb268c6af383aa81f503050fde1b6878cf4f4895d66b0db8a937d7a0f5d8e",
+   "frozen_md5": "01eaf0a1b4be4e1eb9c5b45da1c87f86",
+   "frozen_sha256": "e3487d11d802bd499910808869b862447c3e1772ce0a6fa509febf1f7f979914",
+   "source": "experiments/crossfamily/scripts/discovery/run_chain.sh"
+  },
+  "experiments/crossfamily/scripts/dl_ext.sh": {
+   "changes": [
+    "4 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "fd71efe40f6f3109aa4419859d7e332be769888473c2a25d8c39f9a9d65c4a40",
+   "frozen_md5": "f07c296adcc13e8c6678fa0783bb0382",
+   "frozen_sha256": "796024c72fcea58fde43814d78fad179f03c75b612cc0a7f747adb1adf6c3465",
+   "source": "experiments/crossfamily/scripts/dl_ext.sh"
+  },
+  "experiments/crossfamily/scripts/dl_ext2.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "f3dca4ea3b121c229c4bf459b347a621032deadc02353c328f622d17c6fe8aab",
+   "frozen_md5": "1545f08589ba80b34576f04b47cea029",
+   "frozen_sha256": "7aaa2c1dadfd5ec302d697e15de3565a194a88364d864161cd5d3a4c297e98ad",
+   "source": "experiments/crossfamily/scripts/dl_ext2.sh"
+  },
+  "experiments/crossfamily/scripts/dl_ext3.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "29356b419a2348f25864c6a677ccf26193c7875fc009590a528c204269b0999b",
+   "frozen_md5": "f6d3523afef483101247c550d5d49acb",
+   "frozen_sha256": "ce04cb2f5e7236e272299defb4bbbaf3d98c0b22b12d53dbdbd15b6400596dd0",
+   "source": "experiments/crossfamily/scripts/dl_ext3.sh"
+  },
+  "experiments/crossfamily/scripts/explore/check_arms_v2.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "54b4f0829be4c5170b9ef797d5a524f9c7cb38bd2016d7745dd7d26609b09c8a",
+   "frozen_md5": "d1db5c092fca305871b1775ac5c5158e",
+   "frozen_sha256": "5bbe8b2127f03a62fb5080d6422fbde0518cc063bc2332f8d4f2394017016a99",
+   "source": "experiments/crossfamily/scripts/explore/check_arms_v2.py"
+  },
+  "experiments/crossfamily/scripts/explore/check_b_set.py": {
+   "changes": [
+    "3 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "6e197842831dfd03513c2a6d4f74c57071471c1167684e66528c95a53854ef29",
+   "frozen_md5": "5c704ad70a6973f6ba1a892c59920235",
+   "frozen_sha256": "66febc03ba4b3dafa35ff49c1ffc3c7c1d7a6ec1e16c8df7380cd04a1d4a581e",
+   "source": "experiments/crossfamily/scripts/explore/check_b_set.py"
+  },
+  "experiments/crossfamily/scripts/explore/dbg_diff.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "5185b4530573cd6ff7f66b5148839bc7eaf44eba90ee3e14caa2a787a52481cb",
+   "frozen_md5": "6cbad0d271180aaade349e492838529a",
+   "frozen_sha256": "b54a1fa56e5d4d8333ad1fe0b3cf92207e278fe398a521d4415e1935d7053891",
+   "source": "experiments/crossfamily/scripts/explore/dbg_diff.py"
+  },
+  "experiments/crossfamily/scripts/explore/dbg_diff2.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "a92bf1d6f948bac9619fe1d9a3f2f6607638ed5ebf78d1ab1cfcb1855ae15fc6",
+   "frozen_md5": "6b462992572dffd3bf51c5e020b77ccc",
+   "frozen_sha256": "9249ea8c29e72d5c98f3e7bae802aba4f7a27f486fdbb3c9db0664a71656bc34",
+   "source": "experiments/crossfamily/scripts/explore/dbg_diff2.py"
+  },
+  "experiments/crossfamily/scripts/explore/fmt_dbg.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "60b57a3412ca3888b617815af69c5e4a0e3c07cd65dfc867626c52ec4b7cedb4",
+   "frozen_md5": "3fd9a28a0c8221cfdb8d2921d81b9f68",
+   "frozen_sha256": "98fa663a2d8cd936ff04d4c4e10910f6f0f0517fcfd8a70d45c0613512ec853d",
+   "source": "experiments/crossfamily/scripts/explore/fmt_dbg.py"
+  },
+  "experiments/crossfamily/scripts/explore/hub_check2.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "0c75ca51172ea1a266d8dfe595b540547e87a26cd45b2c4923d85d0a7a8b1fde",
+   "frozen_md5": "ebf6c072f70ff23a83b207e780c856b3",
+   "frozen_sha256": "8c02eea41293af737121334bdc73faa5963d8a70c089293106d66b07317deb81",
+   "source": "experiments/crossfamily/scripts/explore/hub_check2.py"
+  },
+  "experiments/crossfamily/scripts/explore/hub_check3.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "041a5a100564d356197dbace0e3ca0baa01a35e89b84c135f9ed7524879263d7",
+   "frozen_md5": "44030ff97b111be71f1574f2119f2370",
+   "frozen_sha256": "f5815db56906d5f923255bb61c1db1165e9e17b170155808c447506e306004f4",
+   "source": "experiments/crossfamily/scripts/explore/hub_check3.py"
+  },
+  "experiments/crossfamily/scripts/explore/make_s1_test_contexts.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "6c9c8a69180d656383124e97faef65c6e73b7925cb78d848796fba8a0c34018d",
+   "frozen_md5": "951379e83b7548d94eb2c77a7b6b1b22",
+   "frozen_sha256": "ce496122b93a2ab35c3d8e23433920b48e6f6f129050f6e6665f8d8e23c5bdb9",
+   "source": "experiments/crossfamily/scripts/explore/make_s1_test_contexts.py"
+  },
+  "experiments/crossfamily/scripts/explore/peek_ctx.py": {
+   "changes": [
+    "4 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "844ee6cb6e988271500617014e7e2b813cca2426595bc9b8845ca334459f12e5",
+   "frozen_md5": "1123522c88cac5ba9da58bb5477001e7",
+   "frozen_sha256": "e85e7e6240cedebae413aff4f3ac0859e72869323c85b48a646d6e8573b82fa9",
+   "source": "experiments/crossfamily/scripts/explore/peek_ctx.py"
+  },
+  "experiments/crossfamily/scripts/explore/probe_ext.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "e5829d3a7652af9f69173c792c19cbdaf1ad3f89be79cfb5480b6890665301ac",
+   "frozen_md5": "1c175816da211489e74d2bf5b21b1076",
+   "frozen_sha256": "a4fdd4358a36e71a08f95878ac60d93dcb944e1bb22b39a53a74a2c8252acdd6",
+   "source": "experiments/crossfamily/scripts/explore/probe_ext.py"
+  },
+  "experiments/crossfamily/scripts/explore/probe_ext2.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "281cfa22b427c94abf8a23b70343a0e50d2bd789d4d483dc08ca5d10e8f7f38b",
+   "frozen_md5": "782071d26bc4d78d6cb2093065387126",
+   "frozen_sha256": "a5bc933c5d9ccffa88ea8ad6667a36f79467de91a880265a85f38de74dc4fe0e",
+   "source": "experiments/crossfamily/scripts/explore/probe_ext2.py"
+  },
+  "experiments/crossfamily/scripts/explore/probe_ext3.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "55508046255e5e33e9c59de76c765d523ddefcfac4da6e7b6ae12bd1a2931bf1",
+   "frozen_md5": "cdce6027e9bb962c52928f43e5c88f56",
+   "frozen_sha256": "dbf6d7443366cd6cec640ae68606aec1c44227dbee3dcde3d52d4c60109bd491",
+   "source": "experiments/crossfamily/scripts/explore/probe_ext3.py"
+  },
+  "experiments/crossfamily/scripts/explore/render_probe.py": {
+   "changes": [
+    "5 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "8205a02e2684d60531214768107438d932b7e59e956432aa0ef3d6dca5f394fa",
+   "frozen_md5": "b801c3254435a55131c84a36ff836788",
+   "frozen_sha256": "76f90903cf3d69d0a935fc0bac0c125b396b5b2ac9865d48402942deffc65e8a",
+   "source": "experiments/crossfamily/scripts/explore/render_probe.py"
+  },
+  "experiments/crossfamily/scripts/explore/tokids.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "ff6431f6d34a1de94665da63ef585655596f88eecb0f60713ec9c751bd93b65f",
+   "frozen_md5": "9867bc9a1c8c7735d9e90cd032ebade3",
+   "frozen_sha256": "dc8db126df9388999e4f02f155abfa5335fdb9d3fb7131376c2465024d400223",
+   "source": "experiments/crossfamily/scripts/explore/tokids.py"
+  },
+  "experiments/crossfamily/scripts/ext_frozen/arms.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "6c78ab40fd2f7a022e1e60d80cb050029898656838a66312da9666d250b3a840",
+   "frozen_md5": "93a89222bce615bdb81b4110c3c13cba",
+   "frozen_sha256": "0ba18acc06d1b1e907159bb9df54fd2112f41084459c94e56b95f3f978ff3f7c",
+   "source": "experiments/crossfamily/scripts/ext_frozen/arms.py"
+  },
+  "experiments/crossfamily/scripts/ext_frozen/ext_prepare.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "8a15d539c50f3df6e2d8e1d992f87690308e5c98660db7006e87d4ccf5424127",
+   "frozen_md5": "f3389cfaccd09d2797b75ad3d23a3ca6",
+   "frozen_sha256": "2365a17a52d0f149bb11a821c4a6d198b492cc5203b4c3f19cfa0c76e1a28f84",
+   "source": "experiments/crossfamily/scripts/ext_frozen/ext_prepare.py"
+  },
+  "experiments/crossfamily/scripts/ext_frozen/fmt_ext.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "ccd1c038042d367c2777f3beab3f89a8e9c019fc76548ca260f4328248eb38ae",
+   "frozen_md5": "092252e6989b3bfaf4875c8ae866399a",
+   "frozen_sha256": "0bef7eecbb1f097c4000db4f2e819079816f0ddec95fa30b2c43f63bd067a0b5",
+   "source": "experiments/crossfamily/scripts/ext_frozen/fmt_ext.py"
+  },
+  "experiments/crossfamily/scripts/ext_frozen/format_cpu.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "537148a89879615b15b7a5313b6f987721c34939d914be81fa7008a1818e1a66",
+   "frozen_md5": "9295c983d0512a4074138f75c22c8459",
+   "frozen_sha256": "976dd5781f74c5e7fe4bf848e471b3efa5ed6c7b8e6b4d11543e0558cd5b3fb3",
+   "source": "experiments/crossfamily/scripts/ext_frozen/format_cpu.py"
+  },
+  "experiments/crossfamily/scripts/ext_frozen/frozen/a_variants.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "2f2845240f8214d9a6f50f57c9696559dbaa1a7c8874e95b777d85fce94ebb53",
+   "frozen_md5": "6717e4e3044e6d2347caaad2da150059",
+   "frozen_sha256": "ec174797e9ab5592d3eae50b3a622a4533fd2473db70effb4d7cd881043e4474",
+   "source": "experiments/crossfamily/scripts/ext_frozen/frozen/a_variants.py"
+  },
+  "experiments/crossfamily/scripts/ext_frozen/frozen/gemma_protocol.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups",
+    "privacy redaction: host_path_harness 1",
+    "M9 competition-harness retry nudge withheld"
+   ],
+   "exported_sha256": "68da8b63211315921dc762e290578d2d0e2664ca68a064c5af7702fa84c3ba7b",
+   "frozen_md5": "8b8ea07886384755900ac3205eedb5d3",
+   "frozen_sha256": "e10becb233b3c384c920f7eb5adf660219bbee928d09dfd3f87e68655039314e",
+   "source": "experiments/crossfamily/scripts/ext_frozen/frozen/gemma_protocol.py"
+  },
+  "experiments/crossfamily/scripts/ext_frozen/qwenproto.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "b992b10ef1ab47fcbedb58cf162b2132f3380e02c7461393a55902f875d3f87e",
+   "frozen_md5": "a4f8ad82339e06b7168d648f375f7404",
+   "frozen_sha256": "2f9ea1bba75c92bb5adc61c166fe78477cd41b58d5d156db860205c8af08c6a8",
+   "source": "experiments/crossfamily/scripts/ext_frozen/qwenproto.py"
+  },
+  "experiments/crossfamily/scripts/ext_prepare.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "8a15d539c50f3df6e2d8e1d992f87690308e5c98660db7006e87d4ccf5424127",
+   "frozen_md5": "f3389cfaccd09d2797b75ad3d23a3ca6",
+   "frozen_sha256": "2365a17a52d0f149bb11a821c4a6d198b492cc5203b4c3f19cfa0c76e1a28f84",
+   "source": "experiments/crossfamily/scripts/ext_prepare.py"
+  },
+  "experiments/crossfamily/scripts/figure_forest.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups",
+    "privacy redaction: host_path_envs 1"
+   ],
+   "exported_sha256": "c0ce6925af811494233773aaa482f6d3bc92834384ce68f5f93399a7e3ebaac1",
+   "frozen_md5": "ab8f3acd437bdc9ea729c10b19bedc79",
+   "frozen_sha256": "5b268e0f57f5d57e9640f6358665246c609a5fd0047b914a495c9c30b3e8c6b3",
+   "source": "experiments/crossfamily/scripts/figure_forest.py"
+  },
+  "experiments/crossfamily/scripts/finalize.py": {
+   "changes": [
+    "4 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "110387418ecdd11b6dae6324c65ce9f2ba7201eda947a87ab34550b159f516fc",
+   "frozen_md5": "562dab7812e3acc52df457aa1f4bccf5",
+   "frozen_sha256": "672d61b64619d475d5367bfd1d57afea7d7f1828bf83c1e1e3edf752bfd53e37",
+   "source": "experiments/crossfamily/scripts/finalize.py"
+  },
+  "experiments/crossfamily/scripts/fmt_ext.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "ccd1c038042d367c2777f3beab3f89a8e9c019fc76548ca260f4328248eb38ae",
+   "frozen_md5": "092252e6989b3bfaf4875c8ae866399a",
+   "frozen_sha256": "0bef7eecbb1f097c4000db4f2e819079816f0ddec95fa30b2c43f63bd067a0b5",
+   "source": "experiments/crossfamily/scripts/fmt_ext.py"
+  },
+  "experiments/crossfamily/scripts/format_cpu.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "537148a89879615b15b7a5313b6f987721c34939d914be81fa7008a1818e1a66",
+   "frozen_md5": "9295c983d0512a4074138f75c22c8459",
+   "frozen_sha256": "976dd5781f74c5e7fe4bf848e471b3efa5ed6c7b8e6b4d11543e0558cd5b3fb3",
+   "source": "experiments/crossfamily/scripts/format_cpu.py"
+  },
+  "experiments/crossfamily/scripts/format_v31.py": {
+   "changes": [
+    "privacy redaction: host_path_envs 1"
+   ],
+   "exported_sha256": "4b51245e5e8f19278527383c801631025635b8321cd5b3dcc38c389049e597ca",
+   "frozen_md5": "2c4477b33f7c71da7f66df9ab65338d3",
+   "frozen_sha256": "d2decad24128f0f870e8c61a130bc798f5cb170bad79d27b9aa41d1768cda987",
+   "source": "experiments/crossfamily/scripts/format_v31.py"
+  },
+  "experiments/crossfamily/scripts/frozen/a_variants.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "2f2845240f8214d9a6f50f57c9696559dbaa1a7c8874e95b777d85fce94ebb53",
+   "frozen_md5": "6717e4e3044e6d2347caaad2da150059",
+   "frozen_sha256": "ec174797e9ab5592d3eae50b3a622a4533fd2473db70effb4d7cd881043e4474",
+   "source": "experiments/crossfamily/scripts/frozen/a_variants.py"
+  },
+  "experiments/crossfamily/scripts/frozen/gemma_protocol.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups",
+    "privacy redaction: host_path_harness 1",
+    "M9 competition-harness retry nudge withheld"
+   ],
+   "exported_sha256": "68da8b63211315921dc762e290578d2d0e2664ca68a064c5af7702fa84c3ba7b",
+   "frozen_md5": "8b8ea07886384755900ac3205eedb5d3",
+   "frozen_sha256": "e10becb233b3c384c920f7eb5adf660219bbee928d09dfd3f87e68655039314e",
+   "source": "experiments/crossfamily/scripts/frozen/gemma_protocol.py"
+  },
+  "experiments/crossfamily/scripts/post_ext.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "b8365b111dc94a2e738eef2162c83de1e6c527fcc50dde172515eb993755d9c7",
+   "frozen_md5": "4b6df14a3c712146c63c5f650c9e0152",
+   "frozen_sha256": "3594c3fcd7989a754795c81238fe8922a747cc22be2ec705280f9dd9efe63a2f",
+   "source": "experiments/crossfamily/scripts/post_ext.sh"
+  },
+  "experiments/crossfamily/scripts/post_v2.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "2572287e82e13686922d854b61479da78fbdc08b75ba3cd0c1ebc7c28c2c10e5",
+   "frozen_md5": "ba88720de488063c5cc40204a35ba7f4",
+   "frozen_sha256": "d1d9917cf1b6fb17d527c56bbfd90cce292de69d326ec71f8ae47f8f75568c41",
+   "source": "experiments/crossfamily/scripts/post_v2.sh"
+  },
+  "experiments/crossfamily/scripts/prep_all.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "0e07c53387af916ca01450c27961983737824c9a0fddcdfd3b253b309d49c980",
+   "frozen_md5": "45ac13fad035225e104a8d4022397daa",
+   "frozen_sha256": "def121ace62e2941e35e00fd4b902fb739b5f653a00871042be9b1bb6ff49ddd",
+   "source": "experiments/crossfamily/scripts/prep_all.sh"
+  },
+  "experiments/crossfamily/scripts/prep_heldout.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "b62c748fed8d0ea87a4bde0e2455b36953e0b8ab1f4372c25b62c76fb426e883",
+   "frozen_md5": "c684adf5ff9062711c64a473e9808a73",
+   "frozen_sha256": "355127d1966c53a6c8846f4a7d3a8539b98b186a9c84d3e7e6c3369bfd90c0e3",
+   "source": "experiments/crossfamily/scripts/prep_heldout.sh"
+  },
+  "experiments/crossfamily/scripts/prep_prompts.py": {
+   "changes": [
+    "3 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "9a94c2ce98136259868ae3fd80ac669eb5e49a363d12cb5dc95fdcc2a9fb5f56",
+   "frozen_md5": "7b1783f35bc3eea3585386a92fdd84b6",
+   "frozen_sha256": "3bb06320b94ebc3259a28952d055921875bea26ec61921cba95d5e648657daff",
+   "source": "experiments/crossfamily/scripts/prep_prompts.py"
+  },
+  "experiments/crossfamily/scripts/prep_rest.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "6e1f03f36b87ffb0950ff5e1749c8e196c47514a11554b4bdcdd8b2d54086423",
+   "frozen_md5": "bb89c8e423fd14bc92a6508be339a60d",
+   "frozen_sha256": "1f69deb5c761cab59dc4f0e1765729e66cdbf0f0d629243a3cd32e2cbace4bf2",
+   "source": "experiments/crossfamily/scripts/prep_rest.sh"
+  },
+  "experiments/crossfamily/scripts/qwenproto.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "b992b10ef1ab47fcbedb58cf162b2132f3380e02c7461393a55902f875d3f87e",
+   "frozen_md5": "a4f8ad82339e06b7168d648f375f7404",
+   "frozen_sha256": "2f9ea1bba75c92bb5adc61c166fe78477cd41b58d5d156db860205c8af08c6a8",
+   "source": "experiments/crossfamily/scripts/qwenproto.py"
+  },
+  "experiments/crossfamily/scripts/report.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "1e87f36559e466bb759dbb153d9c418554455a5442f401ddd204d1e2bd2ccff1",
+   "frozen_md5": "bd9d0db3391d4bb15f4d5c13d68c18f7",
+   "frozen_sha256": "379191bc4a900f8c4ea28817b8cbcdccc3243c5c6736b16277f7158d2c43d0f5",
+   "source": "experiments/crossfamily/scripts/report.py"
+  },
+  "experiments/crossfamily/scripts/run_chain.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "be946e28c726354de8e3aa4a21f5b8cafda711beffb89aeb443dd5bb0d553d84",
+   "frozen_md5": "ddd20de81562ee2ab4de802443d0b54a",
+   "frozen_sha256": "575422bea62bdae85e7b39de9c67dba836da28decbf449101584930c697c1149",
+   "source": "experiments/crossfamily/scripts/run_chain.sh"
+  },
+  "experiments/crossfamily/scripts/run_ext_chain.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "80df639f53222295997bb56402dc30be067dbff5b6cd45f49e675602cdcfe193",
+   "frozen_md5": "dfa0ab5d58bd45bb608d4fc493f4cbdd",
+   "frozen_sha256": "655177d0aaae782508008a3ec1f976923d170f30e9e4f1678412a67d38fbeadb",
+   "source": "experiments/crossfamily/scripts/run_ext_chain.sh"
+  },
+  "experiments/crossfamily/scripts/run_v2_32b.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "c2ede63057f1ee8e7d75bff7ac60f99d33deee2b1a8da735d63ef0eac6fd7603",
+   "frozen_md5": "491aff38b9a3aa40b0d2e6f77615eb96",
+   "frozen_sha256": "1835539d06222d2eaa37d4dcf39e87595be4c09123df65b542c3729391117da0",
+   "source": "experiments/crossfamily/scripts/run_v2_32b.sh"
+  },
+  "experiments/crossfamily/scripts/run_v2_chain.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "fda67bf10a508c028d01bc0f40f10ef6c640d97390c8517db6e0f21ff0f73065",
+   "frozen_md5": "ce6e72085acc63e60b1ec12393ceac6c",
+   "frozen_sha256": "fd553857fff7f68863d55fdc5b44179bf0f090c3c28074f1e0454766407835a1",
+   "source": "experiments/crossfamily/scripts/run_v2_chain.sh"
+  },
+  "experiments/crossfamily/scripts/smoke.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "655bd24df0cc6baf0e1fad65fcea458c110ac49c7e5074008073f3fb73188000",
+   "frozen_md5": "8a4415e6cc06863b58861edddd056a4d",
+   "frozen_sha256": "0b72db87b859b4879d0cc15aaff62e9888e64460799b65ebb5b62b0eb8516ca7",
+   "source": "experiments/crossfamily/scripts/smoke.py"
+  },
+  "experiments/crossfamily/scripts/teacher_xml_slips.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "55f1ee470b148752f1330f7915bb02e8902654ac8de742b72f810bdb41310c50",
+   "frozen_md5": "46f933bdc978022ec393d5978813e518",
+   "frozen_sha256": "d7cc9f10c79cc57e1053b417922b5914cbe7bbaae9691ab8d235ad21994fff05",
+   "source": "experiments/crossfamily/scripts/teacher_xml_slips.py"
+  },
+  "experiments/crossfamily/scripts/v2_frozen/arms.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "6c78ab40fd2f7a022e1e60d80cb050029898656838a66312da9666d250b3a840",
+   "frozen_md5": "93a89222bce615bdb81b4110c3c13cba",
+   "frozen_sha256": "0ba18acc06d1b1e907159bb9df54fd2112f41084459c94e56b95f3f978ff3f7c",
+   "source": "experiments/crossfamily/scripts/v2_frozen/arms.py"
+  },
+  "experiments/crossfamily/scripts/v2_frozen/frozen/a_variants.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "2f2845240f8214d9a6f50f57c9696559dbaa1a7c8874e95b777d85fce94ebb53",
+   "frozen_md5": "6717e4e3044e6d2347caaad2da150059",
+   "frozen_sha256": "ec174797e9ab5592d3eae50b3a622a4533fd2473db70effb4d7cd881043e4474",
+   "source": "experiments/crossfamily/scripts/v2_frozen/frozen/a_variants.py"
+  },
+  "experiments/crossfamily/scripts/v2_frozen/frozen/gemma_protocol.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups",
+    "privacy redaction: host_path_harness 1",
+    "M9 competition-harness retry nudge withheld"
+   ],
+   "exported_sha256": "68da8b63211315921dc762e290578d2d0e2664ca68a064c5af7702fa84c3ba7b",
+   "frozen_md5": "8b8ea07886384755900ac3205eedb5d3",
+   "frozen_sha256": "e10becb233b3c384c920f7eb5adf660219bbee928d09dfd3f87e68655039314e",
+   "source": "experiments/crossfamily/scripts/v2_frozen/frozen/gemma_protocol.py"
+  },
+  "experiments/crossfamily/scripts/v2_frozen/qwenproto.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "64142c1c710637b9f369459d870e0135eaa9d63d7ee7ec51f01c91f820e3ec06",
+   "frozen_md5": "512784c83094a9d4d8edec80ab1fc797",
+   "frozen_sha256": "e7b1ba38aa5f6234c2a2fd4f3af091b1249d2f5e2772bab5f2d415819605e009",
+   "source": "experiments/crossfamily/scripts/v2_frozen/qwenproto.py"
+  },
+  "experiments/crossfamily/scripts/v2_frozen/v2_prepare.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "62599d015eb41dbae2b6ff0370045561b29a2d6270345364358a1881bbfaafad",
+   "frozen_md5": "b22f82e9ff3bf3bafaea32df3130a87e",
+   "frozen_sha256": "90af36b0938ef42ff0918375445334c0766181880fad84f3a801296ee68b524c",
+   "source": "experiments/crossfamily/scripts/v2_frozen/v2_prepare.py"
+  },
+  "experiments/crossfamily/scripts/v2_prepare.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "62599d015eb41dbae2b6ff0370045561b29a2d6270345364358a1881bbfaafad",
+   "frozen_md5": "b22f82e9ff3bf3bafaea32df3130a87e",
+   "frozen_sha256": "90af36b0938ef42ff0918375445334c0766181880fad84f3a801296ee68b524c",
+   "source": "experiments/crossfamily/scripts/v2_prepare.py"
+  },
+  "experiments/endtoend/RUNBOOK.md": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_other 1, host_path_repo 8",
+    "1 host-root pseudonym(s) neutralized (data / home root pseudonyms -> <host-path>, <home>)"
+   ],
+   "exported_sha256": "5d6db4e4ddd3a9eaaac529e53b251a2980a702c9ada3ca59282f3faaa4a57f7e",
+   "frozen_md5": "4938364a8cd0e9b35dfcc3fe57609708",
+   "frozen_sha256": "1aa5d97ba6127dc7df9a83b0e6930dde7d7e6ff78b489f071cbd25765889c00d",
+   "source": "experiments/endtoend/RUNBOOK.md"
+  },
+  "experiments/endtoend/acceptance/FREEZE_CANDIDATE.txt": {
+   "changes": [
+    "privacy redaction: host_path_repo 1",
+    "pseudonymized: context_id 1"
+   ],
+   "exported_sha256": "6da93d7f9e1aaadfee1573f78389d0f8dde45f279c94b5c7cf4bcbf3fc87e916",
+   "frozen_md5": "bc740637cf3eabdb191d2ec60af056d4",
+   "frozen_sha256": "be205772946deef76dc36640fbf00f2a57b786a0f13704f20e4eb68d7d3a78e4",
+   "source": "experiments/endtoend/acceptance/FREEZE_CANDIDATE.txt"
+  },
+  "experiments/endtoend/acceptance/p1_quotestorm_efix.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "916d6de4d39f84e0bb6084104e213e158065a9eb69dc5db37cd3980f54f850ea",
+   "frozen_md5": "fc3e28df23d93c096f5c1caf2e7d0055",
+   "frozen_sha256": "deec2adb58c659227a9f829737262ae9b73be3172e4c926ebe813b95d40c214e",
+   "source": "experiments/endtoend/acceptance/p1_quotestorm_efix.json"
+  },
+  "experiments/endtoend/acceptance/p1_quotestorm_freeze_candidate.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "0d685bd7b77e0bb9f59185eac64b432490272e5d91677435f9e5d40d31e96877",
+   "frozen_md5": "fefd6061c3eab9e87d39285e5a2ab59b",
+   "frozen_sha256": "4811cc0f0e4ebd7bc573f0b497c21664f95d8348b7bfd94275bddd1e57bca1ba",
+   "source": "experiments/endtoend/acceptance/p1_quotestorm_freeze_candidate.json"
+  },
+  "experiments/endtoend/analysis/branch_fidelity_corrected.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "e5c514a9951dd99cdf1dc66648b13882b01333fe8d7b7bf4100eb81376cf1a4a",
+   "frozen_md5": "16c56fd042c69ef8d648e928791fc535",
+   "frozen_sha256": "600a494b580e279190d56671751a39e0a7dbe8c3dd187c1fcfceba7191bfeddb",
+   "source": "experiments/endtoend/analysis/branch_fidelity_corrected.py"
+  },
+  "experiments/endtoend/analysis/build_branch_plan.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "237d3db1d3744ccdce730a1dd673672377ee716f332a8e49eb959bd1985b17f8",
+   "frozen_md5": "e65056c6004ac69db663beec0c5edc21",
+   "frozen_sha256": "010bb8b1c5c1d0bcb72a809fc7ab8f710d6a1ee3bdcd845f525451a50d936ed3",
+   "source": "experiments/endtoend/analysis/build_branch_plan.py"
+  },
+  "experiments/endtoend/analysis/failure_log.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "b7b97970812b3e8dfa4806293c44b8e886ad123a030e55ad59473bdc6bebf9ec",
+   "frozen_md5": "e94c4deee3ae916702050ac82ccf40bb",
+   "frozen_sha256": "01226b5090381397b1c4cbd6a6d7d979e15832dbda64804d85e4343af51e3e6c",
+   "source": "experiments/endtoend/analysis/failure_log.py"
+  },
+  "experiments/endtoend/analysis/make_results.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "b378b7456a32cac7a000fdcf9519d8094050f726a748b5371133255f5bff5567",
+   "frozen_md5": "cfd5dd8abd100c1ee3a529380eba9b6a",
+   "frozen_sha256": "4c17d385114b7c5741765abdf1c84c7dfeedeb0dbf9beb305c7a6201aaf57b8c",
+   "source": "experiments/endtoend/analysis/make_results.py"
+  },
+  "experiments/endtoend/analysis/pilot_metrics.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "1317f285940d2646e484f505897a091ea3e31a42b3d75d08d2d6e533426eca3f",
+   "frozen_md5": "43005898dcb379343869c45c0be24f2c",
+   "frozen_sha256": "2105bb0cb52c71efeffca25e33b3db4dcc0df773ac2dfb0f0065bcb276a9f97a",
+   "source": "experiments/endtoend/analysis/pilot_metrics.py"
+  },
+  "experiments/endtoend/analysis/prereg_analysis.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "d30cc724fd594146b5e6cc585da6483adf5d8e936b44e4b11a199bf0541cfbf6",
+   "frozen_md5": "895476bbb4fba2277d2e27ef3b01641f",
+   "frozen_sha256": "1f8fca3ad11295dbff74c57feda4781a3a979d7e2b46db7feb4d328246dfbf76",
+   "source": "experiments/endtoend/analysis/prereg_analysis.py"
+  },
+  "experiments/endtoend/configs/channel_prior.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "aa99ed7a4d14e8ce9a75b005efbbfb4d266c91050118ab7d93e4519721c26c4a",
+   "frozen_md5": "dfcdeb1f4c8bd805b4141ad7f995257a",
+   "frozen_sha256": "bb48bb9a544e383bf3cec06755840044a5fd87bc3db8b5ec4392eb80e602e5eb",
+   "source": "experiments/endtoend/configs/channel_prior.json"
+  },
+  "experiments/endtoend/configs/client_tools.json": {
+   "changes": [
+    "M9 competition-harness tool descriptions stripped (9)"
+   ],
+   "exported_sha256": "cc7c5cec295dfa0e4b6898ab8bae26435dc3cb413557cfd358d15c32f57528bf",
+   "frozen_md5": "60eb0e0b7ab4daee148df543e25d8860",
+   "frozen_sha256": "6fd81fd1692d97eb4cee1035e17a185d62b3e9c4e67056364dc8fecb72dceb66",
+   "source": "experiments/endtoend/configs/client_tools.json"
+  },
+  "experiments/endtoend/ext/dispatch_awq2.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "8f27ffef07699f86be1ec9e3be28385df160986bf10440d99f3fcf00c70e9343",
+   "frozen_md5": "dafde8223827b57b7f4905a0cbbc5aad",
+   "frozen_sha256": "faa381ee9fc95648c45451d0742896bf28c36511b1cb5e50b79f726861712b89",
+   "source": "experiments/endtoend/ext/dispatch_awq2.sh"
+  },
+  "experiments/endtoend/ext/dispatch_ext.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "b835437e236feb5ee925f5cd06e2a07e528ab8884cc023194f288ca7a99c0cc8",
+   "frozen_md5": "19ef1e45c755fcad0bc95aae118fd71f",
+   "frozen_sha256": "88c6ed5145b2cff731b56f960cac563ec637dce20bc1c6020645583309611bbf",
+   "source": "experiments/endtoend/ext/dispatch_ext.sh"
+  },
+  "experiments/endtoend/ext/dispatch_q.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "e66d1d447d187b69bcf6e930829b7585faee6f255294d692c8cf509318f4747c",
+   "frozen_md5": "508ab335b138e825f6221f66a45e7ee6",
+   "frozen_sha256": "199456d530d72361f599baa2bb3b8110ae4ac0bd4d49225d6bcc4d8c6987ee94",
+   "source": "experiments/endtoend/ext/dispatch_q.sh"
+  },
+  "experiments/endtoend/ext/run_awq.sh": {
+   "changes": [
+    "1 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "6cc9ce0a081ee3c754338ca72147e64328c6a78b80a791c145592027918b98da",
+   "frozen_md5": "766f390e358a13a39e371d0c4c65a53a",
+   "frozen_sha256": "4029fcc4e4409e754ae0746aadf76a01ee5aa63e81b0afb4951bde52fbf61e34",
+   "source": "experiments/endtoend/ext/run_awq.sh"
+  },
+  "experiments/endtoend/ext/run_final_analyses.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "00b07ae4229b7483edec2503be1240f30718cf5989d5fc177370a365220737d2",
+   "frozen_md5": "fcb052f28afddfbe7611ff498802a4a9",
+   "frozen_sha256": "012c76384422d5ba666fdab4a2e07cb4d234c0962e64fe7a6561f68fce886ba7",
+   "source": "experiments/endtoend/ext/run_final_analyses.sh"
+  },
+  "experiments/endtoend/harness/common.py": {
+   "changes": [
+    "3 path literal(s) -> env/config lookups",
+    "privacy redaction: host_path_other 1",
+    "1 host-root pseudonym(s) neutralized (data / home root pseudonyms -> <host-path>, <home>)"
+   ],
+   "exported_sha256": "dc6c0777e2aac3e6197f6ae885b47e79ebe72285f3fce0831eaeb06fdfe260df",
+   "frozen_md5": "1d6a9642ceadee6844adac6bbeda21c2",
+   "frozen_sha256": "0bcd18bc1596ef8ef41135c5e355dfd195aed4138393aa3b38f55a83332ba5bb",
+   "source": "experiments/endtoend/harness/common.py"
+  },
+  "experiments/endtoend/harness/wheelsel.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups",
+    "privacy redaction: host_path_harness 1"
+   ],
+   "exported_sha256": "1343947b22750294d487dab04d07fa5fa5ab64b8e81bbbde5384e9aad464425d",
+   "frozen_md5": "f8027bc94e0ad288644610d08e6f9f15",
+   "frozen_sha256": "a34e2dc0947cdb0d6903b1d7d0981622d9382e3e86ca19caf3d367ab66d53bdf",
+   "source": "experiments/endtoend/harness/wheelsel.py"
+  },
+  "experiments/endtoend/proxy/VENDOR_B.txt": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "d8e1fe0fd14729f610195f8504201bf2c02ba3d01a204e6c2539b61e634a36ea",
+   "frozen_md5": "f674d21cc6b4fadb6a6cc3f52b9dc189",
+   "frozen_sha256": "013a703b13ea3ed6bf33205b346377e887f9e821a32885023fdfe8ce6830d292",
+   "source": "experiments/endtoend/proxy/VENDOR_B.txt"
+  },
+  "experiments/endtoend/proxy/e2e_proxy.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "32df5235d938b7ba093176375f0b8163032c432ca8836f4cbcb210de51288930",
+   "frozen_md5": "a9ebfe3d534d10f42c7f22538fb5ec9b",
+   "frozen_sha256": "a7e62cc17d5b120c7660e9de002913990ffefa4d44917e1506f8bbc11fc5d597",
+   "source": "experiments/endtoend/proxy/e2e_proxy.py"
+  },
+  "experiments/endtoend/run_branches.sh": {
+   "changes": [
+    "4 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "2de999f734256eb34c05c784f8097c6420a6bed87b46df7c1eb0639d27583e75",
+   "frozen_md5": "4dbab25eb4c172ad4c2ae11c803f9d40",
+   "frozen_sha256": "af1486cc072f39de239695ef9359398a598be6e7f4a39c9c19966199ddfbc72e",
+   "source": "experiments/endtoend/run_branches.sh"
+  },
+  "experiments/endtoend/run_chain.sh": {
+   "changes": [
+    "1 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "9cc6e34a1b608675c2a559f5327715fc8fa06e2b8187feaad0bff6c6d54d6fc0",
+   "frozen_md5": "2ff162711d4f3d7f00c6d096c9ffb164",
+   "frozen_sha256": "2652493080fd575250ce2b8c8bb8d256679b2eded456bdb4494a3b8f2d149a10",
+   "source": "experiments/endtoend/run_chain.sh"
+  },
+  "experiments/endtoend/run_pilot.sh": {
+   "changes": [
+    "5 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "0d27ff5c6cfa89734b417bae28c3cb9342aa778a033b4af8d7faded4d73ac1d4",
+   "frozen_md5": "2896b0e7eb9e71eceaf21cdf9d44a562",
+   "frozen_sha256": "433472aa3fc9708f45965832c036d5960d777ac07cd719da32f0f8909650c417",
+   "source": "experiments/endtoend/run_pilot.sh"
+  },
+  "experiments/endtoend/run_population.sh": {
+   "changes": [
+    "5 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "1e5e5573bccaf0cf8bce635b1145a644db230513cec7aefc8bea17e049f41669",
+   "frozen_md5": "52779b563a77182f7b826dab020a470d",
+   "frozen_sha256": "ef09af67b5b38f556cc6b68e9b8e0feff5cdb9e9e9a412f437f644ed19f05127",
+   "source": "experiments/endtoend/run_population.sh"
+  },
+  "experiments/endtoend/run_population_qi.sh": {
+   "changes": [
+    "5 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "fa3de0d8a836438b727d8c1ce65c380e0b6c1b7d2a0cbcbe4aff72075ef1b023",
+   "frozen_md5": "adc1921ec77d502f003762ff4a5072f6",
+   "frozen_sha256": "33459c10222ffbad607313398b8b5c626e8c1f96764d344870c3e529bfbf513a",
+   "source": "experiments/endtoend/run_population_qi.sh"
+  },
+  "experiments/endtoend/tests/run_branch_test.sh": {
+   "changes": [
+    "4 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "bbc211ed32f68e1dec6ea091abf4d09f43ea640c6033a52ba8c7e91869b06cd8",
+   "frozen_md5": "709159c2f30c85d2f91eddede0d78128",
+   "frozen_sha256": "2d1219bd181ae2e6e926c31b50d02bd4df3dedc9b0ff708c70d1f7d7fe126937",
+   "source": "experiments/endtoend/tests/run_branch_test.sh"
+  },
+  "experiments/endtoend/tests/smoke31.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "effbe265c311bab8a2539e2dbb291997a390115b9f30f3037db11b7aa443c20c",
+   "frozen_md5": "c1dc9a4cef63b2f02e3717b528a90e07",
+   "frozen_sha256": "c543b06e89801700191222f111fdf54d51c2217ad8a1aacee478a3090befb462",
+   "source": "experiments/endtoend/tests/smoke31.sh"
+  },
+  "experiments/endtoend/tests/test_generate.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups",
+    "pseudonymized: context_id 1"
+   ],
+   "exported_sha256": "115e282a09cb7a39b9c8346a415f0b167229016f76b58b4df8da9a05aae44713",
+   "frozen_md5": "479bcbcbacdd376f54e1f7cdb71ac5f1",
+   "frozen_sha256": "1151f6bb650130e2e681f8d988ea9a31a4bb032096271b4aee7b46d0e1b34c02",
+   "source": "experiments/endtoend/tests/test_generate.py"
+  },
+  "experiments/endtoend/tests/test_ipd_real.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "6af6c903b1b75f2d7bddab9884a12eb88106674fe7f082b30a5f7afdd3621390",
+   "frozen_md5": "9c2445650f37a972a1e1b928f1544409",
+   "frozen_sha256": "830f0b068491dd5969e4d8f9711959abce35d8c1d12f5028c158f619bd507f13",
+   "source": "experiments/endtoend/tests/test_ipd_real.py"
+  },
+  "experiments/endtoend/tests/test_parity.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "34ff2b9f59d6eb5c7b5c7b7a1fcc9d6a9111633f657084284db696594cb5b083",
+   "frozen_md5": "d3610941615beb8aabfe99b9695b1f66",
+   "frozen_sha256": "1f9b48d15eba2947beb32af55cc8e7bd771157bbcb1cb9b6b7a1163b04b7685e",
+   "source": "experiments/endtoend/tests/test_parity.py"
+  },
+  "experiments/endtoend/tests/test_protocol.py": {
+   "changes": [
+    "3 path literal(s) -> env/config lookups",
+    "pseudonymized: context_id 1",
+    "B4 stray-']' hang-input checks dropped from the public copy"
+   ],
+   "exported_sha256": "67460dee87e7527e1383676b7c89c4c01fba8fd1728d158495c2fc164c3a9005",
+   "frozen_md5": "4b4d7ca97b34bf46806131312823778f",
+   "frozen_sha256": "57391fa7e73661bea451d69acbe3a513213824de053dcac09a3d367a6211e4eb",
+   "source": "experiments/endtoend/tests/test_protocol.py"
+  },
+  "experiments/endtoend/tests/test_proxy_e2e.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "b3410480d95e6ab3ae4d08ebd4bffbb95f657ae73106809b083ecaa0965c14ee",
+   "frozen_md5": "7ef82c7de32dc8e59a35c320765cfbe9",
+   "frozen_sha256": "fde6de7e048fe7717de655acdb211fdd435bc3106f14c687e8ec8015bf7607e0",
+   "source": "experiments/endtoend/tests/test_proxy_e2e.py"
+  },
+  "experiments/endtoend/tests/test_renderer_compat.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "80b8af5bca3a8232179f4e976e996d9e8ea5c6f417905a8d3dd6fab454f3e833",
+   "frozen_md5": "c3fe03d7c06f84e991682ef4d983f170",
+   "frozen_sha256": "715333104a0c5e3d603b128f380b40ae1ae52a6ae93ffc7647a936d67c033fbb",
+   "source": "experiments/endtoend/tests/test_renderer_compat.py"
+  },
+  "experiments/endtoend/tools_freeze.sh": {
+   "changes": [
+    "1 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "0f284d0205583cac2f546c13216f6c9faa44ff2f2f83fd3d17abde2a9f67aa03",
+   "frozen_md5": "da4ae01d35349373ebe2db61bf91b302",
+   "frozen_sha256": "f12c31a27fee2940bff0d7fb2aadda13e8711ff10fab62fbf2a47d0feb83ed11",
+   "source": "experiments/endtoend/tools_freeze.sh"
+  },
+  "experiments/format_census/census.json": {
+   "changes": [
+    "privacy redaction: host_path_other 1",
+    "1 host-root pseudonym(s) neutralized (data / home root pseudonyms -> <host-path>, <home>)"
+   ],
+   "exported_sha256": "bf54cec7ef16db45ea6c3d4a392a4985f987933b7d185b734fd9a06ec19b0d00",
+   "frozen_md5": "ba42d07fced2879a8daedd7a8a8d73c3",
+   "frozen_sha256": "9623396a1e1a6d7e556e186392db5eb76b6fc932e9d3c200905492112807f937",
+   "source": "experiments/format_census/census.json"
+  },
+  "experiments/intent_decoding/README.md": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_other 1, host_path_repo 2",
+    "pseudonymized: moved_tree_path 1"
+   ],
+   "exported_sha256": "ebe8de635b048e3510649b0d5770bf7f80718f365f39d37ce74eb7fb0b7c4885",
+   "frozen_md5": "ec02851707e99a627c9d2fdf8c643fb7",
+   "frozen_sha256": "629a0a1a680b039f5f028cb3c2eee93c0263bd076dd476b71101ac414dfa82e9",
+   "source": "experiments/intent_decoding/README.md"
+  },
+  "experiments/intent_decoding/README_files_section.md": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_other 1, host_path_repo 1",
+    "pseudonymized: moved_tree_path 1"
+   ],
+   "exported_sha256": "9b7e3fb2ce4aa9aee7e83efae43b601799fa1971b4fb9ef1990909c6a57ddc2d",
+   "frozen_md5": "74d089ca9a0cf57761d8ec7c7d67be3b",
+   "frozen_sha256": "157cd0799e7587add6e8c3f59293821184097f66dac21b2d24f40c76d8ac3f3b",
+   "source": "experiments/intent_decoding/README_files_section.md"
+  },
+  "experiments/intent_decoding/README_head.md": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "6dfaf8140dd87746f81bb5190b0c9d54c41ea5102eefd6a9104480ce7486c9b8",
+   "frozen_md5": "3fa69c8539b173f1af445d68122f1fe8",
+   "frozen_sha256": "939a74bf4ec718fcadee84f7c50fc687fbd7b255e5e4e5902fdebe30cc3f2f3a",
+   "source": "experiments/intent_decoding/README_head.md"
+  },
+  "experiments/intent_decoding/analyze_g1r.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "56bcefb96e2e248200a64b9b22d74ceec4a07ab75757e58bb92d11d7265bcd30",
+   "frozen_md5": "9df27982d03d8b8d5aabc8f1c13aaf22",
+   "frozen_sha256": "af975a08419cff79833b6a45638bdf1e0e1ad4db8fef911aea95e0c97900b1b2",
+   "source": "experiments/intent_decoding/analyze_g1r.py"
+  },
+  "experiments/intent_decoding/analyze_replay.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "1a5afe944f1e87603dd2ea7a7bf5e523d9064f7dba1a195b653a600af034a92d",
+   "frozen_md5": "6f91d875c1e732b818724df6baedde14",
+   "frozen_sha256": "f189650f09fece91f83bc5c2a4bd918932bfb2bbef5095548c2fde9e6bebb9cc",
+   "source": "experiments/intent_decoding/analyze_replay.py"
+  },
+  "experiments/intent_decoding/build_gold_copy.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "9306e14a65945000b2d3e68da2ba593229409bee77f67811c6174d731be5dcac",
+   "frozen_md5": "e5a9cc4fc303a0155ab1e1d81b8c9aa4",
+   "frozen_sha256": "f71c35917ee47e47885da1456f39ee5dc2ebec786a3110b6b22a06319d8ade3b",
+   "source": "experiments/intent_decoding/build_gold_copy.py"
+  },
+  "experiments/intent_decoding/confirm/confirm_gold.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "a96a94f2eb851d812519201f944a8ae6f580e197e9624d407a3be6e2fe8ea279",
+   "frozen_md5": "2f47ee0459571a11243088e76e057fb7",
+   "frozen_sha256": "334468751e6d5e1b69747668b9a0bc56a81353a9c9e7e0d6ca00926011e66b83",
+   "source": "experiments/intent_decoding/confirm/confirm_gold.py"
+  },
+  "experiments/intent_decoding/confirm/confirm_runner.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "b0a4e08cf947a5c685d3b59b41f17818f31ccb2cc81b025d8debdfcb13b4ef73",
+   "frozen_md5": "e166fd7ccce5f003b1e642e6b4f658f4",
+   "frozen_sha256": "1b97a414e512808b0be2b27cb689fcf8ea7e781b89b0c903e1fae5a2bcf78471",
+   "source": "experiments/intent_decoding/confirm/confirm_runner.py"
+  },
+  "experiments/intent_decoding/explore_tok.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "e4fde8bf689668eedc88c6cbd00ce9201572a8d7589a9ccc7c4d806f3785b5a3",
+   "frozen_md5": "da7c0f22e6ac3f7b45e40a8a2bcf2fbc",
+   "frozen_sha256": "b13b15d4a6c421d611330c04c1aebf6ac20892e7566483b1b53d63a6ceb0e07c",
+   "source": "experiments/intent_decoding/explore_tok.py"
+  },
+  "experiments/intent_decoding/g1r.py": {
+   "changes": [
+    "3 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "f2b09681ac0dd9bf3a5069b6d9111f6db6b9d2611e6513a6a84f92f6da4d8b37",
+   "frozen_md5": "bf0b2d72e7d64fd469030641937652bf",
+   "frozen_sha256": "05d214175b5e3fb30a4596466439ea009c446e03b1eaa531454a39cdcba8fe07",
+   "source": "experiments/intent_decoding/g1r.py"
+  },
+  "experiments/intent_decoding/map_repair.py": {
+   "changes": [
+    "3 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "5244522c806cc1c0726bd2d9ce67577467a9bb7db96a22b3c84eb4a7b68a99fe",
+   "frozen_md5": "dd9b24879ffbedc8024c3bb4cbc240d7",
+   "frozen_sha256": "1b436229865380aeb714b5688e62115fd73c20e555b11caf80b567377d57c7a6",
+   "source": "experiments/intent_decoding/map_repair.py"
+  },
+  "experiments/intent_decoding/mine_logs.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups",
+    "privacy redaction: host_path_harness 1"
+   ],
+   "exported_sha256": "980f4ad57e07a169b6f22be9e37e2a0f3fb4b51c8ad7c6b61f3a2ea4f15b2bbd",
+   "frozen_md5": "e0d8d7059f7ef53c1c9209f9666b2421",
+   "frozen_sha256": "3ec9a405451ff897dd2a330fdb620b72399025913f916dce94d2d3ea85ab8497",
+   "source": "experiments/intent_decoding/mine_logs.py"
+  },
+  "experiments/intent_decoding/mine_payloads.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "55ad447c7720488be59b105a21d5f109993a4795fb4c96f55307c3dbfd99263d",
+   "frozen_md5": "204939b8a1bc35479a4c9d27ab29e936",
+   "frozen_sha256": "7c1ff75c3b225d7deea2eabff355cfc9e3eb4433ae396ea6107602b2cde1a35e",
+   "source": "experiments/intent_decoding/mine_payloads.py"
+  },
+  "experiments/intent_decoding/out/confirm_selftest_manifest.json": {
+   "changes": [
+    "M9 competition-harness tool descriptions stripped (6)"
+   ],
+   "exported_sha256": "ae11e3b81ca21e225957e6ce46abe1c5f6fd11dc20772586c8e5f23dabc3e4fb",
+   "frozen_md5": "f7db0bbceae89f37f473fbcb957b2bfb",
+   "frozen_sha256": "bf01083063f8b1fc8704e18c1271df5399cc45f3d8b6a131755a05f795fa7223",
+   "source": "experiments/intent_decoding/out/confirm_selftest_manifest.json"
+  },
+  "experiments/intent_decoding/out/proxy_eq/_cases.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups",
+    "pseudonymized: context_id 4"
+   ],
+   "exported_sha256": "ec2faea3b180a80c9ed8d2c5d5c04dd27845810f4d850b29bd49bb419f810195",
+   "frozen_md5": "a7b4155ea14bdded2925f6f77bf27316",
+   "frozen_sha256": "036c68ddd1663636e4a7dd4284afb3da937968f1835ba090a40dcaeea8054c86",
+   "source": "experiments/intent_decoding/out/proxy_eq/_cases.py"
+  },
+  "experiments/intent_decoding/out/proxy_eq/_g1check.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "65d273fb1105c6931684dd2be78867f81c00c9f6009e5b51418b3c571728a503",
+   "frozen_md5": "8c75a3b665b0878ee14506f7612edbe9",
+   "frozen_sha256": "3f555083d1217ed4b3c45cea1f6bb432fbdf17e15b0be81192deb52137eaf046",
+   "source": "experiments/intent_decoding/out/proxy_eq/_g1check.py"
+  },
+  "experiments/intent_decoding/out/proxy_eq/_render_cmp.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "11953672358562505bfb121b7b4c7da6b0b5ddb6b45be560f8ad1783e9b6d3fb",
+   "frozen_md5": "b7cfbbea4821881ea6212e7c90b027b0",
+   "frozen_sha256": "56178da657c5b9d6b6ba1990da797f2b109345802909aaa090deb450da70fb61",
+   "source": "experiments/intent_decoding/out/proxy_eq/_render_cmp.py"
+  },
+  "experiments/intent_decoding/out/proxy_eq/_rt.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "d4c1b0d208598096156d1e1713c8ea73910bf75bfa0084e04d659b86a55580a2",
+   "frozen_md5": "fbc2a4d7e28fc5d4cc7559bf9cc1c041",
+   "frozen_sha256": "e1eb359eeb6c358dc49b77192b602b2ec49ff9aca6fba7606f3c1e844530476d",
+   "source": "experiments/intent_decoding/out/proxy_eq/_rt.py"
+  },
+  "experiments/intent_decoding/out/proxy_eq/offline_gate_efix_summary.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "f43ec8e9c75008a000f20af74f93397db4ee8bfc3a4248c8bc11d4f9376feebb",
+   "frozen_md5": "02edd6e523bee106e1b38084385cf104",
+   "frozen_sha256": "acd2600d7242662cae7c1f0313229f497a8232046fffb43085261bab371e4f49",
+   "source": "experiments/intent_decoding/out/proxy_eq/offline_gate_efix_summary.json"
+  },
+  "experiments/intent_decoding/out/proxy_eq/offline_render.json": {
+   "changes": [
+    "pseudonymized: context_id 10",
+    "M9/m11 discovery render windows masked (20)"
+   ],
+   "exported_sha256": "8adba8749291d37abc9b3ca5879036d967c38f86246f847d3eff4f4c17c819cf",
+   "frozen_md5": "7748ca6674c611f8ac9463b5edcc608f",
+   "frozen_sha256": "29750bcf70b3667950756b604b86195804f81dbf89f177ae436f435cde3202ac",
+   "source": "experiments/intent_decoding/out/proxy_eq/offline_render.json"
+  },
+  "experiments/intent_decoding/out/proxy_eq/p1_quotestorm_prefix.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "3d9eb461e5062fef402bb443938eecdac3c83391025817ac6c66e4c34dd99af3",
+   "frozen_md5": "48705494dfe48239c11ada16549e3687",
+   "frozen_sha256": "d0ff8a6834b18489a23bfa01607627f598f949a345f8063e6454b02254d287ab",
+   "source": "experiments/intent_decoding/out/proxy_eq/p1_quotestorm_prefix.json"
+  },
+  "experiments/intent_decoding/out/proxy_eq/p1e_quotestorm_efix.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "4ad69067d7f2be0486f7f1d4a43f4428673398e02ce62081afa716b4e753c06b",
+   "frozen_md5": "dfe19c5aa8c00a66702df46d68fe1dfe",
+   "frozen_sha256": "7ccf84708925fb834a01112006a57d18efe84bbaaf92ff2f38cf1128a4ed81e4",
+   "source": "experiments/intent_decoding/out/proxy_eq/p1e_quotestorm_efix.json"
+  },
+  "experiments/intent_decoding/out/proxy_eq/p1e_quotestorm_efix_renderer6b08.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "c2cb7f0eda85a08c5f387f309cd17741db820a67ce6586ab276cd649e5555040",
+   "frozen_md5": "ef513947a734c039f314e0b9749efdce",
+   "frozen_sha256": "893951cca2ca0aa1b988abd084358f3fc811c528f81cf32b54cbb569626bc90e",
+   "source": "experiments/intent_decoding/out/proxy_eq/p1e_quotestorm_efix_renderer6b08.json"
+  },
+  "experiments/intent_decoding/out/proxy_eq/p1e_quotestorm_prefix.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "58350b9587710be700e85e423bfc5fb7f82a4415ef85292160c5fa3e63689fb9",
+   "frozen_md5": "f017dde4ce1c99580d7ed15a5bb988c4",
+   "frozen_sha256": "cb3842deece6d5e2b5811a94a46e6fa082c6fef31b61321faf5742bc43903d2c",
+   "source": "experiments/intent_decoding/out/proxy_eq/p1e_quotestorm_prefix.json"
+  },
+  "experiments/intent_decoding/out/proxy_equivalence.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 8",
+    "pseudonymized: context_id 18"
+   ],
+   "exported_sha256": "95d23e7c4a0fba9e15bb1a2c3d4460dae24c691a947b01da3ae9bbfd5f0912f1",
+   "frozen_md5": "2c7c5d7b3d4ebf98f435b753161b3219",
+   "frozen_sha256": "8c7399d8a8ae9195eb621469227cbc04958ed0eb9cfab02718918481176bdd30",
+   "source": "experiments/intent_decoding/out/proxy_equivalence.json"
+  },
+  "experiments/intent_decoding/paths_override.py": {
+   "changes": [
+    "privacy redaction: host_path_harness 2, host_path_other 2",
+    "pseudonymized: moved_tree_path 2"
+   ],
+   "exported_sha256": "54d2f67bf2bca4570fccff7114cdaa5c1bf45941dd87253ba676c05c4c3bb4da",
+   "frozen_md5": "ec7ae5efcfa063623628f8dfb0abff1b",
+   "frozen_sha256": "b1ec28d9902e15b0dd384fe579127e5abef8c588412bbcd88cb1e4fc6dfe4ea9",
+   "source": "experiments/intent_decoding/paths_override.py"
+  },
+  "experiments/intent_decoding/proxy_equivalence.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups",
+    "privacy redaction: host_path_other 1",
+    "pseudonymized: context_id 1, moved_tree_path 1"
+   ],
+   "exported_sha256": "eabec86c6bef4e3c29caeb9cce838a3d60306d0a03c93de59334419e9d543cdc",
+   "frozen_md5": "f3cffe5323656c46272d1bc090f262bb",
+   "frozen_sha256": "9d3692a9318cf6795a86d5587ceb1088ee8764aaa4129f3f99d0072075e2dda2",
+   "source": "experiments/intent_decoding/proxy_equivalence.py"
+  },
+  "experiments/intent_decoding/proxy_vendor/proxy/e2e_proxy.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "2ef4123612a681a813d721d10cc9255d42388b8b69d9590115cc925cc4aeb2e7",
+   "frozen_md5": "c0a2c928519228af5086989e25429bb0",
+   "frozen_sha256": "0c2a52780ea433f36e9701229c290493f6e75db4c562990e7dc58fb399535dce",
+   "source": "experiments/intent_decoding/proxy_vendor/proxy/e2e_proxy.py"
+  },
+  "experiments/intent_decoding/proxy_vendor_fix/proxy/e2e_proxy.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "32df5235d938b7ba093176375f0b8163032c432ca8836f4cbcb210de51288930",
+   "frozen_md5": "a9ebfe3d534d10f42c7f22538fb5ec9b",
+   "frozen_sha256": "a7e62cc17d5b120c7660e9de002913990ffefa4d44917e1506f8bbc11fc5d597",
+   "source": "experiments/intent_decoding/proxy_vendor_fix/proxy/e2e_proxy.py"
+  },
+  "experiments/intent_decoding/quotestorm_model.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "0104f43ed6c302ea4730d5a6c28ba5011e1ef8e976eb7306195f17ecf5d760c2",
+   "frozen_md5": "0fb57a422d805b410759f268398ac2e0",
+   "frozen_sha256": "8846ff6d351394210d8029a6b37f910909cca1ebab7b79b2802282cf53aa0c3d",
+   "source": "experiments/intent_decoding/quotestorm_model.py"
+  },
+  "experiments/intent_decoding/replay.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "0741d655f8b6b9dbc15e2ce4c1e333074c61f1602aa9b5bff8f6baff299855c9",
+   "frozen_md5": "0ad44814cebf7958111faa6918dcb487",
+   "frozen_sha256": "6d96864c6a60bfbd44c90c8adc41733697cc97e196be53a120fac03fca06900f",
+   "source": "experiments/intent_decoding/replay.py"
+  },
+  "experiments/intent_decoding/replay_utils.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "9355b32ffa119792997f17b6a2c71e12106dfdb7016d81f49673bab8dab2dee7",
+   "frozen_md5": "c839329215550426f3c66c48a565ff1d",
+   "frozen_sha256": "56cc9c447461fb93ff6419fb77222d9f4e2c1ff9ad6da8d11cc395a11f4236da",
+   "source": "experiments/intent_decoding/replay_utils.py"
+  },
+  "experiments/intent_decoding/results.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 7",
+    "pseudonymized: context_id 18"
+   ],
+   "exported_sha256": "d975c53bb976dc7f8073009f676175e82d31ef212fe897e62aef3d576ed97047",
+   "frozen_md5": "5d2e726d7fe92f3506f901167d497467",
+   "frozen_sha256": "baa00b35d53fc4325fadd493482c55fd685e3593b6cac6151a1ad0041b452465",
+   "source": "experiments/intent_decoding/results.json"
+  },
+  "experiments/intent_decoding/rs279.py": {
+   "changes": [
+    "3 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "578be58639e7b910e61396632e7efc222b84d8cab735cb3d217685f00d105d55",
+   "frozen_md5": "9a4fa68a85f81ebd551d9520d8010bf2",
+   "frozen_sha256": "57a67b4338184d3785b0eb5d88a1f44d60ac31e40a4977241be3aa362b248c4a",
+   "source": "experiments/intent_decoding/rs279.py"
+  },
+  "experiments/intent_decoding/v24/analyze_battery.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "912ff656dc56d007eccbdee04b45a72778c3f51ec43c89faf3505e6943610463",
+   "frozen_md5": "9e91f850f47c344d3ffacbfb5a40370c",
+   "frozen_sha256": "25a5d20c42fd8f0e15bd64e5bba34a48cb465d44ba32a420bf74ff529f70151b",
+   "source": "experiments/intent_decoding/v24/analyze_battery.py"
+  },
+  "experiments/intent_decoding/v24/battery_inputs.jsonl": {
+   "changes": [
+    "privacy redaction: home_dir_user 3, secret_assignment 1",
+    "3 host-root pseudonym(s) neutralized (data / home root pseudonyms -> <host-path>, <home>)"
+   ],
+   "exported_sha256": "0ade2124ec33f231a30a0a5146b22b3ffe7d96d42298040050e13c2f0199a912",
+   "frozen_md5": "63f4d38ff6d9022a19351cb3e57b18fc",
+   "frozen_sha256": "f5c7839eb68279dff072013a467e80e51449d79a436f57d558cff041410a1348",
+   "source": "experiments/intent_decoding/v24/battery_inputs.jsonl"
+  },
+  "experiments/intent_decoding/v24/battery_manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "cb86c083cc4bd12f8160d5f0466c79337cc1b42b21afaad2cf5859ce95d1b224",
+   "frozen_md5": "3ee3a966fd1e65943c09408c66f06a0c",
+   "frozen_sha256": "366ab3da939235a50f240362095891bc754f69fe81bbb3383eb340cb729b5f22",
+   "source": "experiments/intent_decoding/v24/battery_manifest.json"
+  },
+  "experiments/intent_decoding/v24/battery_run.jsonl": {
+   "changes": [
+    "privacy redaction: secret_assignment 6"
+   ],
+   "exported_sha256": "3e099503f5d8318f9d270fe50c3fad9e3a4f421a1649eb8de11a79095be73001",
+   "frozen_md5": "ddb4e201ad7861bd4c77fbb2ca569c58",
+   "frozen_sha256": "ce230afcd99441472aec0122ec972c4917d307e4a8c6f9c1d6f8fad99345eb3d",
+   "source": "experiments/intent_decoding/v24/battery_run.jsonl"
+  },
+  "experiments/intent_decoding/v24/build_battery.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "643b532dde14a981097632d67c24a3b4b7eada1ee81f030d35597ced78bedd1b",
+   "frozen_md5": "2ad8f98c370cd03c562764fe3b954ff0",
+   "frozen_sha256": "ba09d2c4c546c6588ea4e629a6472e714f760936c0d8554d26b89b05de33920a",
+   "source": "experiments/intent_decoding/v24/build_battery.py"
+  },
+  "experiments/intent_decoding/v24/run_battery.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "ad44a5cbf04f7dc43d43df2a04b023f657d213285f89a1e912d803ff6220d8fb",
+   "frozen_md5": "7c3c5299efcfcb552f6a18c4866393bd",
+   "frozen_sha256": "08bf695d058891005ccf8205ed450ef0b8b28be174c224155cc23fe767dda62d",
+   "source": "experiments/intent_decoding/v24/run_battery.py"
+  },
+  "experiments/intent_decoding/v24/run_manifest.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 2"
+   ],
+   "exported_sha256": "0b32d24ab9cfe967ba68270d42a1b288540e7541d6af1940b7a17fcd2c5af6b7",
+   "frozen_md5": "d73d208dcd3820d363a35d2b71d2c8cb",
+   "frozen_sha256": "7890dc36db418f823819f0470d3e5627723be7d0a2eeb9cb38ce30ab2c960141",
+   "source": "experiments/intent_decoding/v24/run_manifest.json"
+  },
+  "experiments/intent_decoding/v25/out/live_f2.jsonl": {
+   "changes": [
+    "privacy redaction: secret_assignment 2"
+   ],
+   "exported_sha256": "ad468e005c9b5a064c25f5b4a956e65e81c93ca3f6312c5832f60ead0b18935e",
+   "frozen_md5": "a9e03d22bfe0cc7c64477fa5fc961d74",
+   "frozen_sha256": "81b98c6e79ec9c7609bc5fec8192c1ccfd745215fe0574e296a502a971f1eab8",
+   "source": "experiments/intent_decoding/v25/out/live_f2.jsonl"
+  },
+  "experiments/intent_decoding/v25/out/live_l1.jsonl": {
+   "changes": [
+    "privacy redaction: email 2"
+   ],
+   "exported_sha256": "49f2e0cdbfbe66ea7cf60050e4f9705b80f46b1b7e1dbd553354215ce6df3318",
+   "frozen_md5": "397f5a6ab8ca48226555519a436ba6a2",
+   "frozen_sha256": "556b0af6932ef9f6bea91b278d73ec74d48e81d9a8dfde26f38e481f22402124",
+   "source": "experiments/intent_decoding/v25/out/live_l1.jsonl"
+  },
+  "experiments/intent_decoding/v25/out/replay.jsonl": {
+   "changes": [
+    "privacy redaction: email 2"
+   ],
+   "exported_sha256": "e25e1ff76191e14646b0efa64c6f87a08dedef10b1abfb77ac0a15334ff2952f",
+   "frozen_md5": "4fa16b8b5677bf5252d8cba500884fdb",
+   "frozen_sha256": "46e5781127644cdfeae1f64f00c2f6ca2e8d5577fa724e6ff024ca7d38b79ba3",
+   "source": "experiments/intent_decoding/v25/out/replay.jsonl"
+  },
+  "experiments/intent_decoding/v25/stack_runner.py": {
+   "changes": [
+    "4 path literal(s) -> env/config lookups",
+    "editorial override (1x): the library lives at slipguard/ in the public tree (sys.path entry for slipguard/src)"
+   ],
+   "exported_sha256": "fe1b2a7aa1a70b15b69ffa90e2f8fa3091b0a1902e19e4caaa5a1d2be03f12ef",
+   "frozen_md5": "60a6adb02ace94b697699acbd406918f",
+   "frozen_sha256": "d3440af4c0d85c208e7aae921e9310d5eda3cfb38687735147f2bf98fcd6b872",
+   "source": "experiments/intent_decoding/v25/stack_runner.py"
+  },
+  "experiments/intent_decoding/v25b/out/preconditions_e4b.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 3"
+   ],
+   "exported_sha256": "0eac71e6b08e37d95e9f9647676fe3e46c9e8f477c4683624cd66d74f22699a9",
+   "frozen_md5": "b94b397a431ae6c3a534a944cd5ab6bf",
+   "frozen_sha256": "3c422c2ca3d20ef468360050837619ebd0ddf5720d48fa0bb8e51d0eb31e10db",
+   "source": "experiments/intent_decoding/v25b/out/preconditions_e4b.json"
+  },
+  "experiments/intent_decoding/v25b/stack_runner_e4b.py": {
+   "changes": [
+    "4 path literal(s) -> env/config lookups",
+    "editorial override (1x): the library lives at slipguard/ in the public tree (sys.path entry for slipguard/src)"
+   ],
+   "exported_sha256": "a572955e3837805cffb3946a0fe1b2f1c0e28dd22248b0292d0dea918a82a51d",
+   "frozen_md5": "aefb643d5739402901eaf708865be26f",
+   "frozen_sha256": "f3e4d7aeac1390ff95f04cd3c79118ea285f5eeb797328ceb51c84e97e8324ac",
+   "source": "experiments/intent_decoding/v25b/stack_runner_e4b.py"
+  },
+  "experiments/pnc/README.md": {
+   "changes": [
+    "privacy redaction: host_path_repo 2"
+   ],
+   "exported_sha256": "318dfa38df09845fa0fffce2be1ad3340eb0bfb1d7debbc12f6339d0fc1410d5",
+   "frozen_md5": "5548b9a9cf9e427484138cbfda64eb5f",
+   "frozen_sha256": "1bd48a6f3dbcfdab2a6ae6b5eff2ee84d631e2fce5d6b7b419797a45327d1fa7",
+   "source": "experiments/pnc/README.md"
+  },
+  "experiments/quant_margins/README.md": {
+   "changes": [
+    "privacy redaction: host_path_harness 1, host_path_repo 1",
+    "pseudonymized: run_or_adapter_name 1"
+   ],
+   "exported_sha256": "1b25a25842895e849a86a77399bb693b61b93f73f54c14bbc32b68dfe09ee0c1",
+   "frozen_md5": "1f64430268753c90d267106868697f5a",
+   "frozen_sha256": "3b476f2186df3f13b4e5a7a8dea905f624690e04b134f5d5b2b56af48965f982",
+   "source": "experiments/quant_margins/README.md"
+  },
+  "experiments/quant_margins/wsa/ANALYSIS_PLAN.md": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "ce5651b621e3399ed3a6ce77ccdb9eacfa7b0c6f5fdece156b6eb3cb152048e7",
+   "frozen_md5": "d0d71172f74e4d226d67e6441da071cc",
+   "frozen_prefix": {
+    "bytes": 6443,
+    "sha256": "c67d049a0649246b40f738f27c7706dac353d6207f28a1e082769bbb03982ceb"
+   },
+   "frozen_sha256": "8f2eb2aa7a662462de47ef86f6cd261f415ad7263974608b32c1b188cdf4c096",
+   "source": "experiments/quant_margins/wsa/ANALYSIS_PLAN.md"
+  },
+  "experiments/quant_margins/wsa/RESULTS.md": {
+   "changes": [
+    "privacy redaction: host_path_repo 1, host_path_scratch 1"
+   ],
+   "exported_sha256": "37e4823b3c9e936cc7113514af6ad4695693ad2b32c5ed8b2167b36317e3c550",
+   "frozen_md5": "e36144c9490bcea637320ce5e5e97746",
+   "frozen_sha256": "73fefc23256fcd9cb07fd5211ec8b7f04d7c9be90ea3b1db40dd6502dce51b16",
+   "source": "experiments/quant_margins/wsa/RESULTS.md"
+  },
+  "experiments/quant_margins/wsa/candidate_a.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "8b12a5ac8a3362e1bd635b3848215021b9d8c9a59d0427178cd9e2a6e60455f5",
+   "frozen_md5": "34292b17eafaf1db79795a09e1892f5c",
+   "frozen_sha256": "2fde36c5a0de2d35d805e10063e02ce312704bc2a1540ac42472910567c2c94e",
+   "source": "experiments/quant_margins/wsa/candidate_a.py"
+  },
+  "experiments/quant_margins/wsa/diag_wiki_probe.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "82289cf9dbc9aa7034eec2cb0e8b826167ec624ed1c145c472050b5dafc18737",
+   "frozen_md5": "216d52d212946172e51875f803812c2e",
+   "frozen_sha256": "09c5610c4cce2ec7346f23295f0bc9381920209b8cb916003d29f4205e8e21e6",
+   "source": "experiments/quant_margins/wsa/diag_wiki_probe.py"
+  },
+  "experiments/quant_margins/wsa/dl_community.sh": {
+   "changes": [
+    "4 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "03162bdcfc136c9108bae22b58a2a0b4134238c7f95a959f2408151e8d7c71d3",
+   "frozen_md5": "358172a86fd4e952e1444ff6e05539af",
+   "frozen_sha256": "b73758f042dfe7e0a26a9739fcdf40710c10d904df925cd5016124a7d74243cf",
+   "source": "experiments/quant_margins/wsa/dl_community.sh"
+  },
+  "experiments/quant_margins/wsa/dl_qatunq.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "a0be3b9dfa358fd0649444516454ecda7d518dd9711d567f4b58b1ce42a27a00",
+   "frozen_md5": "cf1328e8e312a703f1fe9cd914e598e2",
+   "frozen_sha256": "20417bb524f635777c0feaa9bc0aa7fd2757391249fd102d1e6e0fb56c3efd92",
+   "source": "experiments/quant_margins/wsa/dl_qatunq.sh"
+  },
+  "experiments/quant_margins/wsa/gate_eval.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "1e3d6222a86326933d08c2438fa393cb4bafd672e76ac027e76e20e25d413314",
+   "frozen_md5": "0889198836fede7525ddd3aaedcb8c69",
+   "frozen_sha256": "f53edb95b5fcf7e4860aeec27bd84c8f2c35e4d4c2ed7da00bf1a742f87e959b",
+   "source": "experiments/quant_margins/wsa/gate_eval.sh"
+  },
+  "experiments/quant_margins/wsa/gpu2_lineend.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "17293397aa2cab98501f307f619ab0515e1ef571ad0232d23186db89f568315c",
+   "frozen_md5": "e02277192e2c4eff41293a3cab492451",
+   "frozen_sha256": "8ddbb782995c9e406324e79abae583b2bc7097343960b25e8495d682d29a3f58",
+   "source": "experiments/quant_margins/wsa/gpu2_lineend.sh"
+  },
+  "experiments/quant_margins/wsa/gpu3_B_then_sweep.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "e811f86c7cd8161025641962a1f5d3e1c975a4ec705a37d06f17eb6bb59de134",
+   "frozen_md5": "6f7653fb2f165f117e92ec7010a9cf8b",
+   "frozen_sha256": "1b760b9e1393e9765cade3c7bb8012fa514e833bcd5668b349ac89e74efee7a4",
+   "source": "experiments/quant_margins/wsa/gpu3_B_then_sweep.sh"
+  },
+  "experiments/quant_margins/wsa/gpu3_C_gate.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "878f35c05e6c10b328b6b8b4d23136c64806b413a707b27838f46407ab3e1cd4",
+   "frozen_md5": "f8329a886152078df054a3ca2ab30871",
+   "frozen_sha256": "c3777febec11e80805ad28f34d2b4342b441d15a973765b70e5cff830eca7f84",
+   "source": "experiments/quant_margins/wsa/gpu3_C_gate.sh"
+  },
+  "experiments/quant_margins/wsa/gpu3_chain.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "a62f7f6bf2b4a2ae4190c5a712f5d2094501695ce0daac449192b65cce194ea5",
+   "frozen_md5": "7d14e445501e149f8814bda4cb82349b",
+   "frozen_sha256": "42849306790ed081255c4df801dd82496950e11241764310fa18305d07b57bd8",
+   "source": "experiments/quant_margins/wsa/gpu3_chain.sh"
+  },
+  "experiments/quant_margins/wsa/gpu3_chain2.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "6ec2b18f863db3b3e69d612a546dfb6c2b668c3652d2fbe9f126d29ad8f5bd51",
+   "frozen_md5": "a71b17c68fd81def17158a1773c4df30",
+   "frozen_sha256": "2b73d43b1ad2e534108075adbf122a4153aad0d12b7d0f43bba50182bf97884c",
+   "source": "experiments/quant_margins/wsa/gpu3_chain2.sh"
+  },
+  "experiments/quant_margins/wsa/gpu3_sweep_after_floor.sh": {
+   "changes": [
+    "1 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "1ceb82ba4b75d3890de939ffce9c06d455cb783cafe72f01f2663dda6d254d5b",
+   "frozen_md5": "167b7caeef123a68d110436c2e08a86e",
+   "frozen_sha256": "89d5565cfb353db92b5fcd2778e00dbf41f8d8d3deffc892b7e8639085ef5fea",
+   "source": "experiments/quant_margins/wsa/gpu3_sweep_after_floor.sh"
+  },
+  "experiments/quant_margins/wsa/gpu3_wikival.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "64202c0fca8441aa816412068a8051bb05ca7963b579996a5a7dccb10d1d4215",
+   "frozen_md5": "7bff3aa3881344518a563c02b99b3504",
+   "frozen_sha256": "cbe4420a10fd209f9dbe1a3313c4f4a5e426e227fef0e85944a9e1b89d5eb454",
+   "source": "experiments/quant_margins/wsa/gpu3_wikival.sh"
+  },
+  "experiments/quant_margins/wsa/gpuX_cneg.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "453564222f5ab55bbb97a3f558fa6125cad3d92d4c7abe58017092e084744bd1",
+   "frozen_md5": "509bd32da1da18c3aedc03f815e8b9d2",
+   "frozen_sha256": "e2466b911714de54c774681883f02b5585268671304e429e173c0b29686b3b50",
+   "source": "experiments/quant_margins/wsa/gpuX_cneg.sh"
+  },
+  "experiments/quant_margins/wsa/hf_extract.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "481d04c651da11d842bfce1649e2ff295c3d9b3eb9e80c6100d3f087a7f1501d",
+   "frozen_md5": "d45a46b25aed9a4464abe239cdc990c7",
+   "frozen_sha256": "af40312fe392dd5b4ad224e6e1b2545bc3f72e6adc804da210626f300ac70184",
+   "source": "experiments/quant_margins/wsa/hf_extract.py"
+  },
+  "experiments/quant_margins/wsa/lora_smoke.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "d04681cbb7e92025bc022ef1e78ef156162c23a610cbd81659601be4c95fd86d",
+   "frozen_md5": "df82e0098af16019be7b4d32f4be9602",
+   "frozen_sha256": "2511f36b27d9cb661ebc6fc34f4d091192687a6ebb5fbb5fee21e87d3f6cd403",
+   "source": "experiments/quant_margins/wsa/lora_smoke.py"
+  },
+  "experiments/quant_margins/wsa/make_smoke_adapters.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "9fa6f34e612744e13ea78196b0113cebd9d1104a9141a5e9f81ffa3e24a215de",
+   "frozen_md5": "d303de3df93ef687dd12af131023d255",
+   "frozen_sha256": "edae8277f61f3f10681c92b7f7fcb2ee02dbb14c0cd705923d5a455ce887bcde",
+   "source": "experiments/quant_margins/wsa/make_smoke_adapters.py"
+  },
+  "experiments/quant_margins/wsa/out/byte_identity_floor.json": {
+   "changes": [
+    "privacy redaction: secret_assignment 6"
+   ],
+   "exported_sha256": "e8f285e9f5ea8fed3df9d62605d1c6e9add6e5e19bc138e476c74369c9472da9",
+   "frozen_md5": "f0ddcb7b91817efacda62b3d763e7c5e",
+   "frozen_sha256": "bec4dec1faf972046566ffe600c65caa84b3f6c83ebb5411639992e3f9b4d71e",
+   "source": "experiments/quant_margins/wsa/out/byte_identity_floor.json"
+  },
+  "experiments/quant_margins/wsa/out/byte_identity_repairA.json": {
+   "changes": [
+    "privacy redaction: secret_assignment 4"
+   ],
+   "exported_sha256": "54107f2a3a6f12a51088a97570d70d22c7e152962c2a293c965c4ac8635836be",
+   "frozen_md5": "9da7c04966da0a9234f444d10809a40c",
+   "frozen_sha256": "0c97bd8791fb567f3a403378edfba653f8ae525e301ffb44f65d767d6623f491",
+   "source": "experiments/quant_margins/wsa/out/byte_identity_repairA.json"
+  },
+  "experiments/quant_margins/wsa/out/repairB_fit.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 3"
+   ],
+   "exported_sha256": "f6dc78cd6aa7aedf487eb9198f778f15051f236fa183b3e836f9964fe7c3fff4",
+   "frozen_md5": "e05b9da2a6c3a70884e4fb7c85a2e897",
+   "frozen_sha256": "a4f1ba76f27a94530e988250abd0299031bb3501afe0907fcd64c0fa1c62cb66",
+   "source": "experiments/quant_margins/wsa/out/repairB_fit.json"
+  },
+  "experiments/quant_margins/wsa/out/repairB_selection.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 3"
+   ],
+   "exported_sha256": "34ac1d4947d86e28383c5bcc375d184a6ca78e8b3aa8b5793f552205d7923056",
+   "frozen_md5": "d30aee45432df9b34cfdae235fcd0c41",
+   "frozen_sha256": "6f9403c86c0029ca5729aa6bd749ff5504fc7d40c27fb860bb1b029a49e5dbbc",
+   "source": "experiments/quant_margins/wsa/out/repairB_selection.json"
+  },
+  "experiments/quant_margins/wsa/out/repairB_selection_lineend150_superseded.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 3"
+   ],
+   "exported_sha256": "1a16f9a7688a4ab6f1f5396a3dbc4fd359e6fd0ff0d3f9f901aebe908e36f532",
+   "frozen_md5": "584283e4e9a9bd4e63bed0e07bbd50df",
+   "frozen_sha256": "d00623492c0349633a2864b25f1df8785110020a82c9d6862f960f6dd29130e2",
+   "source": "experiments/quant_margins/wsa/out/repairB_selection_lineend150_superseded.json"
+  },
+  "experiments/quant_margins/wsa/out/repairC_fit.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 3"
+   ],
+   "exported_sha256": "12b2330645c0315e22c7d4c1a84a32d35274d41f6752b135fe3f0128e9853360",
+   "frozen_md5": "1dc62e1c479ad57751e0adf63def01a4",
+   "frozen_sha256": "b70b8ae05608a2c306ac3b3f65068e0927735572f31ae1a459ae3bfa44544879",
+   "source": "experiments/quant_margins/wsa/out/repairC_fit.json"
+  },
+  "experiments/quant_margins/wsa/out/repairC_heldout_final.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 3"
+   ],
+   "exported_sha256": "1a4569b3f8f7b3b49ccfcfd90b8aaf0b1bd8d15071cdc8acbe385f6b4c6e8683",
+   "frozen_md5": "7968d52c688ea4584e048a5e02245707",
+   "frozen_sha256": "edb3dde7aef74ad3f056248a3d7f33d234a0797c493e08ce63a8c858455e604f",
+   "source": "experiments/quant_margins/wsa/out/repairC_heldout_final.json"
+  },
+  "experiments/quant_margins/wsa/out/repairC_selection.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 3"
+   ],
+   "exported_sha256": "5be838191864983878c50f7b38b3316032670643f013dceada34245101fc699d",
+   "frozen_md5": "01e2f512b853d385e914bd67d6b9fad7",
+   "frozen_sha256": "dbea7c5bc16f1ffb0272a0c4521e03f09b9fb804f17f9c2c7e430780e8d79900",
+   "source": "experiments/quant_margins/wsa/out/repairC_selection.json"
+  },
+  "experiments/quant_margins/wsa/out/repair_heldout_final.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 3"
+   ],
+   "exported_sha256": "a6a8acba729893d0b9c4615af93c3df877862db5cc91a47e2d1fa754c931e80a",
+   "frozen_md5": "d100a528f5954898d08a38a1248c9b7d",
+   "frozen_sha256": "4a8361ec771281583bef4471df7debaf0ce7e4df578e10b26a17eb13a85fa146",
+   "source": "experiments/quant_margins/wsa/out/repair_heldout_final.json"
+  },
+  "experiments/quant_margins/wsa/out/repair_innercv_300_stageA.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 2, host_path_scratch 1"
+   ],
+   "exported_sha256": "376fed20d9602b25940d70551948a19522d7754e8ba93e9088aecbd5bee3aaca",
+   "frozen_md5": "3233c853a44fc417bfd71c0a1db2d1be",
+   "frozen_sha256": "2d7bd9f790016813c298f3225798788905ce79e41f9d991c13998d47b807a39b",
+   "source": "experiments/quant_margins/wsa/out/repair_innercv_300_stageA.json"
+  },
+  "experiments/quant_margins/wsa/out/repair_innercv_300_stageB.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 2, host_path_scratch 1"
+   ],
+   "exported_sha256": "fee09fccd3b2e171a319da16b5f32649411cc8ad3d9606994046bf87a3e013b5",
+   "frozen_md5": "4b5b7b2f3daf36aa67fdf8734cbbcf6d",
+   "frozen_sha256": "8f3b85dc10ed4a59f3254e49a21d579c3310532247ad4346031b61c91e7ed3b0",
+   "source": "experiments/quant_margins/wsa/out/repair_innercv_300_stageB.json"
+  },
+  "experiments/quant_margins/wsa/out/repair_innercv_full.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 3"
+   ],
+   "exported_sha256": "1722b6ecbea3a751140234f9503177627b06546f4631a03ee819c529f8765688",
+   "frozen_md5": "54a7b248ebc0f54d2bac614ec0995e4b",
+   "frozen_sha256": "e2541cce20a4f88dc69a32a7b82e5ec4437849fcf270346888af2ef0dff3af91",
+   "source": "experiments/quant_margins/wsa/out/repair_innercv_full.json"
+  },
+  "experiments/quant_margins/wsa/out/repair_innercv_full_wiki.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 3"
+   ],
+   "exported_sha256": "fd72c09dc3f7d95f31327018a2df84a5e60ac06637890abda9f84b87eaaacc48",
+   "frozen_md5": "8b820a5e58b1e35d65897e509c1e6a5d",
+   "frozen_sha256": "cad9ab2f58e27f68fbb7eda289f68c83c14718745ed7c0a1ef912cb2f29a25c3",
+   "source": "experiments/quant_margins/wsa/out/repair_innercv_full_wiki.json"
+  },
+  "experiments/quant_margins/wsa/out/repair_selection_final.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 3"
+   ],
+   "exported_sha256": "56f8c9f992f1a068a6929ad45c5ddc66d6b04c66930d30b8b6a1ff4f6d67c34b",
+   "frozen_md5": "5e4393e37cc665d2ae86921339645c8c",
+   "frozen_sha256": "16fa22315b40874b244a2d47e9e8adaf86690ff4634b72f27fa7cb24dbd0a8c1",
+   "source": "experiments/quant_margins/wsa/out/repair_selection_final.json"
+  },
+  "experiments/quant_margins/wsa/out/t1_scores.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 3"
+   ],
+   "exported_sha256": "509fe2778029013333ff51b9b05c999ff842e4a56f163eb5ff1550777a1f7d60",
+   "frozen_md5": "d944a0d7f39fec5554ed70eee6e5e9b5",
+   "frozen_sha256": "78f939c6586994c7561d426de2c0eda238430ac88bef3a681cab5984832efbe6",
+   "source": "experiments/quant_margins/wsa/out/t1_scores.json"
+  },
+  "experiments/quant_margins/wsa/out/t1_scores_bf16.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "20f1128483fc92cfc76aebbbe54b83a054cc9909bd08c64387aec7c7ef361a32",
+   "frozen_md5": "b51dd493b52182799aa2a8bc75ab3ac4",
+   "frozen_sha256": "d66a7d775605e942deeacfcfe70c5587b33d6613d4ebca097e8272949d114fa2",
+   "source": "experiments/quant_margins/wsa/out/t1_scores_bf16.json"
+  },
+  "experiments/quant_margins/wsa/out/t1_scores_partial.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "833a85a83c50958166c882ca7bb93d828a599317c2199876bfbef29c7762923c",
+   "frozen_md5": "562b2826ab6943fc949480b865fe7c3a",
+   "frozen_sha256": "f2345108dc8efea329cd68dc89b4966db384d85efca6a3553b304e0138e9e200",
+   "source": "experiments/quant_margins/wsa/out/t1_scores_partial.json"
+  },
+  "experiments/quant_margins/wsa/out/weights_proxy.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 8"
+   ],
+   "exported_sha256": "7ad814ed2f19073d6a96728a40f16ea3e09fa8aa3978c5ae62ada7fd7f44672d",
+   "frozen_md5": "7114b1506e93624b95f6cfaae2a73c60",
+   "frozen_sha256": "879ebea9708572eed83dccd9ac2327274262f04ad3e305f3fd84dd5eb97bcb21",
+   "source": "experiments/quant_margins/wsa/out/weights_proxy.json"
+  },
+  "experiments/quant_margins/wsa/pnc_render.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "f16fca390b5f29777cdf586b19ece8e5b4bf3642493af22aa71de2f32ac09707",
+   "frozen_md5": "07fc6d0f7ef4b67ccb2eb80edaea2390",
+   "frozen_sha256": "ef570722d0963fd7b895ad16db7b088f0afbe58587007545fdff59cecc49de2e",
+   "source": "experiments/quant_margins/wsa/pnc_render.py"
+  },
+  "experiments/quant_margins/wsa/repair_memit.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "39011e07f01ea5e422a886f042aabf54f24aa532b05583fee8375af278b684e4",
+   "frozen_md5": "baa301f5ab8ae7bd75d61033f36297ab",
+   "frozen_sha256": "f04c6cb7cec442bc4d33d4f7683f2996e4315f1db5f877046941901cb7bee8ff",
+   "source": "experiments/quant_margins/wsa/repair_memit.py"
+  },
+  "experiments/quant_margins/wsa/stack_d.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups",
+    "editorial override (1x): the library lives at slipguard/ in the public tree (sys.path entry for slipguard/src)"
+   ],
+   "exported_sha256": "7bda916ba93eb1933d25a477c125bf20d16cdde8ff86c57078d3e3a2337bdf16",
+   "frozen_md5": "c6d2a220f79002d19e53fec9a092780a",
+   "frozen_sha256": "1a230125ceda5f5052f5ba6b44567409f014b56abdcbfc5837c9087a7874977c",
+   "source": "experiments/quant_margins/wsa/stack_d.py"
+  },
+  "experiments/quant_margins/wsa/t1_sweep.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "8f4ddbcd71ae1d1ccbfe9498fcadb997c5f8e7836729e8b0263b1c9fb4fdd274",
+   "frozen_md5": "f79b963eeaec9445fc3ef50f9681b8d3",
+   "frozen_sha256": "840d4132ea0a2f4ab976d125bd273cfec8cdd535e287103f823c68ca403a3d32",
+   "source": "experiments/quant_margins/wsa/t1_sweep.sh"
+  },
+  "experiments/quant_margins/wsa/temperature_baseline.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "6bbb34f87b361d93048e0943ed402fb04dffd5b1b4c09cab39c8fbac1262c661",
+   "frozen_md5": "bfe56f81413a4b6a5d099ac72aa7bc41",
+   "frozen_sha256": "b2061bf1f77920fb708f545b03dd8681bed8d5a25d53f27680248aa3d7836a1b",
+   "source": "experiments/quant_margins/wsa/temperature_baseline.py"
+  },
+  "experiments/quant_margins/wsa/weights_proxy.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "6858fc3ed04b30b611794c1d56ee19a8da4032f067b11709d2b43fb042107f4b",
+   "frozen_md5": "73805119712331040e0698a0e7c836b5",
+   "frozen_sha256": "1aad241a6f6191bd302926884e57084f51f2d0773d9c0a615e3baa4d1876f4e5",
+   "source": "experiments/quant_margins/wsa/weights_proxy.py"
+  },
+  "experiments/quant_margins/wsa/wiki_crosscheck.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "ee265f68216308fb995ed4adaa4ea901e70a936ed182b701fb7bea5c2062cffd",
+   "frozen_md5": "72c2022f958c8c944c8781c74690bc92",
+   "frozen_sha256": "dc3cb67e01f5ca2effb0b3699b90fd637472a4af61001d5e3620569506c997ac",
+   "source": "experiments/quant_margins/wsa/wiki_crosscheck.sh"
+  },
+  "experiments/soak/out/aborted_K1_165752/run_K1.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 2"
+   ],
+   "exported_sha256": "0b4f995aa50d6c541093bf9ddc0790f82c4f274b1b43050f8d174643d1022316",
+   "frozen_md5": "f900c6af03dfe94ca5dae5e69d5dce65",
+   "frozen_sha256": "98eaf6f9b37550b7e2caaf17b87a68e4a6e6be0672d58bc25be04c4f09b1177c",
+   "source": "experiments/soak/out/aborted_K1_165752/run_K1.json"
+  },
+  "experiments/soak/out/proxy_logs/proxy_fullp.jsonl": {
+   "changes": [
+    "privacy redaction: email 10, git_author_name 1"
+   ],
+   "exported_sha256": "d9f1d0bc134576744556599d3701e752671f243b595d580850b671042390d3ce",
+   "frozen_md5": "bc12984ff70643e3a8c728b8300edafa",
+   "frozen_sha256": "eb2dfb2fc6ee9329d55b674a0a77ce7fd51a26ff8ddabf3ea4cd26f91beed016",
+   "source": "experiments/soak/out/proxy_logs/proxy_fullp.jsonl"
+  },
+  "experiments/soak/out/run_K1.done.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 2"
+   ],
+   "exported_sha256": "ca1c14625c6595eb6eaa77c5b619efa492c47e5747965ac184aa1e5317b888e5",
+   "frozen_md5": "4a12be4f6d57cb7843fd9edccdca4605",
+   "frozen_sha256": "15f90fa3388f66d2538c1932fd5b01f2e576fd8d97fa3f8f176ec1538c70110c",
+   "source": "experiments/soak/out/run_K1.done.json"
+  },
+  "experiments/soak/out/run_K1.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 2"
+   ],
+   "exported_sha256": "74c122febd848ae65aa60bc592b2f3adec3576e4f155aca139d2f49ded11c852",
+   "frozen_md5": "81d5f3f356b7e5fbecf8280b68982f46",
+   "frozen_sha256": "d3cd63f8efa1e5a10645587b5d0de8234bbdc973daf080d31753b6f990b80022",
+   "source": "experiments/soak/out/run_K1.json"
+  },
+  "experiments/soak/out/run_K2.done.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 2"
+   ],
+   "exported_sha256": "17af60729cbba5ee09ace057fa516f5afff533217025a9c9f74f4f2a0152ae2c",
+   "frozen_md5": "0a82dcb330864a0204e2ccd3873fb9fc",
+   "frozen_sha256": "4f89bb247256b87a47183f42fdf1c0674e04847909510839d4ddba1020e85c0e",
+   "source": "experiments/soak/out/run_K2.done.json"
+  },
+  "experiments/soak/out/run_K2.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 2"
+   ],
+   "exported_sha256": "f6ba2444479c6b59bc842fdeeb1f8b8c58381f1f6170c330fab45ae4d69ec959",
+   "frozen_md5": "00fb6be68f40c562023b5e1238f2b4cb",
+   "frozen_sha256": "33f21a882dc93c990f3ec52dc5096dc363c67a7bbf7f8c4eab9c7a64c0daa206",
+   "source": "experiments/soak/out/run_K2.json"
+  },
+  "experiments/soak/soak_analyze.py": {
+   "changes": [
+    "2 path literal(s) -> env/config lookups",
+    "editorial override (1x): the library lives at slipguard/ in the public tree (sys.path entry for slipguard/src)"
+   ],
+   "exported_sha256": "50c225267e00adaccad0d12090292f3aefd65699e3206aea5fb23c84a66f12da",
+   "frozen_md5": "edaab6a6186c8763524850edbca81335",
+   "frozen_sha256": "f446092912181bc94c01c8547c30f5a51ec12b7811b2aef887060f19a1b36bcd",
+   "source": "experiments/soak/soak_analyze.py"
+  },
+  "experiments/soak/soak_drive.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "688e6842d4f26995d77da2fc58d213d86f30e1321dc04316dbbc370e16cdd5b9",
+   "frozen_md5": "a6726a8c4cc54e93594aff102bd15df7",
+   "frozen_sha256": "e229d4e4e1f716a4b2bbec4703b6246a9255accf33b6a2c76e4f9569ad749a3d",
+   "source": "experiments/soak/soak_drive.py"
+  },
+  "experiments/transcriptlab_cli/run_e2b/gen.jsonl": {
+   "changes": [
+    "privacy redaction: email 8, home_dir_user 1, host_path_repo 1200",
+    "1 host-root pseudonym(s) neutralized (data / home root pseudonyms -> <host-path>, <home>)"
+   ],
+   "exported_sha256": "4156afcdf5b0beab1e07919fd021761d893282f6b85c8999e17fdbf783320497",
+   "frozen_md5": "31f6bfcdeeaf97b8588aef0a090056d0",
+   "frozen_sha256": "080f0e8f35a6b539c53659b769bf6d3dc978adcfa511638f1eb3411d9f298dfa",
+   "source": "experiments/transcriptlab_cli/run_e2b/gen.jsonl"
+  },
+  "experiments/transcriptlab_cli/run_e2b/run.log": {
+   "changes": [
+    "privacy redaction: host_path_envs 2, host_path_repo 14"
+   ],
+   "exported_sha256": "c60baab7132f6dd642c354f8db0add24ce9a7e2e4fb6e5efa70be9eab33a7a60",
+   "frozen_md5": "28af38c1a3431cc18cd1c876e3ffb798",
+   "frozen_sha256": "757a5bba88cd66620fa0b1fb57dccc8f76487e878113aa25468a3ffcf2add0d4",
+   "source": "experiments/transcriptlab_cli/run_e2b/run.log"
+  },
+  "experiments/transcriptlab_cli/run_e2b/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 11"
+   ],
+   "exported_sha256": "41953536a38f5d963975c1c91628930008afbf894ac9ed3f7edc695a4e4df572",
+   "frozen_md5": "e2e1f0ddec72fce76c6a3e370a103b57",
+   "frozen_sha256": "91e70b44d29f5bef033b4f1e7c0bd29b4f99e1637604dba42dc678543d04f43a",
+   "source": "experiments/transcriptlab_cli/run_e2b/transcriptlab_run.json"
+  },
+  "experiments/transcriptlab_cli/run_e4b16/gen.jsonl": {
+   "changes": [
+    "privacy redaction: host_path_repo 1200"
+   ],
+   "exported_sha256": "10448c560875c59fe39d64b5451b0bfbe1cb28180095632329d5c332c1389062",
+   "frozen_md5": "3030be3d16f9b5d7359f0c27de3cd3bb",
+   "frozen_sha256": "1f2476709ff2d771387db5cc5a5d9b14d019d5486485192380fc7742d2212e23",
+   "source": "experiments/transcriptlab_cli/run_e4b16/gen.jsonl"
+  },
+  "experiments/transcriptlab_cli/run_e4b16/run.log": {
+   "changes": [
+    "privacy redaction: host_path_envs 2, host_path_repo 14"
+   ],
+   "exported_sha256": "6501b7a4953a146bcbfc0aeff4182aa8197cf9ececf51f24402c7a723aabde81",
+   "frozen_md5": "9edb5ac15a7e240112915799fbf31387",
+   "frozen_sha256": "d47a9434f177dee97d1eaed843a0f40f8f4425a75a84f2fe305544d2e3d5e8d4",
+   "source": "experiments/transcriptlab_cli/run_e4b16/run.log"
+  },
+  "experiments/transcriptlab_cli/run_e4b16/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 11"
+   ],
+   "exported_sha256": "6759066bc0ef7524ac255781546d2b46abc48a709de484a804001a1c260676d8",
+   "frozen_md5": "be61460f10b97fbba856be74ed438a53",
+   "frozen_sha256": "1bc91b61a46f956237cee01bb0b2883fc5875dcd43a39feec0aca0f6679649d0",
+   "source": "experiments/transcriptlab_cli/run_e4b16/transcriptlab_run.json"
+  },
+  "experiments/transcriptlab_cli/run_v211_masked/gen.jsonl": {
+   "changes": [
+    "privacy redaction: host_path_repo 1200"
+   ],
+   "exported_sha256": "b80cd95ae74dc69be335ca54dd18ded9865d3c3fa9e0bd72350412930794d438",
+   "frozen_md5": "74b3f66d7cae587f7ad58f69e66ce806",
+   "frozen_sha256": "c03370ee03851707a22b1c7bef7d56931a298d987893a7c6238320e8d169eba9",
+   "source": "experiments/transcriptlab_cli/run_v211_masked/gen.jsonl"
+  },
+  "experiments/transcriptlab_cli/run_v211_masked/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 11"
+   ],
+   "exported_sha256": "33f05a3b97877204df019e08399c3b7c5c03834cd4c55d0a66bee5f8d348d65e",
+   "frozen_md5": "2828dd4a48562efb8cde5d5f54e9b8ce",
+   "frozen_sha256": "b6726855f0e839492383074428ff647dc0437724d4c08c8906a96e8bc4d835eb",
+   "source": "experiments/transcriptlab_cli/run_v211_masked/transcriptlab_run.json"
+  },
+  "experiments/transcriptlab_cli/run_v211b_masked/gen.jsonl": {
+   "changes": [
+    "privacy redaction: host_path_repo 1200"
+   ],
+   "exported_sha256": "03477c3b99bf2f3af7d50539739420112e18fea6f3649aaf75e041a12b9f890b",
+   "frozen_md5": "80fad6fde15de3421029f63ba52ff97f",
+   "frozen_sha256": "c207243cff51f381f902013ce4f199e61346981c4594542cc0127324562c0a33",
+   "source": "experiments/transcriptlab_cli/run_v211b_masked/gen.jsonl"
+  },
+  "experiments/transcriptlab_cli/run_v211b_masked/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 11"
+   ],
+   "exported_sha256": "164daecf7afd45d90f40e11110fe79ce4357f1c5757e9ec2c137d95332822bb3",
+   "frozen_md5": "c644ce8a792823879a41c8a5b9cf4e15",
+   "frozen_sha256": "c90a97bcdd83de27ed2f06bd2dd790ac2f75cf6afbc9eb6852aa0e5930330e11",
+   "source": "experiments/transcriptlab_cli/run_v211b_masked/transcriptlab_run.json"
+  },
+  "experiments/transcriptlab_cli/run_v212_hermes3/gen.jsonl": {
+   "changes": [
+    "privacy redaction: email 2"
+   ],
+   "exported_sha256": "b85f985ffebe10389751b583b9c3683853e0afedf57ac4555ffc773308a93afc",
+   "frozen_md5": "78a24135d6e7b4df9d14c6cb94f36367",
+   "frozen_sha256": "c511866ea7f33dcf95161c2300438d687de40a46f26f44317fef4f78ec270f62",
+   "source": "experiments/transcriptlab_cli/run_v212_hermes3/gen.jsonl"
+  },
+  "experiments/transcriptlab_cli/run_v212_hermes3/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 2, host_path_repo 14"
+   ],
+   "exported_sha256": "4e6b707ce3ff189a34739afa67cc9d8d22416a2b8ae81d833465f9b18b25d2f9",
+   "frozen_md5": "a12b16ae165b7ada14727f98c8d2cc9d",
+   "frozen_sha256": "5debf864cb5c788324925263dd2ff36c7a4882366524522a6d540e4ccfab4e70",
+   "source": "experiments/transcriptlab_cli/run_v212_hermes3/transcriptlab_run.json"
+  },
+  "experiments/transcriptlab_cli/run_v214_bf16/gen.jsonl": {
+   "changes": [
+    "privacy redaction: email 2, host_path_repo 1200"
+   ],
+   "exported_sha256": "91227b15d67e56c8ff9450eb2385d72aa33743e580564442388a02cc0ea604ff",
+   "frozen_md5": "b61a50507731c820b8166b3830db20bf",
+   "frozen_sha256": "6035914ae795a4ff5d4d8cb2fa8e2c44869675ad438b3be2e38a48dd6acb9264",
+   "source": "experiments/transcriptlab_cli/run_v214_bf16/gen.jsonl"
+  },
+  "experiments/transcriptlab_cli/run_v214_bf16/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 11"
+   ],
+   "exported_sha256": "3d285ca0137a7a03075a30b9dfd995d1db35089a08fdd78964085a641a58fbe3",
+   "frozen_md5": "8445b57aeee39af8339e4e42ade25e8f",
+   "frozen_sha256": "e9f3b7818afeef4cea342431a8f664c807f280e94820dd31d50a9d62e7ea3bd3",
+   "source": "experiments/transcriptlab_cli/run_v214_bf16/transcriptlab_run.json"
+  },
+  "experiments/transcriptlab_cli/run_v215_nvnvfp4/gen.jsonl": {
+   "changes": [
+    "privacy redaction: email 3, host_path_repo 1200"
+   ],
+   "exported_sha256": "3c3a67545bd4edb0ec7c638ea3cf1cc5e9c44abc9e61d9f40bbbe3cb4636d4a8",
+   "frozen_md5": "daddd7c132dd2e6509d6194aeaacbe12",
+   "frozen_sha256": "862ad70766e3867f53a0546efc9e475ec3b8eca08a1b99b345c2de6695d53c4e",
+   "source": "experiments/transcriptlab_cli/run_v215_nvnvfp4/gen.jsonl"
+  },
+  "experiments/transcriptlab_cli/run_v215_nvnvfp4/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 11"
+   ],
+   "exported_sha256": "d1c0b434c052bde3841cb5bb78b5627dc9617312b703a394fec67e95c801e3d8",
+   "frozen_md5": "0319e2dcb2deafb5a126ec2009da4d75",
+   "frozen_sha256": "6609fbc941666120dfc603fad0358caf48fe6d16edbed4d83d353f2996c68523",
+   "source": "experiments/transcriptlab_cli/run_v215_nvnvfp4/transcriptlab_run.json"
+  },
+  "experiments/transcriptlab_cli/run_v215_qatawq/gen.jsonl": {
+   "changes": [
+    "privacy redaction: email 2, host_path_repo 1200"
+   ],
+   "exported_sha256": "63d88effba54730e1801f06dcc5c4ac478be2b5c5b5faa3e5896461bc43ddb5d",
+   "frozen_md5": "22e98d942469b1fe67da88828f9c3f31",
+   "frozen_sha256": "75ebdd315c83ec4902759eb42469729be497c62ce5c25d31e9db37432e828472",
+   "source": "experiments/transcriptlab_cli/run_v215_qatawq/gen.jsonl"
+  },
+  "experiments/transcriptlab_cli/run_v215_qatawq/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 11"
+   ],
+   "exported_sha256": "baa02f06f7b2f30d61f84997db8235965a9ee0db7ce94ab7cccebe93b0357e0c",
+   "frozen_md5": "be92c6a1e9c0b9fa21134d2e9815da34",
+   "frozen_sha256": "b25c096f3291cd2b927f194c33466a7333345307d5f49ebad9931c27ce5b060d",
+   "source": "experiments/transcriptlab_cli/run_v215_qatawq/transcriptlab_run.json"
+  },
+  "experiments/transcriptlab_cli/run_v215_qatnvfp4/gen.jsonl": {
+   "changes": [
+    "privacy redaction: email 3, host_path_repo 1200"
+   ],
+   "exported_sha256": "b2f3ed89ead5290f8a158927f2f75400eb19086c0dcbd5095f32ea8c2633dd6b",
+   "frozen_md5": "50696dbbb18b6c643f364f01e1e8ec20",
+   "frozen_sha256": "394617be2cd4dae62cd533eb1b9d9e7709340cb18260e266dc4fb113944afad9",
+   "source": "experiments/transcriptlab_cli/run_v215_qatnvfp4/gen.jsonl"
+  },
+  "experiments/transcriptlab_cli/run_v215_qatnvfp4/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 11"
+   ],
+   "exported_sha256": "8deea7a3458115aeaad62d15c6f6c91ce242a83c1ea2ae4d23652455f38d7778",
+   "frozen_md5": "1e4050f2ea3fab1d3dbb6aaec365b514",
+   "frozen_sha256": "b962e1d92d56c9105c3a1c5c29090c17811a951ad045039f4db846ff5a582431",
+   "source": "experiments/transcriptlab_cli/run_v215_qatnvfp4/transcriptlab_run.json"
+  },
+  "experiments/transcriptlab_cli/run_v216_awq_quanttrio/gen.jsonl": {
+   "changes": [
+    "privacy redaction: email 4, host_path_repo 1200"
+   ],
+   "exported_sha256": "09f779491f57f358b6750350618d39a8ed6ed89f755fdae870456cbc7c0418e6",
+   "frozen_md5": "0b040f04bbaf9979de6f7dc862e6dfac",
+   "frozen_sha256": "efa763509cae9f417134600b65377a4d2814c0bd5ec5ee8d193a83381fc35978",
+   "source": "experiments/transcriptlab_cli/run_v216_awq_quanttrio/gen.jsonl"
+  },
+  "experiments/transcriptlab_cli/run_v216_awq_quanttrio/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 11"
+   ],
+   "exported_sha256": "31253d9bf556d7909345f0e2f594cefba49a03299b99740ffb55c5e1739c0733",
+   "frozen_md5": "5b7ec4812ae032bfd893836184f792b9",
+   "frozen_sha256": "085bc6e5a8ad792f3fbc1cce6247b726cc4bfa44301274e93d9d977f11b71bcf",
+   "source": "experiments/transcriptlab_cli/run_v216_awq_quanttrio/transcriptlab_run.json"
+  },
+  "experiments/transcriptlab_cli/run_v216_fp8_redhat/gen.jsonl": {
+   "changes": [
+    "privacy redaction: email 3, host_path_repo 1200"
+   ],
+   "exported_sha256": "be2a50733f602a03ab0f76168788ebe681a9e329622f41d35a00cefe9c553b62",
+   "frozen_md5": "479877334fdcb23c45cb8398f2ed831c",
+   "frozen_sha256": "2e03c520c63214eb60efa30b23efbe0183da37a45b69ae31dab70648422ed07f",
+   "source": "experiments/transcriptlab_cli/run_v216_fp8_redhat/gen.jsonl"
+  },
+  "experiments/transcriptlab_cli/run_v216_fp8_redhat/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 11"
+   ],
+   "exported_sha256": "2e2ccf212bccf37941a0a8cbf292b05b3d6d70e223f3341510d8c038d68bbb55",
+   "frozen_md5": "a50882abd30613f3eb895cca3d511d96",
+   "frozen_sha256": "f12c6011502e51844019d4f2c432ed91906ece14407748b2684f391f162b2cf4",
+   "source": "experiments/transcriptlab_cli/run_v216_fp8_redhat/transcriptlab_run.json"
+  },
+  "experiments/transcriptlab_cli/run_v216_nvfp4_redhat/gen.jsonl": {
+   "changes": [
+    "privacy redaction: email 4, host_path_repo 1200"
+   ],
+   "exported_sha256": "a19b3852cc5a4b42ba21f5fa26dd6534cd70d6aac6df64072818ff6b41222a08",
+   "frozen_md5": "ac5c421728d2afded4146c66c0029e29",
+   "frozen_sha256": "b912847623cdd87c89f6f53c8353222ba19942894410acd87c256470663fb7b3",
+   "source": "experiments/transcriptlab_cli/run_v216_nvfp4_redhat/gen.jsonl"
+  },
+  "experiments/transcriptlab_cli/run_v216_nvfp4_redhat/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 11"
+   ],
+   "exported_sha256": "1893c2e287b4b35a86b0d376561084c462c7f48e740fe30bd81704a02e8a9f47",
+   "frozen_md5": "3ea035afb4daa518893ca58f99f02c3b",
+   "frozen_sha256": "6067af7018c127388edb31ad528a55db538302019b3dfcea66c448a239eb7aca",
+   "source": "experiments/transcriptlab_cli/run_v216_nvfp4_redhat/transcriptlab_run.json"
+  },
+  "experiments/transcriptlab_cli/run_v216_qatunq/gen.jsonl": {
+   "changes": [
+    "privacy redaction: email 2, host_path_repo 1200, secret_assignment 1"
+   ],
+   "exported_sha256": "aeee32aa29c7523d25c1f1e0c9863fdf75facfb934963a4b3e9738d2f0c8ff2f",
+   "frozen_md5": "2568ff4b6730f0619ddb460dda463ef1",
+   "frozen_sha256": "e92da3784d268d77805c87895a9d0dc558bf5233a1fa06ed43544c4d2a9e9dc5",
+   "source": "experiments/transcriptlab_cli/run_v216_qatunq/gen.jsonl"
+  },
+  "experiments/transcriptlab_cli/run_v216_qatunq/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 11"
+   ],
+   "exported_sha256": "c44edeed38cb17f1e8db691bcfb5d0986940929f4527dd052708f23733437a35",
+   "frozen_md5": "fde20d412fc64130573d536ee4d11119",
+   "frozen_sha256": "d40ac94594e1e5fe5c409de279e9e3f173659d03bf6f9ff3523c7a93a2c3cbfd",
+   "source": "experiments/transcriptlab_cli/run_v216_qatunq/transcriptlab_run.json"
+  },
+  "experiments/transcriptlab_cli/run_v28/gen.jsonl": {
+   "changes": [
+    "privacy redaction: email 4, host_path_repo 1200"
+   ],
+   "exported_sha256": "12940d901efbec612a3df276f9f10a704dc43adee2eff4f4f6cd32c05dc026f5",
+   "frozen_md5": "d89d5801a0f8ffd866a5acc54ef2acf2",
+   "frozen_sha256": "992c1b9a6bb9f53bc9dc95ec99e37e8c629760f0f71a516fddb0590a5edd822c",
+   "source": "experiments/transcriptlab_cli/run_v28/gen.jsonl"
+  },
+  "experiments/transcriptlab_cli/run_v28/run.log": {
+   "changes": [
+    "privacy redaction: host_path_envs 2, host_path_repo 14"
+   ],
+   "exported_sha256": "220249c2e8e81a20ca1ffc618640654934e7ce35398c3e5a6c331f49a3439629",
+   "frozen_md5": "4998192e1c142c1ce366d3e6239e2c71",
+   "frozen_sha256": "66212ed0abb55c0af86e0eee0df1f2b37385678cd7d98a7e7aec7a0a7b051a4d",
+   "source": "experiments/transcriptlab_cli/run_v28/run.log"
+  },
+  "experiments/transcriptlab_cli/run_v28/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 11"
+   ],
+   "exported_sha256": "c5fa1ba422d65d425076e058011a79038d31e34982775a93ce4514fb71e06eae",
+   "frozen_md5": "1484147f8710ea3bc3c82d116e0d57c8",
+   "frozen_sha256": "6c83335a8e37165ca4e647c8c7c0e77ace5a19611fdf4e8740602640a9d89a0e",
+   "source": "experiments/transcriptlab_cli/run_v28/transcriptlab_run.json"
+  },
+  "experiments/transcriptlab_cli/run_v28_failed_1733/transcriptlab_run.json": {
+   "changes": [
+    "privacy redaction: host_path_repo 11"
+   ],
+   "exported_sha256": "6612f903ba0954376bc2e7c97c2cb21a2634cea1a3e9d87adc396d0b60e4b6a0",
+   "frozen_md5": "5bc85ad8749f2695480d835ab1fd04ed",
+   "frozen_sha256": "e0d31e0272ebb92f1796abbec819e1c154ab77b09d62c4bd7826e6fb857d1920",
+   "source": "experiments/transcriptlab_cli/run_v28_failed_1733/transcriptlab_run.json"
+  },
+  "experiments/v210/analyze_v210.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "6eb41378a8e356d0b07b356dc0bd90721a75426cf32d4c9ae468c77a80896ba4",
+   "frozen_md5": "2d5064aecf6bf30871a46ef691d8ac33",
+   "frozen_sha256": "d0f041185d42654f5e8f0fabe876f2e4a850ae6a990d0de0fcc9b202c2d4dd67",
+   "source": "experiments/v210/analyze_v210.py"
+  },
+  "experiments/v210/chain_gpu6.sh": {
+   "changes": [
+    "1 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "35d05a1727c33eba0c14c639e88d4cf9c6783134cc328d2b5b181f1b6d04cc50",
+   "frozen_md5": "e1b274568a9c9d829260c259ec462790",
+   "frozen_sha256": "cb69a03c9b02d12fdc8e8a6d2463d34bdb153047eca856420caed4f4fa5852a4",
+   "source": "experiments/v210/chain_gpu6.sh"
+  },
+  "experiments/v210/run_audits.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "ca6db8454371f9d00912ab57d80487a224cd30c7bc600ac3bfe06c86772cd04e",
+   "frozen_md5": "959c77c2db4e16d47dff1dd6009784b1",
+   "frozen_sha256": "4becb3c9254c398f93ea7273a3f6954d09f5e7f7ca8914ccd72839c47115105e",
+   "source": "experiments/v210/run_audits.sh"
+  },
+  "experiments/v211/run_masked.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "c52367c8bfc370e8f53b62b9ad7659681e1e89c3c597ccb0a7a4afc590a14ce3",
+   "frozen_md5": "91de5a640dae7f0f4c5be6d5dfca0b3c",
+   "frozen_sha256": "8aebeaa531ff3fae8c7eff0aa7befedb2034fd34d7d2673749e32cdbedf5cf67",
+   "source": "experiments/v211/run_masked.sh"
+  },
+  "experiments/v211/run_masked_r2.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "72453d23e1027ebec52dd0803e99a44fc777b33ba96480802a61aeb01c3cd9ba",
+   "frozen_md5": "9fecf258e6e0b7956a846d35ce5830d5",
+   "frozen_sha256": "328aa8b8dd330dced16d22899c5aaa2b18e529a0712e44b3609044991b5870e6",
+   "source": "experiments/v211/run_masked_r2.sh"
+  },
+  "experiments/v211b/pool_v211b.py": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "5127a5eee633c2e05c9b86642e92c96e841a648820d308c3477f1cae7914e5ef",
+   "frozen_md5": "3a3fdf050a80764bbf26d929d59a0254",
+   "frozen_sha256": "b195b36b36cda182cbd52d5efaf306bb4da324703cbca6eacabc6e48e4d22ede",
+   "source": "experiments/v211b/pool_v211b.py"
+  },
+  "experiments/v211b/run_masked2.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "8ac78c4d230822ab021d82f185e0e1a3c7cfe4b17b9c7922da855c314e56552a",
+   "frozen_md5": "4e431d0f8dc52197fad976e344886f19",
+   "frozen_sha256": "950cc56fab6bd5aa3c71568d0527b77d9fbe865e2ffef16d7d866108b531df48",
+   "source": "experiments/v211b/run_masked2.sh"
+  },
+  "experiments/v212/run_llama.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "44a8f5d623bc64c330b78720c7dda4a9688327a0d697ca44029288b62579def2",
+   "frozen_md5": "f7cff8cccc2c9fb06dff47ddf43d6cd1",
+   "frozen_sha256": "f5b111e3f79157b0f372864aec84dfd9be831fe6610ccdbc229a9627331aed56",
+   "source": "experiments/v212/run_llama.sh"
+  },
+  "experiments/v212/run_llama_r2.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "f86acb7d983d2d4f757e312f29b1fc1bf29aa1fa405b04847e05fcf6d1253af6",
+   "frozen_md5": "51d56a888abf6081ff2bb71de36f0a1b",
+   "frozen_sha256": "55af7961c94ef7ac84cf25bf34dbdf2ee9e1634b0dca73bd31a1213dda2ae73f",
+   "source": "experiments/v212/run_llama_r2.sh"
+  },
+  "experiments/v213/run_h2p.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "7e4cf97a8d865cf2fc0042dd70e669f77ce1705cb97b10e4e334c553dc499d14",
+   "frozen_md5": "240fe15910f3e130967828dd7a8af109",
+   "frozen_sha256": "ea11847cbe800180e126443a2973416b7ab098aa4e1c0f5b78c800ad6b07890f",
+   "source": "experiments/v213/run_h2p.sh"
+  },
+  "experiments/v214/analyze_v214_bf16.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "a8851cfa495a6ada60da0d85b7841b2af8fb1b6739915620a45871ed911edba1",
+   "frozen_md5": "53b0bf99bee6c83666aac31bd23f2583",
+   "frozen_sha256": "34c32b483e8c848e065134791f96d1375148f3621c404070c352702fd4433edc",
+   "source": "experiments/v214/analyze_v214_bf16.py"
+  },
+  "experiments/v214/run_bf16.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "8b973c72d4128233758b67d3542bb1aeba5da354b10f064a1057ec3bb837d16e",
+   "frozen_md5": "ddc9d4d000dc7538161a5add8b2b0462",
+   "frozen_sha256": "d4c1396e2a11e5e9b37d5c63c199b95e52b4da91d5573dc70393b2909f0d8c45",
+   "source": "experiments/v214/run_bf16.sh"
+  },
+  "experiments/v215/analyze_v215.py": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "4789a07ca7b3db09e6fc0cc20f27346ad3dce6e3ad6b508a33b3bdef9e77a67e",
+   "frozen_md5": "8c8c61fc89241c7527893a3dd63f90b3",
+   "frozen_sha256": "c9f65c4a7b161627273ed64fcb4117d8f19d86d49d54f54acfe8144fb1b18c6d",
+   "source": "experiments/v215/analyze_v215.py"
+  },
+  "experiments/v215/driver.sh": {
+   "changes": [
+    "2 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "8a9da4bb82b0e9ea1a618d720578440962a407256ea005c3785ebb9b75f972cc",
+   "frozen_md5": "84248610da4bc5fae23a96d8a23d9af7",
+   "frozen_sha256": "17ef649dfc732a487a21d57a8783aebbf4c6e86b4d4698fd09d7b376a5be40d4",
+   "source": "experiments/v215/driver.sh"
+  },
+  "experiments/v215/run_one.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "9d6edf46995a75b2a517a804ccf580754853c6f986e65f16f7bf062f2d8a5d6b",
+   "frozen_md5": "0ab82dd2f39e4e9c394c3a6edc675e5c",
+   "frozen_sha256": "f90da3070363f870bb011bcb2e6f735f1d11018f207e8011e877b0ed42d37f4e",
+   "source": "experiments/v215/run_one.sh"
+  },
+  "experiments/v28/run_cli.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "9307d992e932a0daa78abc41298a486ccc4ae8ce47b19f90f78d2979985aa277",
+   "frozen_md5": "99be85ec35c8f36a01d48dc66fbd20f6",
+   "frozen_sha256": "a5a913d9cfa565a9df8617d4b805acf78dc35b3c5ea0fbb00e75db6149f98f43",
+   "source": "experiments/v28/run_cli.sh"
+  },
+  "experiments/v29/run_cov.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "dedc9afb9d8c0a4d851f1650f3c8486268c7705dbf1ce0e554023685f7433cb2",
+   "frozen_md5": "8422ae94adc907f86cc940136399922b",
+   "frozen_sha256": "e73558f9c15cd24cb07a3a7dee64f85a69cfbd28e65254205c3f0842952c4b48",
+   "source": "experiments/v29/run_cov.sh"
+  },
+  "figures/fig1_gains_v3.py": {
+   "changes": [
+    "privacy redaction: host_path_envs 1"
+   ],
+   "exported_sha256": "eee07b6f6e539b4ba5d9bbd20ae57e0d82db9ad1a9a2dd961af68ce1db1366c3",
+   "frozen_md5": "2e334e575335f127963f8d18c5715cd2",
+   "frozen_sha256": "e65af96024e6d72c074541d8b07bd91f26e0079280fc94e1b2dcc0a5c53c8108",
+   "source": "paper/protocol/draft/figures/fig1_gains_v3.py"
+  },
+  "notebooks/quickstart.ipynb": {
+   "changes": [
+    "editorial override (1x): reviewer: works from the Kaggle dataset layout"
+   ],
+   "exported_sha256": "537e3d9566eaafccefca7b1714784be06b895363cd7b62e75c8121ce3c524370",
+   "frozen_md5": "79872ff6553105867ce077719f85d60e",
+   "frozen_sha256": "ec73d8c2ac4671ca7405d022827146f43a4535fee5eb7e05d9b53c3ee24e75e4",
+   "source": "release/quickstart/quickstart.ipynb"
+  },
+  "notebooks/quickstart.py": {
+   "changes": [
+    "editorial override (1x): reviewer: works from the Kaggle dataset layout (repository attached as a dataset) without TRANSCRIPTLAB_ROOT"
+   ],
+   "exported_sha256": "45d2a9fdf5b6fb2d764df297dc1fa0fb90db88ff78ac1b6beaf39260f449a9f2",
+   "frozen_md5": "e0755b83d9c7d1e60cab28351958dcb2",
+   "frozen_sha256": "4f214ef07bbde9cf1c34c1ae49132956b3e50f4f6c476cd3e35f5a4635a63e2e",
+   "source": "release/quickstart/quickstart.py"
+  },
+  "paper/protocol_theory/prereg/E_PREDICTIONS_v1.md": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "73e5fd1eab2c2a2b605f2ce1cee31cc67d5ba0ac047b0be3a77c5f5349bd4ac0",
+   "frozen_md5": "18c06a5f4bdf175eab02649a4a77657d",
+   "frozen_sha256": "182365c95726d5b30319ac757a7859db1782ea59edadc4bf8431e4bf160ca8af",
+   "source": "paper/protocol_theory/prereg/E_PREDICTIONS_v1.md"
+  },
+  "paper/protocol_theory/prereg/PREREG_DEVIATIONS.md": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_harness 1, host_path_other 2, host_path_repo 1",
+    "pseudonymized: moved_tree_path 2"
+   ],
+   "exported_sha256": "b32c701f4d4b1c276c6ffd1adf2789d63a7161a8f8d34f69ebc5d320f7978f57",
+   "frozen_md5": "0cf9febeeb2a3ab5402c37cebe0d45fd",
+   "frozen_sha256": "b51265fff68d5c3a1c5b85abdab01fcab125f88c964559f2c3c3c7b8dc02c6ec",
+   "source": "paper/protocol_theory/prereg/PREREG_DEVIATIONS.md"
+  },
+  "paper/protocol_theory/prereg/PREREG_v1.md": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "1b1d344093765ed3bec5d51b8d5510a0a9aa7cbb5a3e6b0c2c693fe2251fe16f",
+   "frozen_md5": "4e02d898b1fc7b5bab9f1ee1721b32ed",
+   "frozen_sha256": "53e34f1fc0c061e8d67bb559b2458419154159608f9e63cadae8eb9bcbecee38",
+   "source": "paper/protocol_theory/prereg/PREREG_v1.md"
+  },
+  "paper/protocol_theory/prereg/PREREG_v2.1_thinkingOFF.md": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "fef164ef6f8fb658aaaa63923341bf14585ec447ac161cc294f126613b115457",
+   "frozen_md5": "c09eb428ddb572c41c2dd337a9bb37b9",
+   "frozen_sha256": "bb3696da3772d0c7ac67eae9f7f76162dbff11ca357161c34e3c5ca53fb44839",
+   "source": "paper/protocol_theory/prereg/PREREG_v2.1_thinkingOFF.md"
+  },
+  "paper/protocol_theory/prereg/PREREG_v2.2_thoughtSuppressed.md": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "46c4538630ef1c70cc6dda9343183df2ba83c97fd661f2e5c89a64ad63e72810",
+   "frozen_md5": "c6e2e5ccea0016efd2bdb29b746ca634",
+   "frozen_sha256": "ec9164ffa833f351618c3eb7ec69aa2e471e096307de7f5fd61e6c72e07f09d3",
+   "source": "paper/protocol_theory/prereg/PREREG_v2.2_thoughtSuppressed.md"
+  },
+  "paper/protocol_theory/prereg/PREREG_v2.3_onsetTransplant.md": {
+   "changes": [
+    "privacy redaction: host_path_harness 1, host_path_other 1, host_path_repo 1",
+    "1 host-root pseudonym(s) neutralized (data / home root pseudonyms -> <host-path>, <home>)"
+   ],
+   "exported_sha256": "5187dcae885d839dc127de289e3ee9f0158bc549a17017cc331a982624ba277f",
+   "frozen_md5": "e2435946c15b8163859a5495a5e86218",
+   "frozen_sha256": "7111525f15d76787280b78e6b55494a00edb64c3456a1214f7aebfcdd0ee67cb",
+   "source": "paper/protocol_theory/prereg/PREREG_v2.3_onsetTransplant.md"
+  },
+  "paper/protocol_theory/prereg/PREREG_v2.4_injectedSlipRepair.md": {
+   "changes": [
+    "privacy redaction: host_path_harness 1, host_path_other 1, host_path_repo 1",
+    "1 host-root pseudonym(s) neutralized (data / home root pseudonyms -> <host-path>, <home>)"
+   ],
+   "exported_sha256": "af5d77c94999bc8aa03dd7d056201c95156d0a8c5588e28b30fe44532f9287c0",
+   "frozen_md5": "d60e5e72f43191e7d634e140497b73e7",
+   "frozen_sha256": "e7af894ba355a03a5fb7b023c3c7ad860a5e8c3d666a4ab80e6ff6c7ea102090",
+   "source": "paper/protocol_theory/prereg/PREREG_v2.4_injectedSlipRepair.md"
+  },
+  "paper/protocol_theory/prereg/PREREG_v2.5_stackGain.md": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "5cc2d27b72ba1c841e4dbda63efc5d20a8bf4222029095191ba9a355dcc1c744",
+   "frozen_md5": "086e7e1ba786996a3d4a68b6ea76dbda",
+   "frozen_sha256": "50f8a39505e752e7fd528415c7593fe898af1bdfb61fdd89d35fea37cf51d75f",
+   "source": "paper/protocol_theory/prereg/PREREG_v2.5_stackGain.md"
+  },
+  "paper/protocol_theory/prereg/PREREG_v2.5b_stackGainE4B.md": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "19ac9f94db2b9fcfeddd0000f73d2c92bc5270c8ee7bc2f98b79922797508208",
+   "frozen_md5": "1d71f235ef823ed79b09053efb5e2c47",
+   "frozen_sha256": "c78e7512485a6f3e98e2fd71f319638aa72ff10f2eb5f6deedc89415a94ffb7d",
+   "source": "paper/protocol_theory/prereg/PREREG_v2.5b_stackGainE4B.md"
+  },
+  "paper/protocol_theory/prereg/PREREG_v2.6_auditBehaviour.md": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "111eeb487fb0409de349bd9654342245d45ddf725f3ddf307c21cdee07b1aca2",
+   "frozen_md5": "9c34621594a4729488d15dee50cbd880",
+   "frozen_sha256": "ed19a6d07734afe795f63e7c9c5b6c3d1285d21deff828557ca28b1e333520f6",
+   "source": "paper/protocol_theory/prereg/PREREG_v2.6_auditBehaviour.md"
+  },
+  "paper/protocol_theory/prereg/PREREG_v2.7_robustness.md": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "3be63bb9bbb3b7966bdbd84a4bda863394934e1b15ca3a53d7430cbf22849a73",
+   "frozen_md5": "f88b710701f06cf5f68f3db12465118d",
+   "frozen_sha256": "3bc5b4a8f8a242b613265cd072183a39e09eefa17283216940367e860f469c29",
+   "source": "paper/protocol_theory/prereg/PREREG_v2.7_robustness.md"
+  },
+  "paper/protocol_theory/prereg/PREREG_v2.8_cli.md": {
+   "changes": [
+    "privacy redaction: host_path_envs 1, host_path_repo 1"
+   ],
+   "exported_sha256": "40e7be1895bb3c963f6196344bf56309c7ff1e7c12acc7ce20f7c5b0b02447c4",
+   "frozen_md5": "223234e6628d3550265c074897996780",
+   "frozen_sha256": "c69d54a519b9e727323b38b6bdc7f9984d49e0d630122ac84679e7e568d8df98",
+   "source": "paper/protocol_theory/prereg/PREREG_v2.8_cli.md"
+  },
+  "paper/protocol_theory/prereg/PREREG_v2.md": {
+   "changes": [
+    "privacy redaction: host_path_repo 1"
+   ],
+   "exported_sha256": "2c7ed906a80fbe1cc3e2ee7579587ec037d62e9baca9957851ffa688385184ea",
+   "frozen_md5": "242f52dbb7187cd2447dd5705b82714f",
+   "frozen_sha256": "5da75e6170243f838fe0fe1dcb4250a21b8132fc97161e22d149f46fae0d73ac",
+   "source": "paper/protocol_theory/prereg/PREREG_v2.md"
+  },
+  "paper/protocol_theory/prereg/compute_predictions.py": {
+   "changes": [
+    "1 path literal(s) -> env/config lookups"
+   ],
+   "exported_sha256": "411e40f55b9f69e1a8305a53015bf4ce1fc9f0bdde67a8e4da1a2e8719e87533",
+   "frozen_md5": "c35844a27ab23dc7937430f4e540e7af",
+   "frozen_sha256": "fad8b96864024c77268a5629a9e02d6b23c8c4b38d5052b116b5f3ba52018bcf",
+   "source": "paper/protocol_theory/prereg/compute_predictions.py"
+  },
+  "paper/protocol_theory/sim/out/t2_logs_by_run.json": {
+   "changes": [
+    "pseudonymized: log_name 8, run_or_adapter_name 139"
+   ],
+   "exported_sha256": "0db734329b14fff0ed3062ddc97ed0f34f3bb215585705026b340beb37a562b6",
+   "frozen_md5": "b2c38a596dde31246647d992b8db048b",
+   "frozen_sha256": "200583d380d71f45848afd331afbf0ca514db43eb8bc5f1faed26972eec4b15d",
+   "source": "paper/protocol_theory/sim/out/t2_logs_by_run.json"
+  },
+  "paper/protocol_theory/sim/out/t2_trigger_scan.json": {
+   "changes": [
+    "pseudonymized: log_name 8"
+   ],
+   "exported_sha256": "e0e1c489352621f388b0384a9901a899839c9e46e8e09c3f9d0faf4c55aac830",
+   "frozen_md5": "f759ff7d30d2e78f2b604ce8a426da87",
+   "frozen_sha256": "a794c44f910ac69a105280a791d9fd9074223660f1cb4a19ed6ddb317cb4463a",
+   "source": "paper/protocol_theory/sim/out/t2_trigger_scan.json"
+  },
+  "paper/protocol_theory/sim/out/t3_results.json": {
+   "changes": [
+    "pseudonymized: run_or_adapter_name 84"
+   ],
+   "exported_sha256": "7a45339d25a5aa21137affa614310fb567791d94d58206a7fd20d690ef2397d2",
+   "frozen_md5": "3baa7aeb7b4818f7ec32a4e1f80fd2c7",
+   "frozen_sha256": "c56f4612f9f5cea477e6946104abd6c831956dc38ef11cb0fb91314ee110752f",
+   "source": "paper/protocol_theory/sim/out/t3_results.json"
+  },
+  "paper/protocol_theory/sim/out/t3_results_v1_TEACHER_CONTAMINATED_B300.json": {
+   "changes": [
+    "pseudonymized: run_or_adapter_name 87"
+   ],
+   "exported_sha256": "9be3861932b47f8aee516b2017aedefab20ef1112c4dd878ea856b0a62ab9fcc",
+   "frozen_md5": "1874410407d090a89127533970694ed9",
+   "frozen_sha256": "a6dc88160f53a776a48e494fa0bc49b3dc63a2ec664f3f1596128a325f49b910",
+   "source": "paper/protocol_theory/sim/out/t3_results_v1_TEACHER_CONTAMINATED_B300.json"
+  },
+  "paper/protocol_theory/sim/out/t3_results_v2_test_B2.json": {
+   "changes": [
+    "pseudonymized: run_or_adapter_name 84"
+   ],
+   "exported_sha256": "ea80a94ff309112e49425c6c4ac3b42b6839771d6b10655b95bc83e0f1711e6a",
+   "frozen_md5": "76df07a9d9bf769b2e3ac02969cdf1be",
+   "frozen_sha256": "c629e4b26795e9f1a12f45c9bb90f5d84b1541feb2e6e1a2a1fc960e78798f0e",
+   "source": "paper/protocol_theory/sim/out/t3_results_v2_test_B2.json"
+  },
+  "release/DEFINITIONS.md": {
+   "changes": [
+    "pseudonymized: run_or_adapter_name 2"
+   ],
+   "exported_sha256": "399db5370bfda070bfbd5c44e2ddc5a60fdcab4d5cf948c99d1876f5d672d79b",
+   "frozen_md5": "47a36e47e3b328472b82fd26ade29909",
+   "frozen_sha256": "6e619881c3a886ab2a71b677938537c653835fd715aa55a044cf2ef23c87d8d4",
+   "source": "release/DEFINITIONS.md"
+  },
+  "release/build_numbers.py": {
+   "changes": [
+    "pseudonymized: run_or_adapter_name 10"
+   ],
+   "exported_sha256": "13491b4c80bfccbbac967badef9aa254696123a9e0c4f8a3e6c415777bb00ded",
+   "frozen_md5": "721e73413cdf929e3859e4709cccb1e8",
+   "frozen_sha256": "1d9669739fa0e56bbbad498648a760d5805dca19512c3d5c8c797a3f0aeabfee",
+   "source": "release/build_numbers.py"
+  },
+  "release/provenance/provenance_summary.json": {
+   "changes": [
+    "pseudonymized: teammate_handle 2"
+   ],
+   "exported_sha256": "af21aa86973e51487e5a6370afed56a807039ce0844fb5ae3884b66ae32f124b",
+   "frozen_md5": "1f369de5b9badb68dc78867fffb73c37",
+   "frozen_sha256": "c0dc3992918ea127a28be863706accf650fa62e1f7c543dab1cdbea42490b409",
+   "source": "release/provenance/provenance_summary.json"
+  },
+  "slipguard/src/slipguard/_frozen/MANIFEST.json": {
+   "changes": [
+    "frozen MANIFEST: _vendor/gemmaproto/gen.py recorded as exported (M2 neutralization)"
+   ],
+   "exported_sha256": "5a828637b56a6eada7cfedeeec9424776be1b9c909cb8f63b0a8a6c079cb5d1b",
+   "frozen_md5": "e335772a31f39d25b673d8f935021f93",
+   "frozen_sha256": "7dbd9fbcdd57609c5aaed59cfb0759ab62ea97a6a0b73dac6cd52d4051eab4b3",
+   "source": "release/lib/src/slipguard/_frozen/MANIFEST.json"
+  },
+  "slipguard/src/slipguard/_vendor/gemmaproto/gen.py": {
+   "changes": [
+    "injection fragments neutralized (release_hygiene M2): 3 literal(s) replaced"
+   ],
+   "exported_sha256": "9538a2f4dc2ec026651e8a3e7d9f48737b3e62a4a019d8d180381297f94a29fa",
+   "frozen_md5": "b56142018f7e473cfa725f4901576a61",
+   "frozen_sha256": "7113088fc8f2b194bd56cef42b3486431f63fb4cd9ff9ac1e5f519e77c447b0d",
+   "source": "release/lib/src/slipguard/_vendor/gemmaproto/gen.py"
+  },
+  "slipguard/tests/test_frozen.py": {
+   "changes": [
+    "editorial override (1x): M2: gen.py is neutralized by the public export, so it joins the changed-by-export set this test asserts"
+   ],
+   "exported_sha256": "9356adf322c145b783b7de7814e1871769c559088e52cc5d55545585e98eb6bb",
+   "frozen_md5": "3191ff877174360ff6489729bae03214",
+   "frozen_sha256": "b555ef94568b3352bdbff4a7aec4b257d5d90e8fb360bb2787364d2d10bfed61",
+   "source": "release/lib/tests/test_frozen.py"
+  },
+  "tools/LEVEL1_RESULTS.md": {
+   "changes": [
+    "editorial override (2x): the library lives at slipguard/ in the public tree",
+    "editorial override (3x): the library lives at slipguard/ in the public tree"
+   ],
+   "exported_sha256": "e125416ae89f1cfebd47ce66061af213dde1b1123f219ecfc8f24051c9859f63",
+   "frozen_md5": "372382c5eea615202439cb5639a13a50",
+   "frozen_sha256": "6846fdb8ca936fe3f170c165671846f36ff2d1c64ed20d27bc2a359072bf5151",
+   "source": "release/docs_pack/tools/LEVEL1_RESULTS.md"
+  },
+  "tools/compare_json.py": {
+   "changes": [
+    "editorial override (1x): the library lives at slipguard/ in the public tree"
+   ],
+   "exported_sha256": "01b8e3d7c9d12bc5b3f003c7fd4405f524df7f062ea24b6e15f124150a757d5b",
+   "frozen_md5": "123fd673a3408a4042a012d92c1be7c3",
+   "frozen_sha256": "6563d9a89b95fe18381ce957b08a31a096d161b508bb87a99d5004330f8a55a0",
+   "source": "release/docs_pack/tools/compare_json.py"
+  },
+  "tools/dl_eaudit.sh": {
+   "changes": [
+    "3 path literal(s) -> ${ENV:-default}"
+   ],
+   "exported_sha256": "ac0988b09c575ce6a114099066e6a888ed1d61ac07037c3b65ae072509bd0665",
+   "frozen_md5": "5657e64232b487b74c26564fb23a6bc0",
+   "frozen_sha256": "cd7f6041efca1cfcc3daaa04bd65b96e61c80ab3d4c3bd0a1d4da383afe1a5af",
+   "source": "tools/dl_eaudit.sh"
+  },
+  "tools/make_results_md.py": {
+   "changes": [
+    "editorial override (2x): the library lives at slipguard/ in the public tree"
+   ],
+   "exported_sha256": "cc4b3ee95d9f372ca855667de4f361c4ce5c98c488bce1e1687fd35f86669f5d",
+   "frozen_md5": "46d220a6e6f996c227d70296a1f74176",
+   "frozen_sha256": "945ae5c9331511cb6d6da7a78470ccf4b25db9f2b30a511eca4c325a569954e8",
+   "source": "release/docs_pack/tools/make_results_md.py"
+  },
+  "tools/reproduce_level1.sh": {
+   "changes": [
+    "editorial override (1x): the library lives at slipguard/ in the public tree",
+    "editorial override (1x): the library lives at slipguard/ in the public tree"
+   ],
+   "exported_sha256": "48adc1df9e5a99c62c40eb8ccc8ea4519778c0ddb5cd185b78946733a8673e81",
+   "frozen_md5": "d4b369c94bf5f0626a730dfc17627a1f",
+   "frozen_sha256": "cb0de07bb0858701bbe1bff61314abf88630efcf023ec67c2e64206df52c7e20",
+   "source": "release/docs_pack/tools/reproduce_level1.sh"
+  },
+  "transcriptlab/README.md": {
+   "changes": [
+    "editorial override (1x): re-export item 9"
+   ],
+   "exported_sha256": "0df69f1bca3e4c6f3ae37e48ee960ae4b63ee6dc47283926afbe0d79a455ada0",
+   "frozen_md5": "a144c3630aa440117760a25f9869dfeb",
+   "frozen_sha256": "62bb0c92632f996dc1ec3837d3168ae9fd28880a1b2cb69a9d272204c7e68d19",
+   "source": "release/transcriptlab/README.md"
+  }
+ }
+}

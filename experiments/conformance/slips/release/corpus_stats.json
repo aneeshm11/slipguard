@@ -1,0 +1,940 @@
+{
+ "records": 8410,
+ "excluded_teacher_records": {
+  "dsprobe": 1,
+  "t1_qwen": 20,
+  "t2_qwen_rebench": 43,
+  "t3_qwen_rebench": 32
+ },
+ "contexts": 8341,
+ "closer_token_labelled": 4668,
+ "template_version": "2026-06-05",
+ "template_provenance": "inferred: every main-track run served /harness/work/models/gemma-4-31b-it-qat-w4a16-ct (LoRA variants on the same base) whose chat_template.jinja has md5 d6c5bd0d and mtime 2026-06-05; no --chat-template override found in run configs",
+ "slip_type": {
+  "base": {
+   "absorbed_lookalike_closer": {
+    "n": 3991,
+    "share_wilson95": [
+     0.8849,
+     0.8753,
+     0.8939
+    ]
+   },
+   "junk_or_unknown_keys": {
+    "n": 329,
+    "share_wilson95": [
+     0.0729,
+     0.0657,
+     0.0809
+    ]
+   },
+   "raw_unparsed": {
+    "n": 99,
+    "share_wilson95": [
+     0.022,
+     0.0181,
+     0.0267
+    ]
+   },
+   "missing_required_only": {
+    "n": 31,
+    "share_wilson95": [
+     0.0069,
+     0.0048,
+     0.0097
+    ]
+   },
+   "undeclared_tool": {
+    "n": 31,
+    "share_wilson95": [
+     0.0069,
+     0.0048,
+     0.0097
+    ]
+   },
+   "absorbed_no_closer": {
+    "n": 15,
+    "share_wilson95": [
+     0.0033,
+     0.002,
+     0.0055
+    ]
+   },
+   "delimiter_inside_value": {
+    "n": 6,
+    "share_wilson95": [
+     0.0013,
+     0.0006,
+     0.0029
+    ]
+   },
+   "stray_delimiter_after_number": {
+    "n": 6,
+    "share_wilson95": [
+     0.0013,
+     0.0006,
+     0.0029
+    ]
+   },
+   "control_token_inside_value": {
+    "n": 2,
+    "share_wilson95": [
+     0.0004,
+     0.0001,
+     0.0016
+    ]
+   }
+  },
+  "team_finetune": {
+   "raw_unparsed": {
+    "n": 945,
+    "share_wilson95": [
+     0.2499,
+     0.2363,
+     0.2639
+    ]
+   },
+   "absorbed_lookalike_closer": {
+    "n": 845,
+    "share_wilson95": [
+     0.2234,
+     0.2104,
+     0.237
+    ]
+   },
+   "stray_delimiter_after_number": {
+    "n": 667,
+    "share_wilson95": [
+     0.1764,
+     0.1645,
+     0.1888
+    ]
+   },
+   "control_token_inside_value": {
+    "n": 391,
+    "share_wilson95": [
+     0.1034,
+     0.0941,
+     0.1135
+    ]
+   },
+   "delimiter_inside_value": {
+    "n": 357,
+    "share_wilson95": [
+     0.0944,
+     0.0855,
+     0.1041
+    ]
+   },
+   "junk_or_unknown_keys": {
+    "n": 342,
+    "share_wilson95": [
+     0.0904,
+     0.0817,
+     0.1
+    ]
+   },
+   "missing_required_only": {
+    "n": 152,
+    "share_wilson95": [
+     0.0402,
+     0.0344,
+     0.0469
+    ]
+   },
+   "undeclared_tool": {
+    "n": 73,
+    "share_wilson95": [
+     0.0193,
+     0.0154,
+     0.0242
+    ]
+   },
+   "absorbed_no_closer": {
+    "n": 10,
+    "share_wilson95": [
+     0.0026,
+     0.0014,
+     0.0049
+    ]
+   }
+  }
+ },
+ "e2e_class": {
+  "base": {
+   "closer_slip": {
+    "n": 4008,
+    "share_wilson95": [
+     0.8887,
+     0.8792,
+     0.8975
+    ]
+   },
+   "key_drift": {
+    "n": 271,
+    "share_wilson95": [
+     0.0601,
+     0.0535,
+     0.0674
+    ]
+   },
+   "unparsed_call": {
+    "n": 97,
+    "share_wilson95": [
+     0.0215,
+     0.0177,
+     0.0262
+    ]
+   },
+   "other_malformed": {
+    "n": 96,
+    "share_wilson95": [
+     0.0213,
+     0.0175,
+     0.0259
+    ]
+   },
+   "unknown_tool": {
+    "n": 31,
+    "share_wilson95": [
+     0.0069,
+     0.0048,
+     0.0097
+    ]
+   },
+   "opener_drift": {
+    "n": 7,
+    "share_wilson95": [
+     0.0016,
+     0.0008,
+     0.0032
+    ]
+   }
+  },
+  "team_finetune": {
+   "other_malformed": {
+    "n": 1673,
+    "share_wilson95": [
+     0.4424,
+     0.4266,
+     0.4582
+    ]
+   },
+   "unparsed_call": {
+    "n": 871,
+    "share_wilson95": [
+     0.2303,
+     0.2172,
+     0.244
+    ]
+   },
+   "closer_slip": {
+    "n": 857,
+    "share_wilson95": [
+     0.2266,
+     0.2135,
+     0.2402
+    ]
+   },
+   "key_drift": {
+    "n": 224,
+    "share_wilson95": [
+     0.0592,
+     0.0521,
+     0.0672
+    ]
+   },
+   "unknown_tool": {
+    "n": 128,
+    "share_wilson95": [
+     0.0338,
+     0.0285,
+     0.0401
+    ]
+   },
+   "opener_drift": {
+    "n": 29,
+    "share_wilson95": [
+     0.0077,
+     0.0053,
+     0.011
+    ]
+   }
+  }
+ },
+ "e2e_class_x_slip_type_base": {
+  "closer_slip|absorbed_lookalike_closer": 3991,
+  "key_drift|junk_or_unknown_keys": 271,
+  "unparsed_call|raw_unparsed": 97,
+  "other_malformed|junk_or_unknown_keys": 53,
+  "other_malformed|missing_required_only": 31,
+  "unknown_tool|undeclared_tool": 31,
+  "closer_slip|absorbed_no_closer": 15,
+  "other_malformed|stray_delimiter_after_number": 6,
+  "opener_drift|junk_or_unknown_keys": 5,
+  "other_malformed|delimiter_inside_value": 4,
+  "other_malformed|control_token_inside_value": 2,
+  "opener_drift|delimiter_inside_value": 2,
+  "closer_slip|raw_unparsed": 2
+ },
+ "history_rerender": {
+  "base|other": {
+   "n": 1118,
+   "laundered_wilson95": [
+    0.7361,
+    0.7095,
+    0.7611
+   ],
+   "ill_formed_wilson95": [
+    0.2639,
+    0.2389,
+    0.2905
+   ]
+  },
+  "base|edit_file": {
+   "n": 3293,
+   "laundered_wilson95": [
+    0.5302,
+    0.5131,
+    0.5472
+   ],
+   "ill_formed_wilson95": [
+    0.4698,
+    0.4528,
+    0.4869
+   ]
+  },
+  "team_finetune|other": {
+   "n": 1894,
+   "laundered_wilson95": [
+    0.3453,
+    0.3242,
+    0.367
+   ],
+   "ill_formed_wilson95": [
+    0.6547,
+    0.633,
+    0.6758
+   ]
+  },
+  "team_finetune|edit_file": {
+   "n": 943,
+   "laundered_wilson95": [
+    0.5769,
+    0.5451,
+    0.608
+   ],
+   "ill_formed_wilson95": [
+    0.4231,
+    0.392,
+    0.4549
+   ]
+  }
+ },
+ "base_edit_lost_arguments": {
+  "old_string": {
+   "n": 3174,
+   "share_wilson95": [
+    0.9639,
+    0.9569,
+    0.9697
+   ]
+  },
+  "new_string+old_string": {
+   "n": 83,
+   "share_wilson95": [
+    0.0252,
+    0.0204,
+    0.0311
+   ]
+  },
+  "new_string": {
+   "n": 18,
+   "share_wilson95": [
+    0.0055,
+    0.0035,
+    0.0086
+   ]
+  },
+  "filepath+new_string+old_string": {
+   "n": 15,
+   "share_wilson95": [
+    0.0046,
+    0.0028,
+    0.0075
+   ]
+  },
+  "filepath+old_string": {
+   "n": 2,
+   "share_wilson95": [
+    0.0006,
+    0.0002,
+    0.0022
+   ]
+  },
+  "none": {
+   "n": 1,
+   "share_wilson95": [
+    0.0003,
+    0.0001,
+    0.0017
+   ]
+  }
+ },
+ "base_edit_slip_relative_position_quintiles": {
+  "q1": 199,
+  "q2": 859,
+  "q3": 1099,
+  "q4": 778,
+  "q5": 358
+ },
+ "by_kind": {
+  "parsed_malformed": 7274,
+  "raw_unparsed": 1136
+ },
+ "by_model": {
+  "rl1": 118,
+  "gemma-4-31b-it-qat-w4a16-ct": 4510,
+  "r2": 453,
+  "rl3": 961,
+  "r0": 564,
+  "r1": 458,
+  "r3b": 18,
+  "rl1v2": 490,
+  "rl2": 838
+ },
+ "by_tool": {
+  "edit_file": 4383,
+  "read_file": 2214,
+  "run_command": 729,
+  "write_file": 412,
+  "null": 147,
+  "swe_agent": 95,
+  "submit_patch": 83,
+  "grep": 50,
+  "run_shell_command": 21,
+  "edit_thought": 20,
+  "tool_call": 12,
+  "tool_use": 10,
+  "thought": 9,
+  "get_status": 9,
+  "ls": 8,
+  "edit": 5,
+  "run_shell": 4,
+  "git": 4,
+  "google": 4,
+  "write_fix": 4
+ },
+ "by_reason": {
+  "missing_required": 4631,
+  "unknown_key": 2899,
+  "token_leak": 1770,
+  "raw_unparsed": 1136,
+  "absorbed_arg": 4861,
+  "undeclared_tool": 104
+ },
+ "run_status": {
+  "broken_run": 118,
+  "ok": 8292
+ },
+ "rates": {
+  "team_finetune": {
+   "calls": 194843,
+   "edit_calls": 21816,
+   "malformed_calls": 2837,
+   "raw_unparsed": 945,
+   "malformed_edits": 943,
+   "edit_malformed_rate_wilson95": [
+    0.0432,
+    0.0406,
+    0.046
+   ],
+   "any_call_malformed_rate_wilson95": [
+    0.0146,
+    0.014,
+    0.0151
+   ]
+  },
+  "base": {
+   "calls": 77571,
+   "edit_calls": 9430,
+   "malformed_calls": 4411,
+   "malformed_edits": 3293,
+   "raw_unparsed": 99,
+   "edit_malformed_rate_wilson95": [
+    0.3492,
+    0.3396,
+    0.3589
+   ],
+   "any_call_malformed_rate_wilson95": [
+    0.0569,
+    0.0553,
+    0.0585
+   ]
+  },
+  "team_finetune_BROKEN": {
+   "calls": 282,
+   "edit_calls": 27,
+   "malformed_calls": 26,
+   "malformed_edits": 20,
+   "raw_unparsed": 92,
+   "edit_malformed_rate_wilson95": [
+    0.7407,
+    0.5532,
+    0.8683
+   ],
+   "any_call_malformed_rate_wilson95": [
+    0.0922,
+    0.0637,
+    0.1317
+   ]
+  }
+ },
+ "edit_order_vs_malformed": {
+  "base|new_first": {
+   "malformed": 3098,
+   "n": 9186,
+   "rate_wilson95": [
+    0.3373,
+    0.3277,
+    0.347
+   ]
+  },
+  "base|old_first": {
+   "malformed": 5,
+   "n": 54,
+   "rate_wilson95": [
+    0.0926,
+    0.0402,
+    0.1991
+   ]
+  },
+  "base|unknown": {
+   "malformed": 190,
+   "n": 190,
+   "rate_wilson95": [
+    1.0,
+    0.9802,
+    1.0
+   ]
+  },
+  "team_finetune|new_first": {
+   "malformed": 581,
+   "n": 21445,
+   "rate_wilson95": [
+    0.0271,
+    0.025,
+    0.0294
+   ]
+  },
+  "team_finetune|old_first": {
+   "malformed": 5,
+   "n": 14,
+   "rate_wilson95": [
+    0.3571,
+    0.1634,
+    0.6124
+   ]
+  },
+  "team_finetune|unknown": {
+   "malformed": 357,
+   "n": 357,
+   "rate_wilson95": [
+    1.0,
+    0.9894,
+    1.0
+   ]
+  }
+ },
+ "edit_slip_closers": {
+  "base": {
+   "backtick": {
+    "n": 2769,
+    "share_wilson95": [
+     0.8409,
+     0.828,
+     0.853
+    ]
+   },
+   "dquote": {
+    "n": 258,
+    "share_wilson95": [
+     0.0783,
+     0.0697,
+     0.088
+    ]
+   },
+   "escaped_dquote": {
+    "n": 110,
+    "share_wilson95": [
+     0.0334,
+     0.0278,
+     0.0401
+    ]
+   },
+   "no_absorbed_signature": {
+    "n": 92,
+    "share_wilson95": [
+     0.0279,
+     0.0228,
+     0.0341
+    ]
+   },
+   "triple_dquote": {
+    "n": 49,
+    "share_wilson95": [
+     0.0149,
+     0.0113,
+     0.0196
+    ]
+   },
+   "none": {
+    "n": 15,
+    "share_wilson95": [
+     0.0046,
+     0.0028,
+     0.0075
+    ]
+   }
+  },
+  "team_finetune": {
+   "no_absorbed_signature": {
+    "n": 451,
+    "share_wilson95": [
+     0.4783,
+     0.4465,
+     0.5102
+    ]
+   },
+   "backtick": {
+    "n": 327,
+    "share_wilson95": [
+     0.3468,
+     0.3171,
+     0.3777
+    ]
+   },
+   "dquote": {
+    "n": 80,
+    "share_wilson95": [
+     0.0848,
+     0.0687,
+     0.1043
+    ]
+   },
+   "escaped_dquote": {
+    "n": 69,
+    "share_wilson95": [
+     0.0732,
+     0.0582,
+     0.0916
+    ]
+   },
+   "triple_dquote": {
+    "n": 7,
+    "share_wilson95": [
+     0.0074,
+     0.0036,
+     0.0152
+    ]
+   },
+   "none": {
+    "n": 6,
+    "share_wilson95": [
+     0.0064,
+     0.0029,
+     0.0138
+    ]
+   },
+   "triple_backtick": {
+    "n": 2,
+    "share_wilson95": [
+     0.0021,
+     0.0006,
+     0.0077
+    ]
+   },
+   "squote": {
+    "n": 1,
+    "share_wilson95": [
+     0.0011,
+     0.0002,
+     0.006
+    ]
+   }
+  }
+ },
+ "closer_tokens_top": [
+  {
+   "token": "`,",
+   "merged_with_comma": true,
+   "n": 3225
+  },
+  {
+   "token": ")`,",
+   "merged_with_comma": true,
+   "n": 573
+  },
+  {
+   "token": "\",",
+   "merged_with_comma": true,
+   "n": 229
+  },
+  {
+   "token": "\\\",",
+   "merged_with_comma": true,
+   "n": 196
+  },
+  {
+   "token": "\"\"\",",
+   "merged_with_comma": true,
+   "n": 119
+  },
+  {
+   "token": ")\",",
+   "merged_with_comma": true,
+   "n": 94
+  },
+  {
+   "token": "}`,",
+   "merged_with_comma": true,
+   "n": 79
+  },
+  {
+   "token": "```",
+   "merged_with_comma": false,
+   "n": 30
+  },
+  {
+   "token": "]\",",
+   "merged_with_comma": true,
+   "n": 26
+  },
+  {
+   "token": ",",
+   "merged_with_comma": true,
+   "n": 23
+  },
+  {
+   "token": "\\\"\",",
+   "merged_with_comma": true,
+   "n": 21
+  },
+  {
+   "token": "'`,",
+   "merged_with_comma": true,
+   "n": 9
+  }
+ ],
+ "edit_hazard_by_prior_malformed_edits": {
+  "team_finetune": {
+   "first_edit": {
+    "malformed": 177,
+    "n": 8016,
+    "rate_wilson95": [
+     0.0221,
+     0.0191,
+     0.0255
+    ]
+   },
+   "0": {
+    "malformed": 129,
+    "n": 12447,
+    "rate_wilson95": [
+     0.0104,
+     0.0087,
+     0.0123
+    ]
+   },
+   "1": {
+    "malformed": 173,
+    "n": 398,
+    "rate_wilson95": [
+     0.4347,
+     0.3868,
+     0.4838
+    ]
+   },
+   "2": {
+    "malformed": 107,
+    "n": 188,
+    "rate_wilson95": [
+     0.5691,
+     0.4977,
+     0.6379
+    ]
+   },
+   "3": {
+    "malformed": 71,
+    "n": 90,
+    "rate_wilson95": [
+     0.7889,
+     0.6937,
+     0.8605
+    ]
+   },
+   ">=4": {
+    "malformed": 285,
+    "n": 342,
+    "rate_wilson95": [
+     0.8333,
+     0.7902,
+     0.8691
+    ]
+   }
+  },
+  "base": {
+   "first_edit": {
+    "malformed": 471,
+    "n": 2756,
+    "rate_wilson95": [
+     0.1709,
+     0.1573,
+     0.1854
+    ]
+   },
+   "0": {
+    "malformed": 137,
+    "n": 3181,
+    "rate_wilson95": [
+     0.0431,
+     0.0365,
+     0.0507
+    ]
+   },
+   "1": {
+    "malformed": 463,
+    "n": 797,
+    "rate_wilson95": [
+     0.5809,
+     0.5464,
+     0.6147
+    ]
+   },
+   "2": {
+    "malformed": 363,
+    "n": 521,
+    "rate_wilson95": [
+     0.6967,
+     0.6559,
+     0.7346
+    ]
+   },
+   "3": {
+    "malformed": 319,
+    "n": 410,
+    "rate_wilson95": [
+     0.778,
+     0.7353,
+     0.8156
+    ]
+   },
+   ">=4": {
+    "malformed": 1540,
+    "n": 1765,
+    "rate_wilson95": [
+     0.8725,
+     0.8561,
+     0.8873
+    ]
+   }
+  },
+  "mixed": {
+   "first_edit": {
+    "malformed": 0,
+    "n": 71,
+    "rate_wilson95": [
+     0.0,
+     0.0,
+     0.0513
+    ]
+   },
+   "0": {
+    "malformed": 1,
+    "n": 264,
+    "rate_wilson95": [
+     0.0038,
+     0.0007,
+     0.0211
+    ]
+   },
+   "1": {
+    "malformed": 0,
+    "n": 0,
+    "rate_wilson95": [
+     null,
+     null,
+     null
+    ]
+   },
+   "2": {
+    "malformed": 0,
+    "n": 0,
+    "rate_wilson95": [
+     null,
+     null,
+     null
+    ]
+   },
+   "3": {
+    "malformed": 0,
+    "n": 0,
+    "rate_wilson95": [
+     null,
+     null,
+     null
+    ]
+   },
+   ">=4": {
+    "malformed": 0,
+    "n": 0,
+    "rate_wilson95": [
+     null,
+     null,
+     null
+    ]
+   }
+  }
+ },
+ "attempts_with_slip_resolved_wilson95": {
+  "base": [
+   0.4243,
+   0.3939,
+   0.4552
+  ],
+  "team_finetune": [
+   0.3199,
+   0.296,
+   0.3449
+  ]
+ },
+ "intent_recovered_from_retry": 279,
+ "ref_parser_on_raw_unparsed": {
+  "request_had_tools": {
+   "EXPECTED_SEP": 159,
+   "UNTERMINATED": 134,
+   "STRAY_TOKEN": 68,
+   "BAD_NAME": 150,
+   "NO_CALL_PREFIX": 105,
+   "INVALID_LITERAL": 11,
+   "EXPECTED_CALL_CLOSE": 33,
+   "EXPECTED_COLON": 19,
+   "JSON_STYLE_STRING": 8,
+   "PAREN_OPENER": 6,
+   "ok": 1,
+   "EXPECTED_VALUE": 2
+  },
+  "request_without_tools": {
+   "JSON_STYLE_STRING": 109,
+   "ok": 56,
+   "BAD_NAME": 206,
+   "INVALID_LITERAL": 24,
+   "PAREN_OPENER": 34,
+   "UNTERMINATED": 3,
+   "EXPECTED_SEP": 2,
+   "STRAY_TOKEN": 4,
+   "EXPECTED_CALL_CLOSE": 2
+  }
+ },
+ "raw_unparsed_request_without_tools": 440
+}

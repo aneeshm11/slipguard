@@ -1,0 +1,185 @@
+{
+ "token_ids": {
+  "<|channel>": 100,
+  "<channel|>": 101,
+  "<|think|>": 98,
+  "<|tool_response>": 50,
+  "<tool_response|>": 51,
+  "<|turn>": 105,
+  "<turn|>": 106,
+  "<|tool_call>": 48,
+  "<tool_call|>": 49
+ },
+ "endings": {
+  "june:ON": {
+   "<tool_response|> (nothing appended)": 300
+  },
+  "june:OFF": {
+   "<tool_response|> (nothing appended)": 300
+  },
+  "july:ON": {
+   "<tool_response|><|channel>thought\\n (open thought)": 300
+  },
+  "july:OFF": {
+   "<tool_response|> (nothing appended)": 300
+  }
+ },
+ "last_tokens_example": {
+  "june:ON": {
+   "ids": [
+    4949,
+    1781,
+    236783,
+    52,
+    236783,
+    51
+   ],
+   "pieces": [
+    "\u2581soon",
+    ".\"",
+    "}",
+    "<|\"|>",
+    "}",
+    "<tool_response|>"
+   ]
+  },
+  "june:OFF": {
+   "ids": [
+    4949,
+    1781,
+    236783,
+    52,
+    236783,
+    51
+   ],
+   "pieces": [
+    "\u2581soon",
+    ".\"",
+    "}",
+    "<|\"|>",
+    "}",
+    "<tool_response|>"
+   ]
+  },
+  "july:ON": {
+   "ids": [
+    52,
+    236783,
+    51,
+    100,
+    45518,
+    107
+   ],
+   "pieces": [
+    "<|\"|>",
+    "}",
+    "<tool_response|>",
+    "<|channel>",
+    "thought",
+    "\n"
+   ]
+  },
+  "july:OFF": {
+   "ids": [
+    4949,
+    1781,
+    236783,
+    52,
+    236783,
+    51
+   ],
+   "pieces": [
+    "\u2581soon",
+    ".\"",
+    "}",
+    "<|\"|>",
+    "}",
+    "<tool_response|>"
+   ]
+  }
+ },
+ "think_token_in_system": {
+  "june:ON": 300,
+  "june:OFF": 0,
+  "july:ON": 300,
+  "july:OFF": 0
+ },
+ "fresh_turn_control": {
+  "june:ON": {
+   "tail": "sion of the final patch.<turn|>\n<|turn>model\n",
+   "last_ids": [
+    236761,
+    106,
+    107,
+    105,
+    4368,
+    107
+   ],
+   "pieces": [
+    ".",
+    "<turn|>",
+    "\n",
+    "<|turn>",
+    "model",
+    "\n"
+   ]
+  },
+  "june:OFF": {
+   "tail": "n|>\n<|turn>model\n<|channel>thought\n<channel|>",
+   "last_ids": [
+    4368,
+    107,
+    100,
+    45518,
+    107,
+    101
+   ],
+   "pieces": [
+    "model",
+    "\n",
+    "<|channel>",
+    "thought",
+    "\n",
+    "<channel|>"
+   ]
+  },
+  "july:ON": {
+   "tail": "sion of the final patch.<turn|>\n<|turn>model\n",
+   "last_ids": [
+    236761,
+    106,
+    107,
+    105,
+    4368,
+    107
+   ],
+   "pieces": [
+    ".",
+    "<turn|>",
+    "\n",
+    "<|turn>",
+    "model",
+    "\n"
+   ]
+  },
+  "july:OFF": {
+   "tail": "n|>\n<|turn>model\n<|channel>thought\n<channel|>",
+   "last_ids": [
+    4368,
+    107,
+    100,
+    45518,
+    107,
+    101
+   ],
+   "pieces": [
+    "model",
+    "\n",
+    "<|channel>",
+    "thought",
+    "\n",
+    "<channel|>"
+   ]
+  }
+ }
+}

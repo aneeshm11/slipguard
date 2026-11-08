@@ -1,0 +1,560 @@
+{
+ "prereg": "PREREG_E_audit.md (sha256 in PROGRESS.md at freeze)",
+ "B": 10000,
+ "replicate_complete": {
+  "bf16": {
+   "3": true,
+   "4": true,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false
+  },
+  "nvnvfp4": {
+   "3": true,
+   "4": true,
+   "5": true,
+   "6": false,
+   "7": false,
+   "8": false
+  },
+  "qatawq": {
+   "3": true,
+   "4": true,
+   "5": true,
+   "6": false,
+   "7": false,
+   "8": false
+  },
+  "qatnvfp4": {
+   "3": true,
+   "4": true,
+   "5": true,
+   "6": false,
+   "7": false,
+   "8": false
+  }
+ },
+ "analysis_sets": {
+  "bf16": [
+   3,
+   4
+  ],
+  "nvnvfp4": [
+   3,
+   4,
+   5
+  ],
+  "qatawq": [
+   3,
+   4,
+   5
+  ],
+  "qatnvfp4": [
+   3,
+   4,
+   5
+  ]
+ },
+ "awq_comparator_replicates": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "primary": {
+  "tests": {
+   "T1_bf16_below_qat": {
+    "diff": -1.5796,
+    "ci95": [
+     -2.7522,
+     -0.6681
+    ],
+    "p_boot": 0.0,
+    "p_holm": 0.0,
+    "pass": true
+   },
+   "T2_nvnvfp4_below_qat": {
+    "diff": -1.3097,
+    "ci95": [
+     -2.1209,
+     -0.6549
+    ],
+    "p_boot": 0.0,
+    "p_holm": 0.0,
+    "pass": true
+   },
+   "T3_qatawq_above_awq": {
+    "diff": 3.3308,
+    "ci95": [
+     1.9428,
+     4.9819
+    ],
+    "p_boot": 0.0,
+    "p_holm": 0.0,
+    "pass": true
+   },
+   "T4_qatnvfp4_above_awq": {
+    "diff": 4.3721,
+    "ci95": [
+     2.8912,
+     6.066
+    ],
+    "p_boot": 0.0,
+    "p_holm": 0.0,
+    "pass": true
+   }
+  },
+  "verdict": "AUDIT PREDICTS END-TO-END MALFORMED CALLS"
+ },
+ "checkpoints": {
+  "bf16": {
+   "analysis_set": [
+    3,
+    4
+   ],
+   "n_tasks": 113,
+   "n_episode_sets": 226,
+   "excluded": [],
+   "deficit_nats": 0.0,
+   "c_base": {
+    "stuck": [
+     3,
+     226
+    ],
+    "resolved": [
+     103,
+     226
+    ]
+   },
+   "c_fullp": {
+    "stuck": [
+     1,
+     226
+    ],
+    "resolved": [
+     102,
+     226
+    ]
+   },
+   "q_base": {
+    "stuck": [
+     12,
+     226
+    ],
+    "resolved": [
+     97,
+     226
+    ]
+   },
+   "base_vs_qat_base": {
+    "n_tasks": 113,
+    "A_mean": 0.4204,
+    "B_mean": 2.0,
+    "ratio_A_over_B": {
+     "ratio": 0.2102,
+     "ci95": [
+      0.1043,
+      0.4246
+     ]
+    },
+    "diff_A_minus_B": {
+     "n": 113,
+     "mean_diff": -1.5796,
+     "ci95": [
+      -2.7522,
+      -0.6681
+     ],
+     "p_boot": 0.0
+    }
+   },
+   "fullp_vs_base": {
+    "n_tasks": 113,
+    "A_mean": 0.4513,
+    "B_mean": 0.4204,
+    "ratio_A_over_B": {
+     "ratio": 1.0737,
+     "ci95": [
+      0.327,
+      2.831
+     ]
+    },
+    "diff_A_minus_B": {
+     "n": 113,
+     "mean_diff": 0.031,
+     "ci95": [
+      -0.3761,
+      0.6195
+     ],
+     "p_boot": 0.994
+    }
+   },
+   "resolve_base_vs_qat_base": {
+    "n": 113,
+    "mean_diff": 0.0265,
+    "ci95": [
+     -0.0221,
+     0.0752
+    ],
+    "p_boot": 0.3126
+   }
+  },
+  "nvnvfp4": {
+   "analysis_set": [
+    3,
+    4,
+    5
+   ],
+   "n_tasks": 113,
+   "n_episode_sets": 339,
+   "excluded": [],
+   "deficit_nats": 1.3555,
+   "c_base": {
+    "stuck": [
+     3,
+     339
+    ],
+    "resolved": [
+     159,
+     339
+    ]
+   },
+   "c_fullp": {
+    "stuck": [
+     0,
+     339
+    ],
+    "resolved": [
+     164,
+     339
+    ]
+   },
+   "q_base": {
+    "stuck": [
+     17,
+     339
+    ],
+    "resolved": [
+     150,
+     339
+    ]
+   },
+   "base_vs_qat_base": {
+    "n_tasks": 113,
+    "A_mean": 0.3422,
+    "B_mean": 1.6519,
+    "ratio_A_over_B": {
+     "ratio": 0.2071,
+     "ci95": [
+      0.1148,
+      0.3784
+     ]
+    },
+    "diff_A_minus_B": {
+     "n": 113,
+     "mean_diff": -1.3097,
+     "ci95": [
+      -2.1209,
+      -0.6549
+     ],
+     "p_boot": 0.0
+    }
+   },
+   "fullp_vs_base": {
+    "n_tasks": 113,
+    "A_mean": 0.1947,
+    "B_mean": 0.3422,
+    "ratio_A_over_B": {
+     "ratio": 0.569,
+     "ci95": [
+      0.3592,
+      0.8866
+     ]
+    },
+    "diff_A_minus_B": {
+     "n": 113,
+     "mean_diff": -0.1475,
+     "ci95": [
+      -0.2861,
+      -0.0236
+     ],
+     "p_boot": 0.0174
+    }
+   },
+   "resolve_base_vs_qat_base": {
+    "n": 113,
+    "mean_diff": 0.0265,
+    "ci95": [
+     -0.0177,
+     0.0708
+    ],
+    "p_boot": 0.2454
+   }
+  },
+  "qatawq": {
+   "analysis_set": [
+    3,
+    4,
+    5
+   ],
+   "n_tasks": 113,
+   "n_episode_sets": 339,
+   "excluded": [],
+   "deficit_nats": 5.9961,
+   "c_base": {
+    "stuck": [
+     45,
+     339
+    ],
+    "resolved": [
+     148,
+     339
+    ]
+   },
+   "c_fullp": {
+    "stuck": [
+     1,
+     339
+    ],
+    "resolved": [
+     155,
+     339
+    ]
+   },
+   "q_base": {
+    "stuck": [
+     17,
+     339
+    ],
+    "resolved": [
+     150,
+     339
+    ]
+   },
+   "base_vs_qat_base": {
+    "n_tasks": 113,
+    "A_mean": 3.8053,
+    "B_mean": 1.6519,
+    "ratio_A_over_B": {
+     "ratio": 2.3036,
+     "ci95": [
+      1.3412,
+      3.8776
+     ]
+    },
+    "diff_A_minus_B": {
+     "n": 113,
+     "mean_diff": 2.1534,
+     "ci95": [
+      0.6578,
+      3.8142
+     ],
+     "p_boot": 0.003
+    }
+   },
+   "fullp_vs_base": {
+    "n_tasks": 113,
+    "A_mean": 0.1888,
+    "B_mean": 3.8053,
+    "ratio_A_over_B": {
+     "ratio": 0.0496,
+     "ci95": [
+      0.0054,
+      0.1547
+     ]
+    },
+    "diff_A_minus_B": {
+     "n": 113,
+     "mean_diff": -3.6165,
+     "ci95": [
+      -5.2448,
+      -2.236
+     ],
+     "p_boot": 0.0
+    }
+   },
+   "resolve_base_vs_qat_base": {
+    "n": 113,
+    "mean_diff": -0.0059,
+    "ci95": [
+     -0.0531,
+     0.0442
+    ],
+    "p_boot": 0.8268
+   },
+   "base_vs_awq_base": {
+    "n_tasks": 113,
+    "A_mean": 3.8053,
+    "B_mean": 0.4746,
+    "ratio_A_over_B": {
+     "ratio": 8.0186,
+     "ci95": [
+      4.5405,
+      13.8328
+     ]
+    },
+    "diff_A_minus_B": {
+     "n": 113,
+     "mean_diff": 3.3308,
+     "ci95": [
+      1.9428,
+      4.9819
+     ],
+     "p_boot": 0.0
+    }
+   }
+  },
+  "qatnvfp4": {
+   "analysis_set": [
+    3,
+    4,
+    5
+   ],
+   "n_tasks": 113,
+   "n_episode_sets": 339,
+   "excluded": [],
+   "deficit_nats": 7.4141,
+   "c_base": {
+    "stuck": [
+     45,
+     339
+    ],
+    "resolved": [
+     141,
+     339
+    ]
+   },
+   "c_fullp": {
+    "stuck": [
+     2,
+     339
+    ],
+    "resolved": [
+     152,
+     339
+    ]
+   },
+   "q_base": {
+    "stuck": [
+     17,
+     339
+    ],
+    "resolved": [
+     150,
+     339
+    ]
+   },
+   "base_vs_qat_base": {
+    "n_tasks": 113,
+    "A_mean": 4.8466,
+    "B_mean": 1.6519,
+    "ratio_A_over_B": {
+     "ratio": 2.9339,
+     "ci95": [
+      1.7941,
+      4.8452
+     ]
+    },
+    "diff_A_minus_B": {
+     "n": 113,
+     "mean_diff": 3.1947,
+     "ci95": [
+      1.6313,
+      4.9558
+     ],
+     "p_boot": 0.0
+    }
+   },
+   "fullp_vs_base": {
+    "n_tasks": 113,
+    "A_mean": 0.2743,
+    "B_mean": 4.8466,
+    "ratio_A_over_B": {
+     "ratio": 0.0566,
+     "ci95": [
+      0.0229,
+      0.1255
+     ]
+    },
+    "diff_A_minus_B": {
+     "n": 113,
+     "mean_diff": -4.5723,
+     "ci95": [
+      -6.2478,
+      -3.0737
+     ],
+     "p_boot": 0.0
+    }
+   },
+   "resolve_base_vs_qat_base": {
+    "n": 113,
+    "mean_diff": -0.0265,
+    "ci95": [
+     -0.0678,
+     0.0147
+    ],
+    "p_boot": 0.1928
+   },
+   "base_vs_awq_base": {
+    "n_tasks": 113,
+    "A_mean": 4.8466,
+    "B_mean": 0.4746,
+    "ratio_A_over_B": {
+     "ratio": 10.2129,
+     "ci95": [
+      6.0878,
+      17.1993
+     ]
+    },
+    "diff_A_minus_B": {
+     "n": 113,
+     "mean_diff": 4.3721,
+     "ci95": [
+      2.8912,
+      6.066
+     ],
+     "p_boot": 0.0
+    }
+   }
+  }
+ },
+ "descriptive_rank": {
+  "rows_checkpoint_deficit_baseY1": [
+   [
+    "bf16",
+    0.0,
+    0.4204
+   ],
+   [
+    "nvnvfp4",
+    1.3555,
+    0.3422
+   ],
+   [
+    "qatawq",
+    5.9961,
+    3.8053
+   ],
+   [
+    "qatnvfp4",
+    7.4141,
+    4.8466
+   ],
+   [
+    "qat",
+    5.1328,
+    1.9062
+   ],
+   [
+    "awq",
+    0.0161,
+    0.4746
+   ]
+  ],
+  "spearman": 0.8286
+ }
+}

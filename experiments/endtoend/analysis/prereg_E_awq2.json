@@ -1,0 +1,150 @@
+{
+ "prereg": "PREREG_E_awq2.md (sha256 in PROGRESS.md at freeze)",
+ "B": 10000,
+ "replicate_complete": {
+  "3": true,
+  "4": true,
+  "5": true,
+  "6": true,
+  "7": true,
+  "8": true
+ },
+ "analysis_set": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "n_tasks": 113,
+ "n_episode_pairs": 678,
+ "excluded_pairs": [],
+ "primary_P2_awq_fullp_vs_awq_base": {
+  "n_tasks": 113,
+  "A_mean": 0.2935,
+  "B_mean": 0.4956,
+  "ratio_A_over_B": {
+   "ratio": 0.5923,
+   "ci95": [
+    0.3579,
+    0.9947
+   ]
+  },
+  "diff_A_minus_B": {
+   "n": 113,
+   "mean_diff": -0.2021,
+   "ci95": [
+    -0.4617,
+    -0.0029
+   ],
+   "p_boot": 0.0446
+  },
+  "verdict": "SLIPGUARD STILL REDUCES MALFORMED CALLS ON THE AUDIT'S PICK"
+ },
+ "secondary": {
+  "S1_Y2": {
+   "n_tasks": 113,
+   "A_mean": 0.3319,
+   "B_mean": 0.5428,
+   "ratio_A_over_B": {
+    "ratio": 0.6114,
+    "ci95": [
+     0.3834,
+     0.9795
+    ]
+   },
+   "diff_A_minus_B": {
+    "n": 113,
+    "mean_diff": -0.2109,
+    "ci95": [
+     -0.4794,
+     -0.0029
+    ],
+    "p_boot": 0.0452
+   }
+  },
+  "S2_stuck": {
+   "base": [
+    5,
+    678
+   ],
+   "fullp": [
+    1,
+    678
+   ],
+   "mcnemar_p": 0.21875
+  },
+  "S3_resolve": {
+   "n": 113,
+   "mean_diff": 0.0369,
+   "ci95": [
+    0.0147,
+    0.0605
+   ],
+   "p_boot": 0.0004,
+   "non_inferior_at_-3pp_descriptive": true,
+   "resolved_base_fullp_of": [
+    301,
+    326,
+    678
+   ]
+  },
+  "S4_awq_base_vs_qat_base_fresh": {
+   "n_tasks": 113,
+   "A_mean": 0.4956,
+   "B_mean": 1.9062,
+   "ratio_A_over_B": {
+    "ratio": 0.26,
+    "ci95": [
+     0.1494,
+     0.438
+    ]
+   },
+   "diff_A_minus_B": {
+    "n": 113,
+    "mean_diff": -1.4106,
+    "ci95": [
+     -2.0142,
+     -0.8581
+    ],
+    "p_boot": 0.0
+   },
+   "verdict": "REPLICATES",
+   "comparator": "QAT base, pop31 r1..r10"
+  }
+ },
+ "descriptive_all_awq_replicates": {
+  "replicates": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "P2": {
+   "n_tasks": 113,
+   "A_mean": 0.2998,
+   "B_mean": 0.4746,
+   "ratio_A_over_B": {
+    "ratio": 0.6317,
+    "ci95": [
+     0.4159,
+     0.9565
+    ]
+   },
+   "diff_A_minus_B": {
+    "n": 113,
+    "mean_diff": -0.1748,
+    "ci95": [
+     -0.3728,
+     -0.0133
+    ],
+    "p_boot": 0.032
+   }
+  }
+ }
+}

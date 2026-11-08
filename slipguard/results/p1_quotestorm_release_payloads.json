@@ -1,0 +1,52 @@
+{
+ "frozen": {
+  "ok": true,
+  "engine": "frozen",
+  "payloads": 2762,
+  "source": "QuoteStorm payloads file",
+  "by_cfg": {
+   "ipd": {
+    "calls": 5524,
+    "changed": 0,
+    "roundtrip_skipped": 0,
+    "not_strictly_valid_skipped": 0,
+    "pass": true,
+    "examples": []
+   },
+   "fullp": {
+    "calls": 5524,
+    "changed": 0,
+    "roundtrip_skipped": 0,
+    "not_strictly_valid_skipped": 0,
+    "pass": true,
+    "examples": []
+   }
+  },
+  "seconds": 44.2
+ },
+ "lite": {
+  "ok": true,
+  "engine": "lite",
+  "payloads": 2762,
+  "source": "QuoteStorm payloads file",
+  "by_cfg": {
+   "ipd": {
+    "calls": 5524,
+    "changed": 0,
+    "roundtrip_skipped": 0,
+    "not_strictly_valid_skipped": 0,
+    "pass": true,
+    "examples": []
+   },
+   "fullp": {
+    "calls": 5524,
+    "changed": 0,
+    "roundtrip_skipped": 0,
+    "not_strictly_valid_skipped": 0,
+    "pass": true,
+    "examples": []
+   }
+  },
+  "seconds": 36.4
+ }
+}

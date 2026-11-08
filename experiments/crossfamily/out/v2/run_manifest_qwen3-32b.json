@@ -1,0 +1,51 @@
+{
+ "model_key": "qwen3-32b",
+ "recorded_utc": "2026-11-05T13:18:42Z",
+ "endpoint": "http://127.0.0.1:8320/v1",
+ "gpu": 2,
+ "server_ready_utc_per_coordinator": "2026-11-05T13:17:22Z",
+ "v1_models": {
+  "object": "list",
+  "data": [
+   {
+    "id": "qwen3-32b",
+    "object": "model",
+    "created": 1793884722,
+    "owned_by": "vllm",
+    "root": "models/Qwen3-32B-FP8",
+    "parent": null,
+    "max_model_len": 32768,
+    "permission": [
+     {
+      "id": "modelperm-9c56f7cd86848115",
+      "object": "model_permission",
+      "created": 1793884722,
+      "allow_create_engine": false,
+      "allow_sampling": true,
+      "allow_logprobs": true,
+      "allow_search_indices": false,
+      "allow_view": true,
+      "allow_fine_tuning": false,
+      "organization": "*",
+      "group": null,
+      "is_blocking": false
+     }
+    ]
+   }
+  ]
+ },
+ "server_log": "logs/vllm/g2_8320.log",
+ "server_non_default_args": "{'host': '127.0.0.1', 'port': 8320, 'model': 'models/Qwen3-32B-FP8', 'max_model_len': 32768, 'served_model_name': ['qwen3-32b'], 'enable_prefix_caching': True, 'max_num_seqs': 64}",
+ "vllm_version": "v0.19.1",
+ "kv_cache": {
+  "available_gib": "37.22",
+  "tokens": "152,464",
+  "max_concurrency_at_32768": "4.65"
+ },
+ "gpu_memory_utilization": "0.90 (vLLM default; per coordinator, identical to the Nov 4 discovery server)",
+ "prompts": "experiments/crossfamily/out/v2/prompts_qwen3-32b.jsonl",
+ "prompts_sha256": "e04b931ffc6413aa18b48d74825a2ecae9bfcec7086741cfa6d4b9d072f4378b",
+ "runner": "experiments/crossfamily/scripts/v2_frozen/run_qwen.py",
+ "runner_sha256": "524096df0117c2215cabc113b70537692064a5c4bbdac76494cc8e58966a3ace",
+ "run_plan": "frozen runner, conc 24 / ctx_conc 4 (as discovery); --sets v2A1 first (battery, X1-X4), then --sets v2B1 (census, X5); each set run twice (second pass retries failures). Job order does not change seeds (md5(context_id))."
+}

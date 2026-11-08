@@ -1,0 +1,132 @@
+[15:08:59] queued (unclaimed) 4; active lane units 0; cutoff passed: yes
+== E_audit status (completeness only) ==
+{"prereg": "PREREG_E_audit.md (sha256 in PROGRESS.md at freeze)", "B": 10000, "replicate_complete": {"bf16": {"3": true, "4": true, "5": false, "6": false, "7": false, "8": false}, "nvnvfp4": {"3": true, "4": true, "5": true, "6": false, "7": false, "8": false}, "qatawq": {"3": true, "4": true, "5": true, "6": false, "7": false, "8": false}, "qatnvfp4": {"3": true, "4": true, "5": true, "6": false, "7": false, "8": false}}, "analysis_sets": {"bf16": [3, 4], "nvnvfp4": [3, 4, 5], "qatawq": [3, 4, 5], "qatnvfp4": [3, 4, 5]}, "awq_comparator_replicates": [1, 2, 3, 4, 5, 6, 7, 8]}
+== E_comp status (completeness only) ==
+{"prereg": "PREREG_E_comp.md (sha256 in PROGRESS.md at freeze)", "B": 10000, "replicate_complete": {"3": true, "4": true, "5": true, "6": true, "7": false, "8": false}, "analysis_set": [3, 4, 5, 6]}
+== E_audit ANALYSIS (once) 15:09:00 ==
+{
+ "analysis_sets": {
+  "bf16": [
+   3,
+   4
+  ],
+  "nvnvfp4": [
+   3,
+   4,
+   5
+  ],
+  "qatawq": [
+   3,
+   4,
+   5
+  ],
+  "qatnvfp4": [
+   3,
+   4,
+   5
+  ]
+ },
+ "primary": {
+  "tests": {
+   "T1_bf16_below_qat": {
+    "diff": -1.5796,
+    "ci95": [
+     -2.7522,
+     -0.6681
+    ],
+    "p_boot": 0.0,
+    "p_holm": 0.0,
+    "pass": true
+   },
+   "T2_nvnvfp4_below_qat": {
+    "diff": -1.3097,
+    "ci95": [
+     -2.1209,
+     -0.6549
+    ],
+    "p_boot": 0.0,
+    "p_holm": 0.0,
+    "pass": true
+   },
+   "T3_qatawq_above_awq": {
+    "diff": 3.3308,
+    "ci95": [
+     1.9428,
+     4.9819
+    ],
+    "p_boot": 0.0,
+    "p_holm": 0.0,
+    "pass": true
+   },
+   "T4_qatnvfp4_above_awq": {
+    "diff": 4.3721,
+    "ci95": [
+     2.8912,
+     6.066
+    ],
+    "p_boot": 0.0,
+    "p_holm": 0.0,
+    "pass": true
+   }
+  },
+  "verdict": "AUDIT PREDICTS END-TO-END MALFORMED CALLS"
+ },
+ "rank": {
+  "rows_checkpoint_deficit_baseY1": [
+   [
+    "bf16",
+    0.0,
+    0.4204
+   ],
+   [
+    "nvnvfp4",
+    1.3555,
+    0.3422
+   ],
+   [
+    "qatawq",
+    5.9961,
+    3.8053
+   ],
+   [
+    "qatnvfp4",
+    7.4141,
+    4.8466
+   ],
+   [
+    "qat",
+    5.1328,
+    1.9062
+   ],
+   [
+    "awq",
+    0.0161,
+    0.4746
+   ]
+  ],
+  "spearman": 0.8286
+ }
+}
+rc=0
+== E_comp ANALYSIS (once) 15:09:27 ==
+{
+ "analysis_set": [
+  3,
+  4,
+  5,
+  6
+ ],
+ "primary": {
+  "Q1_quarantine_alone": "QUARANTINE ALONE REDUCES MALFORMED CALLS END TO END",
+  "Q2_ipd_alone": "IPD ALONE REDUCES MALFORMED CALLS END TO END"
+ },
+ "means": {
+  "base": 1.5619,
+  "fullp": 0.292,
+  "quar": 0.6615,
+  "ipd": 0.3673
+ }
+}
+rc=0
+a9ff64d29af5fec84cfc8083297bc704836c469cc67ba9b22a843bf0b1484697  analysis/prereg_E_audit.json
+6e4be7f091968465fb275f47afd9284e5075160d3c5b983b2283f80b87c5885e  analysis/prereg_E_comp.json

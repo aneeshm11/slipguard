@@ -1,0 +1,1237 @@
+{
+ "model": "gpt-oss-20b",
+ "n_records": 900,
+ "errors": {},
+ "arms": {
+  "P0": {
+   "n": 150,
+   "P_call": [
+    1.0,
+    0.975,
+    1.0,
+    150
+   ],
+   "P_edit": [
+    0.5533,
+    0.4734,
+    0.6306,
+    150
+   ],
+   "P_malformed_edit_uncond": [
+    0.0467,
+    0.0228,
+    0.0932,
+    150
+   ],
+   "P_malformed_given_edit": [
+    0.0843,
+    0.0415,
+    0.164,
+    83
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0733,
+    0.0414,
+    0.1265,
+    150
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0467,
+    0.0228,
+    0.0932,
+    150
+   ],
+   "P_loud_edit_uncond": [
+    0.0,
+    0.0,
+    0.025,
+    150
+   ],
+   "P_strict_reject_given_edit": [
+    0.0843,
+    0.0415,
+    0.164,
+    83
+   ],
+   "first_call_names": {
+    "edit_file": 83,
+    "bash": 43,
+    "read_file": 9,
+    "edit_file<|channel|>commentary": 5,
+    "bash<|channel|>commentary": 3,
+    "write_file": 2,
+    "submit": 1,
+    "search_file": 1
+   },
+   "malformed_edit_why": {
+    "args_not_object": 4,
+    "extra_key": 3
+   },
+   "malformed_edit_flags": {
+    "args_not_object": 4,
+    "extra_key": 3,
+    "missing:new_string": 1,
+    "missing:old_string": 1
+   },
+   "budget_forced": 0,
+   "thought_tokens_median": 58.5,
+   "edit_order": {
+    "new_first": 34,
+    "old_first": 44,
+    "null": 4,
+    "neither": 1
+   }
+  },
+  "P1L": {
+   "n": 150,
+   "P_call": [
+    1.0,
+    0.975,
+    1.0,
+    150
+   ],
+   "P_edit": [
+    0.26,
+    0.1964,
+    0.3356,
+    150
+   ],
+   "P_malformed_edit_uncond": [
+    0.02,
+    0.0068,
+    0.0571,
+    150
+   ],
+   "P_malformed_given_edit": [
+    0.0769,
+    0.0265,
+    0.2032,
+    39
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0733,
+    0.0414,
+    0.1265,
+    150
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.02,
+    0.0068,
+    0.0571,
+    150
+   ],
+   "P_loud_edit_uncond": [
+    0.0,
+    0.0,
+    0.025,
+    150
+   ],
+   "P_strict_reject_given_edit": [
+    0.0769,
+    0.0265,
+    0.2032,
+    39
+   ],
+   "first_call_names": {
+    "read_file": 54,
+    "bash": 42,
+    "edit_file": 39,
+    "write_file": 5,
+    "search": 3,
+    "open_file": 3,
+    "submit": 1,
+    "edit_file<|channel|>commentary": 1
+   },
+   "malformed_edit_why": {
+    "extra_key": 3
+   },
+   "malformed_edit_flags": {
+    "extra_key": 3
+   },
+   "budget_forced": 0,
+   "thought_tokens_median": 66.0,
+   "edit_order": {
+    "old_first": 38,
+    "new_first": 1
+   }
+  },
+  "P1N": {
+   "n": 150,
+   "P_call": [
+    1.0,
+    0.975,
+    1.0,
+    150
+   ],
+   "P_edit": [
+    0.38,
+    0.3062,
+    0.4598,
+    150
+   ],
+   "P_malformed_edit_uncond": [
+    0.02,
+    0.0068,
+    0.0571,
+    150
+   ],
+   "P_malformed_given_edit": [
+    0.0526,
+    0.0181,
+    0.1437,
+    57
+   ],
+   "P_malformed_any_call_given_call": [
+    0.04,
+    0.0185,
+    0.0845,
+    150
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.02,
+    0.0068,
+    0.0571,
+    150
+   ],
+   "P_loud_edit_uncond": [
+    0.0,
+    0.0,
+    0.025,
+    150
+   ],
+   "P_strict_reject_given_edit": [
+    0.0526,
+    0.0181,
+    0.1437,
+    57
+   ],
+   "first_call_names": {
+    "edit_file": 57,
+    "read_file": 44,
+    "bash": 38,
+    "write_file": 4,
+    "search": 3,
+    "open_file": 1,
+    "browse_file": 1,
+    "read_file<|channel|>analysis": 1
+   },
+   "malformed_edit_why": {
+    "extra_key": 2,
+    "missing:new_string": 1
+   },
+   "malformed_edit_flags": {
+    "extra_key": 2,
+    "missing:new_string": 1
+   },
+   "budget_forced": 0,
+   "thought_tokens_median": 60.5,
+   "edit_order": {
+    "old_first": 55,
+    "new_first": 2
+   }
+  },
+  "P5": {
+   "n": 150,
+   "P_call": [
+    0.9867,
+    0.9527,
+    0.9963,
+    150
+   ],
+   "P_edit": [
+    0.2333,
+    0.1728,
+    0.3072,
+    150
+   ],
+   "P_malformed_edit_uncond": [
+    0.02,
+    0.0068,
+    0.0571,
+    150
+   ],
+   "P_malformed_given_edit": [
+    0.0857,
+    0.0296,
+    0.2238,
+    35
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0743,
+    0.042,
+    0.1282,
+    148
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.02,
+    0.0068,
+    0.0571,
+    150
+   ],
+   "P_loud_edit_uncond": [
+    0.0,
+    0.0,
+    0.025,
+    150
+   ],
+   "P_strict_reject_given_edit": [
+    0.0857,
+    0.0296,
+    0.2238,
+    35
+   ],
+   "first_call_names": {
+    "bash": 66,
+    "edit_file": 35,
+    "read_file": 24,
+    "write_file": 7,
+    "search": 6,
+    "open_file": 2,
+    "<no call>": 2,
+    "write_file<|channel|>commentary": 1
+   },
+   "malformed_edit_why": {
+    "extra_key": 2,
+    "missing:new_string": 1
+   },
+   "malformed_edit_flags": {
+    "extra_key": 2,
+    "missing:old_string": 1,
+    "missing:new_string": 1
+   },
+   "budget_forced": 0,
+   "thought_tokens_median": 110.5,
+   "edit_order": {
+    "old_first": 34,
+    "new_first": 1
+   }
+  },
+  "P6": {
+   "n": 150,
+   "P_call": [
+    1.0,
+    0.975,
+    1.0,
+    150
+   ],
+   "P_edit": [
+    0.48,
+    0.4016,
+    0.5594,
+    150
+   ],
+   "P_malformed_edit_uncond": [
+    0.0467,
+    0.0228,
+    0.0932,
+    150
+   ],
+   "P_malformed_given_edit": [
+    0.0972,
+    0.0479,
+    0.1874,
+    72
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0867,
+    0.0513,
+    0.1426,
+    150
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0467,
+    0.0228,
+    0.0932,
+    150
+   ],
+   "P_loud_edit_uncond": [
+    0.0067,
+    0.0012,
+    0.0368,
+    150
+   ],
+   "P_strict_reject_given_edit": [
+    0.0972,
+    0.0479,
+    0.1874,
+    72
+   ],
+   "first_call_names": {
+    "edit_file": 72,
+    "bash": 46,
+    "read_file": 24,
+    "write_file": 4,
+    "search": 2,
+    "edit_file<|channel|>commentary": 1,
+    "edit_file<|channel|>json": 1
+   },
+   "malformed_edit_why": {
+    "extra_key": 5,
+    "unparsed": 1,
+    "args_not_object": 1
+   },
+   "malformed_edit_flags": {
+    "extra_key": 5,
+    "unparsed": 1,
+    "missing:new_string": 1,
+    "missing:old_string": 1,
+    "args_not_object": 1
+   },
+   "budget_forced": 0,
+   "thought_tokens_median": 60.0,
+   "edit_order": {
+    "old_first": 50,
+    "new_first": 19,
+    "null": 2,
+    "neither": 1
+   }
+  },
+  "P8a": {
+   "n": 150,
+   "P_call": [
+    1.0,
+    0.975,
+    1.0,
+    150
+   ],
+   "P_edit": [
+    0.28,
+    0.2143,
+    0.3567,
+    150
+   ],
+   "P_malformed_edit_uncond": [
+    0.0133,
+    0.0037,
+    0.0473,
+    150
+   ],
+   "P_malformed_given_edit": [
+    0.0476,
+    0.0132,
+    0.1579,
+    42
+   ],
+   "P_malformed_any_call_given_call": [
+    0.06,
+    0.0319,
+    0.1101,
+    150
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0133,
+    0.0037,
+    0.0473,
+    150
+   ],
+   "P_loud_edit_uncond": [
+    0.0,
+    0.0,
+    0.025,
+    150
+   ],
+   "P_strict_reject_given_edit": [
+    0.0476,
+    0.0132,
+    0.1579,
+    42
+   ],
+   "first_call_names": {
+    "read_file": 59,
+    "edit_file": 42,
+    "bash": 35,
+    "search": 5,
+    "write_file": 3,
+    "open_file": 2,
+    "submit": 1,
+    "browse": 1
+   },
+   "malformed_edit_why": {
+    "extra_key": 1,
+    "args_not_object": 1
+   },
+   "malformed_edit_flags": {
+    "extra_key": 1,
+    "args_not_object": 1
+   },
+   "budget_forced": 0,
+   "thought_tokens_median": 66.5,
+   "edit_order": {
+    "old_first": 38,
+    "null": 1,
+    "new_first": 3
+   }
+  }
+ },
+ "logged_gemma31b_next_call_malformed": {},
+ "paired_vs_P0": {
+  "P1L": {
+   "n_contexts": 150,
+   "n_attempts": 125,
+   "events_arm": 3,
+   "events_base": 7,
+   "discordant_arm_only": 2,
+   "discordant_base_only": 6,
+   "uncond": {
+    "arm": 0.02,
+    "base": 0.0467,
+    "RD": -0.0267,
+    "RD_CI": [
+     -0.0649,
+     0.0068
+    ],
+    "p_one_sided_RD_gt_0": 0.9543,
+    "p_one_sided_RD_lt_0": 0.10109,
+    "ratio": 0.429,
+    "ratio_CI": [
+     0.0,
+     1.3333
+    ],
+    "ratio_haldane": 0.467,
+    "mcnemar_exact_p_one_sided": 0.964844
+   },
+   "cond": {
+    "arm": 0.0769,
+    "base": 0.0843,
+    "RD": -0.0074,
+    "RD_CI": [
+     -0.0962,
+     0.0905
+    ],
+    "ratio": 0.912,
+    "ratio_CI": [
+     0.0,
+     2.8651
+    ],
+    "n_edits_arm": 39,
+    "n_edits_base": 83
+   },
+   "P_edit": {
+    "arm": 0.26,
+    "base": 0.5533,
+    "RD": -0.2933,
+    "RD_CI": [
+     -0.3907,
+     -0.1973
+    ]
+   }
+  },
+  "P1N": {
+   "n_contexts": 150,
+   "n_attempts": 125,
+   "events_arm": 3,
+   "events_base": 7,
+   "discordant_arm_only": 3,
+   "discordant_base_only": 7,
+   "uncond": {
+    "arm": 0.02,
+    "base": 0.0467,
+    "RD": -0.0267,
+    "RD_CI": [
+     -0.069,
+     0.0135
+    ],
+    "p_one_sided_RD_gt_0": 0.93301,
+    "p_one_sided_RD_lt_0": 0.12269,
+    "ratio": 0.429,
+    "ratio_CI": [
+     0.0,
+     1.6667
+    ],
+    "ratio_haldane": 0.467,
+    "mcnemar_exact_p_one_sided": 0.945312
+   },
+   "cond": {
+    "arm": 0.0526,
+    "base": 0.0843,
+    "RD": -0.0317,
+    "RD_CI": [
+     -0.1175,
+     0.0534
+    ],
+    "ratio": 0.624,
+    "ratio_CI": [
+     0.0,
+     2.2935
+    ],
+    "n_edits_arm": 57,
+    "n_edits_base": 83
+   },
+   "P_edit": {
+    "arm": 0.38,
+    "base": 0.5533,
+    "RD": -0.1733,
+    "RD_CI": [
+     -0.2653,
+     -0.0828
+    ]
+   }
+  },
+  "P5": {
+   "n_contexts": 150,
+   "n_attempts": 125,
+   "events_arm": 3,
+   "events_base": 7,
+   "discordant_arm_only": 2,
+   "discordant_base_only": 6,
+   "uncond": {
+    "arm": 0.02,
+    "base": 0.0467,
+    "RD": -0.0267,
+    "RD_CI": [
+     -0.0654,
+     0.0068
+    ],
+    "p_one_sided_RD_gt_0": 0.9513,
+    "p_one_sided_RD_lt_0": 0.09819,
+    "ratio": 0.429,
+    "ratio_CI": [
+     0.0,
+     1.4
+    ],
+    "ratio_haldane": 0.467,
+    "mcnemar_exact_p_one_sided": 0.964844
+   },
+   "cond": {
+    "arm": 0.0857,
+    "base": 0.0843,
+    "RD": 0.0014,
+    "RD_CI": [
+     -0.0982,
+     0.1079
+    ],
+    "ratio": 1.016,
+    "ratio_CI": [
+     0.0,
+     3.3091
+    ],
+    "n_edits_arm": 35,
+    "n_edits_base": 83
+   },
+   "P_edit": {
+    "arm": 0.2333,
+    "base": 0.5533,
+    "RD": -0.32,
+    "RD_CI": [
+     -0.4122,
+     -0.223
+    ]
+   }
+  },
+  "P6": {
+   "n_contexts": 150,
+   "n_attempts": 125,
+   "events_arm": 7,
+   "events_base": 7,
+   "discordant_arm_only": 6,
+   "discordant_base_only": 6,
+   "uncond": {
+    "arm": 0.0467,
+    "base": 0.0467,
+    "RD": 0.0,
+    "RD_CI": [
+     -0.0461,
+     0.0458
+    ],
+    "p_one_sided_RD_gt_0": 0.56064,
+    "p_one_sided_RD_lt_0": 0.55454,
+    "ratio": 1.0,
+    "ratio_CI": [
+     0.3333,
+     3.0
+    ],
+    "ratio_haldane": 1.0,
+    "mcnemar_exact_p_one_sided": 0.612793
+   },
+   "cond": {
+    "arm": 0.0972,
+    "base": 0.0843,
+    "RD": 0.0129,
+    "RD_CI": [
+     -0.0716,
+     0.0983
+    ],
+    "ratio": 1.153,
+    "ratio_CI": [
+     0.3927,
+     3.4932
+    ],
+    "n_edits_arm": 72,
+    "n_edits_base": 83
+   },
+   "P_edit": {
+    "arm": 0.48,
+    "base": 0.5533,
+    "RD": -0.0733,
+    "RD_CI": [
+     -0.1558,
+     0.0069
+    ]
+   }
+  },
+  "P8a": {
+   "n_contexts": 150,
+   "n_attempts": 125,
+   "events_arm": 2,
+   "events_base": 7,
+   "discordant_arm_only": 1,
+   "discordant_base_only": 6,
+   "uncond": {
+    "arm": 0.0133,
+    "base": 0.0467,
+    "RD": -0.0333,
+    "RD_CI": [
+     -0.0685,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 0.9899,
+    "p_one_sided_RD_lt_0": 0.0333,
+    "ratio": 0.286,
+    "ratio_CI": [
+     0.0,
+     1.0
+    ],
+    "ratio_haldane": 0.333,
+    "mcnemar_exact_p_one_sided": 0.992188
+   },
+   "cond": {
+    "arm": 0.0476,
+    "base": 0.0843,
+    "RD": -0.0367,
+    "RD_CI": [
+     -0.1094,
+     0.0407
+    ],
+    "ratio": 0.565,
+    "ratio_CI": [
+     0.0,
+     1.859
+    ],
+    "n_edits_arm": 42,
+    "n_edits_base": 83
+   },
+   "P_edit": {
+    "arm": 0.28,
+    "base": 0.5533,
+    "RD": -0.2733,
+    "RD_CI": [
+     -0.375,
+     -0.1722
+    ]
+   }
+  }
+ },
+ "removal": {
+  "P5": {
+   "n_contexts": 150,
+   "uncond": {
+    "P1L": 0.02,
+    "P5": 0.02,
+    "P0": 0.0467,
+    "fraction_removed": -0.0,
+    "CI": [
+     -2.5,
+     2.0
+    ],
+    "RD_P1L_minus_P5": 0.0,
+    "RD_CI": [
+     -0.0327,
+     0.0329
+    ],
+    "p_one_sided_removal_gt_0": 0.58644
+   },
+   "cond": {
+    "P1L": 0.0769,
+    "P5": 0.0857,
+    "P0": 0.0843,
+    "fraction_removed": 1.186,
+    "CI": [
+     -11.0743,
+     13.0725
+    ],
+    "RD_P1L_minus_P5": -0.0088,
+    "RD_CI": [
+     -0.1392,
+     0.1178
+    ],
+    "p_one_sided_removal_gt_0": 0.56384
+   }
+  },
+  "P8a": {
+   "n_contexts": 150,
+   "uncond": {
+    "P1L": 0.02,
+    "P8a": 0.0133,
+    "P0": 0.0467,
+    "fraction_removed": -0.25,
+    "CI": [
+     -3.0,
+     2.0
+    ],
+    "RD_P1L_minus_P8a": 0.0067,
+    "RD_CI": [
+     -0.0137,
+     0.0321
+    ],
+    "p_one_sided_removal_gt_0": 0.38956
+   },
+   "cond": {
+    "P1L": 0.0769,
+    "P8a": 0.0476,
+    "P0": 0.0843,
+    "fraction_removed": -3.952,
+    "CI": [
+     -10.0713,
+     11.25
+    ],
+    "RD_P1L_minus_P8a": 0.0293,
+    "RD_CI": [
+     -0.0513,
+     0.12
+    ],
+    "p_one_sided_removal_gt_0": 0.25457
+   }
+  },
+  "P1N": {
+   "n_contexts": 150,
+   "uncond": {
+    "P1L": 0.02,
+    "P1N": 0.02,
+    "P0": 0.0467,
+    "fraction_removed": -0.0,
+    "CI": [
+     -2.5,
+     2.0
+    ],
+    "RD_P1L_minus_P1N": 0.0,
+    "RD_CI": [
+     -0.0331,
+     0.0329
+    ],
+    "p_one_sided_removal_gt_0": 0.58894
+   },
+   "cond": {
+    "P1L": 0.0769,
+    "P1N": 0.0526,
+    "P0": 0.0843,
+    "fraction_removed": -3.276,
+    "CI": [
+     -10.875,
+     11.3158
+    ],
+    "RD_P1L_minus_P1N": 0.0243,
+    "RD_CI": [
+     -0.075,
+     0.1336
+    ],
+    "p_one_sided_removal_gt_0": 0.33987
+   }
+  },
+  "P6": {
+   "n_contexts": 150,
+   "uncond": {
+    "P1L": 0.02,
+    "P6": 0.0467,
+    "P0": 0.0467,
+    "fraction_removed": 1.0,
+    "CI": [
+     -2.0,
+     5.0
+    ],
+    "RD_P1L_minus_P6": -0.0267,
+    "RD_CI": [
+     -0.06,
+     0.0
+    ],
+    "p_one_sided_removal_gt_0": 0.9786
+   },
+   "cond": {
+    "P1L": 0.0769,
+    "P6": 0.0972,
+    "P0": 0.0843,
+    "fraction_removed": 2.738,
+    "CI": [
+     -9.4318,
+     10.5652
+    ],
+    "RD_P1L_minus_P6": -0.0203,
+    "RD_CI": [
+     -0.1005,
+     0.0657
+    ],
+    "p_one_sided_removal_gt_0": 0.69353
+   }
+  }
+ },
+ "copy_check": {
+  "P0": {
+   "same_content_variant": {
+    "n": 9,
+    "malformed": [
+     0.1111,
+     0.0199,
+     0.435,
+     9
+    ]
+   },
+   "new_content": {
+    "n": 69,
+    "malformed": [
+     0.0145,
+     0.0026,
+     0.0776,
+     69
+    ]
+   },
+   "key_missing": {
+    "n": 5,
+    "malformed": [
+     1.0,
+     0.5655,
+     1.0,
+     5
+    ]
+   },
+   "all_edits": {
+    "n": 83,
+    "malformed": [
+     0.0843,
+     0.0415,
+     0.164,
+     83
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.3543,
+    7
+   ],
+   "new_content_edits_malformed": [
+    0.0145,
+    0.0026,
+    0.0776,
+    69
+   ],
+   "non_copy_edits_malformed": [
+    0.0843,
+    0.0415,
+    0.164,
+    83
+   ]
+  },
+  "P1L": {
+   "clean_retry": {
+    "n": 5,
+    "malformed": [
+     0.0,
+     0.0,
+     0.4345,
+     5
+    ]
+   },
+   "same_content_variant": {
+    "n": 7,
+    "malformed": [
+     0.1429,
+     0.0257,
+     0.5131,
+     7
+    ]
+   },
+   "new_content": {
+    "n": 27,
+    "malformed": [
+     0.0741,
+     0.0206,
+     0.2337,
+     27
+    ]
+   },
+   "all_edits": {
+    "n": 39,
+    "malformed": [
+     0.0769,
+     0.0265,
+     0.2032,
+     39
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.5615,
+    3
+   ],
+   "new_content_edits_malformed": [
+    0.0741,
+    0.0206,
+    0.2337,
+    27
+   ],
+   "non_copy_edits_malformed": [
+    0.0769,
+    0.0265,
+    0.2032,
+    39
+   ]
+  },
+  "P6": {
+   "same_content_variant": {
+    "n": 6,
+    "malformed": [
+     0.0,
+     0.0,
+     0.3903,
+     6
+    ]
+   },
+   "new_content": {
+    "n": 63,
+    "malformed": [
+     0.0635,
+     0.025,
+     0.1522,
+     63
+    ]
+   },
+   "unparsed_other": {
+    "n": 1,
+    "malformed": [
+     1.0,
+     0.2065,
+     1.0,
+     1
+    ]
+   },
+   "key_missing": {
+    "n": 2,
+    "malformed": [
+     1.0,
+     0.3424,
+     1.0,
+     2
+    ]
+   },
+   "all_edits": {
+    "n": 72,
+    "malformed": [
+     0.0972,
+     0.0479,
+     0.1874,
+     72
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.3543,
+    7
+   ],
+   "new_content_edits_malformed": [
+    0.0635,
+    0.025,
+    0.1522,
+    63
+   ],
+   "non_copy_edits_malformed": [
+    0.0972,
+    0.0479,
+    0.1874,
+    72
+   ]
+  },
+  "P8a": {
+   "clean_retry": {
+    "n": 13,
+    "malformed": [
+     0.0,
+     0.0,
+     0.2281,
+     13
+    ]
+   },
+   "same_content_variant": {
+    "n": 4,
+    "malformed": [
+     0.25,
+     0.0456,
+     0.6994,
+     4
+    ]
+   },
+   "new_content": {
+    "n": 24,
+    "malformed": [
+     0.0,
+     0.0,
+     0.138,
+     24
+    ]
+   },
+   "key_missing": {
+    "n": 1,
+    "malformed": [
+     1.0,
+     0.2065,
+     1.0,
+     1
+    ]
+   },
+   "all_edits": {
+    "n": 42,
+    "malformed": [
+     0.0476,
+     0.0132,
+     0.1579,
+     42
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.6576,
+    2
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.138,
+    24
+   ],
+   "non_copy_edits_malformed": [
+    0.0476,
+    0.0132,
+    0.1579,
+    42
+   ]
+  },
+  "P1N": {
+   "clean_retry": {
+    "n": 22,
+    "malformed": [
+     0.0,
+     0.0,
+     0.1487,
+     22
+    ]
+   },
+   "same_content_variant": {
+    "n": 7,
+    "malformed": [
+     0.0,
+     0.0,
+     0.3543,
+     7
+    ]
+   },
+   "new_content": {
+    "n": 27,
+    "malformed": [
+     0.0741,
+     0.0206,
+     0.2337,
+     27
+    ]
+   },
+   "key_missing": {
+    "n": 1,
+    "malformed": [
+     1.0,
+     0.2065,
+     1.0,
+     1
+    ]
+   },
+   "all_edits": {
+    "n": 57,
+    "malformed": [
+     0.0526,
+     0.0181,
+     0.1437,
+     57
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.5615,
+    3
+   ],
+   "new_content_edits_malformed": [
+    0.0741,
+    0.0206,
+    0.2337,
+    27
+   ],
+   "non_copy_edits_malformed": [
+    0.0526,
+    0.0181,
+    0.1437,
+    57
+   ]
+  }
+ },
+ "natural_calls": {
+  "P0|edit|ok_strict_ok": 76,
+  "P0|edit|silent_parsed_malformed": 7,
+  "P0|other|ok_but_strict_reject:UNKNOWN_KEY": 2,
+  "P0|other|ok_but_strict_reject:UNKNOWN_TOOL": 12,
+  "P0|other|ok_strict_ok": 49,
+  "P0|other|silent_parsed_malformed": 4
+ },
+ "natural_examples": {
+  "P0:edit:silent_parsed_malformed": [
+   {
+    "id": "django__django-16899__S1:16",
+    "flags": [
+     "args_not_object"
+    ],
+    "raw": "{\"file_path\": \"/testbed/tests/admin_checks/tests.py\", \"new_string\": \"                \\\"The value of 'readonly_fields[0]' refers to 'i_dont_exist', which is not a callable, \\\"\\n                \\\"an attribute of 'CityInline', or an attribute of 'admin_checks.City'.\\\",\", \"old_string\": \"                \\\"The value of 'readonly_fields[0]' is not a callable, an attribute \\\"\\n                \\\"of 'CityInline', or an attribute of 'admin_checks.City'.\\\"}",
+    "new_head": ""
+   },
+   {
+    "id": "mwaskom__seaborn-2848__S1:15",
+    "flags": [
+     "args_not_object"
+    ],
+    "raw": "{\"file_path\": \"seaborn/_oldcore.py\", \"old_string\": \"\t                for converter, orig in grouped:\\n\t                    orig = orig.dropna()\\n\t                    if var in self.var_levels:\\n\t                            # TODO this should happen in some centralized location\\n\t                            # it is similar to GH2419, but more complicated because\\n\t                            # supporting `order` in categorical plots is tricky\\n\t                            orig = orig[orig.isin(self.var_levels[var])]\\n\t                    comp = pd.to_numeric(converter.convert_units(orig))\", \"new_string\": \"\t                for converter, orig in grouped:\\n\t                    orig = orig.dropna()\\n\t                    if var in self.var_levels:\\n\t                        orig = orig[orig.isin",
+    "new_head": ""
+   },
+   {
+    "id": "django__django-11564__S1:21",
+    "flags": [
+     "extra_key"
+    ],
+    "raw": "",
+    "new_head": "if not settings.configured:\n    settings_copy = TEST_SETTINGS.copy()\n    settings_copy['TEMPLATES'] = [{\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n    }]\n    settings.confi"
+   }
+  ],
+  "P0:other:silent_parsed_malformed": [
+   {
+    "id": "scikit-learn__scikit-learn-25969__S1:23",
+    "flags": [
+     "args_not_object"
+    ],
+    "raw": "{\"command\":\"python - <<'PY'\\nimport numpy as np\\nfrom sklearn.datasets import make_classification\\nfrom sklearn.model_selection import train_test_split\\nfrom sklearn.svm import SVC\\nfrom sklearn.metrics import RocCurveDisplay, PrecisionRecallDisplay\\n\\nX, y = make_classification(n_samples=200, n_classes=2, random_state=0)\\nX_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)\\nclf = SVC(probability=True, random_state=0).fit(X_train, y_train)\\n\\n# test RocCurveDisplay\\nRocCurveDisplay.from_estimator(clf, X_test, y_test).plot()\\nprint('RocCurveDisplay test passed')\\n\\n# test PrecisionRecallDisplay\\nPrecisionRecallDisplay.from_estimator(clf, X_test, y_test).plot()\\nprint('PrecisionRecallDisplay test passed')\\nPY\"]}",
+    "new_head": ""
+   },
+   {
+    "id": "sphinx-doc__sphinx-7910__S1:27",
+    "flags": [
+     "args_not_object"
+    ],
+    "raw": "{\"command\": \"python3 - <<'PY'\\nimport functools\\n\\ndef decorator(f):\\n    @functools.wraps(f)\\n    def wrapper(*args, **kwargs):\\n        return f(*args, **kwargs)\\n    return wrapper\\n\\nclass A:\\n    @decorator\\n    def __init__(self):\\n        pass\\n\\nprint('A.__init__.__module__:', A.__init__.__module__)\\nprint('A.__init__.__qualname__:', A.__init__.__qualname__)\\nprint('A.__init__.__globals__ keys:', list(A.__init__.__globals__.keys())[:5])\\nprint('A.__init__.__globals__.get(\\\"A\\\"):', A.__init__.__globals__.get('A'))\\nPY\"]}",
+    "new_head": ""
+   },
+   {
+    "id": "django__django-13569__S1:26",
+    "flags": [
+     "args_not_object"
+    ],
+    "raw": "{\"command\": \"python3 - <<'PY'\\nimport django\\nfrom django.conf import settings\\nsettings.configure(DATABASES={'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': ':memory:'}}, INSTALLED_APPS=['django.contrib.contenttypes'])\\ndjango.setup()\\nfrom django.db.models import F\\nf = F('id')\\nprint(f.get_source_expressions())\\nPY\"]}",
+    "new_head": ""
+   }
+  ]
+ }
+}

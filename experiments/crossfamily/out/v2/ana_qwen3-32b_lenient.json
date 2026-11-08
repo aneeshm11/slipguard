@@ -1,0 +1,1351 @@
+{
+ "model": "qwen3-32b",
+ "n_records": 2400,
+ "errors": {},
+ "arms": {
+  "C0": {
+   "n": 600,
+   "P_call": [
+    0.79,
+    0.7556,
+    0.8207,
+    600
+   ],
+   "P_edit": [
+    0.51,
+    0.4701,
+    0.5498,
+    600
+   ],
+   "P_malformed_edit_uncond": [
+    0.0183,
+    0.0103,
+    0.0325,
+    600
+   ],
+   "P_malformed_given_edit": [
+    0.0359,
+    0.0202,
+    0.0632,
+    306
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0274,
+    0.0161,
+    0.0464,
+    474
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0183,
+    0.0103,
+    0.0325,
+    600
+   ],
+   "P_loud_edit_uncond": [
+    0.0167,
+    0.0091,
+    0.0304,
+    600
+   ],
+   "P_strict_reject_given_edit": [
+    0.0359,
+    0.0202,
+    0.0632,
+    306
+   ],
+   "first_call_names": {
+    "edit_file": 306,
+    "<no call>": 126,
+    "read_file": 77,
+    "write_file": 46,
+    "bash": 44,
+    "submit": 1
+   },
+   "malformed_edit_why": {
+    "unparsed": 10,
+    "missing:file_path": 1
+   },
+   "malformed_edit_flags": {
+    "unparsed": 10,
+    "missing:file_path": 1
+   },
+   "budget_forced": 2,
+   "thought_tokens_median": 227.5,
+   "edit_order": {
+    "old_first": 254,
+    "new_first": 42,
+    "null": 10
+   }
+  },
+  "P0": {
+   "n": 300,
+   "P_call": [
+    0.87,
+    0.8272,
+    0.9034,
+    300
+   ],
+   "P_edit": [
+    0.6433,
+    0.5876,
+    0.6954,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0333,
+    0.0182,
+    0.0603,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0518,
+    0.0284,
+    0.0927,
+    193
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0421,
+    0.0237,
+    0.0739,
+    261
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0333,
+    0.0182,
+    0.0603,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0333,
+    0.0182,
+    0.0603,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0518,
+    0.0284,
+    0.0927,
+    193
+   ],
+   "first_call_names": {
+    "edit_file": 193,
+    "<no call>": 39,
+    "bash": 33,
+    "read_file": 19,
+    "write_file": 15,
+    "submit": 1
+   },
+   "malformed_edit_why": {
+    "unparsed": 10
+   },
+   "malformed_edit_flags": {
+    "unparsed": 10
+   },
+   "budget_forced": 0,
+   "thought_tokens_median": 100.0,
+   "edit_order": {
+    "new_first": 170,
+    "old_first": 13,
+    "null": 10
+   }
+  },
+  "P1L": {
+   "n": 300,
+   "P_call": [
+    0.8867,
+    0.8458,
+    0.9178,
+    300
+   ],
+   "P_edit": [
+    0.6733,
+    0.6184,
+    0.7239,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0167,
+    0.0071,
+    0.0384,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0248,
+    0.0106,
+    0.0566,
+    202
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0263,
+    0.0128,
+    0.0533,
+    266
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0167,
+    0.0071,
+    0.0384,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0133,
+    0.0052,
+    0.0338,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0248,
+    0.0106,
+    0.0566,
+    202
+   ],
+   "first_call_names": {
+    "edit_file": 202,
+    "<no call>": 34,
+    "read_file": 30,
+    "bash": 13,
+    "write_file": 11,
+    "submit": 10
+   },
+   "malformed_edit_why": {
+    "unparsed": 4,
+    "leak_closer:new_string": 1
+   },
+   "malformed_edit_flags": {
+    "unparsed": 4,
+    "leak_closer:new_string": 1,
+    "missing:old_string": 1
+   },
+   "budget_forced": 0,
+   "thought_tokens_median": 139.0,
+   "edit_order": {
+    "new_first": 92,
+    "old_first": 106,
+    "null": 4
+   }
+  },
+  "P1N": {
+   "n": 300,
+   "P_call": [
+    0.9367,
+    0.9032,
+    0.9591,
+    300
+   ],
+   "P_edit": [
+    0.6033,
+    0.547,
+    0.657,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.011,
+    0.003,
+    0.0394,
+    181
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0071,
+    0.002,
+    0.0256,
+    281
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.011,
+    0.003,
+    0.0394,
+    181
+   ],
+   "first_call_names": {
+    "edit_file": 181,
+    "bash": 42,
+    "submit": 36,
+    "<no call>": 19,
+    "read_file": 13,
+    "write_file": 9
+   },
+   "malformed_edit_why": {
+    "unparsed": 2
+   },
+   "malformed_edit_flags": {
+    "unparsed": 2
+   },
+   "budget_forced": 17,
+   "thought_tokens_median": 527.0,
+   "edit_order": {
+    "new_first": 114,
+    "old_first": 65,
+    "null": 2
+   }
+  },
+  "P5": {
+   "n": 300,
+   "P_call": [
+    0.8433,
+    0.7979,
+    0.8801,
+    300
+   ],
+   "P_edit": [
+    0.6033,
+    0.547,
+    0.657,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.02,
+    0.0092,
+    0.0429,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0331,
+    0.0153,
+    0.0704,
+    181
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0277,
+    0.0135,
+    0.056,
+    253
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.02,
+    0.0092,
+    0.0429,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.02,
+    0.0092,
+    0.0429,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0331,
+    0.0153,
+    0.0704,
+    181
+   ],
+   "first_call_names": {
+    "edit_file": 181,
+    "<no call>": 47,
+    "write_file": 23,
+    "read_file": 20,
+    "bash": 19,
+    "submit": 10
+   },
+   "malformed_edit_why": {
+    "unparsed": 6
+   },
+   "malformed_edit_flags": {
+    "unparsed": 6
+   },
+   "budget_forced": 1,
+   "thought_tokens_median": 209.0,
+   "edit_order": {
+    "new_first": 102,
+    "old_first": 73,
+    "null": 6
+   }
+  },
+  "P6": {
+   "n": 300,
+   "P_call": [
+    0.8733,
+    0.8309,
+    0.9063,
+    300
+   ],
+   "P_edit": [
+    0.6133,
+    0.5571,
+    0.6667,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0433,
+    0.0255,
+    0.0727,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0707,
+    0.0418,
+    0.1171,
+    184
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0496,
+    0.0292,
+    0.083,
+    262
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0433,
+    0.0255,
+    0.0727,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0233,
+    0.0113,
+    0.0474,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0815,
+    0.05,
+    0.1301,
+    184
+   ],
+   "first_call_names": {
+    "edit_file": 184,
+    "bash": 41,
+    "<no call>": 38,
+    "read_file": 19,
+    "write_file": 13,
+    "submit": 5
+   },
+   "malformed_edit_why": {
+    "unparsed": 7,
+    "leak_closer:new_string": 4,
+    "extra_key": 2
+   },
+   "malformed_edit_flags": {
+    "unparsed": 7,
+    "leak_closer:new_string": 5,
+    "missing:old_string": 5,
+    "extra_key": 2
+   },
+   "budget_forced": 0,
+   "thought_tokens_median": 91.0,
+   "edit_order": {
+    "new_first": 125,
+    "old_first": 52,
+    "null": 7
+   }
+  },
+  "P8a": {
+   "n": 300,
+   "P_call": [
+    0.8733,
+    0.8309,
+    0.9063,
+    300
+   ],
+   "P_edit": [
+    0.67,
+    0.6149,
+    0.7208,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0149,
+    0.0051,
+    0.043,
+    201
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0115,
+    0.0039,
+    0.0331,
+    262
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0149,
+    0.0051,
+    0.043,
+    201
+   ],
+   "first_call_names": {
+    "edit_file": 201,
+    "<no call>": 38,
+    "read_file": 25,
+    "write_file": 17,
+    "bash": 16,
+    "submit": 3
+   },
+   "malformed_edit_why": {
+    "unparsed": 3
+   },
+   "malformed_edit_flags": {
+    "unparsed": 3
+   },
+   "budget_forced": 2,
+   "thought_tokens_median": 247.5,
+   "edit_order": {
+    "new_first": 104,
+    "old_first": 94,
+    "null": 3
+   }
+  }
+ },
+ "logged_gemma31b_next_call_malformed": {},
+ "paired_vs_P0": {
+  "P1L": {
+   "n_contexts": 300,
+   "n_attempts": 231,
+   "events_arm": 5,
+   "events_base": 10,
+   "discordant_arm_only": 5,
+   "discordant_base_only": 10,
+   "uncond": {
+    "arm": 0.0167,
+    "base": 0.0333,
+    "RD": -0.0167,
+    "RD_CI": [
+     -0.0452,
+     0.0098
+    ],
+    "p_one_sided_RD_gt_0": 0.91291,
+    "p_one_sided_RD_lt_0": 0.13589,
+    "ratio": 0.5,
+    "ratio_CI": [
+     0.1,
+     1.5
+    ],
+    "ratio_haldane": 0.524,
+    "mcnemar_exact_p_one_sided": 0.940765
+   },
+   "cond": {
+    "arm": 0.0248,
+    "base": 0.0518,
+    "RD": -0.0271,
+    "RD_CI": [
+     -0.0703,
+     0.0117
+    ],
+    "ratio": 0.478,
+    "ratio_CI": [
+     0.0998,
+     1.4394
+    ],
+    "n_edits_arm": 202,
+    "n_edits_base": 193
+   },
+   "P_edit": {
+    "arm": 0.6733,
+    "base": 0.6433,
+    "RD": 0.03,
+    "RD_CI": [
+     -0.0367,
+     0.098
+    ]
+   }
+  },
+  "P1N": {
+   "n_contexts": 300,
+   "n_attempts": 231,
+   "events_arm": 2,
+   "events_base": 10,
+   "discordant_arm_only": 2,
+   "discordant_base_only": 10,
+   "uncond": {
+    "arm": 0.0067,
+    "base": 0.0333,
+    "RD": -0.0267,
+    "RD_CI": [
+     -0.0525,
+     -0.0034
+    ],
+    "p_one_sided_RD_gt_0": 0.9939,
+    "p_one_sided_RD_lt_0": 0.0152,
+    "ratio": 0.2,
+    "ratio_CI": [
+     0.0,
+     0.7778
+    ],
+    "ratio_haldane": 0.238,
+    "mcnemar_exact_p_one_sided": 0.996826
+   },
+   "cond": {
+    "arm": 0.011,
+    "base": 0.0518,
+    "RD": -0.0408,
+    "RD_CI": [
+     -0.0805,
+     -0.0041
+    ],
+    "ratio": 0.213,
+    "ratio_CI": [
+     0.0,
+     0.8339
+    ],
+    "n_edits_arm": 181,
+    "n_edits_base": 193
+   },
+   "P_edit": {
+    "arm": 0.6033,
+    "base": 0.6433,
+    "RD": -0.04,
+    "RD_CI": [
+     -0.1046,
+     0.0254
+    ]
+   }
+  },
+  "P5": {
+   "n_contexts": 300,
+   "n_attempts": 231,
+   "events_arm": 6,
+   "events_base": 10,
+   "discordant_arm_only": 5,
+   "discordant_base_only": 9,
+   "uncond": {
+    "arm": 0.02,
+    "base": 0.0333,
+    "RD": -0.0133,
+    "RD_CI": [
+     -0.04,
+     0.0103
+    ],
+    "p_one_sided_RD_gt_0": 0.87611,
+    "p_one_sided_RD_lt_0": 0.18968,
+    "ratio": 0.6,
+    "ratio_CI": [
+     0.1667,
+     1.6667
+    ],
+    "ratio_haldane": 0.619,
+    "mcnemar_exact_p_one_sided": 0.910217
+   },
+   "cond": {
+    "arm": 0.0331,
+    "base": 0.0518,
+    "RD": -0.0187,
+    "RD_CI": [
+     -0.0608,
+     0.0202
+    ],
+    "ratio": 0.64,
+    "ratio_CI": [
+     0.1711,
+     1.7403
+    ],
+    "n_edits_arm": 181,
+    "n_edits_base": 193
+   },
+   "P_edit": {
+    "arm": 0.6033,
+    "base": 0.6433,
+    "RD": -0.04,
+    "RD_CI": [
+     -0.099,
+     0.0189
+    ]
+   }
+  },
+  "P6": {
+   "n_contexts": 300,
+   "n_attempts": 231,
+   "events_arm": 13,
+   "events_base": 10,
+   "discordant_arm_only": 10,
+   "discordant_base_only": 7,
+   "uncond": {
+    "arm": 0.0433,
+    "base": 0.0333,
+    "RD": 0.01,
+    "RD_CI": [
+     -0.0168,
+     0.0367
+    ],
+    "p_one_sided_RD_gt_0": 0.27017,
+    "p_one_sided_RD_lt_0": 0.80592,
+    "ratio": 1.3,
+    "ratio_CI": [
+     0.625,
+     3.1667
+    ],
+    "ratio_haldane": 1.286,
+    "mcnemar_exact_p_one_sided": 0.314529
+   },
+   "cond": {
+    "arm": 0.0707,
+    "base": 0.0518,
+    "RD": 0.0188,
+    "RD_CI": [
+     -0.0241,
+     0.0609
+    ],
+    "ratio": 1.364,
+    "ratio_CI": [
+     0.656,
+     3.2672
+    ],
+    "n_edits_arm": 184,
+    "n_edits_base": 193
+   },
+   "P_edit": {
+    "arm": 0.6133,
+    "base": 0.6433,
+    "RD": -0.03,
+    "RD_CI": [
+     -0.0871,
+     0.0265
+    ]
+   }
+  },
+  "P8a": {
+   "n_contexts": 300,
+   "n_attempts": 231,
+   "events_arm": 3,
+   "events_base": 10,
+   "discordant_arm_only": 1,
+   "discordant_base_only": 8,
+   "uncond": {
+    "arm": 0.01,
+    "base": 0.0333,
+    "RD": -0.0233,
+    "RD_CI": [
+     -0.0465,
+     -0.0034
+    ],
+    "p_one_sided_RD_gt_0": 0.9951,
+    "p_one_sided_RD_lt_0": 0.0141,
+    "ratio": 0.3,
+    "ratio_CI": [
+     0.0,
+     0.8
+    ],
+    "ratio_haldane": 0.333,
+    "mcnemar_exact_p_one_sided": 0.998047
+   },
+   "cond": {
+    "arm": 0.0149,
+    "base": 0.0518,
+    "RD": -0.0369,
+    "RD_CI": [
+     -0.0726,
+     -0.0059
+    ],
+    "ratio": 0.288,
+    "ratio_CI": [
+     0.0,
+     0.7577
+    ],
+    "n_edits_arm": 201,
+    "n_edits_base": 193
+   },
+   "P_edit": {
+    "arm": 0.67,
+    "base": 0.6433,
+    "RD": 0.0267,
+    "RD_CI": [
+     -0.038,
+     0.0918
+    ]
+   }
+  }
+ },
+ "removal": {
+  "P5": {
+   "n_contexts": 300,
+   "uncond": {
+    "P1L": 0.0167,
+    "P5": 0.02,
+    "P0": 0.0333,
+    "fraction_removed": 0.2,
+    "CI": [
+     -2.0,
+     3.0
+    ],
+    "RD_P1L_minus_P5": -0.0033,
+    "RD_CI": [
+     -0.0264,
+     0.0169
+    ],
+    "p_one_sided_removal_gt_0": 0.68593
+   },
+   "cond": {
+    "P1L": 0.0248,
+    "P5": 0.0331,
+    "P0": 0.0518,
+    "fraction_removed": 0.31,
+    "CI": [
+     -3.7258,
+     4.4869
+    ],
+    "RD_P1L_minus_P5": -0.0084,
+    "RD_CI": [
+     -0.0449,
+     0.0245
+    ],
+    "p_one_sided_removal_gt_0": 0.69413
+   }
+  },
+  "P8a": {
+   "n_contexts": 300,
+   "uncond": {
+    "P1L": 0.0167,
+    "P8a": 0.01,
+    "P0": 0.0333,
+    "fraction_removed": -0.4,
+    "CI": [
+     -4.0,
+     4.0
+    ],
+    "RD_P1L_minus_P8a": 0.0067,
+    "RD_CI": [
+     -0.0103,
+     0.0262
+    ],
+    "p_one_sided_removal_gt_0": 0.29567
+   },
+   "cond": {
+    "P1L": 0.0248,
+    "P8a": 0.0149,
+    "P0": 0.0518,
+    "fraction_removed": -0.363,
+    "CI": [
+     -8.157,
+     6.1165
+    ],
+    "RD_P1L_minus_P8a": 0.0098,
+    "RD_CI": [
+     -0.0163,
+     0.0382
+    ],
+    "p_one_sided_removal_gt_0": 0.24188
+   }
+  },
+  "P1N": {
+   "n_contexts": 300,
+   "uncond": {
+    "P1L": 0.0167,
+    "P1N": 0.0067,
+    "P0": 0.0333,
+    "fraction_removed": -0.6,
+    "CI": [
+     -5.0,
+     4.0
+    ],
+    "RD_P1L_minus_P1N": 0.01,
+    "RD_CI": [
+     -0.0034,
+     0.0261
+    ],
+    "p_one_sided_removal_gt_0": 0.11569
+   },
+   "cond": {
+    "P1L": 0.0248,
+    "P1N": 0.011,
+    "P0": 0.0518,
+    "fraction_removed": -0.506,
+    "CI": [
+     -8.7172,
+     6.0006
+    ],
+    "RD_P1L_minus_P1N": 0.0137,
+    "RD_CI": [
+     -0.0074,
+     0.0372
+    ],
+    "p_one_sided_removal_gt_0": 0.11569
+   }
+  },
+  "P6": {
+   "n_contexts": 300,
+   "uncond": {
+    "P1L": 0.0167,
+    "P6": 0.0433,
+    "P0": 0.0333,
+    "fraction_removed": 1.6,
+    "CI": [
+     -4.0,
+     7.0
+    ],
+    "RD_P1L_minus_P6": -0.0267,
+    "RD_CI": [
+     -0.0547,
+     0.0
+    ],
+    "p_one_sided_removal_gt_0": 0.9821
+   },
+   "cond": {
+    "P1L": 0.0248,
+    "P6": 0.0707,
+    "P0": 0.0518,
+    "fraction_removed": 1.696,
+    "CI": [
+     -8.018,
+     14.2426
+    ],
+    "RD_P1L_minus_P6": -0.0459,
+    "RD_CI": [
+     -0.0901,
+     -0.0045
+    ],
+    "p_one_sided_removal_gt_0": 0.9847
+   }
+  }
+ },
+ "copy_check": {
+  "P0": {
+   "clean_retry": {
+    "n": 1,
+    "malformed": [
+     0.0,
+     0.0,
+     0.7935,
+     1
+    ]
+   },
+   "same_content_variant": {
+    "n": 19,
+    "malformed": [
+     0.0,
+     0.0,
+     0.1682,
+     19
+    ]
+   },
+   "new_content": {
+    "n": 163,
+    "malformed": [
+     0.0,
+     0.0,
+     0.023,
+     163
+    ]
+   },
+   "unparsed_other": {
+    "n": 10,
+    "malformed": [
+     1.0,
+     0.7225,
+     1.0,
+     10
+    ]
+   },
+   "all_edits": {
+    "n": 193,
+    "malformed": [
+     0.0518,
+     0.0284,
+     0.0927,
+     193
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.2775,
+    10
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.023,
+    163
+   ],
+   "non_copy_edits_malformed": [
+    0.0518,
+    0.0284,
+    0.0927,
+    193
+   ]
+  },
+  "P1L": {
+   "clean_retry": {
+    "n": 80,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0458,
+     80
+    ]
+   },
+   "same_content_variant": {
+    "n": 31,
+    "malformed": [
+     0.0323,
+     0.0057,
+     0.1619,
+     31
+    ]
+   },
+   "new_content": {
+    "n": 87,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0423,
+     87
+    ]
+   },
+   "unparsed_other": {
+    "n": 4,
+    "malformed": [
+     1.0,
+     0.5101,
+     1.0,
+     4
+    ]
+   },
+   "all_edits": {
+    "n": 202,
+    "malformed": [
+     0.0248,
+     0.0106,
+     0.0566,
+     202
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.4345,
+    5
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.0423,
+    87
+   ],
+   "non_copy_edits_malformed": [
+    0.0248,
+    0.0106,
+    0.0566,
+    202
+   ]
+  },
+  "P6": {
+   "clean_retry": {
+    "n": 2,
+    "malformed": [
+     0.0,
+     0.0,
+     0.6576,
+     2
+    ]
+   },
+   "same_content_variant": {
+    "n": 17,
+    "malformed": [
+     0.0,
+     0.0,
+     0.1843,
+     17
+    ]
+   },
+   "new_content": {
+    "n": 158,
+    "malformed": [
+     0.038,
+     0.0175,
+     0.0804,
+     158
+    ]
+   },
+   "unparsed_other": {
+    "n": 7,
+    "malformed": [
+     1.0,
+     0.6457,
+     1.0,
+     7
+    ]
+   },
+   "all_edits": {
+    "n": 184,
+    "malformed": [
+     0.0707,
+     0.0418,
+     0.1171,
+     184
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.2281,
+    13
+   ],
+   "new_content_edits_malformed": [
+    0.038,
+    0.0175,
+    0.0804,
+    158
+   ],
+   "non_copy_edits_malformed": [
+    0.0707,
+    0.0418,
+    0.1171,
+    184
+   ]
+  },
+  "P8a": {
+   "clean_retry": {
+    "n": 96,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0385,
+     96
+    ]
+   },
+   "same_content_variant": {
+    "n": 26,
+    "malformed": [
+     0.0,
+     0.0,
+     0.1287,
+     26
+    ]
+   },
+   "new_content": {
+    "n": 76,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0481,
+     76
+    ]
+   },
+   "unparsed_other": {
+    "n": 3,
+    "malformed": [
+     1.0,
+     0.4385,
+     1.0,
+     3
+    ]
+   },
+   "all_edits": {
+    "n": 201,
+    "malformed": [
+     0.0149,
+     0.0051,
+     0.043,
+     201
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.5615,
+    3
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.0481,
+    76
+   ],
+   "non_copy_edits_malformed": [
+    0.0149,
+    0.0051,
+    0.043,
+    201
+   ]
+  },
+  "P1N": {
+   "clean_retry": {
+    "n": 18,
+    "malformed": [
+     0.0,
+     0.0,
+     0.1759,
+     18
+    ]
+   },
+   "same_content_variant": {
+    "n": 21,
+    "malformed": [
+     0.0,
+     0.0,
+     0.1546,
+     21
+    ]
+   },
+   "new_content": {
+    "n": 140,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0267,
+     140
+    ]
+   },
+   "unparsed_other": {
+    "n": 2,
+    "malformed": [
+     1.0,
+     0.3424,
+     1.0,
+     2
+    ]
+   },
+   "all_edits": {
+    "n": 181,
+    "malformed": [
+     0.011,
+     0.003,
+     0.0394,
+     181
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.6576,
+    2
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.0267,
+    140
+   ],
+   "non_copy_edits_malformed": [
+    0.011,
+    0.003,
+    0.0394,
+    181
+   ]
+  }
+ },
+ "natural_calls": {
+  "C0|edit|loud_unparsed": 10,
+  "C0|edit|ok_strict_ok": 295,
+  "C0|edit|silent_parsed_malformed": 1,
+  "C0|other|loud_unparsed": 2,
+  "C0|other|ok_strict_ok": 166,
+  "P0|edit|loud_unparsed": 10,
+  "P0|edit|ok_strict_ok": 183,
+  "P0|other|loud_unparsed": 1,
+  "P0|other|ok_strict_ok": 67
+ },
+ "natural_examples": {
+  "P0:edit:loud_unparsed": [
+   {
+    "id": "django__django-13768__S1:8",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"file_path\": \"/testbed/django/dispatch/dispatcher.py\", \"old_string\": \"\tfrom django.utils.inspect import func_accepts_kwargs\", \"new_string\": \"\tfrom django.utils.inspect import func_accepts_kwargs\\n\\nlogger = logging.getLogger('django.dispatch')\"}}\n</tool_call>",
+    "new_head": ""
+   },
+   {
+    "id": "scikit-learn__scikit-learn-13253__S1:19",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"file_path\": \"sklearn/preprocessing/_encoders.py\", \"new_string\": \"\", \"old_string\": \"\t        return X\\n\\n\t        return X\"}}\n</tool_call>",
+    "new_head": ""
+   },
+   {
+    "id": "django__django-16429__S1:11",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"file_path\": \"django/utils/timesince.py\", \"old_string\": \"    return gettext(\", \", \").join(result)\", \"new_string\": \"    return \\\", \\\".join(result)\"}}\n</tool_call>",
+    "new_head": ""
+   }
+  ],
+  "P0:other:loud_unparsed": [
+   {
+    "id": "django__django-13165__S1:43",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"bash\", \"arguments\": {\"command\": \"grep -n \\\"return \\$$self\\.result\\$$\\\" django/db/models/expressions.py\"}}\n</tool_call>",
+    "new_head": ""
+   }
+  ],
+  "C0:edit:loud_unparsed": [
+   {
+    "id": "django__django-15316__S1:12",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"new_string\": \"unnamed_group_matcher = _lazy_re_compile(r'\\\\((?!\\?)')\", \"old_string\": \"unnamed_group_matcher = _lazy_re_compile(r'\\\\(')\", \"file_path\": \"/testbed/django/contrib/admindocs/utils.py\"}}\n</tool_call>",
+    "new_head": ""
+   },
+   {
+    "id": "django__django-16948__S1:10",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"new_string\": \"from django.utils.deprecation import RemovedInNextVersionWarning\\nimport warnings\\n\\n    3\timport html\", \"old_string\": \"    3\timport html\", \"file_path\": \"/testbed/django/utils/html.py\"}}\n</tool_call>",
+    "new_head": ""
+   },
+   {
+    "id": "django__django-10999__S1:4",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"new_string\": \"    r'((?:(?P<hours>-?\\d+):)(?=-?\\\\d+:-?\\\\d+))?'\", \"old_string\": \"    r'((?:(?P<hours>-?\\\\d+):)(?=\\\\d+:\\\\d+))?'\", \"file_path\": \"django/utils/dateparse.py\"}}\n</tool_call>",
+    "new_head": ""
+   }
+  ],
+  "C0:other:loud_unparsed": [
+   {
+    "id": "django__django-15526__S1:11",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"write_file\", \"arguments\": {\"content\": \"\\n\"\"\"\n     2\tDjango settings for project project.\n     3\t\n     4\tGenerated by 'django-admin startproject' using Django 4.1.dev20220319144148.\n     5\t\n     6\tFor more information on this file, see\n     7\thttps://docs.djangoproject.com/en/dev/topics/settings/\n     8\t\n     9\tFor the full list of settings and their values, see\n    10\thttps://docs.djangoproject.com/en/dev/ref/settings/\n    11\t\"\"\"\n    12\t\n    13\tfrom pathlib import Path\n    14\t\n    15\t# Build paths inside the project like this: BASE_DIR / 'subdir'.\n    16\tBASE_DIR = Path(__file__).resolve().parent.parent\n    17\t\n    18\t\n    19\t# Quick-start development settings - unsuitable for production\n    20\t# See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/\n  ",
+    "new_head": ""
+   },
+   {
+    "id": "pydata__xarray-5682__S1:5",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"bash\", \"arguments\": {\"command\": \"grep -A3 -B3 \\\"return \\\\\\\\\\\\\\\"\\\\\\/n\\\\\\\\\\$.join\\\" /testbed/xarray/plot/utils.py\"}}\n</tool_call>",
+    "new_head": ""
+   }
+  ],
+  "C0:edit:silent_parsed_malformed": [
+   {
+    "id": "django__django-11087__S1:28",
+    "flags": [
+     "missing:file_path"
+    ],
+    "raw": "",
+    "new_head": "    def collect(self, objs, source=None, nullable=False, collect_related=True,\n                source_attr=None, reverse_dependency=False, keep_parents=False):\n        if hasattr(objs, 'only'):\n      "
+   }
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+5579d26cd6629f5ff77ef1a0850193ae  discovery/analyze.py
+93a89222bce615bdb81b4110c3c13cba  discovery/arms.py
+d5e869fce32c76c6a4e632e10c5b5aa6  discovery/combine.py
+7b1783f35bc3eea3585386a92fdd84b6  discovery/prep_prompts.py
+90c2f5a0361cc5f3f6ce9f675d8bdf6b  discovery/qwenproto.py
+33656d989481ed345f05fcbb0bb8ed4a  discovery/report.py
+d341090d1d582b6ced5700199b32e246  discovery/run_qwen.py
+6717e4e3044e6d2347caaad2da150059  discovery/frozen/a_variants.py
+0018ac403f509f1c6cb6561726fa55e6  discovery/frozen/e_quarantine_renderer.py
+8b8ea07886384755900ac3205eedb5d3  discovery/frozen/gemma_protocol.py

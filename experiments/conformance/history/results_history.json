@@ -1,0 +1,3465 @@
+{
+ "F0_litellm_passthrough": {
+  "vanilla|n": 400,
+  "vanilla|messages_identical": 13,
+  "vanilla|messages_identical_modulo_None_keys": 400,
+  "vanilla|tools_identical": 400,
+  "vanilla|arguments_strings_identical": 400,
+  "harness|n": 400,
+  "harness|messages_identical": 13,
+  "harness|messages_identical_modulo_None_keys": 400,
+  "harness|tools_identical": 400,
+  "harness|arguments_strings_identical": 400,
+  "vanilla@hosted_vllm|n": 400,
+  "vanilla@hosted_vllm|messages_identical": 0,
+  "vanilla@hosted_vllm|messages_identical_modulo_None_keys": 36,
+  "vanilla@hosted_vllm|key_dropped_by_litellm:assistant.reasoning_content": 704,
+  "vanilla@hosted_vllm|tools_identical": 400,
+  "vanilla@hosted_vllm|arguments_strings_identical": 400,
+  "harness@hosted_vllm|n": 400,
+  "harness@hosted_vllm|messages_identical": 0,
+  "harness@hosted_vllm|messages_identical_modulo_None_keys": 36,
+  "harness@hosted_vllm|key_dropped_by_litellm:assistant.reasoning_content": 704,
+  "harness@hosted_vllm|tools_identical": 400,
+  "harness@hosted_vllm|arguments_strings_identical": 400,
+  "vanilla|messages_identical_wilson95": [
+   0.0325,
+   0.0191,
+   0.0548
+  ],
+  "vanilla|messages_identical_modulo_None_keys_wilson95": [
+   1.0,
+   0.9905,
+   1.0
+  ],
+  "vanilla|tools_identical_wilson95": [
+   1.0,
+   0.9905,
+   1.0
+  ],
+  "vanilla|arguments_strings_identical_wilson95": [
+   1.0,
+   0.9905,
+   1.0
+  ],
+  "harness|messages_identical_wilson95": [
+   0.0325,
+   0.0191,
+   0.0548
+  ],
+  "harness|messages_identical_modulo_None_keys_wilson95": [
+   1.0,
+   0.9905,
+   1.0
+  ],
+  "harness|tools_identical_wilson95": [
+   1.0,
+   0.9905,
+   1.0
+  ],
+  "harness|arguments_strings_identical_wilson95": [
+   1.0,
+   0.9905,
+   1.0
+  ],
+  "vanilla@hosted_vllm|messages_identical_wilson95": [
+   0.0,
+   0.0,
+   0.0095
+  ],
+  "vanilla@hosted_vllm|messages_identical_modulo_None_keys_wilson95": [
+   0.09,
+   0.0657,
+   0.1221
+  ],
+  "vanilla@hosted_vllm|tools_identical_wilson95": [
+   1.0,
+   0.9905,
+   1.0
+  ],
+  "vanilla@hosted_vllm|arguments_strings_identical_wilson95": [
+   1.0,
+   0.9905,
+   1.0
+  ],
+  "harness@hosted_vllm|messages_identical_wilson95": [
+   0.0,
+   0.0,
+   0.0095
+  ],
+  "harness@hosted_vllm|messages_identical_modulo_None_keys_wilson95": [
+   0.09,
+   0.0657,
+   0.1221
+  ],
+  "harness@hosted_vllm|tools_identical_wilson95": [
+   1.0,
+   0.9905,
+   1.0
+  ],
+  "harness@hosted_vllm|arguments_strings_identical_wilson95": [
+   1.0,
+   0.9905,
+   1.0
+  ],
+  "_body_keys": {
+   "messages": 1600,
+   "model": 1600,
+   "max_tokens": 1600,
+   "temperature": 1600,
+   "tools": 1600,
+   "top_p": 1600,
+   "chat_template_kwargs": 1600,
+   "thinking_token_budget": 1600
+  }
+ },
+ "F1_forward_random": {
+  "harness@hosted_vllm|july": {
+   "n": 400,
+   "n_fail": 400,
+   "fail_rate_wilson95": [
+    1.0,
+    0.9905,
+    1.0
+   ],
+   "classes": {
+    "json_results": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    },
+    "openai_parts": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    }
+   }
+  },
+  "harness@hosted_vllm|june": {
+   "n": 400,
+   "n_fail": 400,
+   "fail_rate_wilson95": [
+    1.0,
+    0.9905,
+    1.0
+   ],
+   "classes": {
+    "json_results": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    },
+    "openai_parts": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    }
+   }
+  },
+  "harness|july": {
+   "n": 400,
+   "n_fail": 400,
+   "fail_rate_wilson95": [
+    1.0,
+    0.9905,
+    1.0
+   ],
+   "classes": {
+    "json_results": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    },
+    "openai_parts": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    }
+   }
+  },
+  "harness|june": {
+   "n": 400,
+   "n_fail": 400,
+   "fail_rate_wilson95": [
+    1.0,
+    0.9905,
+    1.0
+   ],
+   "classes": {
+    "json_results": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    },
+    "openai_parts": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    }
+   }
+  },
+  "vanilla@hosted_vllm|july": {
+   "n": 400,
+   "n_fail": 400,
+   "fail_rate_wilson95": [
+    1.0,
+    0.9905,
+    1.0
+   ],
+   "classes": {
+    "decl": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    },
+    "drop_reasoning": {
+     "n": 364,
+     "rate_wilson95": [
+      0.91,
+      0.8779,
+      0.9343
+     ]
+    },
+    "json_results": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    },
+    "openai_parts": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    }
+   }
+  },
+  "vanilla@hosted_vllm|june": {
+   "n": 400,
+   "n_fail": 400,
+   "fail_rate_wilson95": [
+    1.0,
+    0.9905,
+    1.0
+   ],
+   "classes": {
+    "decl": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    },
+    "drop_reasoning": {
+     "n": 364,
+     "rate_wilson95": [
+      0.91,
+      0.8779,
+      0.9343
+     ]
+    },
+    "json_results": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    },
+    "openai_parts": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    }
+   }
+  },
+  "vanilla|july": {
+   "n": 400,
+   "n_fail": 400,
+   "fail_rate_wilson95": [
+    1.0,
+    0.9905,
+    1.0
+   ],
+   "classes": {
+    "decl": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    },
+    "drop_reasoning": {
+     "n": 364,
+     "rate_wilson95": [
+      0.91,
+      0.8779,
+      0.9343
+     ]
+    },
+    "json_results": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    },
+    "openai_parts": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    }
+   }
+  },
+  "vanilla|june": {
+   "n": 400,
+   "n_fail": 400,
+   "fail_rate_wilson95": [
+    1.0,
+    0.9905,
+    1.0
+   ],
+   "classes": {
+    "decl": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    },
+    "drop_reasoning": {
+     "n": 364,
+     "rate_wilson95": [
+      0.91,
+      0.8779,
+      0.9343
+     ]
+    },
+    "json_results": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    },
+    "openai_parts": {
+     "n": 400,
+     "rate_wilson95": [
+      1.0,
+      0.9905,
+      1.0
+     ]
+    }
+   }
+  },
+  "_features": {
+   "thought": 704,
+   "calls": 1576,
+   "text_with_calls": 151
+  },
+  "_n_histories": 400,
+  "_examples": {
+   "vanilla|july::decl": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla|july::drop_reasoning": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla|july::json_results": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla|july::openai_parts": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla|june::decl": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla|june::drop_reasoning": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla|june::json_results": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla|june::openai_parts": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "harness|july::json_results": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "harness|july::openai_parts": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "harness|june::json_results": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "harness|june::openai_parts": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla@hosted_vllm|july::decl": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla@hosted_vllm|july::drop_reasoning": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla@hosted_vllm|july::json_results": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla@hosted_vllm|july::openai_parts": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla@hosted_vllm|june::decl": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla@hosted_vllm|june::drop_reasoning": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla@hosted_vllm|june::json_results": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "vanilla@hosted_vllm|june::openai_parts": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "harness@hosted_vllm|july::json_results": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "harness@hosted_vllm|july::openai_parts": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "harness@hosted_vllm|june::json_results": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ],
+   "harness@hosted_vllm|june::openai_parts": [
+    {
+     "i": 0,
+     "at": 525,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    },
+    {
+     "i": 1,
+     "at": 529,
+     "pipeline": "<withheld: competition-harness render window (M9)>",
+     "reference": "<withheld: competition-harness render window (M9)>"
+    }
+   ]
+  }
+ },
+ "F1b_forward_real_calls": {
+  "harness|july": {
+   "n": 4000,
+   "n_fail": 0,
+   "fail_rate_wilson95": [
+    0.0,
+    0.0,
+    0.001
+   ],
+   "classes": {}
+  },
+  "harness|june": {
+   "n": 4000,
+   "n_fail": 0,
+   "fail_rate_wilson95": [
+    0.0,
+    0.0,
+    0.001
+   ],
+   "classes": {}
+  },
+  "_wire_arguments_byte_identical_to_logged": 4000,
+  "_n": 4000,
+  "_examples": {}
+ },
+ "F2_args_edge": {
+  "harness|july": {
+   "n": 38,
+   "n_fail": 6,
+   "fail_rate_wilson95": [
+    0.1579,
+    0.0744,
+    0.3042
+   ],
+   "classes": {
+    "exception:client": {
+     "n": 1,
+     "rate_wilson95": [
+      0.0263,
+      0.0047,
+      0.1349
+     ]
+    },
+    "exception:genai_FunctionCall": {
+     "n": 1,
+     "rate_wilson95": [
+      0.0263,
+      0.0047,
+      0.1349
+     ]
+    },
+    "exception:parse_chat_messages": {
+     "n": 4,
+     "rate_wilson95": [
+      0.1053,
+      0.0417,
+      0.2413
+     ]
+    }
+   }
+  },
+  "harness|june": {
+   "n": 38,
+   "n_fail": 6,
+   "fail_rate_wilson95": [
+    0.1579,
+    0.0744,
+    0.3042
+   ],
+   "classes": {
+    "exception:client": {
+     "n": 1,
+     "rate_wilson95": [
+      0.0263,
+      0.0047,
+      0.1349
+     ]
+    },
+    "exception:genai_FunctionCall": {
+     "n": 1,
+     "rate_wilson95": [
+      0.0263,
+      0.0047,
+      0.1349
+     ]
+    },
+    "exception:parse_chat_messages": {
+     "n": 4,
+     "rate_wilson95": [
+      0.1053,
+      0.0417,
+      0.2413
+     ]
+    }
+   }
+  },
+  "_cases": {
+   "int_2^53+1": {
+    "client": "ok",
+    "wire_arguments": "{\"n\": 9007199254740993}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{n:9007199254740993}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{n:9007199254740993}<tool_call|>"
+    }
+   },
+   "int_2^63": {
+    "client": "ok",
+    "wire_arguments": "{\"n\": 9223372036854775808}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{n:9223372036854775808}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{n:9223372036854775808}<tool_call|>"
+    }
+   },
+   "int_-(2^64)-7": {
+    "client": "ok",
+    "wire_arguments": "{\"n\": -18446744073709551623}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{n:-18446744073709551623}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{n:-18446744073709551623}<tool_call|>"
+    }
+   },
+   "int_1e30": {
+    "client": "ok",
+    "wire_arguments": "{\"n\": 1000000000000000000000000000000}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{n:1000000000000000000000000000000}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{n:1000000000000000000000000000000}<tool_call|>"
+    }
+   },
+   "float_-0.0": {
+    "client": "ok",
+    "wire_arguments": "{\"x\": -0.0}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:-0.0}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:-0.0}<tool_call|>"
+    }
+   },
+   "float_0.1": {
+    "client": "ok",
+    "wire_arguments": "{\"x\": 0.1}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:0.1}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:0.1}<tool_call|>"
+    }
+   },
+   "float_1e-05": {
+    "client": "ok",
+    "wire_arguments": "{\"x\": 1e-05}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:1e-05}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:1e-05}<tool_call|>"
+    }
+   },
+   "float_1e+20": {
+    "client": "ok",
+    "wire_arguments": "{\"x\": 1e+20}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:1e+20}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:1e+20}<tool_call|>"
+    }
+   },
+   "float_1.5e300": {
+    "client": "ok",
+    "wire_arguments": "{\"x\": 1.5e+300}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:1.5e+300}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:1.5e+300}<tool_call|>"
+    }
+   },
+   "float_5e-324": {
+    "client": "ok",
+    "wire_arguments": "{\"x\": 5e-324}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:5e-324}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:5e-324}<tool_call|>"
+    }
+   },
+   "float_1e16": {
+    "client": "ok",
+    "wire_arguments": "{\"x\": 1e+16}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:1e+16}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:1e+16}<tool_call|>"
+    }
+   },
+   "float_123456789.0": {
+    "client": "ok",
+    "wire_arguments": "{\"x\": 123456789.0}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:123456789.0}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:123456789.0}<tool_call|>"
+    }
+   },
+   "float_nan": {
+    "client": "ok",
+    "wire_arguments": "{\"x\": NaN}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:nan}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:nan}<tool_call|>"
+    }
+   },
+   "float_inf": {
+    "client": "ok",
+    "wire_arguments": "{\"x\": Infinity}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:inf}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:inf}<tool_call|>"
+    }
+   },
+   "float_-inf": {
+    "client": "ok",
+    "wire_arguments": "{\"x\": -Infinity}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:-inf}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{x:-inf}<tool_call|>"
+    }
+   },
+   "bool": {
+    "client": "ok",
+    "wire_arguments": "{\"t\": true, \"f\": false}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{f:false,t:true}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{f:false,t:true}<tool_call|>"
+    }
+   },
+   "null": {
+    "client": "ok",
+    "wire_arguments": "{\"z\": null}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{z:null}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{z:None}<tool_call|>"
+    }
+   },
+   "empty_string": {
+    "client": "ok",
+    "wire_arguments": "{\"s\": \"\"}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{s:<|\"|><|\"|>}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{s:<|\"|><|\"|>}<tool_call|>"
+    }
+   },
+   "empty_obj_arr": {
+    "client": "ok",
+    "wire_arguments": "{\"o\": {}, \"a\": []}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{a:[],o:{}}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{a:[],o:{}}<tool_call|>"
+    }
+   },
+   "nested": {
+    "client": "ok",
+    "wire_arguments": "{\"o\": {\"B\": [1, {\"c\": null, \"A\": \"x\"}], \"a\": [[], [[]]]}}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{o:{a:[[],[[]]],B:[1,{A:<|\"|>x<|\"|>,c:null}]}}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{o:{a:[[],[[]]],B:[1,{A:<|\"|>x<|\"|>,c:None}]}}<tool_call|>"
+    }
+   },
+   "case_keys": {
+    "client": "ok",
+    "wire_arguments": "{\"b\": 1, \"A\": 2, \"a\": 3, \"B\": 4, \"_\": 5, \"Z\": 6}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{_:5,A:2,a:3,b:1,B:4,Z:6}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{_:5,A:2,a:3,b:1,B:4,Z:6}<tool_call|>"
+    }
+   },
+   "case_only_dup_keys": {
+    "client": "ok",
+    "wire_arguments": "{\"key\": 1, \"KEY\": 2, \"Key\": 3}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{key:1,KEY:2,Key:3}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{key:1,KEY:2,Key:3}<tool_call|>"
+    }
+   },
+   "non_bare_keys": {
+    "client": "ok",
+    "wire_arguments": "{\"kebab-case\": 1, \"dotted.key\": 2, \"a b\": 3, \"\": 4, \"名前\": 5, \"a:b\": 6}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{:4,a b:3,a:b:6,dotted.key:2,kebab-case:1,名前:5}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{:4,a b:3,a:b:6,dotted.key:2,kebab-case:1,名前:5}<tool_call|>"
+    }
+   },
+   "unicode": {
+    "client": "ok",
+    "wire_arguments": "{\"s\": \"é中文😀​﻿‮\"}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{s:<|\"|>é中文😀​﻿‮<|\"|>}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{s:<|\"|>é中文😀​﻿‮<|\"|>}<tool_call|>"
+    }
+   },
+   "controls": {
+    "client": "ok",
+    "wire_arguments": "{\"s\": \"a\\u0000bc\\u001b[0m\\r\\n\\t\"}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{s:<|\"|>a\u0000bc\u001b[0m\r\n\t<|\"|>}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{s:<|\"|>a\u0000bc\u001b[0m\r\n\t<|\"|>}<tool_call|>"
+    }
+   },
+   "lookalike_closers": {
+    "client": "ok",
+    "wire_arguments": "{\"s\": \"x` ,y:\\\\\\\" \\\"z\\\" 'q' ```\"}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{s:<|\"|>x` ,y:\\\" \"z\" 'q' ```<|\"|>}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{s:<|\"|>x` ,y:\\\" \"z\" 'q' ```<|\"|>}<tool_call|>"
+    }
+   },
+   "str_token_inside": {
+    "client": "<withheld: see WITHHELD.json security_withheld / SECURITY.md>",
+    "wire_arguments": "<withheld: see WITHHELD.json security_withheld / SECURITY.md>",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<withheld: see WITHHELD.json security_withheld / SECURITY.md>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<withheld: see WITHHELD.json security_withheld / SECURITY.md>"
+    }
+   },
+   "protocol_tokens_inside": {
+    "client": "<withheld: see WITHHELD.json security_withheld / SECURITY.md>",
+    "wire_arguments": "<withheld: see WITHHELD.json security_withheld / SECURITY.md>",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<withheld: see WITHHELD.json security_withheld / SECURITY.md>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<withheld: see WITHHELD.json security_withheld / SECURITY.md>"
+    }
+   },
+   "json_like_string": {
+    "client": "ok",
+    "wire_arguments": "{\"s\": \"{\\\"a\\\": 1}\", \"t\": \"[1, 2]\", \"n\": \"42\", \"b\": \"true\", \"z\": \"null\"}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{b:<|\"|>true<|\"|>,n:<|\"|>42<|\"|>,s:<|\"|>{\"a\": 1}<|\"|>,t:<|\"|>[1, 2]<|\"|>,z:<|\"|>null<|\"|>}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{b:<|\"|>true<|\"|>,n:<|\"|>42<|\"|>,s:<|\"|>{\"a\": 1}<|\"|>,t:<|\"|>[1, 2]<|\"|>,z:<|\"|>null<|\"|>}<tool_call|>"
+    }
+   },
+   "long_string_100k": {
+    "client": "ok",
+    "wire_arguments": "{\"s\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{s:<|\"|>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{s:<|\"|>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    }
+   },
+   "unicode_escapes_json": {
+    "client": "ok",
+    "wire_arguments": "{\"s\": \"\\\\u00e9 \\\\n \\\\\\\"\"}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{s:<|\"|>\\u00e9 \\n \\\"<|\"|>}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{s:<|\"|>\\u00e9 \\n \\\"<|\"|>}<tool_call|>"
+    }
+   },
+   "lone_surrogate": {
+    "client": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - 'utf-8' codec can't encode character '\\ud800' in position 216: surrogates not allowed"
+   },
+   "tuple_value": {
+    "client": "ok",
+    "wire_arguments": "{\"t\": [1, 2]}",
+    "july": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{t:[1,2]}<tool_call|>"
+    },
+    "june": {
+     "identical_call": true,
+     "reference_call": "<|tool_call>call:f{t:[1,2]}<tool_call|>"
+    }
+   },
+   "int_key": {
+    "client": "genai rejects: ValidationError: 1 validation error for FunctionCall\nargs.1.[key]\n  Input should be a valid string [type=string_type, input_value=1, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.14/v"
+   },
+   "decimal_value": {
+    "client": "ok",
+    "wire_arguments": "{'d': Decimal('1.50')}",
+    "july": "ERROR parse_chat_messages: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+    "june": "ERROR parse_chat_messages: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+   },
+   "datetime_value": {
+    "client": "ok",
+    "wire_arguments": "{'t': datetime.datetime(2026, 1, 2, 0, 0)}",
+    "july": "ERROR parse_chat_messages: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+    "june": "ERROR parse_chat_messages: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+   },
+   "set_value": {
+    "client": "ok",
+    "wire_arguments": "{'s': {1, 2}}",
+    "july": "ERROR parse_chat_messages: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+    "june": "ERROR parse_chat_messages: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+   },
+   "bytes_value": {
+    "client": "ok",
+    "wire_arguments": "{'b': b'\\x00\\x01'}",
+    "july": "ERROR parse_chat_messages: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+    "june": "ERROR parse_chat_messages: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+   }
+  }
+ },
+ "F3_declarations": {
+  "harness|FunctionTool|july": {
+   "n": 6,
+   "n_fail": 1,
+   "fail_rate_wilson95": [
+    0.1667,
+    0.0301,
+    0.5635
+   ],
+   "classes": {
+    "description_lost": {
+     "n": 1,
+     "rate_wilson95": [
+      0.1667,
+      0.0301,
+      0.5635
+     ]
+    }
+   }
+  },
+  "harness|FunctionTool|june": {
+   "n": 6,
+   "n_fail": 1,
+   "fail_rate_wilson95": [
+    0.1667,
+    0.0301,
+    0.5635
+   ],
+   "classes": {
+    "description_lost": {
+     "n": 1,
+     "rate_wilson95": [
+      0.1667,
+      0.0301,
+      0.5635
+     ]
+    }
+   }
+  },
+  "harness|genai_Schema": {
+   "n": 2,
+   "n_fail": 2,
+   "fail_rate_wilson95": [
+    1.0,
+    0.3424,
+    1.0
+   ],
+   "classes": {
+    "exception:client": {
+     "n": 2,
+     "rate_wilson95": [
+      1.0,
+      0.3424,
+      1.0
+     ]
+    }
+   }
+  },
+  "harness|genai_Schema|july": {
+   "n": 298,
+   "n_fail": 0,
+   "fail_rate_wilson95": [
+    0.0,
+    0.0,
+    0.0127
+   ],
+   "classes": {}
+  },
+  "harness|genai_Schema|june": {
+   "n": 298,
+   "n_fail": 0,
+   "fail_rate_wilson95": [
+    0.0,
+    0.0,
+    0.0127
+   ],
+   "classes": {}
+  },
+  "harness|parameters_json_schema": {
+   "n": 2,
+   "n_fail": 2,
+   "fail_rate_wilson95": [
+    1.0,
+    0.3424,
+    1.0
+   ],
+   "classes": {
+    "exception:client": {
+     "n": 2,
+     "rate_wilson95": [
+      1.0,
+      0.3424,
+      1.0
+     ]
+    }
+   }
+  },
+  "harness|parameters_json_schema|july": {
+   "n": 298,
+   "n_fail": 0,
+   "fail_rate_wilson95": [
+    0.0,
+    0.0,
+    0.0127
+   ],
+   "classes": {}
+  },
+  "harness|parameters_json_schema|june": {
+   "n": 298,
+   "n_fail": 0,
+   "fail_rate_wilson95": [
+    0.0,
+    0.0,
+    0.0127
+   ],
+   "classes": {}
+  },
+  "vanilla|FunctionTool|july": {
+   "n": 6,
+   "n_fail": 2,
+   "fail_rate_wilson95": [
+    0.3333,
+    0.0968,
+    0.7
+   ],
+   "classes": {
+    "description_lost": {
+     "n": 1,
+     "rate_wilson95": [
+      0.1667,
+      0.0301,
+      0.5635
+     ]
+    },
+    "extra_key:any_of": {
+     "n": 2,
+     "rate_wilson95": [
+      0.3333,
+      0.0968,
+      0.7
+     ]
+    },
+    "items_lost": {
+     "n": 1,
+     "rate_wilson95": [
+      0.1667,
+      0.0301,
+      0.5635
+     ]
+    },
+    "type_lost": {
+     "n": 2,
+     "rate_wilson95": [
+      0.3333,
+      0.0968,
+      0.7
+     ]
+    }
+   }
+  },
+  "vanilla|FunctionTool|june": {
+   "n": 6,
+   "n_fail": 2,
+   "fail_rate_wilson95": [
+    0.3333,
+    0.0968,
+    0.7
+   ],
+   "classes": {
+    "description_lost": {
+     "n": 1,
+     "rate_wilson95": [
+      0.1667,
+      0.0301,
+      0.5635
+     ]
+    },
+    "extra_key:any_of": {
+     "n": 2,
+     "rate_wilson95": [
+      0.3333,
+      0.0968,
+      0.7
+     ]
+    },
+    "items_lost": {
+     "n": 1,
+     "rate_wilson95": [
+      0.1667,
+      0.0301,
+      0.5635
+     ]
+    },
+    "type_lost": {
+     "n": 2,
+     "rate_wilson95": [
+      0.3333,
+      0.0968,
+      0.7
+     ]
+    }
+   }
+  },
+  "vanilla|genai_Schema": {
+   "n": 2,
+   "n_fail": 2,
+   "fail_rate_wilson95": [
+    1.0,
+    0.3424,
+    1.0
+   ],
+   "classes": {
+    "exception:client": {
+     "n": 2,
+     "rate_wilson95": [
+      1.0,
+      0.3424,
+      1.0
+     ]
+    }
+   }
+  },
+  "vanilla|genai_Schema|july": {
+   "n": 298,
+   "n_fail": 0,
+   "fail_rate_wilson95": [
+    0.0,
+    0.0,
+    0.0127
+   ],
+   "classes": {}
+  },
+  "vanilla|genai_Schema|june": {
+   "n": 298,
+   "n_fail": 0,
+   "fail_rate_wilson95": [
+    0.0,
+    0.0,
+    0.0127
+   ],
+   "classes": {}
+  },
+  "vanilla|parameters_json_schema": {
+   "n": 2,
+   "n_fail": 2,
+   "fail_rate_wilson95": [
+    1.0,
+    0.3424,
+    1.0
+   ],
+   "classes": {
+    "exception:client": {
+     "n": 2,
+     "rate_wilson95": [
+      1.0,
+      0.3424,
+      1.0
+     ]
+    }
+   }
+  },
+  "vanilla|parameters_json_schema|july": {
+   "n": 298,
+   "n_fail": 0,
+   "fail_rate_wilson95": [
+    0.0,
+    0.0,
+    0.0127
+   ],
+   "classes": {}
+  },
+  "vanilla|parameters_json_schema|june": {
+   "n": 298,
+   "n_fail": 0,
+   "fail_rate_wilson95": [
+    0.0,
+    0.0,
+    0.0127
+   ],
+   "classes": {}
+  },
+  "_examples": {
+   "vanilla|parameters_json_schema::exception:client": [
+    {
+     "i": 38,
+     "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Out of range float values are not JSON compliant: nan"
+    },
+    {
+     "i": 108,
+     "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Out of range float values are not JSON compliant: inf"
+    }
+   ],
+   "vanilla|genai_Schema::exception:client": [
+    {
+     "i": 38,
+     "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Out of range float values are not JSON compliant: nan"
+    },
+    {
+     "i": 108,
+     "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Out of range float values are not JSON compliant: inf"
+    }
+   ],
+   "harness|parameters_json_schema::exception:client": [
+    {
+     "i": 38,
+     "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Out of range float values are not JSON compliant: nan"
+    },
+    {
+     "i": 108,
+     "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Out of range float values are not JSON compliant: inf"
+    }
+   ],
+   "harness|genai_Schema::exception:client": [
+    {
+     "i": 38,
+     "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Out of range float values are not JSON compliant: nan"
+    },
+    {
+     "i": 108,
+     "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Out of range float values are not JSON compliant: inf"
+    }
+   ],
+   "vanilla|FunctionTool|july::description_lost": [
+    {
+     "probe": "optional_int(harness read_file shape)",
+     "pipeline": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{type:<|\"|>STRING<|\"|>},start_line:{nullable:true,type:<|\"|><|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}",
+     "ideal": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{description:<|\"|>path of the file.<|\"|>,type:<|\"|>STRING<|\"|>},start_line:{description:<|\"|>first line.<|\"|>,nullable:true,type:<|\"|>INTEGER<|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}"
+    }
+   ],
+   "vanilla|FunctionTool|july::extra_key:any_of": [
+    {
+     "probe": "optional_int(harness read_file shape)",
+     "pipeline": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{type:<|\"|>STRING<|\"|>},start_line:{nullable:true,type:<|\"|><|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}",
+     "ideal": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{description:<|\"|>path of the file.<|\"|>,type:<|\"|>STRING<|\"|>},start_line:{description:<|\"|>first line.<|\"|>,nullable:true,type:<|\"|>INTEGER<|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}"
+    },
+    {
+     "probe": "optional_list_str(PEP604 X|None)",
+     "pipeline": "declaration:f_opt_list_pep604{description:<|\"|>List.<|\"|>,parameters:{properties:{paths:{nullable:true,type:<|\"|><|\"|>}},type:<|\"|>OBJECT<|\"|>}}",
+     "ideal": "declaration:f_opt_list_pep604{description:<|\"|>List.<|\"|>,parameters:{properties:{paths:{items:{type:<|\"|>STRING<|\"|>},nullable:true,type:<|\"|>ARRAY<|\"|>}},type:<|\"|>OBJECT<|\"|>}}"
+    }
+   ],
+   "vanilla|FunctionTool|july::type_lost": [
+    {
+     "probe": "optional_int(harness read_file shape)",
+     "pipeline": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{type:<|\"|>STRING<|\"|>},start_line:{nullable:true,type:<|\"|><|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}",
+     "ideal": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{description:<|\"|>path of the file.<|\"|>,type:<|\"|>STRING<|\"|>},start_line:{description:<|\"|>first line.<|\"|>,nullable:true,type:<|\"|>INTEGER<|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}"
+    },
+    {
+     "probe": "optional_list_str(PEP604 X|None)",
+     "pipeline": "declaration:f_opt_list_pep604{description:<|\"|>List.<|\"|>,parameters:{properties:{paths:{nullable:true,type:<|\"|><|\"|>}},type:<|\"|>OBJECT<|\"|>}}",
+     "ideal": "declaration:f_opt_list_pep604{description:<|\"|>List.<|\"|>,parameters:{properties:{paths:{items:{type:<|\"|>STRING<|\"|>},nullable:true,type:<|\"|>ARRAY<|\"|>}},type:<|\"|>OBJECT<|\"|>}}"
+    }
+   ],
+   "vanilla|FunctionTool|june::description_lost": [
+    {
+     "probe": "optional_int(harness read_file shape)",
+     "pipeline": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{type:<|\"|>STRING<|\"|>},start_line:{nullable:true,type:<|\"|><|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}",
+     "ideal": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{description:<|\"|>path of the file.<|\"|>,type:<|\"|>STRING<|\"|>},start_line:{description:<|\"|>first line.<|\"|>,nullable:true,type:<|\"|>INTEGER<|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}"
+    }
+   ],
+   "vanilla|FunctionTool|june::extra_key:any_of": [
+    {
+     "probe": "optional_int(harness read_file shape)",
+     "pipeline": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{type:<|\"|>STRING<|\"|>},start_line:{nullable:true,type:<|\"|><|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}",
+     "ideal": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{description:<|\"|>path of the file.<|\"|>,type:<|\"|>STRING<|\"|>},start_line:{description:<|\"|>first line.<|\"|>,nullable:true,type:<|\"|>INTEGER<|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}"
+    },
+    {
+     "probe": "optional_list_str(PEP604 X|None)",
+     "pipeline": "declaration:f_opt_list_pep604{description:<|\"|>List.<|\"|>,parameters:{properties:{paths:{nullable:true,type:<|\"|><|\"|>}},type:<|\"|>OBJECT<|\"|>}}",
+     "ideal": "declaration:f_opt_list_pep604{description:<|\"|>List.<|\"|>,parameters:{properties:{paths:{items:{type:<|\"|>STRING<|\"|>},nullable:true,type:<|\"|>ARRAY<|\"|>}},type:<|\"|>OBJECT<|\"|>}}"
+    }
+   ],
+   "vanilla|FunctionTool|june::type_lost": [
+    {
+     "probe": "optional_int(harness read_file shape)",
+     "pipeline": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{type:<|\"|>STRING<|\"|>},start_line:{nullable:true,type:<|\"|><|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}",
+     "ideal": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{description:<|\"|>path of the file.<|\"|>,type:<|\"|>STRING<|\"|>},start_line:{description:<|\"|>first line.<|\"|>,nullable:true,type:<|\"|>INTEGER<|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}"
+    },
+    {
+     "probe": "optional_list_str(PEP604 X|None)",
+     "pipeline": "declaration:f_opt_list_pep604{description:<|\"|>List.<|\"|>,parameters:{properties:{paths:{nullable:true,type:<|\"|><|\"|>}},type:<|\"|>OBJECT<|\"|>}}",
+     "ideal": "declaration:f_opt_list_pep604{description:<|\"|>List.<|\"|>,parameters:{properties:{paths:{items:{type:<|\"|>STRING<|\"|>},nullable:true,type:<|\"|>ARRAY<|\"|>}},type:<|\"|>OBJECT<|\"|>}}"
+    }
+   ],
+   "vanilla|FunctionTool|july::items_lost": [
+    {
+     "probe": "optional_list_str(PEP604 X|None)",
+     "pipeline": "declaration:f_opt_list_pep604{description:<|\"|>List.<|\"|>,parameters:{properties:{paths:{nullable:true,type:<|\"|><|\"|>}},type:<|\"|>OBJECT<|\"|>}}",
+     "ideal": "declaration:f_opt_list_pep604{description:<|\"|>List.<|\"|>,parameters:{properties:{paths:{items:{type:<|\"|>STRING<|\"|>},nullable:true,type:<|\"|>ARRAY<|\"|>}},type:<|\"|>OBJECT<|\"|>}}"
+    }
+   ],
+   "vanilla|FunctionTool|june::items_lost": [
+    {
+     "probe": "optional_list_str(PEP604 X|None)",
+     "pipeline": "declaration:f_opt_list_pep604{description:<|\"|>List.<|\"|>,parameters:{properties:{paths:{nullable:true,type:<|\"|><|\"|>}},type:<|\"|>OBJECT<|\"|>}}",
+     "ideal": "declaration:f_opt_list_pep604{description:<|\"|>List.<|\"|>,parameters:{properties:{paths:{items:{type:<|\"|>STRING<|\"|>},nullable:true,type:<|\"|>ARRAY<|\"|>}},type:<|\"|>OBJECT<|\"|>}}"
+    }
+   ],
+   "harness|FunctionTool|july::description_lost": [
+    {
+     "probe": "optional_int(harness read_file shape)",
+     "pipeline": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{type:<|\"|>STRING<|\"|>},start_line:{nullable:true,type:<|\"|>INTEGER<|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}",
+     "ideal": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{description:<|\"|>path of the file.<|\"|>,type:<|\"|>STRING<|\"|>},start_line:{description:<|\"|>first line.<|\"|>,nullable:true,type:<|\"|>INTEGER<|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}"
+    }
+   ],
+   "harness|FunctionTool|june::description_lost": [
+    {
+     "probe": "optional_int(harness read_file shape)",
+     "pipeline": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{type:<|\"|>STRING<|\"|>},start_line:{nullable:true,type:<|\"|>INTEGER<|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}",
+     "ideal": "declaration:f_opt_int{description:<|\"|>Read.\n\n    Args:\n      filepath: path of the file.\n      start_line: first line.\n    <|\"|>,parameters:{properties:{filepath:{description:<|\"|>path of the file.<|\"|>,type:<|\"|>STRING<|\"|>},start_line:{description:<|\"|>first line.<|\"|>,nullable:true,type:<|\"|>INTEGER<|\"|>}},required:[<|\"|>filepath<|\"|>],type:<|\"|>OBJECT<|\"|>}}"
+    }
+   ]
+  }
+ },
+ "F4_tool_responses": {
+  "real_results|harness|july": {
+   "n": 4000,
+   "n_fail": 4000,
+   "fail_rate_wilson95": [
+    1.0,
+    0.999,
+    1.0
+   ],
+   "classes": {
+    "json_in_string": {
+     "n": 4000,
+     "rate_wilson95": [
+      1.0,
+      0.999,
+      1.0
+     ]
+    }
+   }
+  },
+  "real_results|harness|june": {
+   "n": 4000,
+   "n_fail": 4000,
+   "fail_rate_wilson95": [
+    1.0,
+    0.999,
+    1.0
+   ],
+   "classes": {
+    "json_in_string": {
+     "n": 4000,
+     "rate_wilson95": [
+      1.0,
+      0.999,
+      1.0
+     ]
+    }
+   }
+  },
+  "_stats_july": {
+   "n": 4000,
+   "wire_content_byte_identical_to_logged": 4000,
+   "chars_pipeline": 5005115,
+   "chars_ideal": 4803105,
+   "resp_with_backslash_dquote": 1863,
+   "resp_with_backslash_n": 3299,
+   "backslash_dquote_total": 45496,
+   "ideal_with_backslash_dquote": 52,
+   "resp_contains_str_token_in_payload": 0,
+   "nonascii_kept": 73
+  },
+  "_probes": {
+   "dict_with_datetime_path": {
+    "wire": "{'when': datetime.datetime(2026, 1, 2, 0, 0), 'p': PosixPath('a.py'), 's': 'x\\ny'}",
+    "rendered": "<|tool_response>response:read_file{value:<|\"|>{'when': datetime.datetime(2026, 1, 2, 0, 0), 'p': PosixPath('a.py'), 's': 'x\\ny'}<|\"|>}<tool_response|>",
+    "ideal": null
+   },
+   "dict_with_set": {
+    "wire": "{'s': {1, 2}}",
+    "rendered": "<|tool_response>response:read_file{value:<|\"|>{'s': {1, 2}}<|\"|>}<tool_response|>",
+    "ideal": null
+   },
+   "dict_with_bytes": {
+    "wire": "{'b': b'\\x00'}",
+    "rendered": "<|tool_response>response:read_file{value:<|\"|>{'b': b'\\x00'}<|\"|>}<tool_response|>",
+    "ideal": null
+   },
+   "dict_with_decimal": {
+    "wire": "{'d': Decimal('1.5')}",
+    "rendered": "<|tool_response>response:read_file{value:<|\"|>{'d': Decimal('1.5')}<|\"|>}<tool_response|>",
+    "ideal": null
+   },
+   "dict_with_nan": {
+    "wire": "{\"x\": NaN}",
+    "rendered": "<|tool_response>response:read_file{value:<|\"|>{\"x\": NaN}<|\"|>}<tool_response|>",
+    "ideal": "<|tool_response>response:read_file{x:nan}<tool_response|>"
+   },
+   "dict_with_str_token": {
+    "wire": "{\"content\": \"x = \\\"<|\\\"|>\\\"\"}",
+    "rendered": "<|tool_response>response:read_file{value:<|\"|>{\"content\": \"x = \\\"<|\\\"|>\\\"\"}<|\"|>}<tool_response|>",
+    "ideal": null
+   },
+   "nested_dict": {
+    "wire": "{\"result\": {\"lines\": [\"a\", \"b\"], \"n\": 2}}",
+    "rendered": "<|tool_response>response:read_file{value:<|\"|>{\"result\": {\"lines\": [\"a\", \"b\"], \"n\": 2}}<|\"|>}<tool_response|>",
+    "ideal": "<|tool_response>response:read_file{result:{lines:[<|\"|>a<|\"|>,<|\"|>b<|\"|>],n:2}}<tool_response|>"
+   },
+   "names:ids_none": {
+    "july": {
+     "response_names": [
+      "unknown"
+     ],
+     "expected": [
+      "read_file"
+     ]
+    },
+    "june": {
+     "error": "ValueError: can only concatenate str (not \"NoneType\") to str",
+     "stage": "chat_template"
+    }
+   },
+   "names:ids_empty_two_calls": {
+    "july": {
+     "response_names": [
+      "run_command",
+      "run_command"
+     ],
+     "expected": [
+      "read_file",
+      "run_command"
+     ]
+    },
+    "june": {
+     "response_names": [
+      "run_command",
+      "run_command"
+     ],
+     "expected": [
+      "read_file",
+      "run_command"
+     ]
+    }
+   },
+   "names:ids_duplicated": {
+    "july": {
+     "response_names": [
+      "run_command",
+      "run_command"
+     ],
+     "expected": [
+      "read_file",
+      "run_command"
+     ]
+    },
+    "june": {
+     "response_names": [
+      "run_command",
+      "run_command"
+     ],
+     "expected": [
+      "read_file",
+      "run_command"
+     ]
+    }
+   },
+   "names:ids_unique(control)": {
+    "july": {
+     "response_names": [
+      "read_file",
+      "run_command"
+     ],
+     "expected": [
+      "read_file",
+      "run_command"
+     ]
+    },
+    "june": {
+     "response_names": [
+      "read_file",
+      "run_command"
+     ],
+     "expected": [
+      "read_file",
+      "run_command"
+     ]
+    }
+   }
+  }
+ },
+ "F5_structure": {
+  "thought_before_call": {
+   "vanilla|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><|channel>thought\n",
+    "thought_in_prompt": false
+   },
+   "vanilla|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>",
+    "thought_in_prompt": false
+   },
+   "harness|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|channel>thought\nPLAN-A\n<channel|><|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><|channel>thought\n",
+    "thought_in_prompt": true
+   },
+   "harness|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|channel>thought\nPLAN-A\n<channel|><|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>",
+    "thought_in_prompt": true
+   }
+  },
+  "thought_include_thoughts_false": {
+   "vanilla|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><|channel>thought\n",
+    "thought_in_prompt": false
+   },
+   "vanilla|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>",
+    "thought_in_prompt": false
+   },
+   "harness|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><|channel>thought\n",
+    "thought_in_prompt": false
+   },
+   "harness|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>",
+    "thought_in_prompt": false
+   }
+  },
+  "multi_text_parts": {
+   "vanilla|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>TEXT-ONE<turn|>\n<|channel>thought\n",
+    "first_text": true,
+    "second_text": false
+   },
+   "vanilla|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>TEXT-ONE<turn|>\n",
+    "first_text": true,
+    "second_text": false
+   },
+   "harness|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>TEXT-ONE<turn|>\n<|channel>thought\n",
+    "first_text": true,
+    "second_text": false
+   },
+   "harness|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>TEXT-ONE<turn|>\n",
+    "first_text": true,
+    "second_text": false
+   }
+  },
+  "multi_text_parts_no_calls": {
+   "vanilla|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\nTEXT-ONE<turn|>\n<|turn>user\nnext<turn|>\n<|turn>model\n",
+    "first_text": true,
+    "second_text": false
+   },
+   "vanilla|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\nTEXT-ONE<turn|>\n<|turn>user\nnext<turn|>\n<|turn>model\n",
+    "first_text": true,
+    "second_text": false
+   },
+   "harness|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\nTEXT-ONE<turn|>\n<|turn>user\nnext<turn|>\n<|turn>model\n",
+    "first_text": true,
+    "second_text": false
+   },
+   "harness|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\nTEXT-ONE<turn|>\n<|turn>user\nnext<turn|>\n<|turn>model\n",
+    "first_text": true,
+    "second_text": false
+   }
+  },
+  "text_and_calls_last": {
+   "vanilla|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Let me read it.<turn|>\n<|channel>thought\n",
+    "gen_prompt_inside_model_turn": false
+   },
+   "vanilla|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Let me read it.<turn|>\n",
+    "gen_prompt_inside_model_turn": false
+   },
+   "harness|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|channel>thought\nPLAN\n<channel|><|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Let me read it.<turn|>\n<|channel>thought\n",
+    "gen_prompt_inside_model_turn": false
+   },
+   "harness|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|channel>thought\nPLAN\n<channel|><|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Let me read it.<turn|>\n",
+    "gen_prompt_inside_model_turn": false
+   }
+  },
+  "text_and_calls_middle": {
+   "vanilla|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Let me read it.<|tool_call>call:read_file{filepath:<|\"|>b<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 2}<|\"|>}<tool_response|><|channel>thought\n"
+   },
+   "vanilla|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Let me read it.<turn|>\n<|tool_call>call:read_file{filepath:<|\"|>b<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 2}<|\"|>}<tool_response|>"
+   },
+   "harness|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Let me read it.<|tool_call>call:read_file{filepath:<|\"|>b<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 2}<|\"|>}<tool_response|><|channel>thought\n"
+   },
+   "harness|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Let me read it.<turn|>\n<|tool_call>call:read_file{filepath:<|\"|>b<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 2}<|\"|>}<tool_response|>"
+   }
+  },
+  "user_text_after_tool_response": {
+   "vanilla|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><turn|>\n<|turn>user\nBUDGET: 3 calls left<turn|>\n<|turn>model\n",
+    "model_turn_closed_before_user": true
+   },
+   "vanilla|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><|turn>user\nBUDGET: 3 calls left<turn|>\n<|turn>model\n",
+    "model_turn_closed_before_user": false
+   },
+   "harness|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><turn|>\n<|turn>user\nBUDGET: 3 calls left<turn|>\n<|turn>model\n",
+    "model_turn_closed_before_user": true
+   },
+   "harness|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><|turn>user\nBUDGET: 3 calls left<turn|>\n<|turn>model\n",
+    "model_turn_closed_before_user": false
+   }
+  },
+  "harness_continue_prompt_after_tool": {
+   "vanilla|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><turn|>\n<|turn>user\nPlease continue your work using the available tools, or call submit_patch when you have completed and verified your changes.<turn|>\n<|turn>model\n",
+    "model_turn_closed_before_user": true,
+    "earlier_thought_in_prompt": false
+   },
+   "vanilla|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><|turn>user\nPlease continue your work using the available tools, or call submit_patch when you have completed and verified your changes.<turn|>\n<|turn>model\n",
+    "model_turn_closed_before_user": false,
+    "earlier_thought_in_prompt": false
+   },
+   "harness|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><turn|>\n<|turn>user\nPlease continue your work using the available tools, or call submit_patch when you have completed and verified your changes.<turn|>\n<|turn>model\n",
+    "model_turn_closed_before_user": true,
+    "earlier_thought_in_prompt": false
+   },
+   "harness|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><|turn>user\nPlease continue your work using the available tools, or call submit_patch when you have completed and verified your changes.<turn|>\n<|turn>model\n",
+    "model_turn_closed_before_user": false,
+    "earlier_thought_in_prompt": false
+   }
+  },
+  "last_content_is_model": {
+   "vanilla|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Done.<turn|>\n<|turn>user\nContinue processing previous requests as instructed. Exit or provide a summary if no more outputs are needed.<turn|>\n<|turn>model\n",
+    "synthetic_user_turn": true,
+    "earlier_thought_in_prompt": false
+   },
+   "vanilla|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Done.<turn|>\n<|turn>user\nContinue processing previous requests as instructed. Exit or provide a summary if no more outputs are needed.<turn|>\n<|turn>model\n",
+    "synthetic_user_turn": true,
+    "earlier_thought_in_prompt": false
+   },
+   "harness|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Done.<turn|>\n<|turn>user\nContinue processing previous requests as instructed. Exit or provide a summary if no more outputs are needed.<turn|>\n<|turn>model\n",
+    "synthetic_user_turn": true,
+    "earlier_thought_in_prompt": false
+   },
+   "harness|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Done.<turn|>\n<|turn>user\nContinue processing previous requests as instructed. Exit or provide a summary if no more outputs are needed.<turn|>\n<|turn>model\n",
+    "synthetic_user_turn": true,
+    "earlier_thought_in_prompt": false
+   }
+  },
+  "unanswered_call": {
+   "vanilla|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_call>call:read_file{filepath:<|\"|>b<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><|tool_response>response:read_file{value:<|\"|>Error: Missing tool result (tool execution may have been interrupted before a response was recorded).<|\"|>}<tool_response|><|channel>thought\n",
+    "placeholder_result": true
+   },
+   "vanilla|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_call>call:read_file{filepath:<|\"|>b<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><|tool_response>response:read_file{value:<|\"|>Error: Missing tool result (tool execution may have been interrupted before a response was recorded).<|\"|>}<tool_response|>",
+    "placeholder_result": true
+   },
+   "harness|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_call>call:read_file{filepath:<|\"|>b<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><|tool_response>response:read_file{value:<|\"|>Error: Missing tool result (tool execution may have been interrupted before a response was recorded).<|\"|>}<tool_response|><|channel>thought\n",
+    "placeholder_result": true
+   },
+   "harness|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_call>call:read_file{filepath:<|\"|>b<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><|tool_response>response:read_file{value:<|\"|>Error: Missing tool result (tool execution may have been interrupted before a response was recorded).<|\"|>}<tool_response|>",
+    "placeholder_result": true
+   }
+  },
+  "model_name_contains_gemma4": {
+   "vanilla|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response><|turn>tool_responses\n{\"s\": 1}<turn|>\n<|turn>model\n",
+    "tool_responses_turn": true,
+    "proper_tool_response": false
+   },
+   "vanilla|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response><|turn>tool_responses\n{\"s\": 1}<turn|>\n<|turn>model\n",
+    "tool_responses_turn": true,
+    "proper_tool_response": false
+   },
+   "harness|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response><|turn>tool_responses\n{\"s\": 1}<turn|>\n<|turn>model\n",
+    "tool_responses_turn": true,
+    "proper_tool_response": false
+   },
+   "harness|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response><|turn>tool_responses\n{\"s\": 1}<turn|>\n<|turn>model\n",
+    "tool_responses_turn": true,
+    "proper_tool_response": false
+   }
+  },
+  "thought_only_model_turn": {
+   "vanilla|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<turn|>\n<|turn>user\nnext<turn|>\n<|turn>model\n",
+    "thought_in_prompt": false
+   },
+   "vanilla|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<turn|>\n<|turn>user\nnext<turn|>\n<|turn>model\n",
+    "thought_in_prompt": false
+   },
+   "harness|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<turn|>\n<|turn>user\nnext<turn|>\n<|turn>model\n",
+    "thought_in_prompt": false
+   },
+   "harness|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<turn|>\n<|turn>user\nnext<turn|>\n<|turn>model\n",
+    "thought_in_prompt": false
+   }
+  },
+  "function_response_with_text_in_model_role": {
+   "vanilla|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>Error: Missing tool result (tool execution may have been interrupted before a response was recorded).<|\"|>}<tool_response|><turn|>\n<|turn>user\nContinue processing previous requests as instructed. Exit or provide a summary if no more outputs are needed.<turn|>\n<|turn>model\n",
+    "actual_response_rendered": false,
+    "placeholder_instead": true
+   },
+   "vanilla|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>Error: Missing tool result (tool execution may have been interrupted before a response was recorded).<|\"|>}<tool_response|><|turn>user\nContinue processing previous requests as instructed. Exit or provide a summary if no more outputs are needed.<turn|>\n<|turn>model\n",
+    "actual_response_rendered": false,
+    "placeholder_instead": true
+   },
+   "harness|july": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>Error: Missing tool result (tool execution may have been interrupted before a response was recorded).<|\"|>}<tool_response|><turn|>\n<|turn>user\nContinue processing previous requests as instructed. Exit or provide a summary if no more outputs are needed.<turn|>\n<|turn>model\n",
+    "actual_response_rendered": false,
+    "placeholder_instead": true
+   },
+   "harness|june": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>Error: Missing tool result (tool execution may have been interrupted before a response was recorded).<|\"|>}<tool_response|><|turn>user\nContinue processing previous requests as instructed. Exit or provide a summary if no more outputs are needed.<turn|>\n<|turn>model\n",
+    "actual_response_rendered": false,
+    "placeholder_instead": true
+   }
+  },
+  "parallel_calls_runner": {
+   "sync_inline": {
+    "error": null,
+    "tool_finish_order": [
+     "read_file",
+     "run_command",
+     "write_file"
+    ],
+    "july": {
+     "response_names": [
+      "read_file",
+      "run_command",
+      "write_file"
+     ],
+     "names_match_calls_in_order": true,
+     "each_body_from_its_own_tool": true
+    },
+    "june": {
+     "response_names": [
+      "read_file",
+      "run_command",
+      "write_file"
+     ],
+     "names_match_calls_in_order": true,
+     "each_body_from_its_own_tool": true
+    }
+   },
+   "sync_thread_pool": {
+    "error": null,
+    "tool_finish_order": [
+     "read_file",
+     "run_command",
+     "write_file"
+    ],
+    "july": {
+     "response_names": [
+      "read_file",
+      "run_command",
+      "write_file"
+     ],
+     "names_match_calls_in_order": true,
+     "each_body_from_its_own_tool": true
+    },
+    "june": {
+     "response_names": [
+      "read_file",
+      "run_command",
+      "write_file"
+     ],
+     "names_match_calls_in_order": true,
+     "each_body_from_its_own_tool": true
+    }
+   },
+   "async_concurrent": {
+    "error": null,
+    "tool_finish_order": [
+     "run_command",
+     "write_file",
+     "read_file"
+    ],
+    "july": {
+     "response_names": [
+      "read_file",
+      "run_command",
+      "write_file"
+     ],
+     "names_match_calls_in_order": true,
+     "each_body_from_its_own_tool": true
+    },
+    "june": {
+     "response_names": [
+      "read_file",
+      "run_command",
+      "write_file"
+     ],
+     "names_match_calls_in_order": true,
+     "each_body_from_its_own_tool": true
+    }
+   }
+  }
+ },
+ "F6_reverse_slips": {
+  "n": 7274,
+  "counts": {
+   "n": 7274,
+   "reverse_args_type_exact": 7274,
+   "reverse_id_preserved": 7274,
+   "reverse_reasoning_kept_verbatim": 7274,
+   "reverse_content_kept_verbatim": 7274,
+   "july:prompt_explained_by_known_transforms": 7274,
+   "july:args_json_active": 0,
+   "july:canonical_rerender_present": 7274,
+   "july:history_rerender_substring": 7274,
+   "team_finetune|july:n": 2863,
+   "team_finetune|july:canonical": 2863,
+   "june:prompt_explained_by_known_transforms": 7274,
+   "june:args_json_active": 0,
+   "june_reference_equals_corpus_history_rerender_june": 7274,
+   "june:canonical_rerender_present": 7274,
+   "june:history_rerender_substring": 7270,
+   "team_finetune|june:n": 2863,
+   "team_finetune|june:canonical": 2863,
+   "base|july:n": 4411,
+   "base|july:canonical": 4411,
+   "base|june:n": 4411,
+   "base|june:canonical": 4411
+  },
+  "reverse_exception_wilson95": [
+   0.0,
+   0.0,
+   0.0005
+  ],
+  "reverse_call_dropped_or_split_wilson95": [
+   0.0,
+   0.0,
+   0.0005
+  ],
+  "reverse_any_warning_logged_wilson95": [
+   0.0,
+   0.0,
+   0.0005
+  ],
+  "reverse_error_code_set_wilson95": [
+   0.0,
+   0.0,
+   0.0005
+  ],
+  "reverse_args_type_exact_wilson95": [
+   1.0,
+   0.9995,
+   1.0
+  ],
+  "reverse_id_preserved_wilson95": [
+   1.0,
+   0.9995,
+   1.0
+  ],
+  "reverse_reasoning_kept_verbatim_wilson95": [
+   1.0,
+   0.9995,
+   1.0
+  ],
+  "reverse_content_kept_verbatim_wilson95": [
+   1.0,
+   0.9995,
+   1.0
+  ],
+  "july:canonical_rerender_present_wilson95": [
+   1.0,
+   0.9995,
+   1.0
+  ],
+  "june:canonical_rerender_present_wilson95": [
+   1.0,
+   0.9995,
+   1.0
+  ],
+  "july:history_rerender_substring_wilson95": [
+   1.0,
+   0.9995,
+   1.0
+  ],
+  "june:history_rerender_substring_wilson95": [
+   0.9995,
+   0.9986,
+   0.9998
+  ],
+  "july:prompt_explained_by_known_transforms_wilson95": [
+   1.0,
+   0.9995,
+   1.0
+  ],
+  "june:prompt_explained_by_known_transforms_wilson95": [
+   1.0,
+   0.9995,
+   1.0
+  ],
+  "july:args_json_active_wilson95": [
+   0.0,
+   0.0,
+   0.0005
+  ],
+  "june:args_json_active_wilson95": [
+   0.0,
+   0.0,
+   0.0005
+  ],
+  "june_reference_equals_corpus_history_rerender_june_wilson95": [
+   1.0,
+   0.9995,
+   1.0
+  ],
+  "base|july:canonical_wilson95": [
+   1.0,
+   0.9991,
+   1.0
+  ],
+  "base|june:canonical_wilson95": [
+   1.0,
+   0.9991,
+   1.0
+  ],
+  "team_finetune|july:canonical_wilson95": [
+   1.0,
+   0.9987,
+   1.0
+  ],
+  "team_finetune|june:canonical_wilson95": [
+   1.0,
+   0.9987,
+   1.0
+  ]
+ },
+ "F6r_reverse_runner": {
+  "n": 7274,
+  "counts": {
+   "n": 7274,
+   "outcome:adk_error_response": 4631,
+   "team_finetune|n": 2863,
+   "team_finetune|outcome:adk_error_response": 1054,
+   "july:canonical_rerender_present": 7214,
+   "july:canonical_among_continued": 7214,
+   "july:continued": 7214,
+   "june:canonical_rerender_present": 7214,
+   "june:canonical_among_continued": 7214,
+   "june:continued": 7214,
+   "outcome:tool_executed": 2583,
+   "team_finetune|outcome:tool_executed": 1751,
+   "base|n": 4411,
+   "base|outcome:tool_executed": 832,
+   "base|outcome:adk_error_response": 3577,
+   "executed_with_keys_silently_dropped": 846,
+   "outcome:raised": 60,
+   "base|outcome:raised": 2,
+   "no_second_request": 60,
+   "team_finetune|outcome:raised": 58
+  },
+  "by_primary_reason": {
+   "missing_required": {
+    "n": 4631,
+    "outcome:adk_error_response": 4631,
+    "july:canonical": 4631,
+    "june:canonical": 4631
+   },
+   "slip_type:control_token_inside_value": {
+    "n": 394,
+    "outcome:adk_error_response": 137,
+    "july:canonical": 394,
+    "june:canonical": 394,
+    "outcome:tool_executed": 257
+   },
+   "slip_type:missing_required_only": {
+    "n": 201,
+    "outcome:adk_error_response": 201,
+    "july:canonical": 201,
+    "june:canonical": 201
+   },
+   "slip_type:junk_or_unknown_keys": {
+    "n": 672,
+    "outcome:adk_error_response": 150,
+    "july:canonical": 672,
+    "june:canonical": 672,
+    "outcome:tool_executed": 522
+   },
+   "other": {
+    "n": 1737,
+    "outcome:tool_executed": 1737,
+    "july:canonical": 1737,
+    "june:canonical": 1737
+   },
+   "slip_type:stray_delimiter_after_number": {
+    "n": 679,
+    "outcome:tool_executed": 678,
+    "july:canonical": 679,
+    "june:canonical": 679,
+    "outcome:adk_error_response": 1
+   },
+   "slip_type:absorbed_lookalike_closer": {
+    "n": 4836,
+    "outcome:tool_executed": 867,
+    "july:canonical": 4836,
+    "june:canonical": 4836,
+    "outcome:adk_error_response": 3969
+   },
+   "unknown_key": {
+    "n": 846,
+    "outcome:tool_executed": 846,
+    "july:canonical": 846,
+    "june:canonical": 846
+   },
+   "slip_type:delimiter_inside_value": {
+    "n": 363,
+    "outcome:tool_executed": 215,
+    "july:canonical": 363,
+    "june:canonical": 363,
+    "outcome:adk_error_response": 148
+   },
+   "slip_type:absorbed_no_closer": {
+    "n": 25,
+    "outcome:adk_error_response": 25,
+    "july:canonical": 25,
+    "june:canonical": 25
+   },
+   "slip_type:undeclared_tool": {
+    "n": 104,
+    "outcome:tool_executed": 44,
+    "july:canonical": 44,
+    "june:canonical": 44,
+    "outcome:raised": 60
+   },
+   "undeclared_tool": {
+    "n": 60,
+    "outcome:raised": 60
+   }
+  },
+  "outcome:adk_error_response_wilson95": [
+   0.6367,
+   0.6255,
+   0.6476
+  ],
+  "july:canonical_rerender_present_wilson95": [
+   0.9918,
+   0.9894,
+   0.9936
+  ],
+  "june:canonical_rerender_present_wilson95": [
+   0.9918,
+   0.9894,
+   0.9936
+  ],
+  "outcome:tool_executed_wilson95": [
+   0.3551,
+   0.3442,
+   0.3662
+  ],
+  "executed_with_keys_silently_dropped_wilson95": [
+   0.1163,
+   0.1091,
+   0.1239
+  ],
+  "outcome:raised_wilson95": [
+   0.0082,
+   0.0064,
+   0.0106
+  ],
+  "no_second_request_wilson95": [
+   0.0082,
+   0.0064,
+   0.0106
+  ],
+  "july:canonical_among_continued_wilson95": [
+   1.0,
+   0.9995,
+   1.0
+  ],
+  "june:canonical_among_continued_wilson95": [
+   1.0,
+   0.9995,
+   1.0
+  ]
+ },
+ "F6u_raw_unparsed": {
+  "n": 1136,
+  "counts": {
+   "n": 1136,
+   "text_part_kept_verbatim": 1136,
+   "july:raw_call_tokens_in_model_turn": 1116,
+   "july:tool_call_open_token_in_model_turn": 1101,
+   "june:raw_call_tokens_in_model_turn": 1116,
+   "june:tool_call_open_token_in_model_turn": 1101
+  },
+  "text_part_kept_verbatim_wilson95": [
+   1.0,
+   0.9966,
+   1.0
+  ],
+  "july:raw_call_tokens_in_model_turn_wilson95": [
+   0.9824,
+   0.973,
+   0.9886
+  ],
+  "july:tool_call_open_token_in_model_turn_wilson95": [
+   0.9692,
+   0.9575,
+   0.9778
+  ],
+  "june:raw_call_tokens_in_model_turn_wilson95": [
+   0.9824,
+   0.973,
+   0.9886
+  ],
+  "june:tool_call_open_token_in_model_turn_wilson95": [
+   0.9692,
+   0.9575,
+   0.9778
+  ]
+ },
+ "F7_other_agent": {
+  "slip_id": "g4slip-00129",
+  "user_text": "[coder] called tool `edit_file` with parameters: {'filepath': 'src/pluggy/_manager.py', 'new_string': '    def is_registered(self, plugin: _Plugin) -> bool:\\\\n        \\\\\"\\\\\"\\\\\"Return whether the plugin is already registered.\\\\\"\\\\\"\\\\\"\\\\n        if plugin is None:\\\\n            return False\\\\n        return any(plugin == val for val in self._name2plugin.values())\\\\n`,old_string:', 'def is_registered(self, plugin': '_Plugin) -> bool:\\\\n        \\\\\"\\\\\"\\\\\"Return whether the plugin is already registered.\\\\\"\\\\\"\\\\\"\\\\n        return any(plugin == val for val in self._name2plugin.values())\\\\n<|\"|>'}",
+  "str_token_in_user_turn": true,
+  "n_str_tokens_in_user_turn": 1,
+  "prompt_tail": "<|turn>user\nFor context:[coder] called tool `edit_file` with parameters: {'filepath': 'src/pluggy/_manager.py', 'new_string': '    def is_registered(self, plugin: _Plugin) -> bool:\\\\n        \\\\\"\\\\\"\\\\\"Return whether the plugin is already registered.\\\\\"\\\\\"\\\\\"\\\\n        if plugin is None:\\\\n            return False\\\\n        return any(plugin == val for val in self._name2plugin.values())\\\\n`,old_string:', 'def is_registered(self, plugin': '_Plugin) -> bool:\\\\n        \\\\\"\\\\\"\\\\\"Return whether the plugin is already registered.\\\\\"\\\\\"\\\\\"\\\\n        return any(plugin == val for val in self._name2plugin.values())\\\\n<|\"|>'}<turn|>\n<|turn>model\n"
+ },
+ "F8_replay_logged": {
+  "n": 398,
+  "match_any": 397,
+  "match_july": 47,
+  "match_june": 397,
+  "june_eq_july_len": 47,
+  "match_any_wilson95": [
+   0.9975,
+   0.9859,
+   0.9996
+  ],
+  "by_run_template": {
+   "run-34:june": 29,
+   "run-23:june": 30,
+   "run-40:june": 25,
+   "run-40:july+june": 5,
+   "run-38:june": 31,
+   "test_lp:june": 5,
+   "run-24:june": 5,
+   "run-44:june": 13,
+   "run-44:july+june": 2,
+   "run-47:june": 10,
+   "run-35:july+june": 2,
+   "run-35:june": 18,
+   "run-43:june": 19,
+   "run-09:june": 5,
+   "run-20:june": 5,
+   "run-41:june": 8,
+   "run-41:july+june": 2,
+   "run-28:june": 5,
+   "run-45:june": 4,
+   "run-45:none": 1,
+   "run-29:june": 19,
+   "run-17:june": 4,
+   "run-17:july+june": 1,
+   "run-25:june": 8,
+   "run-25:july+june": 2,
+   "run-39:june": 10,
+   "run-21:june": 9,
+   "run-21:july+june": 1,
+   "run-37:june": 14,
+   "run-07:june": 5,
+   "run-34:july+june": 1,
+   "run-02:july+june": 4,
+   "run-02:june": 1,
+   "run-32:june": 8,
+   "run-32:july+june": 2,
+   "run-12:june": 4,
+   "run-12:july+june": 1,
+   "run-43:july+june": 1,
+   "run-29:july+june": 1,
+   "run-27:june": 17,
+   "smoke1:july+june": 3,
+   "run-23:july+june": 5,
+   "run-36:july+june": 3,
+   "run-36:june": 7,
+   "run-31:june": 10,
+   "run-38:july+june": 4,
+   "run-27:july+june": 3,
+   "run-x01:june": 5,
+   "run-37:july+june": 1,
+   "run-22:june": 10,
+   "run-11:july+june": 2,
+   "run-11:june": 3,
+   "run-01:june": 4,
+   "run-01:july+june": 1
+  },
+  "mismatch_examples": [
+   {
+    "file": "run-45/log-ae1297.jsonl",
+    "line": 74,
+    "model": "ft-B",
+    "logged": 2762,
+    "july": 2788,
+    "june": 2785,
+    "match": [],
+    "delta_july": 26,
+    "delta_june": 23
+   }
+  ]
+ },
+ "_meta": {
+  "versions": {
+   "google-adk": "1.36.1",
+   "litellm": "1.104.0",
+   "vllm": "0.19.1",
+   "transformers": "5.13.1",
+   "google-genai": "2.11.0",
+   "openai": "2.54.0",
+   "httpx": "0.28.1",
+   "jinja2": "3.1.6",
+   "pydantic": "2.14.2",
+   "adk-submission": "0.2.13"
+  },
+  "seed": 20261104,
+  "templates": {
+   "july": "models/gemma-4-31b-it-qat-w4a16-ct/chat_template.jinja",
+   "june": "experiments/quant_margins/data/chat_template_maintrack.jinja"
+  },
+  "slip_corpus_snapshot": {
+   "source": "experiments/conformance/slips/release/gemma4_slips.jsonl",
+   "md5": "fe98e2a47f31eb407f4a2d89cac16fe2",
+   "kinds": {
+    "parsed_malformed": 7274,
+    "raw_unparsed": 1136
+   },
+   "copied": "2026-11-04 11:00:18"
+  },
+  "model_string": "openai/gemma-4-31b-it-qat-w4a16-ct",
+  "configs": {
+   "vanilla": "google-adk 1.36.1 + litellm 1.104.0",
+   "harness": "vanilla + adk_submission 0.2.13 install_litellm_reasoning_patch()"
+  },
+  "generated": "2026-11-04 11:12:04"
+ },
+ "_bug_classes": [
+  {
+   "id": "C01_tool_result_json_in_string",
+   "library": "google-adk 1.36.1",
+   "function": "models/lite_llm._content_to_message_param (+_safe_json_serialize)",
+   "severity": "silent",
+   "evidence": {
+    "july": [
+     400,
+     400
+    ],
+    "june": [
+     400,
+     400
+    ]
+   },
+   "real_results_F4": {
+    "n": 4000,
+    "wire_content_byte_identical_to_logged": 4000,
+    "chars_pipeline": 5005115,
+    "chars_ideal": 4803105,
+    "resp_with_backslash_dquote": 1863,
+    "resp_with_backslash_n": 3299,
+    "backslash_dquote_total": 45496,
+    "ideal_with_backslash_dquote": 52,
+    "resp_contains_str_token_in_payload": 0,
+    "nonascii_kept": 73
+   },
+   "logs": {
+    "base": {
+     "k": 35451,
+     "n": 80125,
+     "rate_wilson95": [
+      0.4424,
+      0.439,
+      0.4459
+     ]
+    },
+    "team_finetune": {
+     "k": 92929,
+     "n": 193599,
+     "rate_wilson95": [
+      0.48,
+      0.4778,
+      0.4822
+     ]
+    }
+   }
+  },
+  {
+   "id": "C02_reasoning_dropped",
+   "library": "google-adk 1.36.1 x vLLM 0.19.1 (litellm hosted_vllm/ also pops reasoning_content)",
+   "function": "adk lite_llm._content_to_message_param emits reasoning_content; vllm chat_utils._parse_chat_message_content reads only 'reasoning'",
+   "severity": "silent (fixed by adk_submission 0.2.13 patch)",
+   "evidence": {
+    "july": [
+     364,
+     400
+    ],
+    "june": [
+     364,
+     400
+    ]
+   }
+  },
+  {
+   "id": "C03_reverse_no_detection_laundering",
+   "library": "litellm 1.104.0 + google-adk 1.36.1",
+   "function": "litellm response parsing; adk lite_llm._message_to_generate_content_response; flows/llm_flows/functions; FunctionTool.run_async",
+   "severity": "silent (missing required key -> error dict to the model; call stays in history)",
+   "evidence": {
+    "F6_direct": {
+     "n": 7274,
+     "reverse_exception": 0,
+     "reverse_any_warning_logged": 0,
+     "reverse_error_code_set": 0,
+     "reverse_args_type_exact": 7274,
+     "july:canonical_rerender_present": 7274,
+     "june:canonical_rerender_present": 7274,
+     "july:prompt_explained_by_known_transforms": 7274,
+     "june:prompt_explained_by_known_transforms": 7274
+    },
+    "F6r_runner": {
+     "n": 7274,
+     "outcome:adk_error_response": 4631,
+     "july:canonical_rerender_present": 7214,
+     "july:canonical_among_continued": 7214,
+     "june:canonical_rerender_present": 7214,
+     "june:canonical_among_continued": 7214,
+     "outcome:tool_executed": 2583,
+     "executed_with_keys_silently_dropped": 846,
+     "outcome:raised": 60
+    }
+   }
+  },
+  {
+   "id": "C04_raw_unparsed_reenters_as_control_tokens",
+   "library": "google-adk 1.36.1 + template",
+   "function": "adk lite_llm._split_message_content_and_tool_calls; template strip_thinking",
+   "severity": "silent",
+   "evidence": {
+    "n": 1136,
+    "text_part_kept_verbatim": 1136,
+    "july:raw_call_tokens_in_model_turn": 1116,
+    "july:tool_call_open_token_in_model_turn": 1101,
+    "june:raw_call_tokens_in_model_turn": 1116,
+    "june:tool_call_open_token_in_model_turn": 1101
+   }
+  },
+  {
+   "id": "C05_system_trailing_space",
+   "library": "vLLM 0.19.1 x template",
+   "function": "renderers/hf._detect_content_format -> 'openai'; template system branch `item['text'] | trim + ' '`",
+   "severity": "silent (cosmetic)",
+   "evidence": {
+    "july": [
+     400,
+     400
+    ],
+    "june": [
+     400,
+     400
+    ]
+   },
+   "logs": {
+    "base": {
+     "k": 83851,
+     "n": 86933,
+     "rate_wilson95": [
+      0.9645,
+      0.9633,
+      0.9658
+     ]
+    },
+    "team_finetune": {
+     "k": 202297,
+     "n": 209876,
+     "rate_wilson95": [
+      0.9639,
+      0.9631,
+      0.9647
+     ]
+    }
+   }
+  },
+  {
+   "id": "C06_pep604_optional_type_lost",
+   "library": "google-adk 1.36.1",
+   "function": "tools FunctionTool declaration (X | None -> any_of) + lite_llm._schema_to_dict",
+   "severity": "silent (fixed by adk_submission patch)",
+   "evidence": {
+    "july": [
+     400,
+     400
+    ],
+    "june": [
+     400,
+     400
+    ]
+   }
+  },
+  {
+   "id": "C07_nonjson_values_python_repr",
+   "library": "google-adk 1.36.1",
+   "function": "lite_llm._safe_json_serialize -> str(obj)",
+   "severity": "silent for results / loud (vLLM 400) for arguments",
+   "evidence": {
+    "client": "ok",
+    "wire_arguments": "{'d': Decimal('1.50')}",
+    "july": "ERROR parse_chat_messages: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+    "june": "ERROR parse_chat_messages: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+   }
+  },
+  {
+   "id": "C08_nonfinite_float_in_tool_schema",
+   "library": "litellm 1.104.0 (openai 2.54 / httpx 0.28 body encoding, allow_nan=False)",
+   "function": "request body JSON encoding",
+   "severity": "loud (InternalServerError on every request)",
+   "evidence": {
+    "harness|genai_Schema": {
+     "n": 2,
+     "n_fail": 2,
+     "fail_rate_wilson95": [
+      1.0,
+      0.3424,
+      1.0
+     ],
+     "classes": {
+      "exception:client": {
+       "n": 2,
+       "rate_wilson95": [
+        1.0,
+        0.3424,
+        1.0
+       ]
+      }
+     }
+    },
+    "harness|parameters_json_schema": {
+     "n": 2,
+     "n_fail": 2,
+     "fail_rate_wilson95": [
+      1.0,
+      0.3424,
+      1.0
+     ],
+     "classes": {
+      "exception:client": {
+       "n": 2,
+       "rate_wilson95": [
+        1.0,
+        0.3424,
+        1.0
+       ]
+      }
+     }
+    },
+    "vanilla|genai_Schema": {
+     "n": 2,
+     "n_fail": 2,
+     "fail_rate_wilson95": [
+      1.0,
+      0.3424,
+      1.0
+     ],
+     "classes": {
+      "exception:client": {
+       "n": 2,
+       "rate_wilson95": [
+        1.0,
+        0.3424,
+        1.0
+       ]
+      }
+     }
+    },
+    "vanilla|parameters_json_schema": {
+     "n": 2,
+     "n_fail": 2,
+     "fail_rate_wilson95": [
+      1.0,
+      0.3424,
+      1.0
+     ],
+     "classes": {
+      "exception:client": {
+       "n": 2,
+       "rate_wilson95": [
+        1.0,
+        0.3424,
+        1.0
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "C09_multi_text_parts_truncated",
+   "library": "google-adk 1.36.1",
+   "function": "lite_llm._content_to_message_param (final_content[0]['text'])",
+   "severity": "silent",
+   "evidence": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>TEXT-ONE<turn|>\n<|channel>thought\n",
+    "first_text": true,
+    "second_text": false
+   }
+  },
+  {
+   "id": "C10_gemma4_role_tool_responses",
+   "library": "google-adk 1.36.1",
+   "function": "lite_llm._content_to_message_param / _ensure_tool_results ('gemma4' in model)",
+   "severity": "silent",
+   "evidence": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response><|turn>tool_responses\n{\"s\": 1}<turn|>\n<|turn>model\n",
+    "tool_responses_turn": true,
+    "proper_tool_response": false
+   }
+  },
+  {
+   "id": "C11_tool_response_name_resolution",
+   "library": "templates (+ google-adk ids)",
+   "function": "template tool_call_id -> name scan (last match wins; 'unknown' / None)",
+   "severity": "silent (July) / loud (June TypeError -> 400)",
+   "evidence": {
+    "names:ids_none": {
+     "july": {
+      "response_names": [
+       "unknown"
+      ],
+      "expected": [
+       "read_file"
+      ]
+     },
+     "june": {
+      "error": "ValueError: can only concatenate str (not \"NoneType\") to str",
+      "stage": "chat_template"
+     }
+    },
+    "names:ids_empty_two_calls": {
+     "july": {
+      "response_names": [
+       "run_command",
+       "run_command"
+      ],
+      "expected": [
+       "read_file",
+       "run_command"
+      ]
+     },
+     "june": {
+      "response_names": [
+       "run_command",
+       "run_command"
+      ],
+      "expected": [
+       "read_file",
+       "run_command"
+      ]
+     }
+    },
+    "names:ids_duplicated": {
+     "july": {
+      "response_names": [
+       "run_command",
+       "run_command"
+      ],
+      "expected": [
+       "read_file",
+       "run_command"
+      ]
+     },
+     "june": {
+      "response_names": [
+       "run_command",
+       "run_command"
+      ],
+      "expected": [
+       "read_file",
+       "run_command"
+      ]
+     }
+    },
+    "names:ids_unique(control)": {
+     "july": {
+      "response_names": [
+       "read_file",
+       "run_command"
+      ],
+      "expected": [
+       "read_file",
+       "run_command"
+      ]
+     },
+     "june": {
+      "response_names": [
+       "read_file",
+       "run_command"
+      ],
+      "expected": [
+       "read_file",
+       "run_command"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "C12_june_turn_not_closed_before_user",
+   "library": "June-5 template",
+   "function": "turn close: `not (ns_tr_out.flag and not has_content)`",
+   "severity": "silent",
+   "evidence": {
+    "vanilla|july": {
+     "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><turn|>\n<|turn>user\nPlease continue your work using the available tools, or call submit_patch when you have completed and verified your changes.<turn|>\n<|turn>model\n",
+     "model_turn_closed_before_user": true,
+     "earlier_thought_in_prompt": false
+    },
+    "vanilla|june": {
+     "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><|turn>user\nPlease continue your work using the available tools, or call submit_patch when you have completed and verified your changes.<turn|>\n<|turn>model\n",
+     "model_turn_closed_before_user": false,
+     "earlier_thought_in_prompt": false
+    },
+    "harness|july": {
+     "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><turn|>\n<|turn>user\nPlease continue your work using the available tools, or call submit_patch when you have completed and verified your changes.<turn|>\n<|turn>model\n",
+     "model_turn_closed_before_user": true,
+     "earlier_thought_in_prompt": false
+    },
+    "harness|june": {
+     "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|><|turn>user\nPlease continue your work using the available tools, or call submit_patch when you have completed and verified your changes.<turn|>\n<|turn>model\n",
+     "model_turn_closed_before_user": false,
+     "earlier_thought_in_prompt": false
+    }
+   },
+   "logs": {
+    "base": {
+     "k": 508,
+     "n": 86933,
+     "rate_wilson95": [
+      0.0058,
+      0.0054,
+      0.0064
+     ]
+    },
+    "team_finetune": {
+     "k": 638,
+     "n": 209876,
+     "rate_wilson95": [
+      0.003,
+      0.0028,
+      0.0033
+     ]
+    }
+   }
+  },
+  {
+   "id": "C13_text_and_calls_turn_structure",
+   "library": "July-09 and June-5 templates",
+   "function": "content rendered after calls+responses, then <turn|>",
+   "severity": "silent",
+   "evidence": {
+    "vanilla|july": {
+     "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Let me read it.<turn|>\n<|channel>thought\n",
+     "gen_prompt_inside_model_turn": false
+    },
+    "vanilla|june": {
+     "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Let me read it.<turn|>\n",
+     "gen_prompt_inside_model_turn": false
+    },
+    "harness|july": {
+     "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|channel>thought\nPLAN\n<channel|><|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Let me read it.<turn|>\n<|channel>thought\n",
+     "gen_prompt_inside_model_turn": false
+    },
+    "harness|june": {
+     "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|channel>thought\nPLAN\n<channel|><|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Let me read it.<turn|>\n",
+     "gen_prompt_inside_model_turn": false
+    }
+   },
+   "logs": {
+    "base": {
+     "k": 2,
+     "n": 80122,
+     "rate_wilson95": [
+      0.0,
+      0.0,
+      0.0001
+     ]
+    },
+    "team_finetune": {
+     "k": 86,
+     "n": 192402,
+     "rate_wilson95": [
+      0.0004,
+      0.0004,
+      0.0006
+     ]
+    }
+   }
+  },
+  {
+   "id": "C14_synthetic_continue_user_turn",
+   "library": "google-adk 1.36.1",
+   "function": "models/base_llm._maybe_append_user_content",
+   "severity": "silent",
+   "evidence": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>{\"s\": 1}<|\"|>}<tool_response|>Done.<turn|>\n<|turn>user\nContinue processing previous requests as instructed. Exit or provide a summary if no more outputs are needed.<turn|>\n<|turn>model\n",
+    "synthetic_user_turn": true,
+    "earlier_thought_in_prompt": false
+   },
+   "logs": {
+    "base": {
+     "k": 0,
+     "n": 86933,
+     "rate_wilson95": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "team_finetune": {
+     "k": 0,
+     "n": 209876,
+     "rate_wilson95": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "id": "C15_mixed_role_content_response_dropped",
+   "library": "google-adk 1.36.1",
+   "function": "lite_llm._content_to_message_param ordering + _ensure_tool_results",
+   "severity": "silent",
+   "evidence": {
+    "tail": "<|turn>user\ngo<turn|>\n<|turn>model\n<|tool_call>call:read_file{filepath:<|\"|>a<|\"|>}<tool_call|><|tool_response>response:read_file{value:<|\"|>Error: Missing tool result (tool execution may have been interrupted before a response was recorded).<|\"|>}<tool_response|><turn|>\n<|turn>user\nContinue processing previous requests as instructed. Exit or provide a summary if no more outputs are needed.<turn|>\n<|turn>model\n",
+    "actual_response_rendered": false,
+    "placeholder_instead": true
+   }
+  },
+  {
+   "id": "C16_other_agent_for_context",
+   "library": "google-adk 1.36.1",
+   "function": "flows/llm_flows/contents._present_other_agent_message",
+   "severity": "silent (multi-agent only)",
+   "evidence": {
+    "slip_id": "g4slip-00129",
+    "user_text": "[coder] called tool `edit_file` with parameters: {'filepath': 'src/pluggy/_manager.py', 'new_string': '    def is_registered(self, plugin: _Plugin) -> bool:\\\\n        \\\\\"\\\\\"\\\\\"Return whether the plugin is already registered.\\\\\"\\\\\"\\\\\"\\\\n        if plugin is None:\\\\n            return False\\\\n        return any(plugin == val for val in self._name2plugin.values())\\\\n`,old_string:', 'def is_registered(self, plugin': '_Plugin) -> bool:\\\\n        \\\\\"\\\\\"\\\\\"Return whether the plugin is already registered.\\\\\"\\\\\"\\\\\"\\\\n        return any(plugin == val for val in self._name2plugin.values())\\\\n<|\"|>'}",
+    "str_token_in_user_turn": true,
+    "n_str_tokens_in_user_turn": 1,
+    "prompt_tail": "<|turn>user\nFor context:[coder] called tool `edit_file` with parameters: {'filepath': 'src/pluggy/_manager.py', 'new_string': '    def is_registered(self, plugin: _Plugin) -> bool:\\\\n        \\\\\"\\\\\"\\\\\"Return whether the plugin is already registered.\\\\\"\\\\\"\\\\\"\\\\n        if plugin is None:\\\\n            return False\\\\n        return any(plugin == val for val in self._name2plugin.values())\\\\n`,old_string:', 'def is_registered(self, plugin': '_Plugin) -> bool:\\\\n        \\\\\"\\\\\"\\\\\"Return whether the plugin is already registered.\\\\\"\\\\\"\\\\\"\\\\n        return any(plugin == val for val in self._name2plugin.values())\\\\n<|\"|>'}<turn|>\n<|turn>model\n"
+   }
+  },
+  {
+   "id": "C17_lone_surrogate_client_crash",
+   "library": "litellm 1.104.0 (openai SDK body encoding)",
+   "function": "UTF-8 encoding of the request body",
+   "severity": "loud",
+   "evidence": {
+    "client": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - 'utf-8' codec can't encode character '\\ud800' in position 216: surrogates not allowed"
+   }
+  },
+  {
+   "id": "C18_param_descriptions_not_extracted",
+   "library": "google-adk 1.36.1",
+   "function": "tools/_automatic_function_calling_util (docstring kept whole)",
+   "severity": "silent (low)",
+   "evidence": {
+    "harness|FunctionTool|july": {
+     "n": 6,
+     "n_fail": 1,
+     "fail_rate_wilson95": [
+      0.1667,
+      0.0301,
+      0.5635
+     ],
+     "classes": {
+      "description_lost": {
+       "n": 1,
+       "rate_wilson95": [
+        0.1667,
+        0.0301,
+        0.5635
+       ]
+      }
+     }
+    },
+    "harness|FunctionTool|june": {
+     "n": 6,
+     "n_fail": 1,
+     "fail_rate_wilson95": [
+      0.1667,
+      0.0301,
+      0.5635
+     ],
+     "classes": {
+      "description_lost": {
+       "n": 1,
+       "rate_wilson95": [
+        0.1667,
+        0.0301,
+        0.5635
+       ]
+      }
+     }
+    },
+    "vanilla|FunctionTool|july": {
+     "n": 6,
+     "n_fail": 2,
+     "fail_rate_wilson95": [
+      0.3333,
+      0.0968,
+      0.7
+     ],
+     "classes": {
+      "description_lost": {
+       "n": 1,
+       "rate_wilson95": [
+        0.1667,
+        0.0301,
+        0.5635
+       ]
+      },
+      "extra_key:any_of": {
+       "n": 2,
+       "rate_wilson95": [
+        0.3333,
+        0.0968,
+        0.7
+       ]
+      },
+      "items_lost": {
+       "n": 1,
+       "rate_wilson95": [
+        0.1667,
+        0.0301,
+        0.5635
+       ]
+      },
+      "type_lost": {
+       "n": 2,
+       "rate_wilson95": [
+        0.3333,
+        0.0968,
+        0.7
+       ]
+      }
+     }
+    },
+    "vanilla|FunctionTool|june": {
+     "n": 6,
+     "n_fail": 2,
+     "fail_rate_wilson95": [
+      0.3333,
+      0.0968,
+      0.7
+     ],
+     "classes": {
+      "description_lost": {
+       "n": 1,
+       "rate_wilson95": [
+        0.1667,
+        0.0301,
+        0.5635
+       ]
+      },
+      "extra_key:any_of": {
+       "n": 2,
+       "rate_wilson95": [
+        0.3333,
+        0.0968,
+        0.7
+       ]
+      },
+      "items_lost": {
+       "n": 1,
+       "rate_wilson95": [
+        0.1667,
+        0.0301,
+        0.5635
+       ]
+      },
+      "type_lost": {
+       "n": 2,
+       "rate_wilson95": [
+        0.3333,
+        0.0968,
+        0.7
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "C19_undeclared_tool_aborts_run",
+   "library": "google-adk 1.36.1",
+   "function": "flows/llm_flows/functions._get_tool -> ValueError",
+   "severity": "loud",
+   "evidence": {
+    "outcome:raised": 60,
+    "base|outcome:raised": 2,
+    "team_finetune|outcome:raised": 58
+   }
+  }
+ ],
+ "_log_prevalence": {
+  "base": {
+   "tool_msgs_json_object": {
+    "k": 80125,
+    "n": 80125,
+    "rate_wilson95": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "tool_msgs_with_backslash_dquote": {
+    "k": 35451,
+    "n": 80125,
+    "rate_wilson95": [
+     0.4424,
+     0.439,
+     0.4459
+    ]
+   },
+   "tool_msgs_with_backslash_n": {
+    "k": 66552,
+    "n": 80125,
+    "rate_wilson95": [
+     0.8306,
+     0.828,
+     0.8332
+    ]
+   },
+   "assistant_tails_with_text_and_calls": {
+    "k": 2,
+    "n": 80122,
+    "rate_wilson95": [
+     0.0,
+     0.0,
+     0.0001
+    ]
+   },
+   "requests_with_user_after_tool": {
+    "k": 508,
+    "n": 86933,
+    "rate_wilson95": [
+     0.0058,
+     0.0054,
+     0.0064
+    ]
+   },
+   "requests_with_system_prompt": {
+    "k": 83851,
+    "n": 86933,
+    "rate_wilson95": [
+     0.9645,
+     0.9633,
+     0.9658
+    ]
+   },
+   "assistant_tails_reasoning_mirrored": {
+    "k": 79690,
+    "n": 79690,
+    "rate_wilson95": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "requests_with_continue_msg": {
+    "k": 0,
+    "n": 86933,
+    "rate_wilson95": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "calls_with_empty_id": {
+    "k": 0,
+    "n": 80125,
+    "rate_wilson95": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "assistant_tails_dup_ids": {
+    "k": 0,
+    "n": 80122,
+    "rate_wilson95": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "team_finetune": {
+   "tool_msgs_json_object": {
+    "k": 193599,
+    "n": 193599,
+    "rate_wilson95": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "tool_msgs_with_backslash_dquote": {
+    "k": 92929,
+    "n": 193599,
+    "rate_wilson95": [
+     0.48,
+     0.4778,
+     0.4822
+    ]
+   },
+   "tool_msgs_with_backslash_n": {
+    "k": 162837,
+    "n": 193599,
+    "rate_wilson95": [
+     0.8411,
+     0.8395,
+     0.8427
+    ]
+   },
+   "assistant_tails_with_text_and_calls": {
+    "k": 86,
+    "n": 192402,
+    "rate_wilson95": [
+     0.0004,
+     0.0004,
+     0.0006
+    ]
+   },
+   "requests_with_user_after_tool": {
+    "k": 638,
+    "n": 209876,
+    "rate_wilson95": [
+     0.003,
+     0.0028,
+     0.0033
+    ]
+   },
+   "requests_with_system_prompt": {
+    "k": 202297,
+    "n": 209876,
+    "rate_wilson95": [
+     0.9639,
+     0.9631,
+     0.9647
+    ]
+   },
+   "assistant_tails_reasoning_mirrored": {
+    "k": 191800,
+    "n": 191800,
+    "rate_wilson95": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "requests_with_continue_msg": {
+    "k": 0,
+    "n": 209876,
+    "rate_wilson95": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "calls_with_empty_id": {
+    "k": 0,
+    "n": 193599,
+    "rate_wilson95": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "assistant_tails_dup_ids": {
+    "k": 0,
+    "n": 192402,
+    "rate_wilson95": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  }
+ }
+}

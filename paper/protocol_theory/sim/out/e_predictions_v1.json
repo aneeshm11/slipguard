@@ -1,0 +1,290 @@
+{
+ "_source": "paper/protocol_theory/prereg/E_PREDICTIONS_v1.md (frozen; numbers transcribed verbatim from its tables)",
+ "_sha256_of_frozen_text": "182365c95726d5b30319ac757a7859db1782ea59edadc4bf8431e4bf160ca8af",
+ "_frozen_utc": "2026-11-04 11:56:08 UTC (PROGRESS.md line); header says ~12:10, see PREREG_DEVIATIONS.md",
+ "_interval": "80% subjective prediction interval (point, [lo, hi])",
+ "population_31B": {
+  "delivered_malformed_per_episode_base": {
+   "point": 1.4,
+   "pi80": [
+    0.6,
+    2.5
+   ]
+  },
+  "delivered_malformed_fullp_over_base": {
+   "point": 0.12,
+   "pi80": [
+    0.04,
+    0.25
+   ],
+   "cut_point": -0.88,
+   "cut_pi80": [
+    -0.75,
+    -0.96
+   ],
+   "P(success: cut>=70% with CI excluding 0)": 0.85
+  },
+  "wasted_per_episode_base": {
+   "point": 1.5,
+   "pi80": [
+    0.7,
+    2.7
+   ]
+  },
+  "wasted_fullp_over_base": {
+   "point": 0.15,
+   "pi80": [
+    0.05,
+    0.3
+   ],
+   "cut_point": -0.85,
+   "cut_pi80": [
+    -0.7,
+    -0.95
+   ]
+  },
+  "stuck_episodes": {
+   "base": {
+    "point": 0.08,
+    "pi80": [
+     0.03,
+     0.15
+    ]
+   },
+   "fullp_upper": 0.01,
+   "fullp_pi80": [
+    0.0,
+    0.02
+   ]
+  },
+  "first_edit_emitted_slip_rate_diff_fullp_minus_base_abs_max": 0.03,
+  "time_to_first_applied_edit_turns_earlier_fullp": {
+   "point": 0.9,
+   "pi80": [
+    0.3,
+    1.6
+   ],
+   "median_diff": 0
+  },
+  "resolve_rate_diff_pp_fullp_minus_base": {
+   "point": 1.5,
+   "pi80": [
+    -2,
+    5
+   ],
+   "P(noninferior at -3pp)": 0.85
+  },
+  "generated_tokens_ratio": {
+   "point": 0.97,
+   "pi80": [
+    0.9,
+    1.03
+   ]
+  },
+  "emulated_wallclock_ratio": {
+   "point": 0.98,
+   "pi80": [
+    0.9,
+    1.08
+   ]
+  }
+ },
+ "population_12B": {
+  "delivered_malformed_per_episode_base": {
+   "point": 0.5,
+   "pi80": [
+    0.15,
+    1.5
+   ]
+  },
+  "fullp_cut": {
+   "point": -0.65,
+   "pi80": [
+    -0.35,
+    -0.9
+   ]
+  }
+ },
+ "population_E4B": {
+  "delivered_malformed_per_episode_base": {
+   "point": 0.4,
+   "pi80": [
+    0.1,
+    1.5
+   ]
+  },
+  "fullp_cut": {
+   "point": -0.7,
+   "pi80": [
+    -0.35,
+    -0.95
+   ]
+  }
+ },
+ "branches_31B_post_onset_delivered_malformed_per_branch": {
+  "natural": {
+   "base": [
+    5,
+    [
+     2,
+     11
+    ]
+   ],
+   "quar": [
+    0.45,
+    [
+     0.15,
+     1.2
+    ]
+   ],
+   "ipd": [
+    0.2,
+    [
+     0.05,
+     0.6
+    ]
+   ],
+   "fullp": [
+    0.15,
+    [
+     0.03,
+     0.5
+    ]
+   ]
+  },
+  "injected_P1": {
+   "base": [
+    2.3,
+    [
+     1,
+     5
+    ]
+   ],
+   "quar": [
+    0.05,
+    [
+     0.01,
+     0.2
+    ]
+   ],
+   "ipd": [
+    0.1,
+    [
+     0.02,
+     0.3
+    ]
+   ],
+   "fullp": [
+    0.03,
+    [
+     0,
+     0.15
+    ]
+   ]
+  },
+  "pooled_relative_cut": {
+   "quar": [
+    -0.85,
+    [
+     -0.65,
+     -0.95
+    ]
+   ],
+   "ipd": [
+    -0.92,
+    [
+     -0.8,
+     -0.98
+    ]
+   ],
+   "fullp": [
+    -0.95,
+    [
+     -0.85,
+     -0.99
+    ]
+   ]
+  },
+  "P(each of quar, ipd cuts >= 50%)": 0.9,
+  "causal_q_base": {
+   "first_post_onset_natural": [
+    0.75,
+    [
+     0.6,
+     0.88
+    ]
+   ],
+   "first_post_onset_injected": [
+    0.43,
+    [
+     0.33,
+     0.55
+    ]
+   ],
+   "second_given_first_natural": [
+    0.82,
+    [
+     0.65,
+     0.92
+    ]
+   ],
+   "second_given_first_injected": [
+    0.7,
+    [
+     0.5,
+     0.85
+    ]
+   ]
+  }
+ },
+ "branches_small_models_post_onset_base": {
+  "12B": [
+   0.16,
+   [
+    0.05,
+    0.5
+   ]
+  ],
+  "E4B": [
+   0.1,
+   [
+    0.02,
+    0.4
+   ]
+  ],
+  "P(quar and ipd each >=50%, 12B)": 0.75
+ },
+ "P_a": {
+  "s_post_31B": [
+   0.8,
+   [
+    0.65,
+    0.9
+   ]
+  ],
+  "quar_total_removal_31B_min": 0.6,
+  "quar_total_removal_31B_point": 0.68,
+  "ipd_total_removal_31B_min": 0.85,
+  "s_post_small": [
+   0.25,
+   [
+    0.1,
+    0.4
+   ]
+  ],
+  "quar_total_removal_small_max": 0.3,
+  "quar_total_removal_small_point": 0.22,
+  "ipd_total_removal_small_min": 0.7
+ },
+ "P_b": {
+  "abs_diff_ipd_vs_fullp_post_onset_31B_max": 0.15,
+  "rel_cut_diff_max_pp": 10
+ },
+ "P_c": {
+  "R_post_bf16_over_qat_interval": [
+   0.8,
+   1.25
+  ],
+  "note": "natural post-slip states; see theory.md claim table for the status vs F"
+ }
+}

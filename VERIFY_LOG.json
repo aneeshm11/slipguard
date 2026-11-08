@@ -1,0 +1,274 @@
+{
+ "generated": "2026-11-08 18:16 UTC",
+ "python": "3.10.12",
+ "installed": [
+  "pip==22.0.2",
+  "setuptools==59.6.0",
+  "slipguard==0.1.2",
+  "transcriptlab==0.1.3"
+ ],
+ "install_rc": 0,
+ "rows": [
+  {
+   "command": "sha256sum -c --quiet TREE_MANIFEST.sha256",
+   "rc": 0,
+   "seconds": 1.7,
+   "pass": true,
+   "detail": "exit 0; no output",
+   "note": "",
+   "tail": []
+  },
+  {
+   "command": "slipguard verify",
+   "rc": 0,
+   "seconds": 1.0,
+   "pass": true,
+   "detail": "\"ok\": True; frozen files 19/19 sha OK, 15 byte-identical to the freeze, changed by export: ['_frozen/endtoend/proxy/e2e_proxy.py', '_frozen/endtoend/proxy/VENDOR_B.txt', '_frozen/endtoend/configs/channel_prior.json', '_vendor/gemmaproto/gen.py']",
+   "note": "",
+   "tail": [
+    "   \"C9_bounded_nesting\": [",
+    "    1,",
+    "    1",
+    "   ]",
+    "  },",
+    "  \"failures\": [],",
+    "  \"linear_time_seconds\": {",
+    "   \"2000_args\": 0.013,",
+    "   \"8000_args\": 0.0553",
+    "  }",
+    " },",
+    " \"ok\": true",
+    "}",
+    "VERIFY PASS: frozen=ok, conformance=ok"
+   ]
+  },
+  {
+   "command": "transcriptlab verify --root .",
+   "rc": 0,
+   "seconds": 0.1,
+   "pass": true,
+   "detail": "exported experiments/contagion/scripts/analyze_bf16_core.py  6cc3a2197288b39e 4/4 frozen files match their pinned sha256 (4 as the path-rewritten export recorded in FROZEN_EXPORT_PINS.json)",
+   "note": "",
+   "tail": [
+    "root: <checkout> (--root)",
+    "exported experiments/contagion/scripts/run_injection.py  09af33158f044180",
+    "exported experiments/contagion/scripts/variants.py  008b9a1af9e9409f",
+    "exported experiments/contagion/scripts/gemma_protocol.py  6e8ff2120b71f002",
+    "exported experiments/contagion/scripts/analyze_bf16_core.py  6cc3a2197288b39e",
+    "4/4 frozen files match their pinned sha256 (4 as the path-rewritten export recorded in FROZEN_EXPORT_PINS.json)"
+   ]
+  },
+  {
+   "command": "python tools/verify_preregs.py --root .",
+   "rc": 0,
+   "seconds": 0.5,
+   "pass": true,
+   "detail": "exit 0; documents 32/32 (18 OK, 1 by frozen prefix, 13 exported with edits, 0 withheld; 0 missing, 0 mismatch) | manifest entries: 173 OK (83 exported with edits), 47 withheld (listed), 8 mismatch with a logg | PASS: 0 unexplained problem(s)",
+   "note": "",
+   "tail": [
+    "OK (exported with edits) experiments/endtoend/ext/dispatch_awq2.sh",
+    "OK (exported with edits) experiments/endtoend/analysis/prereg_analysis.py",
+    "OK (exported with edits) experiments/endtoend/run_population.sh",
+    "OK        experiments/endtoend/analysis/prereg_E_audit_analysis.py",
+    "OK        experiments/endtoend/analysis/prereg_E_comp_analysis.py",
+    "OK        experiments/endtoend/analysis/prereg_cov_common.py",
+    "OK (exported with edits) experiments/endtoend/ext/dispatch_q.sh",
+    "OK        experiments/endtoend/ext/queue_single.txt",
+    "OK        experiments/endtoend/ext/queue_tp.txt",
+    "OK (exported with edits) experiments/endtoend/run_population_qi.sh",
+    "OK (exported with edits) tools/dl_eaudit.sh",
+    "",
+    "documents 32/32 (18 OK, 1 by frozen prefix, 13 exported with edits, 0 withheld; 0 missing, 0 mismatch) | manifest entries: 173 OK (83 exported with edits), 47 withheld (listed), 8 mismatch with a logged reason, 0 unexplained, 0 missing | frozen code v2.7+: 26/26 OK (17 exported with edits), 0 withheld, 0 missing, 0 mismatch",
+    "PASS: 0 unexplained problem(s)"
+   ]
+  },
+  {
+   "command": "python tools/make_results_md.py --root . --out RESULTS.md --check",
+   "rc": 0,
+   "seconds": 0.5,
+   "pass": true,
+   "detail": "exit 0; check RESULTS.md (public layout): 63 results, 0 unresolved, UP TO DATE",
+   "note": "--check compares with the shipped RESULTS.md and writes nothing",
+   "tail": [
+    "check RESULTS.md (public layout): 63 results, 0 unresolved, UP TO DATE"
+   ]
+  },
+  {
+   "command": "python release/build_numbers.py --strict  (as shipped)",
+   "rc": 0,
+   "seconds": 0.2,
+   "pass": true,
+   "detail": "strict gate: PASS -- paper (none) blocking 0 {}",
+   "note": "the public tree ships the clean Writeup (paper/WRITEUP.md, no source comments), so the shipped gate checks the READMEs only",
+   "tail": [
+    "outputs: <out>/gate_shipped",
+    "strict gate: PASS -- paper (none) blocking 0 {}",
+    "383 quantities; 11 without a source file in this tree (internal-only quantities; the paper does not cite them)"
+   ]
+  },
+  {
+   "command": "paper gate: current paper master against this tree",
+   "rc": 0,
+   "seconds": 0.7,
+   "pass": true,
+   "detail": "strict gate: PASS -- paper (../../../paper/protocol/draft/PAPER_v0.md) blocking 0 {'OK': 177, 'TEXT': 43, 'QUAL/DERIVED': 39, 'NODE': 5}",
+   "note": "every <!-- src: --> citation of the current paper master must resolve to a file#key shipped in this tree",
+   "tail": [
+    "outputs: <out>/gate_paper",
+    "strict gate: PASS -- paper (../../../paper/protocol/draft/PAPER_v0.md) blocking 0 {'OK': 177, 'TEXT': 43, 'QUAL/DERIVED': 39, 'NODE': 5}",
+    "563 quantities; 11 without a source file in this tree (internal-only quantities; the paper does not cite them)"
+   ]
+  },
+  {
+   "command": "python notebooks/reproduce_numbers.py .  (tree + dataset parts)",
+   "rc": 0,
+   "seconds": 7.2,
+   "pass": true,
+   "detail": "12 checks run, 12 exact, 0 check groups skipped; exit 0",
+   "note": "dataset root = the workspace (tree + release package + PNC parts)",
+   "tail": [
+    "headline results re-derived from raw released records: 12 check(s) run, 12 exact; 0 check group(s) skipped (7.1 s)",
+    "  31B copying: P0 rate                               0.0133  released     0.0133  EXACT (count-exact)",
+    "  31B copying: P1 rate                               0.1967  released     0.1967  EXACT (count-exact)",
+    "  31B copying: RD P1 - P0                            0.1833  released     0.1833  EXACT (count-exact)",
+    "  31B induction: RD P6 - P0                          0.0767  released     0.0767  EXACT (count-exact)",
+    "  31B induction dose: k=4 rate                       0.3935  released     0.3935  EXACT (count-exact)",
+    "  31B quarantine removal (P8a)                       0.9818  released     0.9820  EXACT (stored-precision)",
+    "  31B bf16 copying: RD P1 - P0                       0.0900  released     0.0900  EXACT (count-exact)",
+    "  31B bf16 induction: RD P6 - P0                     0.0467  released     0.0467  EXACT (count-exact)",
+    "  PNC episodes                                         1181  released       1181  EXACT (count)",
+    "  PNC model turns (= the conformance run inputs)      41290  released      41290  EXACT (count)",
+    "  discovery snippets                                   8107  released       8107  EXACT (count)",
+    "  discovery pointer rows                                 53  released         53  EXACT (count)",
+    "outputs in <out>/nb"
+   ]
+  },
+  {
+   "command": "python notebooks/reproduce_numbers.py .  (public tree ALONE: partial-run report)",
+   "rc": 3,
+   "seconds": 0.1,
+   "pass": true,
+   "detail": "8 checks run, 8 exact, 2 check groups skipped (pnc_corpus, discovery_released); exit 3 (expected 3 = incomplete); INCOMPLETE line printed",
+   "note": "no dataset parts attached: must report checks run vs skipped and exit 3, not 0",
+   "tail": [
+    "headline results re-derived from raw released records: 8 check(s) run, 8 exact; 2 check group(s) skipped (0.1 s)",
+    "  31B copying: P0 rate                               0.0133  released     0.0133  EXACT (count-exact)",
+    "  31B copying: P1 rate                               0.1967  released     0.1967  EXACT (count-exact)",
+    "  31B copying: RD P1 - P0                            0.1833  released     0.1833  EXACT (count-exact)",
+    "  31B induction: RD P6 - P0                          0.0767  released     0.0767  EXACT (count-exact)",
+    "  31B induction dose: k=4 rate                       0.3935  released     0.3935  EXACT (count-exact)",
+    "  31B quarantine removal (P8a)                       0.9818  released     0.9820  EXACT (stored-precision)",
+    "  31B bf16 copying: RD P1 - P0                       0.0900  released     0.0900  EXACT (count-exact)",
+    "  31B bf16 induction: RD P6 - P0                     0.0467  released     0.0467  EXACT (count-exact)",
+    "  skipped pnc_corpus: PNC dataset not attached (set PNC_ROOT or attach it on Kaggle)",
+    "  skipped discovery_released: [Errno 2] No such file or directory: './release/package/v1.0/corpus/discovery/slips_snippets.jsonl'",
+    "INCOMPLETE: 2 check(s) skipped because dataset parts are not attached (pnc_corpus, discovery_released); attach PNC (PNC_ROOT) and the discovery snippets of the release dataset for the full set",
+    "outputs in <out>/nb_tree_only"
+   ]
+  },
+  {
+   "command": "python -m unittest discover -s transcriptlab/tests (no extras)",
+   "rc": 0,
+   "seconds": 0.6,
+   "pass": true,
+   "detail": "Ran 21 tests in 0.481s OK (skipped=5)",
+   "note": "run from a copy of transcriptlab/; tests needing numpy / vLLM / tokenizers / PNC skip",
+   "tail": [
+    "ss......ss..s........",
+    "----------------------------------------------------------------------",
+    "Ran 21 tests in 0.481s",
+    "",
+    "OK (skipped=5)"
+   ]
+  },
+  {
+   "command": "python notebooks/quickstart.py",
+   "rc": 0,
+   "seconds": 2.4,
+   "pass": true,
+   "detail": " quickstart finished in 2.3 s",
+   "note": "PNC dataset attached as data/pnc",
+   "tail": [
+    "$ slipguard audit transcript_django__django-12225__S1.json --thinking --json",
+    "{\"conversation\": 0, \"malformed_call\": \"checked\", \"findings\": [{\"finding\": \"malformed_call\", \"message\": 60, \"id\": \"chatcmpl-tool-7e2ab4a3e47741cb\", \"tool\": \"edit_file\", \"why\": [\"missing:file_path\", \"unknown_key\"]}]}",
+    "",
+    "sample: 9 of 40 final transcripts carry at least one call that quarantine would fix (20 calls in all)",
+    "                                                 stock           slipguard  note",
+    "malformed calls / episode (E2E)                   2.47                0.27  ratio 0.11 [0.06, 0.22]",
+    "stuck episodes (E2E)                            14/226               0/226  2 replicates pooled",
+    "known-intent turns delivered wrong         188-216/218               0/218  vLLM 0.19-0.33",
+    "exact intent, injected slips                      0.0%               90.6%  IPD CI [85.4, 94.1]",
+    "malformed next edit, laundered history           19.7%                1.7%  98% of the excess removed [88, 110]",
+    "audit pick (QAT -> AWQ -> + quarantine)          19.7%       10.3% -> 0.0%  RD -9.3 pp",
+    "thinking-off ignored after a tool result         98.7%                0.3%  296/300 -> 1/300",
+    "",
+    "quickstart finished in 2.3 s"
+   ]
+  },
+  {
+   "command": "host-path grep over the whole tree (account name, data-holder host roots, host-root pseudonyms)",
+   "rc": 0,
+   "seconds": 0,
+   "pass": true,
+   "detail": "0 host-identifier hits {\"account name\": 0, \"account surname\": 0, \"data-holder data root\": 0, \"data-holder home\": 0, \"pseudonymized data root\": 0, \"pseudonymized home\": 0}; non-host path-segment matches {\"data segment\": 112, \"home segment\": 1} (relative repo paths, HF/Kaggle globs, upstream test ids)",
+   "note": "allowed: none (host identifiers)",
+   "tail": []
+  },
+  {
+   "command": "withheld-material scan (decoded JSON; injection / turn-token / deep-nesting shapes inside string values; withheld ids)",
+   "rc": 0,
+   "seconds": 0,
+   "pass": true,
+   "detail": "0 reproducible withheld inputs (injection in string 0, turn-user in string 0, deep brackets 0, payload ids outside pointers 0); informational: single ctrl token in string 568 (natural look-alike slips), structural multi-call 137, long lines 190, label ids 3 (counts only)",
+   "note": "classified in WP_RELEASE_CHANGES.md",
+   "tail": [
+    "REPRODUCIBLE withheld inputs: 0 {'injection_in_string': 0, 'turn_user_in_string': 0, 'deep_brackets': 0} | payload ids outside pointers: {}",
+    "informational: {'ctrl_in_string': 568, 'structural_multicall': 137, 'long_line': 190} | label ids (counts only): {'experiments/conformance/results.json': 3}",
+    "pointer-only identifiers (names/hashes): {'WITHHELD.json': 12, 'EXPORT_DIFFS.md': 1, 'FROZEN_EXPORT_PINS.json': 1, 'slipguard/tools/build_public_cases.py': 1}"
+   ]
+  },
+  {
+   "command": "e-mail scan (real local@domain.tld; reserved/example/invalid, git/noreply, pseudonyms and decorator chains excluded)",
+   "rc": 0,
+   "seconds": 0,
+   "pass": true,
+   "detail": "0 real e-mail addresses in 0 files outside the corpus metadata; 12 synthetic URL credentials inside SWE-bench test node ids in data/pnc/grading.jsonl, left by the corpus masking rule (byte-identical to PNC v1.1, MANIFEST-pinned)",
+   "note": "PI decision 2026-11-07: upstream developer e-mails are masked as <email> (same rule as WP-pnc)",
+   "tail": []
+  },
+  {
+   "command": "release privacy pipeline over every tree file (privacy_pipeline.process, outputs in scratch)",
+   "rc": 0,
+   "seconds": 0,
+   "pass": true,
+   "detail": "gate PASS; 1211 files; gate_fail 0; files with residual hits before redaction 0; lines the redaction would still change 0; JSON invalid after 0; non-idempotent 0",
+   "note": "",
+   "tail": [
+    " \"files_with_residual_before\": {},",
+    " \"n_files_redaction_would_still_change\": 0,",
+    " \"n_lines_redaction_would_still_change\": 0,",
+    " \"json_invalid_after\": 0,",
+    " \"not_idempotent_lines\": 0",
+    "}"
+   ]
+  },
+  {
+   "command": "file sizes",
+   "rc": 0,
+   "seconds": 0,
+   "pass": true,
+   "detail": "1211 files, 216.9 MB; largest 15.7 MB (experiments/contagion/data/confirmatory/meta_S1.jsonl); > 50 MB: []",
+   "note": "",
+   "tail": []
+  },
+  {
+   "command": "exclusions (internal docs, paper draft internals, run records, weights)",
+   "rc": 0,
+   "seconds": 0,
+   "pass": true,
+   "detail": "0 forbidden files present: []",
+   "note": "",
+   "tail": []
+  }
+ ]
+}

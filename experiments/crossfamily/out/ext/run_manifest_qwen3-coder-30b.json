@@ -1,0 +1,48 @@
+{
+ "model_key": "qwen3-coder-30b",
+ "recorded_utc": "2026-11-05T19:48:04Z",
+ "endpoint": "http://127.0.0.1:8341/v1",
+ "gpu": "0",
+ "v1_models": {
+  "object": "list",
+  "data": [
+   {
+    "id": "qwen3-coder-30b",
+    "object": "model",
+    "created": 1793908084,
+    "owned_by": "vllm",
+    "root": "models/Qwen3-Coder-30B-A3B-Instruct-FP8",
+    "parent": null,
+    "max_model_len": 40960,
+    "permission": [
+     {
+      "id": "modelperm-9102a610f20ba0f0",
+      "object": "model_permission",
+      "created": 1793908084,
+      "allow_create_engine": false,
+      "allow_sampling": true,
+      "allow_logprobs": true,
+      "allow_search_indices": false,
+      "allow_view": true,
+      "allow_fine_tuning": false,
+      "organization": "*",
+      "group": null,
+      "is_blocking": false
+     }
+    ]
+   }
+  ]
+ },
+ "server_log": "logs/vllm/g0_8341.log",
+ "server_non_default_args": "{'host': '127.0.0.1', 'port': 8341, 'model': 'models/Qwen3-Coder-30B-A3B-Instruct-FP8', 'max_model_len': 40960, 'served_model_name': ['qwen3-coder-30b'], 'enable_prefix_caching': True, 'max_num_seqs': 64}",
+ "vllm_version": "v0.19.1",
+ "kv_cache": {
+  "available_gib": "40.96",
+  "tokens": "447,376",
+  "max_concurrency": "10.92"
+ },
+ "prompts": "experiments/crossfamily/out/ext/prompts_qwen3-coder-30b.jsonl",
+ "prompts_sha256": "82ac571f49851569501fc1958bacc426ec71f87c6af1bf87620e8882d7f7a6f5",
+ "runner": "experiments/crossfamily/scripts/ext_frozen/run_ext.py",
+ "runner_sha256": "8aa676ff0be4312f1bdc9b9a3bdac238f899f6675e1877d77975f2b187a18d27"
+}

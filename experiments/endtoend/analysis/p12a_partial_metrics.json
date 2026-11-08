@@ -1,0 +1,273 @@
+{
+ "tag": "p12a",
+ "arms": {
+  "C-full": {
+   "arm": "C-full",
+   "client": "no-nudge client",
+   "proxy_cfg": "full",
+   "n_sessions": 2,
+   "resolved": {
+    "k": 0,
+    "n": 2,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.6576
+    ],
+    "denominator": "pilot tasks, all gold-gradable in our sandbox (gold resolves, empty patch fails)"
+   },
+   "malformed_total_emitted": {
+    "k": 1,
+    "n": 37,
+    "rate": 0.027,
+    "wilson": [
+     0.0048,
+     0.1382
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0667
+    ]
+   },
+   "malformed_total_delivered": {
+    "k": 1,
+    "n": 37,
+    "rate": 0.027,
+    "wilson": [
+     0.0048,
+     0.1382
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0667
+    ]
+   },
+   "edit_malformed_emitted": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson": null,
+    "task_cluster_boot": null
+   },
+   "edit_malformed_delivered": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson": null,
+    "task_cluster_boot": null
+   },
+   "onset_hazard_emitted": {
+    "k": 1,
+    "n": 31,
+    "rate": 0.0323,
+    "wilson": [
+     0.0057,
+     0.1619
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.1111
+    ]
+   },
+   "post_onset_slip_rate": {
+    "k": 0,
+    "n": 6,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.3903
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "sessions_with_any_slip": {
+    "k": 1,
+    "n": 2,
+    "wilson": [
+     0.0945,
+     0.9055
+    ]
+   },
+   "wasted_calls_per_session": {
+    "mean": 0.5,
+    "boot95": [
+     0.0,
+     1.0
+    ],
+    "total": 1,
+    "definition": "calls delivered malformed OR whose tool result had a protocol error type (TypeError/ValueError/MalformedToolCall/UnknownTool/...), counted once per call"
+   },
+   "unparsed_turns_per_session": {
+    "mean": 0.5,
+    "boot95": [
+     0.0,
+     1.0
+    ],
+    "total": 1
+   },
+   "sessions_killed_by_protocol": {
+    "k": 1,
+    "n": 2,
+    "wilson": [
+     0.0945,
+     0.9055
+    ],
+    "definition": "no submitted patch and the last agent turn was unparsed call syntax (incl. call text without the <|tool_call> opener) or delivered a malformed call"
+   },
+   "sessions_ended_by_length_no_call": {
+    "k": 1,
+    "n": 2,
+    "wilson": [
+     0.0945,
+     0.9055
+    ],
+    "definition": "no submitted patch and the last turn hit the length cap without a call (e.g. thinking re-entered after a forced budget end)"
+   },
+   "length_no_call_turns_per_session": {
+    "mean": 0.5,
+    "boot95": [
+     0.0,
+     1.0
+    ],
+    "total": 1
+   },
+   "reached_valid_edit": {
+    "k": 0,
+    "n": 2,
+    "wilson": [
+     0.0,
+     0.6576
+    ]
+   },
+   "agent_turns": {
+    "total": 39,
+    "mean_per_session": 19.5,
+    "boot95": [
+     16.0,
+     23.0
+    ]
+   },
+   "calls": {
+    "total": 37,
+    "mean_per_session": 18.5,
+    "boot95": [
+     15.0,
+     22.0
+    ]
+   },
+   "gen_tokens": {
+    "total": 22568,
+    "mean_per_session": 11284.0,
+    "boot95": [
+     10987.0,
+     11581.0
+    ]
+   },
+   "ipd_repair": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "ipd_rejected": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "ipd_no_repair": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "posthoc_repair": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "quarantine": {
+    "total": 1,
+    "mean_per_session": 0.5,
+    "boot95": [
+     0.0,
+     1.0
+    ]
+   },
+   "quarantine_applications": {
+    "total": 7,
+    "mean_per_session": 3.5,
+    "boot95": [
+     0.0,
+     7.0
+    ]
+   },
+   "budget_forced_end": {
+    "total": 2,
+    "mean_per_session": 1.0,
+    "boot95": [
+     1.0,
+     1.0
+    ]
+   },
+   "compaction_calls": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "req_errors": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "error_results": {
+    "total": 1,
+    "mean_per_session": 0.5,
+    "boot95": [
+     0.0,
+     1.0
+    ]
+   },
+   "wall_s": {
+    "mean": 1112.0,
+    "boot95": [
+     1075.3,
+     1148.7
+    ]
+   },
+   "submitted": {
+    "k": 0,
+    "n": 2,
+    "wilson": [
+     0.0,
+     0.6576
+    ]
+   },
+   "episode_end": {
+    "no_tool_call_stop": 1,
+    "no_tool_call_length": 1
+   },
+   "errors": {
+    "Agent completed execution without calling submit_patch.": 2
+   }
+  }
+ },
+ "paired": []
+}

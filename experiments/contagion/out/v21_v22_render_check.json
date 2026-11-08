@@ -1,0 +1,31 @@
+{
+ "contexts": 300,
+ "counts": {
+  "H_no_history_thought:P0": 300,
+  "H_no_history_thought:P1": 300,
+  "OFF_only_think_token:P0": 300,
+  "OFF_only_think_token:P1": 300,
+  "OFF_only_think_token:P5": 300,
+  "OFF_only_think_token:P6": 300,
+  "OFF_only_think_token:P8a": 300,
+  "OFF_template_closed:P0": 0,
+  "OFF_template_closed:P1": 0,
+  "OFF_template_closed:P5": 188,
+  "OFF_template_closed:P6": 0,
+  "OFF_template_closed:P8a": 0,
+  "ON_history_has_thought:P0": 300,
+  "ON_history_has_thought:P1": 300,
+  "ON_identical": 1500,
+  "S_ok:P0": 300,
+  "S_ok:P1": 300,
+  "S_ok:P6": 300,
+  "S_ok:P8a": 300
+ },
+ "examples": {
+  "S": "ing\\nYou could retry calling this tool, but it is IMPORTANT for you to provide all the mandatory parameters.\"}<|\"|>}<tool_response|><|channel>thought\n<channel|>",
+  "H_len_vs_ON_tokens": [
+   5229,
+   13214
+  ]
+ }
+}

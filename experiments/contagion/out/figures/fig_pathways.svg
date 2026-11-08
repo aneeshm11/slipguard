@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520">
+<rect width="1040" height="520" fill="#fcfcfb"/>
+<text x="30.0" y="30.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">One corrupted call in the history makes the next edit malformed; quarantine removes the effect</text>
+<text x="30.0" y="52.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">P(next edit_file call is malformed) after ONE prior successful edit is shown differently (k = 1); bars = rate, whiskers = Wilson 95% CI</text>
+<rect x="30" y="68" width="12" height="12" rx="2" fill="#2a78d6"/>
+<text x="48.0" y="79.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">31B QAT  (300 contexts)</text>
+<rect x="290" y="68" width="12" height="12" rx="2" fill="#eb6834"/>
+<text x="308.0" y="79.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">12B QAT  (600 contexts)</text>
+<rect x="550" y="68" width="12" height="12" rx="2" fill="#1baf7a"/>
+<text x="568.0" y="79.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">E4B QAT  (600 contexts)</text>
+<line x1="90" y1="410.0" x2="1000" y2="410.0" stroke="#e6e5e1" stroke-width="1"/>
+<text x="82.0" y="414.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">0%</text>
+<line x1="90" y1="363.3" x2="1000" y2="363.3" stroke="#e6e5e1" stroke-width="1"/>
+<text x="82.0" y="367.3" font-size="11" fill="#52514e" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">10%</text>
+<line x1="90" y1="316.7" x2="1000" y2="316.7" stroke="#e6e5e1" stroke-width="1"/>
+<text x="82.0" y="320.7" font-size="11" fill="#52514e" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">20%</text>
+<line x1="90" y1="270.0" x2="1000" y2="270.0" stroke="#e6e5e1" stroke-width="1"/>
+<text x="82.0" y="274.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">30%</text>
+<line x1="90" y1="223.3" x2="1000" y2="223.3" stroke="#e6e5e1" stroke-width="1"/>
+<text x="82.0" y="227.3" font-size="11" fill="#52514e" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">40%</text>
+<line x1="90" y1="176.7" x2="1000" y2="176.7" stroke="#e6e5e1" stroke-width="1"/>
+<text x="82.0" y="180.7" font-size="11" fill="#52514e" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">50%</text>
+<line x1="90" y1="130.0" x2="1000" y2="130.0" stroke="#e6e5e1" stroke-width="1"/>
+<text x="82.0" y="134.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">60%</text>
+<line x1="90" y1="410" x2="1000" y2="410" stroke="#8a8984" stroke-width="1"/>
+<text x="50.0" y="116.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">malformed next edits</text>
+<text x="146.9" y="428.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">P0</text>
+<text x="146.9" y="442.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">original</text>
+<g><title>Gemma-4 31B QAT | P0k0: 5.7% [3.5, 9.2], n = 264 edits</title><path d="M110.9,410.0 V387.5 Q110.9,383.5 114.9,383.5 H128.9 Q132.9,383.5 132.9,387.5 V410.0 Z" fill="#2a78d6"/></g>
+<line x1="121.9" y1="393.8" x2="121.9" y2="367.3" stroke="#52514e" stroke-width="1.5"/>
+<line x1="118.9" y1="393.8" x2="124.9" y2="393.8" stroke="#52514e" stroke-width="1.5"/>
+<line x1="118.9" y1="367.3" x2="124.9" y2="367.3" stroke="#52514e" stroke-width="1.5"/>
+<text x="121.9" y="361.3" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">6%</text>
+<g><title>Gemma-4 12B QAT | P0k0: 2.4% [1.2, 4.4], n = 383 edits</title><path d="M134.9,410.0 V403.0 Q134.9,399.0 138.9,399.0 H152.9 Q156.9,399.0 156.9,403.0 V410.0 Z" fill="#eb6834"/></g>
+<line x1="145.9" y1="404.2" x2="145.9" y2="389.4" stroke="#52514e" stroke-width="1.5"/>
+<line x1="142.9" y1="404.2" x2="148.9" y2="404.2" stroke="#52514e" stroke-width="1.5"/>
+<line x1="142.9" y1="389.4" x2="148.9" y2="389.4" stroke="#52514e" stroke-width="1.5"/>
+<g><title>Gemma-4 E4B QAT | P0k0: 3.1% [1.9, 5.0], n = 488 edits</title><path d="M158.9,410.0 V399.7 Q158.9,395.7 162.9,395.7 H176.9 Q180.9,395.7 180.9,399.7 V410.0 Z" fill="#1baf7a"/></g>
+<line x1="169.9" y1="401.3" x2="169.9" y2="386.6" stroke="#52514e" stroke-width="1.5"/>
+<line x1="166.9" y1="401.3" x2="172.9" y2="401.3" stroke="#52514e" stroke-width="1.5"/>
+<line x1="166.9" y1="386.6" x2="172.9" y2="386.6" stroke="#52514e" stroke-width="1.5"/>
+<text x="260.6" y="428.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">P1</text>
+<text x="260.6" y="442.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">corrupted</text>
+<text x="260.6" y="456.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">re-render</text>
+<g><title>Gemma-4 31B QAT | P1k1: 46.2% [40.2, 52.2], n = 262 edits</title><path d="M224.6,410.0 V198.5 Q224.6,194.5 228.6,194.5 H242.6 Q246.6,194.5 246.6,198.5 V410.0 Z" fill="#2a78d6"/></g>
+<line x1="235.6" y1="222.2" x2="235.6" y2="166.3" stroke="#52514e" stroke-width="1.5"/>
+<line x1="232.6" y1="222.2" x2="238.6" y2="222.2" stroke="#52514e" stroke-width="1.5"/>
+<line x1="232.6" y1="166.3" x2="238.6" y2="166.3" stroke="#52514e" stroke-width="1.5"/>
+<text x="235.6" y="160.3" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">46%</text>
+<g><title>Gemma-4 12B QAT | P1k1: 11.5% [8.6, 15.4], n = 338 edits</title><path d="M248.6,410.0 V360.1 Q248.6,356.1 252.6,356.1 H266.6 Q270.6,356.1 270.6,360.1 V410.0 Z" fill="#eb6834"/></g>
+<line x1="259.6" y1="370.1" x2="259.6" y2="338.2" stroke="#52514e" stroke-width="1.5"/>
+<line x1="256.6" y1="370.1" x2="262.6" y2="370.1" stroke="#52514e" stroke-width="1.5"/>
+<line x1="256.6" y1="338.2" x2="262.6" y2="338.2" stroke="#52514e" stroke-width="1.5"/>
+<g><title>Gemma-4 E4B QAT | P1k1: 7.5% [5.4, 10.3], n = 451 edits</title><path d="M272.6,410.0 V378.8 Q272.6,374.8 276.6,374.8 H290.6 Q294.6,374.8 294.6,378.8 V410.0 Z" fill="#1baf7a"/></g>
+<line x1="283.6" y1="384.6" x2="283.6" y2="361.7" stroke="#52514e" stroke-width="1.5"/>
+<line x1="280.6" y1="384.6" x2="286.6" y2="384.6" stroke="#52514e" stroke-width="1.5"/>
+<line x1="280.6" y1="361.7" x2="286.6" y2="361.7" stroke="#52514e" stroke-width="1.5"/>
+<text x="374.4" y="428.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">P7</text>
+<text x="374.4" y="442.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">P1, quote</text>
+<text x="374.4" y="456.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">closer</text>
+<g><title>Gemma-4 31B QAT | P7k1: 26.9% [21.9, 32.6], n = 260 edits</title><path d="M338.4,410.0 V288.4 Q338.4,284.4 342.4,284.4 H356.4 Q360.4,284.4 360.4,288.4 V410.0 Z" fill="#2a78d6"/></g>
+<line x1="349.4" y1="307.8" x2="349.4" y2="257.8" stroke="#52514e" stroke-width="1.5"/>
+<line x1="346.4" y1="307.8" x2="352.4" y2="307.8" stroke="#52514e" stroke-width="1.5"/>
+<line x1="346.4" y1="257.8" x2="352.4" y2="257.8" stroke="#52514e" stroke-width="1.5"/>
+<text x="349.4" y="251.8" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">27%</text>
+<g><title>Gemma-4 12B QAT | P7k1: 15.3% [10.8, 21.4], n = 176 edits</title><path d="M362.4,410.0 V342.4 Q362.4,338.4 366.4,338.4 H380.4 Q384.4,338.4 384.4,342.4 V410.0 Z" fill="#eb6834"/></g>
+<line x1="373.4" y1="359.8" x2="373.4" y2="310.1" stroke="#52514e" stroke-width="1.5"/>
+<line x1="370.4" y1="359.8" x2="376.4" y2="359.8" stroke="#52514e" stroke-width="1.5"/>
+<line x1="370.4" y1="310.1" x2="376.4" y2="310.1" stroke="#52514e" stroke-width="1.5"/>
+<text x="488.1" y="428.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">P3</text>
+<text x="488.1" y="442.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">raw slip</text>
+<text x="488.1" y="456.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">text</text>
+<g><title>Gemma-4 31B QAT | P3k1: 48.5% [42.3, 54.8], n = 241 edits</title><path d="M452.1,410.0 V187.4 Q452.1,183.4 456.1,183.4 H470.1 Q474.1,183.4 474.1,187.4 V410.0 Z" fill="#2a78d6"/></g>
+<line x1="463.1" y1="212.6" x2="463.1" y2="154.1" stroke="#52514e" stroke-width="1.5"/>
+<line x1="460.1" y1="212.6" x2="466.1" y2="212.6" stroke="#52514e" stroke-width="1.5"/>
+<line x1="460.1" y1="154.1" x2="466.1" y2="154.1" stroke="#52514e" stroke-width="1.5"/>
+<text x="463.1" y="148.1" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">49%</text>
+<g><title>Gemma-4 12B QAT | P3k1: 3.7% [2.3, 5.9], n = 431 edits</title><path d="M476.1,410.0 V396.7 Q476.1,392.7 480.1,392.7 H494.1 Q498.1,392.7 498.1,396.7 V410.0 Z" fill="#eb6834"/></g>
+<line x1="487.1" y1="399.3" x2="487.1" y2="382.3" stroke="#52514e" stroke-width="1.5"/>
+<line x1="484.1" y1="399.3" x2="490.1" y2="399.3" stroke="#52514e" stroke-width="1.5"/>
+<line x1="484.1" y1="382.3" x2="490.1" y2="382.3" stroke="#52514e" stroke-width="1.5"/>
+<g><title>Gemma-4 E4B QAT | P3k1: 13.8% [10.7, 17.7], n = 383 edits</title><path d="M500.1,410.0 V349.4 Q500.1,345.4 504.1,345.4 H518.1 Q522.1,345.4 522.1,349.4 V410.0 Z" fill="#1baf7a"/></g>
+<line x1="511.1" y1="359.9" x2="511.1" y2="327.6" stroke="#52514e" stroke-width="1.5"/>
+<line x1="508.1" y1="359.9" x2="514.1" y2="359.9" stroke="#52514e" stroke-width="1.5"/>
+<line x1="508.1" y1="327.6" x2="514.1" y2="327.6" stroke="#52514e" stroke-width="1.5"/>
+<text x="601.9" y="428.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">P6</text>
+<text x="601.9" y="442.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">corrupted,</text>
+<text x="601.9" y="456.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">success</text>
+<g><title>Gemma-4 31B QAT | P6k1: 32.5% [26.9, 38.6], n = 243 edits</title><path d="M565.9,410.0 V262.3 Q565.9,258.3 569.9,258.3 H583.9 Q587.9,258.3 587.9,262.3 V410.0 Z" fill="#2a78d6"/></g>
+<line x1="576.9" y1="284.3" x2="576.9" y2="229.7" stroke="#52514e" stroke-width="1.5"/>
+<line x1="573.9" y1="284.3" x2="579.9" y2="284.3" stroke="#52514e" stroke-width="1.5"/>
+<line x1="573.9" y1="229.7" x2="579.9" y2="229.7" stroke="#52514e" stroke-width="1.5"/>
+<text x="576.9" y="223.7" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">33%</text>
+<g><title>Gemma-4 12B QAT | P6k1: 15.3% [11.9, 19.5], n = 346 edits</title><path d="M589.9,410.0 V342.5 Q589.9,338.5 593.9,338.5 H607.9 Q611.9,338.5 611.9,342.5 V410.0 Z" fill="#eb6834"/></g>
+<line x1="600.9" y1="354.4" x2="600.9" y2="319.0" stroke="#52514e" stroke-width="1.5"/>
+<line x1="597.9" y1="354.4" x2="603.9" y2="354.4" stroke="#52514e" stroke-width="1.5"/>
+<line x1="597.9" y1="319.0" x2="603.9" y2="319.0" stroke="#52514e" stroke-width="1.5"/>
+<g><title>Gemma-4 E4B QAT | P6k1: 13.5% [10.8, 16.9], n = 488 edits</title><path d="M613.9,410.0 V350.9 Q613.9,346.9 617.9,346.9 H631.9 Q635.9,346.9 635.9,350.9 V410.0 Z" fill="#1baf7a"/></g>
+<line x1="624.9" y1="359.7" x2="624.9" y2="331.4" stroke="#52514e" stroke-width="1.5"/>
+<line x1="621.9" y1="359.7" x2="627.9" y2="359.7" stroke="#52514e" stroke-width="1.5"/>
+<line x1="621.9" y1="331.4" x2="627.9" y2="331.4" stroke="#52514e" stroke-width="1.5"/>
+<text x="715.6" y="428.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">P2</text>
+<text x="715.6" y="442.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">error</text>
+<text x="715.6" y="456.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">only</text>
+<g><title>Gemma-4 31B QAT | P2k1: 1.3% [0.4, 3.7], n = 235 edits</title><path d="M679.6,410.0 V408.0 Q679.6,404.0 683.6,404.0 H697.6 Q701.6,404.0 701.6,408.0 V410.0 Z" fill="#2a78d6"/></g>
+<line x1="690.6" y1="407.9" x2="690.6" y2="392.8" stroke="#52514e" stroke-width="1.5"/>
+<line x1="687.6" y1="407.9" x2="693.6" y2="407.9" stroke="#52514e" stroke-width="1.5"/>
+<line x1="687.6" y1="392.8" x2="693.6" y2="392.8" stroke="#52514e" stroke-width="1.5"/>
+<text x="690.6" y="386.8" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">1%</text>
+<g><title>Gemma-4 12B QAT | P2k1: 2.1% [1.0, 4.5], n = 288 edits</title><path d="M703.6,410.0 V404.3 Q703.6,400.3 707.6,400.3 H721.6 Q725.6,400.3 725.6,404.3 V410.0 Z" fill="#eb6834"/></g>
+<line x1="714.6" y1="405.5" x2="714.6" y2="389.1" stroke="#52514e" stroke-width="1.5"/>
+<line x1="711.6" y1="405.5" x2="717.6" y2="405.5" stroke="#52514e" stroke-width="1.5"/>
+<line x1="711.6" y1="389.1" x2="717.6" y2="389.1" stroke="#52514e" stroke-width="1.5"/>
+<g><title>Gemma-4 E4B QAT | P2k1: 0.9% [0.4, 2.3], n = 444 edits</title><path d="M727.6,410.0 V409.8 Q727.6,405.8 731.6,405.8 H745.6 Q749.6,405.8 749.6,409.8 V410.0 Z" fill="#1baf7a"/></g>
+<line x1="738.6" y1="408.4" x2="738.6" y2="399.3" stroke="#52514e" stroke-width="1.5"/>
+<line x1="735.6" y1="408.4" x2="741.6" y2="408.4" stroke="#52514e" stroke-width="1.5"/>
+<line x1="735.6" y1="399.3" x2="741.6" y2="399.3" stroke="#52514e" stroke-width="1.5"/>
+<line x1="772.5" y1="126" x2="772.5" y2="410" stroke="#8a8984" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="778.5" y="140.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">history quarantine</text>
+<text x="829.4" y="428.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">P4</text>
+<text x="829.4" y="442.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">canonical</text>
+<text x="829.4" y="456.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">re-render</text>
+<g><title>Gemma-4 31B QAT | P4k1: 3.4% [1.8, 6.3], n = 266 edits</title><path d="M793.4,410.0 V398.2 Q793.4,394.2 797.4,394.2 H811.4 Q815.4,394.2 815.4,398.2 V410.0 Z" fill="#2a78d6"/></g>
+<line x1="804.4" y1="401.6" x2="804.4" y2="380.6" stroke="#52514e" stroke-width="1.5"/>
+<line x1="801.4" y1="401.6" x2="807.4" y2="401.6" stroke="#52514e" stroke-width="1.5"/>
+<line x1="801.4" y1="380.6" x2="807.4" y2="380.6" stroke="#52514e" stroke-width="1.5"/>
+<text x="804.4" y="374.6" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">3%</text>
+<g><title>Gemma-4 12B QAT | P4k1: 1.5% [0.7, 3.3], n = 391 edits</title><path d="M817.4,410.0 V406.9 Q817.4,402.9 821.4,402.9 H835.4 Q839.4,402.9 839.4,406.9 V410.0 Z" fill="#eb6834"/></g>
+<line x1="828.4" y1="406.7" x2="828.4" y2="394.6" stroke="#52514e" stroke-width="1.5"/>
+<line x1="825.4" y1="406.7" x2="831.4" y2="406.7" stroke="#52514e" stroke-width="1.5"/>
+<line x1="825.4" y1="394.6" x2="831.4" y2="394.6" stroke="#52514e" stroke-width="1.5"/>
+<g><title>Gemma-4 E4B QAT | P4k1: 3.1% [1.9, 5.1], n = 481 edits</title><path d="M841.4,410.0 V399.4 Q841.4,395.4 845.4,395.4 H859.4 Q863.4,395.4 863.4,399.4 V410.0 Z" fill="#1baf7a"/></g>
+<line x1="852.4" y1="401.1" x2="852.4" y2="386.3" stroke="#52514e" stroke-width="1.5"/>
+<line x1="849.4" y1="401.1" x2="855.4" y2="401.1" stroke="#52514e" stroke-width="1.5"/>
+<line x1="849.4" y1="386.3" x2="855.4" y2="386.3" stroke="#52514e" stroke-width="1.5"/>
+<text x="943.1" y="428.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="Inter, Helvetica, Arial, sans-serif">P5</text>
+<text x="943.1" y="442.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">removed</text>
+<text x="943.1" y="456.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">+ note</text>
+<g><title>Gemma-4 31B QAT | P5k1: 3.4% [1.7, 6.8], n = 207 edits</title><path d="M907.1,410.0 V398.2 Q907.1,394.2 911.1,394.2 H925.1 Q929.1,394.2 929.1,398.2 V410.0 Z" fill="#2a78d6"/></g>
+<line x1="918.1" y1="402.3" x2="918.1" y2="378.2" stroke="#52514e" stroke-width="1.5"/>
+<line x1="915.1" y1="402.3" x2="921.1" y2="402.3" stroke="#52514e" stroke-width="1.5"/>
+<line x1="915.1" y1="378.2" x2="921.1" y2="378.2" stroke="#52514e" stroke-width="1.5"/>
+<text x="918.1" y="372.2" font-size="10.5" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">3%</text>
+<g><title>Gemma-4 12B QAT | P5k1: 2.7% [1.3, 5.5], n = 260 edits</title><path d="M931.1,410.0 V401.4 Q931.1,397.4 935.1,397.4 H949.1 Q953.1,397.4 953.1,401.4 V410.0 Z" fill="#eb6834"/></g>
+<line x1="942.1" y1="403.9" x2="942.1" y2="384.6" stroke="#52514e" stroke-width="1.5"/>
+<line x1="939.1" y1="403.9" x2="945.1" y2="403.9" stroke="#52514e" stroke-width="1.5"/>
+<line x1="939.1" y1="384.6" x2="945.1" y2="384.6" stroke="#52514e" stroke-width="1.5"/>
+<g><title>Gemma-4 E4B QAT | P5k1: 3.0% [1.8, 4.9], n = 471 edits</title><path d="M955.1,410.0 V400.1 Q955.1,396.1 959.1,396.1 H973.1 Q977.1,396.1 977.1,400.1 V410.0 Z" fill="#1baf7a"/></g>
+<line x1="966.1" y1="401.7" x2="966.1" y2="387.0" stroke="#52514e" stroke-width="1.5"/>
+<line x1="963.1" y1="401.7" x2="969.1" y2="401.7" stroke="#52514e" stroke-width="1.5"/>
+<line x1="963.1" y1="387.0" x2="969.1" y2="387.0" stroke="#52514e" stroke-width="1.5"/>
+<text x="30.0" y="490.0" font-size="10.5" fill="#8a8984" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">P0 original history. P1 the vLLM-parsed backtick slip re-rendered by the chat template + ADK missing-old_string error. P7 = P1 with a double-quote closer. P3 raw call text + harness nudge.</text>
+<text x="30.0" y="504.0" font-size="10.5" fill="#8a8984" text-anchor="start" font-weight="400" font-family="Inter, Helvetica, Arial, sans-serif">P6 corrupted re-render + original success response. P2 valid call + error only. P4 canonical old_string-first valid call + true result. P5 call removed + one-line note. Labels: 31B values.</text>
+</svg>

@@ -1,0 +1,18 @@
+TranscriptLab report: gemma-4-31b (gemma4), pool A1, 300 states
+outcome: P(next call is a malformed edit), unconditional; 95% CIs from the frozen analysis
+
+complete states analysed: 300 (231 episodes; missing jobs {'P0k0': 0, 'P1k1': 0, 'P6k1': 0, 'P8ak1': 0})
+  P0     0.3% [0.0, 1.0]   original history
+  P1     9.0% [5.9, 12.4]   the latest valid edit replaced by its laundered form + the framework's missing-parameter error (copying)
+  P6     5.0% [2.7, 7.6]   laundered edit + its original success response (induction)
+  P8a    0.0% [0.0, 0.0]   laundered edit + error, then slipguard's frozen history quarantine
+
+  copying    RD(P1 - P0)   +8.7 pp [+5.6, +12.2]
+  induction  RD(P6 - P0)   +4.7 pp [+2.1, +7.3]
+  quarantine removal of the P1 excess: 104% [100, 117]
+
+  your model minus the registered Gemma-4-31B 4-bit run, same 300 states:
+    P0 -1.0 pp [-2.5, +0.3]   P1 -10.7 pp [-14.8, -7.0]   P6 -4.0 pp [-7.3, -1.0]   P8a -1.7 pp [-3.3, -0.3]
+    (the analysis labels this block 'bf16_minus_QAT_same_states': it was written for the bf16 row)
+
+The registered verdict rules (thresholds, Holm) live in the preregistrations; this report prints estimates only.

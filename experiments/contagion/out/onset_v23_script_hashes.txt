@@ -1,0 +1,6 @@
+# PREREG_v2.3 onset transplant (sha256 7111525f...), frozen 2026-11-05T07:11:56Z before any transplant output (out/main has no rO_v23 file)
+f04b320092e60193948f82b193fdc96c0c398445be6f7a772090588c78aa54a2  scripts/run_onset.py
+1203e7478eb2a8905282f235846588a094b7813aa130a6d63e46eb77172711ec  scripts/verify_onset_o1.py
+9843f1de9537c7c0aa57b074af7f185a0cb3bd02a9a9c48378a6956f1cd2ff79  scripts/analyze_onset_v23.py
+1f4d51d53c550b3423f8692bd679563c6a5713d367b749653bf63b2bb82e94af  data/onset/plan_O_v23.jsonl
+# checks: out/onset_o1_verification.json (ADK serializer 9211/9211; C library pipeline wire + rendered tool-response segments identical on 6/6 states; O0 prompt tokens == logged 600/600); analysis smoke on FAKE data: data/onset/fake_analysis.json

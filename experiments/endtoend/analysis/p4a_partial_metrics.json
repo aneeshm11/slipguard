@@ -1,0 +1,1195 @@
+{
+ "tag": "p4a",
+ "arms": {
+  "H-base": {
+   "arm": "H-base",
+   "client": "official harness",
+   "proxy_cfg": "base",
+   "n_sessions": 1,
+   "resolved": {
+    "k": 0,
+    "n": 1,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.7935
+    ],
+    "denominator": "pilot tasks, all gold-gradable in our sandbox (gold resolves, empty patch fails)"
+   },
+   "malformed_total_emitted": {
+    "k": 1,
+    "n": 7,
+    "rate": 0.1429,
+    "wilson": [
+     0.0257,
+     0.5131
+    ],
+    "task_cluster_boot": [
+     0.1429,
+     0.1429
+    ]
+   },
+   "malformed_total_delivered": {
+    "k": 1,
+    "n": 7,
+    "rate": 0.1429,
+    "wilson": [
+     0.0257,
+     0.5131
+    ],
+    "task_cluster_boot": [
+     0.1429,
+     0.1429
+    ]
+   },
+   "edit_malformed_emitted": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson": null,
+    "task_cluster_boot": null
+   },
+   "edit_malformed_delivered": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson": null,
+    "task_cluster_boot": null
+   },
+   "onset_hazard_emitted": {
+    "k": 1,
+    "n": 5,
+    "rate": 0.2,
+    "wilson": [
+     0.0362,
+     0.6245
+    ],
+    "task_cluster_boot": [
+     0.2,
+     0.2
+    ]
+   },
+   "post_onset_slip_rate": {
+    "k": 0,
+    "n": 2,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.6576
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "sessions_with_any_slip": {
+    "k": 1,
+    "n": 1,
+    "wilson": [
+     0.2065,
+     1.0
+    ]
+   },
+   "wasted_calls_per_session": {
+    "mean": 1.0,
+    "boot95": [
+     1.0,
+     1.0
+    ],
+    "total": 1,
+    "definition": "calls delivered malformed OR whose tool result had a protocol error type (TypeError/ValueError/MalformedToolCall/UnknownTool/...), counted once per call"
+   },
+   "unparsed_turns_per_session": {
+    "mean": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ],
+    "total": 0
+   },
+   "sessions_killed_by_protocol": {
+    "k": 0,
+    "n": 1,
+    "wilson": [
+     0.0,
+     0.7935
+    ]
+   },
+   "reached_valid_edit": {
+    "k": 1,
+    "n": 1,
+    "wilson": [
+     0.2065,
+     1.0
+    ]
+   },
+   "time_to_first_valid_edit": {
+    "median_turns": 6,
+    "boot95_turns": [
+     6,
+     6
+    ],
+    "median_seconds": 198.5,
+    "boot95_seconds": [
+     198.5,
+     198.5
+    ],
+    "n_reached": 1
+   },
+   "agent_turns": {
+    "total": 8,
+    "mean_per_session": 8.0,
+    "boot95": [
+     8.0,
+     8.0
+    ]
+   },
+   "calls": {
+    "total": 7,
+    "mean_per_session": 7.0,
+    "boot95": [
+     7.0,
+     7.0
+    ]
+   },
+   "gen_tokens": {
+    "total": 3365,
+    "mean_per_session": 3365.0,
+    "boot95": [
+     3365.0,
+     3365.0
+    ]
+   },
+   "ipd_repair": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "ipd_rejected": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "ipd_no_repair": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "posthoc_repair": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "quarantine": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "budget_forced_end": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "compaction_calls": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "req_errors": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "error_results": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "wall_s": {
+    "mean": 255.5,
+    "boot95": [
+     255.5,
+     255.5
+    ]
+   },
+   "submitted": {
+    "k": 1,
+    "n": 1,
+    "wilson": [
+     0.2065,
+     1.0
+    ]
+   },
+   "errors": {}
+  },
+  "H-full": {
+   "arm": "H-full",
+   "client": "official harness",
+   "proxy_cfg": "full",
+   "n_sessions": 1,
+   "resolved": {
+    "k": 0,
+    "n": 1,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.7935
+    ],
+    "denominator": "pilot tasks, all gold-gradable in our sandbox (gold resolves, empty patch fails)"
+   },
+   "malformed_total_emitted": {
+    "k": 0,
+    "n": 16,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.1936
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "malformed_total_delivered": {
+    "k": 0,
+    "n": 16,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.1936
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "edit_malformed_emitted": {
+    "k": 0,
+    "n": 6,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.3903
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "edit_malformed_delivered": {
+    "k": 0,
+    "n": 6,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.3903
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "onset_hazard_emitted": {
+    "k": 0,
+    "n": 16,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.1936
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "post_onset_slip_rate": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson": null,
+    "task_cluster_boot": null
+   },
+   "sessions_with_any_slip": {
+    "k": 0,
+    "n": 1,
+    "wilson": [
+     0.0,
+     0.7935
+    ]
+   },
+   "wasted_calls_per_session": {
+    "mean": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ],
+    "total": 0,
+    "definition": "calls delivered malformed OR whose tool result had a protocol error type (TypeError/ValueError/MalformedToolCall/UnknownTool/...), counted once per call"
+   },
+   "unparsed_turns_per_session": {
+    "mean": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ],
+    "total": 0
+   },
+   "sessions_killed_by_protocol": {
+    "k": 0,
+    "n": 1,
+    "wilson": [
+     0.0,
+     0.7935
+    ]
+   },
+   "reached_valid_edit": {
+    "k": 1,
+    "n": 1,
+    "wilson": [
+     0.2065,
+     1.0
+    ]
+   },
+   "time_to_first_valid_edit": {
+    "median_turns": 13,
+    "boot95_turns": [
+     13,
+     13
+    ],
+    "median_seconds": 358.4,
+    "boot95_seconds": [
+     358.4,
+     358.4
+    ],
+    "n_reached": 1
+   },
+   "agent_turns": {
+    "total": 17,
+    "mean_per_session": 17.0,
+    "boot95": [
+     17.0,
+     17.0
+    ]
+   },
+   "calls": {
+    "total": 16,
+    "mean_per_session": 16.0,
+    "boot95": [
+     16.0,
+     16.0
+    ]
+   },
+   "gen_tokens": {
+    "total": 6272,
+    "mean_per_session": 6272.0,
+    "boot95": [
+     6272.0,
+     6272.0
+    ]
+   },
+   "ipd_repair": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "ipd_rejected": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "ipd_no_repair": {
+    "total": 2,
+    "mean_per_session": 2.0,
+    "boot95": [
+     2.0,
+     2.0
+    ]
+   },
+   "posthoc_repair": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "quarantine": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "budget_forced_end": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "compaction_calls": {
+    "total": 1,
+    "mean_per_session": 1.0,
+    "boot95": [
+     1.0,
+     1.0
+    ]
+   },
+   "req_errors": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "error_results": {
+    "total": 5,
+    "mean_per_session": 5.0,
+    "boot95": [
+     5.0,
+     5.0
+    ]
+   },
+   "wall_s": {
+    "mean": 515.9,
+    "boot95": [
+     515.9,
+     515.9
+    ]
+   },
+   "submitted": {
+    "k": 1,
+    "n": 1,
+    "wilson": [
+     0.2065,
+     1.0
+    ]
+   },
+   "errors": {}
+  },
+  "C-base": {
+   "arm": "C-base",
+   "client": "no-nudge client",
+   "proxy_cfg": "base",
+   "n_sessions": 1,
+   "resolved": {
+    "k": 0,
+    "n": 1,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.7935
+    ],
+    "denominator": "pilot tasks, all gold-gradable in our sandbox (gold resolves, empty patch fails)"
+   },
+   "malformed_total_emitted": {
+    "k": 0,
+    "n": 9,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.2992
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "malformed_total_delivered": {
+    "k": 0,
+    "n": 9,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.2992
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "edit_malformed_emitted": {
+    "k": 0,
+    "n": 2,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.6576
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "edit_malformed_delivered": {
+    "k": 0,
+    "n": 2,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.6576
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "onset_hazard_emitted": {
+    "k": 0,
+    "n": 9,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.2992
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "post_onset_slip_rate": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson": null,
+    "task_cluster_boot": null
+   },
+   "sessions_with_any_slip": {
+    "k": 0,
+    "n": 1,
+    "wilson": [
+     0.0,
+     0.7935
+    ]
+   },
+   "wasted_calls_per_session": {
+    "mean": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ],
+    "total": 0,
+    "definition": "calls delivered malformed OR whose tool result had a protocol error type (TypeError/ValueError/MalformedToolCall/UnknownTool/...), counted once per call"
+   },
+   "unparsed_turns_per_session": {
+    "mean": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ],
+    "total": 0
+   },
+   "sessions_killed_by_protocol": {
+    "k": 0,
+    "n": 1,
+    "wilson": [
+     0.0,
+     0.7935
+    ]
+   },
+   "reached_valid_edit": {
+    "k": 1,
+    "n": 1,
+    "wilson": [
+     0.2065,
+     1.0
+    ]
+   },
+   "time_to_first_valid_edit": {
+    "median_turns": 3,
+    "boot95_turns": [
+     3,
+     3
+    ],
+    "median_seconds": 188.4,
+    "boot95_seconds": [
+     188.4,
+     188.4
+    ],
+    "n_reached": 1
+   },
+   "agent_turns": {
+    "total": 9,
+    "mean_per_session": 9.0,
+    "boot95": [
+     9.0,
+     9.0
+    ]
+   },
+   "calls": {
+    "total": 9,
+    "mean_per_session": 9.0,
+    "boot95": [
+     9.0,
+     9.0
+    ]
+   },
+   "gen_tokens": {
+    "total": 5151,
+    "mean_per_session": 5151.0,
+    "boot95": [
+     5151.0,
+     5151.0
+    ]
+   },
+   "ipd_repair": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "ipd_rejected": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "ipd_no_repair": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "posthoc_repair": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "quarantine": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "budget_forced_end": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "compaction_calls": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "req_errors": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "error_results": {
+    "total": 1,
+    "mean_per_session": 1.0,
+    "boot95": [
+     1.0,
+     1.0
+    ]
+   },
+   "wall_s": {
+    "mean": 369.2,
+    "boot95": [
+     369.2,
+     369.2
+    ]
+   },
+   "submitted": {
+    "k": 1,
+    "n": 1,
+    "wilson": [
+     0.2065,
+     1.0
+    ]
+   },
+   "episode_end": {
+    "submitted": 1
+   },
+   "errors": {}
+  },
+  "C-full": {
+   "arm": "C-full",
+   "client": "no-nudge client",
+   "proxy_cfg": "full",
+   "n_sessions": 2,
+   "resolved": {
+    "k": 0,
+    "n": 2,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.6576
+    ],
+    "denominator": "pilot tasks, all gold-gradable in our sandbox (gold resolves, empty patch fails)"
+   },
+   "malformed_total_emitted": {
+    "k": 0,
+    "n": 19,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.1682
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "malformed_total_delivered": {
+    "k": 0,
+    "n": 19,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.1682
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "edit_malformed_emitted": {
+    "k": 0,
+    "n": 6,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.3903
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "edit_malformed_delivered": {
+    "k": 0,
+    "n": 6,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.3903
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "onset_hazard_emitted": {
+    "k": 0,
+    "n": 19,
+    "rate": 0.0,
+    "wilson": [
+     0.0,
+     0.1682
+    ],
+    "task_cluster_boot": [
+     0.0,
+     0.0
+    ]
+   },
+   "post_onset_slip_rate": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson": null,
+    "task_cluster_boot": null
+   },
+   "sessions_with_any_slip": {
+    "k": 0,
+    "n": 2,
+    "wilson": [
+     0.0,
+     0.6576
+    ]
+   },
+   "wasted_calls_per_session": {
+    "mean": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ],
+    "total": 0,
+    "definition": "calls delivered malformed OR whose tool result had a protocol error type (TypeError/ValueError/MalformedToolCall/UnknownTool/...), counted once per call"
+   },
+   "unparsed_turns_per_session": {
+    "mean": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ],
+    "total": 0
+   },
+   "sessions_killed_by_protocol": {
+    "k": 0,
+    "n": 2,
+    "wilson": [
+     0.0,
+     0.6576
+    ]
+   },
+   "reached_valid_edit": {
+    "k": 2,
+    "n": 2,
+    "wilson": [
+     0.3424,
+     1.0
+    ]
+   },
+   "time_to_first_valid_edit": {
+    "median_turns": 5.5,
+    "boot95_turns": [
+     5.0,
+     6.0
+    ],
+    "median_seconds": 237.2,
+    "boot95_seconds": [
+     148.8,
+     325.6
+    ],
+    "n_reached": 2
+   },
+   "agent_turns": {
+    "total": 19,
+    "mean_per_session": 9.5,
+    "boot95": [
+     7.0,
+     12.0
+    ]
+   },
+   "calls": {
+    "total": 19,
+    "mean_per_session": 9.5,
+    "boot95": [
+     7.0,
+     12.0
+    ]
+   },
+   "gen_tokens": {
+    "total": 10488,
+    "mean_per_session": 5244.0,
+    "boot95": [
+     2654.0,
+     7834.0
+    ]
+   },
+   "ipd_repair": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "ipd_rejected": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "ipd_no_repair": {
+    "total": 1,
+    "mean_per_session": 0.5,
+    "boot95": [
+     0.0,
+     1.0
+    ]
+   },
+   "posthoc_repair": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "quarantine": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "budget_forced_end": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "compaction_calls": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "req_errors": {
+    "total": 0,
+    "mean_per_session": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "error_results": {
+    "total": 5,
+    "mean_per_session": 2.5,
+    "boot95": [
+     0.0,
+     5.0
+    ]
+   },
+   "wall_s": {
+    "mean": 383.75,
+    "boot95": [
+     209.9,
+     557.6
+    ]
+   },
+   "submitted": {
+    "k": 2,
+    "n": 2,
+    "wilson": [
+     0.3424,
+     1.0
+    ]
+   },
+   "episode_end": {
+    "submitted": 2
+   },
+   "errors": {}
+  }
+ },
+ "paired": [
+  {
+   "contrast": "H-base -> H-full",
+   "n_common": 1,
+   "resolve_A_only": 0,
+   "resolve_B_only": 0,
+   "resolve_diff_B_minus_A": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "delivered_bad_calls_diff_B_minus_A": {
+    "mean": -1.0,
+    "boot95": [
+     -1.0,
+     -1.0
+    ]
+   },
+   "slips_diff_B_minus_A": {
+    "mean": -1.0,
+    "boot95": [
+     -1.0,
+     -1.0
+    ]
+   },
+   "wasted_calls_diff_B_minus_A": {
+    "mean": -1.0,
+    "boot95": [
+     -1.0,
+     -1.0
+    ]
+   },
+   "agent_turns_diff_B_minus_A": {
+    "mean": 9.0,
+    "boot95": [
+     9.0,
+     9.0
+    ]
+   },
+   "wall_s_diff_B_minus_A": {
+    "mean": 260.4,
+    "boot95": [
+     260.4,
+     260.4
+    ]
+   }
+  },
+  {
+   "contrast": "C-base -> C-full",
+   "n_common": 1,
+   "resolve_A_only": 0,
+   "resolve_B_only": 0,
+   "resolve_diff_B_minus_A": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "delivered_bad_calls_diff_B_minus_A": {
+    "mean": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "slips_diff_B_minus_A": {
+    "mean": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "wasted_calls_diff_B_minus_A": {
+    "mean": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "agent_turns_diff_B_minus_A": {
+    "mean": -2.0,
+    "boot95": [
+     -2.0,
+     -2.0
+    ]
+   },
+   "wall_s_diff_B_minus_A": {
+    "mean": -159.3,
+    "boot95": [
+     -159.3,
+     -159.3
+    ]
+   }
+  },
+  {
+   "contrast": "H-base -> C-base",
+   "n_common": 1,
+   "resolve_A_only": 0,
+   "resolve_B_only": 0,
+   "resolve_diff_B_minus_A": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "delivered_bad_calls_diff_B_minus_A": {
+    "mean": -1.0,
+    "boot95": [
+     -1.0,
+     -1.0
+    ]
+   },
+   "slips_diff_B_minus_A": {
+    "mean": -1.0,
+    "boot95": [
+     -1.0,
+     -1.0
+    ]
+   },
+   "wasted_calls_diff_B_minus_A": {
+    "mean": -1.0,
+    "boot95": [
+     -1.0,
+     -1.0
+    ]
+   },
+   "agent_turns_diff_B_minus_A": {
+    "mean": 1.0,
+    "boot95": [
+     1.0,
+     1.0
+    ]
+   },
+   "wall_s_diff_B_minus_A": {
+    "mean": 113.7,
+    "boot95": [
+     113.7,
+     113.7
+    ]
+   }
+  },
+  {
+   "contrast": "H-full -> C-full",
+   "n_common": 1,
+   "resolve_A_only": 0,
+   "resolve_B_only": 0,
+   "resolve_diff_B_minus_A": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "delivered_bad_calls_diff_B_minus_A": {
+    "mean": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "slips_diff_B_minus_A": {
+    "mean": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "wasted_calls_diff_B_minus_A": {
+    "mean": 0.0,
+    "boot95": [
+     0.0,
+     0.0
+    ]
+   },
+   "agent_turns_diff_B_minus_A": {
+    "mean": -10.0,
+    "boot95": [
+     -10.0,
+     -10.0
+    ]
+   },
+   "wall_s_diff_B_minus_A": {
+    "mean": -306.0,
+    "boot95": [
+     -306.0,
+     -306.0
+    ]
+   }
+  }
+ ]
+}

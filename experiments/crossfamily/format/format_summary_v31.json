@@ -1,0 +1,283 @@
+{
+ "vllm": "0.31.0",
+ "variants": {
+  "J_bt": {
+   "hermes.nonstream": {
+    "n": 1598,
+    "loud": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "hermes.stream": {
+    "n": 1598,
+    "delivered_invalid": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   }
+  },
+  "J_real": {
+   "hermes.nonstream": {
+    "n": 1462,
+    "loud": [
+     0.9993,
+     0.9961,
+     0.9999,
+     1462
+    ],
+    "exact": [
+     0.0007,
+     0.0001,
+     0.0039,
+     1462
+    ]
+   },
+   "hermes.stream": {
+    "n": 1462,
+    "delivered_invalid": [
+     0.9993,
+     0.9961,
+     0.9999,
+     1462
+    ],
+    "exact": [
+     0.0007,
+     0.0001,
+     0.0039,
+     1462
+    ]
+   }
+  },
+  "J_omit": {
+   "hermes.nonstream": {
+    "n": 1598,
+    "loud": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "hermes.stream": {
+    "n": 1598,
+    "delivered_invalid": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   }
+  },
+  "X_bt": {
+   "qwen3_coder.nonstream": {
+    "n": 1598,
+    "silent_local": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "qwen3_engine.server": {
+    "n": 1598,
+    "silent_local": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "qwen3_engine.stream": {
+    "n": 1598,
+    "silent_local": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   }
+  },
+  "X_real": {
+   "qwen3_coder.nonstream": {
+    "n": 1598,
+    "silent_local": [
+     0.9937,
+     0.9885,
+     0.9966,
+     1598
+    ],
+    "exact": [
+     0.0063,
+     0.0034,
+     0.0115,
+     1598
+    ]
+   },
+   "qwen3_engine.server": {
+    "n": 1598,
+    "silent_local": [
+     0.9937,
+     0.9885,
+     0.9966,
+     1598
+    ],
+    "exact": [
+     0.0063,
+     0.0034,
+     0.0115,
+     1598
+    ]
+   },
+   "qwen3_engine.stream": {
+    "n": 1598,
+    "silent_local": [
+     0.9937,
+     0.9885,
+     0.9966,
+     1598
+    ],
+    "exact": [
+     0.0063,
+     0.0034,
+     0.0115,
+     1598
+    ]
+   }
+  },
+  "X_omit": {
+   "qwen3_coder.nonstream": {
+    "n": 1598,
+    "exact": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "qwen3_engine.server": {
+    "n": 1598,
+    "exact": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "qwen3_engine.stream": {
+    "n": 1598,
+    "exact": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   }
+  },
+  "X_tag": {
+   "qwen3_coder.nonstream": {
+    "n": 1598,
+    "silent_local": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "qwen3_engine.server": {
+    "n": 1598,
+    "silent_local": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "qwen3_engine.stream": {
+    "n": 1598,
+    "silent_local": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   }
+  },
+  "X_open": {
+   "qwen3_coder.nonstream": {
+    "n": 1598,
+    "silent_absorbed": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "qwen3_engine.server": {
+    "n": 1598,
+    "silent_absorbed": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   },
+   "qwen3_engine.stream": {
+    "n": 1598,
+    "silent_other": [
+     1.0,
+     0.9976,
+     1.0,
+     1598
+    ]
+   }
+  }
+ },
+ "valid_intended": {
+  "hermes.nonstream": {
+   "exact": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  },
+  "hermes.stream": {
+   "exact": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  },
+  "qwen3_coder.nonstream": {
+   "exact": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  },
+  "qwen3_engine.server": {
+   "exact": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  },
+  "qwen3_engine.stream": {
+   "exact": [
+    1.0,
+    0.9976,
+    1.0,
+    1598
+   ]
+  }
+ },
+ "exceptions": {}
+}

@@ -1,0 +1,177 @@
+{
+ "keys": [
+  "filepath",
+  "old_string",
+  "new_string",
+  "allow_multiple",
+  "content",
+  "command",
+  "start_line",
+  "end_line",
+  "path",
+  "file",
+  "name",
+  "text",
+  "query",
+  "code",
+  "type",
+  "value",
+  "description",
+  "data",
+  "id",
+  "url",
+  "pattern",
+  "replace"
+ ],
+ "counts": {
+  "PATCH": {
+   "bytes": 1556834,
+   "lines": 44857,
+   "files": 1258
+  },
+  "SITEPK": {
+   "bytes": 752225648,
+   "lines": 19308821,
+   "files": 48488,
+   "ws:replace": 3,
+   "ws_files:replace": 3,
+   "ws:type": 150,
+   "ws_files:type": 28,
+   "ws:path": 81,
+   "ws_files:path": 28,
+   "ws:value": 1044,
+   "ws_files:value": 132,
+   "ws:content": 145,
+   "ws_files:content": 27,
+   "ws:name": 276,
+   "ws_files:name": 67,
+   "ws:command": 9,
+   "ws_files:command": 2,
+   "exact:data": 31,
+   "exact_files:data": 10,
+   "ws:data": 64,
+   "ws_files:data": 36,
+   "exact:id": 116,
+   "exact:type": 127,
+   "exact:name": 132,
+   "exact_files:id": 37,
+   "exact_files:name": 22,
+   "exact_files:type": 21,
+   "ws:id": 116,
+   "ws_files:id": 37,
+   "ws:text": 39,
+   "ws_files:text": 12,
+   "ws:file": 7,
+   "ws_files:file": 6,
+   "ws:description": 306,
+   "ws_files:description": 53,
+   "ws:pattern": 24,
+   "ws_files:pattern": 8,
+   "ws:query": 24,
+   "ws:url": 99,
+   "ws_files:query": 19,
+   "ws_files:url": 16,
+   "exact:description": 260,
+   "exact:value": 939,
+   "exact_files:description": 42,
+   "exact_files:value": 100,
+   "exact:content": 129,
+   "exact:code": 77,
+   "exact_files:content": 21,
+   "exact_files:code": 17,
+   "ws:code": 78,
+   "ws_files:code": 18,
+   "exact:text": 23,
+   "exact_files:text": 6,
+   "exact:query": 11,
+   "exact_files:query": 9,
+   "exact:url": 95,
+   "exact_files:url": 12,
+   "exact:replace": 1,
+   "exact_files:replace": 1,
+   "exact:path": 66,
+   "exact_files:path": 15,
+   "exact:pattern": 16,
+   "exact_files:pattern": 4,
+   "ws:allow_multiple": 1,
+   "ws_files:allow_multiple": 1
+  },
+  "REPOS": {
+   "bytes": 18222516,
+   "lines": 464994,
+   "files": 3436,
+   "ws:value": 2,
+   "ws_files:value": 1,
+   "ws:file": 2,
+   "ws_files:file": 2,
+   "ws:path": 1,
+   "ws_files:path": 1
+  }
+ },
+ "examples": {
+  "PATCH": [],
+  "SITEPK": [
+   {
+    "where": "litellm/proxy/_experimental/out/_next/static/chunks/13qx7znomdzbh.js",
+    "key": "content",
+    "ctx": " e.tool_call_id?e.tool_call_id:void 0}:{role:\"user\",content:sT(e)},sw=e=>\"s"
+   },
+   {
+    "where": "litellm/proxy/_experimental/out/_next/static/chunks/13qx7znomdzbh.js",
+    "key": "content",
+    "ctx": "ntent:sT(e)},sw=e=>\"string\"==typeof e?[{role:\"user\",content:e}]:sb(e)?\"func"
+   },
+   {
+    "where": "litellm/proxy/_experimental/out/_next/static/chunks/13qx7znomdzbh.js",
+    "key": "content",
+    "ctx": "]:sb(e)?\"function_call\"===e.type?[{role:\"assistant\",content:\"\",toolCalls:[s"
+   },
+   {
+    "where": "litellm/proxy/_experimental/out/_next/static/chunks/13qx7znomdzbh.js",
+    "key": "content",
+    "ctx": "e)]}]:\"function_call_output\"===e.type?[{role:\"tool\",content:sT(e.output),to"
+   },
+   {
+    "where": "litellm/proxy/_experimental/out/_next/static/chunks/13qx7znomdzbh.js",
+    "key": "content",
+    "ctx": "px 16px\"},children:[i&&(0,s.jsx)(sF,{label:\"SYSTEM\",content:i.content,defau"
+   },
+   {
+    "where": "litellm/proxy/_experimental/out/_next/static/chunks/13qx7znomdzbh.js",
+    "key": "content",
+    "ctx": "-4 py-3\",children:e?(0,s.jsx)(sq,{label:\"ASSISTANT\",content:e.content,toolC"
+   },
+   {
+    "where": "vllm/entrypoints/serve/instrumentator/static/swagger-ui-bundle.js",
+    "key": "content",
+    "ctx": "ushPending=function(){this.tokens.push({type:\"text\",content:this.pending,le"
+   },
+   {
+    "where": "vllm/entrypoints/serve/instrumentator/static/swagger-ui-bundle.js",
+    "key": "content",
+    "ctx": " block(s){s.inlineMode?s.tokens.push({type:\"inline\",content:s.src.replace(/"
+   },
+   {
+    "where": "vllm/entrypoints/serve/instrumentator/static/swagger-ui-bundle.js",
+    "key": "content",
+    "ctx": "ph_open\",tight:!1,level:L++}),x.push({type:\"inline\",content:\"\",level:L,chil"
+   },
+   {
+    "where": "vllm/entrypoints/serve/instrumentator/static/swagger-ui-bundle.js",
+    "key": "content",
+    "ctx": "=[];B=L.exec(w);)L.lastIndex>C&&x.push({type:\"text\",content:w.slice(C,B.ind"
+   },
+   {
+    "where": "vllm/entrypoints/serve/instrumentator/static/swagger-ui-bundle.js",
+    "key": "content",
+    "ctx": "eviations[\":\"+B[2]],level:j++}),x.push({type:\"text\",content:B[2],level:j}),"
+   },
+   {
+    "where": "vllm/entrypoints/serve/instrumentator/static/swagger-ui-bundle.js",
+    "key": "content",
+    "ctx": "].length;x.length&&(C<w.length&&x.push({type:\"text\",content:w.slice(C),leve"
+   }
+  ],
+  "REPOS": []
+ }
+}

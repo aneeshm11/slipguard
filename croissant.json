@@ -1,0 +1,511 @@
+{
+ "@context": {
+  "@language": "en",
+  "@vocab": "https://schema.org/",
+  "citeAs": "cr:citeAs",
+  "column": "cr:column",
+  "conformsTo": "dct:conformsTo",
+  "cr": "http://mlcommons.org/croissant/",
+  "rai": "http://mlcommons.org/croissant/RAI/",
+  "data": {
+   "@id": "cr:data",
+   "@type": "@json"
+  },
+  "dataType": {
+   "@id": "cr:dataType",
+   "@type": "@vocab"
+  },
+  "dct": "http://purl.org/dc/terms/",
+  "examples": {
+   "@id": "cr:examples",
+   "@type": "@json"
+  },
+  "extract": "cr:extract",
+  "field": "cr:field",
+  "fileProperty": "cr:fileProperty",
+  "fileObject": "cr:fileObject",
+  "fileSet": "cr:fileSet",
+  "format": "cr:format",
+  "includes": "cr:includes",
+  "isLiveDataset": "cr:isLiveDataset",
+  "jsonPath": "cr:jsonPath",
+  "key": "cr:key",
+  "md5": "cr:md5",
+  "parentField": "cr:parentField",
+  "path": "cr:path",
+  "recordSet": "cr:recordSet",
+  "references": "cr:references",
+  "regex": "cr:regex",
+  "repeated": "cr:repeated",
+  "replace": "cr:replace",
+  "sc": "https://schema.org/",
+  "separator": "cr:separator",
+  "source": "cr:source",
+  "subField": "cr:subField",
+  "transform": "cr:transform"
+ },
+ "@type": "sc:Dataset",
+ "conformsTo": "http://mlcommons.org/croissant/1.0",
+ "name": "PNC: a public corpus of natural Gemma 4 agent trajectories on SWE-bench",
+ "description": "Natural, unedited agent trajectories of google/gemma-4-31b-it-qat-w4a16-ct (thinking on, the checkpoint's own sampling) solving SWE-bench tasks with a small generic tool-calling harness: 1,181 episodes, 41,290 model turns, 1,167 graded with the official SWE-bench evaluation scripts, 499 resolved. Every turn records the exact request, the raw generated text including the native tool-call protocol, the calls exactly as vLLM 0.19.1's gemma4 parser delivered them, and the tool results. Splits: verified (400 SWE-bench Verified tasks with schema S1, 100 of them also with schema S2) and swebench_test_ext (681 non-Verified SWE-bench test tasks, schema S1). In the GitHub repository this file sits at the root and its paths are relative to the repository root: the PNC metadata files are in data/pnc/; the episodes/, episode_meta/ and contexts/ FileSets ship only in the Kaggle PNC dataset (https://www.kaggle.com/datasets/cassinicraft/slipguard-pnc), to be unpacked into data/pnc/. Licences: the corpus data and annotations are CC BY 4.0; the companion code is Apache-2.0; third-party repository text in tool outputs keeps its upstream SPDX licence, listed per repository in data/pnc/MANIFEST.json#licenses.",
+ "version": "1.1.0",
+ "datePublished": "2026-11-12",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "url": "https://www.kaggle.com/datasets/cassinicraft/slipguard-pnc",
+ "creator": {
+  "@type": "sc:Person",
+  "name": "aneeshm11"
+ },
+ "citeAs": "slipguard: Stopping Gemma 4 Agents From Imitating Their Own Corrupted Tool Calls (aneeshm11, 2026)",
+ "keywords": [
+  "Gemma 4",
+  "tool calling",
+  "agent trajectories",
+  "SWE-bench",
+  "tool-call protocol",
+  "history contamination"
+ ],
+ "distribution": [
+  {
+   "@type": "cr:FileObject",
+   "@id": "manifest",
+   "name": "MANIFEST.json",
+   "contentUrl": "data/pnc/MANIFEST.json",
+   "encodingFormat": "application/json",
+   "sha256": "f64aebfafe57f5f3f72dc6fa36294b1d22b4f60c3bd72959772749985936c034",
+   "description": "sha256 of every file; model, server, proxy and harness provenance; sampling; seeds; tasks; images; licences"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "grading",
+   "name": "grading.jsonl",
+   "contentUrl": "data/pnc/grading.jsonl",
+   "encodingFormat": "application/jsonl",
+   "sha256": "6c1180e09ffc908b3cdb9e56d0954aa25a2383c063e33dab615e8db7fa3827d3"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "tasks",
+   "name": "tasks.json",
+   "contentUrl": "data/pnc/tasks.json",
+   "encodingFormat": "application/json",
+   "sha256": "d29247564c4cab0a47d53ad31492f0e0624ccb8f8501ffd1c69df2078562edec"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "template",
+   "name": "chat_template.jinja",
+   "contentUrl": "data/pnc/chat_template.jinja",
+   "encodingFormat": "text/plain",
+   "sha256": "ae53464bf3be25802b3a5b37def7fd89667067d7577049b3b2d74c4d8de4c6d4"
+  },
+  {
+   "@type": "cr:FileSet",
+   "@id": "episodes-set",
+   "name": "episodes",
+   "encodingFormat": "application/jsonl",
+   "includes": "data/pnc/episodes/*.jsonl",
+   "description": "one file per episode (<instance_id>__<schema>.jsonl), one line per model turn"
+  },
+  {
+   "@type": "cr:FileSet",
+   "@id": "episode-meta-set",
+   "name": "episode_meta",
+   "encodingFormat": "application/json",
+   "includes": "data/pnc/episode_meta/*.json"
+  },
+  {
+   "@type": "cr:FileSet",
+   "@id": "contexts-set",
+   "name": "contexts",
+   "encodingFormat": "application/jsonl",
+   "includes": "data/pnc/contexts/*/contexts.jsonl",
+   "description": "replay contexts in a fixed schema (requests whose response's first call is the edit tool)"
+  }
+ ],
+ "recordSet": [
+  {
+   "@type": "cr:RecordSet",
+   "@id": "turns",
+   "name": "turns",
+   "description": "one record per model turn (chat request)",
+   "field": [
+    {
+     "@type": "cr:Field",
+     "@id": "turns/episode_id",
+     "name": "episode_id",
+     "description": "<instance_id>__<schema>",
+     "dataType": "sc:Text",
+     "source": {
+      "fileSet": {
+       "@id": "episodes-set"
+      },
+      "extract": {
+       "column": "episode_id"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "turns/turn_index",
+     "name": "turn_index",
+     "description": "0-based request index within the episode (HTTP retries are not turns)",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileSet": {
+       "@id": "episodes-set"
+      },
+      "extract": {
+       "column": "turn_index"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "turns/split",
+     "name": "split",
+     "description": "verified or swebench_test_ext",
+     "dataType": "sc:Text",
+     "source": {
+      "fileSet": {
+       "@id": "episodes-set"
+      },
+      "extract": {
+       "column": "split"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "turns/schema",
+     "name": "schema",
+     "description": "S1 (bash, read_file, edit_file, write_file, submit) or S2 (execute_bash, str_replace_editor, finish)",
+     "dataType": "sc:Text",
+     "source": {
+      "fileSet": {
+       "@id": "episodes-set"
+      },
+      "extract": {
+       "column": "schema"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "turns/repo",
+     "name": "repo",
+     "description": "GitHub repository of the task",
+     "dataType": "sc:Text",
+     "source": {
+      "fileSet": {
+       "@id": "episodes-set"
+      },
+      "extract": {
+       "column": "repo"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "turns/request",
+     "name": "request",
+     "description": "the exact chat request (messages, tools, sampling)",
+     "dataType": "sc:Text",
+     "source": {
+      "fileSet": {
+       "@id": "episodes-set"
+      },
+      "extract": {
+       "column": "request"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "turns/raw_completion",
+     "name": "raw_completion",
+     "description": "the raw generated text, including the native <|tool_call>...<tool_call|> protocol",
+     "dataType": "sc:Text",
+     "source": {
+      "fileSet": {
+       "@id": "episodes-set"
+      },
+      "extract": {
+       "column": "raw_completion"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "turns/response",
+     "name": "response",
+     "description": "the response as the server delivered it: content, reasoning and the parsed tool calls",
+     "dataType": "sc:Text",
+     "source": {
+      "fileSet": {
+       "@id": "episodes-set"
+      },
+      "extract": {
+       "column": "response"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "turns/tool_results",
+     "name": "tool_results",
+     "description": "the tool results returned to the model",
+     "dataType": "sc:Text",
+     "source": {
+      "fileSet": {
+       "@id": "episodes-set"
+      },
+      "extract": {
+       "column": "tool_results"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "turns/masking",
+     "name": "masking",
+     "description": "observation masking applied to this request (above 22,000 prompt tokens)",
+     "dataType": "sc:Text",
+     "source": {
+      "fileSet": {
+       "@id": "episodes-set"
+      },
+      "extract": {
+       "column": "masking"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "turns/prompt_tokens",
+     "name": "prompt_tokens",
+     "description": "prompt length in tokens",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileSet": {
+       "@id": "episodes-set"
+      },
+      "extract": {
+       "column": "prompt_tokens"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "turns/request_seed",
+     "name": "request_seed",
+     "description": "per-request sampling seed",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileSet": {
+       "@id": "episodes-set"
+      },
+      "extract": {
+       "column": "request_seed"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "grading_records",
+   "name": "grading",
+   "description": "SWE-bench grading of each episode's final patch (1,167 records)",
+   "field": [
+    {
+     "@type": "cr:Field",
+     "@id": "grading_records/episode_id",
+     "name": "episode_id",
+     "description": "episode key",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "grading"
+      },
+      "extract": {
+       "column": "episode_id"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "grading_records/graded",
+     "name": "graded",
+     "description": "the patch was graded",
+     "dataType": "sc:Boolean",
+     "source": {
+      "fileObject": {
+       "@id": "grading"
+      },
+      "extract": {
+       "column": "graded"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "grading_records/resolved",
+     "name": "resolved",
+     "description": "all FAIL_TO_PASS and PASS_TO_PASS tests pass (499 true)",
+     "dataType": "sc:Boolean",
+     "source": {
+      "fileObject": {
+       "@id": "grading"
+      },
+      "extract": {
+       "column": "resolved"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "grading_records/resolution",
+     "name": "resolution",
+     "description": "SWE-bench resolution label",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "grading"
+      },
+      "extract": {
+       "column": "resolution"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "grading_records/tests",
+     "name": "tests",
+     "description": "per-test outcomes",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "grading"
+      },
+      "extract": {
+       "column": "tests"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "episodes",
+   "name": "episode_meta",
+   "description": "one record per episode",
+   "field": [
+    {
+     "@type": "cr:Field",
+     "@id": "episodes/episode_id",
+     "name": "episode_id",
+     "description": "episode key",
+     "dataType": "sc:Text",
+     "source": {
+      "fileSet": {
+       "@id": "episode-meta-set"
+      },
+      "extract": {
+       "column": "episode_id"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "episodes/end_reason",
+     "name": "end_reason",
+     "description": "submitted, tool_budget, no_tool_call_limit, context_overflow or context_full",
+     "dataType": "sc:Text",
+     "source": {
+      "fileSet": {
+       "@id": "episode-meta-set"
+      },
+      "extract": {
+       "column": "end_reason"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "episodes/n_turns",
+     "name": "n_turns",
+     "description": "model turns",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileSet": {
+       "@id": "episode-meta-set"
+      },
+      "extract": {
+       "column": "n_turns"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "episodes/n_tool_calls",
+     "name": "n_tool_calls",
+     "description": "tool calls",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileSet": {
+       "@id": "episode-meta-set"
+      },
+      "extract": {
+       "column": "n_tool_calls"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "episodes/patch",
+     "name": "patch",
+     "description": "final patch",
+     "dataType": "sc:Text",
+     "source": {
+      "fileSet": {
+       "@id": "episode-meta-set"
+      },
+      "extract": {
+       "column": "patch"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "episodes/image_digest",
+     "name": "image_digest",
+     "description": "sha256 of the task container image",
+     "dataType": "sc:Text",
+     "source": {
+      "fileSet": {
+       "@id": "episode-meta-set"
+      },
+      "extract": {
+       "column": "image_digest"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "rai:dataCollection": "Generated 2026-11-04 15:25-22:52 UTC: the authors' own Apache-2.0 harness and generic prompts, one SWE-bench instance container per episode (network off, 4 GB), vLLM 0.19.1 with the gemma4 tool and reasoning parsers behind a faithful protocol proxy. Budgets: 50 tool calls or 45 minutes per episode, at most 100 turns.",
+ "rai:dataCollectionType": "Simulation (model-generated agent trajectories)",
+ "rai:dataCollectionTimeframe": "2026-11-04",
+ "rai:dataCollectionMissingData": "matplotlib (operational: images cannot be unpacked on the rootless daemon) and pylint (GPL-2.0) are excluded; the extension split holds the first 681 of 1,597 ordered candidates (production ended early for a GPU maintenance stop); 14 extension episodes are not graded; one task could not start (prompt over 32,768 tokens).",
+ "rai:dataCollectionRawData": "SWE-bench Verified (revision c104f840) and SWE-bench test split (revision e48e2bd1) tasks; model outputs of the Gemma 4 checkpoint",
+ "rai:dataPreprocessingProtocol": "none on the trajectories; host identifiers are redacted from tool outputs before the model sees them",
+ "rai:dataAnnotationProtocol": "grading with the official SWE-bench evaluation scripts and log parsers; protocol labels in the companion repository come from frozen, hash-pinned judges",
+ "rai:dataAnnotationPlatform": "automatic",
+ "rai:dataUseCases": "tool-call protocol analysis, parser conformance on real model output, history-contamination and quarantine studies, repair benchmarks",
+ "rai:dataBiases": "one model, one harness, Python repositories only (django and sympy dominate); thinking on; temperature 1.0",
+ "rai:dataLimitations": "Training on PNC trains on stock-stack trajectories that contain laundered (malformed, re-rendered) calls, and on SWE-bench Verified / test tasks: models trained on it are contaminated for those benchmarks. vLLM is not batch-invariant, so re-generation does not reproduce outputs bitwise.",
+ "rai:dataSocialImpact": "supports more reliable tool-using agents; developer e-mail addresses that appear in upstream repository files inside tool outputs are masked as <email> in the released corpus; no other personal data was found (0 local usernames, hostnames, host IPs or secret/key patterns)",
+ "rai:personalSensitiveInformation": "public repositories and issues; developer e-mail addresses that appear in upstream repository files inside tool outputs are masked as <email> in the released corpus; no other personal data was found (0 local usernames, hostnames, host IPs or secret/key patterns)",
+ "rai:dataReleaseMaintenancePlan": "MAINTENANCE.md in the companion repository; versions are tagged and every file is sha256-pinned in MANIFEST.json"
+}

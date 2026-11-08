@@ -1,0 +1,110 @@
+{
+ "prereg": "PREREG_v2.11b_masked_replicate.md (descriptive; v2.11 verdict unchanged)",
+ "runs": {
+  "masked_1": {
+   "P1_affected": [
+    13,
+    43
+   ],
+   "P1_unaffected": [
+    37,
+    257
+   ],
+   "P1_all": [
+    50,
+    300
+   ],
+   "P1_rate": 0.1667
+  },
+  "masked_2": {
+   "P1_affected": [
+    13,
+    43
+   ],
+   "P1_unaffected": [
+    41,
+    257
+   ],
+   "P1_all": [
+    54,
+    300
+   ],
+   "P1_rate": 0.18,
+   "copying": {
+    "RD_P1_minus_P0": 0.1667,
+    "CI": [
+     0.1221,
+     0.2129
+    ],
+    "p": 4.069e-13,
+    "n_states": 300,
+    "discordant": [
+     53,
+     3
+    ]
+   },
+   "removal": {
+    "point": 0.92,
+    "CI": [
+     0.7805,
+     1.0556
+    ],
+    "undefined_draw_frac": 0.0
+   },
+   "replicate_condition_check_not_a_verdict": "MASKING DOES NOT CHANGE THE RESULT"
+  },
+  "C1": {
+   "P1_affected": [
+    17,
+    43
+   ],
+   "P1_unaffected": [
+    42,
+    257
+   ],
+   "P1_all": [
+    59,
+    300
+   ],
+   "P1_rate": 0.1967
+  },
+  "v2.8": {
+   "P1_affected": [
+    16,
+    43
+   ],
+   "P1_unaffected": [
+    42,
+    257
+   ],
+   "P1_all": [
+    58,
+    300
+   ],
+   "P1_rate": 0.1933
+  }
+ },
+ "pooled": {
+  "masked_P1": [
+   104,
+   600,
+   0.1733
+  ],
+  "unmasked_same_seed_P1": [
+   117,
+   600,
+   0.195
+  ],
+  "affected_masked": 26,
+  "affected_unmasked": 33,
+  "unaffected_masked": 78,
+  "unaffected_unmasked": 84
+ },
+ "unmasked_P1_range_reference": {
+  "C1": 0.1967,
+  "v2.8": 0.1933,
+  "v2.7_seedA": 0.2,
+  "v2.7_seedB": 0.2033
+ },
+ "reading": "INCONCLUSIVE"
+}

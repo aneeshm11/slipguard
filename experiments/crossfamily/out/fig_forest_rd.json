@@ -1,0 +1,202 @@
+[
+ {
+  "row": "laundered exemplar + error",
+  "series": "Gemma-4-31B (A, reference)",
+  "arm": "P1k1",
+  "RD_pp": 35.33,
+  "CI_pp": [
+   29.770000000000003,
+   41.06
+  ]
+ },
+ {
+  "row": "laundered exemplar + error",
+  "series": "Qwen3-8B (hermes JSON)",
+  "arm": "P1L",
+  "RD_pp": 0.33,
+  "CI_pp": [
+   0.0,
+   1.03
+  ]
+ },
+ {
+  "row": "laundered exemplar + error",
+  "series": "Qwen3-32B-FP8 (hermes JSON)",
+  "arm": "P1L",
+  "RD_pp": 0.0,
+  "CI_pp": [
+   -1.35,
+   1.3299999999999998
+  ]
+ },
+ {
+  "row": "laundered exemplar + error",
+  "series": "Qwen3.5-9B (qwen3_coder XML)",
+  "arm": "P1L",
+  "RD_pp": 0.0,
+  "CI_pp": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "row": "native slip via own parser",
+  "series": "Gemma-4-31B (A, reference)",
+  "arm": "P3k1",
+  "RD_pp": 34.0,
+  "CI_pp": [
+   28.33,
+   39.87
+  ]
+ },
+ {
+  "row": "native slip via own parser",
+  "series": "Qwen3-8B (hermes JSON)",
+  "arm": "P1N",
+  "RD_pp": 0.33,
+  "CI_pp": [
+   -0.6799999999999999,
+   1.6099999999999999
+  ]
+ },
+ {
+  "row": "native slip via own parser",
+  "series": "Qwen3-32B-FP8 (hermes JSON)",
+  "arm": "P1N",
+  "RD_pp": 0.67,
+  "CI_pp": [
+   -0.6799999999999999,
+   2.37
+  ]
+ },
+ {
+  "row": "native slip via own parser",
+  "series": "Qwen3.5-9B (qwen3_coder XML)",
+  "arm": "P1N",
+  "RD_pp": 0.0,
+  "CI_pp": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "row": "laundered exemplar + success",
+  "series": "Gemma-4-31B (A, reference)",
+  "arm": "P6k1",
+  "RD_pp": 21.33,
+  "CI_pp": [
+   16.439999999999998,
+   26.38
+  ]
+ },
+ {
+  "row": "laundered exemplar + success",
+  "series": "Qwen3-8B (hermes JSON)",
+  "arm": "P6",
+  "RD_pp": 4.67,
+  "CI_pp": [
+   2.06,
+   7.470000000000001
+  ]
+ },
+ {
+  "row": "laundered exemplar + success",
+  "series": "Qwen3-32B-FP8 (hermes JSON)",
+  "arm": "P6",
+  "RD_pp": 0.67,
+  "CI_pp": [
+   -0.98,
+   2.33
+  ]
+ },
+ {
+  "row": "laundered exemplar + success",
+  "series": "Qwen3.5-9B (qwen3_coder XML)",
+  "arm": "P6",
+  "RD_pp": 1.0,
+  "CI_pp": [
+   0.0,
+   2.3
+  ]
+ },
+ {
+  "row": "removed + note",
+  "series": "Gemma-4-31B (A, reference)",
+  "arm": "P5k1",
+  "RD_pp": -2.67,
+  "CI_pp": [
+   -5.56,
+   0.0
+  ]
+ },
+ {
+  "row": "removed + note",
+  "series": "Qwen3-8B (hermes JSON)",
+  "arm": "P5",
+  "RD_pp": 0.0,
+  "CI_pp": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "row": "removed + note",
+  "series": "Qwen3-32B-FP8 (hermes JSON)",
+  "arm": "P5",
+  "RD_pp": 0.67,
+  "CI_pp": [
+   -0.66,
+   2.03
+  ]
+ },
+ {
+  "row": "removed + note",
+  "series": "Qwen3.5-9B (qwen3_coder XML)",
+  "arm": "P5",
+  "RD_pp": 0.33,
+  "CI_pp": [
+   0.0,
+   1.02
+  ]
+ },
+ {
+  "row": "shipped quarantine",
+  "series": "Gemma-4-31B (A, reference)",
+  "arm": "P8ak1",
+  "RD_pp": -4.67,
+  "CI_pp": [
+   -7.22,
+   -2.33
+  ]
+ },
+ {
+  "row": "shipped quarantine",
+  "series": "Qwen3-8B (hermes JSON)",
+  "arm": "P8a",
+  "RD_pp": 0.67,
+  "CI_pp": [
+   0.0,
+   1.69
+  ]
+ },
+ {
+  "row": "shipped quarantine",
+  "series": "Qwen3-32B-FP8 (hermes JSON)",
+  "arm": "P8a",
+  "RD_pp": 0.33,
+  "CI_pp": [
+   -1.03,
+   1.77
+  ]
+ },
+ {
+  "row": "shipped quarantine",
+  "series": "Qwen3.5-9B (qwen3_coder XML)",
+  "arm": "P8a",
+  "RD_pp": 0.0,
+  "CI_pp": [
+   0.0,
+   0.0
+  ]
+ }
+]

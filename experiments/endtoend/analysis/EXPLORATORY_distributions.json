@@ -1,0 +1,329 @@
+{
+ "_status": "EXPLORATORY, not pre-registered (review items B3/B9/B10); frozen code reused unchanged",
+ "population": {
+  "31B": {
+   "n_tasks": 113,
+   "n_episode_pairs": 226,
+   "Y1_base": {
+    "n": 226,
+    "mean": 2.4735,
+    "share_ge1": [
+     69,
+     226,
+     [
+      0.2489,
+      0.3682
+     ]
+    ],
+    "median": 0.0,
+    "p90": 4,
+    "max": 82,
+    "share_of_total_from_top5pct": 0.744
+   },
+   "Y1_fullp": {
+    "n": 226,
+    "mean": 0.2743,
+    "share_ge1": [
+     49,
+     226,
+     [
+      0.1681,
+      0.275
+     ]
+    ],
+    "median": 0.0,
+    "p90": 1,
+    "max": 3,
+    "share_of_total_from_top5pct": 0.387
+   },
+   "share_ge1_diff_fullp_minus_base_taskcluster": {
+    "n": 113,
+    "mean_diff": -0.0885,
+    "ci95": [
+     -0.1549,
+     -0.0221
+    ],
+    "p_boot": 0.008
+   },
+   "Y1_excluding_base_stuck_pairs": {
+    "n_pairs": 212,
+    "base_mean": 0.5708,
+    "fullp_mean": 0.2736,
+    "ratio": 0.4793,
+    "base_share_ge1": [
+     55,
+     212
+    ],
+    "fullp_share_ge1": [
+     47,
+     212
+    ]
+   },
+   "base_stuck_pairs": {
+    "n_pairs": 14,
+    "tasks": [
+     "fastapi_13713",
+     "fastapi_14246",
+     "fastapi_14262",
+     "fastapi_14583",
+     "fastapi_14605",
+     "fastapi_15661",
+     "fastapi_9753",
+     "rich_2943",
+     "rich_3130",
+     "rich_3454",
+     "rich_3676",
+     "rich_3882",
+     "rich_4070"
+    ],
+    "resolved_base": 5,
+    "resolved_fullp": 6,
+    "fullp_stuck": 0,
+    "Y1_base_mean": 31.29,
+    "Y1_fullp_mean": 0.29,
+    "calls_base_mean": 65.9,
+    "calls_fullp_mean": 36.4,
+    "gen_tokens_base_mean": 57027,
+    "gen_tokens_fullp_mean": 8335
+   },
+   "calls_per_episode_max": {
+    "base": 100,
+    "fullp": 100
+   },
+   "check_vs_registered": {
+    "registered_base_mean": 2.4735,
+    "registered_fullp_mean": 0.2743,
+    "episode_level_base_mean_here": 2.4735,
+    "note": "registered means are task means over replicates; here episode means (equal when every task has the same replicate count)"
+   }
+  },
+  "E4B": {
+   "n_tasks": 113,
+   "n_episode_pairs": 113,
+   "Y1_base": {
+    "n": 113,
+    "mean": 0.2301,
+    "share_ge1": [
+     18,
+     113,
+     [
+      0.1032,
+      0.2378
+     ]
+    ],
+    "median": 0,
+    "p90": 1,
+    "max": 4,
+    "share_of_total_from_top5pct": 0.5
+   },
+   "Y1_fullp": {
+    "n": 113,
+    "mean": 0.0442,
+    "share_ge1": [
+     2,
+     113,
+     [
+      0.0049,
+      0.0622
+     ]
+    ],
+    "median": 0,
+    "p90": 0,
+    "max": 3,
+    "share_of_total_from_top5pct": 1.0
+   },
+   "share_ge1_diff_fullp_minus_base_taskcluster": {
+    "n": 113,
+    "mean_diff": -0.1416,
+    "ci95": [
+     -0.2124,
+     -0.0708
+    ],
+    "p_boot": 0.0002
+   },
+   "Y1_excluding_base_stuck_pairs": {
+    "n_pairs": 113,
+    "base_mean": 0.2301,
+    "fullp_mean": 0.0442,
+    "ratio": 0.1923,
+    "base_share_ge1": [
+     18,
+     113
+    ],
+    "fullp_share_ge1": [
+     2,
+     113
+    ]
+   },
+   "base_stuck_pairs": {
+    "n_pairs": 0,
+    "tasks": [],
+    "resolved_base": 0,
+    "resolved_fullp": 0,
+    "fullp_stuck": 0,
+    "Y1_base_mean": null,
+    "Y1_fullp_mean": null,
+    "calls_base_mean": null,
+    "calls_fullp_mean": null,
+    "gen_tokens_base_mean": null,
+    "gen_tokens_fullp_mean": null
+   },
+   "calls_per_episode_max": {
+    "base": 45,
+    "fullp": 44
+   },
+   "check_vs_registered": {
+    "registered_base_mean": 0.2301,
+    "registered_fullp_mean": 0.0442,
+    "episode_level_base_mean_here": 0.2301,
+    "note": "registered means are task means over replicates; here episode means (equal when every task has the same replicate count)"
+   }
+  }
+ },
+ "branches_31B": {
+  "n_branch_points": 135,
+  "check_vs_registered_n": 135,
+  "post_malformed_base": {
+   "n": 135,
+   "mean": 11.6222,
+   "share_ge1": [
+    87,
+    135,
+    [
+     0.5607,
+     0.7202
+    ]
+   ],
+   "median": 3,
+   "p90": 53,
+   "max": 92,
+   "share_of_total_from_top5pct": 0.326
+  },
+  "post_malformed_quar": {
+   "n": 135,
+   "mean": 0.1778,
+   "share_ge1": [
+    13,
+    135,
+    [
+     0.0571,
+     0.1578
+    ]
+   ],
+   "median": 0,
+   "p90": 0,
+   "max": 9,
+   "share_of_total_from_top5pct": 0.708
+  },
+  "post_malformed_ipd": {
+   "n": 135,
+   "mean": 0.1111,
+   "share_ge1": [
+    5,
+    135,
+    [
+     0.0159,
+     0.0838
+    ]
+   ],
+   "median": 0,
+   "p90": 0,
+   "max": 5,
+   "share_of_total_from_top5pct": 1.0
+  },
+  "post_malformed_fullp": {
+   "n": 135,
+   "mean": 0.0519,
+   "share_ge1": [
+    5,
+    135,
+    [
+     0.0159,
+     0.0838
+    ]
+   ],
+   "median": 0,
+   "p90": 0,
+   "max": 2,
+   "share_of_total_from_top5pct": 1.0
+  },
+  "excluding_base_stuck": {
+   "n": 81,
+   "base": 1.0123,
+   "quar": 0.2346,
+   "ipd": 0.1358,
+   "fullp": 0.0494
+  },
+  "base_stuck_n": 54,
+  "onset_injected": {
+   "n": 122,
+   "base": {
+    "mean": 10.27,
+    "share_ge1": [
+     77,
+     122
+    ],
+    "resolved": 45
+   },
+   "quar": {
+    "mean": 0.18,
+    "share_ge1": [
+     11,
+     122
+    ],
+    "resolved": 49
+   },
+   "ipd": {
+    "mean": 0.123,
+    "share_ge1": [
+     5,
+     122
+    ],
+    "resolved": 50
+   },
+   "fullp": {
+    "mean": 0.057,
+    "share_ge1": [
+     5,
+     122
+    ],
+    "resolved": 49
+   }
+  },
+  "onset_natural": {
+   "n": 13,
+   "base": {
+    "mean": 24.308,
+    "share_ge1": [
+     10,
+     13
+    ],
+    "resolved": 7
+   },
+   "quar": {
+    "mean": 0.154,
+    "share_ge1": [
+     2,
+     13
+    ],
+    "resolved": 8
+   },
+   "ipd": {
+    "mean": 0,
+    "share_ge1": [
+     0,
+     13
+    ],
+    "resolved": 7
+   },
+   "fullp": {
+    "mean": 0,
+    "share_ge1": [
+     0,
+     13
+    ],
+    "resolved": 9
+   }
+  }
+ }
+}

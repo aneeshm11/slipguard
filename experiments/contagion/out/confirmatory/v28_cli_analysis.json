@@ -1,0 +1,183 @@
+{
+ "prereg": "PREREG_v2.8_cli.md (sha256 in PROGRESS.md at freeze)",
+ "B": 2000,
+ "missing": {
+  "CLI": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  },
+  "QAT": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  }
+ },
+ "servers": {
+  "CLI": {
+   "http://127.0.0.1:8376/v1": 1200
+  },
+  "QAT": {
+   "http://127.0.0.1:8303/v1": 1358
+  }
+ },
+ "temps": {
+  "CLI": {
+   "1.0": 1200
+  },
+  "QAT": {
+   "1.0": 1358
+  }
+ },
+ "rates": {
+  "CLI": {
+   "P0": [
+    0.01,
+    0.0,
+    0.0229,
+    300
+   ],
+   "P1": [
+    0.1933,
+    0.1505,
+    0.2409,
+    300
+   ],
+   "P6": [
+    0.1033,
+    0.0705,
+    0.141,
+    300
+   ],
+   "P8a": [
+    0.0367,
+    0.0169,
+    0.0584,
+    300
+   ]
+  },
+  "QAT": {
+   "P0": [
+    0.0133,
+    0.0032,
+    0.0271,
+    300
+   ],
+   "P1": [
+    0.1967,
+    0.153,
+    0.2433,
+    300
+   ],
+   "P6": [
+    0.09,
+    0.0586,
+    0.1262,
+    300
+   ],
+   "P8a": [
+    0.0167,
+    0.0033,
+    0.033,
+    300
+   ]
+  }
+ },
+ "copying": {
+  "CLI": {
+   "RD_P1_minus_P0": 0.1833,
+   "CI": [
+    0.1392,
+    0.2323
+   ],
+   "p": 3.072e-15,
+   "n_states": 300,
+   "discordant": [
+    57,
+    2
+   ]
+  },
+  "QAT": {
+   "RD_P1_minus_P0": 0.1833,
+   "CI": [
+    0.1371,
+    0.2336
+   ],
+   "p": 6.911e-14,
+   "n_states": 300,
+   "discordant": [
+    59,
+    4
+   ]
+  }
+ },
+ "induction": {
+  "CLI": {
+   "RD_P6_minus_P0": 0.0933,
+   "CI": [
+    0.0588,
+    0.1333
+   ]
+  },
+  "QAT": {
+   "RD_P6_minus_P0": 0.0767,
+   "CI": [
+    0.043,
+    0.1155
+   ]
+  }
+ },
+ "removal": {
+  "CLI": {
+   "point": 0.8545,
+   "CI": [
+    0.7174,
+    0.9706
+   ],
+   "undefined_draw_frac": 0.0
+  },
+  "QAT": {
+   "point": 0.9818,
+   "CI": [
+    0.8824,
+    1.0952
+   ],
+   "undefined_draw_frac": 0.0
+  }
+ },
+ "P1_CLI_vs_C1": {
+  "n_states": 300,
+  "A": 0.1933,
+  "B": 0.1967,
+  "RD": -0.0033,
+  "RD_CI": [
+   -0.0241,
+   0.0197
+  ],
+  "discordant_B_only_A_only": [
+   6,
+   5
+  ],
+  "mcnemar_one_sided_p_RD_lt_0": 0.5,
+  "mcnemar_two_sided_p": 1.0
+ },
+ "job_agreement": {
+  "n_jobs_both": 1200,
+  "same_judged_outcome": [
+   1170,
+   0.975
+  ],
+  "identical_generated_text": [
+   758,
+   0.6317
+  ]
+ },
+ "conditions": {
+  "a_copying_in_C1_CI": true,
+  "b_removal_ge_0.90": false,
+  "c_P1_mcnemar_two_sided_p_ge_0.05": true
+ },
+ "verdict": "DOES NOT REPRODUCE: b_removal_ge_0.90"
+}

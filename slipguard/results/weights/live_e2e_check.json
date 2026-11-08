@@ -1,0 +1,86 @@
+{
+ "what": "live end-to-end run of the SHIPPED weight audit (slipguard audit-weights, wsa-1.0) against Google's QAT 31B checkpoint served by vLLM 0.19.1 (max-logprobs 20, prefix caching, text-only), first 12 items of the shipped audit16k pack, conc 1; compared with F's frozen sweep records for the same checkpoint and positions",
+ "window_utc": "2026-11-05T20:02:40Z/20:03:19Z",
+ "cli": "slipguard audit-weights --endpoint <server>/v1 --served-name gemma-4-31b --pnc <PNC> --tokenizer <model dir> --pack <first 12 items of audit16k> --conc 1 --records <records> --out <report>",
+ "records": 20,
+ "kinds": {
+  "slip": 8,
+  "close": 12
+ },
+ "vs_sweep_records": {
+  "matched": 20,
+  "prompt_tokens_equal": 20,
+  "logged_token_equal": 20,
+  "top1_equal": 20,
+  "censoring_equal": 20,
+  "top20_idset_equal": 12,
+  "margin_infinite_both": 8,
+  "margin_abs_diff_max": 0.2812497615786924,
+  "margin_abs_diff_median": 0.12499994039535522,
+  "n_finite_margins": 12,
+  "top20_logprob_abs_diff_median": 0.0625,
+  "top20_logprob_abs_diff_max": 0.40667724609375
+ },
+ "reference_noise": {
+  "what": "F's own repeat QAT-ct run (audit_qatct_vllm_heldout) vs the sweep, same keys",
+  "n": 11,
+  "margin_abs_diff_max": 0.4375002384135769
+ },
+ "subset_report_live": {
+  "summary": {
+   "schema": "slipguard.weights.audit/v1",
+   "n_string_ends": 8,
+   "censored_frac": 0.75,
+   "margin_median_lb": 15.718750387663022,
+   "margin_p10_lb": 12.275000064175401,
+   "P_m_lt_ln19": 0.0,
+   "E_slip": 0.0,
+   "onset_per_call": 0.0,
+   "n_onset_calls": 4,
+   "slip_states_pLA": 0.3311236827441335,
+   "n_slip_states": 8
+  },
+  "paired_vs_reference": {
+   "n": 8,
+   "median_deficit": [
+    4.205076962476909,
+    1.9003888517677296,
+    6.156249574211046
+   ]
+  },
+  "FLAG": true,
+  "SEVERE": false
+ },
+ "subset_report_sweep_records": {
+  "summary": {
+   "schema": "slipguard.weights.audit/v1",
+   "n_string_ends": 8,
+   "censored_frac": 0.75,
+   "margin_median_lb": 15.843750487663783,
+   "margin_p10_lb": 12.274999612639657,
+   "P_m_lt_ln19": 0.0,
+   "E_slip": 0.0,
+   "onset_per_call": 0.0,
+   "n_onset_calls": 4,
+   "slip_states_pLA": 0.3281783047331373,
+   "n_slip_states": 8
+  },
+  "paired_vs_reference": {
+   "n": 8,
+   "median_deficit": [
+    4.080076862476147,
+    1.9003888517677296,
+    5.906249374209523
+   ]
+  },
+  "FLAG": true,
+  "SEVERE": false
+ },
+ "note": "Logprobs of a 4-bit checkpoint are not bit-reproducible across vLLM runs (batching / kernels); the live-vs-sweep margin differences are within F's own repeat-run differences. Token-level identity: prompt token counts (server-reported), logged tokens, top-1 tokens and censoring agree on every position.",
+ "sha256": {
+  "records": "9b9c4c686b5599c2ffdd86e002d3b41cd58e87369c0c45499a72e0281dee3443",
+  "report": "cd0dd6f8b39f3aa03254cf3780317ab5a948e8c8336dc1535e8b211ffefe57aa",
+  "pack_first12": "82b8b3c6c22f7e00f8015a3afccf40f416aba40f205b2ca888c6ee54a7175fa2",
+  "sweep_records_qatct": "1b5fc7db690b2e0a84514953c11313ac9958d14f73f91787dec40856b7b5a008"
+ }
+}

@@ -1,0 +1,25 @@
+# PREREG_v2.1 (thinking-OFF flag; sha256 bb3696da...) and PREREG_v2.2 (arm sets S and H; sha256 ec9164ff...) — A's scripts and plans, frozen 2026-11-04T17:51:13Z, before any output of these batteries existed (out/main has no v21/v22 file)
+8ffc9182475e0ee5867a21773452c4d16c8df9a91caf6990d027c9d12d122c72  scripts/run_cond.py
+ad84c3edfbbdaca7d9b7613e659974ebf21cbb1a6636618a496c98a61f55140d  scripts/analyze_v21_v22.py
+a7a997ee2529e95095486088cdaba5c25e9befc845e5342d7b0b7ebd947cd114  scripts/test_run_cond.py
+d95286454d0b94ffa4be6761dab1076126bd6577db0125c4b993c077809c0502  scripts/check_thought_forms.py
+346b1af0509d20602af69e10d576209693f579f611ddd7c6dc3f6ea822d1a17e  data/plan_v21_off.jsonl
+b74b21fb62ef644e274cd9e2ac4a21ec0530b8a13284b7e3f0608278bb21c56c  data/plan_v22_S.jsonl
+9110edd1167447f646809ce796d95038522985427a75ac9f12ceb6b610df4a37  data/plan_v22_H.jsonl
+# unchanged frozen dependencies (re-verified):
+1aadb39d5fe9013620e296b8ac213b19804f2cf3e4fb3457d99bcf42a707dde0  scripts/run_injection.py
+b0044a723ac086e0194e2dc45dce74d0cd712327c3eb5798f23d2caf20079850  scripts/variants.py
+7cb2871b208be148087db21aff878e6f130851efece276257855e810e96f15cf  scripts/gemma_protocol.py
+13e285673b70aa9a344cc2123fd26387877ee19a53e8ef9006f8f5580fa2466f  experiments/endtoend/export/quarantine_renderer.py
+# render checks: out/v22_thought_form_check.json, out/v21_v22_render_check.json; smoke of the analysis on relabelled thinking-ON records: data/smoke_v21_v22/
+# RE-FROZEN 2026-11-04T17:52:15Z (still before any v21/v22 output): run_cond.py gained the unused alternative --cond SON; analyze_v21_v22.py accepts cond S or SON for battery S and records the cond actually present
+7d57af425b49cded68f5ae19e07d6eb1aebb31b14a9a9c3b7cc3215a2d4cc506  scripts/run_cond.py
+93edbc5de05c3a17f0e8a387898db2b58f10e8a98d74b1599080b42ded53e156  scripts/analyze_v21_v22.py
+# 2026-11-04T18:17:38Z — data move at ~18:12 UTC (/harness -> <competition-logs> by the user): path shim + verification (no frozen file edited)
+016f920c48945a98338fce7fcd3daa11e06a0fa365a0d2eeda32742d70a6d4c0  scripts/with_paths.py
+deaf64368b2e0152b2893b71142b8d5ce6669677be978a1ad634637269d91f46  scripts/verify_moved_data.py
+bd7242d1d2232d4561027239847de2a9ff4e7d1be4b5204f880fbfa0d45f708a  scripts/launch_v22.sh
+3fa95de6132948020143ca0be09f81807c8b1011960af8d187962129fa0a1d2a  scripts/report_v21_v22.py
+a223444eb9e773de530e4d469fe91ac6902337ebe692137df175c610238a5ff6  data/plan_v22_SON_explor.jsonl
+# verification: out/moved_data_check.json — 1,500/1,500 thinking-ON gate prompts and 720/720 OFF prompts re-rendered from the moved data reproduce the stored n_prompt exactly; June template md5 d6c5bd0d1e797798f3a598dd7fd7f020 at the new path
+# v2.1 first pass: out/main/r31b_v21off.part1.jsonl (1,500 lines incl. 780 render:FileNotFoundError, kept for provenance); the 780 failed jobs were removed from r31b_v21off.jsonl and re-run at 18:16:17 via with_paths.py

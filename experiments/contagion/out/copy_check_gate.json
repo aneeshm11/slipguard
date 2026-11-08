@@ -1,0 +1,205 @@
+{
+ "gemma-4-31b:P1k1": {
+  "copy_corrupted": {
+   "n": 105,
+   "malformed": [
+    1.0,
+    0.9647,
+    1.0,
+    105
+   ]
+  },
+  "clean_retry": {
+   "n": 80,
+   "malformed": [
+    0.0,
+    -0.0,
+    0.0458,
+    80
+   ]
+  },
+  "same_content_other": {
+   "n": 10,
+   "malformed": [
+    0.1,
+    0.0179,
+    0.4042,
+    10
+   ]
+  },
+  "other_edit": {
+   "n": 68,
+   "malformed": [
+    0.2059,
+    0.1268,
+    0.3164,
+    68
+   ]
+  },
+  "unparsed_or_no_key": {
+   "n": 3,
+   "malformed": [
+    1.0,
+    0.4385,
+    1.0,
+    3
+   ]
+  },
+  "all_edits": {
+   "n": 266,
+   "malformed": [
+    0.4624,
+    0.4034,
+    0.5224,
+    266
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.8537,
+   0.7805,
+   0.9054,
+   123
+  ]
+ },
+ "gemma-4-31b:P3k1": {
+  "copy_corrupted": {
+   "n": 66,
+   "malformed": [
+    1.0,
+    0.945,
+    1.0,
+    66
+   ]
+  },
+  "clean_retry": {
+   "n": 49,
+   "malformed": [
+    0.0,
+    0.0,
+    0.0727,
+    49
+   ]
+  },
+  "same_content_other": {
+   "n": 19,
+   "malformed": [
+    0.3158,
+    0.1536,
+    0.5399,
+    19
+   ]
+  },
+  "other_edit": {
+   "n": 111,
+   "malformed": [
+    0.4324,
+    0.3441,
+    0.5253,
+    111
+   ]
+  },
+  "all_edits": {
+   "n": 245,
+   "malformed": [
+    0.4898,
+    0.4278,
+    0.5521,
+    245
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.55,
+   0.4608,
+   0.6361,
+   120
+  ]
+ },
+ "gemma-4-31b:P6k1": {
+  "same_content_other": {
+   "n": 1,
+   "malformed": [
+    1.0,
+    0.2065,
+    1.0,
+    1
+   ]
+  },
+  "other_edit": {
+   "n": 13,
+   "malformed": [
+    0.0769,
+    0.0137,
+    0.3331,
+    13
+   ]
+  },
+  "all_edits": {
+   "n": 14,
+   "malformed": [
+    0.1429,
+    0.0401,
+    0.3994,
+    14
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.0,
+   0.0,
+   0.6576,
+   2
+  ]
+ },
+ "gemma-4-31b:P7k1": {
+  "copy_corrupted": {
+   "n": 1,
+   "malformed": [
+    1.0,
+    0.2065,
+    1.0,
+    1
+   ]
+  },
+  "clean_retry": {
+   "n": 7,
+   "malformed": [
+    0.0,
+    0.0,
+    0.3543,
+    7
+   ]
+  },
+  "same_content_other": {
+   "n": 2,
+   "malformed": [
+    1.0,
+    0.3424,
+    1.0,
+    2
+   ]
+  },
+  "other_edit": {
+   "n": 3,
+   "malformed": [
+    0.0,
+    0.0,
+    0.5615,
+    3
+   ]
+  },
+  "all_edits": {
+   "n": 13,
+   "malformed": [
+    0.2308,
+    0.0818,
+    0.5026,
+    13
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.3333,
+   0.0615,
+   0.7923,
+   3
+  ]
+ }
+}

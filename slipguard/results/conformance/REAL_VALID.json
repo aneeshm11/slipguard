@@ -1,0 +1,13 @@
+{
+ "source": "workstream C's real valid Gemma 4 calls (experiments/conformance/work/real_valid/cases_real_valid.jsonl): every clean call in the logs, 165,336 distinct texts = 265,422 weighted",
+ "by_target": {
+  "gg.completion|EXACT|ok": 165336,
+  "gg.extract|EXACT|ok": 165336
+ },
+ "exact_distinct": {
+  "gg.completion": 165336,
+  "gg.extract": 165336
+ },
+ "distinct": 165336,
+ "weighted": 265422
+}

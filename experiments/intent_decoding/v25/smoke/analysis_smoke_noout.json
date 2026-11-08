@@ -1,0 +1,480 @@
+{
+ "prereg": "PREREG_v2.5_stackGain.md sha256 50f8a39505e752e7fd528415c7593fe898af1bdfb61fdd89d35fea37cf51d75f",
+ "F1_primary_source": "R1",
+ "cpu_checks": {
+  "N1": {
+   "n": 300,
+   "msgs_identical": 300,
+   "render_identical": 300,
+   "exceptions": []
+  },
+  "R1_render_identity": {
+   "n": 300,
+   "identical": 300,
+   "exceptions": []
+  },
+  "I2": {
+   "n": 600,
+   "identical": 600,
+   "exceptions": []
+  },
+  "Tcheck": {
+   "n": 300,
+   "last_is_tool": 300,
+   "on_identical": 300,
+   "off_plus_closed_thought": 300,
+   "appended_ids_seen": [
+    "[100, 45518, 107, 101]"
+   ],
+   "exceptions": []
+  }
+ },
+ "replay_status": {},
+ "parser_disagreements": {
+  "replay": 0,
+  "live_l1": 0,
+  "cases": []
+ },
+ "F1_skipped": {
+  "r1_missing_or_mismatch": 300
+ },
+ "F1_R1": {
+  "n_states": 0,
+  "STOCK": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "SLIPGUARD": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "discordant_STOCK_only": 0,
+  "discordant_SLIPGUARD_only": 0,
+  "mcnemar_one_sided_p": 1.0,
+  "RD_SLIPGUARD_minus_STOCK": null,
+  "RD_ci95": [
+   null,
+   null
+  ],
+  "relative_reduction": null,
+  "relative_reduction_ci95": [
+   null,
+   null
+  ]
+ },
+ "F1_L1_secondary": {
+  "n_states": 0,
+  "note": "not run / no records"
+ },
+ "F1_R1_sensitivity_excl_budget_forced": {
+  "excluded_states": [
+   "scikit-learn__scikit-learn-10443__S1:42"
+  ],
+  "n_states": 0,
+  "STOCK": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "SLIPGUARD": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "discordant_STOCK_only": 0,
+  "discordant_SLIPGUARD_only": 0,
+  "mcnemar_one_sided_p": 1.0,
+  "RD_SLIPGUARD_minus_STOCK": null,
+  "RD_ci95": [
+   null,
+   null
+  ],
+  "relative_reduction": null,
+  "relative_reduction_ci95": [
+   null,
+   null
+  ]
+ },
+ "no_harm": {
+  "N1": {
+   "holds": true,
+   "n": 300,
+   "msgs_identical": 300,
+   "render_identical": 300,
+   "exceptions": []
+  },
+  "N2": {
+   "samples_checked": 0,
+   "violations": 0,
+   "cases": [],
+   "holds": true
+  },
+  "N3": {
+   "holds": false,
+   "n_states": 0,
+   "STOCK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "discordant_STOCK_only": 0,
+   "discordant_SLIPGUARD_only": 0,
+   "mcnemar_one_sided_p": 1.0,
+   "RD_SLIPGUARD_minus_STOCK": null,
+   "RD_ci95": [
+    null,
+    null
+   ],
+   "relative_reduction": null,
+   "relative_reduction_ci95": [
+    null,
+    null
+   ]
+  },
+  "N4_P0_loud": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ],
+   "gain_sentence_must_state_it": false
+  }
+ },
+ "F2": {
+  "skipped": {
+   "missing": 600
+  },
+  "I2_identity": {
+   "n": 600,
+   "identical": 600,
+   "exceptions": []
+  },
+  "drift_unconditional": {
+   "n_states": 0,
+   "STOCK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "discordant_STOCK_only": 0,
+   "discordant_SLIPGUARD_only": 0,
+   "mcnemar_one_sided_p": 1.0,
+   "RD_SLIPGUARD_minus_STOCK": null,
+   "RD_ci95": [
+    null,
+    null
+   ],
+   "relative_reduction": null,
+   "relative_reduction_ci95": [
+    null,
+    null
+   ]
+  },
+  "closer_slip_harmful": {
+   "n_states": 0,
+   "STOCK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "discordant_STOCK_only": 0,
+   "discordant_SLIPGUARD_only": 0,
+   "mcnemar_one_sided_p": 1.0,
+   "RD_SLIPGUARD_minus_STOCK": null,
+   "RD_ci95": [
+    null,
+    null
+   ],
+   "relative_reduction": null,
+   "relative_reduction_ci95": [
+    null,
+    null
+   ]
+  },
+  "total_harmful": {
+   "n_states": 0,
+   "STOCK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "discordant_STOCK_only": 0,
+   "discordant_SLIPGUARD_only": 0,
+   "mcnemar_one_sided_p": 1.0,
+   "RD_SLIPGUARD_minus_STOCK": null,
+   "RD_ci95": [
+    null,
+    null
+   ],
+   "relative_reduction": null,
+   "relative_reduction_ci95": [
+    null,
+    null
+   ]
+  },
+  "drift_among_edits": {
+   "STOCK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   },
+   "SLIPGUARD": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     null,
+     null
+    ]
+   }
+  },
+  "SLIPGUARD_loud": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "live_first100_secondary": {
+   "n": 0,
+   "drift_edits": 0,
+   "edits": 0,
+   "closer_slips": 0,
+   "harmful": 0,
+   "loud": 0
+  },
+  "sensitivity_excl_budget_forced": {
+   "excluded_states": [
+    "django__django-14717__S1:9",
+    "pydata__xarray-6135__S1:19",
+    "pytest-dev__pytest-10356__S1:7",
+    "scikit-learn__scikit-learn-10377__S1:6",
+    "scikit-learn__scikit-learn-12733__S1:20",
+    "scikit-learn__scikit-learn-13780__S1:9",
+    "scikit-learn__scikit-learn-14706__S1:11",
+    "sympy__sympy-18189__S1:5"
+   ],
+   "drift_unconditional": {
+    "n_states": 0,
+    "STOCK": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "wilson95": [
+      null,
+      null
+     ]
+    },
+    "SLIPGUARD": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "wilson95": [
+      null,
+      null
+     ]
+    },
+    "discordant_STOCK_only": 0,
+    "discordant_SLIPGUARD_only": 0,
+    "mcnemar_one_sided_p": 1.0,
+    "RD_SLIPGUARD_minus_STOCK": null,
+    "RD_ci95": [
+     null,
+     null
+    ],
+    "relative_reduction": null,
+    "relative_reduction_ci95": [
+     null,
+     null
+    ]
+   },
+   "closer_slip_harmful": {
+    "n_states": 0,
+    "STOCK": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "wilson95": [
+      null,
+      null
+     ]
+    },
+    "SLIPGUARD": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "wilson95": [
+      null,
+      null
+     ]
+    },
+    "discordant_STOCK_only": 0,
+    "discordant_SLIPGUARD_only": 0,
+    "mcnemar_one_sided_p": 1.0,
+    "RD_SLIPGUARD_minus_STOCK": null,
+    "RD_ci95": [
+     null,
+     null
+    ],
+    "relative_reduction": null,
+    "relative_reduction_ci95": [
+     null,
+     null
+    ]
+   }
+  }
+ },
+ "F3": {
+  "skipped": {
+   "missing": 300
+  },
+  "Tcheck": {
+   "n": 300,
+   "last_is_tool": 300,
+   "on_identical": 300,
+   "off_plus_closed_thought": 300,
+   "appended_ids_seen": [
+    "[100, 45518, 107, 101]"
+   ],
+   "exceptions": []
+  },
+  "n_states": 0,
+  "STOCK": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "GUARDED": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "wilson95": [
+    null,
+    null
+   ]
+  },
+  "discordant_STOCK_only": 0,
+  "discordant_GUARDED_only": 0,
+  "mcnemar_one_sided_p": 1.0,
+  "RD_GUARDED_minus_STOCK": null,
+  "RD_ci95": [
+   null,
+   null
+  ],
+  "relative_reduction": null,
+  "relative_reduction_ci95": [
+   null,
+   null
+  ]
+ },
+ "holm": {
+  "H1": {
+   "p": 1.0,
+   "holm_p": 1.0
+  },
+  "H2a": {
+   "p": 1.0,
+   "holm_p": 1.0
+  },
+  "H2b": {
+   "p": 1.0,
+   "holm_p": 1.0
+  },
+  "H3": {
+   "p": 1.0,
+   "holm_p": 1.0
+  }
+ },
+ "verdicts": {
+  "F1": "FAILS",
+  "F1_no_harm_holds": false,
+  "H2a": "NOT SHOWN",
+  "H2b": "NOT SHOWN",
+  "F3": "NOT SHOWN",
+  "Tcheck_pass": true,
+  "L1_consistent_with_R1": null,
+  "L1_partial": null
+ }
+}

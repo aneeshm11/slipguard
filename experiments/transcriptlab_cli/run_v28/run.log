@@ -1,0 +1,34 @@
+
+$ /opt/envs/env_gemma/bin/python experiments/contagion/scripts/run_injection.py --manifest data/pnc/contexts/P-swebench-31b-S1-v1/manifest.json --meta experiments/contagion/data/confirmatory/meta_S1.jsonl --plan experiments/transcriptlab_cli/run_v28/plan.jsonl --out experiments/transcriptlab_cli/run_v28/gen.jsonl --template data/pnc/contexts/P-swebench-31b-S1-v1/chat_template.jinja --blind --conc 20 --base http://127.0.0.1:8376/v1 --model gemma-4-31b --tok models/gemma-4-31b-it-qat-w4a16-ct --max_model_len 32768
+profile S1 | edit tool edit_file | keys file_path old_string new_string
+plan 1200 done 0 todo 1200
+[17:39:05] done 50/1200 rate 0.47/s eta 0.68h
+[17:40:48] done 100/1200 rate 0.48/s eta 0.64h
+[17:42:41] done 150/1200 rate 0.46/s eta 0.63h
+[17:45:08] done 200/1200 rate 0.43/s eta 0.65h
+[17:47:18] done 250/1200 rate 0.42/s eta 0.63h
+[17:49:18] done 300/1200 rate 0.42/s eta 0.60h
+[17:52:08] done 350/1200 rate 0.39/s eta 0.60h
+[17:53:56] done 400/1200 rate 0.40/s eta 0.55h
+[17:56:17] done 450/1200 rate 0.40/s eta 0.53h
+[17:58:09] done 500/1200 rate 0.40/s eta 0.49h
+[18:00:34] done 550/1200 rate 0.39/s eta 0.46h
+[18:02:42] done 600/1200 rate 0.39/s eta 0.42h
+[18:04:17] done 650/1200 rate 0.40/s eta 0.38h
+[18:06:50] done 700/1200 rate 0.40/s eta 0.35h
+[18:09:22] done 750/1200 rate 0.39/s eta 0.32h
+[18:11:39] done 800/1200 rate 0.39/s eta 0.29h
+[18:13:58] done 850/1200 rate 0.39/s eta 0.25h
+[18:15:46] done 900/1200 rate 0.39/s eta 0.21h
+[18:17:30] done 950/1200 rate 0.39/s eta 0.18h
+[18:19:43] done 1000/1200 rate 0.39/s eta 0.14h
+[18:21:39] done 1050/1200 rate 0.39/s eta 0.11h
+[18:23:21] done 1100/1200 rate 0.40/s eta 0.07h
+[18:25:21] done 1150/1200 rate 0.40/s eta 0.03h
+[18:27:21] done 1200/1200 rate 0.40/s eta 0.00h
+finished 1200 in 50.1 min
+
+$ /opt/envs/env_gemma/bin/python experiments/contagion/scripts/run_injection.py --manifest data/pnc/contexts/P-swebench-31b-S1-v1/manifest.json --meta experiments/contagion/data/confirmatory/meta_S1.jsonl --plan experiments/transcriptlab_cli/run_v28/plan.jsonl --out experiments/transcriptlab_cli/run_v28/gen.jsonl --template data/pnc/contexts/P-swebench-31b-S1-v1/chat_template.jinja --blind --conc 20 --base http://127.0.0.1:8376/v1 --model gemma-4-31b --tok models/gemma-4-31b-it-qat-w4a16-ct --max_model_len 32768
+profile S1 | edit tool edit_file | keys file_path old_string new_string
+plan 1200 done 1200 todo 0
+finished 0 in 0.0 min

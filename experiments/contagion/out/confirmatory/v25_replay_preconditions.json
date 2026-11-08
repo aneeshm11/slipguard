@@ -1,0 +1,106 @@
+{
+ "renderer_sha256": "5ca5c62c889a7377d4d07bdb696bc9cbc796b5dbe18b6875c3a3de80d662715f",
+ "files": {
+  "out/main/rC31b_v2.jsonl": {
+   "sha256": "6eac134b2a603db02079e2a45f2d22aa4248c0660127e782a3b9b760e51a134b",
+   "per_arm": {
+    "P0k0": {
+     "records": 300,
+     "len_match": 300,
+     "starts_with_bos_text": 300,
+     "prompt_ends_<|channel>thought\\n": 300,
+     "s1_finish=stop": 300,
+     "s1_stop=49": 300,
+     "s2_finish=stop": 300,
+     "s2_stop=None": 300,
+     "budget_forced": 0,
+     "s1_tokens_eq_max_tokens": 0,
+     "temp=1.0,top_p=0.95": 300,
+     "server=http://127.0.0.1:8303/v1": 300,
+     "seed_matches_md5_rule": 300
+    },
+    "P1k1": {
+     "records": 300,
+     "len_match": 300,
+     "starts_with_bos_text": 300,
+     "prompt_ends_<|channel>thought\\n": 300,
+     "s1_finish=stop": 300,
+     "s1_stop=49": 300,
+     "s2_finish=stop": 300,
+     "s2_stop=None": 300,
+     "budget_forced": 0,
+     "s1_tokens_eq_max_tokens": 0,
+     "temp=1.0,top_p=0.95": 300,
+     "server=http://127.0.0.1:8303/v1": 300,
+     "seed_matches_md5_rule": 300
+    },
+    "P8ak1": {
+     "records": 300,
+     "len_match": 300,
+     "starts_with_bos_text": 300,
+     "prompt_ends_<|channel>thought\\n": 300,
+     "s1_finish=stop": 300,
+     "s1_stop=49": 300,
+     "s2_finish=stop": 300,
+     "s2_stop=None": 299,
+     "budget_forced": 1,
+     "s1_tokens_eq_max_tokens": 0,
+     "temp=1.0,top_p=0.95": 300,
+     "server=http://127.0.0.1:8303/v1": 300,
+     "seed_matches_md5_rule": 300,
+     "s2_stop=49": 1
+    }
+   }
+  },
+  "out/main/rO_v23.jsonl": {
+   "sha256": "2e26f403201ac0ebc1c2af64ba2eded87d8b6af00f168929f370e32c8e936b11",
+   "per_arm": {
+    "O0k0": {
+     "records": 600,
+     "len_match": 600,
+     "starts_with_bos_text": 600,
+     "prompt_ends_<|channel>thought\\n": 600,
+     "s1_finish=stop": 600,
+     "s1_stop=49": 600,
+     "s2_finish=stop": 600,
+     "s2_stop=None": 597,
+     "budget_forced": 3,
+     "s1_tokens_eq_max_tokens": 0,
+     "temp=1.0,top_p=0.95": 600,
+     "server=http://127.0.0.1:8303/v1": 600,
+     "seed_matches_md5_rule": 600,
+     "s2_stop=49": 3
+    },
+    "O1k0": {
+     "records": 600,
+     "len_match": 600,
+     "starts_with_bos_text": 600,
+     "prompt_ends_<|channel>thought\\n": 600,
+     "s1_finish=stop": 600,
+     "s1_stop=49": 600,
+     "s2_finish=stop": 600,
+     "s2_stop=None": 595,
+     "budget_forced": 5,
+     "s1_tokens_eq_max_tokens": 0,
+     "temp=1.0,top_p=0.95": 600,
+     "server=http://127.0.0.1:8303/v1": 600,
+     "seed_matches_md5_rule": 600,
+     "s2_stop=49": 5
+    }
+   }
+  }
+ },
+ "vllm_completion_add_special_tokens_default": true,
+ "tokenizer_bos": {
+  "with_special": [
+   2,
+   2202
+  ],
+  "without_special": [
+   2,
+   2202
+  ],
+  "bos_id": 2,
+  "add_bos_token": false
+ }
+}

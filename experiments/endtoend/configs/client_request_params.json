@@ -1,0 +1,16 @@
+{
+ "from_task": "smoke12b_base/base:rich_4006",
+ "harness_params": {
+  "model": "gemma-4-12b-it-qat-w4a16-ct",
+  "max_completion_tokens": 16384,
+  "temperature": 0.2,
+  "top_p": 0.95,
+  "chat_template_kwargs": {
+   "enable_thinking": true
+  },
+  "thinking_token_budget": 4096
+ },
+ "dropped_tools": [
+  "code_analyzer_agent"
+ ]
+}

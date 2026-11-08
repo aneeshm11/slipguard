@@ -1,0 +1,134 @@
+{
+ "PATCH": {
+  "bytes": 1556834,
+  "lines": 44857,
+  "patches": 1258
+ },
+ "LOGS": {
+  "thoughts": 319873,
+  "run_command:valid": 164813,
+  "valid_calls": 305170,
+  "read_file:valid": 89140,
+  "edit_file:valid": 31192,
+  "submit_patch:valid": 12738,
+  "read_file:malformed": 2052,
+  "write_file:valid": 6737,
+  "edit_file:malformed": 4270,
+  "get_status:valid": 320,
+  "solver:valid": 12,
+  "write_file:malformed": 356,
+  "run_command:malformed": 446,
+  "thoughts_with_edit_trigger_exact": 6,
+  "solver_a:valid": 46,
+  "solver_b:valid": 46,
+  "submit_patch:malformed": 12,
+  "edit_file:trigger_pending_exact": 4,
+  "ALL:trigger_pending_exact": 4,
+  "edit_file:trigger_pending_ws": 4,
+  "ALL:trigger_pending_ws": 4,
+  "edit_file:trigger_declared_exact": 4,
+  "ALL:trigger_declared_exact": 4,
+  "edit_file:trigger_declared_ws": 4,
+  "ALL:trigger_declared_ws": 4,
+  "run_skill_script:valid": 116,
+  "load_skill_resource:valid": 3,
+  "load_skill:valid": 7
+ },
+ "LOGS_examples": [
+  {
+   "file": "log-6ed3fa.jsonl",
+   "tool": "edit_file",
+   "arg": "new_string",
+   "variant": "pending_exact",
+   "ctx": "},\\n        ),\\n        to_unicode(text, encoding),\\n    )\\n\\\",old_string:"
+  },
+  {
+   "file": "log-6ed3fa.jsonl",
+   "tool": "edit_file",
+   "arg": "new_string",
+   "variant": "declared_exact",
+   "ctx": "},\\n        ),\\n        to_unicode(text, encoding),\\n    )\\n\\\",old_string:"
+  },
+  {
+   "file": "log-6ed3fa.jsonl",
+   "tool": "edit_file",
+   "arg": "new_string",
+   "variant": "pending_exact",
+   "ctx": "},\\n        ),\\n        to_unicode(text, encoding),\\n    )\\n\\\",old_string:"
+  },
+  {
+   "file": "log-6ed3fa.jsonl",
+   "tool": "edit_file",
+   "arg": "new_string",
+   "variant": "declared_exact",
+   "ctx": "},\\n        ),\\n        to_unicode(text, encoding),\\n    )\\n\\\",old_string:"
+  },
+  {
+   "file": "log-6ed3fa.jsonl",
+   "tool": "edit_file",
+   "arg": "new_string",
+   "variant": "pending_exact",
+   "ctx": "},\\n        ),\\n        to_unicode(text, encoding),\\n    )\\n\\\",old_string:"
+  },
+  {
+   "file": "log-6ed3fa.jsonl",
+   "tool": "edit_file",
+   "arg": "new_string",
+   "variant": "declared_exact",
+   "ctx": "},\\n        ),\\n        to_unicode(text, encoding),\\n    )\\n\\\",old_string:"
+  },
+  {
+   "file": "log-6ed3fa.jsonl",
+   "tool": "edit_file",
+   "arg": "new_string",
+   "variant": "pending_exact",
+   "ctx": "(text, encoding)\\n    keep = frozenset(keep)\\n    ret = []\\n\\\",old_string:"
+  },
+  {
+   "file": "log-6ed3fa.jsonl",
+   "tool": "edit_file",
+   "arg": "new_string",
+   "variant": "declared_exact",
+   "ctx": "(text, encoding)\\n    keep = frozenset(keep)\\n    ret = []\\n\\\",old_string:"
+  }
+ ],
+ "REPOS": {
+  "httpx_3672.tgz": {
+   "files": 73,
+   "bytes": 381406,
+   "lines": 12554
+  },
+  "requests_7505.tgz": {
+   "files": 102,
+   "bytes": 633403,
+   "lines": 18846
+  },
+  "rich_4079.tgz": {
+   "files": 523,
+   "bytes": 3798177,
+   "lines": 71395,
+   "generic_ws_matches": 3,
+   "generic_ws_files": 3
+  },
+  "fastapi_15800.tgz": {
+   "files": 2738,
+   "bytes": 13409530,
+   "lines": 362199,
+   "generic_ws_matches": 2,
+   "generic_ws_files": 1
+  }
+ },
+ "REPOS_examples": [],
+ "SITEPK": {
+  "files": 48488,
+  "bytes": 752225648,
+  "lines": 19308821,
+  "generic_ws_matches": 2339,
+  "generic_ws_files": 286,
+  "generic_exact_matches": 1911,
+  "generic_exact_files": 138,
+  "edit_ws_matches": 1,
+  "edit_ws_files": 1
+ },
+ "SITEPK_examples": []
+}

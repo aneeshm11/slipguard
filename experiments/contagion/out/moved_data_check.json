@@ -1,0 +1,8 @@
+{
+ "counts": {
+  "ON_discovery:match": 1500,
+  "OFF_done:match": 720
+ },
+ "mismatches": [],
+ "ROOT": "<competition-logs>"
+}

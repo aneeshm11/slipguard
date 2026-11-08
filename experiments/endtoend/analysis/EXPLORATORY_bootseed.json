@@ -1,0 +1,206 @@
+{
+ "_status": "EXPLORATORY reproducibility audit (frozen boot_paired evaluated at all 1,000 possible seeds); see docstring",
+ "B": 10000,
+ "population_31B": {
+  "Y1": {
+   "released": {
+    "ci95": [
+     -3.5973,
+     -1.031
+    ],
+    "p_boot": 0.0
+   },
+   "seeds_reproducing_released": [
+    92,
+    319,
+    491,
+    513
+   ],
+   "ci_lo_range": [
+    -3.6947,
+    -3.5442
+   ],
+   "ci_hi_range": [
+    -1.0664,
+    -0.9823
+   ],
+   "p_boot_max": 0.0,
+   "ci_hi_lt_0_for_all_seeds": true,
+   "ratio_deterministic": {
+    "ratio": 0.1109,
+    "ci95": [
+     0.0612,
+     0.2222
+    ]
+   },
+   "ratio_released": {
+    "ratio": 0.1109,
+    "ci95": [
+     0.0612,
+     0.2222
+    ]
+   }
+  },
+  "Y2": {
+   "released": {
+    "ci95": [
+     -3.6416,
+     -1.0487
+    ],
+    "p_boot": 0.0
+   },
+   "seeds_reproducing_released": [
+    216,
+    353,
+    436,
+    780,
+    882
+   ],
+   "ci_lo_range": [
+    -3.7168,
+    -3.5575
+   ],
+   "ci_hi_range": [
+    -1.0796,
+    -0.9956
+   ],
+   "p_boot_max": 0.0,
+   "ci_hi_lt_0_for_all_seeds": true,
+   "ratio_deterministic": {
+    "ratio": 0.1246,
+    "ci95": [
+     0.0704,
+     0.244
+    ]
+   },
+   "ratio_released": {
+    "ratio": 0.1246,
+    "ci95": [
+     0.0704,
+     0.244
+    ]
+   }
+  },
+  "success_rule_holds_for_all_seeds": true
+ },
+ "branches_31B": {
+  "n_branch_points": 135,
+  "released_n": 135,
+  "quar": {
+   "released": {
+    "ci95": [
+     -15.3778,
+     -7.8
+    ],
+    "p_boot": 0.0
+   },
+   "seeds_reproducing_released": [
+    523,
+    844
+   ],
+   "ci_lo_range": [
+    -15.5481,
+    -15.1926
+   ],
+   "ci_hi_range": [
+    -8.0148,
+    -7.7481
+   ],
+   "p_boot_max": 0.0,
+   "ci_hi_lt_0_for_all_seeds": true,
+   "ratio_deterministic": {
+    "ratio": 0.0153,
+    "ci95": [
+     0.0053,
+     0.0326
+    ]
+   },
+   "ratio_released": {
+    "ratio": 0.0153,
+    "ci95": [
+     0.0053,
+     0.0326
+    ]
+   },
+   "success_reduction_ge_50pct_holds_for_all_seeds": true
+  },
+  "ipd": {
+   "released": {
+    "ci95": [
+     -15.4593,
+     -8.0148
+    ],
+    "p_boot": 0.0
+   },
+   "seeds_reproducing_released": [
+    647
+   ],
+   "ci_lo_range": [
+    -15.637,
+    -15.2593
+   ],
+   "ci_hi_range": [
+    -8.0889,
+    -7.8222
+   ],
+   "p_boot_max": 0.0,
+   "ci_hi_lt_0_for_all_seeds": true,
+   "ratio_deterministic": {
+    "ratio": 0.0096,
+    "ci95": [
+     0.0018,
+     0.0219
+    ]
+   },
+   "ratio_released": {
+    "ratio": 0.0096,
+    "ci95": [
+     0.0018,
+     0.0219
+    ]
+   },
+   "success_reduction_ge_50pct_holds_for_all_seeds": true
+  },
+  "fullp": {
+   "released": {
+    "ci95": [
+     -15.4963,
+     -7.9852
+    ],
+    "p_boot": 0.0
+   },
+   "seeds_reproducing_released": [
+    49,
+    216,
+    262,
+    314,
+    531
+   ],
+   "ci_lo_range": [
+    -15.6741,
+    -15.3111
+   ],
+   "ci_hi_range": [
+    -8.1481,
+    -7.8889
+   ],
+   "p_boot_max": 0.0,
+   "ci_hi_lt_0_for_all_seeds": true,
+   "ratio_deterministic": {
+    "ratio": 0.0045,
+    "ci95": [
+     0.0009,
+     0.0094
+    ]
+   },
+   "ratio_released": {
+    "ratio": 0.0045,
+    "ci95": [
+     0.0009,
+     0.0094
+    ]
+   },
+   "success_reduction_ge_50pct_holds_for_all_seeds": true
+  }
+ }
+}

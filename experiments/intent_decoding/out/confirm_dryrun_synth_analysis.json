@@ -1,0 +1,1084 @@
+{
+ "source": "confirm_dryrun_synth.jsonl",
+ "prereg": "PREREG_v2 \u00a73.2 (C12-C15); F3c Holm",
+ "full": {
+  "n_states": 3,
+  "status": {
+   "call": 3,
+   "no_call": 0,
+   "render_mismatch": 0,
+   "error": 0
+  },
+  "n_calls": 3,
+  "forced": 0,
+  "C12_census_malformed": {
+   "all": {
+    "k": 0,
+    "n": 3,
+    "rate": 0.0,
+    "wilson95": [
+     5.551115123125783e-17,
+     0.5614970317550454
+    ]
+   },
+   "natural": {
+    "k": 0,
+    "n": 3,
+    "rate": 0.0,
+    "wilson95": [
+     5.551115123125783e-17,
+     0.5614970317550454
+    ]
+   },
+   "forced": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     NaN,
+     NaN
+    ]
+   },
+   "closer_slips": {
+    "k": 0,
+    "n": 3,
+    "rate": 0.0,
+    "wilson95": [
+     5.551115123125783e-17,
+     0.5614970317550454
+    ]
+   }
+  },
+  "C13_IPD_relred_malformed": {
+   "before": 0,
+   "still": 0,
+   "new": 0,
+   "relred_point": null,
+   "relred_wilson95": null,
+   "verdict": "NOT_ESTIMABLE"
+  },
+  "C14_byte_identity": {
+   "valid_calls": 3,
+   "changed": 0,
+   "changed_cases": [],
+   "verdict": "REPLICATES"
+  },
+  "C15_head_to_head_on_slips": {
+   "n_slips": 0,
+   "table": {
+    "IPD": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    },
+    "T1": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    },
+    "retry_x2": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    },
+    "retry_x2_lenient": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    },
+    "greedy": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    },
+    "grammar_CD": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    },
+    "lenient": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    },
+    "fail_loud": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    }
+   },
+   "verdicts": {
+    "IPD": "NOT_ESTIMABLE",
+    "T1": "NOT_ESTIMABLE",
+    "retry_x2": "NOT_ESTIMABLE",
+    "greedy": "NOT_ESTIMABLE",
+    "grammar_CD": "NOT_ESTIMABLE",
+    "IPD_minus_T1_clean": {
+     "diff": null,
+     "within_5pp": null
+    }
+   }
+  },
+  "F3c_IPD_vs_baselines_delivered_malformed": {
+   "lenient": {
+    "IPD_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "arm_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "rd_arm_minus_IPD": {
+     "rd": 0.0,
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "mcnemar_p": 1.0,
+    "discordant_IPD_only": 0,
+    "discordant_arm_only": 0,
+    "holm_p": 1.0
+   },
+   "T1": {
+    "IPD_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "arm_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "rd_arm_minus_IPD": {
+     "rd": 0.0,
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "mcnemar_p": 1.0,
+    "discordant_IPD_only": 0,
+    "discordant_arm_only": 0,
+    "holm_p": 1.0
+   },
+   "retry_x2_lenient": {
+    "IPD_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "arm_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "rd_arm_minus_IPD": {
+     "rd": 0.0,
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "mcnemar_p": 1.0,
+    "discordant_IPD_only": 0,
+    "discordant_arm_only": 0,
+    "holm_p": 1.0
+   },
+   "greedy": {
+    "IPD_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "arm_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "rd_arm_minus_IPD": {
+     "rd": 0.0,
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "mcnemar_p": 1.0,
+    "discordant_IPD_only": 0,
+    "discordant_arm_only": 0,
+    "holm_p": 1.0
+   },
+   "grammar_CD": {
+    "IPD_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "arm_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "rd_arm_minus_IPD": {
+     "rd": 0.0,
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "mcnemar_p": 1.0,
+    "discordant_IPD_only": 0,
+    "discordant_arm_only": 0,
+    "holm_p": 1.0
+   }
+  }
+ },
+ "half_H1": {
+  "n_states": 3,
+  "status": {
+   "call": 3,
+   "no_call": 0,
+   "render_mismatch": 0,
+   "error": 0
+  },
+  "n_calls": 3,
+  "forced": 0,
+  "C12_census_malformed": {
+   "all": {
+    "k": 0,
+    "n": 3,
+    "rate": 0.0,
+    "wilson95": [
+     5.551115123125783e-17,
+     0.5614970317550454
+    ]
+   },
+   "natural": {
+    "k": 0,
+    "n": 3,
+    "rate": 0.0,
+    "wilson95": [
+     5.551115123125783e-17,
+     0.5614970317550454
+    ]
+   },
+   "forced": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "wilson95": [
+     NaN,
+     NaN
+    ]
+   },
+   "closer_slips": {
+    "k": 0,
+    "n": 3,
+    "rate": 0.0,
+    "wilson95": [
+     5.551115123125783e-17,
+     0.5614970317550454
+    ]
+   }
+  },
+  "C13_IPD_relred_malformed": {
+   "before": 0,
+   "still": 0,
+   "new": 0,
+   "relred_point": null,
+   "relred_wilson95": null,
+   "verdict": "NOT_ESTIMABLE"
+  },
+  "C14_byte_identity": {
+   "valid_calls": 3,
+   "changed": 0,
+   "changed_cases": [],
+   "verdict": "REPLICATES"
+  },
+  "C15_head_to_head_on_slips": {
+   "n_slips": 0,
+   "table": {
+    "IPD": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    },
+    "T1": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    },
+    "retry_x2": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    },
+    "retry_x2_lenient": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    },
+    "greedy": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    },
+    "grammar_CD": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    },
+    "lenient": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    },
+    "fail_loud": {
+     "clean": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "malformed": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "silent": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     },
+     "loud": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "wilson95": [
+       NaN,
+       NaN
+      ]
+     }
+    }
+   },
+   "verdicts": {
+    "IPD": "NOT_ESTIMABLE",
+    "T1": "NOT_ESTIMABLE",
+    "retry_x2": "NOT_ESTIMABLE",
+    "greedy": "NOT_ESTIMABLE",
+    "grammar_CD": "NOT_ESTIMABLE",
+    "IPD_minus_T1_clean": {
+     "diff": null,
+     "within_5pp": null
+    }
+   }
+  },
+  "F3c_IPD_vs_baselines_delivered_malformed": {
+   "lenient": {
+    "IPD_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "arm_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "rd_arm_minus_IPD": {
+     "rd": 0.0,
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "mcnemar_p": 1.0,
+    "discordant_IPD_only": 0,
+    "discordant_arm_only": 0,
+    "holm_p": 1.0
+   },
+   "T1": {
+    "IPD_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "arm_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "rd_arm_minus_IPD": {
+     "rd": 0.0,
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "mcnemar_p": 1.0,
+    "discordant_IPD_only": 0,
+    "discordant_arm_only": 0,
+    "holm_p": 1.0
+   },
+   "retry_x2_lenient": {
+    "IPD_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "arm_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "rd_arm_minus_IPD": {
+     "rd": 0.0,
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "mcnemar_p": 1.0,
+    "discordant_IPD_only": 0,
+    "discordant_arm_only": 0,
+    "holm_p": 1.0
+   },
+   "greedy": {
+    "IPD_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "arm_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "rd_arm_minus_IPD": {
+     "rd": 0.0,
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "mcnemar_p": 1.0,
+    "discordant_IPD_only": 0,
+    "discordant_arm_only": 0,
+    "holm_p": 1.0
+   },
+   "grammar_CD": {
+    "IPD_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "arm_rate": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0,
+     "wilson95": [
+      5.551115123125783e-17,
+      0.5614970317550454
+     ]
+    },
+    "rd_arm_minus_IPD": {
+     "rd": 0.0,
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "mcnemar_p": 1.0,
+    "discordant_IPD_only": 0,
+    "discordant_arm_only": 0,
+    "holm_p": 1.0
+   }
+  }
+ }
+}

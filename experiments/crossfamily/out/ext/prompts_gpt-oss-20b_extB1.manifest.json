@@ -1,0 +1,12 @@
+{
+ "model": "gpt-oss-20b",
+ "n_jobs": 300,
+ "n_contexts": 300,
+ "arms": [
+  "C0"
+ ],
+ "render_errors": 0,
+ "source": "data/pnc/contexts/P-swebench-31b-S1-v1/manifest.json",
+ "source_md5": "4376e98a9d6209a585cfc0639d965df1",
+ "harness": "manifest"
+}

@@ -1,0 +1,416 @@
+{
+ "comment": "Files a freeze manifest lists that are NOT in this repository, with the hash each manifest recorded, so tools/verify_preregs.py can still tie the manifest entry to the withheld file; plus the model weights the release does not ship. Security material withheld until disclosure is listed under security_withheld (paths, counts and sha256 only; see SECURITY.md).",
+ "files": {
+  "experiments/contagion/data/plan_v21_off.jsonl": {
+   "bytes": 152930,
+   "md5": "09ef1ea51cffbe1e2ec7e1d29d5520f2",
+   "reason": "job plan over discovery-split (competition) contexts",
+   "sha256": "346b1af0509d20602af69e10d576209693f579f611ddd7c6dc3f6ea822d1a17e"
+  },
+  "experiments/contagion/data/plan_v22_H.jsonl": {
+   "bytes": 60452,
+   "md5": "77c0d40160a689d74f547c2d594bd39a",
+   "reason": "job plan over discovery-split (competition) contexts",
+   "sha256": "9110edd1167447f646809ce796d95038522985427a75ac9f12ceb6b610df4a37"
+  },
+  "experiments/contagion/data/plan_v22_S.jsonl": {
+   "bytes": 121204,
+   "md5": "59b9246443b7bd00c2cf24acb4058e55",
+   "reason": "job plan over discovery-split (competition) contexts",
+   "sha256": "b74b21fb62ef644e274cd9e2ac4a21ec0530b8a13284b7e3f0608278bb21c56c"
+  },
+  "experiments/contagion/data/plan_v22_SON_explor.jsonl": {
+   "bytes": 62852,
+   "md5": "24c2856beab090c7af15134bda179eaa",
+   "reason": "job plan over discovery-split (competition) contexts",
+   "sha256": "a223444eb9e773de530e4d469fe91ac6902337ebe692137df175c610238a5ff6"
+  },
+  "experiments/crossfamily/data/prompts_qwen3-32b.jsonl": {
+   "bytes": 89169623,
+   "md5": "e15d2ec8fdc040c32c74f5732d7b2f2f",
+   "reason": "renders of discovery-split (competition) contexts; also > 50 MB",
+   "sha256": "b2704f558be8f79a3c78129c1dc3c229f1f05acfdb111b5ec40690288ffc2414"
+  },
+  "experiments/crossfamily/data/prompts_qwen3-32b_heldout.jsonl": {
+   "bytes": 52527762,
+   "md5": "4da9074b6ec76d7a3310f90be352cd6e",
+   "reason": "renders of discovery-split (competition) contexts; also > 50 MB",
+   "sha256": "b2f266d5a02076bd2563ed322928a04009c9ecb0334cbbc7a2ac7018f8893428"
+  },
+  "experiments/crossfamily/data/prompts_qwen3-8b.jsonl": {
+   "bytes": 101204754,
+   "md5": "9e0788f602bea0d905021234f40b0b1d",
+   "reason": "renders of discovery-split (competition) contexts; also > 50 MB",
+   "sha256": "f347c8e86d445a625a521b408e9d0a9608c95df51b07130d722e45bdca051e6d"
+  },
+  "experiments/crossfamily/data/prompts_qwen3-8b_heldout.jsonl": {
+   "bytes": 52527762,
+   "md5": "4da9074b6ec76d7a3310f90be352cd6e",
+   "reason": "renders of discovery-split (competition) contexts; also > 50 MB",
+   "sha256": "b2f266d5a02076bd2563ed322928a04009c9ecb0334cbbc7a2ac7018f8893428"
+  },
+  "experiments/crossfamily/data/prompts_qwen3.5-9b.jsonl": {
+   "bytes": 105710107,
+   "md5": "bee853fa752df5add6023134dc1edff7",
+   "reason": "renders of discovery-split (competition) contexts; also > 50 MB",
+   "sha256": "4f7349caac03fcfd613bd12a7d82aefd8bd7b12cb1be3e9c6fb2ae32a7323355"
+  },
+  "experiments/crossfamily/data/prompts_qwen3.5-9b_heldout.jsonl": {
+   "bytes": 53326857,
+   "md5": "2b572477de1baeadd93b7a181dfc9917",
+   "reason": "renders of discovery-split (competition) contexts; also > 50 MB",
+   "sha256": "ab483baf24775d4290bd79b9336a40aba5f5f9a73e89c2198639984607fcedbe"
+  },
+  "experiments/endtoend/configs/client_system.txt": {
+   "bytes": 3951,
+   "md5": "17a57f3a03a238f03e93c75e40a72f47",
+   "reason": "client system prompt of unconfirmed provenance (not released until its provenance is confirmed)",
+   "sha256": "59904afe192954ded7c250db680cfcbaa862cad1c943afa49101e7b4e357dc80"
+  },
+  "experiments/endtoend/subs/sample_noadapter/agent.yaml": {
+   "bytes": 419,
+   "md5": "be45fafe8ba451eee9107a2a710761e8",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "de80dff58c1ab3e758a814b915c21113a16ddf632ac4d5fee238b8d6a1b6b5a8"
+  },
+  "experiments/endtoend/subs/sample_noadapter/configs/sampling.yaml": {
+   "bytes": 120,
+   "md5": "4f06cb0c4b126ac9d12665ccf80f7df0",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "3dab0b2506dae34ce92fef7b380d6073729104b23fe2cf66d44ac1d2f213aa6a"
+  },
+  "experiments/endtoend/subs/sample_noadapter/eval_config.yaml": {
+   "bytes": 407,
+   "md5": "3b4dc4f67fb34f67cc6df245cb9a5ed5",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "8f8c1d6f12fcc5e25e09043a6c819fc7379f5e94684e8f487a884737a95f9cab"
+  },
+  "experiments/endtoend/subs/sample_noadapter/prompts/analyzer.md": {
+   "bytes": 527,
+   "md5": "2fe8c6cca4ac68a31c3784f5a38e5a23",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "c762b062032cc8463015e589ad8b4f0e17296062e1b0ff1e78712eef9f5e2d43"
+  },
+  "experiments/endtoend/subs/sample_noadapter/prompts/system.md": {
+   "bytes": 3888,
+   "md5": "9917b5f1b3c37a76c55b0764e8c1c387",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "f1cbf7943ee9687382321b1dfd9cd88581d608c1c8b8e6ea61a763bd1a3234af"
+  },
+  "experiments/endtoend/subs/sample_noadapter/sub_agents/code_analyzer.yaml": {
+   "bytes": 342,
+   "md5": "2b02c511bc24043cb58cad67592b1358",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "73ff867103879db19d42ab2fd24673090793290e33170b06d2e377f3ae89b6d3"
+  },
+  "experiments/endtoend/subs/sample_noadapter_12b/agent.yaml": {
+   "bytes": 419,
+   "md5": "7a76a05a4fa51b29f221dd4790d46515",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "6a969dbf5cb6d4784ea2c513b44defc683070a0c61f2535570362ba91534bf1a"
+  },
+  "experiments/endtoend/subs/sample_noadapter_12b/configs/sampling.yaml": {
+   "bytes": 120,
+   "md5": "4f06cb0c4b126ac9d12665ccf80f7df0",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "3dab0b2506dae34ce92fef7b380d6073729104b23fe2cf66d44ac1d2f213aa6a"
+  },
+  "experiments/endtoend/subs/sample_noadapter_12b/eval_config.yaml": {
+   "bytes": 407,
+   "md5": "3b4dc4f67fb34f67cc6df245cb9a5ed5",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "8f8c1d6f12fcc5e25e09043a6c819fc7379f5e94684e8f487a884737a95f9cab"
+  },
+  "experiments/endtoend/subs/sample_noadapter_12b/prompts/analyzer.md": {
+   "bytes": 527,
+   "md5": "2fe8c6cca4ac68a31c3784f5a38e5a23",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "c762b062032cc8463015e589ad8b4f0e17296062e1b0ff1e78712eef9f5e2d43"
+  },
+  "experiments/endtoend/subs/sample_noadapter_12b/prompts/system.md": {
+   "bytes": 3888,
+   "md5": "9917b5f1b3c37a76c55b0764e8c1c387",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "f1cbf7943ee9687382321b1dfd9cd88581d608c1c8b8e6ea61a763bd1a3234af"
+  },
+  "experiments/endtoend/subs/sample_noadapter_12b/sub_agents/code_analyzer.yaml": {
+   "bytes": 342,
+   "md5": "80324f8ceaed4859323fd2e8dc24cd7b",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "d969d816565e8442e87dc5085cfe7375c4b70edf2cc7345bc6a135358cbbecd6"
+  },
+  "experiments/endtoend/subs/sample_noadapter_12b_b40/agent.yaml": {
+   "bytes": 419,
+   "md5": "7a76a05a4fa51b29f221dd4790d46515",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "6a969dbf5cb6d4784ea2c513b44defc683070a0c61f2535570362ba91534bf1a"
+  },
+  "experiments/endtoend/subs/sample_noadapter_12b_b40/configs/sampling.yaml": {
+   "bytes": 120,
+   "md5": "4f06cb0c4b126ac9d12665ccf80f7df0",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "3dab0b2506dae34ce92fef7b380d6073729104b23fe2cf66d44ac1d2f213aa6a"
+  },
+  "experiments/endtoend/subs/sample_noadapter_12b_b40/eval_config.yaml": {
+   "bytes": 407,
+   "md5": "9a0ea4d1ecfab907c4d8e28dd1a02cbe",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "20c1e5ea2e1bd028e1ef36f2dc0fd43517650bc2915a637754c5dc001cdb03aa"
+  },
+  "experiments/endtoend/subs/sample_noadapter_12b_b40/prompts/analyzer.md": {
+   "bytes": 527,
+   "md5": "2fe8c6cca4ac68a31c3784f5a38e5a23",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "c762b062032cc8463015e589ad8b4f0e17296062e1b0ff1e78712eef9f5e2d43"
+  },
+  "experiments/endtoend/subs/sample_noadapter_12b_b40/prompts/system.md": {
+   "bytes": 3888,
+   "md5": "9917b5f1b3c37a76c55b0764e8c1c387",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "f1cbf7943ee9687382321b1dfd9cd88581d608c1c8b8e6ea61a763bd1a3234af"
+  },
+  "experiments/endtoend/subs/sample_noadapter_12b_b40/sub_agents/code_analyzer.yaml": {
+   "bytes": 342,
+   "md5": "80324f8ceaed4859323fd2e8dc24cd7b",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "d969d816565e8442e87dc5085cfe7375c4b70edf2cc7345bc6a135358cbbecd6"
+  },
+  "experiments/endtoend/subs/sample_noadapter_b40/agent.yaml": {
+   "bytes": 419,
+   "md5": "be45fafe8ba451eee9107a2a710761e8",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "de80dff58c1ab3e758a814b915c21113a16ddf632ac4d5fee238b8d6a1b6b5a8"
+  },
+  "experiments/endtoend/subs/sample_noadapter_b40/configs/sampling.yaml": {
+   "bytes": 120,
+   "md5": "4f06cb0c4b126ac9d12665ccf80f7df0",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "3dab0b2506dae34ce92fef7b380d6073729104b23fe2cf66d44ac1d2f213aa6a"
+  },
+  "experiments/endtoend/subs/sample_noadapter_b40/eval_config.yaml": {
+   "bytes": 407,
+   "md5": "9a0ea4d1ecfab907c4d8e28dd1a02cbe",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "20c1e5ea2e1bd028e1ef36f2dc0fd43517650bc2915a637754c5dc001cdb03aa"
+  },
+  "experiments/endtoend/subs/sample_noadapter_b40/prompts/analyzer.md": {
+   "bytes": 527,
+   "md5": "2fe8c6cca4ac68a31c3784f5a38e5a23",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "c762b062032cc8463015e589ad8b4f0e17296062e1b0ff1e78712eef9f5e2d43"
+  },
+  "experiments/endtoend/subs/sample_noadapter_b40/prompts/system.md": {
+   "bytes": 3888,
+   "md5": "9917b5f1b3c37a76c55b0764e8c1c387",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "f1cbf7943ee9687382321b1dfd9cd88581d608c1c8b8e6ea61a763bd1a3234af"
+  },
+  "experiments/endtoend/subs/sample_noadapter_b40/sub_agents/code_analyzer.yaml": {
+   "bytes": 342,
+   "md5": "2b02c511bc24043cb58cad67592b1358",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "73ff867103879db19d42ab2fd24673090793290e33170b06d2e377f3ae89b6d3"
+  },
+  "experiments/endtoend/subs/sample_noadapter_e4b/agent.yaml": {
+   "bytes": 419,
+   "md5": "292902c9bd10834faa7084dde3865ab0",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "427db5caff7a17a3280a890c452f00f5d72d70cc6df2306a71b858445ac3c9fa"
+  },
+  "experiments/endtoend/subs/sample_noadapter_e4b/configs/sampling.yaml": {
+   "bytes": 120,
+   "md5": "4f06cb0c4b126ac9d12665ccf80f7df0",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "3dab0b2506dae34ce92fef7b380d6073729104b23fe2cf66d44ac1d2f213aa6a"
+  },
+  "experiments/endtoend/subs/sample_noadapter_e4b/eval_config.yaml": {
+   "bytes": 407,
+   "md5": "3b4dc4f67fb34f67cc6df245cb9a5ed5",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "8f8c1d6f12fcc5e25e09043a6c819fc7379f5e94684e8f487a884737a95f9cab"
+  },
+  "experiments/endtoend/subs/sample_noadapter_e4b/prompts/analyzer.md": {
+   "bytes": 527,
+   "md5": "2fe8c6cca4ac68a31c3784f5a38e5a23",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "c762b062032cc8463015e589ad8b4f0e17296062e1b0ff1e78712eef9f5e2d43"
+  },
+  "experiments/endtoend/subs/sample_noadapter_e4b/prompts/system.md": {
+   "bytes": 3888,
+   "md5": "9917b5f1b3c37a76c55b0764e8c1c387",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "f1cbf7943ee9687382321b1dfd9cd88581d608c1c8b8e6ea61a763bd1a3234af"
+  },
+  "experiments/endtoend/subs/sample_noadapter_e4b/sub_agents/code_analyzer.yaml": {
+   "bytes": 342,
+   "md5": "b6ea3596e0e3c9bfd8f785abb6e226df",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "f4987f29c30ce818670bc3f9eeb76d6cac5d776d1b1758e8d6adf258d96bec52"
+  },
+  "experiments/endtoend/subs/sample_noadapter_e4b_b40/agent.yaml": {
+   "bytes": 419,
+   "md5": "292902c9bd10834faa7084dde3865ab0",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "427db5caff7a17a3280a890c452f00f5d72d70cc6df2306a71b858445ac3c9fa"
+  },
+  "experiments/endtoend/subs/sample_noadapter_e4b_b40/configs/sampling.yaml": {
+   "bytes": 120,
+   "md5": "4f06cb0c4b126ac9d12665ccf80f7df0",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "3dab0b2506dae34ce92fef7b380d6073729104b23fe2cf66d44ac1d2f213aa6a"
+  },
+  "experiments/endtoend/subs/sample_noadapter_e4b_b40/eval_config.yaml": {
+   "bytes": 407,
+   "md5": "9a0ea4d1ecfab907c4d8e28dd1a02cbe",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "20c1e5ea2e1bd028e1ef36f2dc0fd43517650bc2915a637754c5dc001cdb03aa"
+  },
+  "experiments/endtoend/subs/sample_noadapter_e4b_b40/prompts/analyzer.md": {
+   "bytes": 527,
+   "md5": "2fe8c6cca4ac68a31c3784f5a38e5a23",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "c762b062032cc8463015e589ad8b4f0e17296062e1b0ff1e78712eef9f5e2d43"
+  },
+  "experiments/endtoend/subs/sample_noadapter_e4b_b40/prompts/system.md": {
+   "bytes": 3888,
+   "md5": "9917b5f1b3c37a76c55b0764e8c1c387",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "f1cbf7943ee9687382321b1dfd9cd88581d608c1c8b8e6ea61a763bd1a3234af"
+  },
+  "experiments/endtoend/subs/sample_noadapter_e4b_b40/sub_agents/code_analyzer.yaml": {
+   "bytes": 342,
+   "md5": "b6ea3596e0e3c9bfd8f785abb6e226df",
+   "reason": "the competition's sample submission (Kaggle competition terms; not ours to redistribute)",
+   "sha256": "f4987f29c30ce818670bc3f9eeb76d6cac5d776d1b1758e8d6adf258d96bec52"
+  },
+  "experiments/quant_margins/wsa/adapters/repairA/adapter_model.safetensors": {
+   "bytes": 4354832,
+   "md5": "4209850d92f98e5e30aa4a359b0dc454",
+   "reason": "model weights (LoRA delta on a Gemma 4 checkpoint, Gemma terms): a registered repair candidate that did not pass its gate; we ship the audit, not a repair (certificates and offline predictions ship)",
+   "sha256": "6b016ba0f81068d48c4373d0523ae877fd7a80837d5fa28c7cdae846a3a22db8"
+  },
+  "experiments/quant_margins/wsa/adapters/repairB/adapter_model.safetensors": {
+   "bytes": 4354832,
+   "md5": "440d0dda4082aee852f658b48f826305",
+   "reason": "model weights (LoRA delta on a Gemma 4 checkpoint, Gemma terms): a registered repair candidate that did not pass its gate; we ship the audit, not a repair (certificates and offline predictions ship)",
+   "sha256": "87b288ee29797c06f1a4be86d8412e013cd9595d5437a783332b0a4a85558274"
+  },
+  "experiments/quant_margins/wsa/adapters/repairC/adapter_model.safetensors": {
+   "bytes": 4301072,
+   "md5": "c0e23062ebd73e488af53289b30e30fe",
+   "reason": "model weights (LoRA delta on a Gemma 4 checkpoint, Gemma terms): a registered repair candidate that did not pass its gate; we ship the audit, not a repair (certificates and offline predictions ship)",
+   "sha256": "da52a8c0fdf68b7e7b319cef70f2cd49de72c792f9c1e0bbe8608bc24dc4be83"
+  },
+  "experiments/quant_margins/wsa/adapters/repairC_eval/adapter_model.safetensors": {
+   "bytes": 4301072,
+   "md5": "c0e23062ebd73e488af53289b30e30fe",
+   "reason": "model weights (LoRA delta on a Gemma 4 checkpoint, Gemma terms): a registered repair candidate that did not pass its gate; we ship the audit, not a repair (certificates and offline predictions ship)",
+   "sha256": "da52a8c0fdf68b7e7b319cef70f2cd49de72c792f9c1e0bbe8608bc24dc4be83"
+  },
+  "experiments/quant_margins/wsa/adapters/smoke_rand/adapter_model.safetensors": {
+   "bytes": 430344,
+   "md5": "b3ee3479fe036be7375eccff2f419103",
+   "reason": "model weights (LoRA delta on a Gemma 4 checkpoint, Gemma terms): a registered repair candidate that did not pass its gate; we ship the audit, not a repair (certificates and offline predictions ship)",
+   "sha256": "faccb28591eef2125fe9706ecedd7d4637bc51ee86b4ad9734da89382412ea3c"
+  },
+  "experiments/quant_margins/wsa/adapters/smoke_zero/adapter_model.safetensors": {
+   "bytes": 430344,
+   "md5": "5b85a1328b8119424dbc474eafc800e1",
+   "reason": "model weights (LoRA delta on a Gemma 4 checkpoint, Gemma terms): a registered repair candidate that did not pass its gate; we ship the audit, not a repair (certificates and offline predictions ship)",
+   "sha256": "800362334d49c7dd8a9d19448623095ed0ef3ccbb20056054ee56e9ea7434d64"
+  }
+ },
+ "security_withheld": {
+  "comment": "Security-relevant parser-defect material withheld from release v1.0 until coordinated disclosure (DISCLOSURE_CHECKLIST.md \u00a73; 2026-11-06 user decision; the Writeup carries a \"Note to the organizers\"). Counts, class ids and sha256 only -- no input strings. See SECURITY.md and conformance/SUMMARY.json.",
+  "removed_from_shipped_files": {
+   "experiments/conformance/gemmaproto/gen.py": [
+    "TRICKY_FRAGMENTS injection fragments neutralized (M2)"
+   ],
+   "experiments/conformance/history/results_history.json": [
+    "F2 history-conversion injection inputs redacted; counts and verdicts kept (B2)",
+    "F1 harness-text reference windows masked (M9)"
+   ],
+   "experiments/conformance/results.json": [
+    "T6 template-injection payloads replaced by counts (release_hygiene B1)",
+    "F2 history-conversion CALL/TURN-token injection inputs redacted; counts and verdicts kept (B2)",
+    "vllm019_infinite_loop_probe excerpt reduced to {\"hang\": true, ...} (B3)",
+    "F1 harness-text reference windows masked (competition-harness docstrings, M9)"
+   ],
+   "experiments/endtoend/configs/client_tools.json": [
+    "competition-harness tool descriptions stripped (M9)"
+   ],
+   "experiments/endtoend/tests/test_protocol.py": [
+    "stray-']' nested-bracket hang-input checks dropped from the public copy; the patch and its assertions kept (B4)"
+   ],
+   "slipguard/src/slipguard/_vendor/gemmaproto/gen.py": [
+    "TRICKY_FRAGMENTS injection fragments neutralized; recorded in _frozen/MANIFEST.json (M2)"
+   ]
+  },
+  "withheld_files": {
+   "experiments/conformance/logs/template_equivalence_july.json": {
+    "bytes": 4311,
+    "reason": "template-equivalence T6 payloads (July template)",
+    "sha256": "4c8ba95603d555ecf82855274a4964d12063ecf43641b36e24bc03a0b075b158"
+   },
+   "experiments/conformance/logs/template_equivalence_june.json": {
+    "bytes": 4243,
+    "reason": "template-equivalence T6 payloads (June template)",
+    "sha256": "153691385446b57f8439d982c342587f6a63a31b8fd67add49f0ddd1586012a0"
+   },
+   "experiments/conformance/repros/repros.jsonl": {
+    "bytes": 200298,
+    "reason": "minimal reproduction inputs for the withheld parser-defect classes",
+    "sha256": "b62b739c7fc5117f1c034c76352ca136540ccf2be662a2fcf7831cff17d96e5c"
+   },
+   "experiments/conformance/repros/vllm019_hang_memory.out": {
+    "bytes": 1138,
+    "reason": "vLLM 0.19.1 hang/memory probe (output excerpt)",
+    "sha256": "83418c0b89a216ed9dd06976570808e313a599dea377dc5d2a21d03b7c09f710"
+   },
+   "experiments/conformance/repros/vllm019_hang_memory.py": {
+    "bytes": 1858,
+    "reason": "vLLM 0.19.1 hang/memory probe (source)",
+    "sha256": "65d109521a38f201e992d47479024bc0a2ca990610022fd3ac0b2afc424d1fb6"
+   },
+   "experiments/conformance/repros/vllm019_hang_probe.out": {
+    "bytes": 449,
+    "reason": "vLLM 0.19.1 hang probe (output excerpt)",
+    "sha256": "e8b61f6716e19e5cecd95d595209522d7059eb549a9462c4513fea3edef8babd"
+   },
+   "experiments/conformance/repros/vllm019_hang_probe.py": {
+    "bytes": 1295,
+    "reason": "vLLM 0.19.1 hang probe (source)",
+    "sha256": "d3d083d84e24b5955a9d272e1dbf02398b545f830dfbc3252711a59655232a02"
+   },
+   "experiments/conformance/results/scaling_vllm_env_gemma.json": {
+    "bytes": 26392,
+    "reason": "quadratic-scaling raw inputs (0.19.1 env)",
+    "sha256": "65603981493c6d91383087106410a3ea466dc936523e472b5bc2599e5ed5ecf5"
+   },
+   "experiments/conformance/results/scaling_vllm_env_vllm30.json": {
+    "bytes": 14366,
+    "reason": "quadratic-scaling raw inputs (0.30 env)",
+    "sha256": "1e51906da4376eac3995dee20b3be33d5e25f648be2a6279c921a8729f5c2ccb"
+   },
+   "experiments/conformance/results/scaling_vllm_env_vllm31.json": {
+    "bytes": 27343,
+    "reason": "quadratic-scaling raw inputs (0.31 env)",
+    "sha256": "5b0fe8c2527703a67077972c58803ca45e6a1883ebb59f912f2384dcad73d5b2"
+   },
+   "experiments/conformance/work/cases_all.jsonl": {
+    "bytes": 62692009,
+    "reason": "the full 13,573-case conformance corpus (security + discovery-derived)",
+    "sha256": "c4ea4da6c7358b279100c6d6846eab150dd18c33fcd17d07da14c072e0ce5bfe"
+   }
+  },
+  "withheld_repro_classes": [
+   "CALL_INJECTION_IN_STRING",
+   "CTRL_CLOSE_IN_STRING",
+   "TURN_TOKEN_IN_STRING",
+   "QUADRATIC_CODE_PAYLOAD",
+   "QUADRATIC_MANY_ARGS",
+   "DEEP_NESTING",
+   "HANG_NESTED_BRACKET"
+  ]
+ }
+}

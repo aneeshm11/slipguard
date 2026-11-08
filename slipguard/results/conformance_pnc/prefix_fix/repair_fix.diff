@@ -1,0 +1,35 @@
+--- a/src/slipguard/parse/repair_text.py (pre-fix: as run 11:20 UTC Nov 5)
++++ b/src/slipguard/parse/repair_text.py (post-fix)
+@@ -1,5 +1,5 @@
+ """Opt-in, text-only repair of a malformed call (per-call mode). Never silent: the repair is recorded, the call is
+-marked (``warnings == ['repaired']``; the vLLM plugin gives it an id ending in ``-ggrepaired``), and nothing after
++marked (``warnings == ['repaired', 'repair_rule:<kwarg|closer>']``; the vLLM plugin gives it an id ending in ``-ggrepaired``), and nothing after
+ the repaired call is delivered as a call.
+ 
+ Scope (two rules, both conservative):
+@@ -15,9 +15,13 @@
+ delimiters, Python literals and everything else stay loud. The repaired call must be strictly valid under B's guard
+ and parse back strictly to the same values.
+ 
+-Measured on workstream C's suite (slips for which B's grammar has a candidate): real slips 1,429 repaired exactly,
+-0 wrongly, 158 left loud; synthetic mutants 705 / 0 / 473 and E-family 309 / 0 / 51 (the prior is estimated from
+-the same logs as the real slips; the synthetic families are out of sample).
++An empty or whitespace-only run is a MISSING closer, not a look-alike: it stays loud (whether the whitespace belongs to
++the value is undecidable from the text; on public PNC traffic one such cut disagreed with the model's own retry).
++
++Measured on workstream C's suite (slips for which B's grammar has a candidate): real slips 1,419 repaired exactly,
++0 wrongly, 168 left loud; synthetic mutants 705 / 0 / 473 and E-family 309 / 0 / 51 (the prior is estimated from
++the same logs as the real slips; the synthetic families are out of sample). On public PNC turns whose intent is
++known from a later clean retry: see results/conformance_pnc/.
+ 
+ Text-only repair is ill-posed in general (a string may legitimately contain "`,old_string:"); token-level repair
+ (IPD, `slipguard proxy`) is preferred whenever the model is reachable.
+@@ -88,6 +92,8 @@
+                                      sum(len(ct) for _, _, ct in c.cuts)))
+         if whole is None or whole != by_prior:
+             return None                       # ambiguous without likelihoods: stay loud
++        if any(not ct.strip() for c in cands if c.text(name) == whole for _, _, ct in c.cuts):
++            return None                       # an empty / whitespace-only run is a MISSING closer, not a look-alike
+         return whole
+ 
+     return repair

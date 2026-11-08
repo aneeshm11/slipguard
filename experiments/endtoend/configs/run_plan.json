@@ -1,0 +1,104 @@
+{
+ "name": "Workstream E 31B end-to-end pilot: baseline vs protocol fixes, official harness + no-nudge client",
+ "status": "READY; waiting for 31B capacity (PI: :8300 = A, :8302 = B until their gate sets finish, ~2026-11-05 06:00 UTC)",
+ "launch": "bash run_pilot.sh <released_31B_backend_v1_url> gemma-4-31b p31a",
+ "model": "gemma-4-31b-it-qat-w4a16-ct (served name gemma-4-31b); vLLM 0.19.1 server as started by tools/serve_plan.sh (tool parser gemma4, reasoning parser gemma4, NO --reasoning-config -> thinking budget emulated by the proxy)",
+ "proxy": {
+  "port": 8420,
+  "max_backend_conc": 32,
+  "logdir": "logs/proxy_<tag>",
+  "budget_slack": 1536,
+  "max_interventions": 8,
+  "cfgs": {
+   "base": "engine mode, all fixes off (vLLM-faithful rendering + parsing; thinking budget emulated)",
+   "full": "canonical argument order + history quarantine + intent-preserving decoding (B's closure rule, opener-confirmed) + post-hoc repair"
+  }
+ },
+ "tasks": {
+  "file": "configs/pilot_tasks.txt",
+  "n": 40,
+  "seed": 20261104,
+  "eligibility": "official Phase-2 verification in our Docker sandbox with per-task wheel sets: gold patch resolves AND empty patch does not (runs/gold_routed)",
+  "sampling": "stratified toward the public repo mix (fastapi 67 / rich 48 / requests 13 / httpx 1), one shared random order for all conditions"
+ },
+ "conditions": [
+  {
+   "name": "H-base",
+   "client": "official swegemma 0.2.11 harness (ADK LlmAgent + AgentTool sub-agent, ToolErrorPlugin, 3 continuation nudges, compaction 14,336)",
+   "proxy_cfg": "base"
+  },
+  {
+   "name": "H-full",
+   "client": "same",
+   "proxy_cfg": "full"
+  },
+  {
+   "name": "C-base",
+   "client": "no-nudge ReAct client (same system prompt, 9 swegemma tools, sampling, sandbox, verification; episode ends at the first response without a tool call; no LLM compaction, no error-recovery prompts; context bounded by observation masking: when the last request used >24,000 tokens, all but the last 6 tool outputs are replaced by a placeholder and reasoning of all but the last 6 assistant turns is dropped)",
+   "proxy_cfg": "base"
+  },
+  {
+   "name": "C-full",
+   "client": "no-nudge ReAct client (same system prompt, 9 swegemma tools, sampling, sandbox, verification; episode ends at the first response without a tool call; no LLM compaction, no error-recovery prompts; context bounded by observation masking: when the last request used >24,000 tokens, all but the last 6 tool outputs are replaced by a placeholder and reasoning of all but the last 6 assistant turns is dropped)",
+   "proxy_cfg": "full"
+  }
+ ],
+ "submission": "subs/sample_noadapter = data/comp/sample_submission without the two LoRA adapters (adapter weights in the sample are placeholders for the 31B; our server has no LoRA): temperature 0.2, top_p 0.95, max_output_tokens 16384, thinking_budget 4096, include_thoughts true",
+ "budgets": {
+  "max_tool_calls": 50,
+  "max_turns": 100,
+  "timeout_seconds": 300,
+  "max_time_minutes": 120,
+  "note": "official inference.py defaults are 100 calls / 60 min / 500 turns; 120 min wall is a non-binding safety cap on a shared H100 (emulated 4xL4 time is reported from tokens)"
+ },
+ "seeds": "no sampling seed (harness default: vLLM random); one attempt per task x condition, paired by task; if time allows a second replicate with the same plan and tag p31b",
+ "concurrency": {
+  "sandboxes_total": 16,
+  "per_run": 4,
+  "runs_concurrent": 4,
+  "rationale": "all four conditions run at the same time on the same task order so server load / time-of-day affect them equally; <= 16 Docker sandboxes; <= 32 backend requests (proxy semaphore)"
+ },
+ "metrics": [
+  "resolve rate (Wilson 95% CI) + paired McNemar exact test per contrast",
+  "malformed tool calls emitted / delivered, per tool and overall (task-cluster bootstrap 95% CI + Wilson)",
+  "first-edit slip rate; edit slip rate by number of malformed calls already in history (contagion buckets)",
+  "IPD repairs / rejections / false alarms; post-hoc repairs; quarantine actions",
+  "tool calls, LLM calls, wall time, emulated 4xL4 time, prompt/generated tokens (bootstrap CIs; paired differences)",
+  "no-nudge client: episode end reasons (submitted / no tool call / budgets)"
+ ],
+ "contrasts": [
+  "H-base vs H-full",
+  "C-base vs C-full",
+  "H-base vs C-base (how much the official harness routes around failures)"
+ ],
+ "analysis": "analysis/analyze.py --runs runs/p31a_H_base runs/p31a_H_full runs/p31a_C_base runs/p31a_C_full --proxy-logs logs/proxy_p31a --pairs 0:1 2:3 0:2 --out analysis/p31a.json",
+ "expected_duration": "to be filled from the 12B smoke throughput",
+ "stop": "systemctl --user stop $(systemctl --user list-units --type=scope --no-legend 'ap-e2e-p31a*' | awk '{print $1}')",
+ "operational_rules": [
+  "never restart the proxy while runs are in flight (a 12B smoke task died with litellm InternalServerError when the proxy was restarted; ADK retries did not cover it)",
+  "one proxy per backend; each run writes its own out dir (no two processes append to the same results file)",
+  "no prompt_logprobs anywhere (PI rule); IPD scoring uses forced max_tokens=1 generation logprobs"
+ ],
+ "ipd_final": "IPD(i+) = VERIFY-THEN-REPAIR (workstream B's reference algorithm; B's strict guard + site finder vendored byte-identical, proxy/vendor_b_gemma_protocol.py): turn generated uninterrupted; strictly valid calls delivered byte-identical (P1); first non-strictly-valid call rolled back to its left-most site (rules closer + opener, whitespace-tolerant, declared keys only), <|\"|> inserted (closer cut by B's noisy-channel rule), resumed; <= 4 rounds per call; guarded post-hoc fallback; quarantine never rewrites strictly valid calls",
+ "pilots": {
+  "p12a": {
+   "model": "gemma-4-12b-it-qat-w4a16-ct (:8301, served gemma-4-12b)",
+   "sessions": "4 arms x 2 = 8 (PI cap)",
+   "proxy_port": 8432,
+   "started": "2026-11-04 11:08:02 UTC",
+   "code_versions": "runs/p12a_code_versions.txt",
+   "aborted_attempts_not_used": [
+    "runs/invalid_p12a_bodybug (proxy logging bug)",
+    "runs/invalid_p12a_closeronly (IPD lacked opener rule)",
+    "runs/invalid_p12a_restart3 (client lacked context policy; clean restart of all arms)"
+   ]
+  },
+  "p4a": {
+   "model": "gemma-4-e4b-it-qat-w4a16-ct (:8311, served gemma-4-e4b)",
+   "sessions": "4 arms x 1 = 4 (PI cap for E4B)",
+   "proxy_port": 8433,
+   "started": "2026-11-04 11:11:12 UTC",
+   "code_versions": "runs/p4a_code_versions.txt (identical to p12a)"
+  }
+ }
+}

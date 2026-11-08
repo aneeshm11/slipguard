@@ -1,0 +1,1364 @@
+{
+ "model": "qwen3-8b",
+ "n_records": 2400,
+ "errors": {},
+ "arms": {
+  "C0": {
+   "n": 600,
+   "P_call": [
+    0.88,
+    0.8516,
+    0.9036,
+    600
+   ],
+   "P_edit": [
+    0.7133,
+    0.6759,
+    0.7481,
+    600
+   ],
+   "P_malformed_edit_uncond": [
+    0.0267,
+    0.0165,
+    0.0429,
+    600
+   ],
+   "P_malformed_given_edit": [
+    0.0374,
+    0.0231,
+    0.0599,
+    428
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0303,
+    0.0187,
+    0.0487,
+    528
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0267,
+    0.0165,
+    0.0429,
+    600
+   ],
+   "P_loud_edit_uncond": [
+    0.0217,
+    0.0127,
+    0.0367,
+    600
+   ],
+   "P_strict_reject_given_edit": [
+    0.0421,
+    0.0268,
+    0.0655,
+    428
+   ],
+   "first_call_names": {
+    "edit_file": 428,
+    "<no call>": 72,
+    "read_file": 53,
+    "run_command": 34,
+    "submit_patch": 11,
+    "write_file": 2
+   },
+   "malformed_edit_why": {
+    "unparsed": 13,
+    "extra_key": 3
+   },
+   "malformed_edit_flags": {
+    "unparsed": 13,
+    "extra_key": 3
+   },
+   "budget_forced": 30,
+   "thought_tokens_median": 129.0,
+   "edit_order": {
+    "old_first": 415,
+    "null": 13
+   }
+  },
+  "P0": {
+   "n": 300,
+   "P_call": [
+    0.84,
+    0.7943,
+    0.8771,
+    300
+   ],
+   "P_edit": [
+    0.6767,
+    0.6218,
+    0.7271,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0033,
+    0.0006,
+    0.0186,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0049,
+    0.0009,
+    0.0274,
+    203
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0079,
+    0.0022,
+    0.0285,
+    252
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0033,
+    0.0006,
+    0.0186,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0033,
+    0.0006,
+    0.0186,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0049,
+    0.0009,
+    0.0274,
+    203
+   ],
+   "first_call_names": {
+    "edit_file": 203,
+    "<no call>": 48,
+    "read_file": 17,
+    "run_command": 15,
+    "submit_patch": 15,
+    "write_file": 2
+   },
+   "malformed_edit_why": {
+    "unparsed": 1
+   },
+   "malformed_edit_flags": {
+    "unparsed": 1
+   },
+   "budget_forced": 10,
+   "thought_tokens_median": 47.5,
+   "edit_order": {
+    "new_first": 193,
+    "old_first": 9,
+    "null": 1
+   }
+  },
+  "P1L": {
+   "n": 300,
+   "P_call": [
+    0.8,
+    0.7511,
+    0.8413,
+    300
+   ],
+   "P_edit": [
+    0.6,
+    0.5436,
+    0.6538,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0111,
+    0.0031,
+    0.0396,
+    180
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0083,
+    0.0023,
+    0.0299,
+    240
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0111,
+    0.0031,
+    0.0396,
+    180
+   ],
+   "first_call_names": {
+    "edit_file": 180,
+    "<no call>": 60,
+    "read_file": 38,
+    "run_command": 11,
+    "submit_patch": 10,
+    "write_file": 1
+   },
+   "malformed_edit_why": {
+    "unparsed": 2
+   },
+   "malformed_edit_flags": {
+    "unparsed": 2
+   },
+   "budget_forced": 8,
+   "thought_tokens_median": 68.0,
+   "edit_order": {
+    "old_first": 141,
+    "new_first": 37,
+    "null": 2
+   }
+  },
+  "P1N": {
+   "n": 300,
+   "P_call": [
+    0.9267,
+    0.8915,
+    0.9511,
+    300
+   ],
+   "P_edit": [
+    0.66,
+    0.6047,
+    0.7113,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0101,
+    0.0028,
+    0.0361,
+    198
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0072,
+    0.002,
+    0.0258,
+    278
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0067,
+    0.0018,
+    0.024,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0101,
+    0.0028,
+    0.0361,
+    198
+   ],
+   "first_call_names": {
+    "edit_file": 198,
+    "submit_patch": 55,
+    "<no call>": 22,
+    "run_command": 11,
+    "run_skill_script": 7,
+    "read_file": 6,
+    "write_file": 1
+   },
+   "malformed_edit_why": {
+    "unparsed": 2
+   },
+   "malformed_edit_flags": {
+    "unparsed": 2
+   },
+   "budget_forced": 11,
+   "thought_tokens_median": 541.0,
+   "edit_order": {
+    "new_first": 105,
+    "old_first": 91,
+    "null": 2
+   }
+  },
+  "P5": {
+   "n": 300,
+   "P_call": [
+    0.51,
+    0.4537,
+    0.5661,
+    300
+   ],
+   "P_edit": [
+    0.4367,
+    0.3817,
+    0.4932,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0033,
+    0.0006,
+    0.0186,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0076,
+    0.0013,
+    0.042,
+    131
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0065,
+    0.0012,
+    0.0361,
+    153
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0033,
+    0.0006,
+    0.0186,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0033,
+    0.0006,
+    0.0186,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0153,
+    0.0042,
+    0.054,
+    131
+   ],
+   "first_call_names": {
+    "<no call>": 147,
+    "edit_file": 131,
+    "submit_patch": 9,
+    "run_command": 7,
+    "read_file": 6
+   },
+   "malformed_edit_why": {
+    "unparsed": 1
+   },
+   "malformed_edit_flags": {
+    "unparsed": 1
+   },
+   "budget_forced": 4,
+   "thought_tokens_median": 104.5,
+   "edit_order": {
+    "new_first": 57,
+    "old_first": 73,
+    "null": 1
+   }
+  },
+  "P6": {
+   "n": 300,
+   "P_call": [
+    0.84,
+    0.7943,
+    0.8771,
+    300
+   ],
+   "P_edit": [
+    0.6667,
+    0.6115,
+    0.7176,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.05,
+    0.0305,
+    0.0808,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.075,
+    0.046,
+    0.12,
+    200
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0595,
+    0.0364,
+    0.0959,
+    252
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.05,
+    0.0305,
+    0.0808,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0267,
+    0.0136,
+    0.0517,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.075,
+    0.046,
+    0.12,
+    200
+   ],
+   "first_call_names": {
+    "edit_file": 200,
+    "<no call>": 48,
+    "run_command": 19,
+    "read_file": 16,
+    "submit_patch": 15,
+    "get_status": 1,
+    "write_file": 1
+   },
+   "malformed_edit_why": {
+    "unparsed": 8,
+    "extra_key": 6,
+    "leak_closer:new_string": 1
+   },
+   "malformed_edit_flags": {
+    "unparsed": 8,
+    "extra_key": 6,
+    "leak_closer:new_string": 5,
+    "missing:old_string": 5,
+    "special_tok:) -> WrappedFnReturnT": 1,
+    "special_tok:include_group": 1
+   },
+   "budget_forced": 5,
+   "thought_tokens_median": 45.0,
+   "edit_order": {
+    "new_first": 157,
+    "old_first": 35,
+    "null": 8
+   }
+  },
+  "P8a": {
+   "n": 300,
+   "P_call": [
+    0.6967,
+    0.6424,
+    0.7459,
+    300
+   ],
+   "P_edit": [
+    0.5833,
+    0.5268,
+    0.6377,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0171,
+    0.0058,
+    0.0492,
+    175
+   ],
+   "P_malformed_any_call_given_call": [
+    0.0144,
+    0.0049,
+    0.0413,
+    209
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.01,
+    0.0034,
+    0.029,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.0171,
+    0.0058,
+    0.0492,
+    175
+   ],
+   "first_call_names": {
+    "edit_file": 175,
+    "<no call>": 91,
+    "read_file": 14,
+    "submit_patch": 13,
+    "run_command": 6,
+    "write_file": 1
+   },
+   "malformed_edit_why": {
+    "unparsed": 3
+   },
+   "malformed_edit_flags": {
+    "unparsed": 3
+   },
+   "budget_forced": 5,
+   "thought_tokens_median": 79.5,
+   "edit_order": {
+    "old_first": 93,
+    "new_first": 79,
+    "null": 3
+   }
+  }
+ },
+ "logged_gemma31b_next_call_malformed": {
+  "C0": [
+   0.17,
+   0.1421,
+   0.2021,
+   600
+  ],
+  "P0": [
+   0.0467,
+   0.028,
+   0.0768,
+   300
+  ]
+ },
+ "paired_vs_P0": {
+  "P1L": {
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "events_arm": 2,
+   "events_base": 1,
+   "discordant_arm_only": 1,
+   "discordant_base_only": 0,
+   "uncond": {
+    "arm": 0.0067,
+    "base": 0.0033,
+    "RD": 0.0033,
+    "RD_CI": [
+     0.0,
+     0.0103
+    ],
+    "p_one_sided_RD_gt_0": 0.36416,
+    "p_one_sided_RD_lt_0": 1.0,
+    "ratio": 2.0,
+    "ratio_CI": [
+     1.0,
+     "inf"
+    ],
+    "ratio_haldane": 1.667,
+    "mcnemar_exact_p_one_sided": 0.5
+   },
+   "cond": {
+    "arm": 0.0111,
+    "base": 0.0049,
+    "RD": 0.0062,
+    "RD_CI": [
+     0.0,
+     0.0187
+    ],
+    "ratio": 2.256,
+    "ratio_CI": [
+     1.0558,
+     "inf"
+    ],
+    "n_edits_arm": 180,
+    "n_edits_base": 203
+   },
+   "P_edit": {
+    "arm": 0.6,
+    "base": 0.6767,
+    "RD": -0.0767,
+    "RD_CI": [
+     -0.1414,
+     -0.0134
+    ]
+   }
+  },
+  "P1N": {
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "events_arm": 2,
+   "events_base": 1,
+   "discordant_arm_only": 2,
+   "discordant_base_only": 1,
+   "uncond": {
+    "arm": 0.0067,
+    "base": 0.0033,
+    "RD": 0.0033,
+    "RD_CI": [
+     -0.0068,
+     0.0161
+    ],
+    "p_one_sided_RD_gt_0": 0.39236,
+    "p_one_sided_RD_lt_0": 0.82032,
+    "ratio": 2.0,
+    "ratio_CI": [
+     0.0,
+     "inf"
+    ],
+    "ratio_haldane": 1.667,
+    "mcnemar_exact_p_one_sided": 0.5
+   },
+   "cond": {
+    "arm": 0.0101,
+    "base": 0.0049,
+    "RD": 0.0052,
+    "RD_CI": [
+     -0.0105,
+     0.0237
+    ],
+    "ratio": 2.051,
+    "ratio_CI": [
+     0.0,
+     "inf"
+    ],
+    "n_edits_arm": 198,
+    "n_edits_base": 203
+   },
+   "P_edit": {
+    "arm": 0.66,
+    "base": 0.6767,
+    "RD": -0.0167,
+    "RD_CI": [
+     -0.0909,
+     0.0574
+    ]
+   }
+  },
+  "P5": {
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "events_arm": 1,
+   "events_base": 1,
+   "discordant_arm_only": 0,
+   "discordant_base_only": 0,
+   "uncond": {
+    "arm": 0.0033,
+    "base": 0.0033,
+    "RD": 0.0,
+    "RD_CI": [
+     0.0,
+     0.0
+    ],
+    "p_one_sided_RD_gt_0": 1.0,
+    "p_one_sided_RD_lt_0": 1.0,
+    "ratio": 1.0,
+    "ratio_CI": [
+     1.0,
+     1.0
+    ],
+    "ratio_haldane": 1.0,
+    "mcnemar_exact_p_one_sided": 1.0
+   },
+   "cond": {
+    "arm": 0.0076,
+    "base": 0.0049,
+    "RD": 0.0027,
+    "RD_CI": [
+     0.0,
+     0.0093
+    ],
+    "ratio": 1.55,
+    "ratio_CI": [
+     1.3556,
+     1.7833
+    ],
+    "n_edits_arm": 131,
+    "n_edits_base": 203
+   },
+   "P_edit": {
+    "arm": 0.4367,
+    "base": 0.6767,
+    "RD": -0.24,
+    "RD_CI": [
+     -0.3084,
+     -0.1705
+    ]
+   }
+  },
+  "P6": {
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "events_arm": 15,
+   "events_base": 1,
+   "discordant_arm_only": 15,
+   "discordant_base_only": 1,
+   "uncond": {
+    "arm": 0.05,
+    "base": 0.0033,
+    "RD": 0.0467,
+    "RD_CI": [
+     0.0206,
+     0.0747
+    ],
+    "p_one_sided_RD_gt_0": 0.0002,
+    "p_one_sided_RD_lt_0": 1.0,
+    "ratio": 15.0,
+    "ratio_CI": [
+     3.6667,
+     "inf"
+    ],
+    "ratio_haldane": 10.333,
+    "mcnemar_exact_p_one_sided": 0.000259
+   },
+   "cond": {
+    "arm": 0.075,
+    "base": 0.0049,
+    "RD": 0.0701,
+    "RD_CI": [
+     0.032,
+     0.1111
+    ],
+    "ratio": 15.225,
+    "ratio_CI": [
+     3.7072,
+     "inf"
+    ],
+    "n_edits_arm": 200,
+    "n_edits_base": 203
+   },
+   "P_edit": {
+    "arm": 0.6667,
+    "base": 0.6767,
+    "RD": -0.01,
+    "RD_CI": [
+     -0.0436,
+     0.0236
+    ]
+   }
+  },
+  "P8a": {
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "events_arm": 3,
+   "events_base": 1,
+   "discordant_arm_only": 2,
+   "discordant_base_only": 0,
+   "uncond": {
+    "arm": 0.01,
+    "base": 0.0033,
+    "RD": 0.0067,
+    "RD_CI": [
+     0.0,
+     0.0169
+    ],
+    "p_one_sided_RD_gt_0": 0.13379,
+    "p_one_sided_RD_lt_0": 1.0,
+    "ratio": 3.0,
+    "ratio_CI": [
+     1.0,
+     "inf"
+    ],
+    "ratio_haldane": 2.333,
+    "mcnemar_exact_p_one_sided": 0.25
+   },
+   "cond": {
+    "arm": 0.0171,
+    "base": 0.0049,
+    "RD": 0.0122,
+    "RD_CI": [
+     0.0,
+     0.0306
+    ],
+    "ratio": 3.48,
+    "ratio_CI": [
+     1.1148,
+     "inf"
+    ],
+    "n_edits_arm": 175,
+    "n_edits_base": 203
+   },
+   "P_edit": {
+    "arm": 0.5833,
+    "base": 0.6767,
+    "RD": -0.0933,
+    "RD_CI": [
+     -0.1628,
+     -0.0236
+    ]
+   }
+  }
+ },
+ "removal": {
+  "P5": {
+   "n_contexts": 300,
+   "uncond": {
+    "P1L": 0.0067,
+    "P5": 0.0033,
+    "P0": 0.0033,
+    "fraction_removed": 1.0,
+    "CI": [
+     1.0,
+     1.0
+    ],
+    "RD_P1L_minus_P5": 0.0033,
+    "RD_CI": [
+     0.0,
+     0.0103
+    ],
+    "p_one_sided_removal_gt_0": 0.37016
+   },
+   "cond": {
+    "P1L": 0.0111,
+    "P5": 0.0076,
+    "P0": 0.0049,
+    "fraction_removed": 0.562,
+    "CI": [
+     -8.1757,
+     1.0
+    ],
+    "RD_P1L_minus_P5": 0.0035,
+    "RD_CI": [
+     -0.0059,
+     0.0172
+    ],
+    "p_one_sided_removal_gt_0": 0.39756
+   }
+  },
+  "P8a": {
+   "n_contexts": 300,
+   "uncond": {
+    "P1L": 0.0067,
+    "P8a": 0.01,
+    "P0": 0.0033,
+    "fraction_removed": -1.0,
+    "CI": [
+     -4.0,
+     1.0
+    ],
+    "RD_P1L_minus_P8a": -0.0033,
+    "RD_CI": [
+     -0.0158,
+     0.0068
+    ],
+    "p_one_sided_removal_gt_0": 0.81542
+   },
+   "cond": {
+    "P1L": 0.0111,
+    "P8a": 0.0171,
+    "P0": 0.0049,
+    "fraction_removed": -0.975,
+    "CI": [
+     -36.3073,
+     1.0
+    ],
+    "RD_P1L_minus_P8a": -0.006,
+    "RD_CI": [
+     -0.0261,
+     0.0116
+    ],
+    "p_one_sided_removal_gt_0": 0.76702
+   }
+  },
+  "P1N": {
+   "n_contexts": 300,
+   "uncond": {
+    "P1L": 0.0067,
+    "P1N": 0.0067,
+    "P0": 0.0033,
+    "fraction_removed": 0.0,
+    "CI": [
+     -3.0,
+     3.0
+    ],
+    "RD_P1L_minus_P1N": 0.0,
+    "RD_CI": [
+     -0.0132,
+     0.0134
+    ],
+    "p_one_sided_removal_gt_0": 0.60334
+   },
+   "cond": {
+    "P1L": 0.0111,
+    "P1N": 0.0101,
+    "P0": 0.0049,
+    "fraction_removed": 0.163,
+    "CI": [
+     -20.1194,
+     8.8261
+    ],
+    "RD_P1L_minus_P1N": 0.001,
+    "RD_CI": [
+     -0.0199,
+     0.0227
+    ],
+    "p_one_sided_removal_gt_0": 0.41856
+   }
+  },
+  "P6": {
+   "n_contexts": 300,
+   "uncond": {
+    "P1L": 0.0067,
+    "P6": 0.05,
+    "P0": 0.0033,
+    "fraction_removed": -13.0,
+    "CI": [
+     -20.0,
+     -1.75
+    ],
+    "RD_P1L_minus_P6": -0.0433,
+    "RD_CI": [
+     -0.0728,
+     -0.0169
+    ],
+    "p_one_sided_removal_gt_0": 0.9996
+   },
+   "cond": {
+    "P1L": 0.0111,
+    "P6": 0.075,
+    "P0": 0.0049,
+    "fraction_removed": -10.33,
+    "CI": [
+     -212.6927,
+     -1.5138
+    ],
+    "RD_P1L_minus_P6": -0.0639,
+    "RD_CI": [
+     -0.1073,
+     -0.0237
+    ],
+    "p_one_sided_removal_gt_0": 0.9991
+   }
+  }
+ },
+ "copy_check": {
+  "P0": {
+   "clean_retry": {
+    "n": 4,
+    "malformed": [
+     0.0,
+     0.0,
+     0.4899,
+     4
+    ]
+   },
+   "same_content_variant": {
+    "n": 14,
+    "malformed": [
+     0.0,
+     0.0,
+     0.2153,
+     14
+    ]
+   },
+   "new_content": {
+    "n": 184,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0205,
+     184
+    ]
+   },
+   "unparsed_other": {
+    "n": 1,
+    "malformed": [
+     1.0,
+     0.2065,
+     1.0,
+     1
+    ]
+   },
+   "all_edits": {
+    "n": 203,
+    "malformed": [
+     0.0049,
+     0.0009,
+     0.0274,
+     203
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.7935,
+    1
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.0205,
+    184
+   ],
+   "non_copy_edits_malformed": [
+    0.0049,
+    0.0009,
+    0.0274,
+    203
+   ]
+  },
+  "P1L": {
+   "clean_retry": {
+    "n": 60,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0602,
+     60
+    ]
+   },
+   "same_content_variant": {
+    "n": 34,
+    "malformed": [
+     0.0,
+     0.0,
+     0.1015,
+     34
+    ]
+   },
+   "new_content": {
+    "n": 84,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0437,
+     84
+    ]
+   },
+   "unparsed_other": {
+    "n": 2,
+    "malformed": [
+     1.0,
+     0.3424,
+     1.0,
+     2
+    ]
+   },
+   "all_edits": {
+    "n": 180,
+    "malformed": [
+     0.0111,
+     0.0031,
+     0.0396,
+     180
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.6576,
+    2
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.0437,
+    84
+   ],
+   "non_copy_edits_malformed": [
+    0.0111,
+    0.0031,
+    0.0396,
+    180
+   ]
+  },
+  "P6": {
+   "copy_corrupted": {
+    "n": 2,
+    "malformed": [
+     1.0,
+     0.3424,
+     1.0,
+     2
+    ]
+   },
+   "clean_retry": {
+    "n": 2,
+    "malformed": [
+     0.0,
+     0.0,
+     0.6576,
+     2
+    ]
+   },
+   "same_content_variant": {
+    "n": 14,
+    "malformed": [
+     0.1429,
+     0.0401,
+     0.3994,
+     14
+    ]
+   },
+   "new_content": {
+    "n": 174,
+    "malformed": [
+     0.0172,
+     0.0059,
+     0.0495,
+     174
+    ]
+   },
+   "unparsed_other": {
+    "n": 8,
+    "malformed": [
+     1.0,
+     0.6756,
+     1.0,
+     8
+    ]
+   },
+   "all_edits": {
+    "n": 200,
+    "malformed": [
+     0.075,
+     0.046,
+     0.12,
+     200
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.1333,
+    0.0374,
+    0.3788,
+    15
+   ],
+   "new_content_edits_malformed": [
+    0.0172,
+    0.0059,
+    0.0495,
+    174
+   ],
+   "non_copy_edits_malformed": [
+    0.0657,
+    0.0388,
+    0.1091,
+    198
+   ]
+  },
+  "P8a": {
+   "clean_retry": {
+    "n": 77,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0475,
+     77
+    ]
+   },
+   "same_content_variant": {
+    "n": 19,
+    "malformed": [
+     0.0,
+     0.0,
+     0.1682,
+     19
+    ]
+   },
+   "new_content": {
+    "n": 76,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0481,
+     76
+    ]
+   },
+   "unparsed_other": {
+    "n": 3,
+    "malformed": [
+     1.0,
+     0.4385,
+     1.0,
+     3
+    ]
+   },
+   "all_edits": {
+    "n": 175,
+    "malformed": [
+     0.0171,
+     0.0058,
+     0.0492,
+     175
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.5615,
+    3
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.0481,
+    76
+   ],
+   "non_copy_edits_malformed": [
+    0.0171,
+    0.0058,
+    0.0492,
+    175
+   ]
+  },
+  "P1N": {
+   "copy_corrupted_raw": {
+    "n": 1,
+    "malformed": [
+     1.0,
+     0.2065,
+     1.0,
+     1
+    ]
+   },
+   "clean_retry": {
+    "n": 16,
+    "malformed": [
+     0.0,
+     0.0,
+     0.1936,
+     16
+    ]
+   },
+   "same_content_variant": {
+    "n": 18,
+    "malformed": [
+     0.0,
+     0.0,
+     0.1759,
+     18
+    ]
+   },
+   "new_content": {
+    "n": 162,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0232,
+     162
+    ]
+   },
+   "unparsed_other": {
+    "n": 1,
+    "malformed": [
+     1.0,
+     0.2065,
+     1.0,
+     1
+    ]
+   },
+   "all_edits": {
+    "n": 198,
+    "malformed": [
+     0.0101,
+     0.0028,
+     0.0361,
+     198
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.5,
+    0.0945,
+    0.9055,
+    2
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.0232,
+    162
+   ],
+   "non_copy_edits_malformed": [
+    0.0051,
+    0.0009,
+    0.0282,
+    197
+   ]
+  }
+ },
+ "natural_calls": {
+  "C0|edit|loud_unparsed": 13,
+  "C0|edit|ok_but_strict_reject:DUPLICATE_KEY": 1,
+  "C0|edit|ok_but_strict_reject:UNTERMINATED": 1,
+  "C0|edit|ok_strict_ok": 410,
+  "C0|edit|silent_parsed_malformed": 3,
+  "C0|other|ok_strict_ok": 100,
+  "P0|edit|loud_unparsed": 1,
+  "P0|edit|ok_strict_ok": 202,
+  "P0|other|loud_unparsed": 1,
+  "P0|other|ok_strict_ok": 48
+ },
+ "natural_examples": {
+  "C0:edit:silent_parsed_malformed": [
+   {
+    "id": "ctx-41a225dcd3",
+    "flags": [
+     "extra_key"
+    ],
+    "raw": "",
+    "new_head": "    if has_object_definition(type_):\n        if isinstance(value, type_):\n            return value\n        kwargs = {}\n\n        type_definition = type_.__strawberry_definition__\n        for field in t"
+   },
+   {
+    "id": "ctx-95b45fc0ba",
+    "flags": [
+     "extra_key"
+    ],
+    "raw": "",
+    "new_head": "    for field in body_fields:\n        field_info = field.field_info\n\n        if (\n            isinstance(field_info, params.File)\n            and is_bytes_field(field)\n            and isinstance(value"
+   },
+   {
+    "id": "ctx-c1693ae5f5",
+    "flags": [
+     "extra_key"
+    ],
+    "raw": "",
+    "new_head": "        # If FORCE_COLOR or TTY_COMPATIBLE env var has any value at all, we assume a terminal.\n        force_color = self._environ.get(\"FORCE_COLOR\")\n        force_tty = self._environ.get(\"TTY_COMPATI"
+   }
+  ],
+  "C0:edit:loud_unparsed": [
+   {
+    "id": "ctx-6db946a8c2",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"filepath\": \"sqlite_utils/db.py\", \"old_string\": \"                tokenize=f\\\"\\\\n    tokenize='{tokenize}',\\\" if tokenize else \\\"\\\",\\n            )\\n        )\", \"new_string\": \"                tokenize=f\\\"\\\\n    tokenize={self.db.quote(tokenize)},\" if tokenize else \\\"\\\",\\n            )\\n        )\", \"allow_multiple\": false}}\n</tool_call>",
+    "new_head": ""
+   },
+   {
+    "id": "ctx-b630c23197",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"filepath\": \"src/packaging/_parser.py\", \"old_string\": \"    def serialize(self) -> str:\\n        return f'\\\"{self}\\\"'\", \"new_string\": \"    def serialize(self) -> str:\\n        if '\"' in self.value:\\n            return f\"'{self.value}'\"\\n        return f'\\\"{self.value}\\\"'\", \"allow_multiple\": false}}\n</tool_call>",
+    "new_head": ""
+   },
+   {
+    "id": "ctx-b88b173c72",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"filepath\": \"src/packaging/_parser.py\", \"old_string\": \"    value = ast.literal_eval(python_str)\\n    return Value(str(value))\", \"new_string\": \"    if len(python_str) >= 2 and python_str[0] == python_str[-1] and python_str[0] in ('\\'', '\"'):\\n        content = python_str[1:-1]\\n        if \\\\\\\\\\\" not in content and content.isprintable():\\n            return Value(content)\\n    value = ast.literal_eval(python_str)\\n    return Value(str(value))\", \"allow_multiple\": false}}\n</tool_call>",
+    "new_head": ""
+   }
+  ],
+  "P0:other:loud_unparsed": [
+   {
+    "id": "ctx-34bc83cdb0",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"write_file\", \"arguments\": {\"content\": \"import pytest\\nfrom cattrs import Converter\\nfrom cattrs.gen import mapping_unstructure_factory\\nfrom typing import Counter as TypeCounter\\nimport attrs\\n\\n@attrs.define(frozen=True)\\nclass Key:\\n    name: str\\n\\ndef unstructure_key(obj):\\n    return obj.name\\n\\ndef test_counter_unstructuring():\\n    converter = Converter()\\n    converter.register_unstructure_hook(Key, unstructure_key)\\n\\n    c = Counter({Key(name='a'): 1})\\n    cl = TypeCounter[Key]\\n    hook = mapping_unstructure_factory(cl, converter)\\n    result = hook(c)\\n    assert result == {Key(name='a'): 1}\\n\\n    # Test with unstructure_to=Counter\\n    hook = mapping_unstructure_factory(cl, converter, unstructure_to=Counter)\\n    result = hook(c)\\n    assert result == {",
+    "new_head": ""
+   }
+  ],
+  "P0:edit:loud_unparsed": [
+   {
+    "id": "ctx-7b1ddb6ee8",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"filepath\": \"rich/cells.py\", \"new_string\": \"def chop_cells(\\n    text: str,\\n    width: int,\\n) -> list[str]:\\n    \\\"\\\"\\\"Split text into lines such that each line fits within the available (cell) width.\\n\\n    Args:\\n        text: The text to fold such that it fits in the given width.\\n        width: The width available (number of cells).\\n\\n    Returns:\\n        A list of strings such that each string in the list has cell width\\n        less than or equal to the available width.\\n    \\\"\\\"\\\"\\n    _get_grapheme_cell_size = get_grapheme_cell_size\\n    lines: list[list[str]] = [[]]\\n\\n    append_new_line = lines.append\\n    append_to_last_line = lines[-1].append\\n\\n    total_width = 0\\n\\n    for grapheme in split_graphemes(text):\\n        cell_w",
+    "new_head": ""
+   }
+  ]
+ }
+}

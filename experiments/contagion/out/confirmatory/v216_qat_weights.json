@@ -1,0 +1,779 @@
+{
+ "prereg": "PREREG_v2.16_qat_weights.md (sha256 in PROGRESS.md at freeze)",
+ "B": 2000,
+ "files": {
+  "bf16": "experiments/transcriptlab_cli/run_v214_bf16/gen.jsonl",
+  "awq": "experiments/contagion/out/main/rCawq_v26.jsonl",
+  "fp8_redhat": "experiments/transcriptlab_cli/run_v216_fp8_redhat/gen.jsonl",
+  "autoround": "experiments/contagion/out/main/rCautoround_v26.jsonl",
+  "nvfp4_redhat": "experiments/transcriptlab_cli/run_v216_nvfp4_redhat/gen.jsonl",
+  "nvnvfp4": "experiments/transcriptlab_cli/run_v215_nvnvfp4/gen.jsonl",
+  "awq_quanttrio": "experiments/transcriptlab_cli/run_v216_awq_quanttrio/gen.jsonl",
+  "qat": "experiments/contagion/out/main/rC31b_v2.jsonl",
+  "qatunq": "experiments/transcriptlab_cli/run_v216_qatunq/gen.jsonl",
+  "qatawq": "experiments/transcriptlab_cli/run_v215_qatawq/gen.jsonl",
+  "qatnvfp4": "experiments/transcriptlab_cli/run_v215_qatnvfp4/gen.jsonl"
+ },
+ "not_run": [],
+ "deficits_nats": {
+  "bf16": 0.0,
+  "awq": 0.0161,
+  "fp8_redhat": 0.0273,
+  "autoround": 0.63,
+  "nvfp4_redhat": 0.7852,
+  "nvnvfp4": 1.3555,
+  "awq_quanttrio": 1.9109,
+  "qat": 5.1328,
+  "qatunq": 5.5078,
+  "qatawq": 5.9961,
+  "qatnvfp4": 7.4141
+ },
+ "missing": {
+  "bf16": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  },
+  "awq": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  },
+  "fp8_redhat": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  },
+  "autoround": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  },
+  "nvfp4_redhat": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  },
+  "nvnvfp4": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  },
+  "awq_quanttrio": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  },
+  "qat": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  },
+  "qatunq": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  },
+  "qatawq": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  },
+  "qatnvfp4": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  }
+ },
+ "rates": {
+  "bf16": {
+   "P0": [
+    0.0,
+    0.0,
+    0.0,
+    300
+   ],
+   "P1": [
+    0.0867,
+    0.0565,
+    0.1199,
+    300
+   ],
+   "P6": [
+    0.05,
+    0.0273,
+    0.0746,
+    300
+   ],
+   "P8a": [
+    0.0,
+    0.0,
+    0.0,
+    300
+   ]
+  },
+  "awq": {
+   "P0": [
+    0.0033,
+    0.0,
+    0.0106,
+    300
+   ],
+   "P1": [
+    0.1033,
+    0.0719,
+    0.1391,
+    300
+   ],
+   "P6": [
+    0.04,
+    0.0203,
+    0.0642,
+    300
+   ],
+   "P8a": [
+    0.0,
+    0.0,
+    0.0,
+    300
+   ]
+  },
+  "fp8_redhat": {
+   "P0": [
+    0.0033,
+    0.0,
+    0.0103,
+    300
+   ],
+   "P1": [
+    0.09,
+    0.0614,
+    0.1254,
+    300
+   ],
+   "P6": [
+    0.05,
+    0.0275,
+    0.0757,
+    300
+   ],
+   "P8a": [
+    0.0,
+    0.0,
+    0.0,
+    300
+   ]
+  },
+  "autoround": {
+   "P0": [
+    0.0833,
+    0.0532,
+    0.1149,
+    300
+   ],
+   "P1": [
+    0.1333,
+    0.0971,
+    0.1733,
+    300
+   ],
+   "P6": [
+    0.0933,
+    0.0619,
+    0.1296,
+    300
+   ],
+   "P8a": [
+    0.0767,
+    0.0471,
+    0.1087,
+    300
+   ]
+  },
+  "nvfp4_redhat": {
+   "P0": [
+    0.0,
+    0.0,
+    0.0,
+    300
+   ],
+   "P1": [
+    0.0733,
+    0.0465,
+    0.1044,
+    300
+   ],
+   "P6": [
+    0.0567,
+    0.033,
+    0.085,
+    300
+   ],
+   "P8a": [
+    0.0,
+    0.0,
+    0.0,
+    300
+   ]
+  },
+  "nvnvfp4": {
+   "P0": [
+    0.0,
+    0.0,
+    0.0,
+    300
+   ],
+   "P1": [
+    0.1,
+    0.0673,
+    0.1362,
+    300
+   ],
+   "P6": [
+    0.0567,
+    0.0333,
+    0.0845,
+    300
+   ],
+   "P8a": [
+    0.0,
+    0.0,
+    0.0,
+    300
+   ]
+  },
+  "awq_quanttrio": {
+   "P0": [
+    0.0,
+    0.0,
+    0.0,
+    300
+   ],
+   "P1": [
+    0.1033,
+    0.0719,
+    0.1399,
+    300
+   ],
+   "P6": [
+    0.0467,
+    0.0237,
+    0.0719,
+    300
+   ],
+   "P8a": [
+    0.0,
+    0.0,
+    0.0,
+    300
+   ]
+  },
+  "qat": {
+   "P0": [
+    0.0133,
+    0.0032,
+    0.0271,
+    300
+   ],
+   "P1": [
+    0.1967,
+    0.153,
+    0.2433,
+    300
+   ],
+   "P6": [
+    0.09,
+    0.0586,
+    0.1262,
+    300
+   ],
+   "P8a": [
+    0.0167,
+    0.0033,
+    0.033,
+    300
+   ]
+  },
+  "qatunq": {
+   "P0": [
+    0.0067,
+    0.0,
+    0.0167,
+    300
+   ],
+   "P1": [
+    0.18,
+    0.138,
+    0.2248,
+    300
+   ],
+   "P6": [
+    0.0933,
+    0.0638,
+    0.127,
+    300
+   ],
+   "P8a": [
+    0.0033,
+    0.0,
+    0.0103,
+    300
+   ]
+  },
+  "qatawq": {
+   "P0": [
+    0.0033,
+    0.0,
+    0.0105,
+    300
+   ],
+   "P1": [
+    0.2233,
+    0.1781,
+    0.2709,
+    300
+   ],
+   "P6": [
+    0.1,
+    0.0676,
+    0.1365,
+    300
+   ],
+   "P8a": [
+    0.0067,
+    0.0,
+    0.0171,
+    300
+   ]
+  },
+  "qatnvfp4": {
+   "P0": [
+    0.0033,
+    0.0,
+    0.0105,
+    300
+   ],
+   "P1": [
+    0.2433,
+    0.1945,
+    0.2917,
+    300
+   ],
+   "P6": [
+    0.11,
+    0.0769,
+    0.1478,
+    300
+   ],
+   "P8a": [
+    0.0133,
+    0.0032,
+    0.0271,
+    300
+   ]
+  }
+ },
+ "copying": {
+  "bf16": {
+   "RD_P1_minus_P0": 0.0867,
+   "CI": [
+    0.0565,
+    0.1199
+   ],
+   "p": 1.49e-08,
+   "n_states": 300,
+   "discordant": [
+    26,
+    0
+   ]
+  },
+  "awq": {
+   "RD_P1_minus_P0": 0.1,
+   "CI": [
+    0.0676,
+    0.1353
+   ],
+   "p": 7.683e-09,
+   "n_states": 300,
+   "discordant": [
+    31,
+    1
+   ]
+  },
+  "fp8_redhat": {
+   "RD_P1_minus_P0": 0.0867,
+   "CI": [
+    0.0565,
+    0.1229
+   ],
+   "p": 1.08e-07,
+   "n_states": 300,
+   "discordant": [
+    27,
+    1
+   ]
+  },
+  "autoround": {
+   "RD_P1_minus_P0": 0.05,
+   "CI": [
+    0.0034,
+    0.0946
+   ],
+   "p": 0.02444,
+   "n_states": 300,
+   "discordant": [
+    33,
+    18
+   ]
+  },
+  "nvfp4_redhat": {
+   "RD_P1_minus_P0": 0.0733,
+   "CI": [
+    0.0465,
+    0.1044
+   ],
+   "p": 2.384e-07,
+   "n_states": 300,
+   "discordant": [
+    22,
+    0
+   ]
+  },
+  "nvnvfp4": {
+   "RD_P1_minus_P0": 0.1,
+   "CI": [
+    0.0673,
+    0.1362
+   ],
+   "p": 9.313e-10,
+   "n_states": 300,
+   "discordant": [
+    30,
+    0
+   ]
+  },
+  "awq_quanttrio": {
+   "RD_P1_minus_P0": 0.1033,
+   "CI": [
+    0.0719,
+    0.1399
+   ],
+   "p": 4.657e-10,
+   "n_states": 300,
+   "discordant": [
+    31,
+    0
+   ]
+  },
+  "qat": {
+   "RD_P1_minus_P0": 0.1833,
+   "CI": [
+    0.1371,
+    0.2336
+   ],
+   "p": 6.911e-14,
+   "n_states": 300,
+   "discordant": [
+    59,
+    4
+   ]
+  },
+  "qatunq": {
+   "RD_P1_minus_P0": 0.1733,
+   "CI": [
+    0.1283,
+    0.2189
+   ],
+   "p": 2.216e-14,
+   "n_states": 300,
+   "discordant": [
+    54,
+    2
+   ]
+  },
+  "qatawq": {
+   "RD_P1_minus_P0": 0.22,
+   "CI": [
+    0.1738,
+    0.2673
+   ],
+   "p": 1.355e-20,
+   "n_states": 300,
+   "discordant": [
+    66,
+    0
+   ]
+  },
+  "qatnvfp4": {
+   "RD_P1_minus_P0": 0.24,
+   "CI": [
+    0.1916,
+    0.2876
+   ],
+   "p": 2.118e-22,
+   "n_states": 300,
+   "discordant": [
+    72,
+    0
+   ]
+  }
+ },
+ "induction": {
+  "bf16": {
+   "RD_P6_minus_P0": 0.05,
+   "CI": [
+    0.0273,
+    0.0746
+   ]
+  },
+  "awq": {
+   "RD_P6_minus_P0": 0.0367,
+   "CI": [
+    0.0163,
+    0.0619
+   ]
+  },
+  "fp8_redhat": {
+   "RD_P6_minus_P0": 0.0467,
+   "CI": [
+    0.023,
+    0.0736
+   ]
+  },
+  "autoround": {
+   "RD_P6_minus_P0": 0.01,
+   "CI": [
+    -0.0337,
+    0.0537
+   ]
+  },
+  "nvfp4_redhat": {
+   "RD_P6_minus_P0": 0.0567,
+   "CI": [
+    0.033,
+    0.085
+   ]
+  },
+  "nvnvfp4": {
+   "RD_P6_minus_P0": 0.0567,
+   "CI": [
+    0.0333,
+    0.0845
+   ]
+  },
+  "awq_quanttrio": {
+   "RD_P6_minus_P0": 0.0467,
+   "CI": [
+    0.0237,
+    0.0719
+   ]
+  },
+  "qat": {
+   "RD_P6_minus_P0": 0.0767,
+   "CI": [
+    0.043,
+    0.1155
+   ]
+  },
+  "qatunq": {
+   "RD_P6_minus_P0": 0.0867,
+   "CI": [
+    0.0588,
+    0.1194
+   ]
+  },
+  "qatawq": {
+   "RD_P6_minus_P0": 0.0967,
+   "CI": [
+    0.0654,
+    0.1329
+   ]
+  },
+  "qatnvfp4": {
+   "RD_P6_minus_P0": 0.1067,
+   "CI": [
+    0.073,
+    0.1443
+   ]
+  }
+ },
+ "removal_not_gated": {
+  "bf16": {
+   "point": 1.0,
+   "CI": [
+    1.0,
+    1.0
+   ],
+   "undefined_draw_frac": 0.0
+  },
+  "awq": {
+   "point": 1.0333,
+   "CI": [
+    1.0,
+    1.1334
+   ],
+   "undefined_draw_frac": 0.0
+  },
+  "fp8_redhat": {
+   "point": 1.0385,
+   "CI": [
+    1.0,
+    1.16
+   ],
+   "undefined_draw_frac": 0.0
+  },
+  "autoround": {
+   "point": 1.1333,
+   "CI": [
+    0.4004,
+    3.1975
+   ],
+   "undefined_draw_frac": 0.019
+  },
+  "nvfp4_redhat": {
+   "point": 1.0,
+   "CI": [
+    1.0,
+    1.0
+   ],
+   "undefined_draw_frac": 0.0
+  },
+  "nvnvfp4": {
+   "point": 1.0,
+   "CI": [
+    1.0,
+    1.0
+   ],
+   "undefined_draw_frac": 0.0
+  },
+  "awq_quanttrio": {
+   "point": 1.0,
+   "CI": [
+    1.0,
+    1.0
+   ],
+   "undefined_draw_frac": 0.0
+  },
+  "qat": {
+   "point": 0.9818,
+   "CI": [
+    0.8824,
+    1.0952
+   ],
+   "undefined_draw_frac": 0.0
+  },
+  "qatunq": {
+   "point": 1.0192,
+   "CI": [
+    0.9583,
+    1.0981
+   ],
+   "undefined_draw_frac": 0.0
+  },
+  "qatawq": {
+   "point": 0.9848,
+   "CI": [
+    0.95,
+    1.0
+   ],
+   "undefined_draw_frac": 0.0
+  },
+  "qatnvfp4": {
+   "point": 0.9583,
+   "CI": [
+    0.8955,
+    1.0147
+   ],
+   "undefined_draw_frac": 0.0
+  }
+ },
+ "H1_qatunq_above_bf16": {
+  "n_states": 300,
+  "A": 0.0867,
+  "B": 0.18,
+  "RD": -0.0933,
+  "RD_CI": [
+   -0.1306,
+   -0.0548
+  ],
+  "discordant_B_only_A_only": [
+   33,
+   5
+  ],
+  "mcnemar_one_sided_p_RD_lt_0": 2.128e-06,
+  "met": true
+ },
+ "verdict_H1": "COPYING FOLLOWS THE QAT WEIGHTS",
+ "H2_qatunq_minus_qat": {
+  "n_states": 300,
+  "A": 0.18,
+  "B": 0.1967,
+  "RD": -0.0167,
+  "RD_CI": [
+   -0.0517,
+   0.0196
+  ],
+  "discordant_B_only_A_only": [
+   18,
+   13
+  ],
+  "mcnemar_one_sided_p_RD_lt_0": 0.2366,
+  "mcnemar_two_sided_p": 0.4731,
+  "reading": "THE 4-BIT FORMAT ADDS LITTLE"
+ },
+ "descriptive_extended_panel": {
+  "panel": [
+   "bf16",
+   "awq",
+   "fp8_redhat",
+   "autoround",
+   "nvfp4_redhat",
+   "nvnvfp4",
+   "awq_quanttrio",
+   "qat",
+   "qatunq",
+   "qatawq",
+   "qatnvfp4"
+  ],
+  "deficits": [
+   0.0,
+   0.0161,
+   0.0273,
+   0.63,
+   0.7852,
+   1.3555,
+   1.9109,
+   5.1328,
+   5.5078,
+   5.9961,
+   7.4141
+  ],
+  "P1": [
+   0.0867,
+   0.1033,
+   0.09,
+   0.1333,
+   0.0733,
+   0.1,
+   0.1033,
+   0.1967,
+   0.18,
+   0.2233,
+   0.2433
+  ],
+  "spearman_rho": 0.7882,
+  "one_sided_p": 0.00259,
+  "n_permutations": 200000
+ }
+}

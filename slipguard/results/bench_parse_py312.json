@@ -1,0 +1,107 @@
+{
+ "python": "3.12.13",
+ "rows": [
+  {
+   "family": "many_string_args",
+   "n": 500,
+   "chars": 9811,
+   "oneshot_s": 0.0025,
+   "stream4_s": 0.00597
+  },
+  {
+   "family": "many_string_args",
+   "n": 1000,
+   "chars": 19811,
+   "oneshot_s": 0.00471,
+   "stream4_s": 0.01199,
+   "oneshot_slope": 0.92,
+   "stream4_slope": 1.01
+  },
+  {
+   "family": "many_string_args",
+   "n": 2000,
+   "chars": 41811,
+   "oneshot_s": 0.00945,
+   "stream4_s": 0.0244,
+   "oneshot_slope": 1.0,
+   "stream4_slope": 1.02
+  },
+  {
+   "family": "many_string_args",
+   "n": 4000,
+   "chars": 85811,
+   "oneshot_s": 0.01865,
+   "stream4_s": 0.04978,
+   "oneshot_slope": 0.98,
+   "stream4_slope": 1.03
+  },
+  {
+   "family": "many_string_args",
+   "n": 8000,
+   "chars": 173811,
+   "oneshot_s": 0.03876,
+   "stream4_s": 0.10118,
+   "oneshot_slope": 1.06,
+   "stream4_slope": 1.02
+  },
+  {
+   "family": "many_string_args",
+   "n": 16000,
+   "chars": 361811,
+   "oneshot_s": 0.07615,
+   "stream4_s": 0.20529,
+   "oneshot_slope": 0.97,
+   "stream4_slope": 1.02
+  },
+  {
+   "family": "many_string_args",
+   "n": 32000,
+   "chars": 745811,
+   "oneshot_s": 0.15396,
+   "stream4_s": 0.42821,
+   "oneshot_slope": 1.02,
+   "stream4_slope": 1.06
+  },
+  {
+   "family": "long_string",
+   "n": 10000,
+   "chars": 10083,
+   "oneshot_s": 8e-05,
+   "stream4_s": 0.00303
+  },
+  {
+   "family": "long_string",
+   "n": 100000,
+   "chars": 100083,
+   "oneshot_s": 0.00021,
+   "stream4_s": 0.02855,
+   "stream4_slope": 0.97
+  },
+  {
+   "family": "long_string",
+   "n": 1000000,
+   "chars": 1000083,
+   "oneshot_s": 0.00272,
+   "stream4_s": 0.28514,
+   "stream4_slope": 1.0
+  },
+  {
+   "family": "long_string",
+   "n": 4000000,
+   "chars": 4000083,
+   "oneshot_s": 0.02212,
+   "stream4_s": 1.14748,
+   "oneshot_slope": 1.51,
+   "stream4_slope": 1.0
+  },
+  {
+   "family": "long_string",
+   "n": 16000000,
+   "chars": 16000083,
+   "oneshot_s": 0.09018,
+   "stream4_s": 4.62985,
+   "oneshot_slope": 1.01,
+   "stream4_slope": 1.01
+  }
+ ]
+}

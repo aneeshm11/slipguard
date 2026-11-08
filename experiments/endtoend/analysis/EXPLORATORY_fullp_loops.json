@@ -1,0 +1,84 @@
+{
+ "label": "EXPLORATORY (post hoc; not registered)",
+ "n_fullp_episodes": 1130,
+ "fullp_Y1_total": 400,
+ "stuck_fullp_episodes": [
+  {
+   "task": "rich_4070",
+   "replicate": 6,
+   "fullp_Y1": 13,
+   "fullp_calls": 58,
+   "base_Y1": 0,
+   "base_stuck": 0,
+   "resolved_fullp": 0,
+   "requests": 61,
+   "turns_with_malformed_delivered": 13,
+   "ipd_invalid": 13,
+   "ipd_no_site": 13,
+   "why": [
+    [
+     "missing:old_string",
+     13
+    ],
+    [
+     "unknown_key",
+     5
+    ]
+   ],
+   "quarantine_active_turns": 15
+  },
+  {
+   "task": "rich_4070",
+   "replicate": 7,
+   "fullp_Y1": 52,
+   "fullp_calls": 100,
+   "base_Y1": 0,
+   "base_stuck": 0,
+   "resolved_fullp": 0,
+   "requests": 105,
+   "turns_with_malformed_delivered": 52,
+   "ipd_invalid": 52,
+   "ipd_no_site": 52,
+   "why": [
+    [
+     "missing:old_string",
+     52
+    ],
+    [
+     "unknown_key",
+     4
+    ]
+   ],
+   "quarantine_active_turns": 51
+  },
+  {
+   "task": "fastapi_13920",
+   "replicate": 9,
+   "fullp_Y1": 16,
+   "fullp_calls": 48,
+   "base_Y1": 0,
+   "base_stuck": 0,
+   "resolved_fullp": 0,
+   "requests": 51,
+   "turns_with_malformed_delivered": 16,
+   "ipd_invalid": 16,
+   "ipd_no_site": 16,
+   "why": [
+    [
+     "missing:old_string",
+     16
+    ],
+    [
+     "unknown_key",
+     4
+    ],
+    [
+     "special_token",
+     2
+    ]
+   ],
+   "quarantine_active_turns": 25
+  }
+ ],
+ "share_of_fullp_Y1_in_stuck_episodes": 0.2025
+}

@@ -1,0 +1,648 @@
+{
+ "gemma-4-12b:P1k1": {
+  "copy_corrupted": {
+   "n": 21,
+   "malformed": [
+    1.0,
+    0.8454,
+    1.0,
+    21
+   ]
+  },
+  "clean_retry": {
+   "n": 153,
+   "malformed": [
+    0.0,
+    0.0,
+    0.0245,
+    153
+   ]
+  },
+  "same_content_other": {
+   "n": 71,
+   "malformed": [
+    0.1268,
+    0.0681,
+    0.2237,
+    71
+   ]
+  },
+  "other_edit": {
+   "n": 90,
+   "malformed": [
+    0.0667,
+    0.0309,
+    0.1379,
+    90
+   ]
+  },
+  "unparsed_or_no_key": {
+   "n": 3,
+   "malformed": [
+    1.0,
+    0.4385,
+    1.0,
+    3
+   ]
+  },
+  "all_edits": {
+   "n": 338,
+   "malformed": [
+    0.1154,
+    0.0856,
+    0.1539,
+    338
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.5385,
+   0.3857,
+   0.6843,
+   39
+  ]
+ },
+ "gemma-4-12b:P3k1": {
+  "copy_corrupted": {
+   "n": 3,
+   "malformed": [
+    1.0,
+    0.4385,
+    1.0,
+    3
+   ]
+  },
+  "clean_retry": {
+   "n": 182,
+   "malformed": [
+    0.0,
+    0.0,
+    0.0207,
+    182
+   ]
+  },
+  "same_content_other": {
+   "n": 88,
+   "malformed": [
+    0.0568,
+    0.0245,
+    0.1262,
+    88
+   ]
+  },
+  "other_edit": {
+   "n": 154,
+   "malformed": [
+    0.026,
+    0.0101,
+    0.0649,
+    154
+   ]
+  },
+  "unparsed_or_no_key": {
+   "n": 4,
+   "malformed": [
+    1.0,
+    0.5101,
+    1.0,
+    4
+   ]
+  },
+  "all_edits": {
+   "n": 431,
+   "malformed": [
+    0.0371,
+    0.023,
+    0.0594,
+    431
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.1875,
+   0.0659,
+   0.4301,
+   16
+  ]
+ },
+ "gemma-4-12b:P6k1": {
+  "clean_retry": {
+   "n": 3,
+   "malformed": [
+    0.0,
+    0.0,
+    0.5615,
+    3
+   ]
+  },
+  "same_content_other": {
+   "n": 26,
+   "malformed": [
+    0.3462,
+    0.1941,
+    0.5378,
+    26
+   ]
+  },
+  "other_edit": {
+   "n": 306,
+   "malformed": [
+    0.1078,
+    0.0778,
+    0.1476,
+    306
+   ]
+  },
+  "unparsed_or_no_key": {
+   "n": 11,
+   "malformed": [
+    1.0,
+    0.7412,
+    1.0,
+    11
+   ]
+  },
+  "all_edits": {
+   "n": 346,
+   "malformed": [
+    0.1532,
+    0.1191,
+    0.1949,
+    346
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.0,
+   -0.0,
+   0.0676,
+   53
+  ]
+ },
+ "gemma-4-12b:P7k1": {
+  "copy_corrupted": {
+   "n": 19,
+   "malformed": [
+    1.0,
+    0.8318,
+    1.0,
+    19
+   ]
+  },
+  "clean_retry": {
+   "n": 79,
+   "malformed": [
+    0.0,
+    -0.0,
+    0.0464,
+    79
+   ]
+  },
+  "same_content_other": {
+   "n": 34,
+   "malformed": [
+    0.1471,
+    0.0645,
+    0.3013,
+    34
+   ]
+  },
+  "other_edit": {
+   "n": 44,
+   "malformed": [
+    0.0682,
+    0.0235,
+    0.1823,
+    44
+   ]
+  },
+  "all_edits": {
+   "n": 176,
+   "malformed": [
+    0.1534,
+    0.1076,
+    0.214,
+    176
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.7037,
+   0.5152,
+   0.8415,
+   27
+  ]
+ },
+ "gemma-4-31b:P1k1": {
+  "copy_corrupted": {
+   "n": 105,
+   "malformed": [
+    1.0,
+    0.9647,
+    1.0,
+    105
+   ]
+  },
+  "clean_retry": {
+   "n": 80,
+   "malformed": [
+    0.0,
+    -0.0,
+    0.0458,
+    80
+   ]
+  },
+  "same_content_other": {
+   "n": 10,
+   "malformed": [
+    0.1,
+    0.0179,
+    0.4042,
+    10
+   ]
+  },
+  "other_edit": {
+   "n": 68,
+   "malformed": [
+    0.2059,
+    0.1268,
+    0.3164,
+    68
+   ]
+  },
+  "unparsed_or_no_key": {
+   "n": 3,
+   "malformed": [
+    1.0,
+    0.4385,
+    1.0,
+    3
+   ]
+  },
+  "all_edits": {
+   "n": 266,
+   "malformed": [
+    0.4624,
+    0.4034,
+    0.5224,
+    266
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.8537,
+   0.7805,
+   0.9054,
+   123
+  ]
+ },
+ "gemma-4-31b:P3k1": {
+  "copy_corrupted": {
+   "n": 66,
+   "malformed": [
+    1.0,
+    0.945,
+    1.0,
+    66
+   ]
+  },
+  "clean_retry": {
+   "n": 49,
+   "malformed": [
+    0.0,
+    0.0,
+    0.0727,
+    49
+   ]
+  },
+  "same_content_other": {
+   "n": 19,
+   "malformed": [
+    0.3158,
+    0.1536,
+    0.5399,
+    19
+   ]
+  },
+  "other_edit": {
+   "n": 111,
+   "malformed": [
+    0.4324,
+    0.3441,
+    0.5253,
+    111
+   ]
+  },
+  "all_edits": {
+   "n": 245,
+   "malformed": [
+    0.4898,
+    0.4278,
+    0.5521,
+    245
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.55,
+   0.4608,
+   0.6361,
+   120
+  ]
+ },
+ "gemma-4-31b:P6k1": {
+  "clean_retry": {
+   "n": 5,
+   "malformed": [
+    0.0,
+    -0.0,
+    0.4345,
+    5
+   ]
+  },
+  "same_content_other": {
+   "n": 16,
+   "malformed": [
+    0.4375,
+    0.231,
+    0.6682,
+    16
+   ]
+  },
+  "other_edit": {
+   "n": 221,
+   "malformed": [
+    0.3213,
+    0.2632,
+    0.3854,
+    221
+   ]
+  },
+  "unparsed_or_no_key": {
+   "n": 1,
+   "malformed": [
+    1.0,
+    0.2065,
+    1.0,
+    1
+   ]
+  },
+  "all_edits": {
+   "n": 243,
+   "malformed": [
+    0.3251,
+    0.2693,
+    0.3863,
+    243
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.0,
+   -0.0,
+   0.0464,
+   79
+  ]
+ },
+ "gemma-4-31b:P7k1": {
+  "copy_corrupted": {
+   "n": 36,
+   "malformed": [
+    1.0,
+    0.9036,
+    1.0,
+    36
+   ]
+  },
+  "clean_retry": {
+   "n": 119,
+   "malformed": [
+    0.0,
+    0.0,
+    0.0313,
+    119
+   ]
+  },
+  "same_content_other": {
+   "n": 38,
+   "malformed": [
+    0.6842,
+    0.5254,
+    0.8092,
+    38
+   ]
+  },
+  "other_edit": {
+   "n": 66,
+   "malformed": [
+    0.1061,
+    0.0523,
+    0.2031,
+    66
+   ]
+  },
+  "unparsed_or_no_key": {
+   "n": 1,
+   "malformed": [
+    1.0,
+    0.2065,
+    1.0,
+    1
+   ]
+  },
+  "all_edits": {
+   "n": 260,
+   "malformed": [
+    0.2692,
+    0.219,
+    0.3262,
+    260
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.5143,
+   0.3995,
+   0.6275,
+   70
+  ]
+ },
+ "gemma-4-e4b:P1k1": {
+  "copy_corrupted": {
+   "n": 15,
+   "malformed": [
+    1.0,
+    0.7961,
+    1.0,
+    15
+   ]
+  },
+  "clean_retry": {
+   "n": 109,
+   "malformed": [
+    0.0,
+    0.0,
+    0.034,
+    109
+   ]
+  },
+  "same_content_other": {
+   "n": 90,
+   "malformed": [
+    0.0333,
+    0.0114,
+    0.0935,
+    90
+   ]
+  },
+  "other_edit": {
+   "n": 236,
+   "malformed": [
+    0.0636,
+    0.0389,
+    0.1022,
+    236
+   ]
+  },
+  "unparsed_or_no_key": {
+   "n": 1,
+   "malformed": [
+    1.0,
+    0.2065,
+    1.0,
+    1
+   ]
+  },
+  "all_edits": {
+   "n": 451,
+   "malformed": [
+    0.0754,
+    0.0544,
+    0.1035,
+    451
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.4412,
+   0.2888,
+   0.6055,
+   34
+  ]
+ },
+ "gemma-4-e4b:P3k1": {
+  "copy_corrupted": {
+   "n": 6,
+   "malformed": [
+    1.0,
+    0.6097,
+    1.0,
+    6
+   ]
+  },
+  "clean_retry": {
+   "n": 38,
+   "malformed": [
+    0.0526,
+    0.0146,
+    0.1729,
+    38
+   ]
+  },
+  "same_content_other": {
+   "n": 37,
+   "malformed": [
+    0.0541,
+    0.015,
+    0.177,
+    37
+   ]
+  },
+  "other_edit": {
+   "n": 301,
+   "malformed": [
+    0.1395,
+    0.1049,
+    0.1832,
+    301
+   ]
+  },
+  "unparsed_or_no_key": {
+   "n": 1,
+   "malformed": [
+    1.0,
+    0.2065,
+    1.0,
+    1
+   ]
+  },
+  "all_edits": {
+   "n": 383,
+   "malformed": [
+    0.1384,
+    0.1074,
+    0.1766,
+    383
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.1132,
+   0.0529,
+   0.2258,
+   53
+  ]
+ },
+ "gemma-4-e4b:P6k1": {
+  "copy_corrupted": {
+   "n": 2,
+   "malformed": [
+    1.0,
+    0.3424,
+    1.0,
+    2
+   ]
+  },
+  "clean_retry": {
+   "n": 12,
+   "malformed": [
+    0.0,
+    0.0,
+    0.2425,
+    12
+   ]
+  },
+  "same_content_other": {
+   "n": 31,
+   "malformed": [
+    0.3548,
+    0.2112,
+    0.5305,
+    31
+   ]
+  },
+  "other_edit": {
+   "n": 442,
+   "malformed": [
+    0.1176,
+    0.0909,
+    0.151,
+    442
+   ]
+  },
+  "unparsed_or_no_key": {
+   "n": 1,
+   "malformed": [
+    1.0,
+    0.2065,
+    1.0,
+    1
+   ]
+  },
+  "all_edits": {
+   "n": 488,
+   "malformed": [
+    0.1352,
+    0.1077,
+    0.1685,
+    488
+   ]
+  },
+  "share_of_malformed_that_are_verbatim_copies": [
+   0.0303,
+   0.0083,
+   0.1039,
+   66
+  ]
+ }
+}

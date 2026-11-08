@@ -1,0 +1,87 @@
+{
+ "prereg": "PREREG_v2.9_gemma_coverage.md (sha256 in PROGRESS.md at freeze)",
+ "runs": {
+  "experiments/transcriptlab_cli/run_e2b": {
+   "copying_RD": [
+    0.0467,
+    0.0172,
+    0.0772
+   ],
+   "induction_RD": [
+    0.1033,
+    0.0662,
+    0.1443
+   ],
+   "rates": {
+    "P0": [
+     0.0133,
+     0.0032,
+     0.0274
+    ],
+    "P1": [
+     0.06,
+     0.0338,
+     0.0874
+    ],
+    "P6": [
+     0.1167,
+     0.0823,
+     0.1544
+    ],
+    "P8a": [
+     0.0133,
+     0.0033,
+     0.0266
+    ]
+   },
+   "verdict": "NEEDS A GUARD",
+   "quarantine_removal": [
+    1.0,
+    0.6312,
+    1.75,
+    0.0005
+   ]
+  },
+  "experiments/transcriptlab_cli/run_e4b16": {
+   "copying_RD": [
+    0.03,
+    0.0131,
+    0.0509
+   ],
+   "induction_RD": [
+    0.0467,
+    0.0261,
+    0.0717
+   ],
+   "rates": {
+    "P0": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "P1": [
+     0.03,
+     0.0131,
+     0.0509
+    ],
+    "P6": [
+     0.0467,
+     0.0261,
+     0.0717
+    ],
+    "P8a": [
+     0.0033,
+     0.0,
+     0.0104
+    ]
+   },
+   "verdict": "NEEDS A GUARD",
+   "quarantine_removal": [
+    0.8889,
+    0.625,
+    1.0,
+    0.0
+   ]
+  }
+ }
+}

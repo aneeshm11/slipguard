@@ -1,0 +1,133 @@
+{
+ "n_edits": 9077,
+ "n_attempts": 2564,
+ "malformed_rate": 0.35077668833314973,
+ "hazard": {
+  "prev_bad": {
+   "coef": 1.958,
+   "odds_ratio": 7.087,
+   "OR_CI95": [
+    4.928,
+    9.938
+   ]
+  },
+  "log1p_n_prior_bad": {
+   "coef": 0.887,
+   "odds_ratio": 2.429,
+   "OR_CI95": [
+    1.91,
+    3.228
+   ]
+  },
+  "retry_of_prev": {
+   "coef": -1.648,
+   "odds_ratio": 0.192,
+   "OR_CI95": [
+    0.012,
+    0.426
+   ]
+  },
+  "prev_bad_x_retry": {
+   "coef": 4.295,
+   "odds_ratio": 73.362,
+   "OR_CI95": [
+    32.384,
+    1225.725
+   ]
+  },
+  "first_edit": {
+   "coef": 1.421,
+   "odds_ratio": 4.141,
+   "OR_CI95": [
+    2.765,
+    5.894
+   ]
+  },
+  "log1p_position": {
+   "coef": -0.173,
+   "odds_ratio": 0.841,
+   "OR_CI95": [
+    0.616,
+    1.078
+   ]
+  },
+  "temp_0.7plus": {
+   "coef": -0.053,
+   "odds_ratio": 0.948,
+   "OR_CI95": [
+    0.658,
+    1.704
+   ]
+  },
+  "intercept": -3.144,
+  "n_boot": 200
+ },
+ "hazard_plus_future_bad_proxy": {
+  "prev_bad": {
+   "coef": 1.919,
+   "odds_ratio": 6.813,
+   "OR_CI95": [
+    4.817,
+    9.719
+   ]
+  },
+  "log1p_n_prior_bad": {
+   "coef": 0.922,
+   "odds_ratio": 2.514,
+   "OR_CI95": [
+    1.977,
+    3.136
+   ]
+  },
+  "retry_of_prev": {
+   "coef": -1.237,
+   "odds_ratio": 0.29,
+   "OR_CI95": [
+    0.036,
+    0.809
+   ]
+  },
+  "prev_bad_x_retry": {
+   "coef": 3.518,
+   "odds_ratio": 33.724,
+   "OR_CI95": [
+    11.817,
+    280.059
+   ]
+  },
+  "first_edit": {
+   "coef": 1.557,
+   "odds_ratio": 4.745,
+   "OR_CI95": [
+    3.224,
+    6.906
+   ]
+  },
+  "log1p_position": {
+   "coef": -0.098,
+   "odds_ratio": 0.906,
+   "OR_CI95": [
+    0.74,
+    1.181
+   ]
+  },
+  "temp_0.7plus": {
+   "coef": 0.193,
+   "odds_ratio": 1.213,
+   "OR_CI95": [
+    0.813,
+    1.939
+   ]
+  },
+  "log1p_future_bad": {
+   "coef": 1.99,
+   "odds_ratio": 7.313,
+   "OR_CI95": [
+    6.247,
+    8.817
+   ]
+  },
+  "intercept": -4.361,
+  "n_boot": 200
+ }
+}

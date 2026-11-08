@@ -1,0 +1,226 @@
+{
+ "A_demos": {
+  "slip_text": "filepath:<|\"|>a.py<|\"|>,new_string:<|\"|>x = 1`,old_string:<|\"|>x = 0<|\"|>",
+  "vllm_parse_slip": {
+   "filepath": "a.py",
+   "new_string": "x = 1`,old_string:"
+  },
+  "strict_slip": "REJECTED (sep@63)",
+  "S1_suffix_collisions": [
+   {
+    "intent_A": {
+     "new_string": "x = \"\"",
+     "closer": "\""
+    },
+    "intent_B": {
+     "new_string": "x = ",
+     "closer": "\"\"\""
+    },
+    "texts_identical": true,
+    "text": "filepath:<|\"|>a.py<|\"|>,new_string:<|\"|>x = \"\"\",old_string:<|\"|>y = 2<|\"|>",
+    "vllm_parse": {
+     "filepath": "a.py",
+     "new_string": "x = \"\"\",old_string:"
+    }
+   },
+   {
+    "intent_A": {
+     "new_string": "path = \"C:\\",
+     "closer": "\""
+    },
+    "intent_B": {
+     "new_string": "path = \"C:",
+     "closer": "\\\""
+    },
+    "texts_identical": true,
+    "text": "filepath:<|\"|>a.py<|\"|>,new_string:<|\"|>path = \"C:\\\",old_string:<|\"|>y = 2<|\"|>",
+    "vllm_parse": {
+     "filepath": "a.py",
+     "new_string": "path = \"C:\\\",old_string:"
+    }
+   },
+   {
+    "intent_A": {
+     "new_string": "msg = \"done\"",
+     "closer": "`"
+    },
+    "intent_B": {
+     "new_string": "msg = \"done",
+     "closer": "\"`"
+    },
+    "texts_identical": true,
+    "text": "filepath:<|\"|>a.py<|\"|>,new_string:<|\"|>msg = \"done\"`,old_string:<|\"|>y = 2<|\"|>",
+    "vllm_parse": {
+     "filepath": "a.py",
+     "new_string": "msg = \"done\"`,old_string:"
+    }
+   }
+  ],
+  "S2_doubling_collision": {
+   "clean_A": "filepath:<|\"|>README.md<|\"|>,new_string:<|\"|>run `make`<|\"|>,old_string:<|\"|>run make<|\"|>",
+   "doubled_B": "filepath:<|\"|>README.md<|\"|>,new_string:<|\"|>run `make`<|\"|>,old_string:<|\"|>run make<|\"|>",
+   "identical": true,
+   "strict_parse": {
+    "filepath": "README.md",
+    "new_string": "run `make`",
+    "old_string": "run make"
+   }
+  },
+  "S3_escape_collision": {
+   "clean_A": "filepath:<|\"|>a.py<|\"|>,new_string:<|\"|>print(\"a\\nb\")<|\"|>,old_string:<|\"|>print(\"a\")<|\"|>",
+   "drifted_B": "filepath:<|\"|>a.py<|\"|>,new_string:<|\"|>print(\"a\\nb\")<|\"|>,old_string:<|\"|>print(\"a\")<|\"|>",
+   "identical": true
+  }
+ },
+ "B_parity": {
+  "clean": 20000,
+  "clean_roundtrip": 20000,
+  "slipped": 20000,
+  "slipped_odd_parity": 20000,
+  "slipped_strict_rejected": 20000,
+  "slipped_vllm_returned_dict": 20000,
+  "slipped_vllm_dict_equals_intent": 0,
+  "slipped_vllm_lost_a_key": 9108
+ },
+ "C_real_ambiguity": {
+  "L_canon": [
+   "\"",
+   "\"\"\"",
+   "\\\"",
+   "`"
+  ],
+  "n_detectable_slips": {
+   "base": 3191,
+   "ft": 491
+  },
+  "n_ambiguous_split": {
+   "base": 163,
+   "ft": 77,
+   "ft_no_canonical_split": 1
+  },
+  "share_ambiguous": {
+   "base": 0.05108116577875274,
+   "ft": 0.15682281059063136
+  },
+  "examples": [
+   "\\\"",
+   "\\\"",
+   "\\\"",
+   "\\\"",
+   "\\\"",
+   "\\\"",
+   "\\\"",
+   "\\\""
+  ]
+ },
+ "D_map_vs_rules": {
+  "prior_tail_valid_new_string": {
+   "other": 0.9599007701421801,
+   "\"\"": 0.0005924170616113745,
+   "\"": 0.017994668246445498,
+   "\\\"": 0.011663210900473934,
+   "'": 0.006294431279620853,
+   "\"\"\"": 0.0026288507109004738,
+   "`": 0.0008515995260663507,
+   "\\": 7.40521327014218e-05
+  },
+  "closer_channel": {
+   "`": 0.8653100775193798,
+   "\"": 0.08204134366925064,
+   "\\\"": 0.03682170542635659,
+   "\"\"\"": 0.01582687338501292
+  },
+  "error": {
+   "shortest_closer": 0.052648578811369515,
+   "MAP": 0.0002703524728437243,
+   "longest_closer": 0.0002703524728437243
+  },
+  "bayes_error": 0.0002703524728437212,
+  "ambiguous_mass": 0.05109256315671038,
+  "chow_reject": {
+   "0.05": {
+    "error": 5.467802821558183e-05,
+    "reject": 0.0005004737805699449
+   },
+   "0.1": {
+    "error": 5.467802821558183e-05,
+    "reject": 0.0005004737805699449
+   },
+   "0.2": {
+    "error": 5.467802821558183e-05,
+    "reject": 0.0005004737805699449
+   },
+   "0.3": {
+    "error": 5.467802821558183e-05,
+    "reject": 0.0005004737805699449
+   }
+  }
+ },
+ "E_rollback_exactness": {
+  "content_dependent": {
+   "A3_holds": {
+    "TV(rollback, do)": 0.0,
+    "TV(rollback, conditional)": 0.09151472739314306,
+    "formula MAD/(2(1-eps_bar))": 0.09151472739314305,
+    "bound eps_bar": 0.32180332807537304,
+    "TV(post-hoc, rollback)": 2.5995441151234477e-17
+   },
+   "A3_violated": {
+    "TV(rollback, do)": 0.0,
+    "TV(rollback, conditional)": 0.09151472739314306,
+    "formula MAD/(2(1-eps_bar))": 0.09151472739314305,
+    "bound eps_bar": 0.32180332807537304,
+    "TV(post-hoc, rollback)": 0.1266892968506703
+   }
+  },
+  "content_independent": {
+   "A3_holds": {
+    "TV(rollback, do)": 0.0,
+    "TV(rollback, conditional)": 2.4869903770922963e-16,
+    "formula MAD/(2(1-eps_bar))": 2.5232341468753555e-16,
+    "bound eps_bar": 0.12000000000000044,
+    "TV(post-hoc, rollback)": 1.638585236463444e-17
+   },
+   "A3_violated": {
+    "TV(rollback, do)": 0.0,
+    "TV(rollback, conditional)": 2.4869903770922963e-16,
+    "formula MAD/(2(1-eps_bar))": 2.5232341468753555e-16,
+    "bound eps_bar": 0.12000000000000044,
+    "TV(post-hoc, rollback)": 0.042098663015927684
+   }
+  },
+  "two_point": {
+   "A3_holds": {
+    "TV(rollback, do)": 0.0,
+    "TV(rollback, conditional)": 0.33362915665390536,
+    "formula MAD/(2(1-eps_bar))": 0.33362915665390536,
+    "bound eps_bar": 0.33362915665390525,
+    "TV(post-hoc, rollback)": 0.0
+   },
+   "A3_violated": {
+    "TV(rollback, do)": 0.0,
+    "TV(rollback, conditional)": 0.33362915665390536,
+    "formula MAD/(2(1-eps_bar))": 0.33362915665390536,
+    "bound eps_bar": 0.33362915665390525,
+    "TV(post-hoc, rollback)": 0.10141488213454418
+   }
+  },
+  "multi_segment": [
+   {
+    "nseg": 1,
+    "TV(rollback, conditional)": 0.08169510554142481,
+    "bound 1-P(N)": 0.18689228077309372
+   },
+   {
+    "nseg": 2,
+    "TV(rollback, conditional)": 0.10335258587591557,
+    "bound 1-P(N)": 0.39165071532716966
+   },
+   {
+    "nseg": 3,
+    "TV(rollback, conditional)": 0.15513386401821952,
+    "bound 1-P(N)": 0.48819109826935003
+   }
+  ]
+ }
+}

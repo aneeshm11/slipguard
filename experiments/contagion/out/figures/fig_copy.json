@@ -1,0 +1,214 @@
+{
+ "metric": "Next edit_file calls after one corrupted prior call (k = 1), classified by comparing the generated new_string with the corrupted value shown in the history (byte-exact) and with the original clean value",
+ "rows": [
+  {
+   "model": "31B",
+   "arm": "P1k1",
+   "label": "31B  P1 corrupted re-render",
+   "n_edits": 266,
+   "segments": {
+    "copy": 105,
+    "rewrite_clean": 80,
+    "rewrite_malformed": 0,
+    "other_malformed": 18,
+    "other_clean": 63
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.8537,
+    0.7805,
+    0.9054,
+    123
+   ]
+  },
+  {
+   "model": "31B",
+   "arm": "P7k1",
+   "label": "31B  P7 quote closer",
+   "n_edits": 260,
+   "segments": {
+    "copy": 36,
+    "rewrite_clean": 119,
+    "rewrite_malformed": 0,
+    "other_malformed": 34,
+    "other_clean": 71
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.5143,
+    0.3995,
+    0.6275,
+    70
+   ]
+  },
+  {
+   "model": "31B",
+   "arm": "P3k1",
+   "label": "31B  P3 raw slip text",
+   "n_edits": 245,
+   "segments": {
+    "copy": 66,
+    "rewrite_clean": 49,
+    "rewrite_malformed": 0,
+    "other_malformed": 54,
+    "other_clean": 76
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.55,
+    0.4608,
+    0.6361,
+    120
+   ]
+  },
+  {
+   "model": "31B",
+   "arm": "P6k1",
+   "label": "31B  P6 corrupted + success",
+   "n_edits": 243,
+   "segments": {
+    "copy": 0,
+    "rewrite_clean": 5,
+    "rewrite_malformed": 0,
+    "other_malformed": 79,
+    "other_clean": 159
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    -0.0,
+    0.0464,
+    79
+   ]
+  },
+  {
+   "model": "12B",
+   "arm": "P1k1",
+   "label": "12B  P1 corrupted re-render",
+   "n_edits": 338,
+   "segments": {
+    "copy": 21,
+    "rewrite_clean": 153,
+    "rewrite_malformed": 0,
+    "other_malformed": 18,
+    "other_clean": 146
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.5385,
+    0.3857,
+    0.6843,
+    39
+   ]
+  },
+  {
+   "model": "12B",
+   "arm": "P7k1",
+   "label": "12B  P7 quote closer",
+   "n_edits": 176,
+   "segments": {
+    "copy": 19,
+    "rewrite_clean": 79,
+    "rewrite_malformed": 0,
+    "other_malformed": 8,
+    "other_clean": 70
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.7037,
+    0.5152,
+    0.8415,
+    27
+   ]
+  },
+  {
+   "model": "12B",
+   "arm": "P3k1",
+   "label": "12B  P3 raw slip text",
+   "n_edits": 431,
+   "segments": {
+    "copy": 3,
+    "rewrite_clean": 182,
+    "rewrite_malformed": 0,
+    "other_malformed": 13,
+    "other_clean": 233
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.1875,
+    0.0659,
+    0.4301,
+    16
+   ]
+  },
+  {
+   "model": "12B",
+   "arm": "P6k1",
+   "label": "12B  P6 corrupted + success",
+   "n_edits": 346,
+   "segments": {
+    "copy": 0,
+    "rewrite_clean": 3,
+    "rewrite_malformed": 0,
+    "other_malformed": 53,
+    "other_clean": 290
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    -0.0,
+    0.0676,
+    53
+   ]
+  },
+  {
+   "model": "E4B",
+   "arm": "P1k1",
+   "label": "E4B  P1 corrupted re-render",
+   "n_edits": 451,
+   "segments": {
+    "copy": 15,
+    "rewrite_clean": 109,
+    "rewrite_malformed": 0,
+    "other_malformed": 19,
+    "other_clean": 308
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.4412,
+    0.2888,
+    0.6055,
+    34
+   ]
+  },
+  {
+   "model": "E4B",
+   "arm": "P3k1",
+   "label": "E4B  P3 raw slip text",
+   "n_edits": 383,
+   "segments": {
+    "copy": 6,
+    "rewrite_clean": 36,
+    "rewrite_malformed": 2,
+    "other_malformed": 45,
+    "other_clean": 294
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.1132,
+    0.0529,
+    0.2258,
+    53
+   ]
+  },
+  {
+   "model": "E4B",
+   "arm": "P6k1",
+   "label": "E4B  P6 corrupted + success",
+   "n_edits": 488,
+   "segments": {
+    "copy": 2,
+    "rewrite_clean": 12,
+    "rewrite_malformed": 0,
+    "other_malformed": 64,
+    "other_clean": 410
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0303,
+    0.0083,
+    0.1039,
+    66
+   ]
+  }
+ ]
+}

@@ -1,0 +1,779 @@
+{
+ "estimand": "primary = unconditional P(next call is a malformed edit_file) per context; conditional beside it",
+ "prereg_file_present": true,
+ "heldout_lock": {
+  "file": "data/ids_heldout_31b.txt",
+  "n": 294,
+  "excluded_already_seen": 6,
+  "sha256": "bbe9af233416f7a7a890179d330bfee223d8b4f2eecb7933e8d8962c8aef6a28",
+  "created_utc": "2026-11-04 11:47:28",
+  "rule": "contexts 300-599 of the random order minus contexts with any 31B record before this time; outcomes analysed once, after the pre-registration lock"
+ },
+ "heldout_replication": {
+  "n_contexts_frozen": 294,
+  "P1_vs_P0": {
+   "uncond": {
+    "n_contexts": 294,
+    "n_attempts": 244,
+    "arm": 0.4524,
+    "base": 0.0272,
+    "RD": 0.4252,
+    "RD_CI": [
+     0.366,
+     0.484
+    ],
+    "ratio": 16.625,
+    "ratio_CI": [
+     9.429,
+     43.667
+    ]
+   },
+   "cond": {
+    "n_contexts": 294,
+    "n_attempts": 244,
+    "arm": 0.5057,
+    "base": 0.0316,
+    "RD": 0.4741,
+    "RD_CI": [
+     0.4128,
+     0.5334
+    ],
+    "ratio": 15.993,
+    "ratio_CI": [
+     9.218,
+     41.979
+    ]
+   }
+  },
+  "P6_vs_P0": {
+   "uncond": {
+    "n_contexts": 294,
+    "n_attempts": 244,
+    "arm": 0.2925,
+    "base": 0.0272,
+    "RD": 0.2653,
+    "RD_CI": [
+     0.2174,
+     0.3125
+    ],
+    "ratio": 10.75,
+    "ratio_CI": [
+     6.154,
+     27.333
+    ]
+   },
+   "newcontent_uncond": {
+    "n_contexts": 294,
+    "n_attempts": 244,
+    "arm": 0.2619,
+    "base": 0.0272,
+    "RD": 0.2347,
+    "RD_CI": [
+     0.1892,
+     0.2877
+    ],
+    "ratio": 9.625,
+    "ratio_CI": [
+     5.643,
+     23.333
+    ]
+   },
+   "cond": {
+    "n_contexts": 294,
+    "n_attempts": 244,
+    "arm": 0.3568,
+    "base": 0.0316,
+    "RD": 0.3252,
+    "RD_CI": [
+     0.2671,
+     0.3856
+    ],
+    "ratio": 11.285,
+    "ratio_CI": [
+     6.512,
+     28.895
+    ]
+   }
+  },
+  "P8a_vs_P0": {
+   "uncond": {
+    "n_contexts": 294,
+    "n_attempts": 244,
+    "arm": 0.0102,
+    "base": 0.0272,
+    "RD": -0.017,
+    "RD_CI": [
+     -0.0338,
+     -0.0034
+    ],
+    "ratio": 0.375,
+    "ratio_CI": [
+     0.0,
+     0.75
+    ]
+   },
+   "cond": {
+    "n_contexts": 294,
+    "n_attempts": 244,
+    "arm": 0.0124,
+    "base": 0.0316,
+    "RD": -0.0192,
+    "RD_CI": [
+     -0.0379,
+     -0.0036
+    ],
+    "ratio": 0.394,
+    "ratio_CI": [
+     0.0,
+     0.792
+    ]
+   }
+  },
+  "P8a_removal_of_P1_excess": {
+   "uncond": {
+    "n_contexts": 294,
+    "P1": 0.4524,
+    "Q": 0.0102,
+    "P0": 0.0272,
+    "fraction_removed": 1.04,
+    "CI": [
+     1.008,
+     1.082
+    ]
+   },
+   "cond": {
+    "n_contexts": 294,
+    "P1": 0.5057,
+    "Q": 0.0124,
+    "P0": 0.0316,
+    "fraction_removed": 1.04,
+    "CI": [
+     1.007,
+     1.082
+    ]
+   }
+  },
+  "jobs_present": 1176,
+  "note": "contexts 300-599 of the random order minus 6 seen; frozen sha256 bbe9af23"
+ },
+ "format_induction": {
+  "gate": {
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2633,
+    "base": 0.05,
+    "RD": 0.2133,
+    "RD_CI": [
+     0.1649,
+     0.264
+    ],
+    "ratio": 5.267,
+    "ratio_CI": [
+     3.5,
+     9.625
+    ]
+   },
+   "newcontent_uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2433,
+    "base": 0.05,
+    "RD": 0.1933,
+    "RD_CI": [
+     0.1463,
+     0.2417
+    ],
+    "ratio": 4.867,
+    "ratio_CI": [
+     3.19,
+     8.667
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.3251,
+    "base": 0.0568,
+    "RD": 0.2683,
+    "RD_CI": [
+     0.2113,
+     0.3238
+    ],
+    "ratio": 5.722,
+    "ratio_CI": [
+     3.705,
+     10.46
+    ]
+   }
+  },
+  "heldout": {
+   "uncond": {
+    "n_contexts": 294,
+    "n_attempts": 244,
+    "arm": 0.2925,
+    "base": 0.0272,
+    "RD": 0.2653,
+    "RD_CI": [
+     0.2171,
+     0.3137
+    ],
+    "ratio": 10.75,
+    "ratio_CI": [
+     6.267,
+     28.667
+    ]
+   },
+   "newcontent_uncond": {
+    "n_contexts": 294,
+    "n_attempts": 244,
+    "arm": 0.2619,
+    "base": 0.0272,
+    "RD": 0.2347,
+    "RD_CI": [
+     0.1862,
+     0.2837
+    ],
+    "ratio": 9.625,
+    "ratio_CI": [
+     5.545,
+     25.667
+    ]
+   },
+   "cond": {
+    "n_contexts": 294,
+    "n_attempts": 244,
+    "arm": 0.3568,
+    "base": 0.0316,
+    "RD": 0.3252,
+    "RD_CI": [
+     0.2646,
+     0.3873
+    ],
+    "ratio": 11.285,
+    "ratio_CI": [
+     6.6,
+     30.207
+    ]
+   }
+  },
+  "rule": "claimed iff RD(P6-P0) >= +5 pp with CI_lo > 0 on both the gate and held-out halves (unconditional)",
+  "decision": "claimed"
+ },
+ "copying": {
+  "P1_share_of_malformed_that_are_verbatim_copies": [
+   0.8537,
+   0.7805,
+   0.9054,
+   123
+  ],
+  "P7_quote_closer_share_of_malformed": [
+   0.6286,
+   0.5115,
+   0.7323,
+   70
+  ],
+  "P0_quote_closer_share_of_malformed": [
+   0.0,
+   0,
+   0.2775,
+   10
+  ],
+  "rule": ">= 80% of P1 malformed edits are verbatim copies AND P7 slips carry '\"' well above P0 (operationalised: P7 share Wilson CI_lo > P0 share point estimate)",
+  "decision": "confirmed"
+ },
+ "shipped_quarantine": {
+  "P8a": {
+   "n_contexts": 300,
+   "P1": 0.4033,
+   "Q": 0.0033,
+   "P0": 0.05,
+   "fraction_removed": 1.132,
+   "CI": [
+    1.069,
+    1.217
+   ]
+  },
+  "P8b": {
+   "n_contexts": 300,
+   "P1": 0.4033,
+   "Q": 0.0067,
+   "P0": 0.05,
+   "fraction_removed": 1.123,
+   "CI": [
+    1.058,
+    1.208
+   ]
+  },
+  "P4P": {
+   "n_contexts": 300,
+   "P1": 0.4033,
+   "Q": 0.0467,
+   "P0": 0.05,
+   "fraction_removed": 1.009,
+   "CI": [
+    1.0,
+    1.032
+   ]
+  },
+  "P4": {
+   "n_contexts": 300,
+   "P1": 0.4033,
+   "Q": 0.03,
+   "P0": 0.05,
+   "fraction_removed": 1.057,
+   "CI": [
+    0.988,
+    1.137
+   ]
+  },
+  "P5": {
+   "n_contexts": 300,
+   "P1": 0.4033,
+   "Q": 0.0233,
+   "P0": 0.05,
+   "fraction_removed": 1.075,
+   "CI": [
+    1.0,
+    1.167
+   ]
+  },
+  "P4P_note": "P4' renders byte-identical to P0 in 297/300 gate contexts (out/p4prime_identity.json): at k=1 its removal is 100% by construction; its informative test is A2 (P4'-MAP).",
+  "rule": "works iff P8a and P4' each remove >= 70% of the P1 excess (unconditional) with CI_lo >= 50%",
+  "decision": "works"
+ },
+ "july_template": {
+  "uncond": {
+   "n_contexts": 150,
+   "n_attempts": 137,
+   "arm": 0.3533,
+   "base": 0.02,
+   "RD": 0.3333,
+   "RD_CI": [
+    0.2533,
+    0.4178
+   ],
+   "ratio": 17.667,
+   "ratio_CI": [
+    7.571,
+    "inf"
+   ]
+  },
+  "cond": {
+   "n_contexts": 150,
+   "n_attempts": 137,
+   "arm": 0.4173,
+   "base": 0.0233,
+   "RD": 0.3941,
+   "RD_CI": [
+    0.3073,
+    0.4848
+   ],
+   "ratio": 17.945,
+   "ratio_CI": [
+    7.785,
+    "inf"
+   ]
+  },
+  "removal_P4": {
+   "n_contexts": 150,
+   "P1": 0.3533,
+   "Q": 0.0333,
+   "P0": 0.02,
+   "fraction_removed": 0.96,
+   "CI": [
+    0.868,
+    1.056
+   ]
+  },
+  "removal_P5": {
+   "n_contexts": 150,
+   "P1": 0.3533,
+   "Q": 0.0267,
+   "P0": 0.02,
+   "fraction_removed": 0.98,
+   "CI": [
+    0.878,
+    1.089
+   ]
+  },
+  "rule": "\"does not fix the loop\" iff NT P1/P0 >= 3x with CI_lo > 1 (unconditional)",
+  "decision": "does not fix the loop"
+ },
+ "gate_arms_vs_P0": {
+  "P1k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4033,
+    "base": 0.05,
+    "RD": 0.3533,
+    "RD_CI": [
+     0.2954,
+     0.4136
+    ],
+    "ratio": 8.067,
+    "ratio_CI": [
+     5.333,
+     14.875
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4618,
+    "base": 0.0568,
+    "RD": 0.405,
+    "RD_CI": [
+     0.3386,
+     0.4689
+    ],
+    "ratio": 8.128,
+    "ratio_CI": [
+     5.354,
+     15.137
+    ]
+   }
+  },
+  "P2k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.01,
+    "base": 0.05,
+    "RD": -0.04,
+    "RD_CI": [
+     -0.0658,
+     -0.0167
+    ],
+    "ratio": 0.2,
+    "ratio_CI": [
+     0.0,
+     0.5
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0128,
+    "base": 0.0568,
+    "RD": -0.0441,
+    "RD_CI": [
+     -0.0728,
+     -0.0178
+    ],
+    "ratio": 0.225,
+    "ratio_CI": [
+     0.0,
+     0.528
+    ]
+   }
+  },
+  "P3k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.39,
+    "base": 0.05,
+    "RD": 0.34,
+    "RD_CI": [
+     0.2781,
+     0.394
+    ],
+    "ratio": 7.8,
+    "ratio_CI": [
+     5.13,
+     14.429
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4855,
+    "base": 0.0568,
+    "RD": 0.4287,
+    "RD_CI": [
+     0.3642,
+     0.4934
+    ],
+    "ratio": 8.544,
+    "ratio_CI": [
+     5.505,
+     16.601
+    ]
+   }
+  },
+  "P4k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.03,
+    "base": 0.05,
+    "RD": -0.02,
+    "RD_CI": [
+     -0.0442,
+     0.0033
+    ],
+    "ratio": 0.6,
+    "ratio_CI": [
+     0.278,
+     1.071
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0338,
+    "base": 0.0568,
+    "RD": -0.023,
+    "RD_CI": [
+     -0.0496,
+     0.0055
+    ],
+    "ratio": 0.595,
+    "ratio_CI": [
+     0.279,
+     1.143
+    ]
+   }
+  },
+  "P4Pk1": {
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0467,
+    "base": 0.05,
+    "RD": -0.0033,
+    "RD_CI": [
+     -0.0105,
+     0.0
+    ],
+    "ratio": 0.933,
+    "ratio_CI": [
+     0.769,
+     1.0
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0528,
+    "base": 0.0568,
+    "RD": -0.004,
+    "RD_CI": [
+     -0.0122,
+     0.0
+    ],
+    "ratio": 0.93,
+    "ratio_CI": [
+     0.781,
+     1.0
+    ]
+   }
+  },
+  "P5k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0233,
+    "base": 0.05,
+    "RD": -0.0267,
+    "RD_CI": [
+     -0.0539,
+     0.0
+    ],
+    "ratio": 0.467,
+    "ratio_CI": [
+     0.16,
+     1.0
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0338,
+    "base": 0.0568,
+    "RD": -0.023,
+    "RD_CI": [
+     -0.0564,
+     0.0113
+    ],
+    "ratio": 0.595,
+    "ratio_CI": [
+     0.201,
+     1.296
+    ]
+   }
+  },
+  "P6k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2633,
+    "base": 0.05,
+    "RD": 0.2133,
+    "RD_CI": [
+     0.1661,
+     0.2626
+    ],
+    "ratio": 5.267,
+    "ratio_CI": [
+     3.429,
+     9.333
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.3251,
+    "base": 0.0568,
+    "RD": 0.2683,
+    "RD_CI": [
+     0.212,
+     0.3272
+    ],
+    "ratio": 5.722,
+    "ratio_CI": [
+     3.766,
+     9.922
+    ]
+   }
+  },
+  "P7k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2333,
+    "base": 0.05,
+    "RD": 0.1833,
+    "RD_CI": [
+     0.1299,
+     0.2396
+    ],
+    "ratio": 4.667,
+    "ratio_CI": [
+     2.913,
+     8.875
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2692,
+    "base": 0.0568,
+    "RD": 0.2124,
+    "RD_CI": [
+     0.1486,
+     0.2719
+    ],
+    "ratio": 4.738,
+    "ratio_CI": [
+     2.89,
+     8.96
+    ]
+   }
+  },
+  "P8ak1": {
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0033,
+    "base": 0.05,
+    "RD": -0.0467,
+    "RD_CI": [
+     -0.0717,
+     -0.0235
+    ],
+    "ratio": 0.067,
+    "ratio_CI": [
+     0.0,
+     0.222
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0039,
+    "base": 0.0568,
+    "RD": -0.0529,
+    "RD_CI": [
+     -0.0817,
+     -0.0277
+    ],
+    "ratio": 0.069,
+    "ratio_CI": [
+     0.0,
+     0.218
+    ]
+   }
+  },
+  "P8bk1": {
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0067,
+    "base": 0.05,
+    "RD": -0.0433,
+    "RD_CI": [
+     -0.0682,
+     -0.0197
+    ],
+    "ratio": 0.133,
+    "ratio_CI": [
+     0.0,
+     0.375
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.008,
+    "base": 0.0568,
+    "RD": -0.0488,
+    "RD_CI": [
+     -0.0797,
+     -0.0221
+    ],
+    "ratio": 0.141,
+    "ratio_CI": [
+     0.0,
+     0.395
+    ]
+   }
+  },
+  "P9k1": {
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.3567,
+    "base": 0.05,
+    "RD": 0.3067,
+    "RD_CI": [
+     0.2492,
+     0.3643
+    ],
+    "ratio": 7.133,
+    "ratio_CI": [
+     4.696,
+     13.0
+    ]
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4297,
+    "base": 0.0568,
+    "RD": 0.3729,
+    "RD_CI": [
+     0.3047,
+     0.4378
+    ],
+    "ratio": 7.563,
+    "ratio_CI": [
+     4.939,
+     14.456
+    ]
+   }
+  }
+ }
+}

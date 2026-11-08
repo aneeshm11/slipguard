@@ -1,0 +1,874 @@
+{
+ "model": "hermes3-8b",
+ "n_records": 1200,
+ "errors": {},
+ "arms": {
+  "P0": {
+   "n": 300,
+   "P_call": [
+    0.8367,
+    0.7906,
+    0.8742,
+    300
+   ],
+   "P_edit": [
+    0.26,
+    0.2136,
+    0.3124,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0333,
+    0.0182,
+    0.0603,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.1282,
+    0.0712,
+    0.2202,
+    78
+   ],
+   "P_malformed_any_call_given_call": [
+    0.1315,
+    0.0952,
+    0.1789,
+    251
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0333,
+    0.0182,
+    0.0603,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0333,
+    0.0182,
+    0.0603,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.1538,
+    0.0903,
+    0.2499,
+    78
+   ],
+   "first_call_names": {
+    "bash": 106,
+    "edit_file": 78,
+    "<no call>": 49,
+    "read_file": 36,
+    "write_file": 18,
+    "submit": 7,
+    "<unparsed>": 6
+   },
+   "malformed_edit_why": {
+    "unparsed": 10
+   },
+   "malformed_edit_flags": {
+    "unparsed": 10
+   },
+   "budget_forced": 0,
+   "thought_tokens_median": 0.0,
+   "edit_order": {
+    "new_first": 65,
+    "null": 10,
+    "old_first": 3
+   }
+  },
+  "P1L": {
+   "n": 300,
+   "P_call": [
+    0.8533,
+    0.8088,
+    0.8889,
+    300
+   ],
+   "P_edit": [
+    0.5533,
+    0.4968,
+    0.6086,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0933,
+    0.0654,
+    0.1316,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.1687,
+    0.1194,
+    0.233,
+    166
+   ],
+   "P_malformed_any_call_given_call": [
+    0.1484,
+    0.1101,
+    0.1972,
+    256
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0933,
+    0.0654,
+    0.1316,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0867,
+    0.0598,
+    0.124,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.2108,
+    0.1557,
+    0.2791,
+    166
+   ],
+   "first_call_names": {
+    "edit_file": 166,
+    "<no call>": 44,
+    "bash": 40,
+    "read_file": 30,
+    "write_file": 13,
+    "submit": 5,
+    "<unparsed>": 2
+   },
+   "malformed_edit_why": {
+    "unparsed": 26,
+    "missing:new_string": 1,
+    "special_tok:old_string": 1
+   },
+   "malformed_edit_flags": {
+    "unparsed": 26,
+    "missing:new_string": 1,
+    "special_tok:old_string": 1
+   },
+   "budget_forced": 0,
+   "thought_tokens_median": 0.0,
+   "edit_order": {
+    "new_first": 86,
+    "old_first": 54,
+    "null": 26
+   }
+  },
+  "P6": {
+   "n": 300,
+   "P_call": [
+    0.8567,
+    0.8125,
+    0.8918,
+    300
+   ],
+   "P_edit": [
+    0.2567,
+    0.2105,
+    0.309,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0867,
+    0.0598,
+    0.124,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.3377,
+    0.242,
+    0.4488,
+    77
+   ],
+   "P_malformed_any_call_given_call": [
+    0.1868,
+    0.1439,
+    0.2389,
+    257
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0867,
+    0.0598,
+    0.124,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0667,
+    0.0436,
+    0.1007,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.3506,
+    0.2535,
+    0.462,
+    77
+   ],
+   "first_call_names": {
+    "bash": 110,
+    "edit_file": 77,
+    "<no call>": 43,
+    "read_file": 39,
+    "write_file": 15,
+    "submit": 9,
+    "<unparsed>": 7
+   },
+   "malformed_edit_why": {
+    "unparsed": 20,
+    "extra_key": 4,
+    "special_tok:old_string": 1,
+    "leak_closer:new_string": 1
+   },
+   "malformed_edit_flags": {
+    "unparsed": 20,
+    "extra_key": 4,
+    "missing:old_string": 4,
+    "leak_closer:new_string": 3,
+    "special_tok:old_string": 1
+   },
+   "budget_forced": 0,
+   "thought_tokens_median": 0.0,
+   "edit_order": {
+    "new_first": 49,
+    "null": 20,
+    "old_first": 8
+   }
+  },
+  "P8a": {
+   "n": 300,
+   "P_call": [
+    0.8833,
+    0.8421,
+    0.9149,
+    300
+   ],
+   "P_edit": [
+    0.6167,
+    0.5605,
+    0.6699,
+    300
+   ],
+   "P_malformed_edit_uncond": [
+    0.0567,
+    0.0357,
+    0.0889,
+    300
+   ],
+   "P_malformed_given_edit": [
+    0.0919,
+    0.0582,
+    0.1422,
+    185
+   ],
+   "P_malformed_any_call_given_call": [
+    0.1057,
+    0.0741,
+    0.1485,
+    265
+   ],
+   "P_malformed_edit_uncond_gemma_definition": [
+    0.0567,
+    0.0357,
+    0.0889,
+    300
+   ],
+   "P_loud_edit_uncond": [
+    0.0533,
+    0.0331,
+    0.0849,
+    300
+   ],
+   "P_strict_reject_given_edit": [
+    0.1297,
+    0.0888,
+    0.1858,
+    185
+   ],
+   "first_call_names": {
+    "edit_file": 185,
+    "bash": 35,
+    "<no call>": 35,
+    "read_file": 18,
+    "write_file": 16,
+    "<unparsed>": 6,
+    "submit": 5
+   },
+   "malformed_edit_why": {
+    "unparsed": 16,
+    "missing:old_string": 1
+   },
+   "malformed_edit_flags": {
+    "unparsed": 16,
+    "missing:old_string": 1
+   },
+   "budget_forced": 0,
+   "thought_tokens_median": 0.0,
+   "edit_order": {
+    "new_first": 113,
+    "old_first": 56,
+    "null": 16
+   }
+  }
+ },
+ "logged_gemma31b_next_call_malformed": {},
+ "paired_vs_P0": {
+  "P1L": {
+   "n_contexts": 300,
+   "n_attempts": 231,
+   "events_arm": 28,
+   "events_base": 10,
+   "discordant_arm_only": 25,
+   "discordant_base_only": 7,
+   "uncond": {
+    "arm": 0.0933,
+    "base": 0.0333,
+    "RD": 0.06,
+    "RD_CI": [
+     0.0259,
+     0.096
+    ],
+    "p_one_sided_RD_gt_0": 0.0005,
+    "p_one_sided_RD_lt_0": 0.9997,
+    "ratio": 2.8,
+    "ratio_CI": [
+     1.5556,
+     6.25
+    ],
+    "ratio_haldane": 2.714,
+    "mcnemar_exact_p_one_sided": 0.001051
+   },
+   "cond": {
+    "arm": 0.1687,
+    "base": 0.1282,
+    "RD": 0.0405,
+    "RD_CI": [
+     -0.0527,
+     0.1279
+    ],
+    "ratio": 1.316,
+    "ratio_CI": [
+     0.7202,
+     2.9354
+    ],
+    "n_edits_arm": 166,
+    "n_edits_base": 78
+   },
+   "P_edit": {
+    "arm": 0.5533,
+    "base": 0.26,
+    "RD": 0.2933,
+    "RD_CI": [
+     0.2323,
+     0.3547
+    ]
+   }
+  },
+  "P6": {
+   "n_contexts": 300,
+   "n_attempts": 231,
+   "events_arm": 26,
+   "events_base": 10,
+   "discordant_arm_only": 20,
+   "discordant_base_only": 4,
+   "uncond": {
+    "arm": 0.0867,
+    "base": 0.0333,
+    "RD": 0.0533,
+    "RD_CI": [
+     0.0227,
+     0.087
+    ],
+    "p_one_sided_RD_gt_0": 0.0003,
+    "p_one_sided_RD_lt_0": 1.0,
+    "ratio": 2.6,
+    "ratio_CI": [
+     1.5,
+     5.75
+    ],
+    "ratio_haldane": 2.524,
+    "mcnemar_exact_p_one_sided": 0.000772
+   },
+   "cond": {
+    "arm": 0.3377,
+    "base": 0.1282,
+    "RD": 0.2095,
+    "RD_CI": [
+     0.094,
+     0.3273
+    ],
+    "ratio": 2.634,
+    "ratio_CI": [
+     1.5278,
+     5.7227
+    ],
+    "n_edits_arm": 77,
+    "n_edits_base": 78
+   },
+   "P_edit": {
+    "arm": 0.2567,
+    "base": 0.26,
+    "RD": -0.0033,
+    "RD_CI": [
+     -0.0321,
+     0.0259
+    ]
+   }
+  },
+  "P8a": {
+   "n_contexts": 300,
+   "n_attempts": 231,
+   "events_arm": 17,
+   "events_base": 10,
+   "discordant_arm_only": 15,
+   "discordant_base_only": 8,
+   "uncond": {
+    "arm": 0.0567,
+    "base": 0.0333,
+    "RD": 0.0233,
+    "RD_CI": [
+     -0.0069,
+     0.055
+    ],
+    "p_one_sided_RD_gt_0": 0.08579,
+    "p_one_sided_RD_lt_0": 0.94381,
+    "ratio": 1.7,
+    "ratio_CI": [
+     0.8333,
+     4.1667
+    ],
+    "ratio_haldane": 1.667,
+    "mcnemar_exact_p_one_sided": 0.10502
+   },
+   "cond": {
+    "arm": 0.0919,
+    "base": 0.1282,
+    "RD": -0.0363,
+    "RD_CI": [
+     -0.123,
+     0.0439
+    ],
+    "ratio": 0.717,
+    "ratio_CI": [
+     0.3573,
+     1.6941
+    ],
+    "n_edits_arm": 185,
+    "n_edits_base": 78
+   },
+   "P_edit": {
+    "arm": 0.6167,
+    "base": 0.26,
+    "RD": 0.3567,
+    "RD_CI": [
+     0.2939,
+     0.4181
+    ]
+   }
+  }
+ },
+ "removal": {
+  "P8a": {
+   "n_contexts": 300,
+   "uncond": {
+    "P1L": 0.0933,
+    "P8a": 0.0567,
+    "P0": 0.0333,
+    "fraction_removed": 0.611,
+    "CI": [
+     -0.1333,
+     1.1538
+    ],
+    "RD_P1L_minus_P8a": 0.0367,
+    "RD_CI": [
+     -0.0064,
+     0.0777
+    ],
+    "p_one_sided_removal_gt_0": 0.0498
+   },
+   "cond": {
+    "P1L": 0.1687,
+    "P8a": 0.0919,
+    "P0": 0.1282,
+    "fraction_removed": 1.897,
+    "CI": [
+     -10.5955,
+     14.1394
+    ],
+    "RD_P1L_minus_P8a": 0.0768,
+    "RD_CI": [
+     0.0046,
+     0.1477
+    ],
+    "p_one_sided_removal_gt_0": 0.0194
+   }
+  },
+  "P6": {
+   "n_contexts": 300,
+   "uncond": {
+    "P1L": 0.0933,
+    "P6": 0.0867,
+    "P0": 0.0333,
+    "fraction_removed": 0.111,
+    "CI": [
+     -1.0,
+     0.625
+    ],
+    "RD_P1L_minus_P6": 0.0067,
+    "RD_CI": [
+     -0.0337,
+     0.0467
+    ],
+    "p_one_sided_removal_gt_0": 0.40426
+   },
+   "cond": {
+    "P1L": 0.1687,
+    "P6": 0.3377,
+    "P0": 0.1282,
+    "fraction_removed": -4.176,
+    "CI": [
+     -46.3279,
+     36.9834
+    ],
+    "RD_P1L_minus_P6": -0.169,
+    "RD_CI": [
+     -0.2913,
+     -0.0546
+    ],
+    "p_one_sided_removal_gt_0": 0.9988
+   }
+  }
+ },
+ "copy_check": {
+  "P0": {
+   "clean_retry": {
+    "n": 2,
+    "malformed": [
+     0.0,
+     0.0,
+     0.6576,
+     2
+    ]
+   },
+   "same_content_variant": {
+    "n": 8,
+    "malformed": [
+     0.0,
+     0.0,
+     0.3244,
+     8
+    ]
+   },
+   "new_content": {
+    "n": 58,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0621,
+     58
+    ]
+   },
+   "unparsed_other": {
+    "n": 10,
+    "malformed": [
+     1.0,
+     0.7225,
+     1.0,
+     10
+    ]
+   },
+   "all_edits": {
+    "n": 78,
+    "malformed": [
+     0.1282,
+     0.0712,
+     0.2202,
+     78
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.2775,
+    10
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.0621,
+    58
+   ],
+   "non_copy_edits_malformed": [
+    0.1282,
+    0.0712,
+    0.2202,
+    78
+   ]
+  },
+  "P1L": {
+   "clean_retry": {
+    "n": 47,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0756,
+     47
+    ]
+   },
+   "same_content_variant": {
+    "n": 35,
+    "malformed": [
+     0.0286,
+     0.0051,
+     0.1453,
+     35
+    ]
+   },
+   "new_content": {
+    "n": 57,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0631,
+     57
+    ]
+   },
+   "unparsed_other": {
+    "n": 26,
+    "malformed": [
+     1.0,
+     0.8713,
+     1.0,
+     26
+    ]
+   },
+   "key_missing": {
+    "n": 1,
+    "malformed": [
+     1.0,
+     0.2065,
+     1.0,
+     1
+    ]
+   },
+   "all_edits": {
+    "n": 166,
+    "malformed": [
+     0.1687,
+     0.1194,
+     0.233,
+     166
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.1206,
+    28
+   ],
+   "new_content_edits_malformed": [
+    0.0,
+    0.0,
+    0.0631,
+    57
+   ],
+   "non_copy_edits_malformed": [
+    0.1687,
+    0.1194,
+    0.233,
+    166
+   ]
+  },
+  "P6": {
+   "clean_retry": {
+    "n": 2,
+    "malformed": [
+     0.0,
+     0.0,
+     0.6576,
+     2
+    ]
+   },
+   "same_content_variant": {
+    "n": 5,
+    "malformed": [
+     0.4,
+     0.1176,
+     0.7693,
+     5
+    ]
+   },
+   "new_content": {
+    "n": 50,
+    "malformed": [
+     0.08,
+     0.0315,
+     0.1884,
+     50
+    ]
+   },
+   "unparsed_other": {
+    "n": 20,
+    "malformed": [
+     1.0,
+     0.8389,
+     1.0,
+     20
+    ]
+   },
+   "all_edits": {
+    "n": 77,
+    "malformed": [
+     0.3377,
+     0.242,
+     0.4488,
+     77
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.1287,
+    26
+   ],
+   "new_content_edits_malformed": [
+    0.08,
+    0.0315,
+    0.1884,
+    50
+   ],
+   "non_copy_edits_malformed": [
+    0.3377,
+    0.242,
+    0.4488,
+    77
+   ]
+  },
+  "P8a": {
+   "clean_retry": {
+    "n": 81,
+    "malformed": [
+     0.0,
+     0.0,
+     0.0453,
+     81
+    ]
+   },
+   "same_content_variant": {
+    "n": 32,
+    "malformed": [
+     0.0,
+     0.0,
+     0.1072,
+     32
+    ]
+   },
+   "new_content": {
+    "n": 56,
+    "malformed": [
+     0.0179,
+     0.0032,
+     0.0945,
+     56
+    ]
+   },
+   "unparsed_other": {
+    "n": 16,
+    "malformed": [
+     1.0,
+     0.8064,
+     1.0,
+     16
+    ]
+   },
+   "all_edits": {
+    "n": 185,
+    "malformed": [
+     0.0919,
+     0.0582,
+     0.1422,
+     185
+    ]
+   },
+   "share_of_malformed_that_are_verbatim_copies": [
+    0.0,
+    0.0,
+    0.1843,
+    17
+   ],
+   "new_content_edits_malformed": [
+    0.0179,
+    0.0032,
+    0.0945,
+    56
+   ],
+   "non_copy_edits_malformed": [
+    0.0919,
+    0.0582,
+    0.1422,
+    185
+   ]
+  }
+ },
+ "natural_calls": {
+  "P0|edit|loud_unparsed": 10,
+  "P0|edit|ok_but_strict_reject:BAD_SHAPE": 1,
+  "P0|edit|ok_but_strict_reject:UNTERMINATED": 1,
+  "P0|edit|ok_strict_ok": 66,
+  "P0|other|loud_unparsed": 23,
+  "P0|other|ok_but_strict_reject:UNTERMINATED": 2,
+  "P0|other|ok_strict_ok": 148
+ },
+ "natural_examples": {
+  "P0:other:loud_unparsed": [
+   {
+    "id": "astropy__astropy-13234__S1:20",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\nThe issue seems to be resolved. I have made several changes to the astropy/table/serialize.py file to handle the round-tripping of structured columns with field names like \"name\". Now, the script \"reproduce_issue.py\" is able to round-trip the structured column without any errors.",
+    "new_head": ""
+   },
+   {
+    "id": "django__django-7475__S1:10",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"bash\", \"arguments\": {\"command\": 'sed -i \"s/importlib/importlib.quotable/; s/f\\\\\\\"No module named {options['default']\\\\\\\"/f\\\"No module named {options['default']}\\\"/\" reproduce_diffsettings.py'}}\n</tool_call>",
+    "new_head": ""
+   },
+   {
+    "id": "django__django-13426__S1:30",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n",
+    "new_head": ""
+   }
+  ],
+  "P0:edit:loud_unparsed": [
+   {
+    "id": "django__django-12741__S1:12",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"file_path\": \"/testbed/tests/backends/base/test_operations.py\", \"new_string\": \"        sql_list = connection.ops.sql_flush(no_style(), [], reset_sequences=True, allow_cascade=True)\\n        connection.ops.execute_sql_flush(connection.alias, sql_list)\", \"old_string\": \"        connection.ops.execute_sql_flush(connection.alias, sql_list)\"}}\n<tool_call>\n",
+    "new_head": ""
+   },
+   {
+    "id": "pydata__xarray-6461__S1:32",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"file_path\": \"/testbed/xarray/core/computation.py\", \"new_string\": \"        if context is not None and len(context) > 0:\\n            return {k: v for k, v in context[0].attrs.items() if k != 'attr_y'}\\n        return {}\" \"old_string\": \"        if context is not None and len(context) > 1:\\n            x = context[1]\\n            if hasattr(x, \\\"attrs\\\"):\"}}\n</tool_call>",
+    "new_head": ""
+   },
+   {
+    "id": "django__django-16899__S1:12",
+    "flags": [
+     "unparsed"
+    ],
+    "raw": "<tool_call>\n{\"name\": \"edit_file\", \"arguments\": {\"file_path\": \"reproduce_issue.py\", \"new_string\": \"if __name__ == \\\"__main__\\\":\\n    admin_site = admin.AdminSite()\\n    admin.site.register(Song, SongAdmin)\\n    errors = admin_site.check()\\n    \\n    found_error = False\\n    for error in errors:\\n        if error.id == 'admin.E035':\", \"old_string\": \"if __name__ == \\\"__main__\\\":\\n    try:\\n        test_readonly_fields_error_message()\\n    except Exception as e:\\n        print(f\\\"An error occurred: {e}\\\")\\n        import traceback\\n        traceback.print_exc()\"}}\n<tool_call>\n",
+    "new_head": ""
+   }
+  ]
+ }
+}

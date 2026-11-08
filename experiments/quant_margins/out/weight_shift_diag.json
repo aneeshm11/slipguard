@@ -1,0 +1,9 @@
+{
+ "n_modules": 41,
+ "numel": 2813067264,
+ "rel_rms_qat_unq_minus_bf16": 0.26861327521772754,
+ "rel_rms_q40_rounding_of_bf16": 0.08883204580606889,
+ "rel_rms_q40_rounding_of_qat_unq": 0.03842454541277707,
+ "frac_bf16_on_own_q40_grid": 0.050281348693694085,
+ "frac_qat_unq_on_own_q40_grid": 0.612610376599939
+}

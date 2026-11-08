@@ -1,0 +1,839 @@
+{
+ "prereg": "PREREG_v1 sha256=53e34f1fc0c061e8d67bb559b2458419154159608f9e63cadae8eb9bcbecee38",
+ "B": 2000,
+ "dose_tier": {
+  "jobs_present": "2135/2135",
+  "P1": {
+   "cond": {
+    "n_contexts": 305,
+    "n_attempts": 137,
+    "kind": "cond",
+    "Delta_2": {
+     "est": 0.3338,
+     "CI": [
+      0.0646,
+      0.6261
+     ]
+    },
+    "Delta_4": {
+     "est": 1.6429,
+     "CI": [
+      1.2905,
+      2.0515
+     ]
+    },
+    "D1_logit_p1_minus_logit_p0": {
+     "est": 2.5296,
+     "CI": [
+      1.9062,
+      3.5493
+     ]
+    },
+    "P(P1,k=1)": {
+     "est": 0.2483,
+     "CI": [
+      0.1909,
+      0.3085
+     ]
+    },
+    "P(P1,k=2)": {
+     "est": 0.3156,
+     "CI": [
+      0.2446,
+      0.3919
+     ]
+    },
+    "P(P1,k=4)": {
+     "est": 0.6306,
+     "CI": [
+      0.5485,
+      0.7162
+     ]
+    },
+    "p0": {
+     "est": 0.0256,
+     "CI": [
+      0.01,
+      0.0453
+     ]
+    },
+    "Delta_4_minus_2Delta_2": {
+     "est": 0.9753,
+     "CI": [
+      0.4621,
+      1.5271
+     ]
+    },
+    "free_curve_logit_linear_in_k": {
+     "slope_per_extra_exemplar (Delta4/3)": {
+      "est": 0.5476,
+      "CI": [
+       0.4302,
+       0.6838
+      ]
+     },
+     "linearity_check Delta2 - Delta4/3 (0 if logit-linear in k)": {
+      "est": -0.2139,
+      "CI": [
+       -0.4669,
+       0.0387
+      ]
+     },
+     "first_exemplar_step D1": 2.5296
+    }
+   },
+   "uncond": {
+    "n_contexts": 305,
+    "n_attempts": 137,
+    "kind": "uncond",
+    "Delta_2": {
+     "est": 0.1071,
+     "CI": [
+      -0.2047,
+      0.3947
+     ]
+    },
+    "Delta_4": {
+     "est": 1.0283,
+     "CI": [
+      0.6923,
+      1.3897
+     ]
+    },
+    "D1_logit_p1_minus_logit_p0": {
+     "est": 2.5585,
+     "CI": [
+      1.9395,
+      3.5979
+     ]
+    },
+    "P(P1,k=1)": {
+     "est": 0.2328,
+     "CI": [
+      0.18,
+      0.289
+     ]
+    },
+    "P(P1,k=2)": {
+     "est": 0.2525,
+     "CI": [
+      0.1939,
+      0.3167
+     ]
+    },
+    "P(P1,k=4)": {
+     "est": 0.459,
+     "CI": [
+      0.3946,
+      0.5318
+     ]
+    },
+    "p0": {
+     "est": 0.023,
+     "CI": [
+      0.009,
+      0.0423
+     ]
+    },
+    "Delta_4_minus_2Delta_2": {
+     "est": 0.8141,
+     "CI": [
+      0.3148,
+      1.3667
+     ]
+    },
+    "free_curve_logit_linear_in_k": {
+     "slope_per_extra_exemplar (Delta4/3)": {
+      "est": 0.3428,
+      "CI": [
+       0.2308,
+       0.4632
+      ]
+     },
+     "linearity_check Delta2 - Delta4/3 (0 if logit-linear in k)": {
+      "est": -0.2357,
+      "CI": [
+       -0.5176,
+       0.0138
+      ]
+     },
+     "first_exemplar_step D1": 2.5585
+    }
+   }
+  },
+  "rule_D-M_primary(cond)": {
+   "regions": {
+    "M1|M2": 0.3639,
+    "M2|M3": 1.6287,
+    "measured_D1": 2.5296
+   },
+   "Delta2_CI": [
+    0.0646,
+    0.6261
+   ],
+   "shape_checks": {
+    "M1": false,
+    "M2": false,
+    "M3": false
+   },
+   "verdict": "not discriminated between M1 and M2 (Delta2 CI straddles a boundary); none of M1-M3: the shapes contradict every mechanism -> fit the free curve"
+  },
+  "rule_D-M_uncond": {
+   "regions": {
+    "M1|M2": 0.3639,
+    "M2|M3": 1.6431,
+    "measured_D1": 2.5585
+   },
+   "Delta2_CI": [
+    -0.2047,
+    0.3947
+   ],
+   "shape_checks": {
+    "M1": false,
+    "M2": false,
+    "M3": false
+   },
+   "verdict": "not discriminated between M1 and M2 (Delta2 CI straddles a boundary); none of M1-M3: the shapes contradict every mechanism -> fit the free curve"
+  },
+  "P4": {
+   "cond": {
+    "n_contexts": 305,
+    "n_attempts": 137,
+    "kind": "cond",
+    "Delta_2": {
+     "est": -0.4279,
+     "CI": [
+      -1.3941,
+      0.0037
+     ]
+    },
+    "Delta_4": {
+     "est": -0.4535,
+     "CI": [
+      -1.7029,
+      1.0876
+     ]
+    },
+    "D1_logit_p1_minus_logit_p0": {
+     "est": -0.8398,
+     "CI": [
+      -1.9393,
+      -0.186
+     ]
+    },
+    "P(P4,k=1)": {
+     "est": 0.0112,
+     "CI": [
+      0.0035,
+      0.0268
+     ]
+    },
+    "P(P4,k=2)": {
+     "est": 0.0074,
+     "CI": [
+      0.0033,
+      0.0194
+     ]
+    },
+    "P(P4,k=4)": {
+     "est": 0.0072,
+     "CI": [
+      0.0033,
+      0.019
+     ]
+    },
+    "p0": {
+     "est": 0.0256,
+     "CI": [
+      0.0105,
+      0.0496
+     ]
+    },
+    "Delta_4_minus_2Delta_2": {
+     "est": 0.4023,
+     "CI": [
+      -1.3923,
+      2.4665
+     ]
+    },
+    "free_curve_logit_linear_in_k": {
+     "slope_per_extra_exemplar (Delta4/3)": {
+      "est": -0.1512,
+      "CI": [
+       -0.5676,
+       0.3625
+      ]
+     },
+     "linearity_check Delta2 - Delta4/3 (0 if logit-linear in k)": {
+      "est": -0.2768,
+      "CI": [
+       -1.1937,
+       0.4128
+      ]
+     },
+     "first_exemplar_step D1": -0.8398
+    }
+   },
+   "uncond": {
+    "n_contexts": 305,
+    "n_attempts": 137,
+    "kind": "uncond",
+    "Delta_2": {
+     "est": -0.4088,
+     "CI": [
+      -1.3956,
+      0.0
+     ]
+    },
+    "Delta_4": {
+     "est": -0.4088,
+     "CI": [
+      -1.8078,
+      1.1055
+     ]
+    },
+    "D1_logit_p1_minus_logit_p0": {
+     "est": -0.8606,
+     "CI": [
+      -1.9664,
+      -0.2182
+     ]
+    },
+    "P(P4,k=1)": {
+     "est": 0.0098,
+     "CI": [
+      0.0031,
+      0.0232
+     ]
+    },
+    "P(P4,k=2)": {
+     "est": 0.0066,
+     "CI": [
+      0.003,
+      0.0177
+     ]
+    },
+    "P(P4,k=4)": {
+     "est": 0.0066,
+     "CI": [
+      0.003,
+      0.0174
+     ]
+    },
+    "p0": {
+     "est": 0.023,
+     "CI": [
+      0.0097,
+      0.0434
+     ]
+    },
+    "Delta_4_minus_2Delta_2": {
+     "est": 0.4088,
+     "CI": [
+      -1.3278,
+      2.3202
+     ]
+    },
+    "free_curve_logit_linear_in_k": {
+     "slope_per_extra_exemplar (Delta4/3)": {
+      "est": -0.1363,
+      "CI": [
+       -0.6026,
+       0.3685
+      ]
+     },
+     "linearity_check Delta2 - Delta4/3 (0 if logit-linear in k)": {
+      "est": -0.2725,
+      "CI": [
+       -1.1635,
+       0.3705
+      ]
+     },
+     "first_exemplar_step D1": -0.8606
+    }
+   }
+  },
+  "P4_removal_fraction": {
+   "k=1:uncond": 1.0625,
+   "k=1:cond": 1.0647,
+   "k=2:uncond": 1.0714,
+   "k=2:cond": 1.0631,
+   "k=4:uncond": 1.0376,
+   "k=4:cond": 1.0305
+  },
+  "P4_order_imitation_old_first_share": {
+   "k=1": [
+    0.3221,
+    0.2689,
+    0.3803,
+    267
+   ],
+   "k=2": [
+    0.6985,
+    0.6415,
+    0.75,
+    272
+   ],
+   "k=4": [
+    0.9355,
+    0.9003,
+    0.9588,
+    279
+   ]
+  },
+  "edit_classes_P1": {
+   "k=1": {
+    "clean_rewrite": {
+     "n": 151,
+     "malformed": [
+      0.0,
+      0,
+      0.0248,
+      151
+     ]
+    },
+    "new_content": {
+     "n": 53,
+     "malformed": [
+      0.0566,
+      0.0194,
+      0.1537,
+      53
+     ]
+    },
+    "copy_most_recent": {
+     "n": 66,
+     "malformed": [
+      1.0,
+      0.945,
+      1,
+      66
+     ]
+    },
+    "same_content_variant": {
+     "n": 16,
+     "malformed": [
+      0.125,
+      0.035,
+      0.3602,
+      16
+     ]
+    }
+   },
+   "k=2": {
+    "clean_rewrite": {
+     "n": 111,
+     "malformed": [
+      0.0,
+      0,
+      0.0335,
+      111
+     ]
+    },
+    "new_content": {
+     "n": 43,
+     "malformed": [
+      0.1395,
+      0.0656,
+      0.2726,
+      43
+     ]
+    },
+    "copy_most_recent": {
+     "n": 28,
+     "malformed": [
+      1.0,
+      0.8794,
+      1,
+      28
+     ]
+    },
+    "same_content_variant": {
+     "n": 25,
+     "malformed": [
+      0.24,
+      0.115,
+      0.4343,
+      25
+     ]
+    },
+    "copy_earlier": {
+     "n": 37,
+     "malformed": [
+      1.0,
+      0.9059,
+      1,
+      37
+     ]
+    }
+   },
+   "k=4": {
+    "clean_rewrite": {
+     "n": 48,
+     "malformed": [
+      0.0,
+      0,
+      0.0741,
+      48
+     ]
+    },
+    "new_content": {
+     "n": 77,
+     "malformed": [
+      0.7143,
+      0.6051,
+      0.8031,
+      77
+     ]
+    },
+    "copy_earlier": {
+     "n": 50,
+     "malformed": [
+      1.0,
+      0.9286,
+      1,
+      50
+     ]
+    },
+    "same_content_variant": {
+     "n": 26,
+     "malformed": [
+      0.5385,
+      0.3546,
+      0.7124,
+      26
+     ]
+    },
+    "copy_most_recent": {
+     "n": 21,
+     "malformed": [
+      1.0,
+      0.8454,
+      1.0,
+      21
+     ]
+    }
+   }
+  }
+ },
+ "r_dose": {
+  "jobs_present": "600/600",
+  "cond": {
+   "n_contexts": 300,
+   "Delta_r2": [
+    0.1287,
+    [
+     -0.0247,
+     0.2891
+    ]
+   ],
+   "Delta_r4": [
+    0.0273,
+    [
+     -0.1799,
+     0.22
+    ]
+   ],
+   "P(r=1)": 0.4618,
+   "P(r=2)": 0.4939,
+   "P(r=4)": 0.4686
+  },
+  "uncond": {
+   "n_contexts": 300,
+   "Delta_r2": [
+    0.0138,
+    [
+     -0.1296,
+     0.1649
+    ]
+   ],
+   "Delta_r4": [
+    -0.1263,
+    [
+     -0.3216,
+     0.0617
+    ]
+   ],
+   "P(r=1)": 0.4033,
+   "P(r=2)": 0.4067,
+   "P(r=4)": 0.3733
+  }
+ },
+ "lag2": {
+  "jobs_present": "948/948",
+  "uncond": {
+   "n_contexts": 250,
+   "lag2_excess_share": [
+    0.4559,
+    [
+     0.2917,
+     0.6401
+    ]
+   ],
+   "p0": 0.028,
+   "p1": 0.3,
+   "p_lag2": 0.152
+  },
+  "cond": {
+   "n_contexts": 250,
+   "lag2_excess_share": [
+    0.479,
+    [
+     0.3096,
+     0.675
+    ]
+   ],
+   "p0": 0.0308,
+   "p1": 0.3304,
+   "p_lag2": 0.1743
+  },
+  "prediction": "M1 < 0.25 (~0); M2/M3 >= 0.5"
+ },
+ "P6k": {
+  "jobs_present": "915/915",
+  "cond": {
+   "n_contexts": 305,
+   "n_attempts": 137,
+   "kind": "cond",
+   "Delta_2": {
+    "est": 1.8276,
+    "CI": [
+     1.4502,
+     2.2604
+    ]
+   },
+   "Delta_4": {
+    "est": 3.6919,
+    "CI": [
+     3.2367,
+     4.2917
+    ]
+   },
+   "D1_logit_p1_minus_logit_p0": {
+    "est": 1.6138,
+    "CI": [
+     0.9435,
+     2.5896
+    ]
+   },
+   "P(P6,k=1)": {
+    "est": 0.1167,
+    "CI": [
+     0.0805,
+     0.1597
+    ]
+   },
+   "P(P6,k=2)": {
+    "est": 0.4511,
+    "CI": [
+     0.3885,
+     0.5079
+    ]
+   },
+   "P(P6,k=4)": {
+    "est": 0.8413,
+    "CI": [
+     0.7872,
+     0.8903
+    ]
+   },
+   "p0": {
+    "est": 0.0256,
+    "CI": [
+     0.0104,
+     0.0456
+    ]
+   },
+   "Delta_4_minus_2Delta_2": {
+    "est": 0.0366,
+    "CI": [
+     -0.5373,
+     0.6508
+    ]
+   },
+   "free_curve_logit_linear_in_k": {
+    "slope_per_extra_exemplar (Delta4/3)": {
+     "est": 1.2306,
+     "CI": [
+      1.0789,
+      1.4306
+     ]
+    },
+    "linearity_check Delta2 - Delta4/3 (0 if logit-linear in k)": {
+     "est": 0.597,
+     "CI": [
+      0.2916,
+      0.9215
+     ]
+    },
+    "first_exemplar_step D1": 1.6138
+   }
+  },
+  "uncond": {
+   "n_contexts": 305,
+   "n_attempts": 137,
+   "kind": "uncond",
+   "Delta_2": {
+    "est": 1.7827,
+    "CI": [
+     1.4272,
+     2.1896
+    ]
+   },
+   "Delta_4": {
+    "est": 3.3011,
+    "CI": [
+     2.9266,
+     3.7719
+    ]
+   },
+   "D1_logit_p1_minus_logit_p0": {
+    "est": 1.5356,
+    "CI": [
+     0.8307,
+     2.5657
+    ]
+   },
+   "P(P6,k=1)": {
+    "est": 0.0984,
+    "CI": [
+     0.066,
+     0.1331
+    ]
+   },
+   "P(P6,k=2)": {
+    "est": 0.3934,
+    "CI": [
+     0.3355,
+     0.4471
+    ]
+   },
+   "P(P6,k=4)": {
+    "est": 0.7475,
+    "CI": [
+     0.6943,
+     0.8
+    ]
+   },
+   "p0": {
+    "est": 0.023,
+    "CI": [
+     0.0088,
+     0.0417
+    ]
+   },
+   "Delta_4_minus_2Delta_2": {
+    "est": -0.2643,
+    "CI": [
+     -0.763,
+     0.2458
+    ]
+   },
+   "free_curve_logit_linear_in_k": {
+    "slope_per_extra_exemplar (Delta4/3)": {
+     "est": 1.1004,
+     "CI": [
+      0.9755,
+      1.2573
+     ]
+    },
+    "linearity_check Delta2 - Delta4/3 (0 if logit-linear in k)": {
+     "est": 0.6823,
+     "CI": [
+      0.4063,
+      0.9719
+     ]
+    },
+    "first_exemplar_step D1": 1.5356
+   }
+  },
+  "supplementary_rule_D-M_form(cond)": {
+   "regions": {
+    "M1|M2": 0.3639,
+    "M2|M3": 1.1708,
+    "measured_D1": 1.6138
+   },
+   "Delta2_CI": [
+    1.4502,
+    2.2604
+   ],
+   "shape_checks": {
+    "M1": false,
+    "M2": true,
+    "M3": false
+   },
+   "verdict": "Delta2 in the M3 region but its shape is contradicted"
+  },
+  "supplementary_rule_D-M_form(uncond)": {
+   "regions": {
+    "M1|M2": 0.3639,
+    "M2|M3": 1.1317,
+    "measured_D1": 1.5356
+   },
+   "Delta2_CI": [
+    1.4272,
+    2.1896
+   ],
+   "shape_checks": {
+    "M1": false,
+    "M2": true,
+    "M3": false
+   },
+   "verdict": "Delta2 in the M3 region but its shape is contradicted"
+  },
+  "prereg_point_predictions(anchor P6(1)=0.286)": {
+   "M1": [
+    0.29,
+    0.29
+   ],
+   "M2": [
+    0.45,
+    0.63
+   ],
+   "M3": [
+    0.73,
+    0.99
+   ]
+  },
+  "note": "PREREG gives point predictions for P6k (\u00a73.2) and makes rule D-M primary only for the P1 dose tier; the D-M form here is supplementary. Compare the predictions as logit differences from the set's own P6(1) (here lower than the 0.286 anchor)."
+ },
+ "P7_injected_quote_share": {
+  "share_with_quote_closer": [
+   0.6286,
+   0.5115,
+   0.7323,
+   70
+  ],
+  "prediction": "M1/M2 >= 0.80; M3 0.3-0.7; D point 0.55 (80% PI 0.40-0.70)"
+ },
+ "A2": {
+  "jobs_present": "900/900",
+  "h_by_arm (unconditional, h = 1 - q(arm)/q(L))": {
+   "P5": {
+    "n_states": 300,
+    "h": [
+     0.5494,
+     [
+      0.4766,
+      0.6203
+     ]
+    ],
+    "q(L)": 0.7767,
+    "q(P5)": 0.35
+   },
+   "Q8b": {
+    "n_states": 300,
+    "h": [
+     0.8841,
+     [
+      0.8412,
+      0.9241
+     ]
+    ],
+    "q(L)": 0.7767,
+    "q(Q8b)": 0.09
+   }
+  },
+  "rule": "h >= 0.7: quarantine is the dominant lever for 31B; h <= 0.4: content stickiness dominates (IPD-first)"
+ }
+}

@@ -1,0 +1,49 @@
+4cfc8e0fd5e256ae4c6c53932aea224aacbae40491238d80e93798b965a5e2af  scripts/sample_pools_v2.py
+69e9c6b19a31b1ae0dd6be9457dcdcf99cf5c8554309382d11b2dfaa113cb3b0  scripts/build_contexts_P.py
+a4dfb9d8251842280e01706a6c294bea2913e79e6df2d05ebc215445fed0b754  scripts/validate_contexts.py
+1aadb39d5fe9013620e296b8ac213b19804f2cf3e4fb3457d99bcf42a707dde0  scripts/run_injection.py
+b0044a723ac086e0194e2dc45dce74d0cd712327c3eb5798f23d2caf20079850  scripts/variants.py
+7cb2871b208be148087db21aff878e6f130851efece276257855e810e96f15cf  scripts/gemma_protocol.py
+75dbc098a78cc05b0b859c9b82be558bb0d36db33930452c628db17d04fcc75d  scripts/analyze_injection.py
+3afadb7c856c6d4f2cfaf48934e3bdef7950058655589169f057e11c76ae09da  scripts/decision_rules.py
+8aeb0c1df76127caa131b0766abb209d2fce3072b27ece165387a36f0a0b6ad8  scripts/prereg_analysis.py
+7442252b83b3da2228072ec37d0bc871cef747f054f02dd11c8b105d1a05e3f4  scripts/copy_check.py
+frozen 2026-11-04T15:12:43Z
+34ea46471cc98a6073835212640e96c1e51a46e25cbd3932641f5eef932ba1af  scripts/confirm_v2_analysis.py  (frozen 2026-11-04T15:20:34Z; smoke-tested on discovery data only)
+v1.1 frozen 2026-11-04T15:51:30Z (PI decision on P's observation masking, taken before any P data existed; the v1 lines above are kept; v1 copies archived byte-identical in scripts/archive/*.v1.py)
+60025bef6c822f8a46fee75d6f912acdf4f2625960e5a5a5771215c2949de3ac  scripts/sample_pools_v2.py  (v1.1: status from history_tool_status; A1/A1k2/A2 exclude states whose injection targets have a masked tool result; rule-2 exclusions reported per pool; split recorded; verified_only/ subset written)
+b7e1fb5db3fe07c8d027a0931e6cc4e903be678a82e0c677db2e997a336038d1  scripts/build_contexts_P.py  (v1.1: imports sample_pools_v2 v1.1 for status/masking/validity; k_unmasked + per-edit masked flag; relative template path resolved against the manifest dir; split recorded)
+4cfc8e0fd5e256ae4c6c53932aea224aacbae40491238d80e93798b965a5e2af  scripts/archive/sample_pools_v2.v1.py  (= v1)
+69e9c6b19a31b1ae0dd6be9457dcdcf99cf5c8554309382d11b2dfaa113cb3b0  scripts/archive/build_contexts_P.v1.py  (= v1)
+363286c940fa6ffbcc4e12a2e5e99a0e409c7439b956ad5f79c0116f11ffa341  scripts/test_P_v11.py  (synthetic test: PASS, 70 contexts; v1.1 == v1 on unmodified contexts)
+unchanged since v1 (re-verified 15:50:56Z): validate_contexts a4dfb9d8, run_injection 1aadb39d, variants b0044a72, gemma_protocol 7cb28718, analyze_injection 75dbc098, decision_rules 3afadb7c, prereg_analysis 8aeb0c1d, copy_check 7442252b, confirm_v2_analysis 34ea4647; E's frozen renderer endtoend/export/quarantine_renderer.py 13e28567
+Verified-only sensitivity (PI 15:27 entry): confirm_v2_analysis.py unchanged, run a second time with --pools <pools>/verified_only
+natural descriptives frozen 2026-11-04T15:56:57Z (PREREG_v2 §4 D1-D11; before any P corpus data existed; smoke-tested on discovery main-track logs only, data/smoke_descriptives/)
+4937c499bb3ca0d5dc72110d11d4237163157a913b1af4accf47ce754c8a4095  scripts/natural_descriptives_v2.py  (reads <corpus>/manifest.json + requests.jsonl; D11 uses C's gemmaproto serializer/parser read-only; CI = episode-cluster bootstrap B=2000 seed 20261105; primary full corpus, sensitivity Verified-only)
+fa676fceef65883a1aad3dc4b70282d47d72a9e6f33e78b900732162531510c7  scripts/smoke_build_discovery_requests.py  (smoke input builder; discovery data only)
+dependency (read-only, C): experiments/conformance/gemmaproto/{__init__,parser,serializer,tokens}.py concatenated sha256 4c8d0f25e27e0df37f13fb64cfb189efd73eb0c2c2d7b30115099608f32efebc
+fb51b35439923b95fa917a00dc23d83f34beb65c86dd2da72ecb27e72826d112  experiments/conformance/gemmaproto/__init__.py
+dd041e554226121043ceeb9955205f44aef0ab2e88bc0d292f92112176bb189c  experiments/conformance/gemmaproto/parser.py
+78e097c98d8ff134f898f0f52b58a846c527f4c99f74a824af0a51cd6d043181  experiments/conformance/gemmaproto/serializer.py
+d574dc847e439a7e7f0ff406f2a246710ea507546b66d4a0a6b22b4e3e22a613  experiments/conformance/gemmaproto/tokens.py
+7d499fdd469cf139b088b3d736eed0a7d429d787f16c8a998a6914ef9465b00d  scripts/make_plan_v2.py  (frozen 2026-11-04T16:02:18Z; pools -> confirmatory job plans: 31B A1 {P0,P1,P5,P6,P8a,P8b,P9}, A2 P6 k1/2/4 (+A1k2 on shortfall); 12B/E4B A1 {P0,P1,P5,P6,P8a}; eligibility re-check incl. k_unmasked; tested on data/test_P_v11)
+# 2026-11-04T19:07:38Z shipped quarantine renderer changed (E): v1 13e28567... -> 6b08b6e9... (18:48:10) -> 5ca5c62c... (19:05:22); equivalence on all 1,476 discovery renders + 4 P-smoke renders: 0 differences (out/renderer_v1_v2_check.json). Confirmatory runs use the shipped file; the sha is checked at run start against E's declared final sha.
+# bf16 core arms (EXPLORATORY benchmark row), frozen 2026-11-05T10:36:31Z before any bf16 output
+8a983ae7b13771e02d9dbcc9a24f733c0ea39d7665887f483e287786dbc285f3  scripts/analyze_bf16_core.py
+7a9879121578d349737125ad41c1fc810c921eaf71d0c564a301f9bd02793d38  data/confirmatory/plans/plan_bf16_core.jsonl
+# smoke: QAT records fed as bf16 reproduce C1/C2 points and give bf16-QAT = 0 (data/confirmatory/smoke_bf16_on_qat.json)
+# bf16 subset rule pre-declared 2026-11-05T10:46:28Z, before any bf16 output (PI: KV ~17k tokens; prompt + max generation <= 16.4k)
+0e25b8d13c59a427f99f399694a43b1564942a421486fb34166e811ab4e20e59  scripts/analyze_bf16_core.py
+48c4484cbfaca8c51135517537e78c746e618b46d491f777d53fbcb1d159f426  data/confirmatory/plans/plan_bf16_core.jsonl
+6449175372f2f8b0503fc24d16590b7a8599b20c34502b66e3527de61de75ec9  data/confirmatory/bf16_subset_ids.txt
+# X = 13,000 (max-arm prompt) -> 50/300 states, 42 episodes; runner --max_model_len 16400 (max_tokens >= 3,392); conc 1, ctx_conc 1 (one ~13k context fits the KV at a time)
+# bf16 RE-DECLARED 2026-11-05T10:47:30Z, before any bf16 output: PRIMARY = all 300 S1_A1 states (TP2 server, max_model_len 32768, QAT generation settings); the <=13,000 subset rule is superseded and kept as SECONDARY sensitivity (--subset le13000)
+7d3bf05bfe7a3956c9a4aa25229873a3280318b6405eb0ccd7970b21c9898b7b  scripts/analyze_bf16_core.py
+7a9879121578d349737125ad41c1fc810c921eaf71d0c564a301f9bd02793d38  data/confirmatory/plans/plan_bf16_core_full.jsonl
+# PREREG_v2.6 (ed19a6d0...) A scripts frozen 2026-11-05T17:40:51Z before the first job of either checkpoint
+a847199986a630d56ade3eff433e4f0d86a5558d990db5c9e329a8e65dd42136  scripts/analyze_v26_audit.py
+1aadb39d5fe9013620e296b8ac213b19804f2cf3e4fb3457d99bcf42a707dde0  scripts/run_injection.py
+7cb2871b208be148087db21aff878e6f130851efece276257855e810e96f15cf  scripts/gemma_protocol.py
+b0044a723ac086e0194e2dc45dce74d0cd712327c3eb5798f23d2caf20079850  scripts/variants.py
+7a9879121578d349737125ad41c1fc810c921eaf71d0c564a301f9bd02793d38  data/confirmatory/plans/plan_bf16_core_full.jsonl
+5ca5c62c889a7377d4d07bdb696bc9cbc796b5dbe18b6875c3a3de80d662715f  experiments/endtoend/export/quarantine_renderer.py

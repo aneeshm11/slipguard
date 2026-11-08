@@ -1,0 +1,10 @@
+{
+ "gate_contexts": 300,
+ "byte_identical_to_P0": 297,
+ "differing_ids": [
+  "ctx-a360bb9e49",
+  "ctx-bb358c6797",
+  "ctx-5a690a1ced"
+ ],
+ "note": "P4' renders the replaced (originally valid) call in the model's own emitted order with its true success response; template dictsort gives the same order unless allow_multiple is present."
+}

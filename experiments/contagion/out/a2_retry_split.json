@@ -1,0 +1,104 @@
+{
+ "L": {
+  "states": 300,
+  "next_is_retry_of_onset": [
+   0.8733,
+   0.8309,
+   0.9063,
+   300
+  ],
+  "malformed_among_retries": [
+   0.8168,
+   0.7655,
+   0.8589,
+   262
+  ],
+  "malformed_among_new_content": [
+   0.6333,
+   0.4551,
+   0.7813,
+   30
+  ],
+  "unconditional_malformed_retry_share_of_states": [
+   0.7133,
+   0.6597,
+   0.7616,
+   300
+  ],
+  "unconditional_malformed_new_share_of_states": [
+   0.0633,
+   0.0409,
+   0.0968,
+   300
+  ],
+  "no_edit": 8
+ },
+ "Q8b": {
+  "states": 300,
+  "next_is_retry_of_onset": [
+   0.8633,
+   0.8198,
+   0.8976,
+   300
+  ],
+  "malformed_among_retries": [
+   0.0579,
+   0.0354,
+   0.0933,
+   259
+  ],
+  "malformed_among_new_content": [
+   0.3636,
+   0.2219,
+   0.5338,
+   33
+  ],
+  "unconditional_malformed_retry_share_of_states": [
+   0.05,
+   0.0305,
+   0.0808,
+   300
+  ],
+  "unconditional_malformed_new_share_of_states": [
+   0.04,
+   0.023,
+   0.0686,
+   300
+  ],
+  "no_edit": 8
+ },
+ "P5": {
+  "states": 300,
+  "next_is_retry_of_onset": [
+   0.53,
+   0.4735,
+   0.5857,
+   300
+  ],
+  "malformed_among_retries": [
+   0.478,
+   0.4018,
+   0.5552,
+   159
+  ],
+  "malformed_among_new_content": [
+   0.3295,
+   0.2403,
+   0.4331,
+   88
+  ],
+  "unconditional_malformed_retry_share_of_states": [
+   0.2533,
+   0.2074,
+   0.3055,
+   300
+  ],
+  "unconditional_malformed_new_share_of_states": [
+   0.0967,
+   0.0681,
+   0.1354,
+   300
+  ],
+  "no_edit": 53
+ }
+}

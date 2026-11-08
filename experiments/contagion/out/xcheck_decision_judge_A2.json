@@ -1,0 +1,48 @@
+{
+ "n_full_judged_edits": 663,
+ "table": {
+  "dp_ok|full_bad": 30,
+  "dp_ok|full_ok": 633
+ },
+ "decision_point_sensitivity_vs_full": [
+  0.0,
+  -0.0,
+  0.1135,
+  30
+ ],
+ "decision_point_false_positive_rate_on_full_ok": [
+  0.0,
+  0.0,
+  0.006,
+  633
+ ],
+ "full_bad_without_stop_string": 0,
+ "examples": {
+  "dp_ok|full_bad": [
+   {
+    "id": "ctx-dac2df4b67",
+    "arm": "P0k0",
+    "full_why": "extra_key",
+    "tail_at_stop": "call:edit_file{filepath:<|\"|>fastapi/openapi/docs.py<|\"|>,new_string:<|\"|>   "
+   },
+   {
+    "id": "ctx-23c9bb5f8f",
+    "arm": "P1k1",
+    "full_why": "leak_closer:new_string",
+    "tail_at_stop": "call:edit_file{filepath:<|\"|>sqlite_utils/db.py<|\"|>,new_string:<|\"|>_TR"
+   },
+   {
+    "id": "ctx-3e5dca3731",
+    "arm": "P0k0",
+    "full_why": "missing:old_string",
+    "tail_at_stop": "call:edit_file{filepath:<|\"|>fastapi/responses.py<|\"|>,new_string:<|\"|>cla"
+   },
+   {
+    "id": "ctx-da65f10f3c",
+    "arm": "P5k1",
+    "full_why": "missing:old_string",
+    "tail_at_stop": "call:edit_file{filepath:<|\"|>src/black/output.py<|\"|>,new_string:<|\"|>fro"
+   }
+  ]
+ }
+}

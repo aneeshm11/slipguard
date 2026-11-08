@@ -1,0 +1,1837 @@
+{
+ "source": "public PNC corpus: every model turn (raw generation incl. thinking) with its episode's tool schema",
+ "populations": {
+  "valid": 40417,
+  "ill_intent_known": 218,
+  "ill_no_intent": 654,
+  "valid_no_call": 1
+ },
+ "ill_input_classes": {
+  "JSON_STYLE_STRING": 19,
+  "EXPECTED_SEP": 106,
+  "EXPECTED_COLON": 446,
+  "INVALID_LITERAL": 65,
+  "UNTERMINATED": 36,
+  "NO_CALL_PREFIX": 95,
+  "BAD_NAME": 83,
+  "STRAY_TOKEN": 15,
+  "BAD_KEY": 1,
+  "DUPLICATE_KEY": 4,
+  "EXPECTED_CALL_CLOSE": 1,
+  "none": 1
+ },
+ "no_intent_reasons": {
+  "no_restating_retry": 631,
+  "not_last_call": 22,
+  "no_error_located": 1
+ },
+ "targets": {
+  "gg.completion": {
+   "label": "slipguard parse_completion",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    872,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 0,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 0,
+    "surfaced": 654,
+    "lost": 0
+   },
+   "silent_by_input_class": {},
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:LOUD": 218,
+     "verdict:pass": 218
+    },
+    "ill_no_intent": {
+     "outcome:LOUD": 654,
+     "verdict:pass": 654
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 16.72
+   },
+   "wrong_examples": []
+  },
+  "gg.extract": {
+   "label": "slipguard extract (per-call)",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    872,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 0,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 0,
+    "surfaced": 654,
+    "lost": 0
+   },
+   "silent_by_input_class": {},
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:LOUD": 218,
+     "verdict:pass": 218
+    },
+    "ill_no_intent": {
+     "outcome:LOUD": 654,
+     "verdict:pass": 654
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 19.32
+   },
+   "wrong_examples": []
+  },
+  "gg.repair": {
+   "label": "slipguard extract(repair=True) [opt-in]",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    393,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 479,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 152,
+    "wrong": 0,
+    "surfaced": 66,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 327,
+    "surfaced": 327,
+    "lost": 0
+   },
+   "silent_by_input_class": {
+    "EXPECTED_COLON": 440,
+    "EXPECTED_SEP": 35,
+    "UNTERMINATED": 4
+   },
+   "outcomes": {
+    "ill_intent_known": {
+     "outcome:LOUD": 66,
+     "verdict:pass": 66,
+     "outcome:EXACT": 152,
+     "verdict:policy": 152
+    },
+    "ill_no_intent": {
+     "outcome:LOUD": 327,
+     "verdict:pass": 327,
+     "outcome:NO_INTENT": 327,
+     "verdict:unknown": 327
+    },
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 114.52
+   },
+   "wrong_examples": []
+  },
+  "gg.stream": {
+   "label": "slipguard StreamParser",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    872,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 0,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 0,
+    "surfaced": 654,
+    "lost": 0
+   },
+   "silent_by_input_class": {},
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:LOUD": 218,
+     "verdict:pass": 218
+    },
+    "ill_no_intent": {
+     "outcome:LOUD": 654,
+     "verdict:pass": 654
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 159.63
+   },
+   "wrong_examples": []
+  },
+  "gg.vllm019.server": {
+   "label": "slipguard plugin, vLLM 0.19 server",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    868,
+    872
+   ],
+   "ill_prefix_calls_then_text": 4,
+   "ill_silently_delivered": 0,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 0,
+    "surfaced": 650,
+    "lost": 0
+   },
+   "silent_by_input_class": {},
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:AS_CONTENT": 218,
+     "verdict:pass": 218
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:pass": 650,
+     "verdict:unknown": 4
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 21.77
+   },
+   "wrong_examples": []
+  },
+  "gg.vllm019.stream": {
+   "label": "slipguard plugin, vLLM 0.19 stream",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    868,
+    872
+   ],
+   "ill_prefix_calls_then_text": 4,
+   "ill_silently_delivered": 0,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 0,
+    "surfaced": 650,
+    "lost": 0
+   },
+   "silent_by_input_class": {},
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:AS_CONTENT": 218,
+     "verdict:pass": 218
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:pass": 650,
+     "verdict:unknown": 4
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 324.01
+   },
+   "wrong_examples": []
+  },
+  "gg.vllm024.server": {
+   "label": "slipguard plugin, vLLM 0.24 server",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    868,
+    872
+   ],
+   "ill_prefix_calls_then_text": 4,
+   "ill_silently_delivered": 0,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 0,
+    "surfaced": 650,
+    "lost": 0
+   },
+   "silent_by_input_class": {},
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:AS_CONTENT": 218,
+     "verdict:pass": 218
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:pass": 650,
+     "verdict:unknown": 4
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 26.44
+   },
+   "wrong_examples": []
+  },
+  "gg.vllm024.stream": {
+   "label": "slipguard plugin, vLLM 0.24 stream",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    868,
+    872
+   ],
+   "ill_prefix_calls_then_text": 4,
+   "ill_silently_delivered": 0,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 0,
+    "surfaced": 650,
+    "lost": 0
+   },
+   "silent_by_input_class": {},
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:AS_CONTENT": 218,
+     "verdict:pass": 218
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:pass": 650,
+     "verdict:unknown": 4
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 202.57
+   },
+   "wrong_examples": []
+  },
+  "gg.vllm031.server": {
+   "label": "slipguard plugin, vLLM 0.31 server",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    868,
+    872
+   ],
+   "ill_prefix_calls_then_text": 4,
+   "ill_silently_delivered": 0,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 0,
+    "surfaced": 650,
+    "lost": 0
+   },
+   "silent_by_input_class": {},
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:AS_CONTENT": 218,
+     "verdict:pass": 218
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:pass": 650,
+     "verdict:unknown": 4
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 31.51
+   },
+   "wrong_examples": []
+  },
+  "gg.vllm031.stream": {
+   "label": "slipguard plugin, vLLM 0.31 stream",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    868,
+    872
+   ],
+   "ill_prefix_calls_then_text": 4,
+   "ill_silently_delivered": 0,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 0,
+    "surfaced": 650,
+    "lost": 0
+   },
+   "silent_by_input_class": {},
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:AS_CONTENT": 218,
+     "verdict:pass": 218
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:pass": 650,
+     "verdict:unknown": 4
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 157.51
+   },
+   "wrong_examples": []
+  },
+  "gg.vllm032.server": {
+   "label": "slipguard plugin, vLLM 0.32 server",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    868,
+    872
+   ],
+   "ill_prefix_calls_then_text": 4,
+   "ill_silently_delivered": 0,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 0,
+    "surfaced": 650,
+    "lost": 0
+   },
+   "silent_by_input_class": {},
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:AS_CONTENT": 218,
+     "verdict:pass": 218
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:pass": 650,
+     "verdict:unknown": 4
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 25.25
+   },
+   "wrong_examples": []
+  },
+  "gg.vllm032.stream": {
+   "label": "slipguard plugin, vLLM 0.32 stream",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    868,
+    872
+   ],
+   "ill_prefix_calls_then_text": 4,
+   "ill_silently_delivered": 0,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 0,
+    "surfaced": 650,
+    "lost": 0
+   },
+   "silent_by_input_class": {},
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:AS_CONTENT": 218,
+     "verdict:pass": 218
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:pass": 650,
+     "verdict:unknown": 4
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 217.91
+   },
+   "wrong_examples": []
+  },
+  "gg.vllm033.server": {
+   "label": "slipguard plugin, vLLM 0.33 server",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    868,
+    872
+   ],
+   "ill_prefix_calls_then_text": 4,
+   "ill_silently_delivered": 0,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 0,
+    "surfaced": 650,
+    "lost": 0
+   },
+   "silent_by_input_class": {},
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:AS_CONTENT": 218,
+     "verdict:pass": 218
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:pass": 650,
+     "verdict:unknown": 4
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 26.89
+   },
+   "wrong_examples": []
+  },
+  "gg.vllm033.stream": {
+   "label": "slipguard plugin, vLLM 0.33 stream",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    868,
+    872
+   ],
+   "ill_prefix_calls_then_text": 4,
+   "ill_silently_delivered": 0,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 0,
+    "surfaced": 650,
+    "lost": 0
+   },
+   "silent_by_input_class": {},
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:AS_CONTENT": 218,
+     "verdict:pass": 218
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:pass": 650,
+     "verdict:unknown": 4
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 201.6
+   },
+   "wrong_examples": []
+  },
+  "hf513.template": {
+   "label": "transformers 5.13 parse_response",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    847,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 24,
+   "ill_silently_lost": 1,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 24,
+    "surfaced": 629,
+    "lost": 1
+   },
+   "silent_by_input_class": {
+    "STRAY_TOKEN": 13,
+    "DUPLICATE_KEY": 4,
+    "JSON_STYLE_STRING": 7,
+    "NO_CALL_PREFIX": 1
+   },
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:LOUD": 188,
+     "verdict:pass": 218,
+     "outcome:AS_CONTENT": 30
+    },
+    "ill_no_intent": {
+     "outcome:LOUD": 562,
+     "verdict:pass": 629,
+     "outcome:NO_INTENT": 92,
+     "verdict:unknown": 24,
+     "verdict:defect": 1
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 20.04
+   },
+   "wrong_examples": []
+  },
+  "hf517.template": {
+   "label": "transformers 5.17 parse_response",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    847,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 24,
+   "ill_silently_lost": 1,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 24,
+    "surfaced": 629,
+    "lost": 1
+   },
+   "silent_by_input_class": {
+    "STRAY_TOKEN": 13,
+    "DUPLICATE_KEY": 4,
+    "JSON_STYLE_STRING": 7,
+    "NO_CALL_PREFIX": 1
+   },
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:LOUD": 188,
+     "verdict:pass": 218,
+     "outcome:AS_CONTENT": 30
+    },
+    "ill_no_intent": {
+     "outcome:LOUD": 562,
+     "verdict:pass": 629,
+     "outcome:NO_INTENT": 92,
+     "verdict:unknown": 24,
+     "verdict:defect": 1
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 21.4
+   },
+   "wrong_examples": []
+  },
+  "ref": {
+   "label": "gemmaproto (reference)",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    872,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 0,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 0,
+    "surfaced": 218,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 0,
+    "surfaced": 654,
+    "lost": 0
+   },
+   "silent_by_input_class": {},
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:LOUD": 218,
+     "verdict:pass": 218
+    },
+    "ill_no_intent": {
+     "outcome:LOUD": 654,
+     "verdict:pass": 654
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 16.47
+   },
+   "wrong_examples": []
+  },
+  "vllm019.server": {
+   "label": "vLLM 0.19 built-in server",
+   "valid_exact": [
+    40417,
+    40417
+   ],
+   "ill_surfaced": [
+    185,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 687,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 188,
+    "surfaced": 30,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 499,
+    "surfaced": 155,
+    "lost": 0
+   },
+   "silent_by_input_class": {
+    "JSON_STYLE_STRING": 19,
+    "EXPECTED_SEP": 106,
+    "EXPECTED_COLON": 446,
+    "INVALID_LITERAL": 65,
+    "UNTERMINATED": 31,
+    "STRAY_TOKEN": 12,
+    "BAD_KEY": 1,
+    "DUPLICATE_KEY": 4,
+    "NO_CALL_PREFIX": 1,
+    "EXPECTED_CALL_CLOSE": 1,
+    "BAD_NAME": 1
+   },
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40417,
+     "verdict:pass": 40417
+    },
+    "ill_intent_known": {
+     "outcome:CORRUPT_VALUE": 21,
+     "verdict:defect": 188,
+     "outcome:DROPPED_ARG": 153,
+     "outcome:EXTRA_KEY": 12,
+     "outcome:AS_CONTENT": 30,
+     "verdict:pass": 30,
+     "outcome:WRONG_NAME": 2
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:unknown": 499,
+     "verdict:pass": 155
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 16.39
+   },
+   "wrong_examples": [
+    "PNC-astropy__astropy-12825__S1#45",
+    "PNC-astropy__astropy-13453__S1#24",
+    "PNC-astropy__astropy-7441__S1#25"
+   ]
+  },
+  "vllm019.stream": {
+   "label": "vLLM 0.19 built-in stream",
+   "valid_exact": [
+    40406,
+    40417
+   ],
+   "ill_surfaced": [
+    75,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 692,
+   "ill_silently_lost": 105,
+   "intent_known": {
+    "n": 218,
+    "exact": 0,
+    "wrong": 188,
+    "surfaced": 12,
+    "lost": 18
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 504,
+    "surfaced": 63,
+    "lost": 87
+   },
+   "silent_by_input_class": {
+    "JSON_STYLE_STRING": 19,
+    "EXPECTED_SEP": 106,
+    "EXPECTED_COLON": 446,
+    "INVALID_LITERAL": 65,
+    "UNTERMINATED": 35,
+    "BAD_NAME": 53,
+    "NO_CALL_PREFIX": 53,
+    "STRAY_TOKEN": 12,
+    "BAD_KEY": 1,
+    "DUPLICATE_KEY": 4,
+    "none": 1,
+    "EXPECTED_CALL_CLOSE": 1
+   },
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40406,
+     "verdict:pass": 40406,
+     "outcome:EXTRA_KEY": 3,
+     "verdict:defect": 11,
+     "outcome:CALL_COUNT": 7,
+     "outcome:AS_CONTENT": 1
+    },
+    "ill_intent_known": {
+     "outcome:CORRUPT_VALUE": 21,
+     "verdict:defect": 206,
+     "outcome:DROPPED_ARG": 153,
+     "outcome:EXTRA_KEY": 12,
+     "outcome:AS_CONTENT": 30,
+     "verdict:pass": 12,
+     "outcome:CALL_COUNT": 2
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 653,
+     "verdict:unknown": 504,
+     "verdict:defect": 87,
+     "verdict:pass": 63,
+     "outcome:HANG": 1
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 1,
+    "exception": 0,
+    "max_ms": 15000.68
+   },
+   "wrong_examples": [
+    "PNC-astropy__astropy-12825__S1#45",
+    "PNC-astropy__astropy-13453__S1#24",
+    "PNC-astropy__astropy-7441__S1#25"
+   ]
+  },
+  "vllm024.server": {
+   "label": "vLLM 0.24 built-in server",
+   "valid_exact": [
+    40407,
+    40417
+   ],
+   "ill_surfaced": [
+    33,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 777,
+   "ill_silently_lost": 62,
+   "intent_known": {
+    "n": 218,
+    "exact": 1,
+    "wrong": 188,
+    "surfaced": 1,
+    "lost": 28
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 588,
+    "surfaced": 32,
+    "lost": 34
+   },
+   "silent_by_input_class": {
+    "JSON_STYLE_STRING": 19,
+    "EXPECTED_SEP": 106,
+    "EXPECTED_COLON": 446,
+    "INVALID_LITERAL": 65,
+    "UNTERMINATED": 36,
+    "BAD_NAME": 83,
+    "NO_CALL_PREFIX": 65,
+    "STRAY_TOKEN": 12,
+    "BAD_KEY": 1,
+    "DUPLICATE_KEY": 4,
+    "none": 1,
+    "EXPECTED_CALL_CLOSE": 1
+   },
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40407,
+     "verdict:pass": 40407,
+     "outcome:EXTRA_KEY": 3,
+     "verdict:defect": 10,
+     "outcome:CALL_COUNT": 3,
+     "outcome:WRONG_NAME": 3,
+     "outcome:TYPE_DIFF": 1
+    },
+    "ill_intent_known": {
+     "outcome:CORRUPT_VALUE": 21,
+     "verdict:defect": 216,
+     "outcome:DROPPED_ARG": 153,
+     "outcome:EXTRA_KEY": 12,
+     "outcome:NO_OUTPUT": 28,
+     "outcome:WRONG_NAME": 2,
+     "outcome:AS_CONTENT": 1,
+     "verdict:pass": 1,
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:unknown": 588,
+     "verdict:defect": 34,
+     "verdict:pass": 32
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 61.37
+   },
+   "wrong_examples": [
+    "PNC-astropy__astropy-12825__S1#45",
+    "PNC-astropy__astropy-13453__S1#24",
+    "PNC-astropy__astropy-7441__S1#25"
+   ]
+  },
+  "vllm024.stream": {
+   "label": "vLLM 0.24 built-in stream",
+   "valid_exact": [
+    40407,
+    40417
+   ],
+   "ill_surfaced": [
+    33,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 777,
+   "ill_silently_lost": 62,
+   "intent_known": {
+    "n": 218,
+    "exact": 1,
+    "wrong": 188,
+    "surfaced": 1,
+    "lost": 28
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 588,
+    "surfaced": 32,
+    "lost": 34
+   },
+   "silent_by_input_class": {
+    "JSON_STYLE_STRING": 19,
+    "EXPECTED_SEP": 106,
+    "EXPECTED_COLON": 446,
+    "INVALID_LITERAL": 65,
+    "UNTERMINATED": 36,
+    "BAD_NAME": 83,
+    "NO_CALL_PREFIX": 65,
+    "STRAY_TOKEN": 12,
+    "BAD_KEY": 1,
+    "DUPLICATE_KEY": 4,
+    "none": 1,
+    "EXPECTED_CALL_CLOSE": 1
+   },
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40407,
+     "verdict:pass": 40407,
+     "outcome:EXTRA_KEY": 3,
+     "verdict:defect": 10,
+     "outcome:CALL_COUNT": 3,
+     "outcome:WRONG_NAME": 3,
+     "outcome:TYPE_DIFF": 1
+    },
+    "ill_intent_known": {
+     "outcome:CORRUPT_VALUE": 21,
+     "verdict:defect": 216,
+     "outcome:DROPPED_ARG": 153,
+     "outcome:EXTRA_KEY": 12,
+     "outcome:NO_OUTPUT": 28,
+     "outcome:WRONG_NAME": 2,
+     "outcome:AS_CONTENT": 1,
+     "verdict:pass": 1,
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:unknown": 588,
+     "verdict:defect": 34,
+     "verdict:pass": 32
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 2323.72
+   },
+   "wrong_examples": [
+    "PNC-astropy__astropy-12825__S1#45",
+    "PNC-astropy__astropy-13453__S1#24",
+    "PNC-astropy__astropy-7441__S1#25"
+   ]
+  },
+  "vllm031.server": {
+   "label": "vLLM 0.31 built-in server",
+   "valid_exact": [
+    40406,
+    40417
+   ],
+   "ill_surfaced": [
+    5,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 865,
+   "ill_silently_lost": 2,
+   "intent_known": {
+    "n": 218,
+    "exact": 1,
+    "wrong": 216,
+    "surfaced": 1,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 648,
+    "surfaced": 4,
+    "lost": 2
+   },
+   "silent_by_input_class": {
+    "JSON_STYLE_STRING": 19,
+    "EXPECTED_SEP": 106,
+    "EXPECTED_COLON": 446,
+    "INVALID_LITERAL": 65,
+    "UNTERMINATED": 36,
+    "BAD_NAME": 83,
+    "NO_CALL_PREFIX": 93,
+    "STRAY_TOKEN": 12,
+    "BAD_KEY": 1,
+    "DUPLICATE_KEY": 4,
+    "none": 1,
+    "EXPECTED_CALL_CLOSE": 1
+   },
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40406,
+     "verdict:pass": 40406,
+     "outcome:CALL_COUNT": 4,
+     "verdict:defect": 11,
+     "outcome:EXTRA_KEY": 3,
+     "outcome:WRONG_NAME": 3,
+     "outcome:TYPE_DIFF": 1
+    },
+    "ill_intent_known": {
+     "outcome:CORRUPT_VALUE": 21,
+     "verdict:defect": 216,
+     "outcome:DROPPED_ARG": 153,
+     "outcome:EXTRA_KEY": 12,
+     "outcome:WRONG_NAME": 30,
+     "outcome:AS_CONTENT": 1,
+     "verdict:pass": 1,
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:unknown": 648,
+     "verdict:defect": 2,
+     "verdict:pass": 4
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 230.05
+   },
+   "wrong_examples": [
+    "PNC-astropy__astropy-12825__S1#45",
+    "PNC-astropy__astropy-13453__S1#24",
+    "PNC-astropy__astropy-7441__S1#25"
+   ]
+  },
+  "vllm031.stream": {
+   "label": "vLLM 0.31 built-in stream",
+   "valid_exact": [
+    40406,
+    40417
+   ],
+   "ill_surfaced": [
+    3,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 869,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 1,
+    "wrong": 216,
+    "surfaced": 1,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 652,
+    "surfaced": 2,
+    "lost": 0
+   },
+   "silent_by_input_class": {
+    "JSON_STYLE_STRING": 19,
+    "EXPECTED_SEP": 106,
+    "EXPECTED_COLON": 446,
+    "INVALID_LITERAL": 65,
+    "UNTERMINATED": 36,
+    "BAD_NAME": 83,
+    "NO_CALL_PREFIX": 95,
+    "STRAY_TOKEN": 12,
+    "BAD_KEY": 1,
+    "DUPLICATE_KEY": 4,
+    "none": 1,
+    "EXPECTED_CALL_CLOSE": 1
+   },
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40406,
+     "verdict:pass": 40406,
+     "outcome:CALL_COUNT": 4,
+     "verdict:defect": 11,
+     "outcome:EXTRA_KEY": 3,
+     "outcome:WRONG_NAME": 3,
+     "outcome:TYPE_DIFF": 1
+    },
+    "ill_intent_known": {
+     "outcome:CORRUPT_VALUE": 21,
+     "verdict:defect": 216,
+     "outcome:DROPPED_ARG": 153,
+     "outcome:EXTRA_KEY": 12,
+     "outcome:WRONG_NAME": 30,
+     "outcome:AS_CONTENT": 1,
+     "verdict:pass": 1,
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:unknown": 652,
+     "verdict:pass": 2
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 2465.16
+   },
+   "wrong_examples": [
+    "PNC-astropy__astropy-12825__S1#45",
+    "PNC-astropy__astropy-13453__S1#24",
+    "PNC-astropy__astropy-7441__S1#25"
+   ]
+  },
+  "vllm032.server": {
+   "label": "vLLM 0.32 built-in server",
+   "valid_exact": [
+    40406,
+    40417
+   ],
+   "ill_surfaced": [
+    5,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 865,
+   "ill_silently_lost": 2,
+   "intent_known": {
+    "n": 218,
+    "exact": 1,
+    "wrong": 216,
+    "surfaced": 1,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 648,
+    "surfaced": 4,
+    "lost": 2
+   },
+   "silent_by_input_class": {
+    "JSON_STYLE_STRING": 19,
+    "EXPECTED_SEP": 106,
+    "EXPECTED_COLON": 446,
+    "INVALID_LITERAL": 65,
+    "UNTERMINATED": 36,
+    "BAD_NAME": 83,
+    "NO_CALL_PREFIX": 93,
+    "STRAY_TOKEN": 12,
+    "BAD_KEY": 1,
+    "DUPLICATE_KEY": 4,
+    "none": 1,
+    "EXPECTED_CALL_CLOSE": 1
+   },
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40406,
+     "verdict:pass": 40406,
+     "outcome:CALL_COUNT": 4,
+     "verdict:defect": 11,
+     "outcome:EXTRA_KEY": 3,
+     "outcome:WRONG_NAME": 3,
+     "outcome:TYPE_DIFF": 1
+    },
+    "ill_intent_known": {
+     "outcome:CORRUPT_VALUE": 21,
+     "verdict:defect": 216,
+     "outcome:DROPPED_ARG": 153,
+     "outcome:EXTRA_KEY": 12,
+     "outcome:WRONG_NAME": 30,
+     "outcome:AS_CONTENT": 1,
+     "verdict:pass": 1,
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:unknown": 648,
+     "verdict:defect": 2,
+     "verdict:pass": 4
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 315.46
+   },
+   "wrong_examples": [
+    "PNC-astropy__astropy-12825__S1#45",
+    "PNC-astropy__astropy-13453__S1#24",
+    "PNC-astropy__astropy-7441__S1#25"
+   ]
+  },
+  "vllm032.stream": {
+   "label": "vLLM 0.32 built-in stream",
+   "valid_exact": [
+    40406,
+    40417
+   ],
+   "ill_surfaced": [
+    3,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 869,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 1,
+    "wrong": 216,
+    "surfaced": 1,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 652,
+    "surfaced": 2,
+    "lost": 0
+   },
+   "silent_by_input_class": {
+    "JSON_STYLE_STRING": 19,
+    "EXPECTED_SEP": 106,
+    "EXPECTED_COLON": 446,
+    "INVALID_LITERAL": 65,
+    "UNTERMINATED": 36,
+    "BAD_NAME": 83,
+    "NO_CALL_PREFIX": 95,
+    "STRAY_TOKEN": 12,
+    "BAD_KEY": 1,
+    "DUPLICATE_KEY": 4,
+    "none": 1,
+    "EXPECTED_CALL_CLOSE": 1
+   },
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40406,
+     "verdict:pass": 40406,
+     "outcome:CALL_COUNT": 4,
+     "verdict:defect": 11,
+     "outcome:EXTRA_KEY": 3,
+     "outcome:WRONG_NAME": 3,
+     "outcome:TYPE_DIFF": 1
+    },
+    "ill_intent_known": {
+     "outcome:CORRUPT_VALUE": 21,
+     "verdict:defect": 216,
+     "outcome:DROPPED_ARG": 153,
+     "outcome:EXTRA_KEY": 12,
+     "outcome:WRONG_NAME": 30,
+     "outcome:AS_CONTENT": 1,
+     "verdict:pass": 1,
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:unknown": 652,
+     "verdict:pass": 2
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 2573.03
+   },
+   "wrong_examples": [
+    "PNC-astropy__astropy-12825__S1#45",
+    "PNC-astropy__astropy-13453__S1#24",
+    "PNC-astropy__astropy-7441__S1#25"
+   ]
+  },
+  "vllm033.server": {
+   "label": "vLLM 0.33 built-in server",
+   "valid_exact": [
+    40406,
+    40417
+   ],
+   "ill_surfaced": [
+    5,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 865,
+   "ill_silently_lost": 2,
+   "intent_known": {
+    "n": 218,
+    "exact": 1,
+    "wrong": 216,
+    "surfaced": 1,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 648,
+    "surfaced": 4,
+    "lost": 2
+   },
+   "silent_by_input_class": {
+    "JSON_STYLE_STRING": 19,
+    "EXPECTED_SEP": 106,
+    "EXPECTED_COLON": 446,
+    "INVALID_LITERAL": 65,
+    "UNTERMINATED": 36,
+    "BAD_NAME": 83,
+    "NO_CALL_PREFIX": 93,
+    "STRAY_TOKEN": 12,
+    "BAD_KEY": 1,
+    "DUPLICATE_KEY": 4,
+    "none": 1,
+    "EXPECTED_CALL_CLOSE": 1
+   },
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40406,
+     "verdict:pass": 40406,
+     "outcome:CALL_COUNT": 4,
+     "verdict:defect": 11,
+     "outcome:EXTRA_KEY": 3,
+     "outcome:WRONG_NAME": 3,
+     "outcome:TYPE_DIFF": 1
+    },
+    "ill_intent_known": {
+     "outcome:CORRUPT_VALUE": 21,
+     "verdict:defect": 216,
+     "outcome:DROPPED_ARG": 153,
+     "outcome:EXTRA_KEY": 12,
+     "outcome:WRONG_NAME": 30,
+     "outcome:AS_CONTENT": 1,
+     "verdict:pass": 1,
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:unknown": 648,
+     "verdict:defect": 2,
+     "verdict:pass": 4
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 87.35
+   },
+   "wrong_examples": [
+    "PNC-astropy__astropy-12825__S1#45",
+    "PNC-astropy__astropy-13453__S1#24",
+    "PNC-astropy__astropy-7441__S1#25"
+   ]
+  },
+  "vllm033.stream": {
+   "label": "vLLM 0.33 built-in stream",
+   "valid_exact": [
+    40406,
+    40417
+   ],
+   "ill_surfaced": [
+    3,
+    872
+   ],
+   "ill_prefix_calls_then_text": 0,
+   "ill_silently_delivered": 869,
+   "ill_silently_lost": 0,
+   "intent_known": {
+    "n": 218,
+    "exact": 1,
+    "wrong": 216,
+    "surfaced": 1,
+    "lost": 0
+   },
+   "no_intent": {
+    "n": 654,
+    "delivered_unscored": 652,
+    "surfaced": 2,
+    "lost": 0
+   },
+   "silent_by_input_class": {
+    "JSON_STYLE_STRING": 19,
+    "EXPECTED_SEP": 106,
+    "EXPECTED_COLON": 446,
+    "INVALID_LITERAL": 65,
+    "UNTERMINATED": 36,
+    "BAD_NAME": 83,
+    "NO_CALL_PREFIX": 95,
+    "STRAY_TOKEN": 12,
+    "BAD_KEY": 1,
+    "DUPLICATE_KEY": 4,
+    "none": 1,
+    "EXPECTED_CALL_CLOSE": 1
+   },
+   "outcomes": {
+    "valid": {
+     "outcome:EXACT": 40406,
+     "verdict:pass": 40406,
+     "outcome:CALL_COUNT": 4,
+     "verdict:defect": 11,
+     "outcome:EXTRA_KEY": 3,
+     "outcome:WRONG_NAME": 3,
+     "outcome:TYPE_DIFF": 1
+    },
+    "ill_intent_known": {
+     "outcome:CORRUPT_VALUE": 21,
+     "verdict:defect": 216,
+     "outcome:DROPPED_ARG": 153,
+     "outcome:EXTRA_KEY": 12,
+     "outcome:WRONG_NAME": 30,
+     "outcome:AS_CONTENT": 1,
+     "verdict:pass": 1,
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    },
+    "ill_no_intent": {
+     "outcome:NO_INTENT": 654,
+     "verdict:unknown": 652,
+     "verdict:pass": 2
+    },
+    "valid_no_call": {
+     "outcome:EXACT": 1,
+     "verdict:policy": 1
+    }
+   },
+   "safety": {
+    "n": 41290,
+    "hang": 0,
+    "exception": 0,
+    "max_ms": 266.43
+   },
+   "wrong_examples": [
+    "PNC-astropy__astropy-12825__S1#45",
+    "PNC-astropy__astropy-13453__S1#24",
+    "PNC-astropy__astropy-7441__S1#25"
+   ]
+  }
+ },
+ "stream_vs_server": {
+  "gg.vllm019": {
+   "n": 41290,
+   "same": 41290
+  },
+  "gg.vllm024": {
+   "n": 41290,
+   "same": 41290
+  },
+  "gg.vllm031": {
+   "n": 41290,
+   "same": 41290
+  },
+  "gg.vllm032": {
+   "n": 41290,
+   "same": 41290
+  },
+  "gg.vllm033": {
+   "n": 41290,
+   "same": 41290
+  },
+  "vllm019": {
+   "n": 41290,
+   "same": 41250
+  },
+  "vllm024": {
+   "n": 41290,
+   "same": 41285
+  },
+  "vllm031": {
+   "n": 41290,
+   "same": 41268
+  },
+  "vllm032": {
+   "n": 41290,
+   "same": 41268
+  },
+  "vllm033": {
+   "n": 41290,
+   "same": 41268
+  }
+ }
+}

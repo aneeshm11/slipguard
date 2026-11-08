@@ -1,0 +1,32 @@
+# PREREG_E_audit + PREREG_E_comp single-GPU lane queue (frozen with both). TAG|MODEL|LAUNCHER|HALF|SALT|PROXYPORT
+# Order: replicate 3 of every study, then replicate 4, then extra replicates until LAST_START.
+popQAWQr3s0|qatawq|pop|0|pop31r3|8550
+popQNVr3s0|qatnvfp4|pop|0|pop31r3|8551
+popQAWQr3s1|qatawq|pop|1|pop31r3|8552
+popQNVr3s1|qatnvfp4|pop|1|pop31r3|8553
+popNVr3s0|nvnvfp4|pop|0|pop31r3|8554
+popNVr3s1|nvnvfp4|pop|1|pop31r3|8555
+compr3s0|qat|qi|0|pop31r3|8556
+compr3s1|qat|qi|1|pop31r3|8557
+popQAWQr4s0|qatawq|pop|0|pop31r4|8558
+popQNVr4s0|qatnvfp4|pop|0|pop31r4|8559
+popQAWQr4s1|qatawq|pop|1|pop31r4|8560
+popQNVr4s1|qatnvfp4|pop|1|pop31r4|8561
+popNVr4s0|nvnvfp4|pop|0|pop31r4|8562
+popNVr4s1|nvnvfp4|pop|1|pop31r4|8563
+compr4s0|qat|qi|0|pop31r4|8564
+compr4s1|qat|qi|1|pop31r4|8565
+compr5s0|qat|qi|0|pop31r5|8566
+compr5s1|qat|qi|1|pop31r5|8567
+compr6s0|qat|qi|0|pop31r6|8568
+compr6s1|qat|qi|1|pop31r6|8569
+popQAWQr5s0|qatawq|pop|0|pop31r5|8570
+popQNVr5s0|qatnvfp4|pop|0|pop31r5|8571
+popQAWQr5s1|qatawq|pop|1|pop31r5|8572
+popQNVr5s1|qatnvfp4|pop|1|pop31r5|8573
+popNVr5s0|nvnvfp4|pop|0|pop31r5|8574
+popNVr5s1|nvnvfp4|pop|1|pop31r5|8575
+compr7s0|qat|qi|0|pop31r7|8576
+compr7s1|qat|qi|1|pop31r7|8577
+compr8s0|qat|qi|0|pop31r8|8578
+compr8s1|qat|qi|1|pop31r8|8579

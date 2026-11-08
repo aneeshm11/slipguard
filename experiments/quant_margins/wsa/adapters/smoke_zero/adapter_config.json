@@ -1,0 +1,15 @@
+{
+ "peft_type": "LORA",
+ "task_type": "CAUSAL_LM",
+ "r": 8,
+ "lora_alpha": 8,
+ "lora_dropout": 0.0,
+ "bias": "none",
+ "target_modules": [
+  "down_proj"
+ ],
+ "base_model_name_or_path": "google/gemma-4-31b-it-qat-w4a16-ct",
+ "fan_in_fan_out": false,
+ "use_rslora": false,
+ "modules_to_save": null
+}

@@ -1,0 +1,18 @@
+# Workstream E proxy FREEZE CANDIDATE — declared 2026-11-04 19:13:11 UTC
+# No edit to any of these files without telling the PI first (PI instruction, 2026-11-04 ~19:10 UTC).
+# sha256  path (relative to experiments/endtoend)
+a7e62cc17d5b120c7660e9de002913990ffefa4d44917e1506f8bbc11fc5d597  proxy/e2e_proxy.py
+7ee133966149d4cb71d205980a7512b5c0c7c1487efdb764de9c5d2d73b9f45f  proxy/gemma_protocol.py
+b8dac8301eef4cc6d5d5fa49d1e825df1041fc0add386d0e4f2ddce9bccee035  proxy/vendor_b_gemma_protocol.py
+329f0bcf76d08c9b32d29571a62868b0aafade092b840d8d54a488d59c4ef004  proxy/configs.json
+5ca5c62c889a7377d4d07bdb696bc9cbc796b5dbe18b6875c3a3de80d662715f  export/quarantine_renderer.py
+bb48bb9a544e383bf3cec06755840044a5fd87bc3db8b5ec4392eb80e602e5eb  configs/channel_prior.json
+#
+# PASS: P1 acceptance (workstream B experiments/intent_decoding/proxy_equivalence.py p1e, E's real Proxy.engine_chat, teacher-forced stub backend), run 19:07-19:12 UTC on exactly these files:
+# PASS ipd: changed 0/229412 valid QuoteStorm calls (adversarial 0/1200, natural 0/228212; raw text changed {'natural': 0, 'adversarial': 0}, delivered args changed {'natural': 0, 'adversarial': 0}; tokenizer-roundtrip skipped {'natural': 2, 'adversarial': 0}) -> pass=True
+# PASS fullp: changed 0/229412 valid QuoteStorm calls (adversarial 0/1200, natural 0/228212; raw text changed {'natural': 0, 'adversarial': 0}, delivered args changed {'natural': 0, 'adversarial': 0}; tokenizer-roundtrip skipped {'natural': 2, 'adversarial': 0}) -> pass=True
+#   result file: acceptance/p1_quotestorm_freeze_candidate.json
+# Suites on these files: tests/test_protocol.py 65/65, tests/test_generate.py 34/34, tests/test_proxy_e2e.py 30/30, tests/test_prereg_analysis.py 7/7, export/quarantine_renderer.py --selftest OK
+# Whitespace-variant regression (B gate ctx-311005d2c5): site pos 81, cuts [81, 82], k=0, final == B reference (tests/test_protocol.py s3, tests/test_generate.py s6)
+# Renderer compatibility for A: byte-identical to 13e28567... on 12,208 A-style P1 cases (acceptance/renderer_compat_A.json)
+# Vendored B library: proxy/vendor_b_gemma_protocol.py == experiments/intent_decoding/gemma_protocol.py (sha b8dac830...), provenance proxy/VENDOR_B.txt

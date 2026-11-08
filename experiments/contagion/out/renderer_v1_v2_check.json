@@ -1,0 +1,62 @@
+{
+ "versions": {
+  "v1": {
+   "sha256": "13e285673b70aa9a344cc2123fd26387877ee19a53e8ef9006f8f5580fa2466f"
+  },
+  "v2_6b08b6e9": {
+   "sha256": "6b08b6e9700dba4e728f0fbcf837e2e2d85b7a21627cc6e11e6ea3291471ba82"
+  },
+  "shipped_at_run": {
+   "sha256": "5ca5c62c889a7377d4d07bdb696bc9cbc796b5dbe18b6875c3a3de80d662715f"
+  }
+ },
+ "v1_path": "experiments/endtoend/archive/candidate_0c2a5278/export/quarantine_renderer.py",
+ "shipped_path": "experiments/endtoend/export/quarantine_renderer.py",
+ "by_arm": {
+  "v2_6b08b6e9:Q8M": {
+   "identical": 282,
+   "actions_identical": 282
+  },
+  "shipped_at_run:Q8M": {
+   "identical": 282,
+   "actions_identical": 282
+  },
+  "v2_6b08b6e9:Q8b": {
+   "identical": 300,
+   "actions_identical": 300
+  },
+  "shipped_at_run:Q8b": {
+   "identical": 300,
+   "actions_identical": 300
+  },
+  "v2_6b08b6e9:P8a": {
+   "identical": 594,
+   "actions_identical": 594
+  },
+  "shipped_at_run:P8a": {
+   "identical": 594,
+   "actions_identical": 594
+  },
+  "v2_6b08b6e9:P8b": {
+   "identical": 300,
+   "actions_identical": 300
+  },
+  "shipped_at_run:P8b": {
+   "identical": 300,
+   "actions_identical": 300
+  }
+ },
+ "differences": [],
+ "records_per_arm": {
+  "P8b": 300,
+  "P8a": 594,
+  "Q8b": 300,
+  "Q8M": 282
+ },
+ "P_smoke_S1": {
+  "v2_6b08b6e9:P8a:identical": 2,
+  "shipped_at_run:P8a:identical": 2,
+  "v2_6b08b6e9:P8b:identical": 2,
+  "shipped_at_run:P8b:identical": 2
+ }
+}

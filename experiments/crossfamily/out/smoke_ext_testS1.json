@@ -1,0 +1,209 @@
+{
+ "manifest": "experiments/contagion/data/test_S1/manifest.json",
+ "n_contexts": 20,
+ "models": {
+  "qwen3.8-27b": {
+   "fmt": "xml",
+   "checks": {
+    "P0:history_call_identity": 20,
+    "P0:rendered": 20,
+    "P1L:history_call_identity": 20,
+    "P1L:laundered_copy_judged_malformed": 20,
+    "P1L:rendered": 20,
+    "P1N:native_slip_judged_malformed": 0,
+    "P1N:outcome:silent_applied": 20,
+    "P1N:rendered": 20,
+    "P5:rendered": 20,
+    "P6:history_call_identity": 20,
+    "P6:laundered_copy_judged_malformed": 20,
+    "P6:rendered": 20,
+    "P8a:history_call_identity": 20,
+    "P8a:recovered_equals_original": 20,
+    "P8a:rendered": 20,
+    "hist_calls": 189,
+    "hist_flagged": 0,
+    "judge_original_ok": 20
+   },
+   "examples": {},
+   "prompt_tokens": {
+    "P0": {
+     "mean": 9805,
+     "max": 15688
+    },
+    "P1L": {
+     "mean": 9552,
+     "max": 15122
+    },
+    "P1N": {
+     "mean": 9814,
+     "max": 15698
+    },
+    "P5": {
+     "mean": 9292,
+     "max": 14686
+    },
+    "P6": {
+     "mean": 9803,
+     "max": 15689
+    },
+    "P8a": {
+     "mean": 9627,
+     "max": 15194
+    }
+   }
+  },
+  "qwen3-coder-30b": {
+   "fmt": "xml",
+   "checks": {
+    "P0:history_call_identity": 20,
+    "P0:rendered": 20,
+    "P1L:history_call_identity": 20,
+    "P1L:laundered_copy_judged_malformed": 20,
+    "P1L:rendered": 20,
+    "P1N:native_slip_judged_malformed": 0,
+    "P1N:outcome:silent_applied": 20,
+    "P1N:rendered": 20,
+    "P5:rendered": 20,
+    "P6:history_call_identity": 20,
+    "P6:laundered_copy_judged_malformed": 20,
+    "P6:rendered": 20,
+    "P8a:history_call_identity": 20,
+    "P8a:recovered_equals_original": 20,
+    "P8a:rendered": 20,
+    "hist_calls": 189,
+    "hist_flagged": 0,
+    "judge_original_ok": 20
+   },
+   "examples": {},
+   "prompt_tokens": {
+    "P0": {
+     "mean": 7879,
+     "max": 12591
+    },
+    "P1L": {
+     "mean": 7625,
+     "max": 12266
+    },
+    "P1N": {
+     "mean": 7887,
+     "max": 12592
+    },
+    "P5": {
+     "mean": 7386,
+     "max": 12011
+    },
+    "P6": {
+     "mean": 7875,
+     "max": 12588
+    },
+    "P8a": {
+     "mean": 7701,
+     "max": 12341
+    }
+   }
+  },
+  "gpt-oss-20b": {
+   "fmt": "harmony",
+   "checks": {
+    "P0:history_call_identity": 20,
+    "P0:rendered": 20,
+    "P1L:history_call_identity": 20,
+    "P1L:laundered_copy_judged_malformed": 20,
+    "P1L:rendered": 20,
+    "P1N:native_slip_judged_malformed": 20,
+    "P1N:outcome:delivered_invalid": 20,
+    "P1N:rendered": 20,
+    "P5:rendered": 20,
+    "P6:history_call_identity": 20,
+    "P6:laundered_copy_judged_malformed": 20,
+    "P6:rendered": 20,
+    "P8a:history_call_identity": 20,
+    "P8a:recovered_equals_original": 20,
+    "P8a:rendered": 20,
+    "hist_calls": 189,
+    "hist_flagged": 0,
+    "judge_original_ok": 20
+   },
+   "examples": {},
+   "prompt_tokens": {
+    "P0": {
+     "mean": 8996,
+     "max": 14684
+    },
+    "P1L": {
+     "mean": 8737,
+     "max": 14114
+    },
+    "P1N": {
+     "mean": 8755,
+     "max": 14122
+    },
+    "P5": {
+     "mean": 6945,
+     "max": 11448
+    },
+    "P6": {
+     "mean": 8985,
+     "max": 14682
+    },
+    "P8a": {
+     "mean": 8821,
+     "max": 14189
+    }
+   }
+  },
+  "devstral-24b": {
+   "fmt": "mistral",
+   "checks": {
+    "P0:history_call_identity": 20,
+    "P0:rendered": 20,
+    "P1L:history_call_identity": 20,
+    "P1L:laundered_copy_judged_malformed": 20,
+    "P1L:rendered": 20,
+    "P1N:native_slip_judged_malformed": 20,
+    "P1N:outcome:delivered_invalid": 20,
+    "P1N:rendered": 20,
+    "P5:render_error": 13,
+    "P5:rendered": 7,
+    "P6:history_call_identity": 20,
+    "P6:laundered_copy_judged_malformed": 20,
+    "P6:rendered": 20,
+    "P8a:history_call_identity": 20,
+    "P8a:recovered_equals_original": 20,
+    "P8a:rendered": 20,
+    "hist_calls": 189,
+    "hist_flagged": 0,
+    "judge_original_ok": 20
+   },
+   "examples": {
+    "P5:render_error": "ValueError('Cannot set `add_generation_prompt` to True when the last message is from the assistant. Consider using `continue_final_message` instead.')"
+   },
+   "prompt_tokens": {
+    "P0": {
+     "mean": 7877,
+     "max": 12815
+    },
+    "P1L": {
+     "mean": 7594,
+     "max": 12454
+    },
+    "P1N": {
+     "mean": 7640,
+     "max": 12510
+    },
+    "P6": {
+     "mean": 7865,
+     "max": 12796
+    },
+    "P8a": {
+     "mean": 7680,
+     "max": 12547
+    },
+    "P5": {
+     "mean": 7965,
+     "max": 10382
+    }
+   }
+  }
+ }
+}

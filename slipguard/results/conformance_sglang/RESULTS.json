@@ -1,0 +1,712 @@
+{
+ "targets": [
+  "gg.ref",
+  "gg.sgl523.detector",
+  "gg.sgl523.server",
+  "gg.sgl523.stream"
+ ],
+ "n_results": 54448,
+ "table_D": {
+  "E1 closer_slip (silent absorption after a look-alike closer)": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "pass",
+    "why": []
+   }
+  },
+  "E2 key_restart (closer, comma, newline, same key)": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "pass",
+    "why": []
+   }
+  },
+  "E3 opener_drift ('=', JSON/Python quotes, bare text)": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "pass",
+    "why": []
+   }
+  },
+  "E4 key_drift (quotes on the key side)": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "pass",
+    "why": []
+   }
+  },
+  "E5 unparsed_call (header drift, unclosed call)": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "pass",
+    "why": []
+   }
+  },
+  "C2 truncated call returned/executed": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "pass",
+    "why": []
+   }
+  },
+  "C4 doubled delimiter -> empty value": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "pass",
+    "why": []
+   }
+  },
+  "C5 stray delimiter after number kept": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "pass",
+    "why": []
+   }
+  },
+  "C6 control token in string: truncation / deletion / call injection": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "pass",
+    "why": []
+   }
+  },
+  "C7 infinite loop + memory growth": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "pass",
+    "why": []
+   }
+  },
+  "C8 quadratic parse time": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "n/a",
+    "why": []
+   }
+  },
+  "C9 uncaught RecursionError (deep nesting)": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "n/a",
+    "why": []
+   }
+  },
+  "C10 type drift on valid input": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "pass",
+    "why": []
+   }
+  },
+  "C11 non-L1 literal coerced/stringified": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "pass",
+    "why": []
+   }
+  },
+  "C12 valid names/keys/whitespace mishandled": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "pass",
+    "why": []
+   }
+  },
+  "C13 multiple calls / streaming call merge": {
+   "gg.ref": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.detector": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.server": {
+    "verdict": "pass",
+    "why": []
+   },
+   "gg.sgl523.stream": {
+    "verdict": "pass",
+    "why": []
+   }
+  }
+ },
+ "table_F": {
+  "ABSORB": {
+   "desc": "look-alike closer: next argument swallowed (synthetic + real slips)",
+   "by_target": {
+    "gg.ref": [
+     0,
+     2788
+    ],
+    "gg.sgl523.detector": [
+     0,
+     2788
+    ],
+    "gg.sgl523.server": [
+     0,
+     2788
+    ],
+    "gg.sgl523.stream": [
+     0,
+     2781
+    ]
+   }
+  },
+  "ABSORB_REAL": {
+   "desc": "real slips only (exact logged prefix + recovered/sampled old_string)",
+   "by_target": {
+    "gg.ref": [
+     0,
+     1610
+    ],
+    "gg.sgl523.detector": [
+     0,
+     1610
+    ],
+    "gg.sgl523.server": [
+     0,
+     1610
+    ],
+    "gg.sgl523.stream": [
+     0,
+     1608
+    ]
+   }
+  },
+  "TRUNCATED": {
+   "desc": "max_tokens-truncated call returned as a (partial) call",
+   "by_target": {
+    "gg.ref": [
+     0,
+     273
+    ],
+    "gg.sgl523.detector": [
+     0,
+     273
+    ],
+    "gg.sgl523.server": [
+     0,
+     273
+    ],
+    "gg.sgl523.stream": [
+     0,
+     273
+    ]
+   }
+  },
+  "JSON_DIALECT": {
+   "desc": "JSON-style string values / quoted keys kept with their quotes",
+   "by_target": {
+    "gg.ref": [
+     0,
+     426
+    ],
+    "gg.sgl523.detector": [
+     0,
+     426
+    ],
+    "gg.sgl523.server": [
+     0,
+     426
+    ],
+    "gg.sgl523.stream": [
+     0,
+     422
+    ]
+   }
+  },
+  "DOUBLED_DELIM": {
+   "desc": "doubled <|\"|> delimiter",
+   "by_target": {
+    "gg.ref": [
+     0,
+     142
+    ],
+    "gg.sgl523.detector": [
+     0,
+     142
+    ],
+    "gg.sgl523.server": [
+     0,
+     142
+    ],
+    "gg.sgl523.stream": [
+     0,
+     140
+    ]
+   }
+  },
+  "LITERAL": {
+   "desc": "non-L1 literal spellings (True/None/yes/TRUE/\"true\")",
+   "by_target": {
+    "gg.ref": [
+     0,
+     104
+    ],
+    "gg.sgl523.detector": [
+     0,
+     104
+    ],
+    "gg.sgl523.server": [
+     0,
+     104
+    ],
+    "gg.sgl523.stream": [
+     0,
+     103
+    ]
+   }
+  },
+  "NONL1_ACCEPTED": {
+   "desc": "other ill-formed input accepted without any signal (paren opener, missing brace/close, trailing comma, duplicate key, bare string)",
+   "by_target": {
+    "gg.ref": [
+     0,
+     828
+    ],
+    "gg.sgl523.detector": [
+     0,
+     828
+    ],
+    "gg.sgl523.server": [
+     0,
+     828
+    ],
+    "gg.sgl523.stream": [
+     0,
+     820
+    ]
+   }
+  },
+  "HANG": {
+   "desc": "per-case timeout (5 s; 15 s streaming) on any input",
+   "by_target": {
+    "gg.ref": [
+     0,
+     13612
+    ],
+    "gg.sgl523.detector": [
+     0,
+     13612
+    ],
+    "gg.sgl523.server": [
+     0,
+     13612
+    ],
+    "gg.sgl523.stream": [
+     0,
+     13335
+    ]
+   }
+  },
+  "EXCEPTION": {
+   "desc": "uncaught exception escaping the parser (any input)",
+   "by_target": {
+    "gg.ref": [
+     0,
+     13612
+    ],
+    "gg.sgl523.detector": [
+     0,
+     13612
+    ],
+    "gg.sgl523.server": [
+     0,
+     13612
+    ],
+    "gg.sgl523.stream": [
+     0,
+     13335
+    ]
+   }
+  },
+  "CTRL_IN_STRING": {
+   "desc": "valid call whose string values contain control tokens: truncated / split / token deleted",
+   "by_target": {
+    "gg.ref": [
+     0,
+     802
+    ],
+    "gg.sgl523.detector": [
+     4,
+     802
+    ],
+    "gg.sgl523.server": [
+     159,
+     802
+    ],
+    "gg.sgl523.stream": [
+     11,
+     791
+    ]
+   }
+  },
+  "NESTED_BRACKET": {
+   "desc": "valid call with '[' or ']' inside strings of nested arrays",
+   "by_target": {
+    "gg.ref": [
+     0,
+     121
+    ],
+    "gg.sgl523.detector": [
+     0,
+     121
+    ],
+    "gg.sgl523.server": [
+     0,
+     121
+    ],
+    "gg.sgl523.stream": [
+     0,
+     120
+    ]
+   }
+  },
+  "TYPE_DRIFT": {
+   "desc": "valid call returned with a scalar of another type (null->'null', 1.0->1, 1e+20->str, '42'->42, ...)",
+   "by_target": {
+    "gg.ref": [
+     0,
+     5470
+    ],
+    "gg.sgl523.detector": [
+     0,
+     5470
+    ],
+    "gg.sgl523.server": [
+     0,
+     5470
+    ],
+    "gg.sgl523.stream": [
+     0,
+     5318
+    ]
+   }
+  },
+  "VALID_CORRUPTED": {
+   "desc": "valid call returned silently wrong (any silent class except type drift)",
+   "by_target": {
+    "gg.ref": [
+     0,
+     5470
+    ],
+    "gg.sgl523.detector": [
+     0,
+     5470
+    ],
+    "gg.sgl523.server": [
+     116,
+     5470
+    ],
+    "gg.sgl523.stream": [
+     7,
+     5318
+    ]
+   }
+  },
+  "SPURIOUS_REJECT": {
+   "desc": "valid call rejected (exception / content only)",
+   "by_target": {
+    "gg.ref": [
+     0,
+     4668
+    ],
+    "gg.sgl523.detector": [
+     13,
+     4668
+    ],
+    "gg.sgl523.server": [
+     13,
+     4668
+    ],
+    "gg.sgl523.stream": [
+     13,
+     4527
+    ]
+   }
+  },
+  "NAME": {
+   "desc": "valid call with '-' or '.' in the function name returned without / with a wrong name",
+   "by_target": {
+    "gg.ref": [
+     0,
+     730
+    ],
+    "gg.sgl523.detector": [
+     2,
+     730
+    ],
+    "gg.sgl523.server": [
+     42,
+     730
+    ],
+    "gg.sgl523.stream": [
+     2,
+     727
+    ]
+   }
+  }
+ },
+ "real": {
+  "gg.ref": {
+   "clean_exact": [
+    1500,
+    1500
+   ],
+   "slips_visible": [
+    1610,
+    1610
+   ],
+   "raw": {
+    "n": 1114,
+    "loud_or_text_returned": 1058,
+    "strict_calls_returned": 56,
+    "lost": 0
+   }
+  },
+  "gg.sgl523.detector": {
+   "clean_exact": [
+    1500,
+    1500
+   ],
+   "slips_visible": [
+    1610,
+    1610
+   ],
+   "raw": {
+    "n": 1114,
+    "loud_or_text_returned": 1070,
+    "strict_calls_returned": 44,
+    "lost": 0
+   }
+  },
+  "gg.sgl523.server": {
+   "clean_exact": [
+    1500,
+    1500
+   ],
+   "slips_visible": [
+    1610,
+    1610
+   ],
+   "raw": {
+    "n": 1114,
+    "loud_or_text_returned": 1070,
+    "strict_calls_returned": 44,
+    "lost": 0
+   }
+  },
+  "gg.sgl523.stream": {
+   "clean_exact": [
+    1496,
+    1496
+   ],
+   "slips_visible": [
+    1608,
+    1608
+   ],
+   "raw": {
+    "n": 1030,
+    "loud_or_text_returned": 980,
+    "strict_calls_returned": 42,
+    "lost": 8
+   }
+  }
+ },
+ "any_input": {
+  "gg.ref": {
+   "n": 13612,
+   "hang": 0,
+   "exception": 0,
+   "skipped": 0,
+   "max_ms": 18.17
+  },
+  "gg.sgl523.detector": {
+   "n": 13612,
+   "hang": 0,
+   "exception": 0,
+   "skipped": 0,
+   "max_ms": 127.87
+  },
+  "gg.sgl523.server": {
+   "n": 13612,
+   "hang": 0,
+   "exception": 0,
+   "skipped": 0,
+   "max_ms": 132.03
+  },
+  "gg.sgl523.stream": {
+   "n": 13612,
+   "hang": 0,
+   "exception": 0,
+   "skipped": 277,
+   "max_ms": 17.09
+  }
+ }
+}

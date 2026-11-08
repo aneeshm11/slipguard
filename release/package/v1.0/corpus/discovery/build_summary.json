@@ -1,0 +1,11 @@
+{
+ "released_records": 8107,
+ "records_with_file_context": 3877,
+ "model_family:team_finetune": 3868,
+ "model_family:base": 4239,
+ "pointer_only": 53,
+ "excluded_teammate_records": 250,
+ "n_contexts_committed": 8091,
+ "root_sha256": "136d61f7b6442fcef98767828b55acd8f3fcb575ce6108c2f7b6bf4b56ba5635",
+ "excluded_teammate_contexts": 250
+}

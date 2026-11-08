@@ -1,0 +1,24 @@
+{
+ "args": {
+  "qat": "experiments/quant_margins/wsa/out/hf_qatct.pt",
+  "teacher": "experiments/quant_margins/wsa/out/hf_bf16.pt",
+  "embed": "models/gemma-4-31b-it-qat-w4a16-ct/model.safetensors",
+  "out": "out/repairB_fit.json",
+  "lams": "1000",
+  "rhos": "0",
+  "alphas": "1.0",
+  "eps": 0.001,
+  "mu": 0.001,
+  "p_min": 0.0,
+  "iters": 0,
+  "target_modes": "la_rel_dq_onesided",
+  "eval_split": "heldout",
+  "save_adapter": "adapters/repairB",
+  "device": "cpu",
+  "threads": 9,
+  "max_eval": 0,
+  "dump_pred": 40,
+  "fit_only": true
+ },
+ "results": []
+}

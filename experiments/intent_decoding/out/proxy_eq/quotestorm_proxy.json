@@ -1,0 +1,202 @@
+{
+ "payloads": 114707,
+ "calls": 229414,
+ "natural_calls": 228214,
+ "adversarial_calls": 1200,
+ "stop_string_fires": 800,
+ "rejected_by_opener_confirmation": 115,
+ "proxy_changed_valid_calls": {
+  "k": 184,
+  "n": 229414,
+  "rate": 0.0008020434672687804,
+  "wilson95": [
+   0.0006942608647913962,
+   0.0009265435872783778
+  ]
+ },
+ "proxy_changed_natural": {
+  "k": 0,
+  "n": 228214,
+  "rate": 0.0,
+  "wilson95": [
+   1.6940658945086007e-21,
+   1.6832421146999907e-05
+  ]
+ },
+ "proxy_changed_adversarial": {
+  "k": 184,
+  "n": 1200,
+  "rate": 0.15333333333333332,
+  "wilson95": [
+   0.13405606096763953,
+   0.17482303278359
+  ]
+ },
+ "reference_changed_valid_calls": {
+  "k": 0,
+  "n": 229414,
+  "note": "B guard: is_valid first (out/quotestorm_free_big.json)"
+ },
+ "examples": [
+  {
+   "src": "adversarial",
+   "order": "new_first",
+   "ctx": " ``output_type`` will automatically be set to 'dict'.\n\n        .. deprecated:: 0.9.2.dev\n    marker = '`,allow_multiple:true'<|\"|>,old_strin",
+   "run": "'`",
+   "in_key": "new_string",
+   "next_key": "allow_multiple"
+  },
+  {
+   "src": "adversarial",
+   "order": "old_first",
+   "ctx": " ``output_type`` will automatically be set to 'dict'.\n\n        .. deprecated:: 0.9.2.dev\n    marker = '`,allow_multiple:true'<|\"|>}<tool_cal",
+   "run": "'`",
+   "in_key": "new_string",
+   "next_key": "allow_multiple"
+  },
+  {
+   "src": "adversarial",
+   "order": "old_first",
+   "ctx": "ly under-samples each bootstrap sample to\n    balance it.\n\n    Read more in the :ref:`User Guide <forest>`.',new_string:<|\"|>,new_string:<|\"",
+   "run": "'",
+   "in_key": "old_string",
+   "next_key": "new_string"
+  },
+  {
+   "src": "adversarial",
+   "order": "new_first",
+   "ctx": "request) -> str:\n    \"\"\"Fixture providing all supported backends for testing.\"\"\"\n    return request.param\n``,old_string:<|\"|>,old_string:<|\"",
+   "run": "``",
+   "in_key": "new_string",
+   "next_key": "old_string"
+  },
+  {
+   "src": "adversarial",
+   "order": "new_first",
+   "ctx": "`` instead.\n        Default is \".\".\n        .. versionadded:: 2.8\n\n    write_empty_chunks : bool, optional``,old_string:<|\"|>,old_string:<|\"",
+   "run": "``",
+   "in_key": "new_string",
+   "next_key": "old_string"
+  },
+  {
+   "src": "adversarial",
+   "order": "new_first",
+   "ctx": "er: Optional[float] = None,\n        device_updated_cb=None,\n    ):\n        \"\"\"Initialize Switch class.\"\"\"\n\\\",old_string:<|\"|>,old_string:<|\"",
+   "run": "\\\"",
+   "in_key": "new_string",
+   "next_key": "old_string"
+  },
+  {
+   "src": "adversarial",
+   "order": "new_first",
+   "ctx": "ing:<|\"|>    def _eval_determinant(self):\n        return S.One\n\n\nclass GenericIdentity(Identity):\n    \"\"\"\n``,old_string:<|\"|>,old_string:<|\"",
+   "run": "``",
+   "in_key": "new_string",
+   "next_key": "old_string"
+  },
+  {
+   "src": "adversarial",
+   "order": "new_first",
+   "ctx": "await prov.pre_launch()\n\n    def expand(arg: str):\n        \"expand variables in argument\"\n    s = f\"{x}`,allow_multiple:true\"<|\"|>,old_strin",
+   "run": "`",
+   "in_key": "new_string",
+   "next_key": "allow_multiple"
+  },
+  {
+   "src": "adversarial",
+   "order": "old_first",
+   "ctx": "await prov.pre_launch()\n\n    def expand(arg: str):\n        \"expand variables in argument\"\n    s = f\"{x}`,allow_multiple:true\"<|\"|>}<tool_cal",
+   "run": "`",
+   "in_key": "new_string",
+   "next_key": "allow_multiple"
+  },
+  {
+   "src": "adversarial",
+   "order": "old_first",
+   "ctx": "s a tolerance of 3 and the alerter has a limit of 2, the monitor must fail 5 times before an alert is sent.`,new_string:<|\"|>,new_string:<|\"",
+   "run": "`",
+   "in_key": "old_string",
+   "next_key": "new_string"
+  },
+  {
+   "src": "adversarial",
+   "order": "new_first",
+   "ctx": "e: normal;\n\n        ${StyledIcon} {\n          top: -2px;\n        }\n      `}\n    }\n- Fixed a bug where ``,allow_multiple:true` was swallowed<",
+   "run": "``",
+   "in_key": "new_string",
+   "next_key": "allow_multiple"
+  },
+  {
+   "src": "adversarial",
+   "order": "old_first",
+   "ctx": "e: normal;\n\n        ${StyledIcon} {\n          top: -2px;\n        }\n      `}\n    }\n- Fixed a bug where ``,allow_multiple:true` was swallowed<",
+   "run": "``",
+   "in_key": "new_string",
+   "next_key": "allow_multiple"
+  },
+  {
+   "src": "adversarial",
+   "order": "new_first",
+   "ctx": "st_path = Path(dest_dir) / (\n                f\"{source.name}-{source.version}-{source.pyver}-{source.abi}\"\\\",old_string:<|\"|>,old_string:<|\"",
+   "run": "\"\\\"",
+   "in_key": "new_string",
+   "next_key": "old_string"
+  },
+  {
+   "src": "adversarial",
+   "order": "new_first",
+   "ctx": "m ${fshDefinition.name} has a description field that should not be empty.`\n      );\n    }\n    s = f\"{x}`,allow_multiple:true\"\n    if (fshDef",
+   "run": "`",
+   "in_key": "new_string",
+   "next_key": "allow_multiple"
+  },
+  {
+   "src": "adversarial",
+   "order": "old_first",
+   "ctx": "m ${fshDefinition.name} has a description field that should not be empty.`\n      );\n    }\n    s = f\"{x}`,allow_multiple:true\"\n    if (fshDef",
+   "run": "`",
+   "in_key": "new_string",
+   "next_key": "allow_multiple"
+  },
+  {
+   "src": "adversarial",
+   "order": "new_first",
+   "ctx": "evelopment:\n- **Run Tests:** `flake8`\n- **Run style checks:** `pytest`\n    # the model closes strings with `,old_string:<|\"|>,old_string:<|\"",
+   "run": "`",
+   "in_key": "new_string",
+   "next_key": "old_string"
+  },
+  {
+   "src": "adversarial",
+   "order": "new_first",
+   "ctx": "epr(self.node.pattern)\n        fields.update(pattern=raw_repr)\n\n    template = 'self._pattern({pattern})'\n``,old_string:<|\"|>,old_string:<|\"",
+   "run": "``",
+   "in_key": "new_string",
+   "next_key": "old_string"
+  },
+  {
+   "src": "adversarial",
+   "order": "new_first",
+   "ctx": " : null;\n\n    return new RuleDataSnapshot(this[rootKey], newPath);\n  }\n    # the model closes strings with `,old_string:<|\"|>,old_string:<|\"",
+   "run": "`",
+   "in_key": "new_string",
+   "next_key": "old_string"
+  },
+  {
+   "src": "adversarial",
+   "order": "new_first",
+   "ctx": "ps://github.com/terrapower/armi/pull/1824>`_)\n#. TBD\n\nQuality Work\n    # the model closes strings with `,allow_multiple:true<|\"|>,old_string",
+   "run": "`",
+   "in_key": "new_string",
+   "next_key": "allow_multiple"
+  },
+  {
+   "src": "adversarial",
+   "order": "old_first",
+   "ctx": "ps://github.com/terrapower/armi/pull/1824>`_)\n#. TBD\n\nQuality Work\n    # the model closes strings with `,allow_multiple:true<|\"|>}<tool_call",
+   "run": "`",
+   "in_key": "new_string",
+   "next_key": "allow_multiple"
+  }
+ ]
+}

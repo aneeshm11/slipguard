@@ -1,0 +1,97 @@
+{
+ "arms": {
+  "bf16": {
+   "info": {
+    "arm": "bf16",
+    "base": "models/gemma-4-31b-it"
+   },
+   "partial": true,
+   "n_positions": 4010,
+   "calib": {
+    "string_end_closers": {
+     "n_positions": 198,
+     "n_episodes": 93,
+     "E_slip_T1": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "margin_quantiles_10_25_50_75_90": [
+      16.87840003967285,
+      18.89739465713501,
+      20.2489013671875,
+      21.888497352600098,
+      22.70014190673828
+     ],
+     "frac_margin_lt_2": 0.0,
+     "frac_margin_lt_4": 0.0,
+     "frac_top1_not_delimiter": 0.03535353535353535,
+     "E_slip_T1_new": 0.0,
+     "E_slip_T1_old": 0.0
+    },
+    "per_call_slip_T1": {
+     "n_calls": 99,
+     "mean": 0.0
+    },
+    "logged_slip_states": {
+     "n": 43,
+     "mean_pLA_T1": 0.24259354572656544,
+     "frac_top1_lookalike": 0.23255813953488372
+    },
+    "protected_content": {
+     "n": 188,
+     "mean_lp_logged": -0.0008221585699852477
+    },
+    "generic_pnc_NLL": 1.021870904629594,
+    "generic_wikitext_NLL": null
+   },
+   "heldout": {
+    "logged_slip_states": {
+     "n": 8,
+     "mean_pLA_T1": 0.02106308750808239,
+     "frac_top1_lookalike": 0.0
+    },
+    "generic_pnc_NLL": 1.3373028607291972,
+    "generic_wikitext_NLL": null
+   },
+   "all": {
+    "string_end_closers": {
+     "n_positions": 198,
+     "n_episodes": 93,
+     "E_slip_T1": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "margin_quantiles_10_25_50_75_90": [
+      16.87840003967285,
+      18.89739465713501,
+      20.2489013671875,
+      21.888497352600098,
+      22.70014190673828
+     ],
+     "frac_margin_lt_2": 0.0,
+     "frac_margin_lt_4": 0.0,
+     "frac_top1_not_delimiter": 0.03535353535353535,
+     "E_slip_T1_new": 0.0,
+     "E_slip_T1_old": 0.0
+    },
+    "per_call_slip_T1": {
+     "n_calls": 99,
+     "mean": 0.0
+    },
+    "logged_slip_states": {
+     "n": 51,
+     "mean_pLA_T1": 0.2078436699275877,
+     "frac_top1_lookalike": 0.19607843137254902
+    },
+    "protected_content": {
+     "n": 188,
+     "mean_lp_logged": -0.0008221585699852477
+    },
+    "generic_pnc_NLL": 1.0388501147017373,
+    "generic_wikitext_NLL": null
+   }
+  }
+ }
+}

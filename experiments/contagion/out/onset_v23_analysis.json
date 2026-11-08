@@ -1,0 +1,155 @@
+{
+ "prereg": "PREREG_v2.3_onsetTransplant.md sha256 7111525f15d76787280b78e6b55494a00edb64c3456a1214f7aebfcdd0ee67cb",
+ "states_planned": 600,
+ "complete_case_states": 600,
+ "missing_or_error_jobs": {
+  "O0": 0,
+  "O1": 0
+ },
+ "episodes_distinct": 600,
+ "B": 2000,
+ "servers": {
+  "http://127.0.0.1:8303/v1": 1200
+ },
+ "primary_closer_slip": {
+  "O0": [
+   0.0017,
+   0.0003,
+   0.0094,
+   600
+  ],
+  "O1": [
+   0.01,
+   0.0046,
+   0.0216,
+   600
+  ],
+  "RD": 0.0083,
+  "RD_CI": [
+   0.0017,
+   0.0167
+  ],
+  "mcnemar_discordant_O1only_O0only": [
+   5,
+   0
+  ],
+  "mcnemar_exact_one_sided_p": 0.03125,
+  "gap_fraction_G": 0.0484,
+  "verdict": "SERIALIZATION INDUCES ONSET, PARTIAL",
+  "D_80PI": {
+   "O0": "1.2% [0.3, 3.0]",
+   "O1": "3.5% [1.0, 10.0]",
+   "RD": "+2.3 pp [0, +8]"
+  }
+ },
+ "secondary": {
+  "census_malformed": {
+   "O0": [
+    0.0217,
+    0.0127,
+    0.0367,
+    600
+   ],
+   "O1": [
+    0.035,
+    0.023,
+    0.0529,
+    600
+   ],
+   "RD": 0.0133,
+   "RD_CI": [
+    -0.0017,
+    0.03
+   ],
+   "D_80PI_O1": "5% [2, 13]"
+  },
+  "P_edit": {
+   "O0": [
+    0.57,
+    0.5301,
+    0.609,
+    600
+   ],
+   "O1": [
+    0.57,
+    0.5301,
+    0.609,
+    600
+   ],
+   "RD": 0.0,
+   "RD_CI": [
+    -0.04,
+    0.04
+   ]
+  },
+  "escaped_closer_share_among_slips": {
+   "O0": [
+    0.0,
+    0,
+    0.7935,
+    1
+   ],
+   "O1": [
+    0.0,
+    0,
+    0.3903,
+    6
+   ],
+   "O1_minus_O0": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "finite_draws": 1259,
+   "D_80PI": "O0 <= 0.20; O1 0.40 [0.15, 0.75]"
+  },
+  "string_mode_drift_share_among_edits": {
+   "O0": [
+    0.0,
+    0,
+    0.0111,
+    342
+   ],
+   "O1": [
+    0.0556,
+    0.0359,
+    0.0851,
+    342
+   ],
+   "O1_minus_O0": [
+    0.0556,
+    0.0324,
+    0.0809
+   ],
+   "finite_draws": 2000,
+   "D_80PI": "O0 <= 1%; O1 5% [1, 15]"
+  },
+  "closer_runs": {
+   "O0": {
+    "`": 1
+   },
+   "O1": {
+    "`": 6
+   }
+  }
+ },
+ "mechanism_corroboration": true,
+ "manipulation": {
+  "tool_results_with_escaped_quote": {
+   "O0": [
+    39,
+    9211
+   ],
+   "O1": [
+    2959,
+    9211
+   ]
+  },
+  "adk_serializer_equal": "9211/9211",
+  "library_pipeline_segments_identical": "6/6 states",
+  "prompt_tokens_mean": [
+   13871.5,
+   14826.6
+  ]
+ }
+}

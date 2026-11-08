@@ -1,0 +1,617 @@
+{
+ "battery": "S",
+ "prereg": "PREREG_v2.2_thoughtSuppressed.md sha256 ec9164ffa833f351618c3eb7ec69aa2e471e096307de7f5fd61e6c72e07f09d3",
+ "cond": [
+  "S"
+ ],
+ "B": 2000,
+ "file": "out/main/r31b_v22S.jsonl",
+ "servers": {
+  "http://127.0.0.1:8302/v1": 1200
+ },
+ "on_servers": {
+  "null": 18,
+  "http://127.0.0.1:8300/v1": 1182
+ },
+ "missing_jobs": {
+  "P0": 0,
+  "P1": 0,
+  "P6": 0,
+  "P8a": 0
+ },
+ "complete_case_contexts": 300,
+ "manipulation_check_M_S": {
+  "P0": {
+   "opened": [
+    0.0,
+    0,
+    0.0126,
+    300
+   ],
+   "median_chars": null,
+   "iqr_chars": null,
+   "ON_opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "ON_median_chars": 80.0
+  },
+  "P1": {
+   "opened": [
+    0.0,
+    0,
+    0.0126,
+    300
+   ],
+   "median_chars": null,
+   "iqr_chars": null,
+   "ON_opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "ON_median_chars": 79.0
+  },
+  "P6": {
+   "opened": [
+    0.0,
+    0,
+    0.0126,
+    300
+   ],
+   "median_chars": null,
+   "iqr_chars": null,
+   "ON_opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "ON_median_chars": 228.0
+  },
+  "P8a": {
+   "opened": [
+    0.0,
+    0,
+    0.0126,
+    300
+   ],
+   "median_chars": null,
+   "iqr_chars": null,
+   "ON_opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "ON_median_chars": 187.5
+  },
+  "pooled": {
+   "opened": [
+    0.0,
+    0,
+    0.0032,
+    1200
+   ],
+   "median_chars": null,
+   "ON_median_chars": 120.0
+  },
+  "prediction": "re-opened <= 0.05; > 0.10 -> label thought-prefilled and report on non-reopened contexts"
+ },
+ "claims_complete_case": {
+  "label": "complete-case",
+  "S1": {
+   "contrast": "RD(P1 - P0)",
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4067,
+    "base": 0.0233,
+    "RD": 0.3833,
+    "RD_CI": [
+     0.3278,
+     0.4422
+    ],
+    "p_one_sided": 0.0005
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4674,
+    "base": 0.0297,
+    "RD": 0.4378,
+    "RD_CI": [
+     0.3783,
+     0.4987
+    ],
+    "p_one_sided": 0.0005
+   },
+   "holm_p": 0.0015,
+   "prediction_80PI": "+38 pp [+22, +55]",
+   "verdict": "REPLICATES",
+   "theta_D": 0.353
+  },
+  "S2": {
+   "contrast": "RD(P6 - P0)",
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2933,
+    "base": 0.0233,
+    "RD": 0.27,
+    "RD_CI": [
+     0.2208,
+     0.324
+    ],
+    "p_one_sided": 0.0005
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.3682,
+    "base": 0.0297,
+    "RD": 0.3385,
+    "RD_CI": [
+     0.2821,
+     0.4005
+    ],
+    "p_one_sided": 0.0005
+   },
+   "holm_p": 0.0015,
+   "prediction_80PI": "+24 pp [+8, +40]",
+   "verdict": "REPLICATES",
+   "theta_D": 0.213
+  },
+  "S3": {
+   "contrast": "removal of the P1 excess by P8a; Holm test RD(P1 - P8a) > 0",
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4067,
+    "base": 0.0033,
+    "RD": 0.4033,
+    "RD_CI": [
+     0.3468,
+     0.462
+    ],
+    "p_one_sided": 0.0005
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4674,
+    "base": 0.0038,
+    "RD": 0.4636,
+    "RD_CI": [
+     0.4032,
+     0.5257
+    ],
+    "p_one_sided": 0.0005
+   },
+   "removal_uncond": {
+    "P1": 0.4067,
+    "Q": 0.0033,
+    "P0": 0.0233,
+    "removal": 1.0522,
+    "CI": [
+     1.008,
+     1.1048
+    ],
+    "undefined_draw_frac": 0.0
+   },
+   "removal_cond": {
+    "P1": 0.4674,
+    "Q": 0.0038,
+    "P0": 0.0297,
+    "removal": 1.059,
+    "CI": [
+     1.0101,
+     1.1168
+    ],
+    "undefined_draw_frac": 0.0
+   },
+   "holm_p": 0.0015,
+   "prediction_80PI": "1.05 [0.80, 1.20]",
+   "verdict": "REPLICATES"
+  }
+ },
+ "condition_labels": {
+  "S1": null,
+  "S2": null,
+  "S3": null
+ },
+ "levels": {
+  "P0": {
+   "uncond": [
+    0.0233,
+    0.0067,
+    0.0407
+   ],
+   "cond": [
+    0.0297,
+    0.0087,
+    0.0518
+   ],
+   "P_edit": [
+    0.7867,
+    0.7368,
+    0.8292,
+    300
+   ],
+   "D_80PI": [
+    0.03,
+    0.13
+   ]
+  },
+  "P1": {
+   "uncond": [
+    0.4067,
+    0.351,
+    0.4649
+   ],
+   "cond": [
+    0.4674,
+    0.4077,
+    0.5273
+   ],
+   "P_edit": [
+    0.87,
+    0.8272,
+    0.9034,
+    300
+   ],
+   "D_80PI": [
+    0.28,
+    0.63
+   ]
+  },
+  "P6": {
+   "uncond": [
+    0.2933,
+    0.2442,
+    0.3465
+   ],
+   "cond": [
+    0.3682,
+    0.3122,
+    0.4279
+   ],
+   "P_edit": [
+    0.7967,
+    0.7475,
+    0.8383,
+    300
+   ],
+   "D_80PI": null
+  },
+  "P8a": {
+   "uncond": [
+    0.0033,
+    0.0,
+    0.0103
+   ],
+   "cond": [
+    0.0038,
+    0.0,
+    0.0119
+   ],
+   "P_edit": [
+    0.8733,
+    0.8309,
+    0.9063,
+    300
+   ],
+   "D_80PI": null
+  }
+ },
+ "paired_vs_thinking_ON": {
+  "P0": {
+   "RD_malformed_uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0233,
+    "base": 0.05,
+    "RD": -0.0267,
+    "RD_CI": [
+     -0.053,
+     -0.0032
+    ],
+    "p_one_sided": 0.98801
+   },
+   "RD_malformed_cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0297,
+    "base": 0.0568,
+    "RD": -0.0272,
+    "RD_CI": [
+     -0.0581,
+     0.0026
+    ],
+    "p_one_sided": 0.96252
+   },
+   "P_edit_cond_minus_ON": [
+    -0.0933,
+    -0.1392,
+    -0.0473
+   ]
+  },
+  "P1": {
+   "RD_malformed_uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4067,
+    "base": 0.4033,
+    "RD": 0.0033,
+    "RD_CI": [
+     -0.0385,
+     0.051
+    ],
+    "p_one_sided": 0.47576
+   },
+   "RD_malformed_cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4674,
+    "base": 0.4618,
+    "RD": 0.0056,
+    "RD_CI": [
+     -0.0438,
+     0.0556
+    ],
+    "p_one_sided": 0.4078
+   },
+   "P_edit_cond_minus_ON": [
+    -0.0033,
+    -0.0433,
+    0.0388
+   ]
+  },
+  "P6": {
+   "RD_malformed_uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2933,
+    "base": 0.2633,
+    "RD": 0.03,
+    "RD_CI": [
+     -0.0171,
+     0.0788
+    ],
+    "p_one_sided": 0.13043
+   },
+   "RD_malformed_cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.3682,
+    "base": 0.3251,
+    "RD": 0.0431,
+    "RD_CI": [
+     -0.0094,
+     0.0977
+    ],
+    "p_one_sided": 0.05547
+   },
+   "P_edit_cond_minus_ON": [
+    -0.0133,
+    -0.0642,
+    0.0335
+   ]
+  },
+  "P8a": {
+   "RD_malformed_uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0033,
+    "base": 0.0033,
+    "RD": 0.0,
+    "RD_CI": [
+     -0.0099,
+     0.0099
+    ],
+    "p_one_sided": 0.66967
+   },
+   "RD_malformed_cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0038,
+    "base": 0.0039,
+    "RD": -0.0001,
+    "RD_CI": [
+     -0.0116,
+     0.0112
+    ],
+    "p_one_sided": 0.63418
+   },
+   "P_edit_cond_minus_ON": [
+    0.02,
+    -0.0259,
+    0.0662
+   ]
+  },
+  "predictions": "S - ON: P1 +5 pp [-5, +18]"
+ },
+ "side_by_side_ON_vs_condition": {
+  "n_contexts": 300,
+  "S1": {
+   "ON": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4033,
+    "base": 0.05,
+    "RD": 0.3533,
+    "RD_CI": [
+     0.2963,
+     0.4097
+    ],
+    "p_one_sided": 0.0005
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4067,
+    "base": 0.0233,
+    "RD": 0.3833,
+    "RD_CI": [
+     0.3278,
+     0.4422
+    ],
+    "p_one_sided": 0.0005
+   }
+  },
+  "S2": {
+   "ON": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2633,
+    "base": 0.05,
+    "RD": 0.2133,
+    "RD_CI": [
+     0.1634,
+     0.2625
+    ],
+    "p_one_sided": 0.0005
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2933,
+    "base": 0.0233,
+    "RD": 0.27,
+    "RD_CI": [
+     0.2208,
+     0.324
+    ],
+    "p_one_sided": 0.0005
+   }
+  },
+  "S3": {
+   "ON": {
+    "P1": 0.4033,
+    "Q": 0.0033,
+    "P0": 0.05,
+    "removal": 1.1321,
+    "CI": [
+     1.0673,
+     1.213
+    ],
+    "undefined_draw_frac": 0.0
+   },
+   "cond": {
+    "P1": 0.4067,
+    "Q": 0.0033,
+    "P0": 0.0233,
+    "removal": 1.0522,
+    "CI": [
+     1.008,
+     1.1048
+    ],
+    "undefined_draw_frac": 0.0
+   }
+  }
+ },
+ "copy_classes": {
+  "P1": {
+   "condition": {
+    "edits": 261,
+    "classes": {
+     "copy_corrupted": 105,
+     "clean_retry": 79,
+     "same_content_other": 11,
+     "other_edit": 66,
+     "unparsed_or_no_key": 0
+    },
+    "byte_exact_copy_share_of_malformed": [
+     0.8607,
+     0.7881,
+     0.9111,
+     122
+    ],
+    "clean_rewrite_share_of_edits": [
+     0.3027,
+     0.2501,
+     0.3609,
+     261
+    ]
+   },
+   "ON_same_contexts": {
+    "edits": 262,
+    "classes": {
+     "copy_corrupted": 103,
+     "clean_retry": 78,
+     "same_content_other": 10,
+     "other_edit": 68,
+     "unparsed_or_no_key": 3
+    },
+    "byte_exact_copy_share_of_malformed": [
+     0.8512,
+     0.7771,
+     0.9038,
+     121
+    ],
+    "clean_rewrite_share_of_edits": [
+     0.2977,
+     0.2456,
+     0.3557,
+     262
+    ]
+   }
+  },
+  "P6": {
+   "condition": {
+    "edits": 239,
+    "classes": {
+     "copy_corrupted": 5,
+     "clean_retry": 4,
+     "same_content_other": 8,
+     "other_edit": 221,
+     "unparsed_or_no_key": 1
+    },
+    "byte_exact_copy_share_of_malformed": [
+     0.0568,
+     0.0245,
+     0.1262,
+     88
+    ],
+    "clean_rewrite_share_of_edits": [
+     0.0167,
+     0.0065,
+     0.0422,
+     239
+    ]
+   },
+   "ON_same_contexts": {
+    "edits": 243,
+    "classes": {
+     "copy_corrupted": 0,
+     "clean_retry": 5,
+     "same_content_other": 16,
+     "other_edit": 221,
+     "unparsed_or_no_key": 1
+    },
+    "byte_exact_copy_share_of_malformed": [
+     0.0,
+     0,
+     0.0464,
+     79
+    ],
+    "clean_rewrite_share_of_edits": [
+     0.0206,
+     0.0088,
+     0.0473,
+     243
+    ]
+   }
+  },
+  "predictions": "clean rewrites under P1 lower than ON (ON 30%, 80/266): S 15% [5, 30]; byte-exact copies >= 80%"
+ }
+}

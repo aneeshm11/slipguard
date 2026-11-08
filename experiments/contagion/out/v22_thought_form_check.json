@@ -1,0 +1,83 @@
+{
+ "template_closed_thought_string": {
+  "june_contains": 1,
+  "july_contains": 1,
+  "june_history_thought_form": true
+ },
+ "prefill_tokens": {
+  "ids": [
+   100,
+   45518,
+   107,
+   101
+  ],
+  "pieces": [
+   "<|channel>",
+   "thought",
+   "\n",
+   "<channel|>"
+  ],
+  "channel_open_id": 100,
+  "channel_close_id": 101,
+  "think_id": 98,
+  "special": {
+   "<|channel>": true,
+   "<channel|>": true,
+   "<|think|>": true
+  }
+ },
+ "model_generated_thoughts_ON_P0": {
+  "n_with_thought": 646,
+  "starts": {
+   "'<|channel>thought\\n'": 646,
+   "no_thought": 2
+  },
+  "ends": {
+   "newline_before_close": 549,
+   "no_newline_before_close": 96,
+   "unclosed": 1
+  },
+  "exact_empty_closed_thought": 0
+ },
+ "prompt_endings": {
+  "ON:P0": {
+   "after_tool_response": 300
+  },
+  "OFF:P0": {
+   "after_tool_response": 300
+  },
+  "ON:P1": {
+   "after_tool_response": 300
+  },
+  "OFF:P1": {
+   "after_tool_response": 300
+  },
+  "ON:P5": {
+   "turn_model_header": 188,
+   "after_tool_response": 112
+  },
+  "OFF:P5": {
+   "template_closed_thought": 188,
+   "after_tool_response": 112
+  },
+  "ON:P6": {
+   "after_tool_response": 300
+  },
+  "OFF:P6": {
+   "after_tool_response": 300
+  },
+  "ON:P8a": {
+   "after_tool_response": 300
+  },
+  "OFF:P8a": {
+   "after_tool_response": 300
+  }
+ },
+ "think_token_in_system": {
+  "ON": 1500,
+  "OFF": 0
+ },
+ "history_thoughts": {
+  "P0_OFF_history_has_thought": 300
+ }
+}

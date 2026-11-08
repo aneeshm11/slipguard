@@ -1,0 +1,3184 @@
+{
+ "rows": [
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "code_with_commas",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     250,
+     0.08
+    ],
+    [
+     1000,
+     0.08
+    ],
+    [
+     4000,
+     0.12
+    ],
+    [
+     16000,
+     0.27
+    ],
+    [
+     64000,
+     2.58
+    ]
+   ],
+   "slope": null,
+   "largest_ok": [
+    64000,
+    2.58
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "code_with_commas",
+   "target": "gg.vllm019.server",
+   "who": "slipguard",
+   "points": [
+    [
+     250,
+     0.34
+    ],
+    [
+     1000,
+     0.35
+    ],
+    [
+     4000,
+     0.87
+    ],
+    [
+     16000,
+     3.11
+    ],
+    [
+     64000,
+     13.49
+    ]
+   ],
+   "slope": 1.06,
+   "largest_ok": [
+    64000,
+    13.49
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "code_with_commas",
+   "target": "vllm019.server",
+   "who": "built-in",
+   "points": [
+    [
+     250,
+     0.47
+    ],
+    [
+     1000,
+     0.36
+    ],
+    [
+     4000,
+     1.04
+    ],
+    [
+     16000,
+     3.56
+    ],
+    [
+     64000,
+     13.4
+    ]
+   ],
+   "slope": 0.96,
+   "largest_ok": [
+    64000,
+    13.4
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "deep_arrays",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     50,
+     0.22
+    ],
+    [
+     100,
+     0.35
+    ],
+    [
+     200,
+     0.66
+    ]
+   ],
+   "slope": null,
+   "largest_ok": [
+    200,
+    0.66
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "deep_arrays",
+   "target": "gg.vllm019.server",
+   "who": "slipguard",
+   "points": [
+    [
+     50,
+     0.43
+    ],
+    [
+     100,
+     0.47
+    ],
+    [
+     200,
+     0.81
+    ]
+   ],
+   "slope": null,
+   "largest_ok": [
+    200,
+    0.81
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "deep_arrays",
+   "target": "vllm019.server",
+   "who": "built-in",
+   "points": [
+    [
+     50,
+     0.49
+    ],
+    [
+     100,
+     0.69
+    ],
+    [
+     200,
+     2.38
+    ]
+   ],
+   "slope": null,
+   "largest_ok": [
+    200,
+    2.38
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "flat_array_strings",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     250,
+     0.49
+    ],
+    [
+     1000,
+     1.51
+    ],
+    [
+     4000,
+     5.84
+    ],
+    [
+     16000,
+     24.2
+    ]
+   ],
+   "slope": 1.03,
+   "largest_ok": [
+    16000,
+    24.2
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "flat_array_strings",
+   "target": "gg.vllm019.server",
+   "who": "slipguard",
+   "points": [
+    [
+     250,
+     0.82
+    ],
+    [
+     1000,
+     2.06
+    ],
+    [
+     4000,
+     6.74
+    ],
+    [
+     16000,
+     26.85
+    ]
+   ],
+   "slope": 0.93,
+   "largest_ok": [
+    16000,
+    26.85
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "flat_array_strings",
+   "target": "vllm019.server",
+   "who": "built-in",
+   "points": [
+    [
+     250,
+     0.64
+    ],
+    [
+     1000,
+     2.07
+    ],
+    [
+     4000,
+     24.4
+    ],
+    [
+     16000,
+     338.98
+    ]
+   ],
+   "slope": 1.84,
+   "largest_ok": [
+    16000,
+    338.98
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "long_string",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     10000,
+     0.08
+    ],
+    [
+     100000,
+     0.08
+    ],
+    [
+     1000000,
+     0.7
+    ],
+    [
+     4000000,
+     3.85
+    ]
+   ],
+   "slope": null,
+   "largest_ok": [
+    4000000,
+    3.85
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "long_string",
+   "target": "gg.vllm019.server",
+   "who": "slipguard",
+   "points": [
+    [
+     10000,
+     0.39
+    ],
+    [
+     100000,
+     0.74
+    ],
+    [
+     1000000,
+     5.81
+    ],
+    [
+     4000000,
+     23.94
+    ]
+   ],
+   "slope": 1.02,
+   "largest_ok": [
+    4000000,
+    23.94
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "long_string",
+   "target": "vllm019.server",
+   "who": "built-in",
+   "points": [
+    [
+     10000,
+     0.29
+    ],
+    [
+     100000,
+     0.71
+    ],
+    [
+     1000000,
+     5.9
+    ],
+    [
+     4000000,
+     24.77
+    ]
+   ],
+   "slope": 1.03,
+   "largest_ok": [
+    4000000,
+    24.77
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "many_calls",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     10,
+     0.29
+    ],
+    [
+     100,
+     1.43
+    ],
+    [
+     1000,
+     13.41
+    ],
+    [
+     4000,
+     54.7
+    ]
+   ],
+   "slope": 1.01,
+   "largest_ok": [
+    4000,
+    54.7
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "many_calls",
+   "target": "gg.vllm019.server",
+   "who": "slipguard",
+   "points": [
+    [
+     10,
+     0.62
+    ],
+    [
+     100,
+     2.72
+    ],
+    [
+     1000,
+     25.53
+    ],
+    [
+     4000,
+     103.29
+    ]
+   ],
+   "slope": 0.98,
+   "largest_ok": [
+    4000,
+    103.29
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "many_calls",
+   "target": "vllm019.server",
+   "who": "built-in",
+   "points": [
+    [
+     10,
+     0.42
+    ],
+    [
+     100,
+     1.55
+    ],
+    [
+     1000,
+     13.71
+    ],
+    [
+     4000,
+     54.06
+    ]
+   ],
+   "slope": 0.99,
+   "largest_ok": [
+    4000,
+    54.06
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "many_int_keys",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     125,
+     1.05
+    ],
+    [
+     250,
+     1.83
+    ],
+    [
+     500,
+     3.37
+    ],
+    [
+     1000,
+     6.62
+    ],
+    [
+     2000,
+     13.36
+    ],
+    [
+     4000,
+     26.97
+    ],
+    [
+     8000,
+     53.93
+    ],
+    [
+     16000,
+     107.59
+    ]
+   ],
+   "slope": 1.0,
+   "largest_ok": [
+    16000,
+    107.59
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "many_int_keys",
+   "target": "gg.vllm019.server",
+   "who": "slipguard",
+   "points": [
+    [
+     125,
+     1.32
+    ],
+    [
+     250,
+     2.08
+    ],
+    [
+     500,
+     3.61
+    ],
+    [
+     1000,
+     6.9
+    ],
+    [
+     2000,
+     13.98
+    ],
+    [
+     4000,
+     27.73
+    ],
+    [
+     8000,
+     55.71
+    ],
+    [
+     16000,
+     112.15
+    ]
+   ],
+   "slope": 0.97,
+   "largest_ok": [
+    16000,
+    112.15
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "many_int_keys",
+   "target": "vllm019.server",
+   "who": "built-in",
+   "points": [
+    [
+     125,
+     0.93
+    ],
+    [
+     250,
+     0.66
+    ],
+    [
+     500,
+     0.85
+    ],
+    [
+     1000,
+     1.56
+    ],
+    [
+     2000,
+     3.22
+    ],
+    [
+     4000,
+     7.99
+    ],
+    [
+     8000,
+     21.01
+    ],
+    [
+     16000,
+     65.92
+    ]
+   ],
+   "slope": 1.45,
+   "largest_ok": [
+    16000,
+    65.92
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "many_string_keys",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     125,
+     0.68
+    ],
+    [
+     250,
+     1.21
+    ],
+    [
+     500,
+     2.28
+    ],
+    [
+     1000,
+     4.56
+    ],
+    [
+     2000,
+     9.13
+    ],
+    [
+     4000,
+     18.45
+    ],
+    [
+     8000,
+     37.07
+    ],
+    [
+     16000,
+     74.34
+    ]
+   ],
+   "slope": 1.01,
+   "largest_ok": [
+    16000,
+    74.34
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "many_string_keys",
+   "target": "gg.vllm019.server",
+   "who": "slipguard",
+   "points": [
+    [
+     125,
+     1.01
+    ],
+    [
+     250,
+     1.51
+    ],
+    [
+     500,
+     2.65
+    ],
+    [
+     1000,
+     4.87
+    ],
+    [
+     2000,
+     9.87
+    ],
+    [
+     4000,
+     19.48
+    ],
+    [
+     8000,
+     40.13
+    ],
+    [
+     16000,
+     79.7
+    ]
+   ],
+   "slope": 0.99,
+   "largest_ok": [
+    16000,
+    79.7
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "non-streaming",
+   "family": "many_string_keys",
+   "target": "vllm019.server",
+   "who": "built-in",
+   "points": [
+    [
+     125,
+     0.49
+    ],
+    [
+     250,
+     0.56
+    ],
+    [
+     500,
+     0.7
+    ],
+    [
+     1000,
+     1.34
+    ],
+    [
+     2000,
+     3.37
+    ],
+    [
+     4000,
+     9.06
+    ],
+    [
+     8000,
+     27.51
+    ],
+    [
+     16000,
+     96.51
+    ]
+   ],
+   "slope": 1.61,
+   "largest_ok": [
+    16000,
+    96.51
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "streaming",
+   "family": "code_with_commas",
+   "target": "gg.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     100,
+     14.41
+    ],
+    [
+     400,
+     60.41
+    ],
+    [
+     1600,
+     257.89
+    ],
+    [
+     6400,
+     1064.26
+    ]
+   ],
+   "slope": 1.04,
+   "largest_ok": [
+    6400,
+    1064.26
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "streaming",
+   "family": "code_with_commas",
+   "target": "gg.vllm019.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     100,
+     21.83
+    ],
+    [
+     400,
+     162.08
+    ],
+    [
+     1600,
+     2092.76
+    ],
+    [
+     6400,
+     39969.39
+    ]
+   ],
+   "slope": 1.81,
+   "largest_ok": [
+    6400,
+    39969.39
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "streaming",
+   "family": "code_with_commas",
+   "target": "vllm019.stream",
+   "who": "built-in",
+   "points": [
+    [
+     100,
+     227.27
+    ],
+    [
+     400,
+     3523.17
+    ]
+   ],
+   "slope": 1.98,
+   "largest_ok": [
+    400,
+    3523.17
+   ],
+   "first_timeout_n": 1600,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "streaming",
+   "family": "long_string",
+   "target": "gg.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     4000,
+     4.86
+    ],
+    [
+     16000,
+     18.02
+    ],
+    [
+     64000,
+     74.66
+    ],
+    [
+     256000,
+     314.74
+    ]
+   ],
+   "slope": 1.01,
+   "largest_ok": [
+    256000,
+    314.74
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "streaming",
+   "family": "long_string",
+   "target": "gg.vllm019.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     4000,
+     6.18
+    ],
+    [
+     16000,
+     26.81
+    ],
+    [
+     64000,
+     178.08
+    ],
+    [
+     256000,
+     2002.17
+    ]
+   ],
+   "slope": 1.39,
+   "largest_ok": [
+    256000,
+    2002.17
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "streaming",
+   "family": "long_string",
+   "target": "vllm019.stream",
+   "who": "built-in",
+   "points": [
+    [
+     4000,
+     85.34
+    ],
+    [
+     16000,
+     1190.79
+    ],
+    [
+     64000,
+     18583.26
+    ]
+   ],
+   "slope": 1.94,
+   "largest_ok": [
+    64000,
+    18583.26
+   ],
+   "first_timeout_n": 256000,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "streaming",
+   "family": "many_string_keys",
+   "target": "gg.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     62,
+     5.93
+    ],
+    [
+     125,
+     9.9
+    ],
+    [
+     250,
+     20.95
+    ],
+    [
+     500,
+     43.32
+    ],
+    [
+     1000,
+     87.98
+    ],
+    [
+     2000,
+     193.58
+    ]
+   ],
+   "slope": 1.02,
+   "largest_ok": [
+    2000,
+    193.58
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "streaming",
+   "family": "many_string_keys",
+   "target": "gg.vllm019.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     62,
+     6.68
+    ],
+    [
+     125,
+     13.8
+    ],
+    [
+     250,
+     34.4
+    ],
+    [
+     500,
+     91.65
+    ],
+    [
+     1000,
+     275.93
+    ],
+    [
+     2000,
+     1041.69
+    ]
+   ],
+   "slope": 1.45,
+   "largest_ok": [
+    2000,
+    1041.69
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm019",
+   "mode": "streaming",
+   "family": "many_string_keys",
+   "target": "vllm019.stream",
+   "who": "built-in",
+   "points": [
+    [
+     62,
+     35.83
+    ],
+    [
+     125,
+     134.46
+    ],
+    [
+     250,
+     561.11
+    ],
+    [
+     500,
+     2247.89
+    ],
+    [
+     1000,
+     9058.95
+    ],
+    [
+     2000,
+     47483.54
+    ]
+   ],
+   "slope": 2.06,
+   "largest_ok": [
+    2000,
+    47483.54
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "code_with_commas",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     250,
+     0.09
+    ],
+    [
+     1000,
+     0.07
+    ],
+    [
+     4000,
+     0.09
+    ],
+    [
+     16000,
+     0.29
+    ],
+    [
+     64000,
+     1.87
+    ]
+   ],
+   "slope": null,
+   "largest_ok": [
+    64000,
+    1.87
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "code_with_commas",
+   "target": "gg.vllm031.server",
+   "who": "slipguard",
+   "points": [
+    [
+     250,
+     3.18
+    ],
+    [
+     1000,
+     9.31
+    ],
+    [
+     4000,
+     39.05
+    ],
+    [
+     16000,
+     157.49
+    ],
+    [
+     64000,
+     1183.51
+    ]
+   ],
+   "slope": 1.06,
+   "largest_ok": [
+    64000,
+    1183.51
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "code_with_commas",
+   "target": "vllm031.server",
+   "who": "built-in",
+   "points": [
+    [
+     250,
+     78.69
+    ],
+    [
+     1000,
+     1145.49
+    ],
+    [
+     4000,
+     18690.92
+    ]
+   ],
+   "slope": 1.97,
+   "largest_ok": [
+    4000,
+    18690.92
+   ],
+   "first_timeout_n": 16000,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "deep_arrays",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     50,
+     0.24
+    ],
+    [
+     100,
+     0.37
+    ],
+    [
+     200,
+     0.66
+    ]
+   ],
+   "slope": null,
+   "largest_ok": [
+    200,
+    0.66
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "deep_arrays",
+   "target": "gg.vllm031.server",
+   "who": "slipguard",
+   "points": [
+    [
+     50,
+     0.69
+    ],
+    [
+     100,
+     0.74
+    ],
+    [
+     200,
+     1.13
+    ]
+   ],
+   "slope": null,
+   "largest_ok": [
+    200,
+    1.13
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "deep_arrays",
+   "target": "vllm031.server",
+   "who": "built-in",
+   "points": [
+    [
+     50,
+     1.84
+    ],
+    [
+     100,
+     3.84
+    ],
+    [
+     200,
+     12.62
+    ]
+   ],
+   "slope": 1.72,
+   "largest_ok": [
+    200,
+    12.62
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "flat_array_strings",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     250,
+     0.51
+    ],
+    [
+     1000,
+     1.7
+    ],
+    [
+     4000,
+     6.06
+    ],
+    [
+     16000,
+     24.16
+    ]
+   ],
+   "slope": 1.0,
+   "largest_ok": [
+    16000,
+    24.16
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "flat_array_strings",
+   "target": "gg.vllm031.server",
+   "who": "slipguard",
+   "points": [
+    [
+     250,
+     4.23
+    ],
+    [
+     1000,
+     13.77
+    ],
+    [
+     4000,
+     54.39
+    ],
+    [
+     16000,
+     222.95
+    ]
+   ],
+   "slope": 0.96,
+   "largest_ok": [
+    16000,
+    222.95
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "flat_array_strings",
+   "target": "vllm031.server",
+   "who": "built-in",
+   "points": [
+    [
+     250,
+     8.08
+    ],
+    [
+     1000,
+     27.67
+    ],
+    [
+     4000,
+     114.69
+    ],
+    [
+     16000,
+     473.17
+    ]
+   ],
+   "slope": 0.98,
+   "largest_ok": [
+    16000,
+    473.17
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "long_string",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     10000,
+     0.11
+    ],
+    [
+     100000,
+     0.1
+    ],
+    [
+     1000000,
+     0.65
+    ],
+    [
+     4000000,
+     3.88
+    ]
+   ],
+   "slope": null,
+   "largest_ok": [
+    4000000,
+    3.88
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "long_string",
+   "target": "gg.vllm031.server",
+   "who": "slipguard",
+   "points": [
+    [
+     10000,
+     4.05
+    ],
+    [
+     100000,
+     37.06
+    ],
+    [
+     1000000,
+     502.49
+    ],
+    [
+     4000000,
+     2468.55
+    ]
+   ],
+   "slope": 1.07,
+   "largest_ok": [
+    4000000,
+    2468.55
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "long_string",
+   "target": "vllm031.server",
+   "who": "built-in",
+   "points": [
+    [
+     10000,
+     5.97
+    ],
+    [
+     100000,
+     54.2
+    ],
+    [
+     1000000,
+     684.37
+    ],
+    [
+     4000000,
+     3210.29
+    ]
+   ],
+   "slope": 1.05,
+   "largest_ok": [
+    4000000,
+    3210.29
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "many_calls",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     10,
+     0.27
+    ],
+    [
+     100,
+     1.42
+    ],
+    [
+     1000,
+     14.55
+    ],
+    [
+     4000,
+     54.59
+    ]
+   ],
+   "slope": 0.95,
+   "largest_ok": [
+    4000,
+    54.59
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "many_calls",
+   "target": "gg.vllm031.server",
+   "who": "slipguard",
+   "points": [
+    [
+     10,
+     1.18
+    ],
+    [
+     100,
+     4.36
+    ],
+    [
+     1000,
+     294.86
+    ],
+    [
+     4000,
+     162.31
+    ]
+   ],
+   "slope": 1.07,
+   "largest_ok": [
+    4000,
+    162.31
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "many_calls",
+   "target": "vllm031.server",
+   "who": "built-in",
+   "points": [
+    [
+     10,
+     1.91
+    ],
+    [
+     100,
+     9.81
+    ],
+    [
+     1000,
+     94.42
+    ],
+    [
+     4000,
+     391.29
+    ]
+   ],
+   "slope": 1.0,
+   "largest_ok": [
+    4000,
+    391.29
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "many_int_keys",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     125,
+     1.04
+    ],
+    [
+     250,
+     1.8
+    ],
+    [
+     500,
+     3.44
+    ],
+    [
+     1000,
+     6.78
+    ],
+    [
+     2000,
+     14.01
+    ],
+    [
+     4000,
+     27.92
+    ],
+    [
+     8000,
+     54.74
+    ],
+    [
+     16000,
+     109.87
+    ]
+   ],
+   "slope": 1.0,
+   "largest_ok": [
+    16000,
+    109.87
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "many_int_keys",
+   "target": "gg.vllm031.server",
+   "who": "slipguard",
+   "points": [
+    [
+     125,
+     2.3
+    ],
+    [
+     250,
+     2.77
+    ],
+    [
+     500,
+     4.84
+    ],
+    [
+     1000,
+     9.3
+    ],
+    [
+     2000,
+     19.33
+    ],
+    [
+     4000,
+     38.95
+    ],
+    [
+     8000,
+     82.33
+    ],
+    [
+     16000,
+     168.91
+    ]
+   ],
+   "slope": 0.93,
+   "largest_ok": [
+    16000,
+    168.91
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "many_int_keys",
+   "target": "vllm031.server",
+   "who": "built-in",
+   "points": [
+    [
+     125,
+     42.09
+    ],
+    [
+     250,
+     150.57
+    ],
+    [
+     500,
+     581.88
+    ],
+    [
+     1000,
+     2303.52
+    ],
+    [
+     2000,
+     9291.27
+    ],
+    [
+     4000,
+     38811.86
+    ]
+   ],
+   "slope": 1.97,
+   "largest_ok": [
+    4000,
+    38811.86
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "many_string_keys",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     125,
+     0.81
+    ],
+    [
+     250,
+     1.4
+    ],
+    [
+     500,
+     2.25
+    ],
+    [
+     1000,
+     4.41
+    ],
+    [
+     2000,
+     9.17
+    ],
+    [
+     4000,
+     18.39
+    ],
+    [
+     8000,
+     37.34
+    ],
+    [
+     16000,
+     75.29
+    ]
+   ],
+   "slope": 1.02,
+   "largest_ok": [
+    16000,
+    75.29
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "many_string_keys",
+   "target": "gg.vllm031.server",
+   "who": "slipguard",
+   "points": [
+    [
+     125,
+     2.32
+    ],
+    [
+     250,
+     3.45
+    ],
+    [
+     500,
+     6.53
+    ],
+    [
+     1000,
+     12.89
+    ],
+    [
+     2000,
+     27.08
+    ],
+    [
+     4000,
+     52.77
+    ],
+    [
+     8000,
+     105.91
+    ],
+    [
+     16000,
+     226.55
+    ]
+   ],
+   "slope": 0.97,
+   "largest_ok": [
+    16000,
+    226.55
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "non-streaming",
+   "family": "many_string_keys",
+   "target": "vllm031.server",
+   "who": "built-in",
+   "points": [
+    [
+     125,
+     38.86
+    ],
+    [
+     250,
+     139.09
+    ],
+    [
+     500,
+     529.17
+    ],
+    [
+     1000,
+     2057.51
+    ],
+    [
+     2000,
+     8379.16
+    ],
+    [
+     4000,
+     34103.46
+    ]
+   ],
+   "slope": 1.96,
+   "largest_ok": [
+    4000,
+    34103.46
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "streaming",
+   "family": "code_with_commas",
+   "target": "gg.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     100,
+     13.88
+    ],
+    [
+     400,
+     59.18
+    ],
+    [
+     1600,
+     250.38
+    ],
+    [
+     6400,
+     1038.83
+    ]
+   ],
+   "slope": 1.04,
+   "largest_ok": [
+    6400,
+    1038.83
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "streaming",
+   "family": "code_with_commas",
+   "target": "gg.vllm031.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     100,
+     18.04
+    ],
+    [
+     400,
+     75.01
+    ],
+    [
+     1600,
+     316.35
+    ],
+    [
+     6400,
+     1321.87
+    ]
+   ],
+   "slope": 1.03,
+   "largest_ok": [
+    6400,
+    1321.87
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "streaming",
+   "family": "code_with_commas",
+   "target": "vllm031.stream",
+   "who": "built-in",
+   "points": [
+    [
+     100,
+     100.3
+    ],
+    [
+     400,
+     1224.78
+    ],
+    [
+     1600,
+     19459.06
+    ]
+   ],
+   "slope": 1.9,
+   "largest_ok": [
+    1600,
+    19459.06
+   ],
+   "first_timeout_n": 6400,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "streaming",
+   "family": "long_string",
+   "target": "gg.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     4000,
+     4.68
+    ],
+    [
+     16000,
+     17.68
+    ],
+    [
+     64000,
+     73.07
+    ],
+    [
+     256000,
+     307.31
+    ]
+   ],
+   "slope": 1.01,
+   "largest_ok": [
+    256000,
+    307.31
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "streaming",
+   "family": "long_string",
+   "target": "gg.vllm031.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     4000,
+     6.24
+    ],
+    [
+     16000,
+     22.1
+    ],
+    [
+     64000,
+     89.68
+    ],
+    [
+     256000,
+     370.26
+    ]
+   ],
+   "slope": 0.98,
+   "largest_ok": [
+    256000,
+    370.26
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "streaming",
+   "family": "long_string",
+   "target": "vllm031.stream",
+   "who": "built-in",
+   "points": [
+    [
+     4000,
+     7.11
+    ],
+    [
+     16000,
+     24.39
+    ],
+    [
+     64000,
+     97.74
+    ],
+    [
+     256000,
+     406.06
+    ]
+   ],
+   "slope": 0.98,
+   "largest_ok": [
+    256000,
+    406.06
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "streaming",
+   "family": "many_string_keys",
+   "target": "gg.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     62,
+     8.45
+    ],
+    [
+     125,
+     9.73
+    ],
+    [
+     250,
+     21.22
+    ],
+    [
+     500,
+     42.9
+    ],
+    [
+     1000,
+     86.97
+    ],
+    [
+     2000,
+     189.93
+    ]
+   ],
+   "slope": 0.94,
+   "largest_ok": [
+    2000,
+    189.93
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "streaming",
+   "family": "many_string_keys",
+   "target": "gg.vllm031.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     62,
+     6.67
+    ],
+    [
+     125,
+     12.63
+    ],
+    [
+     250,
+     26.45
+    ],
+    [
+     500,
+     54.53
+    ],
+    [
+     1000,
+     111.33
+    ],
+    [
+     2000,
+     243.25
+    ]
+   ],
+   "slope": 1.04,
+   "largest_ok": [
+    2000,
+    243.25
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm031",
+   "mode": "streaming",
+   "family": "many_string_keys",
+   "target": "vllm031.stream",
+   "who": "built-in",
+   "points": [
+    [
+     62,
+     29.26
+    ],
+    [
+     125,
+     89.58
+    ],
+    [
+     250,
+     307.5
+    ],
+    [
+     500,
+     1126.41
+    ],
+    [
+     1000,
+     4293.09
+    ],
+    [
+     2000,
+     17195.25
+    ]
+   ],
+   "slope": 1.84,
+   "largest_ok": [
+    2000,
+    17195.25
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "code_with_commas",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     250,
+     0.1
+    ],
+    [
+     1000,
+     0.07
+    ],
+    [
+     4000,
+     0.09
+    ],
+    [
+     16000,
+     0.31
+    ],
+    [
+     64000,
+     2.03
+    ]
+   ],
+   "slope": null,
+   "largest_ok": [
+    64000,
+    2.03
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "code_with_commas",
+   "target": "gg.vllm033.server",
+   "who": "slipguard",
+   "points": [
+    [
+     250,
+     3.27
+    ],
+    [
+     1000,
+     9.63
+    ],
+    [
+     4000,
+     39.68
+    ],
+    [
+     16000,
+     171.18
+    ],
+    [
+     64000,
+     1199.6
+    ]
+   ],
+   "slope": 1.06,
+   "largest_ok": [
+    64000,
+    1199.6
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "code_with_commas",
+   "target": "vllm033.server",
+   "who": "built-in",
+   "points": [
+    [
+     250,
+     11.71
+    ],
+    [
+     1000,
+     53.03
+    ],
+    [
+     4000,
+     394.33
+    ],
+    [
+     16000,
+     5519.52
+    ]
+   ],
+   "slope": 1.48,
+   "largest_ok": [
+    16000,
+    5519.52
+   ],
+   "first_timeout_n": 64000,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "deep_arrays",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     50,
+     0.21
+    ],
+    [
+     100,
+     0.34
+    ],
+    [
+     200,
+     0.65
+    ]
+   ],
+   "slope": null,
+   "largest_ok": [
+    200,
+    0.65
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "deep_arrays",
+   "target": "gg.vllm033.server",
+   "who": "slipguard",
+   "points": [
+    [
+     50,
+     0.73
+    ],
+    [
+     100,
+     0.78
+    ],
+    [
+     200,
+     1.24
+    ]
+   ],
+   "slope": null,
+   "largest_ok": [
+    200,
+    1.24
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "deep_arrays",
+   "target": "vllm033.server",
+   "who": "built-in",
+   "points": [
+    [
+     50,
+     2.14
+    ],
+    [
+     100,
+     4.84
+    ],
+    [
+     200,
+     16.54
+    ]
+   ],
+   "slope": 1.48,
+   "largest_ok": [
+    200,
+    16.54
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "flat_array_strings",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     250,
+     0.48
+    ],
+    [
+     1000,
+     1.53
+    ],
+    [
+     4000,
+     6.04
+    ],
+    [
+     16000,
+     24.29
+    ]
+   ],
+   "slope": 1.0,
+   "largest_ok": [
+    16000,
+    24.29
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "flat_array_strings",
+   "target": "gg.vllm033.server",
+   "who": "slipguard",
+   "points": [
+    [
+     250,
+     4.28
+    ],
+    [
+     1000,
+     13.63
+    ],
+    [
+     4000,
+     52.37
+    ],
+    [
+     16000,
+     229.16
+    ]
+   ],
+   "slope": 0.96,
+   "largest_ok": [
+    16000,
+    229.16
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "flat_array_strings",
+   "target": "vllm033.server",
+   "who": "built-in",
+   "points": [
+    [
+     250,
+     8.38
+    ],
+    [
+     1000,
+     28.81
+    ],
+    [
+     4000,
+     118.26
+    ],
+    [
+     16000,
+     495.68
+    ]
+   ],
+   "slope": 0.98,
+   "largest_ok": [
+    16000,
+    495.68
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "long_string",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     10000,
+     0.11
+    ],
+    [
+     100000,
+     0.13
+    ],
+    [
+     1000000,
+     0.73
+    ],
+    [
+     4000000,
+     4.01
+    ]
+   ],
+   "slope": null,
+   "largest_ok": [
+    4000000,
+    4.01
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "long_string",
+   "target": "gg.vllm033.server",
+   "who": "slipguard",
+   "points": [
+    [
+     10000,
+     4.12
+    ],
+    [
+     100000,
+     37.33
+    ],
+    [
+     1000000,
+     512.27
+    ],
+    [
+     4000000,
+     2511.48
+    ]
+   ],
+   "slope": 1.07,
+   "largest_ok": [
+    4000000,
+    2511.48
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "long_string",
+   "target": "vllm033.server",
+   "who": "built-in",
+   "points": [
+    [
+     10000,
+     6.03
+    ],
+    [
+     100000,
+     54.2
+    ],
+    [
+     1000000,
+     677.65
+    ],
+    [
+     4000000,
+     3215.91
+    ]
+   ],
+   "slope": 1.05,
+   "largest_ok": [
+    4000000,
+    3215.91
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "many_calls",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     10,
+     0.25
+    ],
+    [
+     100,
+     1.49
+    ],
+    [
+     1000,
+     13.34
+    ],
+    [
+     4000,
+     54.44
+    ]
+   ],
+   "slope": 1.01,
+   "largest_ok": [
+    4000,
+    54.44
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "many_calls",
+   "target": "gg.vllm033.server",
+   "who": "slipguard",
+   "points": [
+    [
+     10,
+     1.19
+    ],
+    [
+     100,
+     4.41
+    ],
+    [
+     1000,
+     38.14
+    ],
+    [
+     4000,
+     158.03
+    ]
+   ],
+   "slope": 0.97,
+   "largest_ok": [
+    4000,
+    158.03
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "many_calls",
+   "target": "vllm033.server",
+   "who": "built-in",
+   "points": [
+    [
+     10,
+     1.97
+    ],
+    [
+     100,
+     10.27
+    ],
+    [
+     1000,
+     98.97
+    ],
+    [
+     4000,
+     695.65
+    ]
+   ],
+   "slope": 1.13,
+   "largest_ok": [
+    4000,
+    695.65
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "many_int_keys",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     125,
+     1.84
+    ],
+    [
+     250,
+     3.24
+    ],
+    [
+     500,
+     6.36
+    ],
+    [
+     1000,
+     8.44
+    ],
+    [
+     2000,
+     14.09
+    ],
+    [
+     4000,
+     27.39
+    ],
+    [
+     8000,
+     53.31
+    ],
+    [
+     16000,
+     106.93
+    ]
+   ],
+   "slope": 0.82,
+   "largest_ok": [
+    16000,
+    106.93
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "many_int_keys",
+   "target": "gg.vllm033.server",
+   "who": "slipguard",
+   "points": [
+    [
+     125,
+     12.07
+    ],
+    [
+     250,
+     3.03
+    ],
+    [
+     500,
+     5.1
+    ],
+    [
+     1000,
+     9.46
+    ],
+    [
+     2000,
+     19.35
+    ],
+    [
+     4000,
+     39.6
+    ],
+    [
+     8000,
+     81.8
+    ],
+    [
+     16000,
+     170.05
+    ]
+   ],
+   "slope": 0.72,
+   "largest_ok": [
+    16000,
+    170.05
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "many_int_keys",
+   "target": "vllm033.server",
+   "who": "built-in",
+   "points": [
+    [
+     125,
+     55.25
+    ],
+    [
+     250,
+     220.21
+    ],
+    [
+     500,
+     833.54
+    ],
+    [
+     1000,
+     3267.88
+    ],
+    [
+     2000,
+     13334.49
+    ],
+    [
+     4000,
+     54181.55
+    ]
+   ],
+   "slope": 1.98,
+   "largest_ok": [
+    4000,
+    54181.55
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "many_string_keys",
+   "target": "gg.completion",
+   "who": "slipguard",
+   "points": [
+    [
+     125,
+     0.68
+    ],
+    [
+     250,
+     1.19
+    ],
+    [
+     500,
+     2.29
+    ],
+    [
+     1000,
+     4.44
+    ],
+    [
+     2000,
+     9.22
+    ],
+    [
+     4000,
+     18.48
+    ],
+    [
+     8000,
+     37.92
+    ],
+    [
+     16000,
+     76.43
+    ]
+   ],
+   "slope": 1.02,
+   "largest_ok": [
+    16000,
+    76.43
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "many_string_keys",
+   "target": "gg.vllm033.server",
+   "who": "slipguard",
+   "points": [
+    [
+     125,
+     2.35
+    ],
+    [
+     250,
+     3.47
+    ],
+    [
+     500,
+     6.5
+    ],
+    [
+     1000,
+     12.67
+    ],
+    [
+     2000,
+     26.87
+    ],
+    [
+     4000,
+     52.89
+    ],
+    [
+     8000,
+     105.63
+    ],
+    [
+     16000,
+     223.64
+    ]
+   ],
+   "slope": 0.96,
+   "largest_ok": [
+    16000,
+    223.64
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "non-streaming",
+   "family": "many_string_keys",
+   "target": "vllm033.server",
+   "who": "built-in",
+   "points": [
+    [
+     125,
+     51.25
+    ],
+    [
+     250,
+     186.99
+    ],
+    [
+     500,
+     721.85
+    ],
+    [
+     1000,
+     2826.21
+    ],
+    [
+     2000,
+     11522.02
+    ],
+    [
+     4000,
+     46789.45
+    ]
+   ],
+   "slope": 1.97,
+   "largest_ok": [
+    4000,
+    46789.45
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "streaming",
+   "family": "code_with_commas",
+   "target": "gg.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     100,
+     13.67
+    ],
+    [
+     400,
+     57.86
+    ],
+    [
+     1600,
+     245.3
+    ],
+    [
+     6400,
+     1016.19
+    ]
+   ],
+   "slope": 1.04,
+   "largest_ok": [
+    6400,
+    1016.19
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "streaming",
+   "family": "code_with_commas",
+   "target": "gg.vllm033.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     100,
+     17.64
+    ],
+    [
+     400,
+     73.04
+    ],
+    [
+     1600,
+     308.78
+    ],
+    [
+     6400,
+     1268.44
+    ]
+   ],
+   "slope": 1.03,
+   "largest_ok": [
+    6400,
+    1268.44
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "streaming",
+   "family": "code_with_commas",
+   "target": "vllm033.stream",
+   "who": "built-in",
+   "points": [
+    [
+     100,
+     35.67
+    ],
+    [
+     400,
+     150.77
+    ],
+    [
+     1600,
+     669.7
+    ],
+    [
+     6400,
+     2946.98
+    ]
+   ],
+   "slope": 1.06,
+   "largest_ok": [
+    6400,
+    2946.98
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "streaming",
+   "family": "long_string",
+   "target": "gg.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     4000,
+     4.56
+    ],
+    [
+     16000,
+     17.17
+    ],
+    [
+     64000,
+     71.3
+    ],
+    [
+     256000,
+     307.2
+    ]
+   ],
+   "slope": 1.01,
+   "largest_ok": [
+    256000,
+    307.2
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "streaming",
+   "family": "long_string",
+   "target": "gg.vllm033.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     4000,
+     6.1
+    ],
+    [
+     16000,
+     21.3
+    ],
+    [
+     64000,
+     87.14
+    ],
+    [
+     256000,
+     362.38
+    ]
+   ],
+   "slope": 0.99,
+   "largest_ok": [
+    256000,
+    362.38
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "streaming",
+   "family": "long_string",
+   "target": "vllm033.stream",
+   "who": "built-in",
+   "points": [
+    [
+     4000,
+     11.47
+    ],
+    [
+     16000,
+     41.99
+    ],
+    [
+     64000,
+     173.08
+    ],
+    [
+     256000,
+     785.64
+    ]
+   ],
+   "slope": 1.02,
+   "largest_ok": [
+    256000,
+    785.64
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "streaming",
+   "family": "many_string_keys",
+   "target": "gg.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     62,
+     10.21
+    ],
+    [
+     125,
+     9.68
+    ],
+    [
+     250,
+     20.39
+    ],
+    [
+     500,
+     41.59
+    ],
+    [
+     1000,
+     85.87
+    ],
+    [
+     2000,
+     190.84
+    ]
+   ],
+   "slope": 0.9,
+   "largest_ok": [
+    2000,
+    190.84
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "streaming",
+   "family": "many_string_keys",
+   "target": "gg.vllm033.stream",
+   "who": "slipguard",
+   "points": [
+    [
+     62,
+     6.5
+    ],
+    [
+     125,
+     12.25
+    ],
+    [
+     250,
+     25.94
+    ],
+    [
+     500,
+     52.75
+    ],
+    [
+     1000,
+     107.38
+    ],
+    [
+     2000,
+     236.09
+    ]
+   ],
+   "slope": 1.04,
+   "largest_ok": [
+    2000,
+    236.09
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  },
+  {
+   "vllm_env": "vllm033",
+   "mode": "streaming",
+   "family": "many_string_keys",
+   "target": "vllm033.stream",
+   "who": "built-in",
+   "points": [
+    [
+     62,
+     43.51
+    ],
+    [
+     125,
+     142.32
+    ],
+    [
+     250,
+     503.81
+    ],
+    [
+     500,
+     1882.17
+    ],
+    [
+     1000,
+     7272.57
+    ],
+    [
+     2000,
+     29287.42
+    ]
+   ],
+   "slope": 1.88,
+   "largest_ok": [
+    2000,
+    29287.42
+   ],
+   "first_timeout_n": null,
+   "timeout_s": 60.0
+  }
+ ]
+}

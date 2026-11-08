@@ -1,0 +1,2 @@
+repairA, repairB, repairC (and repairC_eval) DID NOT PASS THE REGISTERED GATE (ANALYSIS_PLAN.md, CANDIDATE_B.md, CANDIDATE_C.md).
+Research artifacts only; not part of slipguard. Gate numbers: RESULTS.md section 5. smoke_zero / smoke_rand are G4/G5 test adapters.

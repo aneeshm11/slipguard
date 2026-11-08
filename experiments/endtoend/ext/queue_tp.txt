@@ -1,0 +1,5 @@
+# PREREG_E_audit bf16 tensor-parallel lane queue (frozen). TAG|MODEL|LAUNCHER|HALF|SALT|PROXYPORT
+popBF16r3s0|bf16tp2|pop|0|pop31r3|8590
+popBF16r3s1|bf16tp2|pop|1|pop31r3|8591
+popBF16r4s0|bf16tp2|pop|0|pop31r4|8592
+popBF16r4s1|bf16tp2|pop|1|pop31r4|8593

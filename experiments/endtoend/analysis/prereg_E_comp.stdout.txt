@@ -1,0 +1,18 @@
+{
+ "analysis_set": [
+  3,
+  4,
+  5,
+  6
+ ],
+ "primary": {
+  "Q1_quarantine_alone": "QUARANTINE ALONE REDUCES MALFORMED CALLS END TO END",
+  "Q2_ipd_alone": "IPD ALONE REDUCES MALFORMED CALLS END TO END"
+ },
+ "means": {
+  "base": 1.5619,
+  "fullp": 0.292,
+  "quar": 0.6615,
+  "ipd": 0.3673
+ }
+}

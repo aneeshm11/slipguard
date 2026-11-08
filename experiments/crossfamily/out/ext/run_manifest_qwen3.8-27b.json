@@ -1,0 +1,48 @@
+{
+ "model_key": "qwen3.8-27b",
+ "recorded_utc": "2026-11-05T20:34:07Z",
+ "endpoint": "http://127.0.0.1:8343/v1",
+ "gpu": "0",
+ "v1_models": {
+  "object": "list",
+  "data": [
+   {
+    "id": "qwen3.8-27b",
+    "object": "model",
+    "created": 1793910847,
+    "owned_by": "vllm",
+    "root": "models/Qwen3.8-27B-FP8",
+    "parent": null,
+    "max_model_len": 40960,
+    "permission": [
+     {
+      "id": "modelperm-9063d2f176564484",
+      "object": "model_permission",
+      "created": 1793910847,
+      "allow_create_engine": false,
+      "allow_sampling": true,
+      "allow_logprobs": true,
+      "allow_search_indices": false,
+      "allow_view": true,
+      "allow_fine_tuning": false,
+      "organization": "*",
+      "group": null,
+      "is_blocking": false
+     }
+    ]
+   }
+  ]
+ },
+ "server_log": "logs/vllm/g0_8343.log",
+ "server_non_default_args": "{'host': '127.0.0.1', 'port': 8343, 'model': 'models/Qwen3.8-27B-FP8', 'max_model_len': 40960, 'served_model_name': ['qwen3.8-27b'], 'enable_prefix_caching': True, 'max_num_seqs': 64, 'gdn_prefill_backend': 'triton'}",
+ "vllm_version": "v0.19.1",
+ "kv_cache": {
+  "available_gib": "40.49",
+  "tokens": "165,424",
+  "max_concurrency": "14.34"
+ },
+ "prompts": "experiments/crossfamily/out/ext/prompts_qwen3.8-27b.jsonl",
+ "prompts_sha256": "5ac1857ff1c4bce0abd07a231c01c9003761a5baaa59ce01bbc9b9c122bfaeab",
+ "runner": "experiments/crossfamily/scripts/ext_frozen/run_ext.py",
+ "runner_sha256": "8aa676ff0be4312f1bdc9b9a3bdac238f899f6675e1877d77975f2b187a18d27"
+}

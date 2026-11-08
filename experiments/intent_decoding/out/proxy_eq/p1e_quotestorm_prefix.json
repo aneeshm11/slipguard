@@ -1,0 +1,592 @@
+{
+ "vendor": "experiments/intent_decoding/proxy_vendor",
+ "code_sha256": {
+  "proxy/e2e_proxy.py": "0c2a52780ea433f36e9701229c290493f6e75db4c562990e7dc58fb399535dce",
+  "proxy/gemma_protocol.py": "fcff4beda91cd8c5c70abe718eb322798335fe81ffb02b1c8c2fbbb2c5c4f1bd",
+  "export/quarantine_renderer.py": "13e285673b70aa9a344cc2123fd26387877ee19a53e8ef9006f8f5580fa2466f"
+ },
+ "path": "Proxy.engine_chat (E's real request path) with a teacher-forced stub backend replaying each valid call",
+ "criterion": "P1: 0 of 229,414 valid QuoteStorm calls (incl. 1,200 adversarial) changed (raw text or delivered args)",
+ "by_cfg": {
+  "ipd": {
+   "calls": 229412,
+   "natural_calls": 228212,
+   "adversarial_calls": 1200,
+   "changed_all": {
+    "k": 278,
+    "n": 229412,
+    "rate": 0.0012117936289296114,
+    "wilson95": [
+     0.0010775409949312258,
+     0.001362750204058115
+    ]
+   },
+   "changed_natural": {
+    "k": 0,
+    "n": 228212,
+    "rate": 0.0,
+    "wilson95": [
+     0.0,
+     1.683256866017024e-05
+    ]
+   },
+   "changed_adversarial": {
+    "k": 278,
+    "n": 1200,
+    "rate": 0.23166666666666666,
+    "wilson95": [
+     0.20867501689786389,
+     0.2563708200922705
+    ]
+   },
+   "raw_text_changed": {
+    "natural": 0,
+    "adversarial": 184
+   },
+   "delivered_args_changed": {
+    "natural": 0,
+    "adversarial": 278
+   },
+   "tokenizer_roundtrip_skipped": {
+    "natural": 2,
+    "adversarial": 0
+   },
+   "pass": false,
+   "examples": [
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "'`",
+       "key": "allow_multiple",
+       "in": "new_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "old_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "'`",
+       "key": "allow_multiple",
+       "in": "new_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": true,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_rejected",
+       "kind": null,
+       "run": "`",
+       "key": "old_string",
+       "in": null
+      },
+      {
+       "ev": "posthoc_repair",
+       "kind": null,
+       "run": null,
+       "key": null,
+       "in": null
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "old_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "'",
+       "key": "new_string",
+       "in": "old_string"
+      },
+      {
+       "ev": "ipd_repair",
+       "kind": "opener",
+       "run": null,
+       "key": "new_string",
+       "in": "new_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": true,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_rejected",
+       "kind": null,
+       "run": "``",
+       "key": "old_string",
+       "in": null
+      },
+      {
+       "ev": "posthoc_repair",
+       "kind": null,
+       "run": null,
+       "key": null,
+       "in": null
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "``",
+       "key": "old_string",
+       "in": "new_string"
+      },
+      {
+       "ev": "ipd_repair",
+       "kind": "opener",
+       "run": null,
+       "key": "old_string",
+       "in": "old_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "``",
+       "key": "old_string",
+       "in": "new_string"
+      },
+      {
+       "ev": "ipd_repair",
+       "kind": "opener",
+       "run": null,
+       "key": "old_string",
+       "in": "old_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": true,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_rejected",
+       "kind": null,
+       "run": "\"`",
+       "key": "old_string",
+       "in": null
+      },
+      {
+       "ev": "ipd_no_repair",
+       "kind": null,
+       "run": null,
+       "key": null,
+       "in": null
+      },
+      {
+       "ev": "posthoc_repair",
+       "kind": null,
+       "run": null,
+       "key": null,
+       "in": null
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "\\\"",
+       "key": "old_string",
+       "in": "new_string"
+      },
+      {
+       "ev": "ipd_repair",
+       "kind": "opener",
+       "run": null,
+       "key": "old_string",
+       "in": "old_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "``",
+       "key": "old_string",
+       "in": "new_string"
+      },
+      {
+       "ev": "ipd_repair",
+       "kind": "opener",
+       "run": null,
+       "key": "old_string",
+       "in": "old_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "`",
+       "key": "allow_multiple",
+       "in": "new_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "old_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "`",
+       "key": "allow_multiple",
+       "in": "new_string"
+      }
+     ]
+    }
+   ]
+  },
+  "fullp": {
+   "calls": 229412,
+   "natural_calls": 228212,
+   "adversarial_calls": 1200,
+   "changed_all": {
+    "k": 278,
+    "n": 229412,
+    "rate": 0.0012117936289296114,
+    "wilson95": [
+     0.0010775409949312258,
+     0.001362750204058115
+    ]
+   },
+   "changed_natural": {
+    "k": 0,
+    "n": 228212,
+    "rate": 0.0,
+    "wilson95": [
+     0.0,
+     1.683256866017024e-05
+    ]
+   },
+   "changed_adversarial": {
+    "k": 278,
+    "n": 1200,
+    "rate": 0.23166666666666666,
+    "wilson95": [
+     0.20867501689786389,
+     0.2563708200922705
+    ]
+   },
+   "raw_text_changed": {
+    "natural": 0,
+    "adversarial": 184
+   },
+   "delivered_args_changed": {
+    "natural": 0,
+    "adversarial": 278
+   },
+   "tokenizer_roundtrip_skipped": {
+    "natural": 2,
+    "adversarial": 0
+   },
+   "pass": false,
+   "examples": [
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "'`",
+       "key": "allow_multiple",
+       "in": "new_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "old_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "'`",
+       "key": "allow_multiple",
+       "in": "new_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": true,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_rejected",
+       "kind": null,
+       "run": "`",
+       "key": "old_string",
+       "in": null
+      },
+      {
+       "ev": "posthoc_repair",
+       "kind": null,
+       "run": null,
+       "key": null,
+       "in": null
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "old_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "'",
+       "key": "new_string",
+       "in": "old_string"
+      },
+      {
+       "ev": "ipd_repair",
+       "kind": "opener",
+       "run": null,
+       "key": "new_string",
+       "in": "new_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": true,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_rejected",
+       "kind": null,
+       "run": "``",
+       "key": "old_string",
+       "in": null
+      },
+      {
+       "ev": "posthoc_repair",
+       "kind": null,
+       "run": null,
+       "key": null,
+       "in": null
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "``",
+       "key": "old_string",
+       "in": "new_string"
+      },
+      {
+       "ev": "ipd_repair",
+       "kind": "opener",
+       "run": null,
+       "key": "old_string",
+       "in": "old_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "``",
+       "key": "old_string",
+       "in": "new_string"
+      },
+      {
+       "ev": "ipd_repair",
+       "kind": "opener",
+       "run": null,
+       "key": "old_string",
+       "in": "old_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": true,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_rejected",
+       "kind": null,
+       "run": "\"`",
+       "key": "old_string",
+       "in": null
+      },
+      {
+       "ev": "ipd_no_repair",
+       "kind": null,
+       "run": null,
+       "key": null,
+       "in": null
+      },
+      {
+       "ev": "posthoc_repair",
+       "kind": null,
+       "run": null,
+       "key": null,
+       "in": null
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "\\\"",
+       "key": "old_string",
+       "in": "new_string"
+      },
+      {
+       "ev": "ipd_repair",
+       "kind": "opener",
+       "run": null,
+       "key": "old_string",
+       "in": "old_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "``",
+       "key": "old_string",
+       "in": "new_string"
+      },
+      {
+       "ev": "ipd_repair",
+       "kind": "opener",
+       "run": null,
+       "key": "old_string",
+       "in": "old_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "new_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "`",
+       "key": "allow_multiple",
+       "in": "new_string"
+      }
+     ]
+    },
+    {
+     "grp": "adversarial",
+     "order": "old_first",
+     "raw_same": false,
+     "args_same": false,
+     "events": [
+      {
+       "ev": "ipd_repair",
+       "kind": "closer",
+       "run": "`",
+       "key": "allow_multiple",
+       "in": "new_string"
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

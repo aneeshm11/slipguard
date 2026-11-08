@@ -1,0 +1,101 @@
+{
+ "D1_first_exemplar_step_logit (dose set, cond)": [
+  2.5296,
+  1.9062,
+  3.5493
+ ],
+ "D1_gate_set_cond (p1 .462, p0 .057)": 2.653721345718862,
+ "s_per_extra_distinct_exemplar_logit (Delta4/3, cond)": [
+  0.5476,
+  0.4302,
+  0.6838
+ ],
+ "P1 convexity Delta4-2Delta2 (cond)": [
+  0.9753,
+  0.4621,
+  1.5271
+ ],
+ "rho_repeat_same_exemplar Delta_r2 / Delta_r4 (cond)": [
+  [
+   0.1287,
+   [
+    -0.0247,
+    0.2891
+   ]
+  ],
+  [
+   0.0273,
+   [
+    -0.1799,
+    0.22
+   ]
+  ]
+ ],
+ "lambda_lag2_logit_weight (uncond)": [
+  0.6771297865233132,
+  0.5292775974444474,
+  0.8052197441928786
+ ],
+ "lag2_excess_share_prob (uncond)": [
+  0.4559,
+  [
+   0.2917,
+   0.6401
+  ]
+ ],
+ "lambda_lag2_logit_weight (cond)": [
+  0.6904093457068868,
+  0.5432036827433164,
+  0.823194203788365
+ ],
+ "lag2_excess_share_prob (cond)": [
+  0.479,
+  [
+   0.3096,
+   0.675
+  ]
+ ],
+ "P6 first step D1_6 (cond)": [
+  1.6138,
+  0.9435,
+  2.5896
+ ],
+ "beta6 = Delta2/log2 (cond)": [
+  2.6366694567286695,
+  2.0921963482971746,
+  3.2610678704254132
+ ],
+ "beta6_check = Delta4/log4 (cond)": [
+  2.663142910728982,
+  2.334785519422654,
+  3.095807153491582
+ ],
+ "P6 log-k linearity Delta4-2Delta2 (cond)": [
+  0.0366,
+  -0.5373,
+  0.6508
+ ],
+ "rates": {
+  "dose P1 cond k=1,2,4": [
+   0.2483,
+   0.3156,
+   0.6306
+  ],
+  "dose p0 cond": 0.0256,
+  "P6 cond k=1,2,4": [
+   0.1167,
+   0.4511,
+   0.8413
+  ],
+  "gate cond P0, P1": [
+   0.057,
+   0.462
+  ],
+  "selection caveat": "dose/P6k set (k_usable>=4): P1(1)=0.248, p0=0.026 vs gate 0.462/0.057"
+ },
+ "kernel_fit_check P1(k) = expit(logit p0 + D1 + s(k-1)) for k=1,2,4": [
+  0.2479399591865515,
+  0.3630779922321421,
+  0.6302222660945122
+ ]
+}

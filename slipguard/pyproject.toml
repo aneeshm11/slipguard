@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slipguard"
+dynamic = ["version"]
+description = "Tool-call hygiene for Gemma 4 agents (unofficial): strict linear-time parser, vLLM plugin, intent-preserving repair proxy, transcript hygiene, patched chat template"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []                       # core (parse, history, verify, template path) is stdlib-only
+
+[project.optional-dependencies]
+template = ["jinja2>=3.1"]              # slipguard.template.render
+proxy = ["aiohttp>=3.9", "transformers>=4.57", "jinja2>=3.1"]          # --engine lite (no vLLM on the proxy host)
+proxy-frozen = ["aiohttp>=3.9", "transformers>=4.57", "jinja2>=3.1", "vllm==0.19.1"]   # default --engine frozen, the evaluated engine (vLLM's CUDA build: torch, nvidia-* wheels, several GB)
+# The plugin runs INSIDE vLLM: install slipguard (the core, no extras) into vLLM's own environment. This extra only
+# installs a vLLM for it, bounded to the tested versions (0.19.1, 0.24.0, 0.31.0, 0.32.0, 0.33.0).
+vllm = ["vllm>=0.19.1,<0.34"]
+# Tested ranges. LiteLLM imports `mcp` on any call with tools without declaring it; ADK 1.x requires mcp < 2, ADK 2.x
+# none; LiteLLM 1.108 needs mcp >= 2 (mcp.types.CacheableResult). Tested and working: LiteLLM 1.104.x with mcp 1.x.
+adk = ["google-adk>=1.36,<2", "litellm>=1.104,<1.105", "mcp>=1.24,<2"]
+litellm = ["litellm>=1.104,<1.105", "mcp>=1.24,<2"]
+weights = ["numpy>=1.24", "httpx>=0.27", "transformers>=4.57", "jinja2>=3.1"]   # slipguard audit-weights (F's wsaudit)
+dev = ["pytest>=8", "jinja2>=3.1"]
+
+[project.scripts]
+slipguard = "slipguard.cli:main"
+
+[project.entry-points."sglang.srt.plugins"]
+slipguard = "slipguard.integrations.sglang:register"     # experimental: --tool-call-parser gemma4_strict on SGLang
+
+[tool.setuptools.dynamic]
+version = {attr = "slipguard._version.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["slipguard*"]
+
+[tool.setuptools.package-data]
+slipguard = ["_frozen/MANIFEST.json", "_frozen/EXPORT_DIFFS.md", "_frozen/endtoend/*/*.py", "_frozen/endtoend/*/*.json", "_frozen/endtoend/*/*.txt", "_frozen/wsa/wsaudit/*.py", "_frozen/wsa/pack/*.jsonl.gz", "template/*.jinja",
+             "data/*.jsonl", "data/*.json", "py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

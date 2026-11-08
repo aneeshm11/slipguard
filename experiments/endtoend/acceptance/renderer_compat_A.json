@@ -1,0 +1,16 @@
+{
+ "cases": 12208,
+ "P8a_identical": 12208,
+ "P8b_identical": 12208,
+ "by_source": {
+  "natural_cases": 9808,
+  "natural_P8a_diff": 0,
+  "natural_P8b_diff": 0,
+  "adversarial_cases": 2400,
+  "adversarial_P8a_diff": 0,
+  "adversarial_P8b_diff": 0
+ },
+ "examples_of_differences": [],
+ "old_sha_prefix": "13e285673b70aa9a",
+ "payload_source": "experiments/intent_decoding/data/quotestorm.jsonl"
+}

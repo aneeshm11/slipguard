@@ -1,0 +1,356 @@
+{
+ "generated": "2026-11-04 19:13 UTC",
+ "workstream": "E (end-to-end)",
+ "unit_tests": {
+  "tests/test_protocol.py": "65/65 pass (offline; incl. vendored-B sha check, mirrors == B intent_decode, whitespace variants, adversarial literals)",
+  "tests/test_generate.py": "34/34 pass (mock vLLM backend; verify-then-repair, P1 identity, B gate example)",
+  "tests/test_proxy_e2e.py": "30/30 pass (whole proxy request path in-process, incl. branch replay and the literal round trip)",
+  "tests/test_prereg_analysis.py": "7/7 pass (synthetic fixtures)",
+  "export/quarantine_renderer.py --selftest": "OK",
+  "P1 acceptance (workstream B proxy_equivalence.py p1e, real request path)": "ipd and fullp: 0/229,412 valid QuoteStorm calls changed (natural 0/228,212, adversarial 0/1,200); acceptance/p1_quotestorm_freeze_candidate.json",
+  "live closed-loop branch test": "real harness + Docker, mock backend: replay fidelity ok 14/14 per arm, onset re-executed, fullp quarantine recovered it"
+ },
+ "status": "pre-registered evaluation (PREREG_E.md) frozen 2026-11-05 12:00 UTC; population runs from Nov 5; no confirmatory outcome before 2026-11-06 00:00 UTC (blinding); pilots p12a/p4a exploratory",
+ "gradability": {
+  "public_wheels": {
+   "gold_resolved": {
+    "k": 43,
+    "n": 129,
+    "rate": 0.3333,
+    "wilson95": [
+     0.2578,
+     0.4185
+    ]
+   },
+   "gold_by_repo": {
+    "fastapi": {
+     "k": 1,
+     "n": 67,
+     "rate": 0.0149,
+     "wilson95": [
+      0.0026,
+      0.0798
+     ]
+    },
+    "httpx": {
+     "k": 0,
+     "n": 1,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.7935
+     ]
+    },
+    "requests": {
+     "k": 3,
+     "n": 13,
+     "rate": 0.2308,
+     "wilson95": [
+      0.0818,
+      0.5026
+     ]
+    },
+    "rich": {
+     "k": 39,
+     "n": 48,
+     "rate": 0.8125,
+     "wilson95": [
+      0.6806,
+      0.8981
+     ]
+    }
+   }
+  },
+  "augmented_single_set": {
+   "gold_resolved": {
+    "k": 51,
+    "n": 129,
+    "rate": 0.3953,
+    "wilson95": [
+     0.3152,
+     0.4816
+    ]
+   },
+   "gold_by_repo": {
+    "fastapi": {
+     "k": 16,
+     "n": 67,
+     "rate": 0.2388,
+     "wilson95": [
+      0.1527,
+      0.3533
+     ]
+    },
+    "httpx": {
+     "k": 0,
+     "n": 1,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.7935
+     ]
+    },
+    "requests": {
+     "k": 3,
+     "n": 13,
+     "rate": 0.2308,
+     "wilson95": [
+      0.0818,
+      0.5026
+     ]
+    },
+    "rich": {
+     "k": 32,
+     "n": 48,
+     "rate": 0.6667,
+     "wilson95": [
+      0.5254,
+      0.7832
+     ]
+    }
+   }
+  },
+  "per_task_wheel_sets": {
+   "gold_resolved": {
+    "k": 115,
+    "n": 129,
+    "rate": 0.8915,
+    "wilson95": [
+     0.8261,
+     0.9342
+    ]
+   },
+   "gold_by_repo": {
+    "fastapi": {
+     "k": 63,
+     "n": 67,
+     "rate": 0.9403,
+     "wilson95": [
+      0.8563,
+      0.9765
+     ]
+    },
+    "httpx": {
+     "k": 1,
+     "n": 1,
+     "rate": 1.0,
+     "wilson95": [
+      0.2065,
+      1.0
+     ]
+    },
+    "requests": {
+     "k": 5,
+     "n": 13,
+     "rate": 0.3846,
+     "wilson95": [
+      0.1771,
+      0.6448
+     ]
+    },
+    "rich": {
+     "k": 46,
+     "n": 48,
+     "rate": 0.9583,
+     "wilson95": [
+      0.8602,
+      0.9885
+     ]
+    }
+   },
+   "empty_patch_resolved": {
+    "k": 2,
+    "n": 129,
+    "rate": 0.0155,
+    "wilson95": [
+     0.0043,
+     0.0548
+    ]
+   },
+   "eligible_gold_and_not_empty": 113
+  }
+ },
+ "rendering_parity": {
+  "e4b": {
+   "contexts": 12,
+   "prompt_tokens_identical": {
+    "k": 12,
+    "n": 12,
+    "rate": 1.0,
+    "wilson95": [
+     0.7575,
+     1.0
+    ]
+   },
+   "greedy_generation_identical": {
+    "k": 2,
+    "n": 4,
+    "rate": 0.5,
+    "wilson95": [
+     0.15,
+     0.85
+    ]
+   },
+   "note": "T=0 differences are greedy divergences under concurrent batching (vLLM is not batch-invariant)"
+  },
+  "12b": {
+   "contexts": 12,
+   "prompt_tokens_identical": {
+    "k": 12,
+    "n": 12,
+    "rate": 1.0,
+    "wilson95": [
+     0.7575,
+     1.0
+    ]
+   },
+   "greedy_generation_identical": {
+    "k": 3,
+    "n": 4,
+    "rate": 0.75,
+    "wilson95": [
+     0.3006,
+     0.9544
+    ]
+   },
+   "note": "T=0 differences are greedy divergences under concurrent batching (vLLM is not batch-invariant)"
+  },
+  "31b": {
+   "contexts": 40,
+   "prompt_tokens_identical": {
+    "k": 40,
+    "n": 40,
+    "rate": 1.0,
+    "wilson95": [
+     0.9124,
+     1.0
+    ]
+   },
+   "greedy_generation_identical": {
+    "k": 9,
+    "n": 12,
+    "rate": 0.75,
+    "wilson95": [
+     0.4677,
+     0.9111
+    ]
+   },
+   "note": "run 09:50-10:05 UTC, before the GPU-lane rule; T=0 diffs = batching divergence"
+  }
+ },
+ "ipd_live_exercise": {
+  "design": "20 real 31B agent contexts whose logged edit_file call had slipped (data/protocol/contexts.jsonl, orig_ok=False, seed 2), one next model turn per context per cfg, thinking on, budget 4096, T=0.2; E4B backend (:8311, conc 4)",
+  "e4b_final_code": {
+   "base": {
+    "requests": 20,
+    "errors": 0,
+    "edit_calls": 15,
+    "edit_malformed_emitted": {
+     "k": 2,
+     "n": 15,
+     "rate": 0.1333,
+     "wilson95": [
+      0.0374,
+      0.3788
+     ]
+    },
+    "edit_malformed_delivered": {
+     "k": 2,
+     "n": 15,
+     "rate": 0.1333,
+     "wilson95": [
+      0.0374,
+      0.3788
+     ]
+    },
+    "all_calls_malformed_delivered": {
+     "k": 2,
+     "n": 20,
+     "rate": 0.1,
+     "wilson95": [
+      0.0279,
+      0.301
+     ]
+    },
+    "responses_without_call": 0,
+    "events": {}
+   },
+   "full": {
+    "requests": 20,
+    "errors": 0,
+    "edit_calls": 17,
+    "edit_malformed_emitted": {
+     "k": 0,
+     "n": 17,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.1843
+     ]
+    },
+    "edit_malformed_delivered": {
+     "k": 0,
+     "n": 17,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.1843
+     ]
+    },
+    "all_calls_malformed_delivered": {
+     "k": 0,
+     "n": 20,
+     "rate": 0.0,
+     "wilson95": [
+      -0.0,
+      0.1611
+     ]
+    },
+    "responses_without_call": 0,
+    "events": {
+     "ipd_no_repair": 2
+    }
+   },
+   "ipd": {
+    "requests": 20,
+    "errors": 0,
+    "edit_calls": 19,
+    "edit_malformed_emitted": {
+     "k": 5,
+     "n": 19,
+     "rate": 0.2632,
+     "wilson95": [
+      0.1181,
+      0.4879
+     ]
+    },
+    "edit_malformed_delivered": {
+     "k": 1,
+     "n": 19,
+     "rate": 0.0526,
+     "wilson95": [
+      0.0094,
+      0.2464
+     ]
+    },
+    "all_calls_malformed_delivered": {
+     "k": 1,
+     "n": 20,
+     "rate": 0.05,
+     "wilson95": [
+      0.0089,
+      0.2361
+     ]
+    },
+    "responses_without_call": 0,
+    "events": {
+     "ipd_repair:closer": 2,
+     "ipd_no_repair": 3,
+     "ipd_repair:opener": 2
+    }
+   }
+  },
+  "e4b_closure_rule_archived": "logs/archive_closure_rule (earlier closure cut rule; shows the mis-cut that motivated the switch)"
+ },
+ "pilot": {}
+}

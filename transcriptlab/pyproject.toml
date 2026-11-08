@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transcriptlab"
+version = "0.1.3"
+description = "Run the TranscriptLab history-intervention benchmark on your model: a thin CLI over the frozen runner and analysis."
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+dependencies = []          # the CLI itself is stdlib-only; the frozen runner/analysis need the [run] extra
+
+[project.optional-dependencies]
+run = ["httpx>=0.27", "numpy>=1.26", "transformers>=4.57", "vllm==0.19.1"]   # vLLM 0.19.1 (its parsers / judge); PyPI's wheel is the CUDA build (torch + nvidia-*, several GB)
+
+[project.scripts]
+transcriptlab = "transcriptlab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

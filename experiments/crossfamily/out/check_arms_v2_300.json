@@ -1,0 +1,64 @@
+{
+ "S0_equivalence": {
+  "P0:hermes:same": 300,
+  "P1L:hermes:same": 300,
+  "P1N:hermes:same": 300,
+  "P5:hermes:same": 300,
+  "P6:hermes:same": 300,
+  "P8a:hermes:same": 300,
+  "P1N:xml:same": 300
+ },
+ "S1": {
+  "common": {
+   "profile_Profile(S1: edit_file(file_path, old_string, new_string))": 300,
+   "prior_positions_match_A": 300,
+   "k_usable_ge_1": 300
+  },
+  "qwen3-8b": {
+   "P0:rendered": 300,
+   "P0:serializer_identity": 300,
+   "P0:original_judged_ok": 300,
+   "hist_calls": 3013,
+   "hist_flagged": 0,
+   "P1L:rendered": 300,
+   "P1L:serializer_identity": 300,
+   "P1L:judge_malformed": 300,
+   "P1L:missing_file_path_not_reported": 300,
+   "P1N:rendered": 300,
+   "P1N:outcome:loud": 300,
+   "P5:rendered": 300,
+   "P6:rendered": 300,
+   "P6:serializer_identity": 300,
+   "P6:judge_malformed": 300,
+   "P6:missing_file_path_not_reported": 300,
+   "P8a:rendered": 300,
+   "P8a:serializer_identity": 300,
+   "P8a:recovered_equals_original": 300,
+   "P8a:judge_ok": 300
+  },
+  "qwen3.5-9b": {
+   "P0:rendered": 300,
+   "P0:serializer_identity": 300,
+   "P0:original_judged_ok": 300,
+   "hist_calls": 3013,
+   "hist_flagged": 0,
+   "P1L:rendered": 300,
+   "P1L:serializer_identity": 300,
+   "P1L:judge_malformed": 300,
+   "P1L:missing_file_path_not_reported": 300,
+   "P1N:rendered": 300,
+   "P1N:outcome:silent_applied": 297,
+   "P5:rendered": 300,
+   "P6:rendered": 300,
+   "P6:serializer_identity": 300,
+   "P6:judge_malformed": 300,
+   "P6:missing_file_path_not_reported": 300,
+   "P8a:rendered": 300,
+   "P8a:serializer_identity": 300,
+   "P8a:recovered_equals_original": 300,
+   "P8a:judge_ok": 300,
+   "P1N:outcome:silent_not_found": 3
+  }
+ },
+ "examples": {}
+}

@@ -1,0 +1,509 @@
+{
+ "source": "benchmarks/run_perf.sh -> results/PERF.json (same inputs, same process, one core)",
+ "rows": [
+  {
+   "mode": "non-streaming",
+   "family": "many_int_keys",
+   "n": 4000,
+   "unit": "arguments",
+   "vllm": "0.19",
+   "builtin": {
+    "target": "vllm019.server",
+    "ms": 7.99,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.45
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm019.server",
+    "ms": 27.73,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 0.97
+   },
+   "slipguard_api": {
+    "target": "gg.completion",
+    "ms": 26.97,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.0
+   }
+  },
+  {
+   "mode": "non-streaming",
+   "family": "many_int_keys",
+   "n": 4000,
+   "unit": "arguments",
+   "vllm": "0.31",
+   "builtin": {
+    "target": "vllm031.server",
+    "ms": 38811.86,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.97
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm031.server",
+    "ms": 38.95,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 0.93
+   },
+   "slipguard_api": {
+    "target": "gg.completion",
+    "ms": 27.92,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.0
+   }
+  },
+  {
+   "mode": "non-streaming",
+   "family": "many_int_keys",
+   "n": 4000,
+   "unit": "arguments",
+   "vllm": "0.33",
+   "builtin": {
+    "target": "vllm033.server",
+    "ms": 54181.55,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.98
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm033.server",
+    "ms": 39.6,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 0.72
+   },
+   "slipguard_api": {
+    "target": "gg.completion",
+    "ms": 27.39,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 0.82
+   }
+  },
+  {
+   "mode": "non-streaming",
+   "family": "many_string_keys",
+   "n": 4000,
+   "unit": "arguments",
+   "vllm": "0.19",
+   "builtin": {
+    "target": "vllm019.server",
+    "ms": 9.06,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.61
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm019.server",
+    "ms": 19.48,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 0.99
+   },
+   "slipguard_api": {
+    "target": "gg.completion",
+    "ms": 18.45,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.01
+   }
+  },
+  {
+   "mode": "non-streaming",
+   "family": "many_string_keys",
+   "n": 4000,
+   "unit": "arguments",
+   "vllm": "0.31",
+   "builtin": {
+    "target": "vllm031.server",
+    "ms": 34103.46,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.96
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm031.server",
+    "ms": 52.77,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 0.97
+   },
+   "slipguard_api": {
+    "target": "gg.completion",
+    "ms": 18.39,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.02
+   }
+  },
+  {
+   "mode": "non-streaming",
+   "family": "many_string_keys",
+   "n": 4000,
+   "unit": "arguments",
+   "vllm": "0.33",
+   "builtin": {
+    "target": "vllm033.server",
+    "ms": 46789.45,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.97
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm033.server",
+    "ms": 52.89,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 0.96
+   },
+   "slipguard_api": {
+    "target": "gg.completion",
+    "ms": 18.48,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.02
+   }
+  },
+  {
+   "mode": "non-streaming",
+   "family": "code_with_commas",
+   "n": 16000,
+   "unit": "code lines",
+   "vllm": "0.19",
+   "builtin": {
+    "target": "vllm019.server",
+    "ms": 3.56,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 0.96
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm019.server",
+    "ms": 3.11,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.06
+   },
+   "slipguard_api": {
+    "target": "gg.completion",
+    "ms": 0.27,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": null
+   }
+  },
+  {
+   "mode": "non-streaming",
+   "family": "code_with_commas",
+   "n": 16000,
+   "unit": "code lines",
+   "vllm": "0.31",
+   "builtin": {
+    "target": "vllm031.server",
+    "ms": null,
+    "timeout": true,
+    "timeout_s": 60.0,
+    "slope": 1.97
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm031.server",
+    "ms": 157.49,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.06
+   },
+   "slipguard_api": {
+    "target": "gg.completion",
+    "ms": 0.29,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": null
+   }
+  },
+  {
+   "mode": "non-streaming",
+   "family": "code_with_commas",
+   "n": 16000,
+   "unit": "code lines",
+   "vllm": "0.33",
+   "builtin": {
+    "target": "vllm033.server",
+    "ms": 5519.52,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.48
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm033.server",
+    "ms": 171.18,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.06
+   },
+   "slipguard_api": {
+    "target": "gg.completion",
+    "ms": 0.31,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": null
+   }
+  },
+  {
+   "mode": "non-streaming",
+   "family": "long_string",
+   "n": 4000000,
+   "unit": "chars",
+   "vllm": "0.19",
+   "builtin": {
+    "target": "vllm019.server",
+    "ms": 24.77,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.03
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm019.server",
+    "ms": 23.94,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.02
+   },
+   "slipguard_api": {
+    "target": "gg.completion",
+    "ms": 3.85,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": null
+   }
+  },
+  {
+   "mode": "non-streaming",
+   "family": "long_string",
+   "n": 4000000,
+   "unit": "chars",
+   "vllm": "0.31",
+   "builtin": {
+    "target": "vllm031.server",
+    "ms": 3210.29,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.05
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm031.server",
+    "ms": 2468.55,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.07
+   },
+   "slipguard_api": {
+    "target": "gg.completion",
+    "ms": 3.88,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": null
+   }
+  },
+  {
+   "mode": "non-streaming",
+   "family": "long_string",
+   "n": 4000000,
+   "unit": "chars",
+   "vllm": "0.33",
+   "builtin": {
+    "target": "vllm033.server",
+    "ms": 3215.91,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.05
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm033.server",
+    "ms": 2511.48,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.07
+   },
+   "slipguard_api": {
+    "target": "gg.completion",
+    "ms": 4.01,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": null
+   }
+  },
+  {
+   "mode": "streaming",
+   "family": "many_string_keys",
+   "n": 2000,
+   "unit": "arguments",
+   "vllm": "0.19",
+   "builtin": {
+    "target": "vllm019.stream",
+    "ms": 47483.54,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 2.06
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm019.stream",
+    "ms": 1041.69,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.45
+   },
+   "slipguard_api": {
+    "target": "gg.stream",
+    "ms": 193.58,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.02
+   }
+  },
+  {
+   "mode": "streaming",
+   "family": "many_string_keys",
+   "n": 2000,
+   "unit": "arguments",
+   "vllm": "0.31",
+   "builtin": {
+    "target": "vllm031.stream",
+    "ms": 17195.25,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.84
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm031.stream",
+    "ms": 243.25,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.04
+   },
+   "slipguard_api": {
+    "target": "gg.stream",
+    "ms": 189.93,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 0.94
+   }
+  },
+  {
+   "mode": "streaming",
+   "family": "many_string_keys",
+   "n": 2000,
+   "unit": "arguments",
+   "vllm": "0.33",
+   "builtin": {
+    "target": "vllm033.stream",
+    "ms": 29287.42,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.88
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm033.stream",
+    "ms": 236.09,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.04
+   },
+   "slipguard_api": {
+    "target": "gg.stream",
+    "ms": 190.84,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 0.9
+   }
+  },
+  {
+   "mode": "streaming",
+   "family": "code_with_commas",
+   "n": 6400,
+   "unit": "code lines",
+   "vllm": "0.19",
+   "builtin": {
+    "target": "vllm019.stream",
+    "ms": null,
+    "timeout": true,
+    "timeout_s": 60.0,
+    "slope": 1.98
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm019.stream",
+    "ms": 39969.39,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.81
+   },
+   "slipguard_api": {
+    "target": "gg.stream",
+    "ms": 1064.26,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.04
+   }
+  },
+  {
+   "mode": "streaming",
+   "family": "code_with_commas",
+   "n": 6400,
+   "unit": "code lines",
+   "vllm": "0.31",
+   "builtin": {
+    "target": "vllm031.stream",
+    "ms": null,
+    "timeout": true,
+    "timeout_s": 60.0,
+    "slope": 1.9
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm031.stream",
+    "ms": 1321.87,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.03
+   },
+   "slipguard_api": {
+    "target": "gg.stream",
+    "ms": 1038.83,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.04
+   }
+  },
+  {
+   "mode": "streaming",
+   "family": "code_with_commas",
+   "n": 6400,
+   "unit": "code lines",
+   "vllm": "0.33",
+   "builtin": {
+    "target": "vllm033.stream",
+    "ms": 2946.98,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.06
+   },
+   "slipguard_plugin": {
+    "target": "gg.vllm033.stream",
+    "ms": 1268.44,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.03
+   },
+   "slipguard_api": {
+    "target": "gg.stream",
+    "ms": 1016.19,
+    "timeout": false,
+    "timeout_s": null,
+    "slope": 1.04
+   }
+  }
+ ]
+}

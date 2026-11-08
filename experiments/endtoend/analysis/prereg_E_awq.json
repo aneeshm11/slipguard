@@ -1,0 +1,115 @@
+{
+ "prereg": "PREREG_E_awq.md (sha256 in PROGRESS.md at freeze)",
+ "qat_replicates": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "primary_awq_base_vs_qat_base": {
+  "n_tasks": 113,
+  "A_mean": 0.4115,
+  "B_mean": 1.9062,
+  "ratio_A_over_B": {
+   "ratio": 0.2159,
+   "ci95": [
+    0.1063,
+    0.3907
+   ]
+  },
+  "diff_A_minus_B": {
+   "n": 113,
+   "mean_diff": -1.4947,
+   "ci95": [
+    -2.0584,
+    -0.9982
+   ],
+   "p_boot": 0.0
+  },
+  "verdict": "AUDIT PICK REDUCES MALFORMED CALLS END TO END"
+ },
+ "S_a_awq_fullp_vs_awq_base": {
+  "n_tasks": 113,
+  "A_mean": 0.3186,
+  "B_mean": 0.4115,
+  "ratio_A_over_B": {
+   "ratio": 0.7742,
+   "ci95": [
+    0.44,
+    1.4667
+   ]
+  },
+  "diff_A_minus_B": {
+   "n": 113,
+   "mean_diff": -0.0929,
+   "ci95": [
+    -0.3938,
+    0.1062
+   ],
+   "p_boot": 0.5366
+  }
+ },
+ "S_b_awq_fullp_vs_qat_fullp": {
+  "n_tasks": 113,
+  "A_mean": 0.3186,
+  "B_mean": 0.354,
+  "ratio_A_over_B": {
+   "ratio": 0.9,
+   "ci95": [
+    0.5668,
+    1.3582
+   ]
+  },
+  "diff_A_minus_B": {
+   "n": 113,
+   "mean_diff": -0.0354,
+   "ci95": [
+    -0.1982,
+    0.0965
+   ],
+   "p_boot": 0.6684
+  }
+ },
+ "S_c_stuck": {
+  "awq_base": [
+   1,
+   226
+  ],
+  "awq_fullp": [
+   0,
+   226
+  ],
+  "qat_base": [
+   63,
+   1130
+  ],
+  "qat_fullp": [
+   3,
+   1130
+  ]
+ },
+ "S_d_resolved": {
+  "awq_base": [
+   106,
+   226
+  ],
+  "awq_fullp": [
+   105,
+   226
+  ],
+  "qat_base": [
+   494,
+   1130
+  ],
+  "qat_fullp": [
+   495,
+   1130
+  ]
+ }
+}

@@ -1,0 +1,242 @@
+{
+ "prereg": "PREREG_E_comp.md (sha256 in PROGRESS.md at freeze)",
+ "B": 10000,
+ "replicate_complete": {
+  "3": true,
+  "4": true,
+  "5": true,
+  "6": true,
+  "7": false,
+  "8": false
+ },
+ "analysis_set": [
+  3,
+  4,
+  5,
+  6
+ ],
+ "n_tasks": 113,
+ "n_episode_sets": 452,
+ "excluded": [],
+ "primary": {
+  "Q1_quarantine_alone": {
+   "n_tasks": 113,
+   "A_mean": 0.6615,
+   "B_mean": 1.5619,
+   "ratio_A_over_B": {
+    "ratio": 0.4235,
+    "ci95": [
+     0.25,
+     0.7283
+    ]
+   },
+   "diff_A_minus_B": {
+    "n": 113,
+    "mean_diff": -0.9004,
+    "ci95": [
+     -1.6327,
+     -0.2965
+    ],
+    "p_boot": 0.0028
+   },
+   "p_holm": 0.0028,
+   "verdict": "QUARANTINE ALONE REDUCES MALFORMED CALLS END TO END"
+  },
+  "Q2_ipd_alone": {
+   "n_tasks": 113,
+   "A_mean": 0.3673,
+   "B_mean": 1.5619,
+   "ratio_A_over_B": {
+    "ratio": 0.2351,
+    "ci95": [
+     0.1499,
+     0.3686
+    ]
+   },
+   "diff_A_minus_B": {
+    "n": 113,
+    "mean_diff": -1.1947,
+    "ci95": [
+     -1.8916,
+     -0.6593
+    ],
+    "p_boot": 0.0
+   },
+   "p_holm": 0.0,
+   "verdict": "IPD ALONE REDUCES MALFORMED CALLS END TO END"
+  }
+ },
+ "secondary": {
+  "fullp_vs_quar": {
+   "n_tasks": 113,
+   "A_mean": 0.292,
+   "B_mean": 0.6615,
+   "ratio_A_over_B": {
+    "ratio": 0.4415,
+    "ci95": [
+     0.2607,
+     0.6825
+    ]
+   },
+   "diff_A_minus_B": {
+    "n": 113,
+    "mean_diff": -0.3695,
+    "ci95": [
+     -0.708,
+     -0.1549
+    ],
+    "p_boot": 0.0
+   }
+  },
+  "fullp_vs_ipd": {
+   "n_tasks": 113,
+   "A_mean": 0.292,
+   "B_mean": 0.3673,
+   "ratio_A_over_B": {
+    "ratio": 0.7952,
+    "ci95": [
+     0.5991,
+     1.0467
+    ]
+   },
+   "diff_A_minus_B": {
+    "n": 113,
+    "mean_diff": -0.0752,
+    "ci95": [
+     -0.1659,
+     0.0155
+    ],
+    "p_boot": 0.1124
+   }
+  },
+  "quar_vs_ipd": {
+   "n_tasks": 113,
+   "A_mean": 0.6615,
+   "B_mean": 0.3673,
+   "ratio_A_over_B": {
+    "ratio": 1.8012,
+    "ci95": [
+     1.1932,
+     2.9758
+    ]
+   },
+   "diff_A_minus_B": {
+    "n": 113,
+    "mean_diff": 0.2942,
+    "ci95": [
+     0.0796,
+     0.6394
+    ],
+    "p_boot": 0.0008
+   }
+  },
+  "counts": {
+   "base": {
+    "stuck": [
+     24,
+     452
+    ],
+    "resolved": [
+     198,
+     452
+    ]
+   },
+   "fullp": {
+    "stuck": [
+     1,
+     452
+    ],
+    "resolved": [
+     198,
+     452
+    ]
+   },
+   "quar": {
+    "stuck": [
+     3,
+     452
+    ],
+    "resolved": [
+     193,
+     452
+    ]
+   },
+   "ipd": {
+    "stuck": [
+     0,
+     452
+    ],
+    "resolved": [
+     203,
+     452
+    ]
+   }
+  },
+  "stuck_quar_vs_base_mcnemar_p": 5e-05,
+  "stuck_ipd_vs_base_mcnemar_p": 0.0,
+  "resolve_quar_minus_base": {
+   "n": 113,
+   "mean_diff": -0.0111,
+   "ci95": [
+    -0.0442,
+    0.0221
+   ],
+   "p_boot": 0.5398,
+   "non_inferior_at_-3pp_descriptive": false
+  },
+  "resolve_ipd_minus_base": {
+   "n": 113,
+   "mean_diff": 0.0111,
+   "ci95": [
+    -0.0177,
+    0.0398
+   ],
+   "p_boot": 0.4976,
+   "non_inferior_at_-3pp_descriptive": true
+  },
+  "Y2": {
+   "quar": {
+    "n_tasks": 113,
+    "A_mean": 0.6836,
+    "B_mean": 1.5907,
+    "ratio_A_over_B": {
+     "ratio": 0.4298,
+     "ci95": [
+      0.2586,
+      0.7284
+     ]
+    },
+    "diff_A_minus_B": {
+     "n": 113,
+     "mean_diff": -0.9071,
+     "ci95": [
+      -1.6283,
+      -0.3274
+     ],
+     "p_boot": 0.0008
+    }
+   },
+   "ipd": {
+    "n_tasks": 113,
+    "A_mean": 0.4137,
+    "B_mean": 1.5907,
+    "ratio_A_over_B": {
+     "ratio": 0.2601,
+     "ci95": [
+      0.1693,
+      0.4016
+     ]
+    },
+    "diff_A_minus_B": {
+     "n": 113,
+     "mean_diff": -1.177,
+     "ci95": [
+      -1.8473,
+      -0.6283
+     ],
+     "p_boot": 0.0
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "repo_root": "agent_paper",
+ "pnc_found": true,
+ "n_checks": 12,
+ "n_exact": 12,
+ "n_checks_released_files": 12,
+ "n_exact_released_files": 12,
+ "n_ok_released_files": 12,
+ "skipped": [],
+ "rows": [
+  {
+   "check": "transcriptlab_confirmatory",
+   "quantity": "31B copying: P0 rate",
+   "recomputed": 0.013333333333333334,
+   "n": 300,
+   "released": 0.0133,
+   "released_at": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/full/C1/uncond/base",
+   "status": "EXACT",
+   "exact": "count-exact"
+  },
+  {
+   "check": "transcriptlab_confirmatory",
+   "quantity": "31B copying: P1 rate",
+   "recomputed": 0.19666666666666666,
+   "n": 300,
+   "released": 0.1967,
+   "released_at": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/full/C1/uncond/arm",
+   "status": "EXACT",
+   "exact": "count-exact"
+  },
+  {
+   "check": "transcriptlab_confirmatory",
+   "quantity": "31B copying: RD P1 - P0",
+   "recomputed": 0.18333333333333332,
+   "n": 300,
+   "released": 0.1833,
+   "released_at": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/full/C1/uncond/RD",
+   "status": "EXACT",
+   "exact": "count-exact"
+  },
+  {
+   "check": "transcriptlab_confirmatory",
+   "quantity": "31B induction: RD P6 - P0",
+   "recomputed": 0.07666666666666666,
+   "n": 300,
+   "released": 0.0767,
+   "released_at": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/full/C2/uncond/RD",
+   "status": "EXACT",
+   "exact": "count-exact"
+  },
+  {
+   "check": "transcriptlab_confirmatory",
+   "quantity": "31B induction dose: k=4 rate",
+   "recomputed": 0.39351851851851855,
+   "n": 216,
+   "released": 0.3935,
+   "released_at": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/C3/uncond/rates/k=4",
+   "status": "EXACT",
+   "exact": "count-exact"
+  },
+  {
+   "check": "transcriptlab_confirmatory",
+   "quantity": "31B quarantine removal (P8a)",
+   "recomputed": 0.9818181818181818,
+   "n": 300,
+   "released": 0.982,
+   "released_at": "experiments/contagion/out/confirmatory/confirm_v2_all_full.json#31B/full/C5/uncond/removal",
+   "status": "EXACT",
+   "exact": "stored-precision"
+  },
+  {
+   "check": "bf16_row",
+   "quantity": "31B bf16 copying: RD P1 - P0",
+   "recomputed": 0.09,
+   "n": 300,
+   "released": 0.09,
+   "released_at": "experiments/contagion/out/confirmatory/bf16_core_all.json#uncond/RD_P1_P0/0",
+   "status": "EXACT",
+   "exact": "count-exact"
+  },
+  {
+   "check": "bf16_row",
+   "quantity": "31B bf16 induction: RD P6 - P0",
+   "recomputed": 0.04666666666666667,
+   "n": 300,
+   "released": 0.0467,
+   "released_at": "experiments/contagion/out/confirmatory/bf16_core_all.json#uncond/RD_P6_P0/0",
+   "status": "EXACT",
+   "exact": "count-exact"
+  },
+  {
+   "check": "pnc_corpus",
+   "quantity": "PNC episodes",
+   "recomputed": 1181,
+   "n": null,
+   "released": 1181,
+   "released_at": "data/pnc/MANIFEST.json#n_episodes",
+   "status": "EXACT",
+   "exact": "count"
+  },
+  {
+   "check": "pnc_corpus",
+   "quantity": "PNC model turns (= the conformance run inputs)",
+   "recomputed": 41290,
+   "n": null,
+   "released": 41290,
+   "released_at": "release/lib/results/conformance_pnc/RESULTS.json#stream_vs_server/gg.vllm019/n",
+   "status": "EXACT",
+   "exact": "count"
+  },
+  {
+   "check": "discovery_released",
+   "quantity": "discovery snippets",
+   "recomputed": 8107,
+   "n": null,
+   "released": 8107,
+   "released_at": "release/package/v1.0/corpus/discovery/build_summary.json#released_records",
+   "status": "EXACT",
+   "exact": "count"
+  },
+  {
+   "check": "discovery_released",
+   "quantity": "discovery pointer rows",
+   "recomputed": 53,
+   "n": null,
+   "released": 53,
+   "released_at": "release/package/v1.0/corpus/discovery/build_summary.json#pointer_only",
+   "status": "EXACT",
+   "exact": "count"
+  }
+ ]
+}

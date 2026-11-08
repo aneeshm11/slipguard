@@ -1,0 +1,298 @@
+{
+ "battery": "H",
+ "prereg": "PREREG_v2.2_thoughtSuppressed.md sha256 ec9164ffa833f351618c3eb7ec69aa2e471e096307de7f5fd61e6c72e07f09d3 (\u00a73)",
+ "cond": [
+  "H"
+ ],
+ "B": 2000,
+ "file": "out/main/r31b_v22H.jsonl",
+ "servers": {
+  "http://127.0.0.1:8302/v1": 600
+ },
+ "on_servers": {
+  "null": 18,
+  "http://127.0.0.1:8300/v1": 582
+ },
+ "missing_jobs": {
+  "P0": 0,
+  "P1": 0
+ },
+ "complete_case_contexts": 300,
+ "manipulation_check_H": {
+  "P0": {
+   "opened": [
+    0.3,
+    0.2509,
+    0.3541,
+    300
+   ],
+   "median_chars": 626.0,
+   "iqr_chars": [
+    0.0,
+    2211.25
+   ],
+   "ON_opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "ON_median_chars": 80.0
+  },
+  "P1": {
+   "opened": [
+    0.6567,
+    0.6013,
+    0.7081,
+    300
+   ],
+   "median_chars": 0,
+   "iqr_chars": [
+    0.0,
+    478.0
+   ],
+   "ON_opened": [
+    1.0,
+    0.9874,
+    1.0,
+    300
+   ],
+   "ON_median_chars": 79.0
+  },
+  "pooled": {
+   "opened": [
+    0.4783,
+    0.4386,
+    0.5183,
+    600
+   ],
+   "median_chars": 0,
+   "ON_median_chars": 80.0
+  },
+  "note": "thinking ON; the history carries no prior reasoning (render check 600/600)"
+ },
+ "claims_complete_case": {
+  "label": "complete-case",
+  "H1": {
+   "contrast": "RD(P1 - P0)",
+   "n_contexts": 300,
+   "n_attempts": 256,
+   "uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2967,
+    "base": 0.0367,
+    "RD": 0.26,
+    "RD_CI": [
+     0.2064,
+     0.3161
+    ],
+    "p_one_sided": 0.0005
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4027,
+    "base": 0.0531,
+    "RD": 0.3496,
+    "RD_CI": [
+     0.2825,
+     0.4215
+    ],
+    "p_one_sided": 0.0005
+   },
+   "holm_p": 0.0005,
+   "prediction_80PI": "+33 pp [+16, +50]",
+   "verdict": "REPLICATES",
+   "theta_D": 0.353
+  }
+ },
+ "condition_labels": {
+  "H1": null
+ },
+ "levels": {
+  "P0": {
+   "uncond": [
+    0.0367,
+    0.017,
+    0.0581
+   ],
+   "cond": [
+    0.0531,
+    0.0252,
+    0.0826
+   ],
+   "P_edit": [
+    0.69,
+    0.6355,
+    0.7397,
+    300
+   ],
+   "D_80PI": [
+    0.02,
+    0.11
+   ]
+  },
+  "P1": {
+   "uncond": [
+    0.2967,
+    0.2466,
+    0.3488
+   ],
+   "cond": [
+    0.4027,
+    0.3412,
+    0.4648
+   ],
+   "P_edit": [
+    0.7367,
+    0.6841,
+    0.7833,
+    300
+   ],
+   "D_80PI": null
+  }
+ },
+ "paired_vs_thinking_ON": {
+  "P0": {
+   "RD_malformed_uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0367,
+    "base": 0.05,
+    "RD": -0.0133,
+    "RD_CI": [
+     -0.0429,
+     0.0135
+    ],
+    "p_one_sided": 0.85107
+   },
+   "RD_malformed_cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.0531,
+    "base": 0.0568,
+    "RD": -0.0037,
+    "RD_CI": [
+     -0.04,
+     0.0314
+    ],
+    "p_one_sided": 0.5972
+   },
+   "P_edit_cond_minus_ON": [
+    -0.19,
+    -0.2457,
+    -0.1405
+   ]
+  },
+  "P1": {
+   "RD_malformed_uncond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2967,
+    "base": 0.4033,
+    "RD": -0.1067,
+    "RD_CI": [
+     -0.161,
+     -0.055
+    ],
+    "p_one_sided": 1.0
+   },
+   "RD_malformed_cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4027,
+    "base": 0.4618,
+    "RD": -0.0591,
+    "RD_CI": [
+     -0.1231,
+     0.004
+    ],
+    "p_one_sided": 0.96902
+   },
+   "P_edit_cond_minus_ON": [
+    -0.1367,
+    -0.1852,
+    -0.0912
+   ]
+  }
+ },
+ "side_by_side_ON_vs_condition": {
+  "n_contexts": 300,
+  "H1": {
+   "ON": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.4033,
+    "base": 0.05,
+    "RD": 0.3533,
+    "RD_CI": [
+     0.2963,
+     0.4097
+    ],
+    "p_one_sided": 0.0005
+   },
+   "cond": {
+    "n_contexts": 300,
+    "n_attempts": 256,
+    "arm": 0.2967,
+    "base": 0.0367,
+    "RD": 0.26,
+    "RD_CI": [
+     0.2064,
+     0.3161
+    ],
+    "p_one_sided": 0.0005
+   }
+  }
+ },
+ "copy_classes": {
+  "P1": {
+   "condition": {
+    "edits": 221,
+    "classes": {
+     "copy_corrupted": 73,
+     "clean_retry": 88,
+     "same_content_other": 15,
+     "other_edit": 44,
+     "unparsed_or_no_key": 1
+    },
+    "byte_exact_copy_share_of_malformed": [
+     0.8202,
+     0.7277,
+     0.8862,
+     89
+    ],
+    "clean_rewrite_share_of_edits": [
+     0.3982,
+     0.3359,
+     0.4639,
+     221
+    ]
+   },
+   "ON_same_contexts": {
+    "edits": 262,
+    "classes": {
+     "copy_corrupted": 103,
+     "clean_retry": 78,
+     "same_content_other": 10,
+     "other_edit": 68,
+     "unparsed_or_no_key": 3
+    },
+    "byte_exact_copy_share_of_malformed": [
+     0.8512,
+     0.7771,
+     0.9038,
+     121
+    ],
+    "clean_rewrite_share_of_edits": [
+     0.2977,
+     0.2456,
+     0.3557,
+     262
+    ]
+   }
+  },
+  "predictions": "none registered"
+ }
+}

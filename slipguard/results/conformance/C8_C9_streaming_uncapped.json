@@ -1,0 +1,308 @@
+{
+ "why": "In the suite run the streaming targets skip inputs longer than 3,000 characters (the harness's streaming cap), so Table D shows C8 (quadratic time) and C9 (deep nesting) as n/a on the six streaming targets. Here the three C8/C9 repros run through every streaming target with no cap (one token per delta, conformance/gg_targets.py --stream-max-chars 100000000).",
+ "rule": "suite rule (analyze_x.judge): C9 passes on any controlled outcome; C8 is judged on wall time only (>= 250 ms = defect), a single-size rule written for one-shot parsing. For per-token streaming the time includes the harness's detokenization and each vLLM version's per-delta server objects; scaling (slope) is measured in results/PERF.md: plugin streaming slope 1.03-1.04 in vLLM 0.31/0.33; vLLM 0.19.1's own streaming loop re-concatenates text and token ids at every step for any parser (plugin slope 1.45-1.81, built-in 2.06).",
+ "rows": [
+  {
+   "repro": "QUADRATIC_CODE_PAYLOAD",
+   "chars": 37755,
+   "target": "gg.stream",
+   "outcome": "EXACT",
+   "status": "ok",
+   "ms": 197.77,
+   "verdict_under_suite_rule": "pass"
+  },
+  {
+   "repro": "QUADRATIC_CODE_PAYLOAD",
+   "chars": 37755,
+   "target": "gg.vllm019.stream",
+   "outcome": "EXACT",
+   "status": "ok",
+   "ms": 1229.35,
+   "verdict_under_suite_rule": "defect"
+  },
+  {
+   "repro": "QUADRATIC_MANY_ARGS",
+   "chars": 8811,
+   "target": "gg.stream",
+   "outcome": "EXACT",
+   "status": "ok",
+   "ms": 66.5,
+   "verdict_under_suite_rule": "pass"
+  },
+  {
+   "repro": "QUADRATIC_MANY_ARGS",
+   "chars": 8811,
+   "target": "gg.vllm019.stream",
+   "outcome": "EXACT",
+   "status": "ok",
+   "ms": 168.43,
+   "verdict_under_suite_rule": "pass"
+  },
+  {
+   "repro": "DEEP_NESTING",
+   "chars": 6034,
+   "target": "gg.stream",
+   "outcome": "LOUD",
+   "status": "ok",
+   "ms": 12.22,
+   "verdict_under_suite_rule": "pass"
+  },
+  {
+   "repro": "DEEP_NESTING",
+   "chars": 6034,
+   "target": "gg.vllm019.stream",
+   "outcome": "NO_INTENT",
+   "status": "ok",
+   "ms": 20.44,
+   "verdict_under_suite_rule": "pass"
+  },
+  {
+   "repro": "QUADRATIC_CODE_PAYLOAD",
+   "chars": 37755,
+   "target": "gg.vllm024.stream",
+   "outcome": "EXACT",
+   "status": "ok",
+   "ms": 242.18,
+   "verdict_under_suite_rule": "pass"
+  },
+  {
+   "repro": "QUADRATIC_MANY_ARGS",
+   "chars": 8811,
+   "target": "gg.vllm024.stream",
+   "outcome": "EXACT",
+   "status": "ok",
+   "ms": 80.0,
+   "verdict_under_suite_rule": "pass"
+  },
+  {
+   "repro": "DEEP_NESTING",
+   "chars": 6034,
+   "target": "gg.vllm024.stream",
+   "outcome": "NO_INTENT",
+   "status": "ok",
+   "ms": 18.17,
+   "verdict_under_suite_rule": "pass"
+  },
+  {
+   "repro": "QUADRATIC_CODE_PAYLOAD",
+   "chars": 37755,
+   "target": "gg.vllm031.stream",
+   "outcome": "EXACT",
+   "status": "ok",
+   "ms": 448.23,
+   "verdict_under_suite_rule": "defect"
+  },
+  {
+   "repro": "QUADRATIC_MANY_ARGS",
+   "chars": 8811,
+   "target": "gg.vllm031.stream",
+   "outcome": "EXACT",
+   "status": "ok",
+   "ms": 160.45,
+   "verdict_under_suite_rule": "pass"
+  },
+  {
+   "repro": "DEEP_NESTING",
+   "chars": 6034,
+   "target": "gg.vllm031.stream",
+   "outcome": "NO_INTENT",
+   "status": "ok",
+   "ms": 31.14,
+   "verdict_under_suite_rule": "pass"
+  },
+  {
+   "repro": "QUADRATIC_CODE_PAYLOAD",
+   "chars": 37755,
+   "target": "gg.vllm032.stream",
+   "outcome": "EXACT",
+   "status": "ok",
+   "ms": 448.6,
+   "verdict_under_suite_rule": "defect"
+  },
+  {
+   "repro": "QUADRATIC_MANY_ARGS",
+   "chars": 8811,
+   "target": "gg.vllm032.stream",
+   "outcome": "EXACT",
+   "status": "ok",
+   "ms": 160.4,
+   "verdict_under_suite_rule": "pass"
+  },
+  {
+   "repro": "DEEP_NESTING",
+   "chars": 6034,
+   "target": "gg.vllm032.stream",
+   "outcome": "NO_INTENT",
+   "status": "ok",
+   "ms": 31.36,
+   "verdict_under_suite_rule": "pass"
+  },
+  {
+   "repro": "QUADRATIC_CODE_PAYLOAD",
+   "chars": 37755,
+   "target": "gg.vllm033.stream",
+   "outcome": "EXACT",
+   "status": "ok",
+   "ms": 449.19,
+   "verdict_under_suite_rule": "defect"
+  },
+  {
+   "repro": "QUADRATIC_MANY_ARGS",
+   "chars": 8811,
+   "target": "gg.vllm033.stream",
+   "outcome": "EXACT",
+   "status": "ok",
+   "ms": 149.14,
+   "verdict_under_suite_rule": "pass"
+  },
+  {
+   "repro": "DEEP_NESTING",
+   "chars": 6034,
+   "target": "gg.vllm033.stream",
+   "outcome": "NO_INTENT",
+   "status": "ok",
+   "ms": 31.04,
+   "verdict_under_suite_rule": "pass"
+  }
+ ],
+ "builtin_same_inputs_for_context": {
+  "note": "C's worker.py, built-in vLLM streaming parsers, same inputs, same cap-free run (15 s timeout per input, as in the suite)",
+  "rows": [
+   {
+    "repro": "QUADRATIC_CODE_PAYLOAD",
+    "chars": 37755,
+    "target": "vllm019.stream",
+    "outcome": "HANG",
+    "status": "timeout",
+    "ms": 15001.21,
+    "verdict_under_suite_rule": "defect"
+   },
+   {
+    "repro": "QUADRATIC_MANY_ARGS",
+    "chars": 8811,
+    "target": "vllm019.stream",
+    "outcome": "EXACT",
+    "status": "ok",
+    "ms": 9810.94,
+    "verdict_under_suite_rule": "defect"
+   },
+   {
+    "repro": "DEEP_NESTING",
+    "chars": 6034,
+    "target": "vllm019.stream",
+    "outcome": "HANG",
+    "status": "timeout",
+    "ms": 15000.27,
+    "verdict_under_suite_rule": "defect"
+   },
+   {
+    "repro": "QUADRATIC_CODE_PAYLOAD",
+    "chars": 37755,
+    "target": "vllm024.stream",
+    "outcome": "HANG",
+    "status": "timeout",
+    "ms": 15001.26,
+    "verdict_under_suite_rule": "defect"
+   },
+   {
+    "repro": "QUADRATIC_MANY_ARGS",
+    "chars": 8811,
+    "target": "vllm024.stream",
+    "outcome": "TYPE_DIFF",
+    "status": "ok",
+    "ms": 4522.68,
+    "verdict_under_suite_rule": "defect"
+   },
+   {
+    "repro": "DEEP_NESTING",
+    "chars": 6034,
+    "target": "vllm024.stream",
+    "outcome": "LOUD",
+    "status": "exception",
+    "ms": 5317.71,
+    "verdict_under_suite_rule": "defect"
+   },
+   {
+    "repro": "QUADRATIC_CODE_PAYLOAD",
+    "chars": 37755,
+    "target": "vllm031.stream",
+    "outcome": "EXACT",
+    "status": "ok",
+    "ms": 10939.01,
+    "verdict_under_suite_rule": "defect"
+   },
+   {
+    "repro": "QUADRATIC_MANY_ARGS",
+    "chars": 8811,
+    "target": "vllm031.stream",
+    "outcome": "TYPE_DIFF",
+    "status": "ok",
+    "ms": 2299.07,
+    "verdict_under_suite_rule": "defect"
+   },
+   {
+    "repro": "DEEP_NESTING",
+    "chars": 6034,
+    "target": "vllm031.stream",
+    "outcome": "LOUD",
+    "status": "exception",
+    "ms": 3793.27,
+    "verdict_under_suite_rule": "defect"
+   },
+   {
+    "repro": "QUADRATIC_CODE_PAYLOAD",
+    "chars": 37755,
+    "target": "vllm032.stream",
+    "outcome": "HANG",
+    "status": "timeout",
+    "ms": 15001.18,
+    "verdict_under_suite_rule": "defect"
+   },
+   {
+    "repro": "QUADRATIC_MANY_ARGS",
+    "chars": 8811,
+    "target": "vllm032.stream",
+    "outcome": "TYPE_DIFF",
+    "status": "ok",
+    "ms": 3391.88,
+    "verdict_under_suite_rule": "defect"
+   },
+   {
+    "repro": "DEEP_NESTING",
+    "chars": 6034,
+    "target": "vllm032.stream",
+    "outcome": "LOUD",
+    "status": "exception",
+    "ms": 3791.82,
+    "verdict_under_suite_rule": "defect"
+   },
+   {
+    "repro": "QUADRATIC_CODE_PAYLOAD",
+    "chars": 37755,
+    "target": "vllm033.stream",
+    "outcome": "EXACT",
+    "status": "ok",
+    "ms": 777.67,
+    "verdict_under_suite_rule": "defect"
+   },
+   {
+    "repro": "QUADRATIC_MANY_ARGS",
+    "chars": 8811,
+    "target": "vllm033.stream",
+    "outcome": "TYPE_DIFF",
+    "status": "ok",
+    "ms": 6278.07,
+    "verdict_under_suite_rule": "defect"
+   },
+   {
+    "repro": "DEEP_NESTING",
+    "chars": 6034,
+    "target": "vllm033.stream",
+    "outcome": "LOUD",
+    "status": "exception",
+    "ms": 12976.5,
+    "verdict_under_suite_rule": "defect"
+   }
+  ]
+ }
+}

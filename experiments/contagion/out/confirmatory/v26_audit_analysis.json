@@ -1,0 +1,317 @@
+{
+ "prereg": "PREREG_v2.6_auditBehaviour.md sha256 ed19a6d07734afe795f63e7c9c5b6c3d1285d21deff828557ca28b1e333520f6",
+ "B": 2000,
+ "missing": {
+  "AWQ": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  },
+  "AR": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  },
+  "QAT": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  },
+  "BF16": {
+   "P0": 0,
+   "P1": 0,
+   "P6": 0,
+   "P8a": 0
+  }
+ },
+ "servers": {
+  "AWQ": {
+   "http://127.0.0.1:8360/v1": 1200
+  },
+  "AR": {
+   "http://127.0.0.1:8361/v1": 1200
+  },
+  "QAT": {
+   "http://127.0.0.1:8303/v1": 1358
+  },
+  "BF16": {
+   "http://127.0.0.1:8305/v1": 1200
+  }
+ },
+ "deficits_nats": {
+  "BF16": 0.0,
+  "AWQ": 0.02,
+  "AR": 0.63,
+  "QAT": 5.13
+ },
+ "rates": {
+  "AWQ": {
+   "P0": [
+    0.0033,
+    0.0,
+    0.0102,
+    300
+   ],
+   "P1": [
+    0.1033,
+    0.07,
+    0.1385,
+    300
+   ],
+   "P6": [
+    0.04,
+    0.0198,
+    0.064,
+    300
+   ],
+   "P8a": [
+    0.0,
+    0.0,
+    0.0,
+    300
+   ]
+  },
+  "AR": {
+   "P0": [
+    0.0833,
+    0.0532,
+    0.1167,
+    300
+   ],
+   "P1": [
+    0.1333,
+    0.0957,
+    0.1745,
+    300
+   ],
+   "P6": [
+    0.0933,
+    0.0608,
+    0.1283,
+    300
+   ],
+   "P8a": [
+    0.0767,
+    0.0467,
+    0.1082,
+    300
+   ]
+  },
+  "QAT": {
+   "P0": [
+    0.0133,
+    0.0032,
+    0.0271,
+    300
+   ],
+   "P1": [
+    0.1967,
+    0.1506,
+    0.2441,
+    300
+   ],
+   "P6": [
+    0.09,
+    0.0576,
+    0.1254,
+    300
+   ],
+   "P8a": [
+    0.0167,
+    0.0034,
+    0.0334,
+    300
+   ]
+  },
+  "BF16": {
+   "P0": [
+    0.0,
+    0.0,
+    0.0,
+    300
+   ],
+   "P1": [
+    0.09,
+    0.0569,
+    0.1254,
+    300
+   ],
+   "P6": [
+    0.0467,
+    0.0239,
+    0.0733,
+    300
+   ],
+   "P8a": [
+    0.0,
+    0.0,
+    0.0,
+    300
+   ]
+  }
+ },
+ "H1": {
+  "n_states": 300,
+  "A": 0.1033,
+  "B": 0.1967,
+  "RD": -0.0933,
+  "RD_CI": [
+   -0.1301,
+   -0.0594
+  ],
+  "discordant_B_only_A_only": [
+   30,
+   2
+  ],
+  "mcnemar_one_sided_p_RD_lt_0": 0.0,
+  "contrast": "P1(AWQ) - P1(QAT)",
+  "holm_p": 0.0,
+  "verdict": "AUDIT PICK CUTS CONTAGION",
+  "D_80PI_RD": "-10 pp [-16, -4]"
+ },
+ "H2": {
+  "n_states": 300,
+  "A": 0.1333,
+  "B": 0.1967,
+  "RD": -0.0633,
+  "RD_CI": [
+   -0.108,
+   -0.0195
+  ],
+  "discordant_B_only_A_only": [
+   30,
+   11
+  ],
+  "mcnemar_one_sided_p_RD_lt_0": 0.002162,
+  "contrast": "P1(AR) - P1(QAT)",
+  "holm_p": 0.002162,
+  "ordered": true,
+  "verdict": "DOSE-RESPONSE SUPPORTED",
+  "D_80PI_RD": "-9 pp [-15, -2]"
+ },
+ "H3": {
+  "n_states": 300,
+  "A": 0.0,
+  "B": 0.1033,
+  "RD": -0.1033,
+  "RD_CI": [
+   -0.1385,
+   -0.07
+  ],
+  "discordant_B_only_A_only": [
+   31,
+   0
+  ],
+  "mcnemar_one_sided_p_RD_lt_0": 0.0,
+  "contrast": "P8a(AWQ) - P1(AWQ)",
+  "evaluable": true,
+  "AWQ_RD_P1_minus_P0": {
+   "RD": 0.1,
+   "CI": [
+    0.0664,
+    0.135
+   ]
+  },
+  "removal": {
+   "point": 1.0333,
+   "CI": [
+    1.0,
+    1.125
+   ],
+   "undefined_draw_frac": 0.0
+  },
+  "holm_p": 0.0,
+  "verdict": "QUARANTINE STILL NEEDED AND WORKS",
+  "D_80PI_removal": "1.00 [0.85, 1.10]"
+ },
+ "holm_family": [
+  "H1",
+  "H2",
+  "H3"
+ ],
+ "no_harm_P0_vs_QAT": {
+  "AWQ": {
+   "n_states": 300,
+   "A": 0.0033,
+   "B": 0.0133,
+   "RD": -0.01,
+   "RD_CI": [
+    -0.0261,
+    0.0034
+   ],
+   "discordant_B_only_A_only": [
+    4,
+    1
+   ],
+   "mcnemar_one_sided_p_RD_lt_0": 0.1875,
+   "verdict": "HOLDS"
+  },
+  "AR": {
+   "n_states": 300,
+   "A": 0.0833,
+   "B": 0.0133,
+   "RD": 0.07,
+   "RD_CI": [
+    0.0368,
+    0.1047
+   ],
+   "discordant_B_only_A_only": [
+    4,
+    25
+   ],
+   "mcnemar_one_sided_p_RD_lt_0": 0.999992,
+   "verdict": "FAILS"
+  }
+ },
+ "descriptive_ordering": {
+  "P1_by_condition": {
+   "BF16": 0.09,
+   "AWQ": 0.1033,
+   "AR": 0.1333,
+   "QAT": 0.1967
+  },
+  "deficits": {
+   "BF16": 0.0,
+   "AWQ": 0.02,
+   "AR": 0.63,
+   "QAT": 5.13
+  },
+  "ordered": true,
+  "spearman_rho": 1.0,
+  "exact_one_sided_p": 0.0417
+ },
+ "P6_descriptive": {
+  "BF16": [
+   0.0467,
+   0.0239,
+   0.0733,
+   300
+  ],
+  "AWQ": [
+   0.04,
+   0.0198,
+   0.064,
+   300
+  ],
+  "AR": [
+   0.0933,
+   0.0608,
+   0.1283,
+   300
+  ],
+  "QAT": [
+   0.09,
+   0.0576,
+   0.1254,
+   300
+  ]
+ },
+ "paper_sentences": [
+  "Serving the audit's top-ranked 4-bit checkpoint (AWQ, deficit 0.02 nats) instead of Google's QAT checkpoint (5.13 nats) cuts contagion after a laundered slip from 19.7% to 10.3% [7.0, 13.9] at the same 4-bit weight precision, on 300 public states.",
+  "Contagion rises with the audit deficit (bf16/AWQ \u2248 0 \u2192 AutoRound 0.63 \u2192 QAT 5.13 nats: 10.3% [7.0, 13.9] \u2192 13.3% [9.6, 17.4] \u2192 19.7%).",
+  "Even on the best-ranked checkpoint, the history guard removes 103% of the remaining contagion: checkpoint choice and slipguard are complementary."
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "by_ext_minified": {
+  ".js|minified": 2023
+ },
+ "total": 2023,
+ "examples": [
+  [
+   "jupyterlab_jupytext/labextension/static/657.ef0fad9293d14625.js",
+   "pe.toJSON=function(){return{type:\"Buffer\",data:Array.prot"
+  ],
+  [
+   "jupyterlab_jupytext/labextension/static/remoteEntry.dd2195b97e2b3d9d.js",
+   "s,resourceContext:{initiator:\"loadRemote\",id:a.composeR"
+  ],
+  [
+   "litellm/proxy/_experimental/out/_next/static/chunks/3qwxtry6n6qh7.js",
+   "e:e,open:f,onOpenChange:y,title:\"Filters\",description:\"Narrow do"
+  ],
+  [
+   "litellm/proxy/_experimental/out/_next/static/chunks/13qx7znomdzbh.js",
+   "DE_OPTIONS\",0,[{label:\"400 - Bad Request\",value:\"400\"},{la"
+  ],
+  [
+   "litellm/proxy/_experimental/out/_next/static/chunks/2kuunyui4qzv-.js",
+   "ion\",resourceInformation:M?[{label:\"Name\",value:M.search_t"
+  ],
+  [
+   "google/adk/cli/browser/polyfills-5CFQRCPP.js",
+   "k(l,{thenCallback:u=>({status:\"fulfilled\",value:u}),errorC"
+  ],
+  [
+   "google/adk/cli/browser/chunk-EN473UE3.js",
+   ",16))};static \\u0275pipe=uo({name:\"async\",type:e,pure:!1}"
+  ],
+  [
+   "google/adk/cli/browser/chunk-GLGRLUIJ.js",
+   "==void 0?1:r]}return R(l,[{key:\"printRGB\",value:function(e"
+  ],
+  [
+   "vllm/entrypoints/serve/instrumentator/static/swagger-ui-bundle.js",
+   "rt\",juxt:\"over\",omitAll:\"omit\",nAry:\"ary\",path:\"get\",path"
+  ]
+ ]
+}
