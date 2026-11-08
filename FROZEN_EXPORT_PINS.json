@@ -3674,18 +3674,18 @@
    "changes": [
     "editorial override (1x): reviewer: works from the Kaggle dataset layout"
    ],
-   "exported_sha256": "537e3d9566eaafccefca7b1714784be06b895363cd7b62e75c8121ce3c524370",
-   "frozen_md5": "79872ff6553105867ce077719f85d60e",
-   "frozen_sha256": "ec73d8c2ac4671ca7405d022827146f43a4535fee5eb7e05d9b53c3ee24e75e4",
+   "exported_sha256": "3b04e870b263acc12da7d646d75e2d85e035e4346fe113c069324493bb95f091",
+   "frozen_md5": "e94a1f18a1570fa4ead2eb4e455449ba",
+   "frozen_sha256": "517bed30715242baa76e6338f3ea324420182db4a2d465ac2f8546cdf90ccbb7",
    "source": "release/quickstart/quickstart.ipynb"
   },
   "notebooks/quickstart.py": {
    "changes": [
     "editorial override (1x): reviewer: works from the Kaggle dataset layout (repository attached as a dataset) without TRANSCRIPTLAB_ROOT"
    ],
-   "exported_sha256": "45d2a9fdf5b6fb2d764df297dc1fa0fb90db88ff78ac1b6beaf39260f449a9f2",
-   "frozen_md5": "e0755b83d9c7d1e60cab28351958dcb2",
-   "frozen_sha256": "4f214ef07bbde9cf1c34c1ae49132956b3e50f4f6c476cd3e35f5a4635a63e2e",
+   "exported_sha256": "509d4427eab6a2d561193f8fc926e5ff3b75347cdb96c4991cf55f8d2b8e8aec",
+   "frozen_md5": "8cbad1f1891f6d726305ca72fb062447",
+   "frozen_sha256": "f015e4424935838f33be8b9d4069bc212926fe5497f55a1aa888322ea638a033",
    "source": "release/quickstart/quickstart.py"
   },
   "paper/protocol_theory/prereg/E_PREDICTIONS_v1.md": {

@@ -23,7 +23,7 @@ BF16 = C + 'confirmatory/bf16_core_all.json'
 def find_repo(arg=None):
     cands = [arg, os.environ.get('TRANSCRIPTLAB_ROOT'), os.getcwd()]
     cands += [os.path.dirname(os.path.dirname(os.path.abspath(__file__)))]
-    cands += sorted(glob.glob('/kaggle/input/*')) + sorted(glob.glob('/kaggle/input/*/*'))
+    cands += sorted(glob.glob('/kaggle/input/*')) + sorted(glob.glob('/kaggle/input/*/*')) + sorted(glob.glob('/kaggle/input/*/*/*')) + sorted(glob.glob('/kaggle/input/*/*/*/*'))
     for c in cands:
         if c and os.path.isfile(os.path.join(c, REG)):
             return c
@@ -32,7 +32,7 @@ def find_repo(arg=None):
 
 def find_pnc(repo):
     cands = [os.environ.get('PNC_ROOT'), os.path.join(repo, 'data', 'pnc')]
-    cands += sorted(glob.glob('/kaggle/input/*')) + sorted(glob.glob('/kaggle/input/*/*')) + sorted(glob.glob('/kaggle/input/*/data/pnc'))
+    cands += sorted(glob.glob('/kaggle/input/*')) + sorted(glob.glob('/kaggle/input/*/*')) + sorted(glob.glob('/kaggle/input/*/*/*')) + sorted(glob.glob('/kaggle/input/*/*/*/*')) + sorted(glob.glob('/kaggle/input/*/data/pnc')) + sorted(glob.glob('/kaggle/input/*/*/*/data/pnc'))
     for c in cands:
         if c and os.path.isfile(os.path.join(c, 'MANIFEST.json')) and os.path.isdir(os.path.join(c, 'episodes')):
             return c

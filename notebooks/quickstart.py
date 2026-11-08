@@ -21,14 +21,14 @@ T0 = time.time()
 
 
 def find_repo():
-    for c in [os.environ.get("TRANSCRIPTLAB_ROOT"), *map(str, [Path.cwd(), *Path.cwd().parents]), *glob.glob("/kaggle/input/*"), *glob.glob("/kaggle/input/*/*")]:
+    for c in [os.environ.get("TRANSCRIPTLAB_ROOT"), *map(str, [Path.cwd(), *Path.cwd().parents]), *glob.glob("/kaggle/input/*"), *glob.glob("/kaggle/input/*/*"), *glob.glob("/kaggle/input/*/*/*"), *glob.glob("/kaggle/input/*/*/*/*")]:
         if c and Path(c, "experiments").is_dir() and (Path(c, "slipguard").is_dir() or Path(c, "release", "lib").is_dir()):
             return Path(c)
     raise SystemExit("repository not found: set TRANSCRIPTLAB_ROOT")
 
 
 def find_pnc(repo):
-    cands = [os.environ.get("PNC_ROOT"), repo / "data" / "pnc", *glob.glob("/kaggle/input/*"), *glob.glob("/kaggle/input/*/*")]
+    cands = [os.environ.get("PNC_ROOT"), repo / "data" / "pnc", *glob.glob("/kaggle/input/*"), *glob.glob("/kaggle/input/*/*"), *glob.glob("/kaggle/input/*/*/*"), *glob.glob("/kaggle/input/*/*/*/*")]
     for c in cands:
         if c and Path(c, "MANIFEST.json").exists() and Path(c, "episodes").is_dir():
             return Path(c)

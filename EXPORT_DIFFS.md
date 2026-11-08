@@ -3875,7 +3875,7 @@ source `release/quickstart/quickstart.ipynb` (group Q_quickstart, owner C (packa
 +++ b/notebooks/quickstart.ipynb
 @@ -37 +37 @@
 -    "    for c in [os.environ.get(\"TRANSCRIPTLAB_ROOT\"), *map(str, [Path.cwd(), *Path.cwd().parents])]:\n",
-+    "    for c in [os.environ.get(\"TRANSCRIPTLAB_ROOT\"), *map(str, [Path.cwd(), *Path.cwd().parents]), *glob.glob(\"/kaggle/input/*\"), *glob.glob(\"/kaggle/input/*/*\")]:\n",
++    "    for c in [os.environ.get(\"TRANSCRIPTLAB_ROOT\"), *map(str, [Path.cwd(), *Path.cwd().parents]), *glob.glob(\"/kaggle/input/*\"), *glob.glob(\"/kaggle/input/*/*\"), *glob.glob(\"/kaggle/input/*/*/*\"), *glob.glob(\"/kaggle/input/*/*/*/*\")]:\n",
 
 ```
 
@@ -3888,7 +3888,7 @@ source `release/quickstart/quickstart.py` (group Q_quickstart, owner C (packagin
 +++ b/notebooks/quickstart.py
 @@ -24 +24 @@
 -    for c in [os.environ.get("TRANSCRIPTLAB_ROOT"), *map(str, [Path.cwd(), *Path.cwd().parents])]:
-+    for c in [os.environ.get("TRANSCRIPTLAB_ROOT"), *map(str, [Path.cwd(), *Path.cwd().parents]), *glob.glob("/kaggle/input/*"), *glob.glob("/kaggle/input/*/*")]:
++    for c in [os.environ.get("TRANSCRIPTLAB_ROOT"), *map(str, [Path.cwd(), *Path.cwd().parents]), *glob.glob("/kaggle/input/*"), *glob.glob("/kaggle/input/*/*"), *glob.glob("/kaggle/input/*/*/*"), *glob.glob("/kaggle/input/*/*/*/*")]:
 
 ```
 

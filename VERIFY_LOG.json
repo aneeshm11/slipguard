@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08 18:29 UTC",
+ "generated": "2026-11-08 18:43 UTC",
  "python": "3.10.12",
  "installed": [
   "pip==22.0.2",
@@ -12,7 +12,7 @@
   {
    "command": "sha256sum -c --quiet TREE_MANIFEST.sha256",
    "rc": 0,
-   "seconds": 1.7,
+   "seconds": 2.0,
    "pass": true,
    "detail": "exit 0; no output",
    "note": "",
@@ -21,7 +21,7 @@
   {
    "command": "slipguard verify",
    "rc": 0,
-   "seconds": 1.0,
+   "seconds": 1.1,
    "pass": true,
    "detail": "\"ok\": True; frozen files 19/19 sha OK, 15 byte-identical to the freeze, changed by export: ['_frozen/endtoend/proxy/e2e_proxy.py', '_frozen/endtoend/proxy/VENDOR_B.txt', '_frozen/endtoend/configs/channel_prior.json', '_vendor/gemmaproto/gen.py']",
    "note": "",
@@ -33,8 +33,8 @@
     "  },",
     "  \"failures\": [],",
     "  \"linear_time_seconds\": {",
-    "   \"2000_args\": 0.013,",
-    "   \"8000_args\": 0.0557",
+    "   \"2000_args\": 0.0134,",
+    "   \"8000_args\": 0.0574",
     "  }",
     " },",
     " \"ok\": true",
@@ -61,7 +61,7 @@
   {
    "command": "python tools/verify_preregs.py --root .",
    "rc": 0,
-   "seconds": 0.5,
+   "seconds": 0.6,
    "pass": true,
    "detail": "exit 0; documents 32/32 (18 OK, 1 by frozen prefix, 13 exported with edits, 0 withheld; 0 missing, 0 mismatch) | manifest entries: 173 OK (83 exported with edits), 47 withheld (listed), 8 mismatch with a logg | PASS: 0 unexplained problem(s)",
    "note": "",
@@ -109,7 +109,7 @@
   {
    "command": "paper gate: current paper master against this tree",
    "rc": 0,
-   "seconds": 0.7,
+   "seconds": 0.8,
    "pass": true,
    "detail": "strict gate: PASS -- paper (../../../paper/protocol/draft/PAPER_v0.md) blocking 0 {'OK': 177, 'TEXT': 43, 'QUAL/DERIVED': 39, 'NODE': 5}",
    "note": "every <!-- src: --> citation of the current paper master must resolve to a file#key shipped in this tree",
@@ -122,12 +122,12 @@
   {
    "command": "python notebooks/reproduce_numbers.py .  (tree + dataset parts)",
    "rc": 0,
-   "seconds": 6.9,
+   "seconds": 8.0,
    "pass": true,
    "detail": "12 checks run, 12 exact, 0 check groups skipped; exit 0",
    "note": "dataset root = the workspace (tree + release package + PNC parts)",
    "tail": [
-    "headline results re-derived from raw released records: 12 check(s) run, 12 exact; 0 check group(s) skipped (6.8 s)",
+    "headline results re-derived from raw released records: 12 check(s) run, 12 exact; 0 check group(s) skipped (8.0 s)",
     "  31B copying: P0 rate                               0.0133  released     0.0133  EXACT (count-exact)",
     "  31B copying: P1 rate                               0.1967  released     0.1967  EXACT (count-exact)",
     "  31B copying: RD P1 - P0                            0.1833  released     0.1833  EXACT (count-exact)",
@@ -169,14 +169,14 @@
   {
    "command": "python -m unittest discover -s transcriptlab/tests (no extras)",
    "rc": 0,
-   "seconds": 0.6,
+   "seconds": 0.8,
    "pass": true,
-   "detail": "Ran 21 tests in 0.450s OK (skipped=5)",
+   "detail": "Ran 21 tests in 0.658s OK (skipped=5)",
    "note": "run from a copy of transcriptlab/; tests needing numpy / vLLM / tokenizers / PNC skip",
    "tail": [
     "ss......ss..s........",
     "----------------------------------------------------------------------",
-    "Ran 21 tests in 0.450s",
+    "Ran 21 tests in 0.658s",
     "",
     "OK (skipped=5)"
    ]
@@ -184,9 +184,9 @@
   {
    "command": "python notebooks/quickstart.py",
    "rc": 0,
-   "seconds": 2.2,
+   "seconds": 3.0,
    "pass": true,
-   "detail": " quickstart finished in 2.1 s",
+   "detail": " quickstart finished in 2.8 s",
    "note": "PNC dataset attached as data/pnc",
    "tail": [
     "$ slipguard audit transcript_django__django-12225__S1.json --thinking --json",
@@ -202,7 +202,7 @@
     "audit pick (QAT -> AWQ -> + quarantine)          19.7%       10.3% -> 0.0%  RD -9.3 pp",
     "thinking-off ignored after a tool result         98.7%                0.3%  296/300 -> 1/300",
     "",
-    "quickstart finished in 2.1 s"
+    "quickstart finished in 2.8 s"
    ]
   },
   {

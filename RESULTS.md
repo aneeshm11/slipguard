@@ -2,7 +2,7 @@
 
 Every value below is read from its result file by `tools/make_results_md.py` when this page is generated; none is typed by hand. *Registered* = decided by a frozen analysis (`PREREGISTRATIONS.md`); *exploratory* = computed afterwards with the frozen code reused unchanged; *descriptive* = reported, never used as a verdict (*pre-specified descriptive* = named in a registration, but not a test). Rates are proportions (0.197 = 19.7%); CIs are 95% (cluster bootstrap or exact, as registered). Limitations: `LIMITATIONS.md`.
 
-Generated 2026-11-08 18:28 UTC from 37 files.
+Generated 2026-11-08 18:41 UTC from 37 files.
 
 ## End to end: the challenge harness (ADK, vLLM 0.19.1, Gemma-4-31B 4-bit QAT; 113 public tasks x 2 replicates)
 

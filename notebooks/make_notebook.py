@@ -51,7 +51,7 @@ def find_repo():
 
 
 def find_pnc(repo):
-    cands = [os.environ.get("PNC_ROOT"), repo / "data" / "pnc", *glob.glob("/kaggle/input/*"), *glob.glob("/kaggle/input/*/*")]
+    cands = [os.environ.get("PNC_ROOT"), repo / "data" / "pnc", *glob.glob("/kaggle/input/*"), *glob.glob("/kaggle/input/*/*"), *glob.glob("/kaggle/input/*/*/*"), *glob.glob("/kaggle/input/*/*/*/*")]
     for c in cands:
         if c and Path(c, "MANIFEST.json").exists() and Path(c, "episodes").is_dir():
             return Path(c)
